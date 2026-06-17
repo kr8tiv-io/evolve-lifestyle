@@ -6,11 +6,11 @@ import ProductImage from "@/components/ui/ProductImage";
 import { RevealWords } from "@/components/ui/Reveal";
 
 const SHOTS: { src: string; tone: [string, string]; caption: string }[] = [
-  { src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1100&q=80", tone: ["#13233a", "#4ade80"], caption: "Peaks / 02" },
-  { src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1100&q=80", tone: ["#0d3b1f", "#00ff41"], caption: "Boreal / 04" },
-  { src: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1100&q=80", tone: ["#3a2f12", "#39ff14"], caption: "Prairies / 01" },
-  { src: "https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?auto=format&fit=crop&w=1100&q=80", tone: ["#0c2c33", "#00ff41"], caption: "Coast / 03" },
-  { src: "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1100&q=80", tone: ["#13233a", "#4ade80"], caption: "Peaks / 05" },
+  { src: "/images/photo-1454496522488-7a8e488e8606.jpg", tone: ["#13233a", "#4ade80"], caption: "Peaks / 02" },
+  { src: "/images/photo-1441974231531-c6227db76b6e.jpg", tone: ["#0d3b1f", "#00ff41"], caption: "Boreal / 04" },
+  { src: "/images/photo-1500534623283-312aade485b7.jpg", tone: ["#3a2f12", "#39ff14"], caption: "Prairies / 01" },
+  { src: "/images/photo-1465056836041-7f43ac27dcb5.jpg", tone: ["#0c2c33", "#00ff41"], caption: "Coast / 03" },
+  { src: "/images/photo-1483728642387-6c3bdd6c93e5.jpg", tone: ["#13233a", "#4ade80"], caption: "Peaks / 05" },
 ];
 
 /** Horizontal scroll-driven lookbook strip. */

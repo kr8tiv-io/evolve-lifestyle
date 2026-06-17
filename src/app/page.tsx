@@ -33,7 +33,7 @@ export default function HomePage() {
         slogan="Strip it back."
         emphasis="Build it stronger."
         note="From the trades to the trails — the same instinct, pointed outward."
-        image="https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?auto=format&fit=crop&w=1900&q=80"
+        image="/images/photo-1428908728789-d2de25dbd4e2.jpg"
         tone={["#3a1c14", "#39ff14"]}
       />
     </>

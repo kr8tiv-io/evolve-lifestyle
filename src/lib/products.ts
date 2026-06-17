@@ -46,8 +46,8 @@ export interface Product {
   badge?: string;
 }
 
-const ux = (id: string, w = 1400) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+// Local, self-hosted outdoor stock (royalty-free, swappable) in /public/images.
+const ux = (id: string) => `/images/photo-${id}.jpg`;
 
 const SIZES = ["XS", "S", "M", "L", "XL", "XXL"];
 
@@ -234,7 +234,7 @@ export const PRODUCTS: Product[] = [
       "A tight ribbed cuff beanie in a merino blend that holds heat without the itch. Woven label, real fold, no slouch gimmicks.",
     details: ["Merino-acrylic rib knit", "Woven EVOLVE label", "True double-layer cuff", "One size, holds shape"],
     tone: ["#2c1b3a", "#4ade80"],
-    images: [ux("1576871337622-98d48d1cf531"), ux("1510598155802-2b2bacf1c5f2"), ux("1487222477894-8943e31ef7b2")],
+    images: [ux("1576871337622-98d48d1cf531"), ux("1473773508845-188df298d2d1"), ux("1487222477894-8943e31ef7b2")],
     sizes: ["OS"],
     variants: [
       { id: "beanie-black-os", sku: "EVL-BEAN-BLK-OS", size: "OS", color: "Boreal Void", swatch: "#0a0a0a", inStock: true },
@@ -254,7 +254,7 @@ export const PRODUCTS: Product[] = [
       "A heavy pocket tee built around the blasting roots — strip it back, build it stronger. Reinforced pocket, tonal stitch, the kind of tee you reach for first.",
     details: ["260 GSM heavy cotton", "Reinforced chest pocket", "Twin-needle hems", "Tonal contrast stitch"],
     tone: ["#2f2f12", "#39ff14"],
-    images: [ux("1503342217505-b0a15ec3261c"), ux("1521572163474-6864f9cf17ab"), ux("1622445275576-721325763efe")],
+    images: [ux("1503342217505-b0a15ec3261c"), ux("1521572163474-6864f9cf17ab"), ux("1500534623283-312aade485b7")],
     sizes: SIZES,
     variants: buildVariants("trapline-tee", [
       { name: "Boreal Void", swatch: "#0a0a0a" },

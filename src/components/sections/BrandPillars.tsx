@@ -21,7 +21,7 @@ const PILLARS: Pillar[] = [
     lead: "The hardest people built the coldest country.",
     body: "Before the highways and the heated cabs, there were people who crossed this land on foot, wintered where the temperature forgets mercy, and woke up the next morning to do it again. That blood is still here. EVOLVE is a quiet salute to them — to grit that doesn't brag, to pride earned in weather that would send most people indoors.",
     image:
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=80",
+      "/images/photo-1518837695005-2083093ee35b.jpg",
     tone: ["#0d3b1f", "#00ff41"],
   },
   {
@@ -30,7 +30,7 @@ const PILLARS: Pillar[] = [
     lead: "This is the backyard. All of it.",
     body: "Prairies that run flat to the curve of the planet. Mountains that don't care about your schedule. Boreal forest, then a coast that takes the weather first. The wildlife was here before us — bears, caribou, elk, trout — and getting outside isn't a hobby here, it's an identity. Some things should never change. This is one of them.",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80",
+      "/images/photo-1464822759023-fed622ff2c3b.jpg",
     tone: ["#13233a", "#4ade80"],
   },
   {
@@ -39,7 +39,7 @@ const PILLARS: Pillar[] = [
     lead: "Strip it back. Build it stronger.",
     body: "EVOLVE started in the trades — abrasive blasting, restoring what the years wore down to something better than new. The lifestyle is the same instinct pointed outward: blue-collar grit and big-country freedom. Polite until the work gets hard. We restore what the week wore down, and then we go earn the weekend.",
     image:
-      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1600&q=80",
+      "/images/photo-1551632811-561732d1e306.jpg",
     tone: ["#3a1c14", "#39ff14"],
   },
 ];

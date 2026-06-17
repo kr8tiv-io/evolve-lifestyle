@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import EvolveLogo from "@/components/ui/EvolveLogo";
 
 /**
  * First-load cinematic curtain. Counts 0 → 100 while the hero mounts,
@@ -46,9 +47,7 @@ export default function Preloader() {
             transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
             className="text-silver-bright"
           >
-            <span className="text-2xl font-medium uppercase tracking-[0.28em] sm:text-4xl">
-              EVOLVE
-            </span>
+            <EvolveLogo variant="white" className="h-7 sm:h-10" />
           </motion.div>
           <span className="mt-3 font-mono text-[0.65rem] uppercase tracking-[0.4em] text-neon-soft">
             Prairies to Peaks

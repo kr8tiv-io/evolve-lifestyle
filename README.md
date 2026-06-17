@@ -78,9 +78,9 @@ src/
 |-------|--------|-----------|
 | Design system (colour, type scale, motion, layout) | **Real / locked** | — |
 | Page architecture, components, cart, transitions, 3D hero | **Real** | — |
-| **Neue Montreal** font | **Placeholder fallback** | Drop the licensed files into `public/fonts/` — see [`public/fonts/README.md`](./public/fonts/README.md). Site upgrades with zero code changes. |
-| **EVOLVE logo** | **SVG wordmark placeholder** | Drop the real chrome/white logo into `public/brand/` and swap `EvolveLogo.tsx` to an `<img>`. |
-| **Imagery** | **Placeholder** (royalty-free Unsplash, swappable) | Replace with owned/commissioned photography. `ProductImage` falls back to an on-brand gradient if any image is slow/unavailable, so the page never breaks. |
+| **Neue Montreal** font | **REAL** — licensed OTF from the Evolve Drive brand assets, self-hosted in `public/fonts/` | — |
+| **EVOLVE logo** | **REAL** — metallic-chrome + white transparent wordmark PNGs from the Drive "Logos & Media Kit", in `public/brand/` (used in header, footer, mobile menu, preloader) | — |
+| **Imagery** | **Local placeholder** — royalty-free outdoor/wildlife stock bundled in `public/images/` (self-contained, fast, swappable) | Replace with owned/commissioned photography. `ProductImage` falls back to an on-brand gradient if any image is missing, so the page never breaks. |
 | **Products** | **Placeholder catalogue** (`lib/products.ts`) | Shape is drop-ship-ready (externalId / variantId / sku). Swap `getProducts()` for a Printful/Printify/Shopify fetch — UI unchanged. |
 | **Checkout** | **Stubbed** | Wire `CartDrawer` checkout button to Printful/Shopify. Cart data is already structured for it. |
 

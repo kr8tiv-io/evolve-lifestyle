@@ -12,7 +12,7 @@ export default function SloganMoment({
   slogan = "The world goes soft.",
   emphasis = "We go outside.",
   note = "Cold and free beats warm and bored.",
-  image = "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1900&q=80",
+  image = "/images/photo-1486870591958-9b9d0d1dda99.jpg",
   tone = ["#0c2c33", "#00ff41"] as [string, string],
 }: {
   slogan?: string;

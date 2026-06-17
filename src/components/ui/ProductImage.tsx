@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 /**
@@ -25,15 +25,24 @@ export default function ProductImage({
   imgClassName?: string;
   priority?: boolean;
 }) {
+  const imgRef = useRef<HTMLImageElement>(null);
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
-  // Robustness: if the (swappable, external) stock image hasn't loaded within
-  // a window, fall back to the brand gradient. Unmounting the <img> also
-  // aborts a hung request, so a slow/offline network never leaves a blank hole.
+  // Cache race: a local/cached image can finish loading before React attaches
+  // onLoad, so the event never fires. Check `complete` on mount and reveal it.
+  useEffect(() => {
+    if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) {
+      setLoaded(true);
+    }
+  }, [src]);
+
+  // Robustness: if the image hasn't loaded within a window, fall back to the
+  // brand gradient. Unmounting the <img> also aborts a hung request, so a
+  // slow/offline network never leaves a blank hole.
   useEffect(() => {
     if (loaded || failed) return;
-    const t = setTimeout(() => setFailed(true), 4500);
+    const t = setTimeout(() => setFailed(true), 8000);
     return () => clearTimeout(t);
   }, [loaded, failed]);
 
@@ -47,6 +56,7 @@ export default function ProductImage({
       {!failed && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
+          ref={imgRef}
           src={src}
           alt={alt}
           loading={priority ? "eager" : "lazy"}

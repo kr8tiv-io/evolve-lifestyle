@@ -3,33 +3,40 @@
 @tailwind utilities;
 
 /* ============================================================
-   NEUE MONTREAL — real font loads from /public/fonts when present.
-   See public/fonts/README.md. Falls back gracefully until then.
+   NEUE MONTREAL — the real licensed brand typeface (Pangram Pangram),
+   pulled from the Evolve Drive brand assets. Self-hosted OTF.
    ============================================================ */
 @font-face {
   font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal-Regular.woff2") format("woff2");
+  src: url("/fonts/NeueMontreal-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal-Medium.woff2") format("woff2");
+  src: url("/fonts/NeueMontreal-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal-Bold.woff2") format("woff2");
+  src: url("/fonts/NeueMontreal-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal-Italic.woff2") format("woff2");
+  src: url("/fonts/NeueMontreal-Italic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;

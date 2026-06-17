@@ -19,7 +19,7 @@ export default function AboutPage() {
       <section className="relative flex min-h-[80vh] items-end overflow-hidden">
         <div className="absolute inset-0">
           <ProductImage
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1900&q=80"
+            src="/images/photo-1506744038136-46273834b3fb.jpg"
             alt="Boreal landscape"
             tone={["#0d3b1f", "#00ff41"]}
             className="h-full w-full"
@@ -74,7 +74,7 @@ export default function AboutPage() {
         slogan="Hardest jobs. Coldest mornings."
         emphasis="Proudest people."
         note="Tougher than the winters that made us."
-        image="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1900&q=80"
+        image="/images/photo-1483728642387-6c3bdd6c93e5.jpg"
         tone={["#13233a", "#4ade80"]}
       />
 
