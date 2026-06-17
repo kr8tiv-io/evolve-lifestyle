@@ -2,6 +2,8 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Parallax } from "@/components/ui/Gsap";
+import ProductImage from "@/components/ui/ProductImage";
 
 const LINE =
   "Some things should never change. The cold. The quiet. The work that asks everything of you and gives it back twice. We don't tame the wild — we belong to it.";
@@ -24,6 +26,18 @@ export default function Manifesto() {
       data-section="Manifesto"
       className="glow-aurora relative overflow-hidden py-[var(--section-y)]"
     >
+      {/* faint boreal plate behind the words — parallaxed, blends into void */}
+      <Parallax speed={0.22} className="pointer-events-none absolute inset-0 -z-0 opacity-[0.16]">
+        <div className="absolute inset-0 scale-125">
+          <ProductImage
+            src="/images/photo-1483728642387-6c3bdd6c93e5.jpg"
+            alt=""
+            tone={["#13233a", "#4ade80"]}
+            className="h-full w-full"
+          />
+        </div>
+      </Parallax>
+      <div className="pointer-events-none absolute inset-0 -z-0 bg-[linear-gradient(180deg,#050505,transparent_30%,transparent_70%,#050505)]" />
       <span className="ghost-folio absolute -top-6 right-4 hidden md:block">00</span>
       <div className="frame-read relative">
         <p className="eyebrow mb-10">The Manifesto</p>

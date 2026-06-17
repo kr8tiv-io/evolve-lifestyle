@@ -79,8 +79,14 @@ export default function AboutPage() {
       />
 
       {/* Slogan wall */}
-      <section className="frame py-[14vh]">
-        <p className="eyebrow mb-10">What We Say</p>
+      <section className="relative overflow-hidden py-[14vh]">
+        <div
+          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-[0.10]"
+          style={{ backgroundImage: "url(/images/photo-1469474968028-56623f02e42e.jpg)" }}
+        />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#050505,transparent_25%,transparent_75%,#050505)]" />
+        <div className="frame relative">
+          <p className="eyebrow mb-10">What We Say</p>
         <div className="grid gap-x-10 gap-y-4 md:grid-cols-2">
           {SLOGANS.map((s, i) => (
             <Reveal key={i} delay={(i % 4) * 0.04}>
@@ -94,6 +100,7 @@ export default function AboutPage() {
               </div>
             </Reveal>
           ))}
+        </div>
         </div>
       </section>
 

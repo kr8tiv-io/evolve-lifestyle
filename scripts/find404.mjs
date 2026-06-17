@@ -1,0 +1,10 @@
+import puppeteer from "puppeteer-core";
+const CHROME = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: "new", args: ["--no-sandbox"] });
+const page = await browser.newPage();
+page.on("response", (r) => { if (r.status() === 404) console.log("404:", r.url()); });
+await page.goto("http://localhost:3000/", { waitUntil: "networkidle2", timeout: 60000 }).catch(() => {});
+await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += window.innerHeight) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 200)); } });
+await new Promise((r) => setTimeout(r, 1500));
+await browser.close();
+console.log("done");

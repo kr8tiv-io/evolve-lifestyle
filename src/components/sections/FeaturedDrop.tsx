@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Reveal, RevealWords } from "@/components/ui/Reveal";
+import { Reveal } from "@/components/ui/Reveal";
+import { SplitReveal } from "@/components/ui/Gsap";
 import ProductCard from "@/components/ui/ProductCard";
 import { getFeatured } from "@/lib/products";
 
@@ -16,14 +17,14 @@ export default function FeaturedDrop() {
       <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
           <p className="eyebrow mb-5">The First Drop</p>
-          <RevealWords
+          <SplitReveal
             text="Built for the bush."
-            className="block text-display-sm font-bold uppercase tracking-tightest text-silver-bright"
+            className="text-display-sm font-bold uppercase tracking-tightest text-silver-bright"
           />
-          <RevealWords
+          <br />
+          <SplitReveal
             text="Made for the long haul."
-            className="block text-display-sm font-light italic tracking-tight text-silver/70"
-            delay={0.08}
+            className="text-display-sm font-light italic tracking-tight text-silver/70"
           />
         </div>
         <Reveal delay={0.2}>

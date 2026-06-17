@@ -3,10 +3,11 @@
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
+import { KernelSize } from "postprocessing";
 import * as THREE from "three";
 
 /* ------------------------------------------------------------------ *
- * Shared GLSL — simplex noise (Ashima) used by aurora + terrain.
+ * Shared GLSL — simplex noise (Ashima) used by aurora + fog + terrain.
  * ------------------------------------------------------------------ */
 const SNOISE = /* glsl */ `
 vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}
@@ -31,14 +32,92 @@ float snoise(vec2 v){
 }
 float fbm(vec2 p){
   float v=0.0,a=0.5;
-  for(int i=0;i<5;i++){v+=a*snoise(p);p*=2.0;a*=0.5;}
+  for(int i=0;i<6;i++){v+=a*snoise(p);p*=2.0;a*=0.5;}
   return v;
 }
 `;
 
+/* Soft circular sprite so particles read as luminous motes, never squares. */
+function makeSpriteTexture() {
+  const s = 64;
+  const c = document.createElement("canvas");
+  c.width = c.height = s;
+  const ctx = c.getContext("2d")!;
+  const g = ctx.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+  g.addColorStop(0, "rgba(255,255,255,1)");
+  g.addColorStop(0.3, "rgba(216,245,226,0.7)");
+  g.addColorStop(1, "rgba(216,245,226,0)");
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, s, s);
+  const tex = new THREE.CanvasTexture(c);
+  tex.needsUpdate = true;
+  return tex;
+}
+
 /* ------------------------------------------------------------------ *
- * Aurora curtains — spectral, with vertical ray striations and two
- * parallax layers for depth. Bright tips cross the bloom threshold.
+ * Drifting volumetric FOG — soft fbm sheets rolling across the scene,
+ * emulating fog moving through the forest behind. Two parallax layers.
+ * ------------------------------------------------------------------ */
+function FogLayer({
+  z,
+  scaleArr,
+  speed,
+  tint,
+  opacity,
+}: {
+  z: number;
+  scaleArr: [number, number, number];
+  speed: number;
+  tint: string;
+  opacity: number;
+}) {
+  const mat = useRef<THREE.ShaderMaterial>(null);
+  const uniforms = useMemo(
+    () => ({
+      uTime: { value: 0 },
+      uSpeed: { value: speed },
+      uTint: { value: new THREE.Color(tint) },
+      uOpacity: { value: opacity },
+    }),
+    [speed, tint, opacity]
+  );
+  useFrame((_, dt) => {
+    if (mat.current) mat.current.uniforms.uTime.value += dt;
+  });
+  return (
+    <mesh position={[0, 0.2, z]} scale={scaleArr}>
+      <planeGeometry args={[1, 1]} />
+      <shaderMaterial
+        ref={mat}
+        transparent
+        depthWrite={false}
+        uniforms={uniforms}
+        vertexShader={`varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`}
+        fragmentShader={
+          SNOISE +
+          /* glsl */ `
+          varying vec2 vUv; uniform float uTime; uniform float uSpeed; uniform vec3 uTint; uniform float uOpacity;
+          void main(){
+            vec2 uv=vUv;
+            float t=uTime*uSpeed;
+            float f=fbm(vec2(uv.x*2.2 - t, uv.y*1.6 + t*0.25));
+            f+=fbm(vec2(uv.x*4.5 + t*0.6, uv.y*3.0))*0.5;
+            float dens=smoothstep(-0.2,1.0,f);
+            // thicker low, thinner high — fog sits in the valley
+            dens*=smoothstep(1.05,0.2,uv.y);
+            float edge=smoothstep(0.0,0.25,uv.x)*smoothstep(1.0,0.75,uv.x);
+            gl_FragColor=vec4(uTint, dens*uOpacity*edge);
+          }
+        `
+        }
+      />
+    </mesh>
+  );
+}
+
+/* ------------------------------------------------------------------ *
+ * Aurora curtains — spectral, ray-striated, MOUSE-REACTIVE (the field
+ * flows and brightens toward the cursor). Two parallax layers.
  * ------------------------------------------------------------------ */
 function AuroraLayer({
   z,
@@ -47,6 +126,7 @@ function AuroraLayer({
   intensity,
   colorA,
   colorB,
+  mouse,
 }: {
   z: number;
   scaleArr: [number, number, number];
@@ -54,6 +134,7 @@ function AuroraLayer({
   intensity: number;
   colorA: string;
   colorB: string;
+  mouse: React.MutableRefObject<THREE.Vector2>;
 }) {
   const mat = useRef<THREE.ShaderMaterial>(null);
   const uniforms = useMemo(
@@ -63,51 +144,58 @@ function AuroraLayer({
       uIntensity: { value: intensity },
       uColorA: { value: new THREE.Color(colorA) },
       uColorB: { value: new THREE.Color(colorB) },
-      uColorTip: { value: new THREE.Color("#aaffcc") },
+      uColorTip: { value: new THREE.Color("#b8ffd6") },
+      uMouse: { value: new THREE.Vector2(0.5, 0.6) },
     }),
     [speed, intensity, colorA, colorB]
   );
   useFrame((_, dt) => {
-    if (mat.current) mat.current.uniforms.uTime.value += dt;
+    if (!mat.current) return;
+    mat.current.uniforms.uTime.value += dt;
+    // map mouse (-1..1) to uv space and smooth-follow
+    const tx = mouse.current.x * 0.5 + 0.5;
+    const ty = mouse.current.y * 0.5 + 0.5;
+    const u = mat.current.uniforms.uMouse.value as THREE.Vector2;
+    u.x += (tx - u.x) * 0.06;
+    u.y += (ty - u.y) * 0.06;
   });
 
   return (
     <mesh position={[0, 1.7, z]} scale={scaleArr}>
-      <planeGeometry args={[1, 1, 1, 1]} />
+      <planeGeometry args={[1, 1]} />
       <shaderMaterial
         ref={mat}
         transparent
         depthWrite={false}
         blending={THREE.AdditiveBlending}
         uniforms={uniforms}
-        vertexShader={`
-          varying vec2 vUv;
-          void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }
-        `}
+        vertexShader={`varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`}
         fragmentShader={
           SNOISE +
           /* glsl */ `
           varying vec2 vUv;
           uniform float uTime; uniform float uSpeed; uniform float uIntensity;
-          uniform vec3 uColorA; uniform vec3 uColorB; uniform vec3 uColorTip;
+          uniform vec3 uColorA; uniform vec3 uColorB; uniform vec3 uColorTip; uniform vec2 uMouse;
           void main(){
             vec2 uv=vUv;
             float t=uTime*uSpeed;
-            float bands=fbm(vec2(uv.x*3.0, uv.y*1.2 - t*2.0));
+            // mouse pulls the flow toward the cursor and adds a glow bloom there
+            vec2 toM = uMouse - uv;
+            float md = length(toM);
+            float pull = exp(-md*md*4.0);
+            uv += toM * pull * 0.12;
+            float bands=fbm(vec2(uv.x*3.0, uv.y*1.2 - t*2.0 + pull*0.6));
             float curtain=fbm(vec2(uv.x*6.0 + bands*0.6 + t, uv.y*0.6));
             float intensity=smoothstep(0.0,1.0,curtain*0.5+0.5);
-            // fine vertical ray striations
             float rays=0.5+0.5*sin((uv.x*120.0)+bands*6.0+t*3.0);
-            rays=mix(1.0, rays, 0.35);
+            rays=mix(1.0, rays, 0.32);
             intensity*=rays;
-            // fade top & bottom into the void
-            float vmask=smoothstep(0.0,0.4,uv.y)*smoothstep(1.0,0.5,uv.y);
+            float vmask=smoothstep(0.0,0.4,vUv.y)*smoothstep(1.0,0.5,vUv.y);
             intensity*=vmask;
-            // spectral gradient: base -> green -> bright teal tip with height
+            intensity+=pull*0.35*vmask; // brighten toward cursor
             vec3 col=mix(uColorB,uColorA,intensity);
-            col=mix(col,uColorTip,pow(intensity,3.0)*0.8);
-            float alpha=intensity*uIntensity;
-            gl_FragColor=vec4(col,alpha);
+            col=mix(col,uColorTip,pow(intensity,3.0)*0.85);
+            gl_FragColor=vec4(col, intensity*uIntensity);
           }
         `
         }
@@ -116,83 +204,63 @@ function AuroraLayer({
   );
 }
 
-/* ------------------------------------------------------------------ *
- * Boreal terrain — displaced wireframe ridges, glowing crest.
- * ------------------------------------------------------------------ */
-function Terrain() {
+/* Subtle glowing boreal ridge at the very bottom — foreground silhouette. */
+function RidgeCrest() {
   const mat = useRef<THREE.ShaderMaterial>(null);
   const uniforms = useMemo(
-    () => ({
-      uTime: { value: 0 },
-      uColor: { value: new THREE.Color("#15512e") },
-      uRim: { value: new THREE.Color("#39ff14") },
-    }),
+    () => ({ uTime: { value: 0 }, uRim: { value: new THREE.Color("#39ff14") } }),
     []
   );
   useFrame((_, dt) => {
     if (mat.current) mat.current.uniforms.uTime.value += dt;
   });
-
   return (
-    <mesh rotation={[-Math.PI / 2.18, 0, 0]} position={[0, -1.7, -1]}>
-      <planeGeometry args={[26, 22, 120, 120]} />
+    <mesh rotation={[-Math.PI / 2.2, 0, 0]} position={[0, -2.1, 0.5]}>
+      <planeGeometry args={[30, 14, 160, 80]} />
       <shaderMaterial
         ref={mat}
-        wireframe
         transparent
+        depthWrite={false}
         uniforms={uniforms}
         vertexShader={
           SNOISE +
           /* glsl */ `
-          varying float vH;
-          varying vec2 vUv;
-          uniform float uTime;
+          varying float vH; varying vec2 vUv; uniform float uTime;
           void main(){
-            vUv=uv;
-            vec3 p=position;
-            float ridge=fbm(vec2(p.x*0.18, p.y*0.18 + uTime*0.04));
-            float detail=fbm(vec2(p.x*0.6, p.y*0.6 - uTime*0.02))*0.35;
-            float h=(ridge+detail);
-            h*=smoothstep(0.0,5.0,abs(p.x))*1.6+0.4;
-            p.z+=h*1.8;
-            vH=h;
+            vUv=uv; vec3 p=position;
+            float ridge=fbm(vec2(p.x*0.16, p.y*0.16 + uTime*0.03));
+            ridge*=smoothstep(0.0,5.0,abs(p.x))*1.5+0.5;
+            p.z+=ridge*1.6; vH=ridge;
             gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);
-          }
-        `
+          }`
         }
         fragmentShader={/* glsl */ `
-          varying float vH;
-          varying vec2 vUv;
-          uniform vec3 uColor;
-          uniform vec3 uRim;
+          varying float vH; varying vec2 vUv; uniform vec3 uRim;
           void main(){
-            float peak=smoothstep(0.4,1.5,vH);
-            // crest glows hot enough to catch bloom
-            vec3 col=mix(uColor,uRim,peak)*(1.0+peak*1.4);
-            float depthFade=smoothstep(0.0,0.55,vUv.y);
-            float nearFade=smoothstep(1.0,0.7,vUv.y);
-            float a=depthFade*nearFade*(0.16+peak*0.7);
-            gl_FragColor=vec4(col,a);
-          }
-        `}
+            float peak=smoothstep(0.5,1.5,vH);
+            float depth=smoothstep(0.0,0.5,vUv.y)*smoothstep(1.0,0.7,vUv.y);
+            float a=depth*(0.05+peak*0.55);
+            gl_FragColor=vec4(uRim*(0.4+peak*1.6), a);
+          }`}
       />
     </mesh>
   );
 }
 
 /* ------------------------------------------------------------------ *
- * Drifting snow / ember particle field with subtle twinkle.
+ * Drifting motes — soft round sprites (no square pixels), gentle rise.
  * ------------------------------------------------------------------ */
-function Particles({ count = 1000 }: { count?: number }) {
+function Motes({ count = 850 }: { count?: number }) {
   const ref = useRef<THREE.Points>(null);
+  const tex = useMemo(() => makeSpriteTexture(), []);
   const { positions, speeds } = useMemo(() => {
     const positions = new Float32Array(count * 3);
     const speeds = new Float32Array(count);
     for (let i = 0; i < count; i++) {
       positions[i * 3] = (Math.random() - 0.5) * 18;
       positions[i * 3 + 1] = Math.random() * 10 - 2;
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 10 - 2;
-      speeds[i] = 0.15 + Math.random() * 0.5;
+      positions[i * 3 + 2] = (Math.random() - 0.5) * 10 - 1;
+      speeds[i] = 0.1 + Math.random() * 0.4;
     }
     return { positions, speeds };
   }, [count]);
@@ -202,14 +270,14 @@ function Particles({ count = 1000 }: { count?: number }) {
     if (!pts) return;
     const arr = pts.geometry.attributes.position.array as Float32Array;
     for (let i = 0; i < count; i++) {
-      arr[i * 3 + 1] += speeds[i] * dt * 0.5;
-      arr[i * 3] += Math.sin(arr[i * 3 + 1] * 0.5 + i) * dt * 0.04;
+      arr[i * 3 + 1] += speeds[i] * dt * 0.45;
+      arr[i * 3] += Math.sin(arr[i * 3 + 1] * 0.5 + i) * dt * 0.05;
       if (arr[i * 3 + 1] > 8) arr[i * 3 + 1] = -2.5;
     }
     pts.geometry.attributes.position.needsUpdate = true;
-    pts.rotation.y += dt * 0.01;
+    pts.rotation.y += dt * 0.008;
     const m = pts.material as THREE.PointsMaterial;
-    m.opacity = 0.55 + Math.sin(state.clock.elapsedTime * 1.5) * 0.12;
+    m.opacity = 0.5 + Math.sin(state.clock.elapsedTime * 1.2) * 0.1;
   });
 
   return (
@@ -224,32 +292,33 @@ function Particles({ count = 1000 }: { count?: number }) {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={0.03}
+        map={tex}
+        size={0.07}
         color="#d8f5e2"
         transparent
-        opacity={0.7}
+        opacity={0.6}
         sizeAttenuation
         depthWrite={false}
         blending={THREE.AdditiveBlending}
+        alphaTest={0.01}
       />
     </points>
   );
 }
 
-/* ------------------------------------------------------------------ *
- * Camera rig — slow drift + mouse parallax + scroll dolly.
- * ------------------------------------------------------------------ */
-function Rig() {
+/* Camera rig — drift + mouse parallax + scroll dolly. */
+function Rig({ mouse }: { mouse: React.MutableRefObject<THREE.Vector2> }) {
   const { camera, pointer } = useThree();
   useFrame((state) => {
     const t = state.clock.elapsedTime;
+    mouse.current.set(pointer.x, pointer.y);
     const scroll =
       typeof window !== "undefined"
         ? Math.min(1, window.scrollY / Math.max(1, window.innerHeight))
         : 0;
-    const targetX = pointer.x * 0.6 + Math.sin(t * 0.1) * 0.2;
-    const targetY = 0.5 + pointer.y * 0.3 + Math.cos(t * 0.12) * 0.12 - scroll * 0.8;
-    const targetZ = 6.2 - scroll * 1.6; // dolly forward on scroll
+    const targetX = pointer.x * 0.5 + Math.sin(t * 0.1) * 0.18;
+    const targetY = 0.5 + pointer.y * 0.25 + Math.cos(t * 0.12) * 0.1 - scroll * 0.7;
+    const targetZ = 6.2 - scroll * 1.4;
     camera.position.x += (targetX - camera.position.x) * 0.03;
     camera.position.y += (targetY - camera.position.y) * 0.03;
     camera.position.z += (targetZ - camera.position.z) * 0.04;
@@ -262,47 +331,38 @@ export default function Hero3D() {
   const reduced =
     typeof window !== "undefined" &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const mouse = useRef(new THREE.Vector2(0, 0));
 
   return (
     <Canvas
       className="!absolute inset-0"
       camera={{ position: [0, 0.6, 6.2], fov: 42 }}
-      dpr={[1, 1.8]}
+      dpr={[1, 2]}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
     >
-      <fogExp2 attach="fog" args={["#050505", 0.052]} />
       <ambientLight intensity={0.4} />
 
-      <AuroraLayer
-        z={-7}
-        scaleArr={[20, 9, 1]}
-        speed={0.06}
-        intensity={0.55}
-        colorA="#00ff41"
-        colorB="#0b6b3a"
-      />
-      {/* second, slower, deeper curtain for parallax depth */}
-      <AuroraLayer
-        z={-10}
-        scaleArr={[28, 11, 1]}
-        speed={0.035}
-        intensity={0.3}
-        colorA="#23c0ff"
-        colorB="#0a3b52"
-      />
+      {/* drifting fog sheets over the forest plate */}
+      <FogLayer z={-5.5} scaleArr={[24, 12, 1]} speed={0.05} tint="#9fb7c4" opacity={0.22} />
+      <FogLayer z={-3.5} scaleArr={[20, 9, 1]} speed={0.085} tint="#cdd8de" opacity={0.16} />
 
-      <Terrain />
-      <Particles />
-      <Rig />
+      {/* aurora — mouse reactive */}
+      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.06} intensity={0.62} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} />
+      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.035} intensity={0.32} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} />
+
+      <RidgeCrest />
+      <Motes />
+      <Rig mouse={mouse} />
 
       {!reduced && (
-        <EffectComposer multisampling={0}>
+        <EffectComposer multisampling={4}>
           <Bloom
             mipmapBlur
-            intensity={0.85}
-            luminanceThreshold={0.45}
-            luminanceSmoothing={0.3}
-            radius={0.72}
+            intensity={0.7}
+            luminanceThreshold={0.5}
+            luminanceSmoothing={0.4}
+            kernelSize={KernelSize.HUGE}
+            radius={0.85}
           />
         </EffectComposer>
       )}

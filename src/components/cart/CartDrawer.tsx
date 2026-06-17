@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useCart } from "@/store/cart";
 import { formatPrice } from "@/lib/utils";
+import { startCheckout } from "@/lib/commerce";
 
 export default function CartDrawer() {
   const { isOpen, close, lines, remove, setQty, subtotal, count } = useCart();
@@ -119,11 +120,7 @@ export default function CartDrawer() {
                   </p>
                   <button
                     className="btn-neon mt-5 w-full"
-                    onClick={() =>
-                      alert(
-                        "Checkout is wired in later — Printful/Shopify handoff goes here."
-                      )
-                    }
+                    onClick={() => startCheckout(lines)}
                   >
                     Checkout — placeholder
                   </button>
