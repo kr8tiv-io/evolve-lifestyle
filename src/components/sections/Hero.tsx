@@ -5,8 +5,8 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Magnetic from "@/components/ui/Magnetic";
+import { getLenis } from "@/components/providers/SmoothScroll";
 
-// Three.js scene is client-only; never SSR'd.
 const Hero3D = dynamic(() => import("@/components/three/Hero3D"), {
   ssr: false,
   loading: () => <div className="absolute inset-0 bg-void" />,
@@ -24,18 +24,38 @@ export default function Hero() {
 
   const word = "EVOLVE".split("");
 
+  const jumpDown = () => {
+    const lenis = getLenis();
+    const target = window.innerHeight * 0.98;
+    if (lenis) lenis.scrollTo(target, { duration: 1.4 });
+    else window.scrollTo({ top: target, behavior: "smooth" });
+  };
+
   return (
     <section
       ref={ref}
+      data-section="Hero"
       className="relative h-[100svh] w-full overflow-hidden"
     >
-      {/* 3D canvas */}
       <motion.div style={{ scale }} className="absolute inset-0">
         <Hero3D />
       </motion.div>
 
-      {/* gradient floor so text sits on dark */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-void/50 via-transparent to-void" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-void/40 via-transparent to-void" />
+
+      {/* corner anchors */}
+      <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
+        <div className="frame flex h-full flex-col justify-between py-[120px]">
+          <div className="flex justify-end">
+            <span className="font-mono text-[0.6rem] uppercase leading-relaxed tracking-tracked text-silver-dim">
+              Est. Alberta<br />N53° · Boreal Void
+            </span>
+          </div>
+        </div>
+        <span className="absolute right-6 top-1/2 -translate-y-1/2 rotate-90 font-mono text-[0.58rem] uppercase tracking-tracked-lg text-silver-dim/70 [transform-origin:right]">
+          Prairies — Peaks — Boreal — Coast
+        </span>
+      </div>
 
       {/* Overlay copy */}
       <motion.div
@@ -52,7 +72,7 @@ export default function Hero() {
             Western-Canadian Outdoor Lifestyle
           </motion.p>
 
-          <h1 className="flex select-none text-display-lg font-medium leading-[0.82] text-silver-bright">
+          <h1 className="flex select-none text-display-lg font-bold leading-[0.82] text-silver-bright [font-feature-settings:'cpsp'_1]">
             {word.map((letter, i) => (
               <span key={i} className="overflow-hidden">
                 <motion.span
@@ -107,19 +127,21 @@ export default function Hero() {
       </motion.div>
 
       {/* scroll cue */}
-      <motion.div
+      <motion.button
         style={{ opacity }}
+        onClick={jumpDown}
+        aria-label="Scroll down"
         className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2"
       >
         <span className="font-mono text-[0.6rem] uppercase tracking-tracked-lg text-silver-dim">
           Scroll
         </span>
-        <motion.div
+        <motion.span
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-          className="h-8 w-px bg-gradient-to-b from-neon to-transparent"
+          className="block h-8 w-px bg-gradient-to-b from-neon to-transparent"
         />
-      </motion.div>
+      </motion.button>
     </section>
   );
 }

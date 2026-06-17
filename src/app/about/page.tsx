@@ -29,10 +29,10 @@ export default function AboutPage() {
         </div>
         <div className="frame relative z-10 pb-16">
           <p className="eyebrow mb-6">Est. in the trades · Alberta</p>
-          <h1 className="max-w-5xl text-display font-medium uppercase leading-[0.85] tracking-tightest text-silver-bright">
+          <h1 className="max-w-5xl text-display font-bold uppercase leading-[0.85] tracking-tightest text-silver-bright [font-feature-settings:'cpsp'_1]">
             <RevealWords text="We don't tame the wild." />
             <br />
-            <span className="text-neon">
+            <span className="text-neon text-glow-neon">
               <RevealWords text="We belong to it." delay={0.1} />
             </span>
           </h1>

@@ -52,7 +52,7 @@ export default function Header() {
                   className="group relative font-mono text-[0.72rem] uppercase tracking-tracked text-silver transition-colors hover:text-silver-bright"
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 h-px w-0 bg-neon transition-all duration-500 ease-evolve group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 h-px w-0 bg-neon shadow-[0_0_10px_rgba(0,255,65,0.7)] transition-all duration-500 ease-evolve group-hover:w-full" />
                 </Link>
               </Magnetic>
             ))}

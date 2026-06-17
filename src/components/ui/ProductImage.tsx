@@ -31,20 +31,17 @@ export default function ProductImage({
 
   // Cache race: a local/cached image can finish loading before React attaches
   // onLoad, so the event never fires. Check `complete` on mount and reveal it.
+  // (Images are self-hosted, so a genuinely missing file fires onError
+  // instantly — no time-based fallback needed, which would otherwise punish a
+  // merely-slow connection by hiding an image that was about to arrive.)
   useEffect(() => {
-    if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) {
-      setLoaded(true);
+    const img = imgRef.current;
+    if (!img) return;
+    if (img.complete) {
+      if (img.naturalWidth > 0) setLoaded(true);
+      else setFailed(true);
     }
   }, [src]);
-
-  // Robustness: if the image hasn't loaded within a window, fall back to the
-  // brand gradient. Unmounting the <img> also aborts a hung request, so a
-  // slow/offline network never leaves a blank hole.
-  useEffect(() => {
-    if (loaded || failed) return;
-    const t = setTimeout(() => setFailed(true), 8000);
-    return () => clearTimeout(t);
-  }, [loaded, failed]);
 
   return (
     <div
@@ -62,9 +59,14 @@ export default function ProductImage({
           loading={priority ? "eager" : "lazy"}
           onError={() => setFailed(true)}
           onLoad={() => setLoaded(true)}
+          style={{
+            clipPath: loaded ? "inset(0% 0% 0% 0%)" : "inset(0% 0% 100% 0%)",
+            transition:
+              "clip-path 1100ms cubic-bezier(0.16,1,0.3,1), transform 1400ms cubic-bezier(0.16,1,0.3,1), opacity 700ms ease",
+          }}
           className={cn(
-            "h-full w-full object-cover transition-all duration-[1200ms] ease-evolve",
-            loaded ? "scale-100 opacity-100" : "scale-105 opacity-0",
+            "h-full w-full object-cover",
+            loaded ? "scale-100 opacity-100" : "scale-[1.08] opacity-60",
             imgClassName
           )}
         />

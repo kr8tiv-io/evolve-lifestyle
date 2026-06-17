@@ -43,7 +43,6 @@
 }
 
 :root {
-  /* Real font first; high-quality grotesque fallback keeps the build runnable. */
   --font-neue: "Neue Montreal", "Inter", "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, monospace;
 
@@ -54,6 +53,10 @@
   --color-silver: #c9ced4;
 
   --header-h: 84px;
+
+  /* Fluid section rhythm — replaces the ad-hoc vh values */
+  --section-y: clamp(5rem, 12vw, 12rem);
+  --section-y-sm: clamp(3.5rem, 7vw, 7rem);
 }
 
 * {
@@ -71,11 +74,37 @@ body {
   background-color: var(--color-void);
   color: var(--color-silver);
   font-family: var(--font-neue);
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1;
   overflow-x: hidden;
   margin: 0;
 }
 
-/* When Lenis is active */
+/* Site-wide fixed ambient aurora field — the page reads as a lit interior,
+   so flat black never returns as you scroll. Sits behind all content. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 45% at 78% -5%, rgba(0, 255, 65, 0.10), transparent 60%),
+    radial-gradient(55% 40% at 12% 8%, rgba(74, 222, 128, 0.06), transparent 62%),
+    radial-gradient(80% 60% at 50% 108%, rgba(13, 59, 31, 0.55), transparent 70%);
+}
+/* a second, slowly drifting layer for life */
+body::after {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+  background: radial-gradient(40% 30% at 30% 20%, rgba(0, 255, 65, 0.05), transparent 60%);
+  animation: aurora-drift 26s ease-in-out infinite alternate;
+}
+
+/* Lenis */
 html.lenis,
 html.lenis body {
   height: auto;
@@ -101,10 +130,27 @@ html.lenis body {
 }
 ::-webkit-scrollbar-thumb {
   background: #1d2022;
-  border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #2a2e31;
+}
+
+/* Accessible focus — a neon ring, never an invisible outline:none */
+:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Custom cursor: hide native cursor only on real pointer devices */
+@media (hover: hover) and (pointer: fine) {
+  html.has-cursor,
+  html.has-cursor * {
+    cursor: none !important;
+  }
 }
 
 @layer base {
@@ -115,36 +161,60 @@ html.lenis body {
     font-weight: 500;
     text-wrap: balance;
   }
+  p {
+    text-wrap: pretty;
+  }
 }
 
 @layer components {
-  /* Section frame */
   .frame {
     @apply mx-auto w-full max-w-grid px-5 sm:px-8 lg:px-12;
   }
+  /* Narrower reading measure for prose-forward sections */
+  .frame-read {
+    @apply mx-auto w-full px-5 sm:px-8 lg:px-12;
+    max-width: 1200px;
+  }
 
-  /* Eyebrow / tracked label */
   .eyebrow {
     @apply font-mono text-[0.7rem] uppercase tracking-tracked-lg text-neon-soft;
   }
 
-  /* Big editorial heading */
   .heading-xl {
     @apply font-medium uppercase leading-[0.9] tracking-tightest;
   }
 
-  /* Outlined / ghost text */
   .text-outline {
     color: transparent;
     -webkit-text-stroke: 1px rgba(201, 206, 212, 0.32);
   }
 
-  /* Hairline divider */
+  /* Tabular spec numerals (prices, counters, folios) */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1, "kern" 1;
+  }
+
   .hairline {
     @apply h-px w-full bg-white/10;
   }
 
-  /* Lime underline accent */
+  /* Neon that actually emits light */
+  .text-glow-neon {
+    text-shadow: 0 0 18px rgba(0, 255, 65, 0.55), 0 0 42px rgba(0, 255, 65, 0.28);
+  }
+  .text-glow-soft {
+    text-shadow: 0 0 22px rgba(74, 222, 128, 0.35);
+  }
+
+  /* Oversized ghost folio numeral behind a section */
+  .ghost-folio {
+    @apply pointer-events-none select-none font-medium leading-none tracking-tightest;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(201, 206, 212, 0.10);
+    font-size: clamp(8rem, 22vw, 22rem);
+  }
+
   .lime-underline {
     position: relative;
     display: inline-block;
@@ -157,38 +227,68 @@ html.lenis body {
     height: 0.09em;
     width: 100%;
     background: var(--color-lime);
-    box-shadow: 0 0 22px rgba(57, 255, 20, 0.55);
+    box-shadow: 0 0 22px rgba(57, 255, 20, 0.65);
   }
 
   .btn-neon {
-    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-neon/40 bg-neon/[0.06] px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-neon transition-colors duration-500 ease-evolve hover:bg-neon hover:text-black;
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full border border-neon/40 bg-neon/[0.06] px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-neon transition-all duration-500 ease-evolve hover:bg-neon hover:text-black;
+  }
+  .btn-neon:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.45), inset 0 0 14px rgba(0, 255, 65, 0.18);
   }
 
   .btn-ghost {
     @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright transition-colors duration-500 ease-evolve hover:border-white/40;
   }
+
+  /* Animated link underline that wipes in from the left, faint neon glow */
+  .link-underline {
+    @apply relative;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--color-neon);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.6);
+    transition: transform 0.5s cubic-bezier(0.65, 0.05, 0, 1);
+  }
+  .link-underline:hover::after {
+    transform: scaleX(1);
+  }
 }
 
-/* Film grain overlay */
+/* Film grain overlay — coarser + a touch stronger so it actually registers */
 .grain::before {
   content: "";
   position: fixed;
   inset: -50%;
   z-index: 60;
   pointer-events: none;
-  opacity: 0.045;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation: grain-shift 0.5s steps(2) infinite;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 220px 220px;
+  animation: grain-shift 0.55s steps(2) infinite;
 }
 
-/* Vignette */
+/* Vignette — deeper, so the frame holds the eye */
 .vignette::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 55;
   pointer-events: none;
-  background: radial-gradient(120% 120% at 50% 30%, transparent 55%, rgba(0, 0, 0, 0.65) 100%);
+  background: radial-gradient(120% 115% at 50% 32%, transparent 48%, rgba(0, 0, 0, 0.78) 100%);
+}
+
+@keyframes aurora-drift {
+  0% { transform: translate3d(-4%, -2%, 0) scale(1.05); }
+  100% { transform: translate3d(6%, 4%, 0) scale(1.15); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -198,8 +298,12 @@ html.lenis body {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
   .grain::before {
+    animation: none;
+  }
+  body::after {
     animation: none;
   }
 }

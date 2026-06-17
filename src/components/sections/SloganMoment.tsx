@@ -1,12 +1,12 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProductImage from "@/components/ui/ProductImage";
 
 /**
  * Full-bleed cinematic slogan break. Parallax landscape behind a single
- * oversized line, with a quiet supporting note.
+ * oversized line, directionally graded with a neon floor glow.
  */
 export default function SloganMoment({
   slogan = "The world goes soft.",
@@ -26,26 +26,27 @@ export default function SloganMoment({
     target: ref,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
+  const yRaw = useTransform(scrollYProgress, [0, 1], ["-16%", "16%"]);
+  const y = useSpring(yRaw, { stiffness: 80, damping: 30, mass: 0.4 });
 
   return (
     <section
       ref={ref}
-      className="relative flex h-[90vh] items-center justify-center overflow-hidden"
+      data-section="Slogan"
+      className="relative flex h-[92vh] items-center justify-center overflow-hidden"
     >
       <motion.div style={{ y }} className="absolute inset-0 scale-125">
-        <ProductImage
-          src={image}
-          alt=""
-          tone={tone}
-          className="h-full w-full"
-        />
+        <ProductImage src={image} alt="" tone={tone} className="h-full w-full" priority />
       </motion.div>
-      <div className="absolute inset-0 bg-void/60" />
+
+      {/* directional cinematic grade — dark from the left + floor, clear top-right */}
+      <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(5,5,5,0.9)_0%,rgba(5,5,5,0.5)_42%,rgba(5,5,5,0.2)_72%,rgba(5,5,5,0.55)_100%)]" />
+      {/* neon floor glow */}
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-[radial-gradient(60%_100%_at_50%_120%,rgba(0,255,65,0.16),transparent_70%)]" />
       <div className="vignette absolute inset-0" />
 
       <div className="relative z-10 px-6 text-center">
-        <h2 className="text-[clamp(2.5rem,8vw,7rem)] font-medium uppercase leading-[0.9] tracking-tightest text-silver-bright">
+        <h2 className="text-[clamp(2.5rem,8vw,7.5rem)] font-medium uppercase leading-[0.88] tracking-tightest text-silver-bright">
           <motion.span
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -60,12 +61,12 @@ export default function SloganMoment({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-            className="block text-neon"
+            className="block font-bold text-neon text-glow-neon"
           >
             {emphasis}
           </motion.span>
         </h2>
-        <p className="mt-6 font-mono text-[0.72rem] uppercase tracking-tracked-lg text-silver">
+        <p className="mt-7 font-mono text-[0.72rem] uppercase tracking-tracked-lg text-silver">
           {note}
         </p>
       </div>

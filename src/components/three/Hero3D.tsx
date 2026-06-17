@@ -2,6 +2,7 @@
 
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
 
 /* ------------------------------------------------------------------ *
@@ -36,24 +37,42 @@ float fbm(vec2 p){
 `;
 
 /* ------------------------------------------------------------------ *
- * Aurora curtains — flowing neon bands far behind the scene.
+ * Aurora curtains — spectral, with vertical ray striations and two
+ * parallax layers for depth. Bright tips cross the bloom threshold.
  * ------------------------------------------------------------------ */
-function Aurora() {
+function AuroraLayer({
+  z,
+  scaleArr,
+  speed,
+  intensity,
+  colorA,
+  colorB,
+}: {
+  z: number;
+  scaleArr: [number, number, number];
+  speed: number;
+  intensity: number;
+  colorA: string;
+  colorB: string;
+}) {
   const mat = useRef<THREE.ShaderMaterial>(null);
   const uniforms = useMemo(
     () => ({
       uTime: { value: 0 },
-      uColorA: { value: new THREE.Color("#00ff41") },
-      uColorB: { value: new THREE.Color("#0b6b3a") },
+      uSpeed: { value: speed },
+      uIntensity: { value: intensity },
+      uColorA: { value: new THREE.Color(colorA) },
+      uColorB: { value: new THREE.Color(colorB) },
+      uColorTip: { value: new THREE.Color("#aaffcc") },
     }),
-    []
+    [speed, intensity, colorA, colorB]
   );
   useFrame((_, dt) => {
     if (mat.current) mat.current.uniforms.uTime.value += dt;
   });
 
   return (
-    <mesh position={[0, 1.6, -7]} scale={[20, 9, 1]}>
+    <mesh position={[0, 1.7, z]} scale={scaleArr}>
       <planeGeometry args={[1, 1, 1, 1]} />
       <shaderMaterial
         ref={mat}
@@ -69,21 +88,25 @@ function Aurora() {
           SNOISE +
           /* glsl */ `
           varying vec2 vUv;
-          uniform float uTime;
-          uniform vec3 uColorA;
-          uniform vec3 uColorB;
+          uniform float uTime; uniform float uSpeed; uniform float uIntensity;
+          uniform vec3 uColorA; uniform vec3 uColorB; uniform vec3 uColorTip;
           void main(){
             vec2 uv=vUv;
-            float t=uTime*0.06;
-            // vertical flowing curtains
+            float t=uTime*uSpeed;
             float bands=fbm(vec2(uv.x*3.0, uv.y*1.2 - t*2.0));
             float curtain=fbm(vec2(uv.x*6.0 + bands*0.6 + t, uv.y*0.6));
             float intensity=smoothstep(0.0,1.0,curtain*0.5+0.5);
-            // fade top & bottom
-            float vmask=smoothstep(0.0,0.35,uv.y)*smoothstep(1.0,0.55,uv.y);
+            // fine vertical ray striations
+            float rays=0.5+0.5*sin((uv.x*120.0)+bands*6.0+t*3.0);
+            rays=mix(1.0, rays, 0.35);
+            intensity*=rays;
+            // fade top & bottom into the void
+            float vmask=smoothstep(0.0,0.4,uv.y)*smoothstep(1.0,0.5,uv.y);
             intensity*=vmask;
+            // spectral gradient: base -> green -> bright teal tip with height
             vec3 col=mix(uColorB,uColorA,intensity);
-            float alpha=intensity*0.55;
+            col=mix(col,uColorTip,pow(intensity,3.0)*0.8);
+            float alpha=intensity*uIntensity;
             gl_FragColor=vec4(col,alpha);
           }
         `
@@ -94,14 +117,14 @@ function Aurora() {
 }
 
 /* ------------------------------------------------------------------ *
- * Boreal terrain — displaced wireframe ridges receding to the horizon.
+ * Boreal terrain — displaced wireframe ridges, glowing crest.
  * ------------------------------------------------------------------ */
 function Terrain() {
   const mat = useRef<THREE.ShaderMaterial>(null);
   const uniforms = useMemo(
     () => ({
       uTime: { value: 0 },
-      uColor: { value: new THREE.Color("#1f6b3d") },
+      uColor: { value: new THREE.Color("#15512e") },
       uRim: { value: new THREE.Color("#39ff14") },
     }),
     []
@@ -130,9 +153,8 @@ function Terrain() {
             float ridge=fbm(vec2(p.x*0.18, p.y*0.18 + uTime*0.04));
             float detail=fbm(vec2(p.x*0.6, p.y*0.6 - uTime*0.02))*0.35;
             float h=(ridge+detail);
-            // valley down the centre, peaks at edges
             h*=smoothstep(0.0,5.0,abs(p.x))*1.6+0.4;
-            p.z+=h*1.7;
+            p.z+=h*1.8;
             vH=h;
             gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);
           }
@@ -144,12 +166,12 @@ function Terrain() {
           uniform vec3 uColor;
           uniform vec3 uRim;
           void main(){
-            float peak=smoothstep(0.4,1.4,vH);
-            vec3 col=mix(uColor,uRim,peak);
-            // fade into the void with depth (uv.y -> horizon)
+            float peak=smoothstep(0.4,1.5,vH);
+            // crest glows hot enough to catch bloom
+            vec3 col=mix(uColor,uRim,peak)*(1.0+peak*1.4);
             float depthFade=smoothstep(0.0,0.55,vUv.y);
             float nearFade=smoothstep(1.0,0.7,vUv.y);
-            float a=depthFade*nearFade*(0.16+peak*0.6);
+            float a=depthFade*nearFade*(0.16+peak*0.7);
             gl_FragColor=vec4(col,a);
           }
         `}
@@ -159,9 +181,9 @@ function Terrain() {
 }
 
 /* ------------------------------------------------------------------ *
- * Drifting snow / ember particle field.
+ * Drifting snow / ember particle field with subtle twinkle.
  * ------------------------------------------------------------------ */
-function Particles({ count = 900 }: { count?: number }) {
+function Particles({ count = 1000 }: { count?: number }) {
   const ref = useRef<THREE.Points>(null);
   const { positions, speeds } = useMemo(() => {
     const positions = new Float32Array(count * 3);
@@ -175,7 +197,7 @@ function Particles({ count = 900 }: { count?: number }) {
     return { positions, speeds };
   }, [count]);
 
-  useFrame((_, dt) => {
+  useFrame((state, dt) => {
     const pts = ref.current;
     if (!pts) return;
     const arr = pts.geometry.attributes.position.array as Float32Array;
@@ -186,6 +208,8 @@ function Particles({ count = 900 }: { count?: number }) {
     }
     pts.geometry.attributes.position.needsUpdate = true;
     pts.rotation.y += dt * 0.01;
+    const m = pts.material as THREE.PointsMaterial;
+    m.opacity = 0.55 + Math.sin(state.clock.elapsedTime * 1.5) * 0.12;
   });
 
   return (
@@ -200,7 +224,7 @@ function Particles({ count = 900 }: { count?: number }) {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={0.028}
+        size={0.03}
         color="#d8f5e2"
         transparent
         opacity={0.7}
@@ -213,22 +237,32 @@ function Particles({ count = 900 }: { count?: number }) {
 }
 
 /* ------------------------------------------------------------------ *
- * Camera rig — slow drift + gentle mouse parallax.
+ * Camera rig — slow drift + mouse parallax + scroll dolly.
  * ------------------------------------------------------------------ */
 function Rig() {
   const { camera, pointer } = useThree();
   useFrame((state) => {
     const t = state.clock.elapsedTime;
+    const scroll =
+      typeof window !== "undefined"
+        ? Math.min(1, window.scrollY / Math.max(1, window.innerHeight))
+        : 0;
     const targetX = pointer.x * 0.6 + Math.sin(t * 0.1) * 0.2;
-    const targetY = 0.5 + pointer.y * 0.3 + Math.cos(t * 0.12) * 0.12;
+    const targetY = 0.5 + pointer.y * 0.3 + Math.cos(t * 0.12) * 0.12 - scroll * 0.8;
+    const targetZ = 6.2 - scroll * 1.6; // dolly forward on scroll
     camera.position.x += (targetX - camera.position.x) * 0.03;
     camera.position.y += (targetY - camera.position.y) * 0.03;
-    camera.lookAt(0, 0.4, -3);
+    camera.position.z += (targetZ - camera.position.z) * 0.04;
+    camera.lookAt(0, 0.4 - scroll * 0.4, -3);
   });
   return null;
 }
 
 export default function Hero3D() {
+  const reduced =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   return (
     <Canvas
       className="!absolute inset-0"
@@ -236,12 +270,42 @@ export default function Hero3D() {
       dpr={[1, 1.8]}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
     >
-      <fog attach="fog" args={["#050505", 7, 17]} />
+      <fogExp2 attach="fog" args={["#050505", 0.052]} />
       <ambientLight intensity={0.4} />
-      <Aurora />
+
+      <AuroraLayer
+        z={-7}
+        scaleArr={[20, 9, 1]}
+        speed={0.06}
+        intensity={0.55}
+        colorA="#00ff41"
+        colorB="#0b6b3a"
+      />
+      {/* second, slower, deeper curtain for parallax depth */}
+      <AuroraLayer
+        z={-10}
+        scaleArr={[28, 11, 1]}
+        speed={0.035}
+        intensity={0.3}
+        colorA="#23c0ff"
+        colorB="#0a3b52"
+      />
+
       <Terrain />
       <Particles />
       <Rig />
+
+      {!reduced && (
+        <EffectComposer multisampling={0}>
+          <Bloom
+            mipmapBlur
+            intensity={0.85}
+            luminanceThreshold={0.45}
+            luminanceSmoothing={0.3}
+            radius={0.72}
+          />
+        </EffectComposer>
+      )}
     </Canvas>
   );
 }

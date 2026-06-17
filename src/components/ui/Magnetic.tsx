@@ -1,11 +1,12 @@
 "use client";
 
-import { ReactNode, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { ReactNode, useRef } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 /**
- * Magnetic hover — the element drifts toward the cursor, agency-style.
- * Wrap buttons, nav links, logo, the cart icon.
+ * Magnetic hover — the element drifts toward the cursor with real spring mass.
+ * Uses motion values (no per-frame React state) so it stays buttery.
+ * Tagged data-cursor="magnetic" so the custom cursor can react to it.
  */
 export default function Magnetic({
   children,
@@ -17,28 +18,32 @@ export default function Magnetic({
   className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const x = useSpring(mx, { stiffness: 150, damping: 15, mass: 0.1 });
+  const y = useSpring(my, { stiffness: 150, damping: 15, mass: 0.1 });
 
   const handleMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = ref.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
-    const x = (e.clientX - (rect.left + rect.width / 2)) * strength;
-    const y = (e.clientY - (rect.top + rect.height / 2)) * strength;
-    setPos({ x, y });
+    mx.set((e.clientX - (rect.left + rect.width / 2)) * strength);
+    my.set((e.clientY - (rect.top + rect.height / 2)) * strength);
   };
 
-  const reset = () => setPos({ x: 0, y: 0 });
+  const reset = () => {
+    mx.set(0);
+    my.set(0);
+  };
 
   return (
     <motion.div
       ref={ref}
+      data-cursor="magnetic"
       onMouseMove={handleMove}
       onMouseLeave={reset}
-      animate={{ x: pos.x, y: pos.y }}
-      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+      style={{ x, y, display: "inline-block" }}
       className={className}
-      style={{ display: "inline-block" }}
     >
       {children}
     </motion.div>

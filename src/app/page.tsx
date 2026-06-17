@@ -5,6 +5,7 @@ import BrandPillars from "@/components/sections/BrandPillars";
 import SloganMoment from "@/components/sections/SloganMoment";
 import Lookbook from "@/components/sections/Lookbook";
 import Marquee from "@/components/ui/Marquee";
+import SectionDivider from "@/components/ui/SectionDivider";
 import { MARQUEE_LINES } from "@/lib/slogans";
 
 export default function HomePage() {
@@ -12,7 +13,8 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <div className="border-y border-white/10 py-6">
+      <div className="relative border-y border-white/10 py-6">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_120%_at_50%_50%,rgba(0,255,65,0.05),transparent_70%)]" />
         <Marquee
           items={MARQUEE_LINES}
           className="text-lg font-medium uppercase tracking-[0.18em] text-silver-bright/80"
@@ -23,9 +25,13 @@ export default function HomePage() {
 
       <FeaturedDrop />
 
+      <SectionDivider label="N53° — Boreal" />
+
       <SloganMoment />
 
       <BrandPillars />
+
+      <SectionDivider label="The Lookbook" />
 
       <Lookbook />
 

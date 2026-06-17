@@ -1,22 +1,34 @@
 "use client";
 
 import Link from "next/link";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import EvolveLogo from "@/components/ui/EvolveLogo";
-import Marquee from "@/components/ui/Marquee";
 import { RevealWords } from "@/components/ui/Reveal";
-import { MARQUEE_LINES } from "@/lib/slogans";
 
 export default function Footer() {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end end"],
+  });
+  const markY = useTransform(scrollYProgress, [0, 1], ["18%", "0%"]);
+  const markOpacity = useTransform(scrollYProgress, [0, 0.7], [0, 0.9]);
+
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-void pt-20">
+    <footer
+      ref={ref}
+      data-section="Footer"
+      className="relative overflow-hidden border-t border-white/10 pt-24"
+    >
       <div className="frame">
         <RevealWords
           text="Proud of where we came from."
-          className="block text-display-sm font-medium uppercase tracking-tightest text-silver-bright"
+          className="block text-display-sm font-bold uppercase tracking-tightest text-silver-bright"
         />
         <RevealWords
           text="Hungry for where we're headed."
-          className="mt-1 block text-display-sm font-medium uppercase tracking-tightest text-silver/40"
+          className="mt-1 block text-display-sm font-light italic tracking-tight text-silver/70"
           delay={0.1}
         />
 
@@ -58,7 +70,8 @@ export default function Footer() {
               href="https://www.evolveecoblasting.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 font-mono text-[0.7rem] uppercase tracking-tracked text-silver-bright transition-colors hover:text-neon"
+              data-cursor="magnetic"
+              className="link-underline mt-4 inline-flex items-center gap-2 font-mono text-[0.7rem] uppercase tracking-tracked text-silver-bright transition-colors hover:text-neon"
             >
               evolveecoblasting.com
               <span aria-hidden>→</span>
@@ -72,26 +85,24 @@ export default function Footer() {
             Alberta
           </p>
           <div className="flex gap-6 font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
-            <Link href="/about" className="hover:text-neon">
-              Shipping
-            </Link>
-            <Link href="/about" className="hover:text-neon">
-              Returns
-            </Link>
-            <Link href="/about" className="hover:text-neon">
-              Contact
-            </Link>
+            <Link href="/about" className="link-underline hover:text-neon">Shipping</Link>
+            <Link href="/about" className="link-underline hover:text-neon">Returns</Link>
+            <Link href="/about" className="link-underline hover:text-neon">Contact</Link>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6">
-        <Marquee
-          items={MARQUEE_LINES}
-          speed="slow"
-          className="font-medium uppercase tracking-[0.2em] text-silver/10"
+      {/* Giant scroll-reactive wordmark payoff — bleeds off the bottom edge */}
+      <motion.div
+        style={{ y: markY, opacity: markOpacity }}
+        className="pointer-events-none mt-6 flex justify-center"
+        aria-hidden
+      >
+        <EvolveLogo
+          variant="white"
+          className="h-auto w-[112%] max-w-none translate-y-[18%] opacity-90"
         />
-      </div>
+      </motion.div>
     </footer>
   );
 }
@@ -113,7 +124,7 @@ function FooterCol({
           <li key={l.label}>
             <Link
               href={l.href}
-              className="text-sm text-silver-dim transition-colors hover:text-silver-bright"
+              className="link-underline text-sm text-silver-dim transition-colors hover:text-silver-bright"
             >
               {l.label}
             </Link>

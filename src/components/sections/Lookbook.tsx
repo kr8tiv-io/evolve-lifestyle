@@ -23,7 +23,7 @@ export default function Lookbook() {
   const x = useTransform(scrollYProgress, [0, 1], ["2%", "-62%"]);
 
   return (
-    <section ref={ref} className="relative h-[280vh]">
+    <section ref={ref} data-section="Lookbook" className="relative h-[280vh]">
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
         <div className="frame mb-12 flex items-end justify-between">
           <div>

@@ -10,6 +10,6 @@ export function formatPrice(cents: number, currency = "CAD") {
     style: "currency",
     currency,
     minimumFractionDigits: 0,
-    maximumFractionDigits: 2,
+    maximumFractionDigits: 0,
   }).format(cents / 100);
 }

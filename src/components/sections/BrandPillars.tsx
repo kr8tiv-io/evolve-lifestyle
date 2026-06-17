@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Reveal, RevealWords } from "@/components/ui/Reveal";
 import ProductImage from "@/components/ui/ProductImage";
 
@@ -46,7 +46,7 @@ const PILLARS: Pillar[] = [
 
 export default function BrandPillars() {
   return (
-    <section className="py-[10vh]">
+    <section data-section="Stories" className="py-[var(--section-y-sm)]">
       <div className="frame mb-20">
         <p className="eyebrow mb-5">What We're Made Of</p>
         <RevealWords
@@ -69,7 +69,8 @@ function PillarPanel({ pillar, flip }: { pillar: Pillar; flip: boolean }) {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const yRaw = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const y = useSpring(yRaw, { stiffness: 80, damping: 30, mass: 0.4 });
   const imgScale = useTransform(scrollYProgress, [0, 1], [1.15, 1]);
 
   return (
@@ -94,8 +95,11 @@ function PillarPanel({ pillar, flip }: { pillar: Pillar; flip: boolean }) {
         </span>
       </div>
 
-      <motion.div style={{ y }} className="[direction:ltr]">
-        <p className="font-mono text-[0.7rem] uppercase tracking-tracked text-neon-soft">
+      <motion.div style={{ y }} className="relative [direction:ltr]">
+        <span className="ghost-folio absolute -top-[0.4em] right-0 hidden lg:block">
+          {pillar.no}
+        </span>
+        <p className="relative font-mono text-[0.7rem] uppercase tracking-tracked text-neon-soft">
           Chapter {pillar.no}
         </p>
         <h3 className="mt-4 text-[clamp(2rem,4vw,3.4rem)] font-medium uppercase leading-[0.95] tracking-tightest text-silver-bright">
