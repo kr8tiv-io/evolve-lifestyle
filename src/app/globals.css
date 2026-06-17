@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   NEUE MONTREAL — real font loads from /public/fonts when present.
+   See public/fonts/README.md. Falls back gracefully until then.
+   ============================================================ */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* Real font first; high-quality grotesque fallback keeps the build runnable. */
+  --font-neue: "Neue Montreal", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, monospace;
+
+  --color-void: #050505;
+  --color-neon: #00ff41;
+  --color-neon-soft: #4ade80;
+  --color-lime: #39ff14;
+  --color-silver: #c9ced4;
+
+  --header-h: 84px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: auto; /* Lenis owns smooth scroll */
+}
+
+body {
+  background-color: var(--color-void);
+  color: var(--color-silver);
+  font-family: var(--font-neue);
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* When Lenis is active */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+::selection {
+  background: var(--color-neon);
+  color: #000;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d2022;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2e31;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 500;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Section frame */
+  .frame {
+    @apply mx-auto w-full max-w-grid px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Eyebrow / tracked label */
+  .eyebrow {
+    @apply font-mono text-[0.7rem] uppercase tracking-tracked-lg text-neon-soft;
+  }
+
+  /* Big editorial heading */
+  .heading-xl {
+    @apply font-medium uppercase leading-[0.9] tracking-tightest;
+  }
+
+  /* Outlined / ghost text */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(201, 206, 212, 0.32);
+  }
+
+  /* Hairline divider */
+  .hairline {
+    @apply h-px w-full bg-white/10;
+  }
+
+  /* Lime underline accent */
+  .lime-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .lime-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.12em;
+    height: 0.09em;
+    width: 100%;
+    background: var(--color-lime);
+    box-shadow: 0 0 22px rgba(57, 255, 20, 0.55);
+  }
+
+  .btn-neon {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-neon/40 bg-neon/[0.06] px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-neon transition-colors duration-500 ease-evolve hover:bg-neon hover:text-black;
+  }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright transition-colors duration-500 ease-evolve hover:border-white/40;
+  }
+}
+
+/* Film grain overlay */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain-shift 0.5s steps(2) infinite;
+}
+
+/* Vignette */
+.vignette::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  pointer-events: none;
+  background: radial-gradient(120% 120% at 50% 30%, transparent 55%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .grain::before {
+    animation: none;
+  }
+}
