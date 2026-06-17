@@ -1,57 +1,48 @@
 # Bringing EVOLVE online
 
-Two ways the site goes public. The tunnel is **live now**; Vercel is the
-permanent home and needs one Matt login.
+## Status
+- **GitHub:** https://github.com/kr8tiv-ai/evolve-lifestyle (private, pushed)
+- **Live now (interim):** https://yards-raises-feof-upload.trycloudflare.com
+  — production build via a Cloudflare tunnel off this PC. Stays up while the PC
+  + the `:3000` server run; the URL changes if the tunnel restarts.
 
 ---
 
-## A. Interim public link (LIVE NOW — no login)
+## Permanent host — Vercel (recommended, free, auto-deploy from GitHub)
 
-A Cloudflare quick tunnel exposes the running site at a public HTTPS URL:
+Next.js is Vercel's own framework: zero-config, global CDN, auto HTTPS, and a
+deploy on every `git push`. **One owner step (only Todd can do the login):**
 
-> **https://yards-raises-feof-upload.trycloudflare.com**
+1. Go to **vercel.com** → sign in **with GitHub** (the `kr8tiv-ai` account/org).
+2. **Add New… → Project → Import** `kr8tiv-ai/evolve-lifestyle`.
+3. Framework auto-detects **Next.js** → **Deploy**. Done — every push to `main`
+   now auto-deploys, and you get a permanent `*.vercel.app` URL.
 
-- Works on any phone/browser, anywhere — share it.
-- It stays up while **this PC is on** and the `cloudflared` + dev/prod server
-  are running. It's an *interim* link (the URL changes if the tunnel restarts).
-- To restart it later: `C:\tmp\tools\cloudflared.exe tunnel --url http://localhost:3000`
-  (after starting the site with `npm run dev` or `npm run start`).
+(Private repo: during sign-in, grant Vercel access to the `kr8tiv-ai` org so it
+can read the repo.)
 
----
-
-## B. Vercel — the proper, permanent deploy (one Matt step)
-
-Next.js is Vercel's own framework, so this is the cleanest permanent host
-(free hobby tier, auto HTTPS, global CDN, a real `*.vercel.app` URL you can
-later point a custom domain at).
-
-**Matt does this once, from the project folder:**
-
-```powershell
-cd C:\Users\lucid\Desktop\evolve-lifestyle
-npx vercel login        # 1) pick GitHub/Email, confirm in browser  ← only step that needs Matt
-npx vercel --prod --yes # 2) builds + deploys, prints the live https URL
-```
-
-Or just double-click **`DEPLOY-TO-VERCEL.bat`** in this folder — it runs both
-commands; you only interact with the login prompt.
-
-- `--yes` accepts the defaults and auto-creates a project named `evolve-lifestyle`.
-- The build runs `next build` on Vercel; the real logo, Neue Montreal fonts, and
-  local images all ship from `/public`, so nothing external is needed.
-- Re-deploy any time with `npx vercel --prod` (or connect the GitHub repo on
-  vercel.com for auto-deploy on every push).
+CLI alternative (same login requirement): from this folder run `npx vercel login`
+then `npx vercel --prod`, or double-click `DEPLOY-TO-VERCEL.bat`.
 
 ### Custom domain (later)
-In the Vercel dashboard → Project → Settings → Domains, add e.g.
-`shop.evolveecoblasting.com` (or a new `evolveoutdoors.ca`) and follow the DNS
-records it shows.
+Vercel → Project → Settings → Domains → add e.g. `shop.evolveecoblasting.com` or
+a new `evolveoutdoors.ca`, then set the DNS records it shows.
+
+---
+
+## Hostinger — do we need it? (flagged per request)
+**No — Vercel free tier is the cleaner path for this app, and it's free.** Reasons:
+- This is a Next.js app (App Router, SSG + a few client/runtime bits). Vercel runs
+  it natively with **zero config**; Hostinger would need a Node runtime + a
+  reverse proxy (or a constrained static export) and manual redeploys.
+- Auto-deploy-on-push is built in on Vercel; on Hostinger it's extra plumbing.
+
+**When Hostinger *would* make sense:** if Todd wants everything under the existing
+Hostinger account/billing, or to host it on the **same domain** already managed
+there. In that case it can be deployed via Hostinger's JS-app hosting — say the
+word and I'll wire that path instead. Otherwise: **Vercel.**
 
 ---
 
 ## Netlify (fallback)
-```powershell
-cd C:\Users\lucid\Desktop\evolve-lifestyle
-npx netlify-cli login
-npx netlify-cli deploy --build --prod
-```
+`npx netlify-cli login` then `npx netlify-cli deploy --build --prod`.
