@@ -55,67 +55,6 @@ function makeSpriteTexture() {
 }
 
 /* ------------------------------------------------------------------ *
- * Drifting volumetric FOG — soft fbm sheets rolling across the scene,
- * emulating fog moving through the forest behind. Two parallax layers.
- * ------------------------------------------------------------------ */
-function FogLayer({
-  z,
-  scaleArr,
-  speed,
-  tint,
-  opacity,
-}: {
-  z: number;
-  scaleArr: [number, number, number];
-  speed: number;
-  tint: string;
-  opacity: number;
-}) {
-  const mat = useRef<THREE.ShaderMaterial>(null);
-  const uniforms = useMemo(
-    () => ({
-      uTime: { value: 0 },
-      uSpeed: { value: speed },
-      uTint: { value: new THREE.Color(tint) },
-      uOpacity: { value: opacity },
-    }),
-    [speed, tint, opacity]
-  );
-  useFrame((_, dt) => {
-    if (mat.current) mat.current.uniforms.uTime.value += dt;
-  });
-  return (
-    <mesh position={[0, 0.2, z]} scale={scaleArr}>
-      <planeGeometry args={[1, 1]} />
-      <shaderMaterial
-        ref={mat}
-        transparent
-        depthWrite={false}
-        uniforms={uniforms}
-        vertexShader={`varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`}
-        fragmentShader={
-          SNOISE +
-          /* glsl */ `
-          varying vec2 vUv; uniform float uTime; uniform float uSpeed; uniform vec3 uTint; uniform float uOpacity;
-          void main(){
-            vec2 uv=vUv;
-            float t=uTime*uSpeed;
-            float f=fbm(vec2(uv.x*2.2 - t, uv.y*1.6 + t*0.25));
-            f+=fbm(vec2(uv.x*4.5 + t*0.6, uv.y*3.0))*0.5;
-            float dens=smoothstep(-0.2,1.0,f);
-            // thicker low, thinner high — fog sits in the valley
-            dens*=smoothstep(1.05,0.2,uv.y);
-            float edge=smoothstep(0.0,0.25,uv.x)*smoothstep(1.0,0.75,uv.x);
-            gl_FragColor=vec4(uTint, dens*uOpacity*edge);
-          }
-        `
-        }
-      />
-    </mesh>
-  );
-}
-
-/* ------------------------------------------------------------------ *
  * Aurora curtains — spectral, ray-striated, MOUSE-REACTIVE (the field
  * flows and brightens toward the cursor). Two parallax layers.
  * ------------------------------------------------------------------ */
@@ -199,49 +138,6 @@ function AuroraLayer({
           }
         `
         }
-      />
-    </mesh>
-  );
-}
-
-/* Subtle glowing boreal ridge at the very bottom — foreground silhouette. */
-function RidgeCrest() {
-  const mat = useRef<THREE.ShaderMaterial>(null);
-  const uniforms = useMemo(
-    () => ({ uTime: { value: 0 }, uRim: { value: new THREE.Color("#39ff14") } }),
-    []
-  );
-  useFrame((_, dt) => {
-    if (mat.current) mat.current.uniforms.uTime.value += dt;
-  });
-  return (
-    <mesh rotation={[-Math.PI / 2.2, 0, 0]} position={[0, -2.1, 0.5]}>
-      <planeGeometry args={[30, 14, 160, 80]} />
-      <shaderMaterial
-        ref={mat}
-        transparent
-        depthWrite={false}
-        uniforms={uniforms}
-        vertexShader={
-          SNOISE +
-          /* glsl */ `
-          varying float vH; varying vec2 vUv; uniform float uTime;
-          void main(){
-            vUv=uv; vec3 p=position;
-            float ridge=fbm(vec2(p.x*0.16, p.y*0.16 + uTime*0.03));
-            ridge*=smoothstep(0.0,5.0,abs(p.x))*1.5+0.5;
-            p.z+=ridge*1.6; vH=ridge;
-            gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);
-          }`
-        }
-        fragmentShader={/* glsl */ `
-          varying float vH; varying vec2 vUv; uniform vec3 uRim;
-          void main(){
-            float peak=smoothstep(0.5,1.5,vH);
-            float depth=smoothstep(0.0,0.5,vUv.y)*smoothstep(1.0,0.7,vUv.y);
-            float a=depth*(0.05+peak*0.55);
-            gl_FragColor=vec4(uRim*(0.4+peak*1.6), a);
-          }`}
       />
     </mesh>
   );
@@ -342,16 +238,11 @@ export default function Hero3D() {
     >
       <ambientLight intensity={0.4} />
 
-      {/* drifting fog sheets over the forest plate */}
-      <FogLayer z={-5.5} scaleArr={[24, 12, 1]} speed={0.05} tint="#9fb7c4" opacity={0.22} />
-      <FogLayer z={-3.5} scaleArr={[20, 9, 1]} speed={0.085} tint="#cdd8de" opacity={0.16} />
+      {/* aurora over the forest-fog footage — mouse reactive, the green borealis */}
+      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.05} intensity={0.6} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} />
+      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.03} intensity={0.3} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} />
 
-      {/* aurora — mouse reactive */}
-      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.06} intensity={0.62} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} />
-      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.035} intensity={0.32} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} />
-
-      <RidgeCrest />
-      <Motes />
+      <Motes count={650} />
       <Rig mouse={mouse} />
 
       {!reduced && (

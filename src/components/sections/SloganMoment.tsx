@@ -41,6 +41,8 @@ export default function SloganMoment({
 
       {/* directional cinematic grade — dark from the left + floor, clear top-right */}
       <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(5,5,5,0.9)_0%,rgba(5,5,5,0.5)_42%,rgba(5,5,5,0.2)_72%,rgba(5,5,5,0.55)_100%)]" />
+      {/* top + bottom void feathers so the section dissolves into its neighbours */}
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#050505_0%,transparent_22%,transparent_74%,#050505_100%)]" />
       {/* neon floor glow */}
       <div className="absolute inset-x-0 bottom-0 h-1/3 bg-[radial-gradient(60%_100%_at_50%_120%,rgba(0,255,65,0.16),transparent_70%)]" />
       <div className="vignette absolute inset-0" />

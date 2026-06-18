@@ -12,20 +12,16 @@ const Hero3D = dynamic(() => import("@/components/three/Hero3D"), {
   loading: () => <div className="absolute inset-0 bg-void" />,
 });
 
-// Misty boreal forest plate. Swap for a real footage loop later by dropping a
-// <video> in place of this image layer — the compositing above it is unchanged.
-const FOREST = "/images/photo-1441974231531-c6227db76b6e.jpg";
-
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 160]);
-  const opacity = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
-  const canvasScale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
-  const plateScale = useTransform(scrollYProgress, [0, 1], [1.1, 1.28]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  const canvasScale = useTransform(scrollYProgress, [0, 1], [1, 1.06]);
+  const videoScale = useTransform(scrollYProgress, [0, 1], [1.05, 1.16]);
 
   const jumpDown = () => {
     const lenis = getLenis();
@@ -38,117 +34,129 @@ export default function Hero() {
     <section
       ref={ref}
       data-section="Hero"
-      className="relative h-[100svh] w-full overflow-hidden"
+      className="relative h-[100svh] w-full overflow-hidden bg-void"
     >
-      {/* forest plate — slow Ken Burns drift through the scene */}
-      <motion.div
-        aria-hidden
-        className="absolute inset-0"
-        style={{ scale: plateScale }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, x: [0, -22, 0] }}
-        transition={{
-          opacity: { duration: 1.6 },
-          x: { duration: 40, repeat: Infinity, ease: "easeInOut" },
-        }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${FOREST})` }}
-        />
-        {/* grade the plate dark + cool so the aurora and chrome read */}
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.7),rgba(5,8,7,0.4)_40%,rgba(5,5,5,0.92))]" />
-        <div className="absolute inset-0 bg-void/30 mix-blend-multiply" />
+      {/* forest-fog footage — the exact treatment from evolveecoblasting.com */}
+      <motion.div style={{ scale: videoScale }} className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/video/hero-forest-poster.jpg"
+          className="h-full w-full object-cover"
+        >
+          <source src="/video/hero-forest.webm" type="video/webm" />
+        </video>
+        {/* cinematic grade so the chrome + aurora read */}
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.72),rgba(5,8,7,0.35)_42%,rgba(5,5,5,0.94))]" />
+        <div className="absolute inset-0 bg-void/25 mix-blend-multiply" />
       </motion.div>
 
-      {/* 3D fog + aurora + motes canvas */}
-      <motion.div style={{ scale: canvasScale }} className="absolute inset-0">
+      {/* fine line texture over the footage (matches the original) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[2] opacity-60 mix-blend-soft-light"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 3px)",
+        }}
+      />
+      {/* top-centre green borealis glow, like the original's radial */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(70%_50%_at_50%_-8%,rgba(0,255,65,0.16),transparent_58%)]"
+      />
+
+      {/* mouse-reactive aurora + motes */}
+      <motion.div style={{ scale: canvasScale }} className="absolute inset-0 z-[3]">
         <Hero3D />
       </motion.div>
 
       {/* corner anchors */}
       <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
         <div className="frame flex h-full items-start justify-between pt-[110px]">
-          <span className="font-mono text-[0.58rem] uppercase leading-relaxed tracking-tracked text-silver-dim/80">
+          <span className="font-mono text-[0.56rem] uppercase leading-relaxed tracking-tracked text-silver-dim/75">
             Est. Alberta
             <br />
             N53° · Boreal Void
           </span>
-          <span className="font-mono text-[0.58rem] uppercase leading-relaxed tracking-tracked text-silver-dim/80 text-right">
+          <span className="text-right font-mono text-[0.56rem] uppercase leading-relaxed tracking-tracked text-silver-dim/75">
             Drop 001
             <br />
             Prairies → Coast
           </span>
         </div>
-        <span className="absolute right-6 top-1/2 -translate-y-1/2 rotate-90 font-mono text-[0.56rem] uppercase tracking-tracked-lg text-silver-dim/60 [transform-origin:right]">
+        <span className="absolute right-6 top-1/2 -translate-y-1/2 rotate-90 font-mono text-[0.54rem] uppercase tracking-tracked-lg text-silver-dim/55 [transform-origin:right]">
           Prairies — Peaks — Boreal — Coast
         </span>
       </div>
 
-      {/* Centerpiece — the trademark emblem */}
+      {/* Centerpiece — restrained, proportional emblem lockup */}
       <motion.div
         style={{ y, opacity }}
         className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"
       >
         <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          className="eyebrow mb-7"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1.1 }}
+          className="eyebrow mb-8"
         >
           Western-Canadian Outdoor Lifestyle
         </motion.p>
 
-        <motion.img
-          src="/brand/evolve-emblem-chrome.png"
-          alt="EVOLVE — trees and summit emblem"
-          width={2668}
-          height={1105}
-          initial={{ opacity: 0, scale: 0.92, filter: "blur(8px)" }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-            filter: "blur(0px)",
-            y: [0, -10, 0],
-          }}
-          transition={{
-            opacity: { duration: 1.3, ease: [0.16, 1, 0.3, 1] },
-            scale: { duration: 1.3, ease: [0.16, 1, 0.3, 1] },
-            filter: { duration: 1.3 },
-            y: { duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1.3 },
-          }}
-          className="w-[min(880px,86vw)] select-none drop-shadow-[0_24px_70px_rgba(0,255,65,0.22)]"
-          draggable={false}
-        />
+        {/* emblem + wordmark = one confident lockup */}
+        <motion.div
+          initial={{ opacity: 0, y: 18, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col items-center"
+        >
+          <img
+            src="/brand/evolve-emblem-chrome.png"
+            alt="EVOLVE — trees and summit emblem"
+            width={2668}
+            height={1105}
+            className="w-[min(420px,62vw)] select-none drop-shadow-[0_18px_50px_rgba(0,255,65,0.18)]"
+            draggable={false}
+          />
+          <img
+            src="/brand/evolve-wordmark-chrome.png"
+            alt="EVOLVE"
+            width={3144}
+            height={501}
+            className="mt-5 w-[min(300px,54vw)] select-none"
+            draggable={false}
+          />
+        </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.95, duration: 1 }}
+          className="mt-7 max-w-md text-base leading-relaxed text-silver"
+        >
+          Prairies to peaks, boreal to coast —{" "}
+          <span className="lime-underline text-silver-bright">apparel earned outside.</span>
+        </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 1 }}
-          className="-mt-2 flex flex-col items-center"
+          transition={{ delay: 1.1, duration: 1 }}
+          className="mt-8 flex gap-3"
         >
-          <h1 className="text-[clamp(1.6rem,4.4vw,3.2rem)] font-bold uppercase tracking-[0.22em] text-silver-bright [font-feature-settings:'cpsp'_1]">
-            EVOLVE
-          </h1>
-          <p className="mt-4 max-w-md text-base leading-relaxed text-silver">
-            Prairies to peaks, boreal to coast —{" "}
-            <span className="lime-underline text-silver-bright">
-              apparel earned outside.
-            </span>
-          </p>
-
-          <div className="mt-8 flex gap-3">
-            <Magnetic strength={0.3}>
-              <Link href="/shop" className="btn-neon">
-                Shop the range
-              </Link>
-            </Magnetic>
-            <Magnetic strength={0.3}>
-              <Link href="/about" className="btn-ghost">
-                Our story
-              </Link>
-            </Magnetic>
-          </div>
+          <Magnetic strength={0.3}>
+            <Link href="/shop" className="btn-neon">
+              Shop the range
+            </Link>
+          </Magnetic>
+          <Magnetic strength={0.3}>
+            <Link href="/about" className="btn-ghost">
+              Our story
+            </Link>
+          </Magnetic>
         </motion.div>
       </motion.div>
 

@@ -110,7 +110,7 @@ export default function PinnedGallery() {
             style={{ opacity: i === 0 ? 1 : 0 }}
           >
             <ProductImage src={p.src} alt={p.kicker} tone={p.tone} className="h-full w-full" priority />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.55),rgba(5,5,5,0.2)_45%,rgba(5,5,5,0.85))]" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,#050505_0%,rgba(5,5,5,0.35)_22%,rgba(5,5,5,0.3)_60%,#050505_100%)]" />
           </div>
         ))}
 
