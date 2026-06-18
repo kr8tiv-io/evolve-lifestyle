@@ -256,8 +256,8 @@ export default function Hero3D() {
       <ambientLight intensity={0.4} />
 
       {/* aurora borealis CONCENTRATED behind the logo (right), mouse-reactive */}
-      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.05} intensity={0.82} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} focus={[0.72, 0.52]} />
-      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.03} intensity={0.4} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} focus={[0.72, 0.52]} />
+      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.05} intensity={0.82} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} focus={[0.74, 0.54]} />
+      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.03} intensity={0.4} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} focus={[0.74, 0.54]} />
 
       <Motes count={520} />
       <Rig mouse={mouse} />

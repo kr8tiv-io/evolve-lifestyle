@@ -37,7 +37,7 @@ export default function Hero() {
       className="relative h-[100svh] w-full overflow-hidden bg-void"
     >
       {/* forest-fog footage — the exact treatment from evolveecoblasting.com */}
-      <motion.div style={{ scale: videoScale }} className="absolute inset-0">
+      <motion.div style={{ scale: videoScale }} className="absolute inset-0 z-[1]">
         <video
           autoPlay
           loop
@@ -52,27 +52,38 @@ export default function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-void to-transparent" />
       </motion.div>
 
-      {/* fine line texture over the footage (matches the original) */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 z-[2] opacity-[0.7] mix-blend-soft-light"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(0deg, rgba(255,255,255,0.055) 0px, rgba(255,255,255,0.055) 1px, transparent 1px, transparent 3px)",
-        }}
-      />
-
-      {/* mouse-reactive aurora, concentrated behind the logo */}
-      <motion.div style={{ scale: canvasScale }} className="absolute inset-0 z-[3]">
+      {/* mouse-reactive aurora + motes — a "cool element", sits BEHIND the lines */}
+      <motion.div style={{ scale: canvasScale }} className="absolute inset-0 z-[2]">
         <Hero3D />
       </motion.div>
 
-      {/* Content — two columns, mirroring the blasting site */}
+      {/* fine dark scanlines — the exact .sd-hero::after treatment, ABOVE the
+          effects so everything reads through them; only logo + text sit on top */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[4]"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(0deg, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 2px, rgba(0,0,0,0.22) 3px, rgba(0,0,0,0.22) 4px)",
+        }}
+      />
+      {/* faint film grain locked to the hero, matching the original's texture */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[4] opacity-[0.05] mix-blend-overlay"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+          backgroundSize: "180px 180px",
+        }}
+      />
+
+      {/* Content — two columns, mirroring the blasting site. z-10: ON TOP of lines */}
       <motion.div
         style={{ y, opacity }}
         className="relative z-10 flex h-full items-center"
       >
-        <div className="frame grid w-full items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+        <div className="frame grid w-full items-center gap-12 lg:grid-cols-2 lg:gap-10">
           {/* LEFT — headline block */}
           <div className="order-2 text-center lg:order-1 lg:text-left">
             <motion.p
@@ -135,32 +146,38 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* RIGHT — the trademark lockup, aurora behind it */}
+          {/* RIGHT — the trademark lockup, centred in its column */}
           <motion.div
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.45, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative order-1 flex items-center justify-center lg:order-2 lg:justify-end"
+            className="relative order-1 flex items-center justify-center lg:order-2"
           >
-            {/* aurora bloom behind the mark (the pseudo-element glow) */}
-            <div
-              aria-hidden
-              className="pointer-events-none absolute aspect-square w-[105%] max-w-[640px] rounded-full bg-[radial-gradient(circle,rgba(0,255,65,0.2),transparent_60%)] blur-2xl"
-            />
             <Link
               href="/"
               aria-label="EVOLVE home"
               data-cursor="magnetic"
-              className="lockup relative block w-[min(540px,82vw)]"
+              className="lockup relative block w-[min(500px,80vw)]"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand/evolve-lockup-xl.png"
-                alt="EVOLVE"
-                width={1600}
-                height={1357}
-                className="w-full select-none"
-                draggable={false}
+              {/* the exact reference lockup shape, filled with the alloy chrome
+                  gradient so it matches the silver/white headline */}
+              <div
+                role="img"
+                aria-label="EVOLVE"
+                className="w-full"
+                style={{
+                  aspectRatio: "1600 / 1357",
+                  WebkitMaskImage: "url(/brand/evolve-lockup-xl.png)",
+                  maskImage: "url(/brand/evolve-lockup-xl.png)",
+                  WebkitMaskSize: "contain",
+                  maskSize: "contain",
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskPosition: "center",
+                  maskPosition: "center",
+                  background:
+                    "linear-gradient(155deg, #ffffff 0%, #e8ebee 38%, #c9ced4 52%, #aeb4ba 60%, #f1f3f5 100%)",
+                }}
               />
             </Link>
           </motion.div>
