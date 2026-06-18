@@ -1,7 +1,7 @@
 # Bringing EVOLVE online
 
 ## Status
-- **GitHub:** https://github.com/kr8tiv-ai/evolve-lifestyle (private, pushed)
+- **GitHub:** https://github.com/kr8tiv-io/evolve-lifestyle (private, pushed)
 - **Live now (interim):** https://yards-raises-feof-upload.trycloudflare.com
   — production build via a Cloudflare tunnel off this PC. Stays up while the PC
   + the `:3000` server run; the URL changes if the tunnel restarts.
@@ -13,12 +13,12 @@
 Next.js is Vercel's own framework: zero-config, global CDN, auto HTTPS, and a
 deploy on every `git push`. **One owner step (only Todd can do the login):**
 
-1. Go to **vercel.com** → sign in **with GitHub** (the `kr8tiv-ai` account/org).
-2. **Add New… → Project → Import** `kr8tiv-ai/evolve-lifestyle`.
+1. Go to **vercel.com** → sign in **with GitHub** (the `kr8tiv-io` account/org).
+2. **Add New… → Project → Import** `kr8tiv-io/evolve-lifestyle`.
 3. Framework auto-detects **Next.js** → **Deploy**. Done — every push to `main`
    now auto-deploys, and you get a permanent `*.vercel.app` URL.
 
-(Private repo: during sign-in, grant Vercel access to the `kr8tiv-ai` org so it
+(Private repo: during sign-in, grant Vercel access to the `kr8tiv-io` org so it
 can read the repo.)
 
 CLI alternative (same login requirement): from this folder run `npx vercel login`
