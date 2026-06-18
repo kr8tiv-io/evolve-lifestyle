@@ -40,7 +40,7 @@ export default function Header() {
         <div className="frame flex h-[84px] items-center justify-between">
           <Magnetic strength={0.25}>
             <Link href="/" className="flex items-center" aria-label="EVOLVE home">
-              <EvolveLogo className="h-4 w-auto sm:h-5" />
+              <EvolveLogo variant="white" className="h-4 w-auto sm:h-5" />
             </Link>
           </Magnetic>
 
@@ -95,7 +95,7 @@ export default function Header() {
             transition={{ duration: 0.6, ease: [0.87, 0, 0.13, 1] }}
           >
             <div className="frame flex h-[84px] items-center justify-between">
-              <EvolveLogo className="h-5" />
+              <EvolveLogo variant="white" className="h-5" />
               <button
                 onClick={() => setMenuOpen(false)}
                 className="font-mono text-[0.72rem] uppercase tracking-tracked text-neon"

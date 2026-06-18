@@ -1,17 +1,107 @@
-# EVOLVE — Lifestyle Storefront (Framework)
+<div align="center">
 
-The flagship e-commerce / lifestyle site for **EVOLVE**, the Western-Canadian
-outdoor apparel arm of Evolve Eco Blasting. Dark, cinematic, Awwwards-grade —
-*prairies to peaks, boreal to coast.*
+# EVOLVE — Lifestyle
 
-This repo is the **framework build**: a runnable, gorgeous front-end with the
-full design system, all key pages, a cinematic Three.js hero, and slick motion —
-wired with placeholder products and structured so Printful / Shopify checkout
-drops in later.
+### Prairies to peaks, boreal to coast.
+**The Western-Canadian outdoor lifestyle brand — the apparel arm of [Evolve Eco Blasting](https://www.evolveecoblasting.com).**
 
-> **Read the brand brief first:** [`BRAND_BRIEF.md`](./BRAND_BRIEF.md) — essence,
+*Apparel earned outside. Built for the bush, made for the long haul.*
+
+</div>
+
+---
+
+## What this is
+
+A cinematic, Awwwards-grade e-commerce storefront for **EVOLVE Lifestyle** — a
+rugged outdoor apparel label rooted in the Canadian backcountry and in the
+blasting company that started it all. Same name, same trademark, same brand
+system as the service company; pointed outward at the country we get to call
+home.
+
+This repository is the **flagship front-end**: a runnable Next.js site with the
+full design system, a cinematic hero, slick scroll-driven motion, and a
+drop-ship-ready commerce layer. Products and checkout are wired as clean,
+swappable placeholders so a Printful / Printify / Shopify integration drops in
+without touching the UI.
+
+> The full brand bible lives in **[`BRAND_BRIEF.md`](./BRAND_BRIEF.md)** —
 > positioning, the three stories, all 20 slogans, customer, voice, visual
-> identity, product lines, and open decisions to sort.
+> identity, product lines, and naming.
+
+---
+
+## The brand, in three lines
+
+**1 · Descended from Survivors.** The hardest people built the coldest country.
+EVOLVE is a quiet salute to grit that doesn't brag.
+
+**2 · One of the Largest Lands on Earth.** Prairies to mountains to boreal to
+coast — getting outside isn't a hobby here, it's an identity.
+
+**3 · Work Hard, Play Hard.** Born in the trades — strip it back, build it
+stronger. Restore what the week wore down, then go earn the weekend.
+
+**Voice:** polite until the work gets hard. Uppercase, tracked, no exclamation
+points, Oxford comma. *Earned outside.*
+
+---
+
+## Visual identity
+
+- **Palette:** Boreal Void `#050505` · Aurora Neon `#00ff41` · Cyber Lime
+  `#39ff14` · Alloy Silver `#c9ced4`. Neon is a scalpel, not a highlighter.
+- **Type:** real **Neue Montreal** (self-hosted), dramatic display scale.
+- **Logo:** the metallic trees-and-summit **E** emblem + EVOLVE wordmark — the
+  same trademark that goes on the garments.
+- **Signature hero:** the real forest-fog footage from the service site, a fine
+  scanline texture, and a **mouse-reactive green borealis aurora** that gathers
+  around the cursor — composited in WebGL (react-three-fiber + bloom) over the
+  footage, with only the logo and headline sitting on top.
+- **Motion:** Lenis smooth scroll, GSAP ScrollTrigger (pins, parallax, splits)
+  layered with Framer Motion reveals, a custom cursor, and a scroll HUD. All
+  reduced-motion gated.
+
+---
+
+## The site
+
+| Route | What |
+|-------|------|
+| `/` | Cinematic hero, manifesto, featured drop, brand pillars, pinned gallery, lookbook, slogan moments |
+| `/shop` | Product grid with category + collection filters |
+| `/shop/[slug]` | Product detail — gallery, variants, add-to-kit |
+| `/about` | The three brand stories + the 20-slogan wall |
+| `/journal` | Editorial / lookbook |
+| — | Persisted cart drawer, custom cursor, scroll HUD |
+
+**Stack:** Next.js 14 (App Router) · React 18 · TypeScript · Tailwind ·
+Framer Motion · GSAP/ScrollTrigger · Three.js (react-three-fiber + postprocessing)
+· Lenis · Zustand.
+
+---
+
+## Direction & roadmap
+
+**Now (framework — done):** design system, cinematic hero, all key pages, motion
+system, placeholder catalogue, clean commerce seam (`src/lib/commerce.ts`),
+zero-console-error production build.
+
+**Next (commerce):**
+- [ ] Connect **Printful / Printify**: map catalogue → `Product`/`ProductVariant`
+      (`externalId`, `variantId`, `sku`) or fetch live in `fetchProducts()`.
+- [ ] Wire **checkout** (`startCheckout`) to a hosted Shopify/Printful session;
+      GST + shipping at checkout.
+- [ ] Real product photography to replace the swappable stock.
+
+**Then (growth):**
+- [ ] First drop merchandised (tees, hoodies, flannels, caps — see brief).
+- [ ] Journal as CMS/MDX; email capture + Klaviyo flows.
+- [ ] Collections mapped to the land: **Prairies / Peaks / Boreal / Coast**.
+- [ ] Custom domain + analytics; conservation tie-in under review.
+
+**Hosting:** Vercel (native Next.js, auto-deploy on push) is the planned home;
+`DEPLOY.md` has the one-step setup.
 
 ---
 
@@ -20,85 +110,27 @@ drops in later.
 ```bash
 npm install
 npm run dev        # http://localhost:3000
+npm run build && npm run start   # production
 ```
 
-Production:
-
-```bash
-npm run build && npm run start
-```
-
-> Tip: don't run `npm run build` while `npm run dev` is live — they share the
-> `.next` folder. Stop dev first.
-
-Requirements: Node 18.18+ (built on Node 24). Windows/macOS/Linux.
-
----
-
-## Tech
-
-- **Next.js 14** (App Router) · **React 18** · **TypeScript** · **Tailwind CSS**
-- **Framer Motion** — page transitions, scroll reveals, magnetic UI
-- **Three.js** via **react-three-fiber** + custom GLSL — the cinematic hero
-  (flowing aurora + displaced boreal terrain + drifting particle field)
-- **Lenis** — smooth scroll · **Zustand** — cart state (persisted)
-
-## Pages
-
-| Route | What |
-|-------|------|
-| `/` | Cinematic 3D hero, manifesto (scroll-scrub), featured drop, brand pillars, slogan moments, horizontal lookbook, footer |
-| `/shop` | Product grid with category + collection filters and sort |
-| `/shop/[slug]` | Product detail — gallery, colour/size variants, add-to-kit, drop-ship-ready data |
-| `/about` | Brand story — the three pillars, slogan wall, links back to the service company |
-| `/journal` | Editorial / lookbook grid (placeholder, CMS/MDX-ready) |
-| Cart drawer | Slide-out, persisted, with a placeholder checkout handoff |
-
-## Architecture
-
-```
-src/
-  app/            routes (layout, home, shop, shop/[slug], about, journal, 404)
-  components/
-    providers/    SmoothScroll (Lenis), PageTransition, Preloader
-    layout/       Header, Footer
-    three/        Hero3D  (r3f scene + GLSL shaders)
-    sections/     Hero, Manifesto, FeaturedDrop, BrandPillars, SloganMoment, Lookbook
-    ui/           EvolveLogo, Magnetic, Reveal, Marquee, ProductImage, ProductCard
-    cart/         CartDrawer
-  lib/            products.ts (catalogue), slogans.ts, utils.ts
-  store/          cart.ts (zustand, persisted)
-```
+Node 18.18+ (built on 24). See **[`DEPLOY.md`](./DEPLOY.md)** to put it online.
 
 ---
 
 ## Real vs. placeholder
 
-| Piece | Status | To finish |
-|-------|--------|-----------|
-| Design system (colour, type scale, motion, layout) | **Real / locked** | — |
-| Page architecture, components, cart, transitions, 3D hero | **Real** | — |
-| **Neue Montreal** font | **REAL** — licensed OTF from the Evolve Drive brand assets, self-hosted in `public/fonts/` | — |
-| **EVOLVE logo** | **REAL** — metallic-chrome + white transparent wordmark PNGs from the Drive "Logos & Media Kit", in `public/brand/` (used in header, footer, mobile menu, preloader) | — |
-| **Imagery** | **Local placeholder** — royalty-free outdoor/wildlife stock bundled in `public/images/` (self-contained, fast, swappable) | Replace with owned/commissioned photography. `ProductImage` falls back to an on-brand gradient if any image is missing, so the page never breaks. |
-| **Products** | **Placeholder catalogue** (`lib/products.ts`) | Shape is drop-ship-ready (externalId / variantId / sku). Swap `getProducts()` for a Printful/Printify/Shopify fetch — UI unchanged. |
-| **Checkout** | **Stubbed** | Wire `CartDrawer` checkout button to Printful/Shopify. Cart data is already structured for it. |
-
-## Wiring up checkout later (drop-ship)
-
-1. Connect Printful/Printify, map their catalogue ids onto `Product.externalId`
-   and `ProductVariant.variantId` in `lib/products.ts` (or fetch them live).
-2. On "Checkout," POST the Zustand cart lines (`useCart`) to your order
-   endpoint / Shopify cart, then redirect to hosted checkout.
-3. That's it — the grid, PDP, variants, and cart already speak the right shape.
+| Real | Placeholder (swappable) |
+|------|-------------------------|
+| Design system, all pages, motion, cinematic hero, cart | Products (`src/lib/products.ts`) |
+| Real EVOLVE logo + Neue Montreal + hero footage | Imagery (royalty-free stock in `public/images`) |
+| Drop-ship-ready data shape | Checkout (stubbed in `src/lib/commerce.ts`) |
 
 ---
 
-## Notes
-
-- Fully responsive; respects `prefers-reduced-motion`.
-- Footer and About link back to **evolveecoblasting.com** (the service company).
-- Brand voice rules (uppercase tracked headings, no exclamation points, Oxford
-  comma) are baked into the copy — keep them when you extend it.
+<div align="center">
 
 *Proud of where we came from. Hungry for where we're headed.*
+
+**[evolveecoblasting.com](https://www.evolveecoblasting.com)** · Serving Edmonton & Greater Alberta
+
+</div>

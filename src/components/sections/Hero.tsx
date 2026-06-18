@@ -84,8 +84,8 @@ export default function Hero() {
         className="relative z-10 flex h-full items-center"
       >
         <div className="frame grid w-full items-center gap-12 lg:grid-cols-2 lg:gap-10">
-          {/* LEFT — headline block */}
-          <div className="order-2 text-center lg:order-1 lg:text-left">
+          {/* LEFT — headline block, pulled toward centre to balance the logo */}
+          <div className="order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
             <motion.p
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}

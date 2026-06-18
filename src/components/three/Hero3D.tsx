@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { KernelSize } from "postprocessing";
@@ -130,11 +130,12 @@ function AuroraLayer({
             vec2 uv=vUv;
             float t=uTime*uSpeed;
             // mouse pulls the flow toward the cursor and adds a glow bloom there
+            // cursor field — the aurora gathers toward and blooms around the cursor
             vec2 toM = uMouse - sUv;
             float md = length(toM);
-            float pull = exp(-md*md*5.0);
-            uv += toM * pull * 0.10;
-            float bands=fbm(vec2(uv.x*3.0, uv.y*1.2 - t*2.0 + pull*0.6));
+            float pull = exp(-md*md*3.2);
+            uv += toM * pull * 0.16; // flow curls in toward the cursor
+            float bands=fbm(vec2(uv.x*3.0, uv.y*1.2 - t*2.0 + pull*0.9));
             float curtain=fbm(vec2(uv.x*6.0 + bands*0.6 + t, uv.y*0.6));
             float intensity=smoothstep(0.0,1.0,curtain*0.5+0.5);
             float rays=0.5+0.5*sin((uv.x*120.0)+bands*6.0+t*3.0);
@@ -142,13 +143,13 @@ function AuroraLayer({
             intensity*=rays;
             float vmask=smoothstep(0.0,0.4,vUv.y)*smoothstep(1.0,0.5,vUv.y);
             intensity*=vmask;
-            intensity+=pull*0.3*vmask; // brighten toward cursor
-            // CONCENTRATE the aurora behind the logo (screen-space focus); fade left
-            // so the headline sits over darker forest, like the reference site
+            // CONCENTRATE the base aurora behind the logo (screen-space focus)
             vec2 d = (sUv - uFocus) * vec2(1.25, 1.0);
             float fd = length(d);
             float fmask = 0.05 + 0.95 * exp(-fd*fd*6.0);
             intensity*=fmask;
+            // cursor bloom ON TOP of the focus mask, so hovering anywhere lights it
+            intensity += pull * 0.6 * vmask;
             vec3 col=mix(uColorB,uColorA,intensity);
             col=mix(col,uColorTip,pow(intensity,3.0)*0.85);
             gl_FragColor=vec4(col, intensity*uIntensity);
@@ -219,18 +220,31 @@ function Motes({ count = 850 }: { count?: number }) {
   );
 }
 
-/* Camera rig — drift + mouse parallax + scroll dolly. */
+/* Camera rig — drift + mouse parallax + scroll dolly. Tracks the cursor at the
+ * window level so the aurora reacts everywhere, even over the headline/logo. */
 function Rig({ mouse }: { mouse: React.MutableRefObject<THREE.Vector2> }) {
-  const { camera, pointer } = useThree();
+  const { camera } = useThree();
+  useEffect(() => {
+    const onMove = (e: PointerEvent) => {
+      mouse.current.set(
+        (e.clientX / window.innerWidth) * 2 - 1,
+        -((e.clientY / window.innerHeight) * 2 - 1)
+      );
+    };
+    window.addEventListener("pointermove", onMove, { passive: true });
+    return () => window.removeEventListener("pointermove", onMove);
+  }, [mouse]);
+
   useFrame((state) => {
     const t = state.clock.elapsedTime;
-    mouse.current.set(pointer.x, pointer.y);
+    const mx = mouse.current.x;
+    const my = mouse.current.y;
     const scroll =
       typeof window !== "undefined"
         ? Math.min(1, window.scrollY / Math.max(1, window.innerHeight))
         : 0;
-    const targetX = pointer.x * 0.5 + Math.sin(t * 0.1) * 0.18;
-    const targetY = 0.5 + pointer.y * 0.25 + Math.cos(t * 0.12) * 0.1 - scroll * 0.7;
+    const targetX = mx * 0.5 + Math.sin(t * 0.1) * 0.18;
+    const targetY = 0.5 + my * 0.25 + Math.cos(t * 0.12) * 0.1 - scroll * 0.7;
     const targetZ = 6.2 - scroll * 1.4;
     camera.position.x += (targetX - camera.position.x) * 0.03;
     camera.position.y += (targetY - camera.position.y) * 0.03;
