@@ -18,10 +18,10 @@ export default function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 110]);
   const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
-  const canvasScale = useTransform(scrollYProgress, [0, 1], [1, 1.06]);
-  const videoScale = useTransform(scrollYProgress, [0, 1], [1.05, 1.16]);
+  const canvasScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
+  const videoScale = useTransform(scrollYProgress, [0, 1], [1.05, 1.14]);
 
   const jumpDown = () => {
     const lenis = getLenis();
@@ -48,116 +48,123 @@ export default function Hero() {
         >
           <source src="/video/hero-forest.webm" type="video/webm" />
         </video>
-        {/* cinematic grade so the chrome + aurora read */}
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.72),rgba(5,8,7,0.35)_42%,rgba(5,5,5,0.94))]" />
-        <div className="absolute inset-0 bg-void/25 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(5,5,5,0.86)_0%,rgba(5,7,6,0.55)_45%,rgba(5,5,5,0.32)_78%,rgba(5,5,5,0.7)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-void to-transparent" />
       </motion.div>
 
       {/* fine line texture over the footage (matches the original) */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 z-[2] opacity-60 mix-blend-soft-light"
+        className="pointer-events-none absolute inset-0 z-[2] opacity-[0.7] mix-blend-soft-light"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 3px)",
+            "repeating-linear-gradient(0deg, rgba(255,255,255,0.055) 0px, rgba(255,255,255,0.055) 1px, transparent 1px, transparent 3px)",
         }}
       />
-      {/* top-centre green borealis glow, like the original's radial */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(70%_50%_at_50%_-8%,rgba(0,255,65,0.16),transparent_58%)]"
-      />
 
-      {/* mouse-reactive aurora + motes */}
+      {/* mouse-reactive aurora, concentrated behind the logo */}
       <motion.div style={{ scale: canvasScale }} className="absolute inset-0 z-[3]">
         <Hero3D />
       </motion.div>
 
-      {/* corner anchors */}
-      <div className="pointer-events-none absolute inset-0 z-10 hidden md:block">
-        <div className="frame flex h-full items-start justify-between pt-[110px]">
-          <span className="font-mono text-[0.56rem] uppercase leading-relaxed tracking-tracked text-silver-dim/75">
-            Est. Alberta
-            <br />
-            N53° · Boreal Void
-          </span>
-          <span className="text-right font-mono text-[0.56rem] uppercase leading-relaxed tracking-tracked text-silver-dim/75">
-            Drop 001
-            <br />
-            Prairies → Coast
-          </span>
-        </div>
-        <span className="absolute right-6 top-1/2 -translate-y-1/2 rotate-90 font-mono text-[0.54rem] uppercase tracking-tracked-lg text-silver-dim/55 [transform-origin:right]">
-          Prairies — Peaks — Boreal — Coast
-        </span>
-      </div>
-
-      {/* Centerpiece — restrained, proportional emblem lockup */}
+      {/* Content — two columns, mirroring the blasting site */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"
+        className="relative z-10 flex h-full items-center"
       >
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1.1 }}
-          className="eyebrow mb-8"
-        >
-          Western-Canadian Outdoor Lifestyle
-        </motion.p>
+        <div className="frame grid w-full items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+          {/* LEFT — headline block */}
+          <div className="order-2 text-center lg:order-1 lg:text-left">
+            <motion.p
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.9 }}
+              className="eyebrow-rule mb-7 justify-center text-silver-bright lg:justify-start"
+            >
+              Western-Canadian Outdoor Lifestyle
+            </motion.p>
 
-        {/* emblem + wordmark = one confident lockup */}
-        <motion.div
-          initial={{ opacity: 0, y: 18, scale: 0.97 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center"
-        >
-          <img
-            src="/brand/evolve-emblem-chrome.png"
-            alt="EVOLVE — trees and summit emblem"
-            width={2668}
-            height={1105}
-            className="w-[min(420px,62vw)] select-none drop-shadow-[0_18px_50px_rgba(0,255,65,0.18)]"
-            draggable={false}
-          />
-          <img
-            src="/brand/evolve-wordmark-chrome.png"
-            alt="EVOLVE"
-            width={3144}
-            height={501}
-            className="mt-5 w-[min(300px,54vw)] select-none"
-            draggable={false}
-          />
-        </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 22 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+              className="glow-headline font-medium uppercase text-silver-bright"
+              style={{
+                fontSize: "clamp(2.6rem, 5.6vw, 5.9rem)",
+                lineHeight: 0.94,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Prairies to peaks,
+              <br />
+              boreal to coast.
+            </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.95, duration: 1 }}
-          className="mt-7 max-w-md text-base leading-relaxed text-silver"
-        >
-          Prairies to peaks, boreal to coast —{" "}
-          <span className="lime-underline text-silver-bright">apparel earned outside.</span>
-        </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 1 }}
+              className="mx-auto mt-6 max-w-xl font-light uppercase text-silver/85 lg:mx-0"
+              style={{
+                fontSize: "1.05rem",
+                letterSpacing: "0.16em",
+                lineHeight: 1.6,
+                textShadow: "0 2px 18px rgba(5,5,5,0.7)",
+              }}
+            >
+              Apparel earned outside — built for the bush, made for the long haul.
+            </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.1, duration: 1 }}
-          className="mt-8 flex gap-3"
-        >
-          <Magnetic strength={0.3}>
-            <Link href="/shop" className="btn-neon">
-              Shop the range
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.85, duration: 1 }}
+              className="mt-9 flex items-center justify-center gap-4 lg:justify-start"
+            >
+              <Magnetic strength={0.3}>
+                <Link href="/shop" className="btn-solid">
+                  Shop the range
+                  <span aria-hidden>↓</span>
+                </Link>
+              </Magnetic>
+              <Magnetic strength={0.3}>
+                <Link href="/about" className="btn-ghost">
+                  Our story
+                </Link>
+              </Magnetic>
+            </motion.div>
+          </div>
+
+          {/* RIGHT — the trademark lockup, aurora behind it */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.45, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            className="relative order-1 flex items-center justify-center lg:order-2 lg:justify-end"
+          >
+            {/* aurora bloom behind the mark (the pseudo-element glow) */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute aspect-square w-[105%] max-w-[640px] rounded-full bg-[radial-gradient(circle,rgba(0,255,65,0.2),transparent_60%)] blur-2xl"
+            />
+            <Link
+              href="/"
+              aria-label="EVOLVE home"
+              data-cursor="magnetic"
+              className="lockup relative block w-[min(540px,82vw)]"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/evolve-lockup-xl.png"
+                alt="EVOLVE"
+                width={1600}
+                height={1357}
+                className="w-full select-none"
+                draggable={false}
+              />
             </Link>
-          </Magnetic>
-          <Magnetic strength={0.3}>
-            <Link href="/about" className="btn-ghost">
-              Our story
-            </Link>
-          </Magnetic>
-        </motion.div>
+          </motion.div>
+        </div>
       </motion.div>
 
       {/* scroll cue */}

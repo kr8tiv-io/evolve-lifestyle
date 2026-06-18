@@ -66,6 +66,7 @@ function AuroraLayer({
   colorA,
   colorB,
   mouse,
+  focus = [0.5, 0.5],
 }: {
   z: number;
   scaleArr: [number, number, number];
@@ -74,6 +75,7 @@ function AuroraLayer({
   colorA: string;
   colorB: string;
   mouse: React.MutableRefObject<THREE.Vector2>;
+  focus?: [number, number];
 }) {
   const mat = useRef<THREE.ShaderMaterial>(null);
   const uniforms = useMemo(
@@ -85,13 +87,19 @@ function AuroraLayer({
       uColorB: { value: new THREE.Color(colorB) },
       uColorTip: { value: new THREE.Color("#b8ffd6") },
       uMouse: { value: new THREE.Vector2(0.5, 0.6) },
+      uFocus: { value: new THREE.Vector2(focus[0], focus[1]) },
+      uResolution: { value: new THREE.Vector2(1, 1) },
     }),
-    [speed, intensity, colorA, colorB]
+    [speed, intensity, colorA, colorB, focus]
   );
+  const { size, gl } = useThree();
   useFrame((_, dt) => {
     if (!mat.current) return;
     mat.current.uniforms.uTime.value += dt;
-    // map mouse (-1..1) to uv space and smooth-follow
+    const dpr = gl.getPixelRatio ? gl.getPixelRatio() : 1;
+    const res = mat.current.uniforms.uResolution.value as THREE.Vector2;
+    res.set(size.width * dpr, size.height * dpr);
+    // map mouse (-1..1) to screen uv (y up) and smooth-follow
     const tx = mouse.current.x * 0.5 + 0.5;
     const ty = mouse.current.y * 0.5 + 0.5;
     const u = mat.current.uniforms.uMouse.value as THREE.Vector2;
@@ -114,15 +122,18 @@ function AuroraLayer({
           /* glsl */ `
           varying vec2 vUv;
           uniform float uTime; uniform float uSpeed; uniform float uIntensity;
-          uniform vec3 uColorA; uniform vec3 uColorB; uniform vec3 uColorTip; uniform vec2 uMouse;
+          uniform vec3 uColorA; uniform vec3 uColorB; uniform vec3 uColorTip;
+          uniform vec2 uMouse; uniform vec2 uFocus; uniform vec2 uResolution;
           void main(){
+            // true screen-space uv (y up) for focus + mouse, decoupled from geometry
+            vec2 sUv = gl_FragCoord.xy / uResolution;
             vec2 uv=vUv;
             float t=uTime*uSpeed;
             // mouse pulls the flow toward the cursor and adds a glow bloom there
-            vec2 toM = uMouse - uv;
+            vec2 toM = uMouse - sUv;
             float md = length(toM);
-            float pull = exp(-md*md*4.0);
-            uv += toM * pull * 0.12;
+            float pull = exp(-md*md*5.0);
+            uv += toM * pull * 0.10;
             float bands=fbm(vec2(uv.x*3.0, uv.y*1.2 - t*2.0 + pull*0.6));
             float curtain=fbm(vec2(uv.x*6.0 + bands*0.6 + t, uv.y*0.6));
             float intensity=smoothstep(0.0,1.0,curtain*0.5+0.5);
@@ -131,7 +142,13 @@ function AuroraLayer({
             intensity*=rays;
             float vmask=smoothstep(0.0,0.4,vUv.y)*smoothstep(1.0,0.5,vUv.y);
             intensity*=vmask;
-            intensity+=pull*0.35*vmask; // brighten toward cursor
+            intensity+=pull*0.3*vmask; // brighten toward cursor
+            // CONCENTRATE the aurora behind the logo (screen-space focus); fade left
+            // so the headline sits over darker forest, like the reference site
+            vec2 d = (sUv - uFocus) * vec2(1.25, 1.0);
+            float fd = length(d);
+            float fmask = 0.05 + 0.95 * exp(-fd*fd*6.0);
+            intensity*=fmask;
             vec3 col=mix(uColorB,uColorA,intensity);
             col=mix(col,uColorTip,pow(intensity,3.0)*0.85);
             gl_FragColor=vec4(col, intensity*uIntensity);
@@ -238,11 +255,11 @@ export default function Hero3D() {
     >
       <ambientLight intensity={0.4} />
 
-      {/* aurora over the forest-fog footage — mouse reactive, the green borealis */}
-      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.05} intensity={0.6} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} />
-      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.03} intensity={0.3} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} />
+      {/* aurora borealis CONCENTRATED behind the logo (right), mouse-reactive */}
+      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.05} intensity={0.82} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} focus={[0.72, 0.52]} />
+      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.03} intensity={0.4} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} focus={[0.72, 0.52]} />
 
-      <Motes count={650} />
+      <Motes count={520} />
       <Rig mouse={mouse} />
 
       {!reduced && (

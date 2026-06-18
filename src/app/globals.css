@@ -241,6 +241,53 @@ html.lenis body {
     @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright transition-colors duration-500 ease-evolve hover:border-white/40;
   }
 
+  /* Solid neon pill — matches evolveecoblasting.com "Find your fix" button */
+  .btn-solid {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full bg-neon font-bold uppercase text-void transition-all duration-300 ease-evolve;
+    padding: 18px 56px;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+  }
+  .btn-solid:hover {
+    box-shadow: 0 0 34px rgba(0, 255, 65, 0.55);
+    transform: translateY(-1px);
+  }
+
+  /* Reference hero headline — white with a soft green bloom, brightens on hover */
+  .glow-headline {
+    text-shadow: 0 0 18px rgba(0, 255, 65, 0.18);
+    transition: text-shadow 0.5s ease, transform 0.5s ease;
+  }
+  .glow-headline:hover {
+    text-shadow: 0 0 26px rgba(0, 255, 65, 0.4), 0 0 64px rgba(0, 255, 65, 0.18);
+  }
+
+  /* Hero logo lockup — rest + hover lifted from evolveecoblasting.com (.sd-logo) */
+  .lockup {
+    transition: transform 0.5s var(--ease, cubic-bezier(0.65, 0.05, 0, 1)), filter 0.5s ease;
+    filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.55));
+    will-change: transform, filter;
+  }
+  .lockup:hover {
+    transform: scale(1.035);
+    filter: drop-shadow(0 18px 50px rgba(0, 0, 0, 0.75))
+      drop-shadow(0 0 40px rgba(0, 255, 65, 0.42));
+  }
+
+  /* Eyebrow with the small green accent rule (left) */
+  .eyebrow-rule {
+    @apply relative flex items-center gap-3 font-medium uppercase text-silver-bright;
+    font-size: 0.78rem;
+    letter-spacing: 0.32em;
+  }
+  .eyebrow-rule::before {
+    content: "";
+    width: 26px;
+    height: 2px;
+    background: var(--color-lime);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+  }
+
   /* Animated link underline that wipes in from the left, faint neon glow */
   .link-underline {
     @apply relative;
