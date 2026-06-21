@@ -48,9 +48,10 @@ export default function Hero() {
         >
           <source src="/video/hero-forest.webm" type="video/webm" />
         </video>
-        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(5,5,5,0.6)_0%,rgba(5,7,6,0.32)_42%,rgba(5,5,5,0.18)_74%,rgba(5,5,5,0.42)_100%)]" />
+        {/* gentle, even grade — only enough to seat the headline, no dark wall */}
+        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(5,5,5,0.42)_0%,rgba(5,7,6,0.16)_44%,rgba(5,5,5,0.06)_72%,rgba(5,5,5,0.2)_100%)]" />
         {/* dissolve the splash into the next section */}
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-void via-void/60 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-t from-void via-void/45 to-transparent" />
       </motion.div>
 
       {/* mouse-reactive aurora + motes — a "cool element", sits BEHIND the lines */}
@@ -82,9 +83,9 @@ export default function Hero() {
       {/* Content — two columns, mirroring the blasting site. z-10: ON TOP of lines */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 flex h-full items-center"
+        className="relative z-10 flex h-full items-center pt-[var(--header-h)] pb-10"
       >
-        <div className="frame grid w-full items-center gap-12 lg:grid-cols-2 lg:gap-10">
+        <div className="frame grid w-full items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
           {/* LEFT — headline block, pulled toward centre to balance the logo */}
           <div className="order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
             <motion.p
@@ -158,7 +159,7 @@ export default function Hero() {
               href="/"
               aria-label="EVOLVE home"
               data-cursor="magnetic"
-              className="lockup relative block w-[min(500px,80vw)]"
+              className="lockup relative block w-[clamp(260px,38vw,600px)]"
             >
               {/* the exact reference lockup shape, filled with the alloy chrome
                   gradient so it matches the silver/white headline */}

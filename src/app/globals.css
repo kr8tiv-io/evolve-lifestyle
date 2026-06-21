@@ -324,14 +324,15 @@ html.lenis body {
   animation: grain-shift 0.55s steps(2) infinite;
 }
 
-/* Vignette — deeper, so the frame holds the eye */
+/* Vignette — a whisper of edge framing only. Kept far out and faint so it
+   never reads as a dark blob in the hero corners (centred, symmetric). */
 .vignette::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 55;
   pointer-events: none;
-  background: radial-gradient(135% 130% at 50% 38%, transparent 70%, rgba(0, 0, 0, 0.42) 100%);
+  background: radial-gradient(150% 150% at 50% 50%, transparent 88%, rgba(0, 0, 0, 0.16) 100%);
 }
 
 @keyframes aurora-drift {
