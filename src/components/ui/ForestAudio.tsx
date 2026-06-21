@@ -66,7 +66,7 @@ export default function ForestAudio() {
           </svg>
         )}
       </button>
-      <span className="font-mono text-[0.66rem] font-semibold uppercase tracking-tracked-lg text-neon">
+      <span className="font-mono text-[0.66rem] font-semibold uppercase tracking-tracked-lg text-black">
         {playing ? "Pause" : "Play"}
       </span>
     </div>

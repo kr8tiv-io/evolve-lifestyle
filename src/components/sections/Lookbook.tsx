@@ -43,24 +43,44 @@ export default function Lookbook() {
       down = false;
       el.classList.remove("cursor-grabbing");
     };
-    // swallow the click that ends a drag so it doesn't navigate
+    // Lenis (smoothWheel) eats every wheel event for vertical page scroll, so a
+    // mouse wheel never reached this horizontal track. Translate wheel delta into
+    // horizontal scroll; once the track hits an edge, let the event through so the
+    // page keeps scrolling normally.
+    const onWheel = (e: WheelEvent) => {
+      const delta = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+      if (!delta) return;
+      const max = el.scrollWidth - el.clientWidth;
+      if (max <= 0) return;
+      const atStart = el.scrollLeft <= 0;
+      const atEnd = el.scrollLeft >= max - 1;
+      if ((delta < 0 && atStart) || (delta > 0 && atEnd)) return; // let the page scroll
+      e.preventDefault();
+      e.stopPropagation();
+      el.scrollLeft += delta;
+    };
+    // swallow only the synthetic click that ends a *mouse drag* (detail > 0) so it
+    // doesn't navigate; keyboard Enter (detail === 0) must always work. Clear `moved`
+    // on every click so a stale flag can't leak into a later keyboard activation.
     const onClick = (e: MouseEvent) => {
-      if (moved) {
+      if (moved && e.detail > 0) {
         e.preventDefault();
         e.stopPropagation();
-        moved = false;
       }
+      moved = false;
     };
 
     el.addEventListener("pointerdown", onDown);
     window.addEventListener("pointermove", onMove);
     window.addEventListener("pointerup", onUp);
     el.addEventListener("click", onClick, true);
+    el.addEventListener("wheel", onWheel, { passive: false });
     return () => {
       el.removeEventListener("pointerdown", onDown);
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
       el.removeEventListener("click", onClick, true);
+      el.removeEventListener("wheel", onWheel);
     };
   }, []);
 
@@ -84,6 +104,7 @@ export default function Lookbook() {
 
       <div
         ref={trackRef}
+        data-lenis-prevent
         className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-5 px-5 pb-2 [scrollbar-width:none] sm:cursor-grab sm:gap-6 sm:scroll-px-8 sm:px-8 lg:scroll-px-12 lg:px-12 [&::-webkit-scrollbar]:hidden"
       >
         {articles.map((a) => (
