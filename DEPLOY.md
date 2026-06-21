@@ -2,9 +2,17 @@
 
 ## Status
 - **GitHub:** https://github.com/kr8tiv-io/evolve-lifestyle (private, pushed)
-- **Live now (interim):** https://yards-raises-feof-upload.trycloudflare.com
+- **Live now (interim):** https://thehun-women-yamaha-carmen.trycloudflare.com
   — production build via a Cloudflare tunnel off this PC. Stays up while the PC
-  + the `:3000` server run; the URL changes if the tunnel restarts.
+  + the `:3000` server run; **the URL changes every time the tunnel restarts**
+  (this is why Vercel below is the real home).
+- **Catalogue:** the real Printful "Evolve" store (32 products) is synced in.
+  Re-sync anytime with `node scripts/sync-printful.mjs` (reads `.env.local`).
+
+> **Printful token:** lives only in `.env.local` (gitignored, never committed).
+> Rotate it in the Printful dashboard if needed; update `.env.local` and re-sync.
+> For a live storefront on Vercel, add `PRINTFUL_TOKEN` + `PRINTFUL_STORE_ID`
+> as Vercel env vars (the catalogue is currently baked at build time).
 
 ---
 
