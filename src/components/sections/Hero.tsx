@@ -83,16 +83,17 @@ export default function Hero() {
       {/* Content — two columns, mirroring the blasting site. z-10: ON TOP of lines */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 flex h-full items-center pt-[var(--header-h)] pb-10"
+        className="relative z-10 flex h-full items-center pt-[var(--header-h)] pb-12 lg:pb-10"
       >
-        <div className="frame grid w-full items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
+        <div className="frame grid w-full items-center gap-5 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
           {/* LEFT — headline block, pulled toward centre to balance the logo */}
           <div className="relative order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
-            {/* mobile-only legibility scrim — soft dark blur behind the text so the
-                splash letters read against the bright aurora (desktop: none) */}
+            {/* mobile-only legibility scrim — a strong dark, blurred panel behind
+                the text so the splash copy reads cleanly against the bright aurora
+                (desktop: none). Opacity alone carries legibility if blur is dropped. */}
             <div
               aria-hidden
-              className="pointer-events-none absolute -inset-x-4 -inset-y-4 -z-10 rounded-3xl bg-void/35 backdrop-blur-[3px] [mask-image:radial-gradient(120%_120%_at_50%_50%,#000_55%,transparent_100%)] lg:hidden"
+              className="pointer-events-none absolute -inset-x-5 -inset-y-7 -z-10 rounded-[30px] bg-void/65 backdrop-blur-md [mask-image:radial-gradient(140%_135%_at_50%_48%,#000_74%,transparent_100%)] lg:hidden"
             />
             <motion.p
               initial={{ opacity: 0, y: 8 }}
@@ -140,7 +141,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.85, duration: 1 }}
-              className="mt-9 flex items-center justify-center gap-4 lg:justify-start"
+              className="mt-6 flex items-center justify-center gap-4 lg:mt-9 lg:justify-start"
             >
               <Magnetic strength={0.3}>
                 <Link href="/shop" className="btn-solid">
@@ -167,7 +168,7 @@ export default function Hero() {
               href="/"
               aria-label="EVOLVE home"
               data-cursor="magnetic"
-              className="lockup relative block w-[clamp(260px,38vw,600px)]"
+              className="lockup relative block w-[clamp(205px,38vw,600px)]"
             >
               {/* the exact reference lockup shape, filled with the alloy chrome
                   gradient so it matches the silver/white headline */}

@@ -363,13 +363,21 @@ html.lenis body {
    desktop layout is completely untouched.
    ============================================================ */
 @media (max-width: 1023px) {
-  /* Item 4 — anchor the page: kill horizontal scroll + the side-to-side
-     overscroll "slide" on touch so the splash can't be pushed left/right. */
+  /* Anchor the page on mobile: there is no horizontal content overflow, so the
+     residual side-to-side "slide" is the overscroll/gesture bounce. Lock it
+     completely — clip any stray overflow, kill horizontal overscroll, and stop
+     the browser from treating horizontal swipes as a pan (vertical scroll +
+     pinch-zoom still allowed). */
   html,
   body {
     overflow-x: clip;
     overscroll-behavior-x: none;
-    max-width: 100%;
+    max-width: 100vw;
+    touch-action: pan-y pinch-zoom;
+  }
+  body {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -382,15 +390,16 @@ html.lenis body {
     transform: none !important;
   }
 
-  /* Item 2 — splash hero legibility: dark text-shadow backing so the letters
-     read against the bright aurora. */
+  /* Splash hero legibility: heavy dark text-shadow so the copy reads against the
+     bright aurora. !important on the paragraph beats the subtitle's inline
+     textShadow (which was overriding the previous, lighter pass). */
   [data-section="Hero"] .glow-headline {
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.62), 0 1px 3px rgba(0, 0, 0, 0.55),
-      0 0 18px rgba(0, 255, 65, 0.16);
+    text-shadow: 0 2px 22px rgba(0, 0, 0, 0.78), 0 1px 4px rgba(0, 0, 0, 0.9),
+      0 0 22px rgba(0, 255, 65, 0.16);
   }
   [data-section="Hero"] .eyebrow-rule,
   [data-section="Hero"] p {
-    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.85) !important;
   }
 
   /* Item 3 — tighter CTA so the splash buttons fit fully on screen. */
