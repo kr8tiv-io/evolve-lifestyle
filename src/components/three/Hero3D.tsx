@@ -108,7 +108,7 @@ function AuroraLayer({
   });
 
   return (
-    <mesh position={[0, 1.7, z]} scale={scaleArr}>
+    <mesh position={[0, 0.4, z]} scale={scaleArr}>
       <planeGeometry args={[1, 1]} />
       <shaderMaterial
         ref={mat}
@@ -141,7 +141,9 @@ function AuroraLayer({
             float rays=0.5+0.5*sin((uv.x*120.0)+bands*6.0+t*3.0);
             rays=mix(1.0, rays, 0.32);
             intensity*=rays;
-            float vmask=smoothstep(-0.15,0.32,vUv.y)*smoothstep(1.28,0.55,vUv.y);
+            // bright across the full visible band (plane overfills the viewport);
+            // only the off-screen plane edges fade, so green reaches top AND bottom.
+            float vmask=smoothstep(0.04,0.22,vUv.y)*smoothstep(0.98,0.74,vUv.y);
             intensity*=vmask;
             // Fill the whole frame with aurora; the focus only ADDS a gentle
             // brightening behind the logo. High floor => no dark corners.
@@ -271,8 +273,8 @@ export default function Hero3D() {
       <ambientLight intensity={0.4} />
 
       {/* aurora borealis CONCENTRATED behind the logo (right), mouse-reactive */}
-      <AuroraLayer z={-7} scaleArr={[22, 10, 1]} speed={0.05} intensity={0.82} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} focus={[0.74, 0.54]} />
-      <AuroraLayer z={-10} scaleArr={[30, 12, 1]} speed={0.03} intensity={0.4} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} focus={[0.74, 0.54]} />
+      <AuroraLayer z={-7} scaleArr={[46, 22, 1]} speed={0.05} intensity={0.82} colorA="#00ff41" colorB="#0b6b3a" mouse={mouse} focus={[0.74, 0.54]} />
+      <AuroraLayer z={-10} scaleArr={[60, 28, 1]} speed={0.03} intensity={0.4} colorA="#23c0ff" colorB="#0a3b52" mouse={mouse} focus={[0.74, 0.54]} />
 
       <Motes count={520} />
       <Rig mouse={mouse} />

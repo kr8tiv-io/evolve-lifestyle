@@ -50,8 +50,8 @@ export default function Hero() {
         </video>
         {/* gentle, even grade — only enough to seat the headline, no dark wall */}
         <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(5,5,5,0.42)_0%,rgba(5,7,6,0.16)_44%,rgba(5,5,5,0.06)_72%,rgba(5,5,5,0.2)_100%)]" />
-        {/* dissolve the splash into the next section */}
-        <div className="absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-t from-void via-void/45 to-transparent" />
+        {/* dissolve into the next section — kept low so the aurora reaches the bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-[24%] bg-gradient-to-t from-void via-void/35 to-transparent" />
       </motion.div>
 
       {/* mouse-reactive aurora + motes — a "cool element", sits BEHIND the lines */}
