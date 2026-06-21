@@ -98,19 +98,11 @@ export default function Hero() {
       {/* Content — two columns, mirroring the blasting site. z-10: ON TOP of lines */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 flex h-full items-center pt-[var(--header-h)] pb-12 lg:pb-10"
+        className="relative z-10 flex h-full items-start pt-[calc(var(--header-h)+1.5rem)] pb-12 sm:items-center sm:pt-[var(--header-h)] lg:pb-10"
       >
         <div className="frame grid w-full items-center gap-5 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
           {/* LEFT — headline block, pulled toward centre to balance the logo */}
           <div className="relative order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
-            {/* mobile-only complementary scrim — relaxed now that the global hero
-                tint does most of the lifting; just a light extra wash behind the
-                text on the brightest (mobile) aurora. Desktop: none. */}
-            <div
-              aria-hidden
-              style={{ backgroundColor: "rgba(5,5,5,0.28)" }}
-              className="pointer-events-none absolute -inset-x-5 -inset-y-6 -z-10 rounded-[30px] backdrop-blur-[2px] [mask-image:radial-gradient(140%_135%_at_50%_48%,#000_72%,transparent_100%)] lg:hidden"
-            />
             <motion.p
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -138,31 +130,15 @@ export default function Hero() {
               boreal to coast.
             </motion.h1>
 
-            <motion.div
+            <motion.p
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 1 }}
-              className="relative mx-auto mt-6 w-fit max-w-xl lg:mx-0"
+              className="hero-subtitle mx-auto mt-6 max-w-xl font-normal uppercase text-silver-bright lg:mx-0"
+              style={{ fontSize: "1.05rem", letterSpacing: "0.16em", lineHeight: 1.6 }}
             >
-              {/* soft dark scrim so the subtitle reads over the bright aurora —
-                  blurred ellipse blends in rather than reading as a hard box */}
-              <span
-                aria-hidden
-                className="pointer-events-none absolute -inset-x-6 -inset-y-3 -z-10 rounded-[50%] bg-black/70 blur-lg"
-              />
-              <p
-                className="font-normal uppercase text-silver-bright"
-                style={{
-                  fontSize: "1.05rem",
-                  letterSpacing: "0.16em",
-                  lineHeight: 1.6,
-                  textShadow:
-                    "0 1px 3px rgba(0,0,0,0.95), 0 2px 14px rgba(0,0,0,0.9), 0 0 26px rgba(0,0,0,0.7)",
-                }}
-              >
-                Apparel earned outside — built for the bush, made for the long haul.
-              </p>
-            </motion.div>
+              Apparel earned outside — built for the bush, made for the long haul.
+            </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 14 }}
