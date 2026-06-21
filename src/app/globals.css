@@ -253,13 +253,15 @@ html.lenis body {
     transform: translateY(-1px);
   }
 
-  /* Reference hero headline — white with a soft green bloom, brightens on hover */
+  /* Reference hero headline — white with a soft green bloom + a faint dark lift
+     (so it reads over the bright aurora on desktop too); brightens on hover */
   .glow-headline {
-    text-shadow: 0 0 18px rgba(0, 255, 65, 0.18);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4), 0 0 18px rgba(0, 255, 65, 0.18);
     transition: text-shadow 0.5s ease, transform 0.5s ease;
   }
   .glow-headline:hover {
-    text-shadow: 0 0 26px rgba(0, 255, 65, 0.4), 0 0 64px rgba(0, 255, 65, 0.18);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4), 0 0 26px rgba(0, 255, 65, 0.4),
+      0 0 64px rgba(0, 255, 65, 0.18);
   }
 
   /* Hero logo lockup — rest + hover lifted from evolveecoblasting.com (.sd-logo) */

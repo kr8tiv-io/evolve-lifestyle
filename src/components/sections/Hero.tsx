@@ -59,6 +59,20 @@ export default function Hero() {
         <Hero3D />
       </motion.div>
 
+      {/* contrast tint — ABOVE the borealis (z-2), BELOW the line texture (z-4),
+          so the lines stay crisp and the green/motion show straight through. A
+          soft even dark wash, a touch stronger right behind the headline + logo
+          and fading at the edges, just enough to lift legibility on BOTH
+          breakpoints without dimming the aurora. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[3]"
+        style={{
+          background:
+            "radial-gradient(125% 100% at 50% 47%, rgba(0,0,0,0.19) 0%, rgba(0,0,0,0.13) 60%, rgba(0,0,0,0.11) 100%)",
+        }}
+      />
+
       {/* fine dark scanlines — the exact .sd-hero::after treatment, ABOVE the
           effects so everything reads through them; only logo + text sit on top */}
       <div
@@ -88,12 +102,13 @@ export default function Hero() {
         <div className="frame grid w-full items-center gap-5 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
           {/* LEFT — headline block, pulled toward centre to balance the logo */}
           <div className="relative order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
-            {/* mobile-only legibility scrim — a strong dark, blurred panel behind
-                the text so the splash copy reads cleanly against the bright aurora
-                (desktop: none). Opacity alone carries legibility if blur is dropped. */}
+            {/* mobile-only complementary scrim — relaxed now that the global hero
+                tint does most of the lifting; just a light extra wash behind the
+                text on the brightest (mobile) aurora. Desktop: none. */}
             <div
               aria-hidden
-              className="pointer-events-none absolute -inset-x-5 -inset-y-7 -z-10 rounded-[30px] bg-void/65 backdrop-blur-md [mask-image:radial-gradient(140%_135%_at_50%_48%,#000_74%,transparent_100%)] lg:hidden"
+              style={{ backgroundColor: "rgba(5,5,5,0.28)" }}
+              className="pointer-events-none absolute -inset-x-5 -inset-y-6 -z-10 rounded-[30px] backdrop-blur-[2px] [mask-image:radial-gradient(140%_135%_at_50%_48%,#000_72%,transparent_100%)] lg:hidden"
             />
             <motion.p
               initial={{ opacity: 0, y: 8 }}
