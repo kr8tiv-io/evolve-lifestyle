@@ -238,7 +238,7 @@ html.lenis body {
   }
 
   .btn-ghost {
-    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright transition-colors duration-500 ease-evolve hover:border-white/40;
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/35 bg-black/30 px-7 py-3 font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright backdrop-blur-sm transition-colors duration-500 ease-evolve [text-shadow:0_1px_6px_rgba(0,0,0,0.5)] hover:border-white/60 hover:bg-black/45;
   }
 
   /* Solid neon pill — matches evolveecoblasting.com "Find your fix" button */

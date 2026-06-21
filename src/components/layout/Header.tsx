@@ -34,7 +34,7 @@ export default function Header() {
           "fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-evolve",
           scrolled
             ? "border-b border-white/10 bg-void/70 backdrop-blur-xl"
-            : "border-b border-transparent bg-transparent"
+            : "border-b border-transparent bg-gradient-to-b from-black/55 via-black/20 to-transparent backdrop-blur-[2px]"
         )}
       >
         <div className="frame flex h-[84px] items-center justify-between">
@@ -49,7 +49,7 @@ export default function Header() {
               <Magnetic key={item.href} strength={0.2}>
                 <Link
                   href={item.href}
-                  className="group relative font-mono text-[0.72rem] uppercase tracking-tracked text-silver transition-colors hover:text-silver-bright"
+                  className="group relative font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright/90 transition-colors hover:text-silver-bright [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
                 >
                   {item.label}
                   <span className="absolute -bottom-1 left-0 h-px w-0 bg-neon shadow-[0_0_10px_rgba(0,255,65,0.7)] transition-all duration-500 ease-evolve group-hover:w-full" />
@@ -74,11 +74,11 @@ export default function Header() {
 
             <button
               onClick={() => setMenuOpen(true)}
-              className="flex flex-col gap-[5px] md:hidden"
+              className="flex flex-col gap-[5px] md:hidden [filter:drop-shadow(0_1px_3px_rgba(0,0,0,0.6))]"
               aria-label="Open menu"
             >
-              <span className="h-px w-6 bg-silver-bright" />
-              <span className="h-px w-6 bg-silver-bright" />
+              <span className="h-0.5 w-6 bg-silver-bright" />
+              <span className="h-0.5 w-6 bg-silver-bright" />
             </button>
           </div>
         </div>
