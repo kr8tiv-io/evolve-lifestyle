@@ -1,13 +1,20 @@
 # Bringing EVOLVE online
 
 ## Status
+- **LIVE:** **https://evolveapparel.shop** — deployed to Hostinger (static export),
+  custom domain + auto SSL. This is the shareable preview.
 - **GitHub:** https://github.com/kr8tiv-io/evolve-lifestyle (private, pushed)
-- **Live now (interim):** https://thehun-women-yamaha-carmen.trycloudflare.com
-  — production build via a Cloudflare tunnel off this PC. Stays up while the PC
-  + the `:3000` server run; **the URL changes every time the tunnel restarts**
-  (this is why Vercel below is the real home).
-- **Catalogue:** the real Printful "Evolve" store (32 products) is synced in.
-  Re-sync anytime with `node scripts/sync-printful.mjs` (reads `.env.local`).
+- **Catalogue:** the real Printful "Evolve" store (32 products) synced in, with
+  on-brand names and background-removed mockups on branded backdrops.
+
+### Redeploy to Hostinger (static export)
+```bash
+node scripts/sync-printful.mjs     # refresh catalogue from Printful (optional)
+node scripts/cutout-products.mjs   # re-cut mockup backgrounds (optional)
+$env:NEXT_EXPORT="1"; npm run build # -> out/   (PowerShell)
+# zip out/ (incl .htaccess) and deploy via Hostinger hosting_deployStaticWebsite
+```
+Hosting plan order: `1008174432` (user `u637913108`). Server IP `31.170.161.141`.
 
 > **Printful token:** lives only in `.env.local` (gitignored, never committed).
 > Rotate it in the Printful dashboard if needed; update `.env.local` and re-sync.

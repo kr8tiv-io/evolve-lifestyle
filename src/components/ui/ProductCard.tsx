@@ -31,8 +31,9 @@ export default function ProductCard({
             alt={product.name}
             tone={product.tone}
             label={product.subtitle}
+            fit="contain"
             className="h-full w-full"
-            imgClassName="group-hover:scale-[1.06] transition-transform duration-[1400ms]"
+            imgClassName="group-hover:scale-[1.05] transition-transform duration-[1200ms]"
             priority
           />
           {/* hover second image crossfade */}
@@ -42,13 +43,14 @@ export default function ProductCard({
                 src={product.images[1]}
                 alt={`${product.name} alternate`}
                 tone={product.tone}
+                fit="contain"
                 className="h-full w-full"
               />
             </div>
           )}
 
-          {/* bottom scrim for legibility */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-void/85 via-void/20 to-transparent" />
+          {/* bottom scrim for legibility of the hover meta */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-void/70 to-transparent" />
 
           {product.badge && (
             <span className="absolute left-3 top-3 z-10 rounded-full border border-neon/40 bg-void/70 px-3 py-1 font-mono text-[0.56rem] uppercase tracking-tracked text-neon backdrop-blur">

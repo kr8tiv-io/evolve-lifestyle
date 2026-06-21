@@ -24,7 +24,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441089440-0.png"
+      "/products/p441089440-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -62,7 +62,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p441089080-0.png"
+      "/products/p441089080-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -140,7 +140,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441087767-0.png"
+      "/products/p441087767-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -218,7 +218,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441087198-0.png"
+      "/products/p441087198-0-cut.png"
     ],
     "sizes": [
       "XS",
@@ -306,7 +306,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441085408-0.png"
+      "/products/p441085408-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -395,7 +395,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p441085023-0.png"
+      "/products/p441085023-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -483,7 +483,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441084646-0.png"
+      "/products/p441084646-0-cut.png"
     ],
     "sizes": [
       "XS",
@@ -581,7 +581,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441084360-0.png"
+      "/products/p441084360-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -619,7 +619,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441084054-0.png"
+      "/products/p441084054-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -657,7 +657,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p441083649-0.png"
+      "/products/p441083649-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -695,7 +695,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441082795-0.png"
+      "/products/p441082795-0-cut.png"
     ],
     "sizes": [
       "S"
@@ -733,7 +733,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441082547-0.png"
+      "/products/p441082547-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -771,7 +771,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441082269-0.png"
+      "/products/p441082269-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -859,7 +859,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440709618-0.png"
+      "/products/p440709618-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -937,7 +937,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440708831-0.png"
+      "/products/p440708831-0-cut.png"
     ],
     "sizes": [
       "XS",
@@ -1025,7 +1025,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440708024-0.png"
+      "/products/p440708024-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -1063,7 +1063,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440613219-0.png"
+      "/products/p440613219-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -1101,7 +1101,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440612780-0.png"
+      "/products/p440612780-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -1179,7 +1179,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440612001-0.png"
+      "/products/p440612001-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -1257,7 +1257,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440610853-0.png"
+      "/products/p440610853-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -1335,7 +1335,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440610516-0.png"
+      "/products/p440610516-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -1414,7 +1414,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440609882-0.png"
+      "/products/p440609882-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -1492,7 +1492,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440609698-0.png"
+      "/products/p440609698-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -1570,7 +1570,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440609155-0.png"
+      "/products/p440609155-0-cut.png"
     ],
     "sizes": [
       "XS",
@@ -1658,7 +1658,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440608834-0.png"
+      "/products/p440608834-0-cut.png"
     ],
     "sizes": [
       "XS",
@@ -1746,7 +1746,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440607891-0.png"
+      "/products/p440607891-0-cut.png"
     ],
     "sizes": [
       "20 oz"
@@ -1784,7 +1784,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440607292-0.png"
+      "/products/p440607292-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -1822,7 +1822,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440606458-0.png"
+      "/products/p440606458-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -1860,7 +1860,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440605056-0.png"
+      "/products/p440605056-0-cut.png"
     ],
     "sizes": [
       "One size"
@@ -1898,7 +1898,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440601843-0.png"
+      "/products/p440601843-0-cut.png"
     ],
     "sizes": [
       "15 oz"
@@ -1936,7 +1936,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440600277-0.png"
+      "/products/p440600277-0-cut.png"
     ],
     "sizes": [
       "S",
@@ -2024,7 +2024,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440597762-0.png"
+      "/products/p440597762-0-cut.png"
     ],
     "sizes": [
       "S",
