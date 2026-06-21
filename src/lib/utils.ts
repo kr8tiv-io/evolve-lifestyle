@@ -9,7 +9,7 @@ export function formatPrice(cents: number, currency = "CAD") {
   return new Intl.NumberFormat("en-CA", {
     style: "currency",
     currency,
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
   }).format(cents / 100);
 }

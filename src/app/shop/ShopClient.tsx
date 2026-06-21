@@ -57,8 +57,8 @@ export default function ShopClient() {
           className="block text-display font-medium uppercase tracking-tightest text-silver-bright"
         />
         <p className="mt-6 max-w-md text-base text-silver-dim">
-          Drop-ship ready. Every piece below is placeholder product wired into a
-          real cart — connect Printful or Shopify and it ships.
+          Made to order via Printful — printed and embroidered on demand, then
+          shipped across Canada and North America.
         </p>
       </section>
 

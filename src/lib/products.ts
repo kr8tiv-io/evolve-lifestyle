@@ -8,6 +8,8 @@
 // clearly swappable, with a graceful brand-gradient fallback in <ProductImage>.
 // ============================================================
 
+import { PRINTFUL_PRODUCTS } from "./catalog.generated";
+
 export type Category = "tops" | "outerwear" | "headwear" | "accessories";
 export type Collection = "prairies" | "peaks" | "boreal" | "coast";
 
@@ -264,16 +266,22 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
+// Live catalogue = the real Printful "Evolve" store (synced into
+// catalog.generated.ts). Falls back to the placeholder set if the sync is empty.
+const CATALOG: Product[] = PRINTFUL_PRODUCTS.length ? PRINTFUL_PRODUCTS : PRODUCTS;
+
 export function getProducts(): Product[] {
-  return PRODUCTS;
+  return CATALOG;
 }
 
 export function getProduct(slug: string): Product | undefined {
-  return PRODUCTS.find((p) => p.slug === slug);
+  return CATALOG.find((p) => p.slug === slug);
 }
 
 export function getFeatured(): Product[] {
-  return PRODUCTS.filter((p) => p.badge).slice(0, 4);
+  const badged = CATALOG.filter((p) => p.badge);
+  const pool = badged.length >= 4 ? badged : [...badged, ...CATALOG.filter((p) => !p.badge)];
+  return pool.slice(0, 4);
 }
 
 export const CATEGORY_LABELS: Record<Category, string> = {

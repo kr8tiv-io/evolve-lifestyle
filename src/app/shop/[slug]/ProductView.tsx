@@ -44,7 +44,7 @@ export default function ProductView({
       id: `${product.slug}-${color}-${size}`.toLowerCase().replace(/\s+/g, "-"),
       slug: product.slug,
       name: product.name,
-      variantId: variant?.id ?? "",
+      variantId: variant?.variantId ?? variant?.id ?? "",
       size,
       color,
       swatch: colors.find((c) => c.color === color)?.swatch ?? "#000",

@@ -2,7 +2,7 @@ import puppeteer from "puppeteer-core";
 
 const CHROME = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const BASE = "http://localhost:3000";
-const ROUTES = ["/", "/shop", "/shop/survivors-heavyweight-hoodie", "/about", "/journal"];
+const ROUTES = ["/", "/shop", "/shop/unisex-hoodie", "/about", "/journal"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const browser = await puppeteer.launch({
