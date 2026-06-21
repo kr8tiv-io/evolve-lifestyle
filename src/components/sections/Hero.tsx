@@ -35,7 +35,7 @@ export default function Hero() {
     <section
       ref={ref}
       data-section="Hero"
-      className="relative h-[100svh] w-full overflow-hidden bg-void"
+      className="hero-shell relative w-full overflow-hidden bg-void"
     >
       {/* forest-fog footage — the exact treatment from evolveecoblasting.com */}
       <motion.div style={{ scale: videoScale }} className="absolute inset-0 z-[1]">
@@ -98,7 +98,7 @@ export default function Hero() {
       {/* Content — two columns, mirroring the blasting site. z-10: ON TOP of lines */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 flex h-full items-start pt-[calc(var(--header-h)+1.5rem)] pb-12 sm:items-center sm:pt-[var(--header-h)] lg:pb-10"
+        className="relative z-10 flex h-full items-start pt-[calc(var(--header-h)+2.75rem)] pb-6 sm:items-center sm:pt-[var(--header-h)] sm:pb-12 lg:pb-10"
       >
         <div className="frame grid w-full items-center gap-5 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
           {/* LEFT — headline block, pulled toward centre to balance the logo */}
@@ -107,7 +107,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.9 }}
-              className="eyebrow-rule mb-7 justify-center text-silver-bright lg:justify-start"
+              className="eyebrow-rule mb-4 justify-center text-silver-bright sm:mb-7 lg:justify-start"
             >
               Western-Canadian Outdoor Lifestyle
             </motion.p>
@@ -134,8 +134,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 1 }}
-              className="hero-subtitle mx-auto mt-6 max-w-xl font-normal uppercase text-silver-bright lg:mx-0"
-              style={{ fontSize: "1.05rem", letterSpacing: "0.16em", lineHeight: 1.6 }}
+              className="hero-subtitle mx-auto mt-3 max-w-xl font-normal uppercase text-silver-bright text-[0.8rem] leading-[1.45] tracking-[0.05em] sm:mt-6 sm:text-[1.05rem] sm:leading-[1.6] sm:tracking-[0.16em] lg:mx-0"
             >
               Apparel earned outside — built for the bush, made for the long haul.
             </motion.p>
@@ -144,7 +143,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.85, duration: 1 }}
-              className="mt-6 flex items-center justify-center gap-4 lg:mt-9 lg:justify-start"
+              className="mt-4 flex items-center justify-center gap-4 sm:mt-6 lg:mt-9 lg:justify-start"
             >
               <Magnetic strength={0.3}>
                 <Link href="/shop" className="btn-solid">
@@ -165,13 +164,13 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.45, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative order-1 flex flex-col items-center justify-center gap-3 lg:order-2 lg:gap-6"
+            className="relative order-1 flex flex-col items-center justify-center gap-2 sm:gap-3 lg:order-2 lg:gap-6"
           >
             <Link
               href="/"
               aria-label="EVOLVE home"
               data-cursor="magnetic"
-              className="lockup relative block w-[clamp(156px,38vw,600px)]"
+              className="lockup relative block w-[clamp(116px,38vw,600px)]"
             >
               {/* the exact reference lockup shape, filled with the alloy chrome
                   gradient so it matches the silver/white headline */}

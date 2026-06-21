@@ -24,7 +24,7 @@ export default function ForestAudio() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-1.5 pb-2.5 sm:gap-2.5 sm:pb-0">
+    <div className="flex flex-col items-center gap-1.5 pb-1.5 sm:gap-2.5 sm:pb-0">
       <audio
         ref={audioRef}
         src="/audio/forest-ambience.mp3"
@@ -38,7 +38,7 @@ export default function ForestAudio() {
         aria-pressed={playing}
         aria-label={playing ? "Pause forest ambience" : "Play forest ambience"}
         data-cursor="magnetic"
-        className={`group relative flex h-12 w-12 items-center justify-center rounded-full border border-neon/80 bg-black/90 text-neon transition-all duration-300 ease-evolve hover:bg-neon hover:text-black sm:h-14 sm:w-14 ${
+        className={`group relative flex h-11 w-11 items-center justify-center rounded-full border border-neon/80 bg-black/90 text-neon transition-all duration-300 ease-evolve hover:bg-neon hover:text-black sm:h-14 sm:w-14 ${
           playing ? "shadow-[0_0_26px_rgba(0,0,0,0.55)]" : "animate-[audio-glow_2.4s_ease-in-out_infinite]"
         }`}
       >

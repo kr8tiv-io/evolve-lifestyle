@@ -264,6 +264,14 @@ html.lenis body {
       0 0 64px rgba(0, 255, 65, 0.18);
   }
 
+  /* Hero shell height — small-viewport height so the splash fits the ACTUAL
+     visible area on mobile (under the dynamic browser toolbar); 100vh fallback
+     first for browsers without svh. */
+  .hero-shell {
+    height: 100vh;
+    height: 100svh;
+  }
+
   /* Hero subtitle legibility — a tight layered dark halo that hugs the letters
      (crisp 1px edge + progressively softer dark glows), so the words stay readable
      over the busy aurora WITHOUT a visible oval/box behind them. */
