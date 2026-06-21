@@ -30,7 +30,7 @@ for (const p of products) {
   if (c.category) p.category = c.category;
   // technique-accurate first detail line
   const tech = techById[p.externalId] === "print" ? "Printed to order" : "Embroidered to order";
-  if (Array.isArray(p.details) && p.details.length) p.details[0] = `${tech} — made on demand`;
+  if (Array.isArray(p.details) && p.details.length) p.details[0] = `${tech}`;
   // regenerate slug from the new name (unique)
   let s = slugify(c.name) || `product-${p.externalId}`;
   if (seen.has(s)) s = `${s}-${String(p.externalId).slice(-4)}`;
@@ -41,7 +41,7 @@ for (const p of products) {
   p.subtitle = `${catLabel} · ${techById[p.externalId] === "print" ? "printed" : "embroidered"}`;
 }
 
-const header = `// AUTO-GENERATED — synced from Printful, copy from scripts/product-copy.json.\nimport type { Product } from "./products";\n\nexport const PRINTFUL_PRODUCTS: Product[] = `;
+const header = `// AUTO-GENERATED catalog — copy from scripts/product-copy.json.\nimport type { Product } from "./products";\n\nexport const CATALOG_PRODUCTS: Product[] = `;
 writeFileSync(catPath, header + JSON.stringify(products, null, 2) + ";\n", "utf8");
 console.log(`Applied copy to ${products.length} products. Sample:`);
 products.slice(0, 5).forEach((p) => console.log(`  ${p.name}  [${p.brand}]  /shop/${p.slug}  (${p.subtitle})`));

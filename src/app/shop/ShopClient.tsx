@@ -57,8 +57,8 @@ export default function ShopClient() {
           className="block text-display font-medium uppercase tracking-tightest text-silver-bright"
         />
         <p className="mt-6 max-w-md text-base text-silver-dim">
-          Made to order via Printful — printed and embroidered on demand, then
-          shipped across Canada and North America.
+          Made to order — each piece embroidered or printed once you place it,
+          then shipped across Canada and North America.
         </p>
       </section>
 

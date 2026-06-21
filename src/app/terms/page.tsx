@@ -11,7 +11,7 @@ const SECTIONS: { h: string; body: string[] }[] = [
   {
     h: "01 · Made to order",
     body: [
-      "Every EVOLVE piece is produced to order — embroidered or printed on demand once you place it — by our print partner and shipped across Canada and North America. Because each item is made for you specifically, please double-check your size and colour before checking out.",
+      "Every EVOLVE piece is produced to order — embroidered or printed once you place it — and shipped across Canada and North America. Because each item is made for you specifically, please double-check your size and colour before checking out.",
     ],
   },
   {

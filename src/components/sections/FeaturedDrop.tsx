@@ -46,6 +46,18 @@ export default function FeaturedDrop() {
           <ProductCard key={product.slug} product={product} index={i} />
         ))}
       </div>
+
+      {/* Mobile: an obvious solid CTA to the full store after the first row of
+          products. Hidden on desktop, which already has the "View all" link in
+          the header — so the desktop layout is untouched. */}
+      <div className="mt-12 flex justify-center lg:hidden">
+        <Reveal>
+          <Link href="/shop" data-cursor="magnetic" className="btn-solid">
+            Shop everything
+            <span aria-hidden>→</span>
+          </Link>
+        </Reveal>
+      </div>
     </section>
   );
 }

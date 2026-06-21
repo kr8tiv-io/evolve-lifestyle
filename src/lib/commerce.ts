@@ -1,5 +1,5 @@
 // ============================================================
-// COMMERCE LAYER — the seam where Printful / Printify / Shopify wires in.
+// COMMERCE LAYER — the seam where a fulfillment/commerce provider wires in.
 // ------------------------------------------------------------
 // The storefront talks to these functions, never to a provider SDK directly.
 // Today they read the local placeholder catalogue (src/lib/products.ts); to go
@@ -19,12 +19,12 @@ export const COMMERCE: { provider: Provider; currency: string; gstRate: number }
 
 /** Catalogue reads — swap these bodies for a provider fetch when live. */
 export async function fetchProducts(): Promise<Product[]> {
-  // TODO(printful): GET store/products -> map onto the Product shape.
+  // TODO(provider): GET store/products -> map onto the Product shape.
   return getProducts();
 }
 
 export async function fetchProduct(slug: string): Promise<Product | undefined> {
-  // TODO(printful): GET store/products/{id} by mapped slug.
+  // TODO(provider): GET store/products/{id} by mapped slug.
   return getProduct(slug);
 }
 
@@ -62,7 +62,7 @@ export function buildCheckout(lines: CartLine[]): CheckoutPayload {
 
 /**
  * Start checkout. Today: a no-op stub. Live: POST buildCheckout(lines) to a
- * route handler that creates a Printful/Shopify order or hosted-checkout
+ * route handler that creates a provider order or hosted-checkout
  * session and returns a redirect URL.
  */
 export async function startCheckout(lines: CartLine[]): Promise<{ url?: string; ok: boolean }> {

@@ -217,7 +217,7 @@ export default function ProductView({
               </button>
             </Magnetic>
             <p className="mt-3 text-center font-mono text-[0.58rem] uppercase tracking-tracked text-silver-dim">
-              Drop-ship ready · ships across Canada & North America
+              Made to order · ships across Canada & North America
             </p>
           </div>
 

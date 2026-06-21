@@ -1,7 +1,7 @@
-// AUTO-GENERATED — synced from Printful, copy from scripts/product-copy.json.
+// AUTO-GENERATED catalog — copy from scripts/product-copy.json.
 import type { Product } from "./products";
 
-export const PRINTFUL_PRODUCTS: Product[] = [
+export const CATALOG_PRODUCTS: Product[] = [
   {
     "slug": "treeline-camo-trucker",
     "name": "Treeline Camo Trucker",
@@ -13,7 +13,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Descended from survivors.",
     "description": "A low-profile six-panel trucker in olive camo with a breathable mesh back and a pre-curved visor. The EVOLVE crest is embroidered on the front — made for the long drive to where the trees take over.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -52,7 +52,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Built for the bush. Made for the long haul.",
     "description": "A premium midweight pullover that settles in like a second skin on a cold morning. The EVOLVE wordmark is embroidered, tonal and clean — built for the bush, made for the long haul.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -131,7 +131,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Earned outside.",
     "description": "A Champion long-sleeve in clean white with the EVOLVE crest embroidered at the chest. The first layer on a coldfront morning — soft, durable, and quietly proud.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -210,7 +210,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Canadian-built. Weather-tested.",
     "description": "A charcoal-black triblend hooded long-sleeve that drapes light and wears warm. The EVOLVE mark is embroidered — equal parts trail layer and town layer.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes XS, S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -299,7 +299,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Strip it back. Build it stronger.",
     "description": "A heavyweight full-zip in charcoal heather with a structured hood and a weight that holds the cold off. EVOLVE embroidered at the chest — zip up and head higher.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL, 3XL",
       "EVOLVE artwork — earned outside"
@@ -389,7 +389,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Cold and free beats warm and bored.",
     "description": "A heavy-cotton classic tee in natural, cut for everyday wear and embroidered with the EVOLVE crest. Plain, honest, and built to outlast the season.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL, 3XL",
       "EVOLVE artwork — earned outside"
@@ -478,7 +478,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Where the signal dies, we come alive.",
     "description": "A 10oz heavyweight pullover in army green — the anchor of the range. The EVOLVE crest sits embroidered and tonal, weighted to outlive the winters that made us.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes XS, S, M, L, XL, 2XL, 3XL",
       "EVOLVE artwork — earned outside"
@@ -577,7 +577,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Work hard. Play harder. Get outside.",
     "description": "A structured premium snapback in heather grey with a flat brim and a clean adjustable snap. EVOLVE embroidered up front — for everyone at camp.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -616,7 +616,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Restore what the week wore down.",
     "description": "An organic-cotton baseball cap in black with a relaxed unstructured fit and a curved brim. The EVOLVE crest is embroidered in white — earned outside, easy on the planet.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -655,7 +655,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Tougher than the winters that made us.",
     "description": "The structured premium snapback in dark grey, flat-brimmed and clean. EVOLVE embroidered on the front panel — built for the bush and the long road home.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -694,7 +694,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "From the wheat to the water.",
     "description": "A Champion packable anorak that folds into its own pocket and opens up into real wind cover. EVOLVE embroidered at the chest — for when the weather doesn't ask permission.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S",
       "EVOLVE artwork — earned outside"
@@ -733,7 +733,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Some things should never change. Get outside.",
     "description": "The classic Richardson 112 trucker in loden with a structured front and breathable mesh back. EVOLVE embroidered up front — the cap you reach for first.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -772,7 +772,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Descended from survivors.",
     "description": "A cotton ringer tee in heather grey with black trim and the EVOLVE crest embroidered at the chest. Retro lines, backcountry heart.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL, 3XL",
       "EVOLVE artwork — earned outside"
@@ -861,7 +861,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Built for the bush. Made for the long haul.",
     "description": "A Stanley/Stella organic-cotton crafter tee in desert dust, soft and substantial. The EVOLVE crest is embroidered — quiet, earthy, and earned outside.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -940,7 +940,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Earned outside.",
     "description": "A jersey tank in black, cut clean for hot climbs and long days. The EVOLVE artwork is printed at the chest — the lightest layer in the kit.",
     "details": [
-      "Printed to order — made on demand",
+      "Printed to order",
       "Ships across Canada & North America",
       "1 colourway · sizes XS, S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1029,7 +1029,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Canadian-built. Weather-tested.",
     "description": "A pro-style six-panel snapback in white with a structured front and flat brim. EVOLVE embroidered up front — clean lines, cold country.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -1068,7 +1068,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Strip it back. Build it stronger.",
     "description": "The Richardson 112 trucker in loden — structured front, mesh back, pre-curved visor. EVOLVE embroidered on the panel, made for the long haul.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -1107,7 +1107,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Cold and free beats warm and bored.",
     "description": "The premium pullover in black with a double-lined hood and a heavy, settled drape. EVOLVE embroidered tonal at the chest — the everyday anchor.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1186,7 +1186,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Where the signal dies, we come alive.",
     "description": "A soft jersey v-neck in black with the EVOLVE crest embroidered in white at the chest. Simple, sharp, and built to be worn down.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1265,7 +1265,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Work hard. Play harder. Get outside.",
     "description": "A premium crew-neck sweatshirt in black with a clean set-in sleeve and a brushed-soft inside. EVOLVE embroidered tonal — for the cool end of the day.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1344,7 +1344,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Restore what the week wore down.",
     "description": "A heavy-blend hoodie in black with the EVOLVE crest embroidered dark-on-dark. Understated, durable, and made to disappear into the night.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1424,7 +1424,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Tougher than the winters that made us.",
     "description": "A men's heavyweight tee in black with a structured body that holds its shape. EVOLVE embroidered at the chest — the tee you reach for and never question.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1503,7 +1503,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "From the wheat to the water.",
     "description": "An oversized heavyweight hoodie in black, dropped-shoulder and built like armour. The EVOLVE crest is embroidered — for the coldest mornings and the longest hauls.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1582,7 +1582,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Some things should never change. Get outside.",
     "description": "A fine-jersey raglan in heather denim and navy with classic three-quarter sleeves. The EVOLVE crest is embroidered at the chest — easy days, big country.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes XS, S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1671,7 +1671,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Descended from survivors.",
     "description": "A soft jersey v-neck in dark grey heather with the EVOLVE crest embroidered clean at the chest. A quiet staple for everywhere the week takes you.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes XS, S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"
@@ -1760,7 +1760,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Built for the bush. Made for the long haul.",
     "description": "A 20oz insulated stainless tumbler that keeps the coffee hot to the trailhead and the water cold on the way back. The EVOLVE design is printed wrap-around — built for the long haul.",
     "details": [
-      "Printed to order — made on demand",
+      "Printed to order",
       "Ships across Canada & North America",
       "1 colourway · sizes 20 oz",
       "EVOLVE artwork — earned outside"
@@ -1799,7 +1799,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Earned outside.",
     "description": "The premium structured snapback in all black with a flat brim and a clean snap. EVOLVE embroidered tonal up front — stealth-fit, weather-tested.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -1838,7 +1838,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Canadian-built. Weather-tested.",
     "description": "A low-profile six-panel dad hat in black with an unstructured fit and a curved brim. The EVOLVE crest is embroidered — easy, broken-in, everyday.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -1877,7 +1877,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Strip it back. Build it stronger.",
     "description": "A tight ribbed cuff beanie in dark grey that holds heat without the itch. EVOLVE embroidered on a woven-clean cuff — for the cold end of every season.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes One size",
       "EVOLVE artwork — earned outside"
@@ -1916,7 +1916,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Cold and free beats warm and bored.",
     "description": "A 15oz glossy black ceramic mug with the EVOLVE borealis design printed wrap-around. Coffee before the cold, cocoa after — the one that lives at camp.",
     "details": [
-      "Printed to order — made on demand",
+      "Printed to order",
       "Ships across Canada & North America",
       "1 colourway · sizes 15 oz",
       "EVOLVE artwork — earned outside"
@@ -1955,7 +1955,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Where the signal dies, we come alive.",
     "description": "The heavyweight full-zip in all black with a structured hood and a real, settled weight. EVOLVE embroidered tonal at the chest — zip up and vanish into the dark.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL, 3XL",
       "EVOLVE artwork — earned outside"
@@ -2044,7 +2044,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "tagline": "Work hard. Play harder. Get outside.",
     "description": "A midweight zip hood in charcoal heather with a brushed-soft fleece inside. The EVOLVE crest is embroidered at the chest — the layer you live in by the fire.",
     "details": [
-      "Embroidered to order — made on demand",
+      "Embroidered to order",
       "Ships across Canada & North America",
       "1 colourway · sizes S, M, L, XL, 2XL",
       "EVOLVE artwork — earned outside"

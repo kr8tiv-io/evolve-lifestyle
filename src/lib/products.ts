@@ -1,21 +1,21 @@
 // ============================================================
 // PLACEHOLDER PRODUCT CATALOG
 // ------------------------------------------------------------
-// Shape is drop-ship ready: each product/variant carries the fields a
-// Printful / Printify / Shopify sync will populate (externalId, variantId,
+// Shape is commerce-ready: each product/variant carries the fields a
+// the commerce sync will populate (externalId, variantId,
 // sku, inventory). Swap `getProducts()` for a real fetch later — the UI
 // doesn't need to change. Imagery is royalty-free outdoor stock (Unsplash),
 // clearly swappable, with a graceful brand-gradient fallback in <ProductImage>.
 // ============================================================
 
-import { PRINTFUL_PRODUCTS } from "./catalog.generated";
+import { CATALOG_PRODUCTS } from "./catalog.generated";
 
 export type Category = "tops" | "outerwear" | "headwear" | "accessories";
 export type Collection = "prairies" | "peaks" | "boreal" | "coast";
 
 export interface ProductVariant {
   id: string;
-  /** Printful/Printify catalog variant id — filled by sync */
+  /** catalog variant id — filled by sync */
   variantId?: string;
   sku?: string;
   size: string;
@@ -34,7 +34,7 @@ export interface Product {
   /** price in cents (CAD) */
   price: number;
   compareAt?: number;
-  /** Printful/Printify product id — filled by sync */
+  /** catalog product id — filled by sync */
   externalId?: string;
   /** brand-story line printed on the tag / shown on PDP */
   tagline: string;
@@ -268,9 +268,9 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
-// Live catalogue = the real Printful "Evolve" store (synced into
+// Live catalogue = the real "Evolve" store (synced into
 // catalog.generated.ts). Falls back to the placeholder set if the sync is empty.
-const CATALOG: Product[] = PRINTFUL_PRODUCTS.length ? PRINTFUL_PRODUCTS : PRODUCTS;
+const CATALOG: Product[] = CATALOG_PRODUCTS.length ? CATALOG_PRODUCTS : PRODUCTS;
 
 export function getProducts(): Product[] {
   return CATALOG;

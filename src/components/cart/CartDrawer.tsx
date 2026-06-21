@@ -125,7 +125,7 @@ export default function CartDrawer() {
                     Checkout — placeholder
                   </button>
                   <p className="mt-3 text-center font-mono text-[0.58rem] uppercase tracking-wide text-silver-dim/70">
-                    Drop-ship ready · connect Printful or Shopify to go live
+                    Made to order · ships across Canada &amp; North America
                   </p>
                 </div>
               </>
