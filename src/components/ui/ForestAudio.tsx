@@ -24,7 +24,7 @@ export default function ForestAudio() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-1.5 sm:gap-2.5">
+    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-neon/30 bg-black/80 px-5 py-2 shadow-[0_12px_34px_rgba(0,0,0,0.6)] backdrop-blur-md sm:gap-2.5 sm:px-6 sm:py-3">
       <audio
         ref={audioRef}
         src="/audio/forest-ambience.mp3"
@@ -38,8 +38,8 @@ export default function ForestAudio() {
         aria-pressed={playing}
         aria-label={playing ? "Pause forest ambience" : "Play forest ambience"}
         data-cursor="magnetic"
-        className={`group relative flex h-12 w-12 items-center justify-center rounded-full border border-neon/50 bg-neon/[0.08] text-neon backdrop-blur-sm transition-all duration-300 ease-evolve hover:bg-neon hover:text-black sm:h-14 sm:w-14 ${
-          playing ? "shadow-[0_0_26px_rgba(0,255,65,0.45)]" : "animate-[audio-glow_2.4s_ease-in-out_infinite]"
+        className={`group relative flex h-12 w-12 items-center justify-center rounded-full border border-neon/80 bg-black/90 text-neon transition-all duration-300 ease-evolve hover:bg-neon hover:text-black sm:h-14 sm:w-14 ${
+          playing ? "shadow-[0_0_26px_rgba(0,255,65,0.55)]" : "animate-[audio-glow_2.4s_ease-in-out_infinite]"
         }`}
       >
         {/* enticing pulse rings — only while paused, so it draws the eye to click */}
@@ -47,11 +47,11 @@ export default function ForestAudio() {
           <>
             <span
               aria-hidden
-              className="pointer-events-none absolute inset-0 rounded-full border border-neon/60 animate-[pulse-ring_2.4s_ease-out_infinite]"
+              className="pointer-events-none absolute inset-0 rounded-full border border-neon/70 animate-[pulse-ring_2.4s_ease-out_infinite]"
             />
             <span
               aria-hidden
-              className="pointer-events-none absolute inset-0 rounded-full border border-neon/40 animate-[pulse-ring_2.4s_ease-out_infinite] [animation-delay:1.2s]"
+              className="pointer-events-none absolute inset-0 rounded-full border border-neon/50 animate-[pulse-ring_2.4s_ease-out_infinite] [animation-delay:1.2s]"
             />
           </>
         )}
@@ -66,10 +66,10 @@ export default function ForestAudio() {
           </svg>
         )}
       </button>
-      <span className="font-mono text-[0.62rem] font-medium uppercase tracking-tracked-lg text-neon">
+      <span className="font-mono text-[0.66rem] font-semibold uppercase tracking-tracked-lg text-neon">
         {playing ? "Pause" : "Play"}
       </span>
-      <span className="-mt-1 font-mono text-[0.5rem] uppercase tracking-tracked text-silver-dim">
+      <span className="-mt-0.5 font-mono text-[0.5rem] uppercase tracking-tracked text-silver">
         Forest ambience
       </span>
     </div>

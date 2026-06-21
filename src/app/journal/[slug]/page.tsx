@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getArticle, getArticles } from "@/lib/journal";
 import Markdown from "@/components/ui/Markdown";
 import ProductImage from "@/components/ui/ProductImage";
+import EmailSignup from "@/components/ui/EmailSignup";
 
 const SITE = "https://evolveapparel.shop";
 
@@ -96,6 +97,11 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           <Link href="/shop" data-cursor="magnetic" className="btn-solid mt-5">
             Shop EVOLVE <span aria-hidden>→</span>
           </Link>
+        </div>
+
+        {/* newsletter capture */}
+        <div className="mt-12 max-w-2xl">
+          <EmailSignup />
         </div>
       </div>
 

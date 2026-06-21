@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ProductImage from "@/components/ui/ProductImage";
 import { Reveal, RevealWords } from "@/components/ui/Reveal";
+import EmailSignup from "@/components/ui/EmailSignup";
 import { getArticles } from "@/lib/journal";
 
 export const metadata = {
@@ -62,6 +63,12 @@ export default function JournalPage() {
             </Link>
           </Reveal>
         ))}
+      </section>
+
+      <section className="frame pb-28">
+        <Reveal>
+          <EmailSignup />
+        </Reveal>
       </section>
     </div>
   );

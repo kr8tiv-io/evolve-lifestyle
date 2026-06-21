@@ -138,20 +138,31 @@ export default function Hero() {
               boreal to coast.
             </motion.h1>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 1 }}
-              className="mx-auto mt-6 max-w-xl font-light uppercase text-silver/85 lg:mx-0"
-              style={{
-                fontSize: "1.05rem",
-                letterSpacing: "0.16em",
-                lineHeight: 1.6,
-                textShadow: "0 2px 18px rgba(5,5,5,0.7)",
-              }}
+              className="relative mx-auto mt-6 w-fit max-w-xl lg:mx-0"
             >
-              Apparel earned outside — built for the bush, made for the long haul.
-            </motion.p>
+              {/* soft dark scrim so the subtitle reads over the bright aurora —
+                  blurred ellipse blends in rather than reading as a hard box */}
+              <span
+                aria-hidden
+                className="pointer-events-none absolute -inset-x-6 -inset-y-3 -z-10 rounded-[50%] bg-black/70 blur-lg"
+              />
+              <p
+                className="font-normal uppercase text-silver-bright"
+                style={{
+                  fontSize: "1.05rem",
+                  letterSpacing: "0.16em",
+                  lineHeight: 1.6,
+                  textShadow:
+                    "0 1px 3px rgba(0,0,0,0.95), 0 2px 14px rgba(0,0,0,0.9), 0 0 26px rgba(0,0,0,0.7)",
+                }}
+              >
+                Apparel earned outside — built for the bush, made for the long haul.
+              </p>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 14 }}
@@ -161,8 +172,8 @@ export default function Hero() {
             >
               <Magnetic strength={0.3}>
                 <Link href="/shop" className="btn-solid">
-                  Shop the range
-                  <span aria-hidden>↓</span>
+                  Shop the Range
+                  <span aria-hidden>→</span>
                 </Link>
               </Magnetic>
               <Magnetic strength={0.3}>
@@ -184,7 +195,7 @@ export default function Hero() {
               href="/"
               aria-label="EVOLVE home"
               data-cursor="magnetic"
-              className="lockup relative block w-[clamp(165px,38vw,600px)]"
+              className="lockup relative block w-[clamp(156px,38vw,600px)]"
             >
               {/* the exact reference lockup shape, filled with the alloy chrome
                   gradient so it matches the silver/white headline */}
@@ -220,21 +231,24 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* scroll cue */}
+      {/* scroll cue — desktop only; on mobile the hero is content-dense and it
+          just crowded the buttons, so it's hidden there */}
       <motion.button
         style={{ opacity }}
         onClick={jumpDown}
         aria-label="Scroll down"
-        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2"
+        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2.5 sm:flex"
       >
-        <span className="font-mono text-[0.6rem] uppercase tracking-tracked-lg text-silver-dim">
+        <span className="font-mono text-[0.58rem] uppercase tracking-tracked-lg text-silver-dim">
           Scroll
         </span>
-        <motion.span
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-          className="block h-8 w-px bg-gradient-to-b from-neon to-transparent"
-        />
+        <span className="relative block h-9 w-px overflow-hidden bg-white/15">
+          <motion.span
+            animate={{ y: ["-100%", "200%"] }}
+            transition={{ repeat: Infinity, duration: 1.9, ease: "easeInOut" }}
+            className="absolute inset-x-0 top-0 block h-4 bg-gradient-to-b from-transparent via-neon to-transparent"
+          />
+        </span>
       </motion.button>
     </section>
   );
