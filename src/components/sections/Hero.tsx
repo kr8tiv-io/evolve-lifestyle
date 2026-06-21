@@ -48,8 +48,9 @@ export default function Hero() {
         >
           <source src="/video/hero-forest.webm" type="video/webm" />
         </video>
-        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(5,5,5,0.86)_0%,rgba(5,7,6,0.55)_45%,rgba(5,5,5,0.32)_78%,rgba(5,5,5,0.7)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-void to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(5,5,5,0.6)_0%,rgba(5,7,6,0.32)_42%,rgba(5,5,5,0.18)_74%,rgba(5,5,5,0.42)_100%)]" />
+        {/* dissolve the splash into the next section */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-void via-void/60 to-transparent" />
       </motion.div>
 
       {/* mouse-reactive aurora + motes — a "cool element", sits BEHIND the lines */}

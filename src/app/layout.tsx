@@ -10,27 +10,45 @@ import Footer from "@/components/layout/Footer";
 import CartDrawer from "@/components/cart/CartDrawer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://evolveapparel.shop"),
   title: {
-    default: "EVOLVE — Prairies to Peaks | Western-Canadian Outdoor Lifestyle",
-    template: "%s — EVOLVE",
+    default: "EVOLVE Apparel — Prairies to Peaks | Western-Canadian Outdoor Lifestyle",
+    template: "%s — EVOLVE Apparel",
   },
   description:
-    "Western-Canadian outdoor lifestyle apparel. Descended from survivors, built for the bush, made for the long haul. Prairies to peaks, boreal to coast.",
+    "EVOLVE — Western-Canadian outdoor lifestyle apparel. Embroidered hoodies, tees, caps and more, made to order and shipped across Canada and North America. Built for the bush, made for the long haul. The apparel arm of Evolve Eco Blasting.",
+  applicationName: "EVOLVE Apparel",
   keywords: [
-    "EVOLVE",
+    "EVOLVE apparel",
     "Canadian outdoor apparel",
     "Western Canada lifestyle brand",
+    "embroidered hoodies Canada",
+    "Alberta apparel brand",
     "hunting fishing apparel",
-    "Alberta outdoor brand",
+    "made in Canada outdoor clothing",
+    "Evolve Eco Blasting",
   ],
+  alternates: { canonical: "/" },
+  authors: [{ name: "EVOLVE" }],
+  creator: "EVOLVE",
   openGraph: {
-    title: "EVOLVE — Prairies to Peaks",
+    title: "EVOLVE Apparel — Prairies to Peaks",
     description:
-      "Western-Canadian outdoor lifestyle apparel. Earned outside.",
+      "Western-Canadian outdoor lifestyle apparel. Made to order, shipped across Canada & North America. Earned outside.",
+    url: "https://evolveapparel.shop",
+    siteName: "EVOLVE Apparel",
     type: "website",
     locale: "en_CA",
+    images: [{ url: "/video/hero-forest-poster.jpg", width: 1280, height: 720, alt: "EVOLVE — Western-Canadian outdoor lifestyle apparel" }],
   },
-  metadataBase: new URL("https://evolve-lifestyle.local"),
+  twitter: {
+    card: "summary_large_image",
+    title: "EVOLVE Apparel — Prairies to Peaks",
+    description: "Western-Canadian outdoor lifestyle apparel. Earned outside.",
+    images: ["/video/hero-forest-poster.jpg"],
+  },
+  robots: { index: true, follow: true },
+  category: "shopping",
 };
 
 export const viewport: Viewport = {
@@ -44,9 +62,31 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "EVOLVE Apparel",
+    alternateName: "EVOLVE",
+    url: "https://evolveapparel.shop",
+    logo: "https://evolveapparel.shop/brand/evolve-lockup-white.png",
+    description:
+      "Western-Canadian outdoor lifestyle apparel. The apparel arm of Evolve Eco Blasting.",
+    areaServed: "CA",
+    // associate the apparel brand with the parent service company for SEO
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Evolve Eco Blasting",
+      url: "https://www.evolveecoblasting.com",
+    },
+    sameAs: ["https://www.evolveecoblasting.com"],
+  };
   return (
     <html lang="en-CA">
       <body className="grain vignette antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[300] focus:rounded-full focus:bg-neon focus:px-5 focus:py-2 focus:font-mono focus:text-[0.7rem] focus:uppercase focus:tracking-tracked focus:text-black"

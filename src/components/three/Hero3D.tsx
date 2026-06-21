@@ -146,7 +146,7 @@ function AuroraLayer({
             // CONCENTRATE the base aurora behind the logo (screen-space focus)
             vec2 d = (sUv - uFocus) * vec2(1.25, 1.0);
             float fd = length(d);
-            float fmask = 0.05 + 0.95 * exp(-fd*fd*6.0);
+            float fmask = 0.16 + 0.84 * exp(-fd*fd*6.0);
             intensity*=fmask;
             // cursor bloom ON TOP of the focus mask, so hovering anywhere lights it
             intensity += pull * 0.6 * vmask;

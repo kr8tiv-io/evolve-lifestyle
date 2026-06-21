@@ -18,6 +18,7 @@ export default function ProductImage({
   imgClassName,
   priority,
   fit = "cover",
+  scene,
 }: {
   src: string;
   alt: string;
@@ -27,6 +28,7 @@ export default function ProductImage({
   imgClassName?: string;
   priority?: boolean;
   fit?: "cover" | "contain";
+  scene?: string;
 }) {
   const imgRef = useRef<HTMLImageElement>(null);
   const [failed, setFailed] = useState(false);
@@ -43,20 +45,23 @@ export default function ProductImage({
 
   const contain = fit === "contain";
 
-  const backdrop = contain
-    ? // neutral spotlight (lifts dark garments) + tone glow + vignette frame
-      `radial-gradient(50% 46% at 50% 43%, rgba(175,195,185,0.14), transparent 62%),` +
-      `radial-gradient(66% 58% at 50% 44%, ${tone[1]}2a, transparent 64%),` +
-      `radial-gradient(120% 100% at 50% 4%, ${tone[0]}26, transparent 60%),` +
-      `radial-gradient(125% 125% at 50% 50%, transparent 46%, rgba(0,0,0,0.8) 100%),` +
-      `linear-gradient(165deg, #0f1211, #050505)`
-    : `radial-gradient(120% 90% at 30% 10%, ${tone[0]}40, transparent 60%), linear-gradient(160deg, #0a0a0a, #050505)`;
+  const fallbackBackdrop = `radial-gradient(120% 90% at 30% 10%, ${tone[0]}40, transparent 60%), linear-gradient(160deg, #0a0a0a, #050505)`;
 
   return (
     <div
       className={cn("relative overflow-hidden bg-void-800", className)}
-      style={{ backgroundImage: backdrop }}
+      style={contain && scene ? undefined : { backgroundImage: fallbackBackdrop }}
     >
+      {/* Canadian-landscape backdrop behind the product cutout */}
+      {contain && scene && (
+        <>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={scene} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover" />
+          {/* light grade so the garment reads while the landscape stays vibrant */}
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,7,6,0.34)_0%,rgba(5,7,6,0.06)_40%,rgba(5,7,6,0.12)_64%,rgba(5,5,5,0.55)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_45%,transparent_55%,rgba(5,5,5,0.5)_100%)]" />
+        </>
+      )}
       {!failed &&
         (contain ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -68,7 +73,7 @@ export default function ProductImage({
             onError={() => setFailed(true)}
             onLoad={() => setLoaded(true)}
             className={cn(
-              "absolute inset-0 h-full w-full object-contain p-[11%] transition-all duration-700 ease-evolve [filter:drop-shadow(0_22px_26px_rgba(0,0,0,0.55))]",
+              "absolute inset-0 h-full w-full object-contain p-[12%] transition-all duration-700 ease-evolve [filter:drop-shadow(0_26px_30px_rgba(0,0,0,0.6))]",
               loaded ? "scale-100 opacity-100" : "scale-95 opacity-0",
               imgClassName
             )}

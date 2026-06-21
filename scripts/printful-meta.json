@@ -1,0 +1,1171 @@
+[
+  {
+    "id": "441089440",
+    "printfulName": "Camouflage trucker hat",
+    "blankType": "Otto Cap 105-1247 | Camouflage 6 Panel Low Profile Mesh Back Trucker Hat",
+    "brand": "Otto Cap",
+    "model": "105-1247",
+    "techniques": [
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Camo/Olive"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 33
+  },
+  {
+    "id": "441089080",
+    "printfulName": "Unisex Hoodie",
+    "blankType": "Cotton Heritage M2580 | Unisex Premium Pullover Hoodie",
+    "brand": "Cotton Heritage",
+    "model": "M2580",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Carbon Grey"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 54.5
+  },
+  {
+    "id": "441087767",
+    "printfulName": "Men's Champion Long Sleeve Shirt",
+    "blankType": "Champion CC8C | Long Sleeve T-Shirt",
+    "brand": "Champion",
+    "model": "CC8C",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "White"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 47.5
+  },
+  {
+    "id": "441087198",
+    "printfulName": "Hooded long-sleeve tee",
+    "blankType": "Bella + Canvas 3512 | Unisex Jersey Long Sleeve Hoodie",
+    "brand": "Bella + Canvas",
+    "model": "3512",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Charcoal-Black Triblend"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 41
+  },
+  {
+    "id": "441085408",
+    "printfulName": "Premium full zip hoodie",
+    "blankType": "Lane Seven LS14003 | Full Zip Hoodie",
+    "brand": "Lane Seven",
+    "model": "LS14003",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_large_back",
+      "opt:text_thread_colors_large_back"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Charcoal Heather"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "minPrice": 52.5
+  },
+  {
+    "id": "441085023",
+    "printfulName": "Evolve Unisex classic tee",
+    "blankType": "Gildan 5000 | Adult T-Shirt Heavy Cotton",
+    "brand": "Gildan",
+    "model": "5000",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Natural"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "minPrice": 16
+  },
+  {
+    "id": "441084646",
+    "printfulName": "Evolve Forrest Green Heavyweight Hooded Sweatshirt",
+    "blankType": "Independent Trading Co. IND4000 | 10oz Heavyweight Pullover Hood",
+    "brand": "Independent Trading Co.",
+    "model": "IND4000",
+    "techniques": [
+      "EMBROIDERY",
+      "DTG",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_right",
+      "opt:text_thread_colors_chest_right",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_front",
+      "opt:text_thread_colors_large_front",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Army"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "minPrice": 58
+  },
+  {
+    "id": "441084360",
+    "printfulName": "Snapback Hat",
+    "blankType": "YuPoong 6089M | YP Classics Premium Snapback Cap",
+    "brand": "Yupoong",
+    "model": "6089M",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large",
+      "opt:thread_colors_back",
+      "opt:text_thread_colors_back",
+      "opt:thread_colors_right",
+      "opt:text_thread_colors_right",
+      "opt:thread_colors_left",
+      "opt:text_thread_colors_left"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Heather Grey"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 31.5
+  },
+  {
+    "id": "441084054",
+    "printfulName": "Evolve Organic White on Black",
+    "blankType": "Econscious EC7000 | Baseball Hat",
+    "brand": "Econscious",
+    "model": "EC7000",
+    "techniques": [
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large",
+      "opt:thread_colors_back",
+      "opt:text_thread_colors_back",
+      "opt:thread_colors_left",
+      "opt:text_thread_colors_left",
+      "opt:thread_colors_right",
+      "opt:text_thread_colors_right"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 35.5
+  },
+  {
+    "id": "441083649",
+    "printfulName": "Snapback Hat",
+    "blankType": "YuPoong 6089M | YP Classics Premium Snapback Cap",
+    "brand": "Yupoong",
+    "model": "6089M",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large",
+      "opt:thread_colors_back",
+      "opt:text_thread_colors_back",
+      "opt:thread_colors_right",
+      "opt:text_thread_colors_right",
+      "opt:thread_colors_left",
+      "opt:text_thread_colors_left"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Dark Grey"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 31
+  },
+  {
+    "id": "441082795",
+    "printfulName": "Embroidered Champion Packable Jacket",
+    "blankType": "Champion CO200 | Adult Packable Anorak Jacket",
+    "brand": "Champion",
+    "model": "CO200",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S"
+    ],
+    "minPrice": 78
+  },
+  {
+    "id": "441082547",
+    "printfulName": "Trucker Cap",
+    "blankType": "Richardson 112 | Trucker Hat",
+    "brand": "Richardson",
+    "model": "112",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Loden"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 32.5
+  },
+  {
+    "id": "441082269",
+    "printfulName": "Unisex ringer t-shirt",
+    "blankType": "Next Level 3604 | Cotton Ringer Tee",
+    "brand": "Next Level",
+    "model": "3604",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Heather Gray / Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "minPrice": 26.5
+  },
+  {
+    "id": "440709618",
+    "printfulName": "Evolve Embroidered organic t",
+    "blankType": "Stanley/Stella SATU007 | Crafter Unisex T-Shirt",
+    "brand": "Stanley/Stella",
+    "model": "SATU007",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "mockup",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Desert Dust"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 30
+  },
+  {
+    "id": "440708831",
+    "printfulName": "Evolve Tank",
+    "blankType": "Bella + Canvas 3480 | 3480 Unisex Jersey Tank",
+    "brand": "Bella + Canvas",
+    "model": "3480",
+    "techniques": [
+      "DTG",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:lifelike"
+    ],
+    "technique": "print",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 25.5
+  },
+  {
+    "id": "440708024",
+    "printfulName": "White Forest Snapback",
+    "blankType": "Otto Cap 125-978 | Otto Snap 6 Panel Pro Style Snapback Hat",
+    "brand": "Otto Cap",
+    "model": "125-978",
+    "techniques": [
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large",
+      "opt:thread_colors_back",
+      "opt:text_thread_colors_back",
+      "opt:thread_colors_right",
+      "opt:text_thread_colors_right",
+      "opt:thread_colors_left",
+      "opt:text_thread_colors_left"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "White"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 31
+  },
+  {
+    "id": "440613219",
+    "printfulName": "Trucker Cap",
+    "blankType": "Richardson 112 | Trucker Hat",
+    "brand": "Richardson",
+    "model": "112",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Loden"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 32.5
+  },
+  {
+    "id": "440612780",
+    "printfulName": "Evolve Hoodie",
+    "blankType": "Cotton Heritage M2580 | Unisex Premium Pullover Hoodie",
+    "brand": "Cotton Heritage",
+    "model": "M2580",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 46
+  },
+  {
+    "id": "440612001",
+    "printfulName": "Evolve White on Black V-Neck",
+    "blankType": "Bella + Canvas 3005 | Unisex V-Neck Jersey Tee",
+    "brand": "Bella + Canvas",
+    "model": "3005",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 31
+  },
+  {
+    "id": "440610853",
+    "printfulName": "Evolve Premium Sweatshirt",
+    "blankType": "Cotton Heritage M2480 | Unisex Premium Crew Neck",
+    "brand": "Cotton Heritage",
+    "model": "M2480",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 40.5
+  },
+  {
+    "id": "440610516",
+    "printfulName": "Evolve Dark on Dark Hoodie",
+    "blankType": "Gildan 18500 | Adult Hooded Sweat Heavy Blend",
+    "brand": "Gildan",
+    "model": "18500",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 35.5
+  },
+  {
+    "id": "440609882",
+    "printfulName": "Evolve premium heavyweight tee",
+    "blankType": "Cotton Heritage MC1086 | Men's Heavyweight T-Shirt",
+    "brand": "Cotton Heritage",
+    "model": "MC1086",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 25.5
+  },
+  {
+    "id": "440609698",
+    "printfulName": "Evolve Hunting Hoodie",
+    "blankType": "Stanley/Stella SASU024 | Slammer 2.0 Heavyweight Unisex Oversized Hoodie Sweatshirt",
+    "brand": "Stanley/Stella",
+    "model": "SASU024",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_front",
+      "opt:text_thread_colors_large_front",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 86.5
+  },
+  {
+    "id": "440609155",
+    "printfulName": "Evolved 2/4 sleeve",
+    "blankType": "Tultex 245 | Unisex Fine Jersey Raglan T-Shirt",
+    "brand": "Tultex",
+    "model": "245",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Heather Denim/Navy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 31
+  },
+  {
+    "id": "440608834",
+    "printfulName": "Evolved Print V-Neck T-Shirt",
+    "blankType": "Bella + Canvas 3005 | Unisex V-Neck Jersey Tee",
+    "brand": "Bella + Canvas",
+    "model": "3005",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Dark Grey Heather"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 31
+  },
+  {
+    "id": "440607891",
+    "printfulName": "Great White North Evolve Stainless steel tumbler",
+    "blankType": "Tumbler | 20oz | Stainless Steel",
+    "brand": "",
+    "model": "Tumbler | 20oz | Stainless Steel",
+    "techniques": [
+      "UV"
+    ],
+    "fileTypes": [
+      "default",
+      "preview"
+    ],
+    "technique": "print",
+    "colors": [
+      "White"
+    ],
+    "sizes": [
+      "20 oz"
+    ],
+    "minPrice": 39
+  },
+  {
+    "id": "440607292",
+    "printfulName": "Evolve Original Stealth Snapback",
+    "blankType": "YuPoong 6089M | YP Classics Premium Snapback Cap",
+    "brand": "Yupoong",
+    "model": "6089M",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large",
+      "opt:thread_colors_back",
+      "opt:text_thread_colors_back",
+      "opt:thread_colors_right",
+      "opt:text_thread_colors_right",
+      "opt:thread_colors_left",
+      "opt:text_thread_colors_left"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 30
+  },
+  {
+    "id": "440606458",
+    "printfulName": "Evolved Stealth Denim Baseball Cap",
+    "blankType": "Otto Cap 18-204 | 6 Panel Low Profile Dad Hat",
+    "brand": "Otto Cap",
+    "model": "18-204",
+    "techniques": [
+      "EMBROIDERY",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "embroidery_front_large",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_front_large",
+      "opt:text_thread_colors_front_large",
+      "opt:thread_colors_3d_front_large",
+      "opt:thread_colors_back",
+      "opt:text_thread_colors_back",
+      "opt:thread_colors_left",
+      "opt:text_thread_colors_left",
+      "opt:thread_colors_right",
+      "opt:text_thread_colors_right"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 25.5
+  },
+  {
+    "id": "440605056",
+    "printfulName": "White Wanderlust Beanie",
+    "blankType": "YuPoong 1501KC | YP Classics Cuffed Knit Beanie",
+    "brand": "Yupoong",
+    "model": "1501KC",
+    "techniques": [
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "default",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Dark Grey"
+    ],
+    "sizes": [
+      "One size"
+    ],
+    "minPrice": 24.5
+  },
+  {
+    "id": "440601843",
+    "printfulName": "Evolve Borealis Black Mug",
+    "blankType": "Mug | Glossy | Ceramic | Black",
+    "brand": "",
+    "model": "Black Glossy Mug",
+    "techniques": [
+      "SUBLIMATION"
+    ],
+    "fileTypes": [
+      "default",
+      "preview"
+    ],
+    "technique": "print",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "15 oz"
+    ],
+    "minPrice": 16.5
+  },
+  {
+    "id": "440600277",
+    "printfulName": "Stealth Fit Evolve full zip hoodie",
+    "blankType": "Lane Seven LS14003 | Full Zip Hoodie",
+    "brand": "Lane Seven",
+    "model": "LS14003",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "embroidery_chest_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_large_back",
+      "opt:text_thread_colors_large_back"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "minPrice": 59
+  },
+  {
+    "id": "440597762",
+    "printfulName": "Evolve fleece zip up hoodie",
+    "blankType": "Independent Trading Co. SS4500Z | Midweight Zip Hood",
+    "brand": "Independent Trading Co.",
+    "model": "SS4500Z",
+    "techniques": [
+      "DTG",
+      "EMBROIDERY"
+    ],
+    "fileTypes": [
+      "default",
+      "sleeve_left",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_large_center",
+      "opt:text_thread_colors_large_center",
+      "opt:thread_colors_wrist_left",
+      "opt:text_thread_colors_wrist_left",
+      "opt:thread_colors_wrist_right",
+      "opt:text_thread_colors_wrist_right",
+      "opt:lifelike"
+    ],
+    "technique": "embroidery",
+    "colors": [
+      "Charcoal Heather"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 75.5
+  }
+]

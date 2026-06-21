@@ -85,9 +85,9 @@ export default function Footer() {
             Alberta
           </p>
           <div className="flex gap-6 font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
-            <Link href="/about" className="link-underline hover:text-neon">Shipping</Link>
-            <Link href="/about" className="link-underline hover:text-neon">Returns</Link>
-            <Link href="/about" className="link-underline hover:text-neon">Contact</Link>
+            <Link href="/terms" className="link-underline hover:text-neon">Terms &amp; Returns</Link>
+            <Link href="/privacy" className="link-underline hover:text-neon">Privacy</Link>
+            <a href="https://www.evolveecoblasting.com" target="_blank" rel="noopener" className="link-underline hover:text-neon">Evolve Eco Blasting</a>
           </div>
         </div>
       </div>

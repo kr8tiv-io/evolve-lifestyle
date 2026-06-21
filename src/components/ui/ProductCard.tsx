@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import ProductImage from "@/components/ui/ProductImage";
 import { formatPrice } from "@/lib/utils";
-import { COLLECTION_LABELS, type Product } from "@/lib/products";
+import { COLLECTION_LABELS, SCENES, type Product } from "@/lib/products";
 
 export default function ProductCard({
   product,
@@ -32,6 +32,7 @@ export default function ProductCard({
             tone={product.tone}
             label={product.subtitle}
             fit="contain"
+            scene={SCENES[product.collection]}
             className="h-full w-full"
             imgClassName="group-hover:scale-[1.05] transition-transform duration-[1200ms]"
             priority

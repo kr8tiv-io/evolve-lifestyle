@@ -8,7 +8,7 @@ import ProductCard from "@/components/ui/ProductCard";
 import Magnetic from "@/components/ui/Magnetic";
 import { Reveal } from "@/components/ui/Reveal";
 import { formatPrice } from "@/lib/utils";
-import { COLLECTION_LABELS, type Product } from "@/lib/products";
+import { COLLECTION_LABELS, SCENES, type Product } from "@/lib/products";
 import { useCart } from "@/store/cart";
 
 export default function ProductView({
@@ -83,6 +83,7 @@ export default function ProductView({
               tone={product.tone}
               label={product.subtitle}
               fit="contain"
+              scene={SCENES[product.collection]}
               className="h-full w-full"
               priority
             />
@@ -133,6 +134,11 @@ export default function ProductView({
           <p className="mt-6 max-w-md text-base leading-relaxed text-silver-dim">
             {product.description}
           </p>
+          {product.brand && (
+            <p className="mt-3 font-mono text-[0.6rem] uppercase tracking-tracked text-silver-dim/70">
+              Blank · {product.brand}
+            </p>
+          )}
 
           {/* Color */}
           <div className="mt-8">

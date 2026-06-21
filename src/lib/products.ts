@@ -39,6 +39,8 @@ export interface Product {
   /** brand-story line printed on the tag / shown on PDP */
   tagline: string;
   description: string;
+  /** small footnote: the actual garment blank brand + model (e.g. "Champion CC8C") */
+  brand?: string;
   details: string[];
   /** gradient tones used for the brand fallback + ambient glow */
   tone: [string, string];
@@ -296,4 +298,12 @@ export const COLLECTION_LABELS: Record<Collection, string> = {
   peaks: "Peaks",
   boreal: "Boreal",
   coast: "Coast",
+};
+
+// Canadian-landscape backdrops behind the product cutouts, by collection.
+export const SCENES: Record<Collection, string> = {
+  boreal: "/landscapes/boreal.jpg",
+  peaks: "/landscapes/peaks.jpg",
+  prairies: "/landscapes/prairies.jpg",
+  coast: "/landscapes/coast.jpg",
 };
