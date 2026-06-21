@@ -141,7 +141,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441087767-0-v4.png"
+      "/products/p441087767-0-v5.png"
     ],
     "sizes": [
       "S",
@@ -1039,7 +1039,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440708024-0-v4.png"
+      "/products/p440708024-0-v5.png"
     ],
     "sizes": [
       "One size"
@@ -1770,7 +1770,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440607891-0-v4.png"
+      "/products/p440607891-0-v5.png"
     ],
     "sizes": [
       "20 oz"

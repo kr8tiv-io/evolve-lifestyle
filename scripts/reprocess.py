@@ -75,18 +75,50 @@ def refine(img):
     arr[:, :, 3] = a2
     return Image.fromarray(arr, "RGBA")
 
-def proc(stem, suffix, model="birefnet-general"):
+def refine_white(img):
+    """For WHITE-on-white products: keep the whole white body, cut exactly at the true
+    silhouette, no halo. NO border flood-fill, NO erode, NO thin-rim (those eat/fray a
+    white garment). Only: decontaminate the AA band to nearest-interior colour (white)
+    so there is no grey rim, then a gentle ~1px feather for a clean soft edge."""
+    arr = np.array(img.convert("RGBA"))
+    a = arr[:, :, 3]
+    rgb = arr[:, :, :3]
+    interior = a > 200
+    if interior.sum() > 50:
+        idx = ndimage.distance_transform_edt(
+            ~interior, return_distances=False, return_indices=True
+        )
+        nearest = rgb[idx[0], idx[1]]
+        m = ~interior
+        out = rgb.copy(); out[m] = nearest[m]; arr[:, :, :3] = out
+    a2 = np.array(Image.fromarray(a).filter(ImageFilter.GaussianBlur(0.8)))
+    arr[:, :, 3] = a2
+    return Image.fromarray(arr, "RGBA")
+
+def proc(stem, suffix, model="birefnet-general", white=False):
     src = os.path.join(PROD, stem + ".png")
     im = Image.open(src).convert("RGBA")
-    cut = remove(
-        im, session=sess(model), alpha_matting=True,
-        alpha_matting_foreground_threshold=240,
-        alpha_matting_background_threshold=18,
-        alpha_matting_erode_size=10,
-        post_process_mask=False,
-    )
-    cut = remove_border_white(cut, im)
-    cut = refine(cut)
+    if white:
+        # precise low-contrast matte: tight trimap (small erode) so the subtle shadow /
+        # drop-shadow boundary becomes the cut line; keep interior holes (arm gaps).
+        cut = remove(
+            im, session=sess(model), alpha_matting=True,
+            alpha_matting_foreground_threshold=250,
+            alpha_matting_background_threshold=8,
+            alpha_matting_erode_size=2,
+            post_process_mask=False,
+        )
+        cut = refine_white(cut)
+    else:
+        cut = remove(
+            im, session=sess(model), alpha_matting=True,
+            alpha_matting_foreground_threshold=240,
+            alpha_matting_background_threshold=18,
+            alpha_matting_erode_size=10,
+            post_process_mask=False,
+        )
+        cut = remove_border_white(cut, im)
+        cut = refine(cut)
     out = os.path.join(PROD, stem + suffix + ".png")
     cut.save(out)
     a = np.array(cut)[:, :, 3]
@@ -97,6 +129,10 @@ if __name__ == "__main__":
     import glob, re
     suffix = sys.argv[1]
     stems = sys.argv[2:]
+    white = False
+    if stems and stems[0] == "WHITE":
+        white = True
+        stems = stems[1:]
     if stems == ["ALL"]:
         files = glob.glob(os.path.join(PROD, "p*-0.png"))
         stems = sorted(
@@ -105,5 +141,5 @@ if __name__ == "__main__":
         )
         print(f"ALL -> {len(stems)} originals")
     for i, stem in enumerate(stems, 1):
-        print(f"[{i}/{len(stems)}] {stem}")
-        proc(stem, suffix)
+        print(f"[{i}/{len(stems)}] {stem}  white={white}")
+        proc(stem, suffix, white=white)
