@@ -26,7 +26,7 @@ export default function ProductCard({
         data-cursor="magnetic"
         className="group block focus-visible:outline-none"
       >
-        <div className="relative aspect-[4/5] overflow-hidden rounded-[2px] border border-white/[0.06] transition-all duration-500 ease-evolve group-hover:border-neon/30 group-hover:shadow-[0_24px_60px_-24px_rgba(0,255,65,0.35)]">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-[2px] border border-transparent transition-all duration-500 ease-evolve group-hover:border-neon/30 group-hover:shadow-[0_24px_60px_-24px_rgba(0,255,65,0.35)]">
           <ProductImage
             src={product.images[0]}
             alt={product.name}

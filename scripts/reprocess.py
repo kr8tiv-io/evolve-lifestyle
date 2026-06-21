@@ -38,24 +38,41 @@ def remove_border_white(cut, orig):
     return Image.fromarray(arr, "RGBA")
 
 def refine(img):
+    """Remove the white/gray background halo so the garment melts into the dark card,
+    WITHOUT eating legit product features or logos. Three steps:
+    1) THIN-RIM kill: a boundary pixel that is bright AND has dark garment within ~3px
+       inward is background contamination -> drop its alpha. A wide bright gradient
+       (glossy mug lip, a white garment, an on-garment logo) stays because the
+       neighbourhood isn't dark, and interior logos are excluded (not near the edge).
+    2) EDGE COLOUR DECONTAMINATION: every non-interior pixel takes its nearest
+       garment-interior colour, so the anti-aliased band reads as garment colour.
+    3) 1px erode + 0.7px feather for a smooth, soft transition."""
     arr = np.array(img.convert("RGBA"))
-    a = arr[:, :, 3]
-    # 1px erode of the matte (min filter) to pull the edge in past any white halo
-    aero = np.array(Image.fromarray(a).filter(ImageFilter.MinFilter(3))).astype(np.float32)
-    rgb = arr[:, :, :3].astype(np.float32)
-    mn = rgb.min(axis=2); mx = rgb.max(axis=2)
-    nearwhite = (mn > 214) & ((mx - mn) < 24)
-    edge = (aero > 6) & (aero < 250)
-    # any remaining near-white partial edge pixel: drop its alpha hard (de-fringe)
-    aero[nearwhite & edge] *= 0.2
-    # also nuke fully-opaque near-white pixels that sit ON the matte edge (thin
-    # white rim that stayed opaque): if near-white AND has a transparent neighbour
-    trans_neighbour = np.array(
-        Image.fromarray((a < 8).astype(np.uint8) * 255).filter(ImageFilter.MaxFilter(5))
-    ) > 0
-    rim = nearwhite & trans_neighbour
-    aero[rim] = 0
-    arr[:, :, 3] = np.clip(aero, 0, 255).astype(np.uint8)
+    a = arr[:, :, 3].copy()
+    rgb = arr[:, :, :3]
+    lum = rgb.astype(np.float32).mean(axis=2)
+    solid = a > 235
+    if solid.sum() > 50:
+        core_lum = float(np.median(lum[ndimage.binary_erosion(solid, iterations=4)]
+                                   if ndimage.binary_erosion(solid, iterations=4).sum()
+                                   else lum[solid]))
+        trans = a < 10
+        near_boundary = ndimage.binary_dilation(trans, iterations=2) & (a > 40)
+        bright = lum > max(core_lum + 45, 120)
+        inward_min = ndimage.minimum_filter(lum, size=7)
+        thin_rim = near_boundary & bright & (inward_min < core_lum + 25)
+        a[thin_rim] = 0
+    interior = a > 200
+    if interior.sum() > 50:
+        idx = ndimage.distance_transform_edt(
+            ~interior, return_distances=False, return_indices=True
+        )
+        nearest = rgb[idx[0], idx[1]]
+        m = ~interior
+        out = rgb.copy(); out[m] = nearest[m]; arr[:, :, :3] = out
+    a2 = np.array(Image.fromarray(a).filter(ImageFilter.MinFilter(3)))
+    a2 = np.array(Image.fromarray(a2).filter(ImageFilter.GaussianBlur(0.7)))
+    arr[:, :, 3] = a2
     return Image.fromarray(arr, "RGBA")
 
 def proc(stem, suffix, model="birefnet-general"):
