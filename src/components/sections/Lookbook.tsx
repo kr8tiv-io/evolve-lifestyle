@@ -105,7 +105,7 @@ export default function Lookbook() {
       <div
         ref={trackRef}
         data-lenis-prevent
-        className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-5 px-5 pb-2 [scrollbar-width:none] sm:cursor-grab sm:gap-6 sm:scroll-px-8 sm:px-8 lg:scroll-px-12 lg:px-12 [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-5 px-5 pb-2 [scrollbar-width:none] sm:snap-none sm:cursor-grab sm:gap-6 sm:scroll-px-8 sm:px-8 lg:scroll-px-12 lg:px-12 [&::-webkit-scrollbar]:hidden"
       >
         {articles.map((a) => (
           <Link
