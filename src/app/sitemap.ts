@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getProducts } from "@/lib/products";
+import { getArticles } from "@/lib/journal";
 
 export const dynamic = "force-static";
 
@@ -21,6 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const articles = getArticles().map((a) => ({
+    url: `${BASE}/journal/${a.slug}/`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes.map((r) => ({
       url: BASE + r.path,
@@ -28,5 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: r.priority,
     })),
     ...products,
+    ...articles,
   ];
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Magnetic from "@/components/ui/Magnetic";
+import ForestAudio from "@/components/ui/ForestAudio";
 import { getLenis } from "@/components/providers/SmoothScroll";
 
 const Hero3D = dynamic(() => import("@/components/three/Hero3D"), {
@@ -177,13 +178,13 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.45, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative order-1 flex items-center justify-center lg:order-2"
+            className="relative order-1 flex flex-col items-center justify-center gap-3 lg:order-2 lg:gap-6"
           >
             <Link
               href="/"
               aria-label="EVOLVE home"
               data-cursor="magnetic"
-              className="lockup relative block w-[clamp(205px,38vw,600px)]"
+              className="lockup relative block w-[clamp(165px,38vw,600px)]"
             >
               {/* the exact reference lockup shape, filled with the alloy chrome
                   gradient so it matches the silver/white headline */}
@@ -206,6 +207,15 @@ export default function Hero() {
                 }}
               />
             </Link>
+
+            {/* forest-ambience player — sits just under the logo on mobile + desktop */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.1, duration: 0.9 }}
+            >
+              <ForestAudio />
+            </motion.div>
           </motion.div>
         </div>
       </motion.div>

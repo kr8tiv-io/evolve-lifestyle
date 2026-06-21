@@ -5,6 +5,7 @@ AddType font/otf .otf
 AddType font/woff2 .woff2
 AddType image/webp .webp
 AddType image/svg+xml .svg
+AddType audio/mpeg .mp3
 
 # Long cache for immutable static assets
 <IfModule mod_headers.c>
