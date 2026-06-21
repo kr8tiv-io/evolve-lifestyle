@@ -87,7 +87,13 @@ export default function Hero() {
       >
         <div className="frame grid w-full items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-10 2xl:gap-16">
           {/* LEFT — headline block, pulled toward centre to balance the logo */}
-          <div className="order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
+          <div className="relative order-2 text-center lg:order-1 lg:pl-[7%] lg:text-left xl:pl-[10%]">
+            {/* mobile-only legibility scrim — soft dark blur behind the text so the
+                splash letters read against the bright aurora (desktop: none) */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -inset-x-4 -inset-y-4 -z-10 rounded-3xl bg-void/35 backdrop-blur-[3px] [mask-image:radial-gradient(120%_120%_at_50%_50%,#000_55%,transparent_100%)] lg:hidden"
+            />
             <motion.p
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -103,7 +109,9 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
               className="glow-headline font-medium uppercase text-silver-bright"
               style={{
-                fontSize: "clamp(2.6rem, 5.6vw, 5.9rem)",
+                // min lowered for mobile so the title fits in 2 lines (≥743px still
+                // uses the 5.6vw value, so desktop is unchanged)
+                fontSize: "clamp(2rem, 5.6vw, 5.9rem)",
                 lineHeight: 0.94,
                 letterSpacing: "-0.02em",
               }}

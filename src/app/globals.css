@@ -168,11 +168,11 @@ html.lenis body {
 
 @layer components {
   .frame {
-    @apply mx-auto w-full max-w-grid px-5 sm:px-8 lg:px-12;
+    @apply mx-auto w-full max-w-grid px-6 sm:px-8 lg:px-12;
   }
   /* Narrower reading measure for prose-forward sections */
   .frame-read {
-    @apply mx-auto w-full px-5 sm:px-8 lg:px-12;
+    @apply mx-auto w-full px-6 sm:px-8 lg:px-12;
     max-width: 1200px;
   }
 
@@ -354,5 +354,52 @@ html.lenis body {
   }
   body::after {
     animation: none;
+  }
+}
+
+/* ============================================================
+   MOBILE-ONLY refinements (phones / small screens).
+   Everything here is gated behind max-width media queries so the
+   desktop layout is completely untouched.
+   ============================================================ */
+@media (max-width: 1023px) {
+  /* Item 4 — anchor the page: kill horizontal scroll + the side-to-side
+     overscroll "slide" on touch so the splash can't be pushed left/right. */
+  html,
+  body {
+    overflow-x: clip;
+    overscroll-behavior-x: none;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Item 5 — framer-motion whileInView can fail to fire for below-fold cards
+     on mobile (Lenis), leaving products at opacity:0. Force every product card
+     visible so all four featured (and the shop / related grids) show. */
+  .reveal-card {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Item 2 — splash hero legibility: dark text-shadow backing so the letters
+     read against the bright aurora. */
+  [data-section="Hero"] .glow-headline {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.62), 0 1px 3px rgba(0, 0, 0, 0.55),
+      0 0 18px rgba(0, 255, 65, 0.16);
+  }
+  [data-section="Hero"] .eyebrow-rule,
+  [data-section="Hero"] p {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Item 3 — tighter CTA so the splash buttons fit fully on screen. */
+  [data-section="Hero"] .btn-solid {
+    padding: 15px 30px;
+    font-size: 0.74rem;
+  }
+  [data-section="Hero"] .btn-ghost {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
   }
 }
