@@ -4,15 +4,15 @@ import type { Product } from "./products";
 
 export const PRINTFUL_PRODUCTS: Product[] = [
   {
-    "slug": "camouflage-trucker-hat",
-    "name": "Camouflage trucker hat",
+    "slug": "treeline-camo-trucker",
+    "name": "Treeline Camo Trucker",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "boreal",
     "price": 3300,
     "externalId": "441089440",
     "tagline": "Descended from survivors.",
-    "description": "Camouflage trucker hat — Descended from survivors. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Treeline Camo Trucker — Descended from survivors. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -31,7 +31,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "camouflage-trucker-hat-camo-olive-one-size",
+        "id": "treeline-camo-trucker-camo-olive-one-size",
         "variantId": "5362675264",
         "sku": "6A377452C4E15",
         "size": "One size",
@@ -42,15 +42,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "unisex-hoodie",
-    "name": "Unisex Hoodie",
+    "slug": "longhaul-hoodie",
+    "name": "Longhaul Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "peaks",
     "price": 5450,
     "externalId": "441089080",
     "tagline": "Built for the bush. Made for the long haul.",
-    "description": "Unisex Hoodie — Built for the bush. Made for the long haul. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Longhaul Hoodie — Built for the bush. Made for the long haul. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -73,7 +73,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "unisex-hoodie-carbon-grey-s",
+        "id": "longhaul-hoodie-carbon-grey-s",
         "variantId": "5362674524",
         "sku": "6A3773EE4302A_S",
         "size": "S",
@@ -82,7 +82,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-hoodie-carbon-grey-m",
+        "id": "longhaul-hoodie-carbon-grey-m",
         "variantId": "5362674525",
         "sku": "6A3773EE4302A_M",
         "size": "M",
@@ -91,7 +91,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-hoodie-carbon-grey-l",
+        "id": "longhaul-hoodie-carbon-grey-l",
         "variantId": "5362674526",
         "sku": "6A3773EE4302A_L",
         "size": "L",
@@ -100,7 +100,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-hoodie-carbon-grey-xl",
+        "id": "longhaul-hoodie-carbon-grey-xl",
         "variantId": "5362674527",
         "sku": "6A3773EE4302A_XL",
         "size": "XL",
@@ -109,7 +109,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-hoodie-carbon-grey-2xl",
+        "id": "longhaul-hoodie-carbon-grey-2xl",
         "variantId": "5362674528",
         "sku": "6A3773EE4302A_2XL",
         "size": "2XL",
@@ -120,15 +120,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "men-s-champion-long-sleeve-shirt",
-    "name": "Men's Champion Long Sleeve Shirt",
+    "slug": "coldfront-champion-long-sleeve",
+    "name": "Coldfront Champion Long-Sleeve",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "prairies",
     "price": 4750,
     "externalId": "441087767",
     "tagline": "Earned outside.",
-    "description": "Men's Champion Long Sleeve Shirt — Earned outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Coldfront Champion Long-Sleeve — Earned outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -151,7 +151,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "men-s-champion-long-sleeve-shirt-white-s",
+        "id": "coldfront-champion-long-sleeve-white-s",
         "variantId": "5362668206",
         "sku": "6A3771D05A41F_S",
         "size": "S",
@@ -160,7 +160,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "men-s-champion-long-sleeve-shirt-white-m",
+        "id": "coldfront-champion-long-sleeve-white-m",
         "variantId": "5362668207",
         "sku": "6A3771D05A41F_M",
         "size": "M",
@@ -169,7 +169,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "men-s-champion-long-sleeve-shirt-white-l",
+        "id": "coldfront-champion-long-sleeve-white-l",
         "variantId": "5362668208",
         "sku": "6A3771D05A41F_L",
         "size": "L",
@@ -178,7 +178,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "men-s-champion-long-sleeve-shirt-white-xl",
+        "id": "coldfront-champion-long-sleeve-white-xl",
         "variantId": "5362668209",
         "sku": "6A3771D05A41F_XL",
         "size": "XL",
@@ -187,7 +187,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "men-s-champion-long-sleeve-shirt-white-2xl",
+        "id": "coldfront-champion-long-sleeve-white-2xl",
         "variantId": "5362668210",
         "sku": "6A3771D05A41F_2XL",
         "size": "2XL",
@@ -198,15 +198,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "hooded-long-sleeve-tee",
-    "name": "Hooded long-sleeve tee",
+    "slug": "driftwood-hooded-long-sleeve",
+    "name": "Driftwood Hooded Long-Sleeve",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "coast",
     "price": 4100,
     "externalId": "441087198",
     "tagline": "Canadian-built. Weather-tested.",
-    "description": "Hooded long-sleeve tee — Canadian-built. Weather-tested. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Driftwood Hooded Long-Sleeve — Canadian-built. Weather-tested. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -230,7 +230,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "hooded-long-sleeve-tee-charcoal-black-triblend-xs",
+        "id": "driftwood-hooded-long-sleeve-charcoal-black-triblend-xs",
         "variantId": "5362665594",
         "sku": "6A3770D5D397C_XS",
         "size": "XS",
@@ -239,7 +239,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "hooded-long-sleeve-tee-charcoal-black-triblend-s",
+        "id": "driftwood-hooded-long-sleeve-charcoal-black-triblend-s",
         "variantId": "5362665595",
         "sku": "6A3770D5D397C_S",
         "size": "S",
@@ -248,7 +248,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "hooded-long-sleeve-tee-charcoal-black-triblend-m",
+        "id": "driftwood-hooded-long-sleeve-charcoal-black-triblend-m",
         "variantId": "5362665597",
         "sku": "6A3770D5D397C_M",
         "size": "M",
@@ -257,7 +257,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "hooded-long-sleeve-tee-charcoal-black-triblend-l",
+        "id": "driftwood-hooded-long-sleeve-charcoal-black-triblend-l",
         "variantId": "5362665598",
         "sku": "6A3770D5D397C_L",
         "size": "L",
@@ -266,7 +266,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "hooded-long-sleeve-tee-charcoal-black-triblend-xl",
+        "id": "driftwood-hooded-long-sleeve-charcoal-black-triblend-xl",
         "variantId": "5362665599",
         "sku": "6A3770D5D397C_XL",
         "size": "XL",
@@ -275,7 +275,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "hooded-long-sleeve-tee-charcoal-black-triblend-2xl",
+        "id": "driftwood-hooded-long-sleeve-charcoal-black-triblend-2xl",
         "variantId": "5362665600",
         "sku": "6A3770D5D397C_2XL",
         "size": "2XL",
@@ -286,15 +286,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "premium-full-zip-hoodie",
-    "name": "Premium full zip hoodie",
+    "slug": "summit-full-zip-hoodie",
+    "name": "Summit Full-Zip Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "boreal",
     "price": 5250,
     "externalId": "441085408",
     "tagline": "Strip it back. Build it stronger.",
-    "description": "Premium full zip hoodie — Strip it back. Build it stronger. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Summit Full-Zip Hoodie — Strip it back. Build it stronger. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -318,7 +318,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "premium-full-zip-hoodie-charcoal-heather-s",
+        "id": "summit-full-zip-hoodie-charcoal-heather-s",
         "variantId": "5362657742",
         "sku": "6A376D492E307_S",
         "size": "S",
@@ -327,7 +327,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "premium-full-zip-hoodie-charcoal-heather-m",
+        "id": "summit-full-zip-hoodie-charcoal-heather-m",
         "variantId": "5362657743",
         "sku": "6A376D492E307_M",
         "size": "M",
@@ -336,7 +336,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "premium-full-zip-hoodie-charcoal-heather-l",
+        "id": "summit-full-zip-hoodie-charcoal-heather-l",
         "variantId": "5362657744",
         "sku": "6A376D492E307_L",
         "size": "L",
@@ -345,7 +345,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "premium-full-zip-hoodie-charcoal-heather-xl",
+        "id": "summit-full-zip-hoodie-charcoal-heather-xl",
         "variantId": "5362657745",
         "sku": "6A376D492E307_XL",
         "size": "XL",
@@ -354,7 +354,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "premium-full-zip-hoodie-charcoal-heather-2xl",
+        "id": "summit-full-zip-hoodie-charcoal-heather-2xl",
         "variantId": "5362657746",
         "sku": "6A376D492E307_2XL",
         "size": "2XL",
@@ -363,7 +363,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "premium-full-zip-hoodie-charcoal-heather-3xl",
+        "id": "summit-full-zip-hoodie-charcoal-heather-3xl",
         "variantId": "5362657747",
         "sku": "6A376D492E307_3XL",
         "size": "3XL",
@@ -375,15 +375,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "badge": "Flagship"
   },
   {
-    "slug": "evolve-unisex-classic-tee",
-    "name": "Evolve Unisex classic tee",
+    "slug": "heritage-classic-tee",
+    "name": "Heritage Classic Tee",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "peaks",
     "price": 1600,
     "externalId": "441085023",
     "tagline": "Cold and free beats warm and bored.",
-    "description": "Evolve Unisex classic tee — Cold and free beats warm and bored. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Heritage Classic Tee — Cold and free beats warm and bored. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -407,7 +407,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-unisex-classic-tee-natural-s",
+        "id": "heritage-classic-tee-natural-s",
         "variantId": "5362656022",
         "sku": "6A376C77437A5_S",
         "size": "S",
@@ -416,7 +416,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-unisex-classic-tee-natural-m",
+        "id": "heritage-classic-tee-natural-m",
         "variantId": "5362656023",
         "sku": "6A376C77437A5_M",
         "size": "M",
@@ -425,7 +425,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-unisex-classic-tee-natural-l",
+        "id": "heritage-classic-tee-natural-l",
         "variantId": "5362656024",
         "sku": "6A376C77437A5_L",
         "size": "L",
@@ -434,7 +434,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-unisex-classic-tee-natural-xl",
+        "id": "heritage-classic-tee-natural-xl",
         "variantId": "5362656025",
         "sku": "6A376C77437A5_XL",
         "size": "XL",
@@ -443,7 +443,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-unisex-classic-tee-natural-2xl",
+        "id": "heritage-classic-tee-natural-2xl",
         "variantId": "5362656026",
         "sku": "6A376C77437A5_2XL",
         "size": "2XL",
@@ -452,7 +452,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-unisex-classic-tee-natural-3xl",
+        "id": "heritage-classic-tee-natural-3xl",
         "variantId": "5362656027",
         "sku": "6A376C77437A5_3XL",
         "size": "3XL",
@@ -463,15 +463,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-forrest-green-heavyweight-hooded-sweatshirt",
-    "name": "Evolve Forrest Green Heavyweight Hooded Sweatshirt",
+    "slug": "deepwoods-heavyweight-hoodie",
+    "name": "Deepwoods Heavyweight Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "prairies",
     "price": 5800,
     "externalId": "441084646",
     "tagline": "Where the signal dies, we come alive.",
-    "description": "Evolve Forrest Green Heavyweight Hooded Sweatshirt — Where the signal dies, we come alive. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Deepwoods Heavyweight Hoodie — Where the signal dies, we come alive. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -496,7 +496,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-xs",
+        "id": "deepwoods-heavyweight-hoodie-army-xs",
         "variantId": "5362654378",
         "sku": "6A376BCE469F2_XS",
         "size": "XS",
@@ -505,7 +505,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-s",
+        "id": "deepwoods-heavyweight-hoodie-army-s",
         "variantId": "5362654379",
         "sku": "6A376BCE469F2_S",
         "size": "S",
@@ -514,7 +514,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-m",
+        "id": "deepwoods-heavyweight-hoodie-army-m",
         "variantId": "5362654380",
         "sku": "6A376BCE469F2_M",
         "size": "M",
@@ -523,7 +523,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-l",
+        "id": "deepwoods-heavyweight-hoodie-army-l",
         "variantId": "5362654381",
         "sku": "6A376BCE469F2_L",
         "size": "L",
@@ -532,7 +532,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-xl",
+        "id": "deepwoods-heavyweight-hoodie-army-xl",
         "variantId": "5362654382",
         "sku": "6A376BCE469F2_XL",
         "size": "XL",
@@ -541,7 +541,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-2xl",
+        "id": "deepwoods-heavyweight-hoodie-army-2xl",
         "variantId": "5362654383",
         "sku": "6A376BCE469F2_2XL",
         "size": "2XL",
@@ -550,7 +550,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-forrest-green-heavyweight-hooded-sweatshirt-army-3xl",
+        "id": "deepwoods-heavyweight-hoodie-army-3xl",
         "variantId": "5362654384",
         "sku": "6A376BCE469F2_3XL",
         "size": "3XL",
@@ -561,15 +561,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "snapback-hat",
-    "name": "Snapback Hat",
+    "slug": "nightfall-snapback",
+    "name": "Nightfall Snapback",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "coast",
     "price": 3150,
     "externalId": "441084360",
     "tagline": "Work hard. Play harder. Get outside.",
-    "description": "Snapback Hat — Work hard. Play harder. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Nightfall Snapback — Work hard. Play harder. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -588,7 +588,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "snapback-hat-heather-grey-one-size",
+        "id": "nightfall-snapback-heather-grey-one-size",
         "variantId": "5362652623",
         "sku": "6A376B3FB75A3",
         "size": "One size",
@@ -599,15 +599,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-organic-white-on-black",
-    "name": "Evolve Organic White on Black",
+    "slug": "whiteout-organic-tee",
+    "name": "Whiteout Organic Tee",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "boreal",
     "price": 3550,
     "externalId": "441084054",
     "tagline": "Restore what the week wore down.",
-    "description": "Evolve Organic White on Black — Restore what the week wore down. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Whiteout Organic Tee — Restore what the week wore down. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -626,7 +626,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-organic-white-on-black-black-one-size",
+        "id": "whiteout-organic-tee-black-one-size",
         "variantId": "5362651251",
         "sku": "6A376AB07E34E",
         "size": "One size",
@@ -637,15 +637,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "snapback-hat-3649",
-    "name": "Snapback Hat",
+    "slug": "ridgeline-snapback",
+    "name": "Ridgeline Snapback",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "peaks",
     "price": 3100,
     "externalId": "441083649",
     "tagline": "Tougher than the winters that made us.",
-    "description": "Snapback Hat — Tougher than the winters that made us. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Ridgeline Snapback — Tougher than the winters that made us. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -664,7 +664,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "snapback-hat-3649-dark-grey-one-size",
+        "id": "ridgeline-snapback-dark-grey-one-size",
         "variantId": "5362649362",
         "sku": "6A376A2850E8E",
         "size": "One size",
@@ -675,15 +675,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "embroidered-champion-packable-jacket",
-    "name": "Embroidered Champion Packable Jacket",
+    "slug": "stormcheck-packable-jacket",
+    "name": "Stormcheck Packable Jacket",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "prairies",
     "price": 7800,
     "externalId": "441082795",
     "tagline": "From the wheat to the water.",
-    "description": "Embroidered Champion Packable Jacket — From the wheat to the water. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Stormcheck Packable Jacket — From the wheat to the water. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -702,7 +702,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "embroidered-champion-packable-jacket-black-s",
+        "id": "stormcheck-packable-jacket-black-s",
         "variantId": "5362646673",
         "sku": "6A37692B2230C",
         "size": "S",
@@ -713,15 +713,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "trucker-cap",
-    "name": "Trucker Cap",
+    "slug": "backcountry-trucker",
+    "name": "Backcountry Trucker",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "coast",
     "price": 3250,
     "externalId": "441082547",
     "tagline": "Some things should never change. Get outside.",
-    "description": "Trucker Cap — Some things should never change. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Backcountry Trucker — Some things should never change. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -740,7 +740,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "trucker-cap-loden-one-size",
+        "id": "backcountry-trucker-loden-one-size",
         "variantId": "5362645425",
         "sku": "6A3768A50899B",
         "size": "One size",
@@ -751,15 +751,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "unisex-ringer-t-shirt",
-    "name": "Unisex ringer t-shirt",
+    "slug": "outpost-ringer-tee",
+    "name": "Outpost Ringer Tee",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "boreal",
     "price": 2650,
     "externalId": "441082269",
     "tagline": "Descended from survivors.",
-    "description": "Unisex ringer t-shirt — Descended from survivors. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Outpost Ringer Tee — Descended from survivors. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -783,7 +783,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "unisex-ringer-t-shirt-heather-gray-black-s",
+        "id": "outpost-ringer-tee-heather-gray-black-s",
         "variantId": "5362644524",
         "sku": "6A37683C61B53_S",
         "size": "S",
@@ -792,7 +792,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-ringer-t-shirt-heather-gray-black-m",
+        "id": "outpost-ringer-tee-heather-gray-black-m",
         "variantId": "5362644525",
         "sku": "6A37683C61B53_M",
         "size": "M",
@@ -801,7 +801,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-ringer-t-shirt-heather-gray-black-l",
+        "id": "outpost-ringer-tee-heather-gray-black-l",
         "variantId": "5362644526",
         "sku": "6A37683C61B53_L",
         "size": "L",
@@ -810,7 +810,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-ringer-t-shirt-heather-gray-black-xl",
+        "id": "outpost-ringer-tee-heather-gray-black-xl",
         "variantId": "5362644527",
         "sku": "6A37683C61B53_XL",
         "size": "XL",
@@ -819,7 +819,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-ringer-t-shirt-heather-gray-black-2xl",
+        "id": "outpost-ringer-tee-heather-gray-black-2xl",
         "variantId": "5362644528",
         "sku": "6A37683C61B53_2XL",
         "size": "2XL",
@@ -828,7 +828,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "unisex-ringer-t-shirt-heather-gray-black-3xl",
+        "id": "outpost-ringer-tee-heather-gray-black-3xl",
         "variantId": "5362644529",
         "sku": "6A37683C61B53_3XL",
         "size": "3XL",
@@ -839,15 +839,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-embroidered-organic-t",
-    "name": "Evolve Embroidered organic t",
+    "slug": "wildmark-organic-tee",
+    "name": "Wildmark Organic Tee",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "peaks",
     "price": 3000,
     "externalId": "440709618",
     "tagline": "Built for the bush. Made for the long haul.",
-    "description": "Evolve Embroidered organic t — Built for the bush. Made for the long haul. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Wildmark Organic Tee — Built for the bush. Made for the long haul. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -870,7 +870,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-embroidered-organic-t-desert-dust-s",
+        "id": "wildmark-organic-tee-desert-dust-s",
         "variantId": "5360918931",
         "sku": "6A355A69CEBF3_S",
         "size": "S",
@@ -879,7 +879,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-embroidered-organic-t-desert-dust-m",
+        "id": "wildmark-organic-tee-desert-dust-m",
         "variantId": "5360918932",
         "sku": "6A355A69CEBF3_M",
         "size": "M",
@@ -888,7 +888,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-embroidered-organic-t-desert-dust-l",
+        "id": "wildmark-organic-tee-desert-dust-l",
         "variantId": "5360918933",
         "sku": "6A355A69CEBF3_L",
         "size": "L",
@@ -897,7 +897,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-embroidered-organic-t-desert-dust-xl",
+        "id": "wildmark-organic-tee-desert-dust-xl",
         "variantId": "5360918934",
         "sku": "6A355A69CEBF3_XL",
         "size": "XL",
@@ -906,7 +906,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-embroidered-organic-t-desert-dust-2xl",
+        "id": "wildmark-organic-tee-desert-dust-2xl",
         "variantId": "5360918935",
         "sku": "6A355A69CEBF3_2XL",
         "size": "2XL",
@@ -917,15 +917,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-tank",
-    "name": "Evolve Tank",
+    "slug": "trailhead-tank",
+    "name": "Trailhead Tank",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "prairies",
     "price": 2550,
     "externalId": "440708831",
     "tagline": "Earned outside.",
-    "description": "Evolve Tank — Earned outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Trailhead Tank — Earned outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -949,7 +949,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-tank-black-xs",
+        "id": "trailhead-tank-black-xs",
         "variantId": "5360914569",
         "sku": "6A35595A57F56_XS",
         "size": "XS",
@@ -958,7 +958,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-tank-black-s",
+        "id": "trailhead-tank-black-s",
         "variantId": "5360914570",
         "sku": "6A35595A57F56_S",
         "size": "S",
@@ -967,7 +967,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-tank-black-m",
+        "id": "trailhead-tank-black-m",
         "variantId": "5360914571",
         "sku": "6A35595A57F56_M",
         "size": "M",
@@ -976,7 +976,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-tank-black-l",
+        "id": "trailhead-tank-black-l",
         "variantId": "5360914572",
         "sku": "6A35595A57F56_L",
         "size": "L",
@@ -985,7 +985,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-tank-black-xl",
+        "id": "trailhead-tank-black-xl",
         "variantId": "5360914573",
         "sku": "6A35595A57F56_XL",
         "size": "XL",
@@ -994,7 +994,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-tank-black-2xl",
+        "id": "trailhead-tank-black-2xl",
         "variantId": "5360914574",
         "sku": "6A35595A57F56_2XL",
         "size": "2XL",
@@ -1005,15 +1005,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "white-forest-snapback",
-    "name": "White Forest Snapback",
+    "slug": "whitewood-forest-snapback",
+    "name": "Whitewood Forest Snapback",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "coast",
     "price": 3100,
     "externalId": "440708024",
     "tagline": "Canadian-built. Weather-tested.",
-    "description": "White Forest Snapback — Canadian-built. Weather-tested. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Whitewood Forest Snapback — Canadian-built. Weather-tested. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1032,7 +1032,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "white-forest-snapback-white-one-size",
+        "id": "whitewood-forest-snapback-white-one-size",
         "variantId": "5360909429",
         "sku": "6A35586B4F8CE",
         "size": "One size",
@@ -1043,15 +1043,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "trucker-cap-3219",
-    "name": "Trucker Cap",
+    "slug": "frontier-trucker",
+    "name": "Frontier Trucker",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "boreal",
     "price": 3250,
     "externalId": "440613219",
     "tagline": "Strip it back. Build it stronger.",
-    "description": "Trucker Cap — Strip it back. Build it stronger. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Frontier Trucker — Strip it back. Build it stronger. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1070,7 +1070,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "trucker-cap-3219-loden-one-size",
+        "id": "frontier-trucker-loden-one-size",
         "variantId": "5360410273",
         "sku": "6A34D27D2548B",
         "size": "One size",
@@ -1081,15 +1081,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-hoodie",
-    "name": "Evolve Hoodie",
+    "slug": "boreal-standard-hoodie",
+    "name": "Boreal Standard Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "peaks",
     "price": 4600,
     "externalId": "440612780",
     "tagline": "Cold and free beats warm and bored.",
-    "description": "Evolve Hoodie — Cold and free beats warm and bored. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Boreal Standard Hoodie — Cold and free beats warm and bored. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1112,7 +1112,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-hoodie-black-s",
+        "id": "boreal-standard-hoodie-black-s",
         "variantId": "5360409149",
         "sku": "6A34D1EBCC7D8_S",
         "size": "S",
@@ -1121,7 +1121,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hoodie-black-m",
+        "id": "boreal-standard-hoodie-black-m",
         "variantId": "5360409150",
         "sku": "6A34D1EBCC7D8_M",
         "size": "M",
@@ -1130,7 +1130,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hoodie-black-l",
+        "id": "boreal-standard-hoodie-black-l",
         "variantId": "5360409152",
         "sku": "6A34D1EBCC7D8_L",
         "size": "L",
@@ -1139,7 +1139,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hoodie-black-xl",
+        "id": "boreal-standard-hoodie-black-xl",
         "variantId": "5360409153",
         "sku": "6A34D1EBCC7D8_XL",
         "size": "XL",
@@ -1148,7 +1148,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hoodie-black-2xl",
+        "id": "boreal-standard-hoodie-black-2xl",
         "variantId": "5360409154",
         "sku": "6A34D1EBCC7D8_2XL",
         "size": "2XL",
@@ -1159,15 +1159,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-white-on-black-v-neck",
-    "name": "Evolve White on Black V-Neck",
+    "slug": "whiteout-v-neck",
+    "name": "Whiteout V-Neck",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "prairies",
     "price": 3100,
     "externalId": "440612001",
     "tagline": "Where the signal dies, we come alive.",
-    "description": "Evolve White on Black V-Neck — Where the signal dies, we come alive. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Whiteout V-Neck — Where the signal dies, we come alive. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1190,7 +1190,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-white-on-black-v-neck-black-s",
+        "id": "whiteout-v-neck-black-s",
         "variantId": "5360406226",
         "sku": "6A34D0C8B3190_S",
         "size": "S",
@@ -1199,7 +1199,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-white-on-black-v-neck-black-m",
+        "id": "whiteout-v-neck-black-m",
         "variantId": "5360406227",
         "sku": "6A34D0C8B3190_M",
         "size": "M",
@@ -1208,7 +1208,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-white-on-black-v-neck-black-l",
+        "id": "whiteout-v-neck-black-l",
         "variantId": "5360406228",
         "sku": "6A34D0C8B3190_L",
         "size": "L",
@@ -1217,7 +1217,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-white-on-black-v-neck-black-xl",
+        "id": "whiteout-v-neck-black-xl",
         "variantId": "5360406229",
         "sku": "6A34D0C8B3190_XL",
         "size": "XL",
@@ -1226,7 +1226,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-white-on-black-v-neck-black-2xl",
+        "id": "whiteout-v-neck-black-2xl",
         "variantId": "5360406230",
         "sku": "6A34D0C8B3190_2XL",
         "size": "2XL",
@@ -1237,15 +1237,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-premium-sweatshirt",
-    "name": "Evolve Premium Sweatshirt",
+    "slug": "woodsmoke-premium-crew",
+    "name": "Woodsmoke Premium Crew",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "coast",
     "price": 4050,
     "externalId": "440610853",
     "tagline": "Work hard. Play harder. Get outside.",
-    "description": "Evolve Premium Sweatshirt — Work hard. Play harder. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Woodsmoke Premium Crew — Work hard. Play harder. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1268,7 +1268,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-premium-sweatshirt-black-s",
+        "id": "woodsmoke-premium-crew-black-s",
         "variantId": "5360402035",
         "sku": "6A34CF011E23B_S",
         "size": "S",
@@ -1277,7 +1277,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-sweatshirt-black-m",
+        "id": "woodsmoke-premium-crew-black-m",
         "variantId": "5360402036",
         "sku": "6A34CF011E23B_M",
         "size": "M",
@@ -1286,7 +1286,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-sweatshirt-black-l",
+        "id": "woodsmoke-premium-crew-black-l",
         "variantId": "5360402037",
         "sku": "6A34CF011E23B_L",
         "size": "L",
@@ -1295,7 +1295,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-sweatshirt-black-xl",
+        "id": "woodsmoke-premium-crew-black-xl",
         "variantId": "5360402038",
         "sku": "6A34CF011E23B_XL",
         "size": "XL",
@@ -1304,7 +1304,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-sweatshirt-black-2xl",
+        "id": "woodsmoke-premium-crew-black-2xl",
         "variantId": "5360402039",
         "sku": "6A34CF011E23B_2XL",
         "size": "2XL",
@@ -1315,15 +1315,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-dark-on-dark-hoodie",
-    "name": "Evolve Dark on Dark Hoodie",
+    "slug": "blackout-hoodie",
+    "name": "Blackout Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "boreal",
     "price": 3550,
     "externalId": "440610516",
     "tagline": "Restore what the week wore down.",
-    "description": "Evolve Dark on Dark Hoodie — Restore what the week wore down. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Blackout Hoodie — Restore what the week wore down. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1346,7 +1346,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-dark-on-dark-hoodie-black-s",
+        "id": "blackout-hoodie-black-s",
         "variantId": "5360401045",
         "sku": "6A34CE59C1E53_S",
         "size": "S",
@@ -1355,7 +1355,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-dark-on-dark-hoodie-black-m",
+        "id": "blackout-hoodie-black-m",
         "variantId": "5360401046",
         "sku": "6A34CE59C1E53_M",
         "size": "M",
@@ -1364,7 +1364,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-dark-on-dark-hoodie-black-l",
+        "id": "blackout-hoodie-black-l",
         "variantId": "5360401047",
         "sku": "6A34CE59C1E53_L",
         "size": "L",
@@ -1373,7 +1373,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-dark-on-dark-hoodie-black-xl",
+        "id": "blackout-hoodie-black-xl",
         "variantId": "5360401048",
         "sku": "6A34CE59C1E53_XL",
         "size": "XL",
@@ -1382,7 +1382,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-dark-on-dark-hoodie-black-2xl",
+        "id": "blackout-hoodie-black-2xl",
         "variantId": "5360401049",
         "sku": "6A34CE59C1E53_2XL",
         "size": "2XL",
@@ -1394,15 +1394,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     "badge": "Flagship"
   },
   {
-    "slug": "evolve-premium-heavyweight-tee",
-    "name": "Evolve premium heavyweight tee",
+    "slug": "anvil-heavyweight-tee",
+    "name": "Anvil Heavyweight Tee",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "peaks",
     "price": 2550,
     "externalId": "440609882",
     "tagline": "Tougher than the winters that made us.",
-    "description": "Evolve premium heavyweight tee — Tougher than the winters that made us. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Anvil Heavyweight Tee — Tougher than the winters that made us. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1425,7 +1425,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-premium-heavyweight-tee-black-s",
+        "id": "anvil-heavyweight-tee-black-s",
         "variantId": "5360399047",
         "sku": "6A34CD39B4E5B_S",
         "size": "S",
@@ -1434,7 +1434,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-heavyweight-tee-black-m",
+        "id": "anvil-heavyweight-tee-black-m",
         "variantId": "5360399048",
         "sku": "6A34CD39B4E5B_M",
         "size": "M",
@@ -1443,7 +1443,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-heavyweight-tee-black-l",
+        "id": "anvil-heavyweight-tee-black-l",
         "variantId": "5360399049",
         "sku": "6A34CD39B4E5B_L",
         "size": "L",
@@ -1452,7 +1452,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-heavyweight-tee-black-xl",
+        "id": "anvil-heavyweight-tee-black-xl",
         "variantId": "5360399050",
         "sku": "6A34CD39B4E5B_XL",
         "size": "XL",
@@ -1461,7 +1461,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-premium-heavyweight-tee-black-2xl",
+        "id": "anvil-heavyweight-tee-black-2xl",
         "variantId": "5360399051",
         "sku": "6A34CD39B4E5B_2XL",
         "size": "2XL",
@@ -1472,15 +1472,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-hunting-hoodie",
-    "name": "Evolve Hunting Hoodie",
+    "slug": "trapline-hunting-hoodie",
+    "name": "Trapline Hunting Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "prairies",
     "price": 8650,
     "externalId": "440609698",
     "tagline": "From the wheat to the water.",
-    "description": "Evolve Hunting Hoodie — From the wheat to the water. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Trapline Hunting Hoodie — From the wheat to the water. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1503,7 +1503,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-hunting-hoodie-black-s",
+        "id": "trapline-hunting-hoodie-black-s",
         "variantId": "5360398514",
         "sku": "6A34CCF0BD407_S",
         "size": "S",
@@ -1512,7 +1512,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hunting-hoodie-black-m",
+        "id": "trapline-hunting-hoodie-black-m",
         "variantId": "5360398515",
         "sku": "6A34CCF0BD407_M",
         "size": "M",
@@ -1521,7 +1521,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hunting-hoodie-black-l",
+        "id": "trapline-hunting-hoodie-black-l",
         "variantId": "5360398516",
         "sku": "6A34CCF0BD407_L",
         "size": "L",
@@ -1530,7 +1530,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hunting-hoodie-black-xl",
+        "id": "trapline-hunting-hoodie-black-xl",
         "variantId": "5360398517",
         "sku": "6A34CCF0BD407_XL",
         "size": "XL",
@@ -1539,7 +1539,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-hunting-hoodie-black-2xl",
+        "id": "trapline-hunting-hoodie-black-2xl",
         "variantId": "5360398518",
         "sku": "6A34CCF0BD407_2XL",
         "size": "2XL",
@@ -1550,15 +1550,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolved-2-4-sleeve",
-    "name": "Evolved 2/4 sleeve",
+    "slug": "halfday-raglan",
+    "name": "Halfday Raglan",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "coast",
     "price": 3100,
     "externalId": "440609155",
     "tagline": "Some things should never change. Get outside.",
-    "description": "Evolved 2/4 sleeve — Some things should never change. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Halfday Raglan — Some things should never change. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1582,7 +1582,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolved-2-4-sleeve-heather-denim-navy-xs",
+        "id": "halfday-raglan-heather-denim-navy-xs",
         "variantId": "5360396891",
         "sku": "6A34CC2450ED2_XS",
         "size": "XS",
@@ -1591,7 +1591,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-2-4-sleeve-heather-denim-navy-s",
+        "id": "halfday-raglan-heather-denim-navy-s",
         "variantId": "5360396892",
         "sku": "6A34CC2450ED2_S",
         "size": "S",
@@ -1600,7 +1600,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-2-4-sleeve-heather-denim-navy-m",
+        "id": "halfday-raglan-heather-denim-navy-m",
         "variantId": "5360396893",
         "sku": "6A34CC2450ED2_M",
         "size": "M",
@@ -1609,7 +1609,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-2-4-sleeve-heather-denim-navy-l",
+        "id": "halfday-raglan-heather-denim-navy-l",
         "variantId": "5360396894",
         "sku": "6A34CC2450ED2_L",
         "size": "L",
@@ -1618,7 +1618,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-2-4-sleeve-heather-denim-navy-xl",
+        "id": "halfday-raglan-heather-denim-navy-xl",
         "variantId": "5360396895",
         "sku": "6A34CC2450ED2_XL",
         "size": "XL",
@@ -1627,7 +1627,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-2-4-sleeve-heather-denim-navy-2xl",
+        "id": "halfday-raglan-heather-denim-navy-2xl",
         "variantId": "5360396896",
         "sku": "6A34CC2450ED2_2XL",
         "size": "2XL",
@@ -1638,15 +1638,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolved-print-v-neck-t-shirt",
-    "name": "Evolved Print V-Neck T-Shirt",
+    "slug": "northcut-v-neck",
+    "name": "Northcut V-Neck",
     "subtitle": "Tops · made to order",
     "category": "tops",
     "collection": "boreal",
     "price": 3100,
     "externalId": "440608834",
     "tagline": "Descended from survivors.",
-    "description": "Evolved Print V-Neck T-Shirt — Descended from survivors. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Northcut V-Neck — Descended from survivors. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1670,7 +1670,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolved-print-v-neck-t-shirt-dark-grey-heather-xs",
+        "id": "northcut-v-neck-dark-grey-heather-xs",
         "variantId": "5360395777",
         "sku": "6A34CB91E1988_XS",
         "size": "XS",
@@ -1679,7 +1679,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-print-v-neck-t-shirt-dark-grey-heather-s",
+        "id": "northcut-v-neck-dark-grey-heather-s",
         "variantId": "5360395778",
         "sku": "6A34CB91E1988_S",
         "size": "S",
@@ -1688,7 +1688,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-print-v-neck-t-shirt-dark-grey-heather-m",
+        "id": "northcut-v-neck-dark-grey-heather-m",
         "variantId": "5360395779",
         "sku": "6A34CB91E1988_M",
         "size": "M",
@@ -1697,7 +1697,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-print-v-neck-t-shirt-dark-grey-heather-l",
+        "id": "northcut-v-neck-dark-grey-heather-l",
         "variantId": "5360395780",
         "sku": "6A34CB91E1988_L",
         "size": "L",
@@ -1706,7 +1706,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-print-v-neck-t-shirt-dark-grey-heather-xl",
+        "id": "northcut-v-neck-dark-grey-heather-xl",
         "variantId": "5360395781",
         "sku": "6A34CB91E1988_XL",
         "size": "XL",
@@ -1715,7 +1715,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolved-print-v-neck-t-shirt-dark-grey-heather-2xl",
+        "id": "northcut-v-neck-dark-grey-heather-2xl",
         "variantId": "5360395782",
         "sku": "6A34CB91E1988_2XL",
         "size": "2XL",
@@ -1726,15 +1726,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "great-white-north-evolve-stainless-steel-tumbler",
-    "name": "Great White North Evolve Stainless steel tumbler",
+    "slug": "great-white-north-tumbler",
+    "name": "Great White North Tumbler",
     "subtitle": "Accessories · made to order",
     "category": "accessories",
     "collection": "peaks",
     "price": 3900,
     "externalId": "440607891",
     "tagline": "Built for the bush. Made for the long haul.",
-    "description": "Great White North Evolve Stainless steel tumbler — Built for the bush. Made for the long haul. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Great White North Tumbler — Built for the bush. Made for the long haul. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1753,7 +1753,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "great-white-north-evolve-stainless-steel-tumbler-white-20-oz",
+        "id": "great-white-north-tumbler-white-20-oz",
         "variantId": "5360390873",
         "sku": "6A34CA51549E9",
         "size": "20 oz",
@@ -1764,15 +1764,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-original-stealth-snapback",
-    "name": "Evolve Original Stealth Snapback",
+    "slug": "stealth-original-snapback",
+    "name": "Stealth Original Snapback",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "prairies",
     "price": 3000,
     "externalId": "440607292",
     "tagline": "Earned outside.",
-    "description": "Evolve Original Stealth Snapback — Earned outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Stealth Original Snapback — Earned outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1791,7 +1791,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-original-stealth-snapback-black-one-size",
+        "id": "stealth-original-snapback-black-one-size",
         "variantId": "5360389107",
         "sku": "6A34C960682A9",
         "size": "One size",
@@ -1802,15 +1802,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolved-stealth-denim-baseball-cap",
-    "name": "Evolved Stealth Denim Baseball Cap",
+    "slug": "stealth-denim-cap",
+    "name": "Stealth Denim Cap",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "coast",
     "price": 2550,
     "externalId": "440606458",
     "tagline": "Canadian-built. Weather-tested.",
-    "description": "Evolved Stealth Denim Baseball Cap — Canadian-built. Weather-tested. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Stealth Denim Cap — Canadian-built. Weather-tested. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1829,7 +1829,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolved-stealth-denim-baseball-cap-black-one-size",
+        "id": "stealth-denim-cap-black-one-size",
         "variantId": "5360386477",
         "sku": "6A34C8166FAF9",
         "size": "One size",
@@ -1840,15 +1840,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "white-wanderlust-beanie",
-    "name": "White Wanderlust Beanie",
+    "slug": "wanderlust-cuff-beanie",
+    "name": "Wanderlust Cuff Beanie",
     "subtitle": "Headwear · made to order",
     "category": "headwear",
     "collection": "boreal",
     "price": 2450,
     "externalId": "440605056",
     "tagline": "Strip it back. Build it stronger.",
-    "description": "White Wanderlust Beanie — Strip it back. Build it stronger. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Wanderlust Cuff Beanie — Strip it back. Build it stronger. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1867,7 +1867,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "white-wanderlust-beanie-dark-grey-one-size",
+        "id": "wanderlust-cuff-beanie-dark-grey-one-size",
         "variantId": "5360378913",
         "sku": "6A34C62D24CAA",
         "size": "One size",
@@ -1878,15 +1878,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-borealis-black-mug",
-    "name": "Evolve Borealis Black Mug",
+    "slug": "borealis-camp-mug",
+    "name": "Borealis Camp Mug",
     "subtitle": "Accessories · made to order",
     "category": "accessories",
     "collection": "peaks",
     "price": 1650,
     "externalId": "440601843",
     "tagline": "Cold and free beats warm and bored.",
-    "description": "Evolve Borealis Black Mug — Cold and free beats warm and bored. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Borealis Camp Mug — Cold and free beats warm and bored. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1905,7 +1905,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-borealis-black-mug-black-15-oz",
+        "id": "borealis-camp-mug-black-15-oz",
         "variantId": "5360367090",
         "sku": "6A34C10E6C765",
         "size": "15 oz",
@@ -1916,15 +1916,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "stealth-fit-evolve-full-zip-hoodie",
-    "name": "Stealth Fit Evolve full zip hoodie",
+    "slug": "stealth-full-zip-hoodie",
+    "name": "Stealth Full-Zip Hoodie",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "prairies",
     "price": 5900,
     "externalId": "440600277",
     "tagline": "Where the signal dies, we come alive.",
-    "description": "Stealth Fit Evolve full zip hoodie — Where the signal dies, we come alive. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Stealth Full-Zip Hoodie — Where the signal dies, we come alive. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -1948,7 +1948,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "stealth-fit-evolve-full-zip-hoodie-black-s",
+        "id": "stealth-full-zip-hoodie-black-s",
         "variantId": "5360361034",
         "sku": "6A34BE729C6EC_S",
         "size": "S",
@@ -1957,7 +1957,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "stealth-fit-evolve-full-zip-hoodie-black-m",
+        "id": "stealth-full-zip-hoodie-black-m",
         "variantId": "5360361035",
         "sku": "6A34BE729C6EC_M",
         "size": "M",
@@ -1966,7 +1966,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "stealth-fit-evolve-full-zip-hoodie-black-l",
+        "id": "stealth-full-zip-hoodie-black-l",
         "variantId": "5360361036",
         "sku": "6A34BE729C6EC_L",
         "size": "L",
@@ -1975,7 +1975,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "stealth-fit-evolve-full-zip-hoodie-black-xl",
+        "id": "stealth-full-zip-hoodie-black-xl",
         "variantId": "5360361037",
         "sku": "6A34BE729C6EC_XL",
         "size": "XL",
@@ -1984,7 +1984,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "stealth-fit-evolve-full-zip-hoodie-black-2xl",
+        "id": "stealth-full-zip-hoodie-black-2xl",
         "variantId": "5360361038",
         "sku": "6A34BE729C6EC_2XL",
         "size": "2XL",
@@ -1993,7 +1993,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "stealth-fit-evolve-full-zip-hoodie-black-3xl",
+        "id": "stealth-full-zip-hoodie-black-3xl",
         "variantId": "5360361039",
         "sku": "6A34BE729C6EC_3XL",
         "size": "3XL",
@@ -2004,15 +2004,15 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "evolve-fleece-zip-up-hoodie",
-    "name": "Evolve fleece zip up hoodie",
+    "slug": "hearth-fleece-zip",
+    "name": "Hearth Fleece Zip",
     "subtitle": "Outerwear · made to order",
     "category": "outerwear",
     "collection": "coast",
     "price": 7550,
     "externalId": "440597762",
     "tagline": "Work hard. Play harder. Get outside.",
-    "description": "Evolve fleece zip up hoodie — Work hard. Play harder. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
+    "description": "Hearth Fleece Zip — Work hard. Play harder. Get outside. Printed and embroidered to order, then shipped across Canada and the continent.",
     "details": [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -2035,7 +2035,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
     ],
     "variants": [
       {
-        "id": "evolve-fleece-zip-up-hoodie-charcoal-heather-s",
+        "id": "hearth-fleece-zip-charcoal-heather-s",
         "variantId": "5360349581",
         "sku": "6A34BA4671867_S",
         "size": "S",
@@ -2044,7 +2044,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-fleece-zip-up-hoodie-charcoal-heather-m",
+        "id": "hearth-fleece-zip-charcoal-heather-m",
         "variantId": "5360349582",
         "sku": "6A34BA4671867_M",
         "size": "M",
@@ -2053,7 +2053,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-fleece-zip-up-hoodie-charcoal-heather-l",
+        "id": "hearth-fleece-zip-charcoal-heather-l",
         "variantId": "5360349583",
         "sku": "6A34BA4671867_L",
         "size": "L",
@@ -2062,7 +2062,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-fleece-zip-up-hoodie-charcoal-heather-xl",
+        "id": "hearth-fleece-zip-charcoal-heather-xl",
         "variantId": "5360349584",
         "sku": "6A34BA4671867_XL",
         "size": "XL",
@@ -2071,7 +2071,7 @@ export const PRINTFUL_PRODUCTS: Product[] = [
         "inStock": true
       },
       {
-        "id": "evolve-fleece-zip-up-hoodie-charcoal-heather-2xl",
+        "id": "hearth-fleece-zip-charcoal-heather-2xl",
         "variantId": "5360349585",
         "sku": "6A34BA4671867_2XL",
         "size": "2XL",

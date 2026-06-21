@@ -68,6 +68,42 @@ const SLOGANS = [
   "Tougher than the winters that made us.", "From the wheat to the water.",
   "Some things should never change. Get outside.",
 ];
+// Cooler, on-brand names keyed by Printful product id (override the generic ones).
+const COOL_NAMES = {
+  "441089440": "Treeline Camo Trucker",
+  "441089080": "Longhaul Hoodie",
+  "441087767": "Coldfront Champion Long-Sleeve",
+  "441087198": "Driftwood Hooded Long-Sleeve",
+  "441085408": "Summit Full-Zip Hoodie",
+  "441085023": "Heritage Classic Tee",
+  "441084646": "Deepwoods Heavyweight Hoodie",
+  "441084360": "Nightfall Snapback",
+  "441084054": "Whiteout Organic Tee",
+  "441083649": "Ridgeline Snapback",
+  "441082795": "Stormcheck Packable Jacket",
+  "441082547": "Backcountry Trucker",
+  "441082269": "Outpost Ringer Tee",
+  "440709618": "Wildmark Organic Tee",
+  "440708831": "Trailhead Tank",
+  "440708024": "Whitewood Forest Snapback",
+  "440613219": "Frontier Trucker",
+  "440612780": "Boreal Standard Hoodie",
+  "440612001": "Whiteout V-Neck",
+  "440610853": "Woodsmoke Premium Crew",
+  "440610516": "Blackout Hoodie",
+  "440609882": "Anvil Heavyweight Tee",
+  "440609698": "Trapline Hunting Hoodie",
+  "440609155": "Halfday Raglan",
+  "440608834": "Northcut V-Neck",
+  "440607891": "Great White North Tumbler",
+  "440607292": "Stealth Original Snapback",
+  "440606458": "Stealth Denim Cap",
+  "440605056": "Wanderlust Cuff Beanie",
+  "440601843": "Borealis Camp Mug",
+  "440600277": "Stealth Full-Zip Hoodie",
+  "440597762": "Hearth Fleece Zip",
+};
+
 const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "OS", "One size"];
 const sizeRank = (s) => {
   const i = SIZE_ORDER.indexOf(s);
@@ -81,6 +117,7 @@ async function getJSON(url) {
 }
 async function download(url, file) {
   try {
+    if (existsSync(file)) return true; // already pulled — keep re-syncs fast
     const res = await fetch(url);
     if (!res.ok) return false;
     const buf = Buffer.from(await res.arrayBuffer());
@@ -104,9 +141,10 @@ for (const item of list) {
   const svs = (detail.sync_variants || []).filter((v) => !v.is_ignored);
   if (!svs.length) continue;
 
-  const category = classify(sp.name);
+  const name = COOL_NAMES[String(sp.id)] || sp.name;
+  const category = classify(sp.name); // classify on the original (always has the type word)
   const collection = COLLECTIONS[idx % COLLECTIONS.length];
-  let sname = slug(sp.name) || `product-${sp.id}`;
+  let sname = slug(name) || `product-${sp.id}`;
   if (seenSlugs.has(sname)) sname = `${sname}-${String(sp.id).slice(-4)}`;
   seenSlugs.add(sname);
 
@@ -153,14 +191,14 @@ for (const item of list) {
   const catLabel = { outerwear: "Outerwear", tops: "Tops", headwear: "Headwear", accessories: "Accessories" }[category];
   products.push({
     slug: sname,
-    name: sp.name,
+    name,
     subtitle: `${catLabel} · made to order`,
     category,
     collection,
     price,
     externalId: String(sp.id), // Printful sync_product id
     tagline: SLOGANS[idx % SLOGANS.length],
-    description: `${sp.name} — ${SLOGANS[idx % SLOGANS.length]} Printed and embroidered to order, then shipped across Canada and the continent.`,
+    description: `${name} — ${SLOGANS[idx % SLOGANS.length]} Printed and embroidered to order, then shipped across Canada and the continent.`,
     details: [
       "Made to order — printed/embroidered on demand",
       "Ships across Canada & North America",
@@ -173,7 +211,7 @@ for (const item of list) {
     variants,
     badge: category === "outerwear" && idx % 4 === 0 ? "Flagship" : undefined,
   });
-  console.log(`  ✓ ${sp.name} (${variants.length} variants, ${images.length} imgs)`);
+  console.log(`  ✓ ${name}  (was: ${sp.name})`);
   idx++;
   await sleep(150);
 }
