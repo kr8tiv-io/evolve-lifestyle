@@ -10,7 +10,7 @@
  * Deploy with `wrangler deploy` and set these as Worker secrets/vars:
  *   STRIPE_SECRET_KEY        sk_live_… (or sk_test_… while testing)
  *   STRIPE_WEBHOOK_SECRET    whsec_…  (from the Stripe webhook you register at /webhook)
- *   PRINTFUL_TOKEN           Printful account token (same one used by the sync script)
+ *   PRINTFUL_API_KEY           Printful account token (same one used by the sync script)
  *   PRINTFUL_STORE_ID        18352510 (the "Evolve" store id)
  *   SITE_ORIGIN              https://evolveapparel.shop
  *   PRINTFUL_CONFIRM         "false" to create Printful DRAFTS first (recommended); "true" to auto-submit
@@ -149,7 +149,7 @@ async function handleWebhook(request, env) {
     {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${env.PRINTFUL_TOKEN}`,
+        Authorization: `Bearer ${env.PRINTFUL_API_KEY}`,
         "X-PF-Store-Id": env.PRINTFUL_STORE_ID,
         "Content-Type": "application/json",
       },

@@ -24,6 +24,12 @@ export const COMMERCE: { provider: Provider; currency: string; gstRate: number }
 //   NEXT_PUBLIC_CHECKOUT_ENDPOINT=https://evolve-checkout.<sub>.workers.dev/create-session
 export const CHECKOUT_ENDPOINT = process.env.NEXT_PUBLIC_CHECKOUT_ENDPOINT ?? "";
 
+// Stripe PUBLISHABLE key (pk_…) — public, safe to embed. NOT used by the current
+// hosted-checkout redirect flow (the Worker creates the session with the secret key
+// and we redirect to session.url), but wired here for any future client-side Stripe.js.
+// Set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY at build to populate it. NEVER put a secret (sk_…) here.
+export const STRIPE_PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY ?? "";
+
 // Where manual/email orders go until live payments are wired.
 export const ORDER_EMAIL = "todd@evolveecoblasting.com";
 
