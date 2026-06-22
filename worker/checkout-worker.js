@@ -34,13 +34,53 @@ const pfHeaders = (env) => ({
   "X-PF-Store-Id": env.PRINTFUL_STORE_ID,
 });
 
+// Strong random token gating the TEMPORARY /admin-email completion route (Resend domain
+// status / verify / shop@ test send). Server-side only — the route never returns a secret.
+// Remove this const + the route + adminEmail() once the sending domain is verified.
+const ADMIN_TOKEN = "b6b5461e3629da0c00428e42522b70f2a5d4b0b39bd0185d4c3301682dcd4a50";
+
+// ---- per-IP rate limit (Durable Object; strongly consistent; fail-open) -----
+// All requests for one IP route to the same instance, so the in-memory sliding
+// window is accurate. No storage needed — a reset on eviction just fails open.
+export class RateLimiter {
+  constructor() {
+    this.hits = [];
+  }
+  async fetch() {
+    const now = Date.now();
+    const WINDOW_MS = 60000;
+    const LIMIT = 30;
+    this.hits = this.hits.filter((t) => now - t < WINDOW_MS);
+    if (this.hits.length >= LIMIT) return new Response("limited", { status: 429 });
+    this.hits.push(now);
+    return new Response("ok", { status: 200 });
+  }
+}
+
+// true => over the limit. Fail-OPEN: any limiter error (or missing binding) allows the request.
+async function rateLimited(env, request) {
+  try {
+    if (!env.RL) return false;
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    const res = await env.RL.get(env.RL.idFromName(ip)).fetch("https://rl/hit");
+    return res.status === 429;
+  } catch {
+    return false;
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const origin = env.SITE_ORIGIN || "*";
     if (request.method === "OPTIONS") return new Response(null, { headers: cors(origin) });
-    if (url.pathname === "/create-session" && request.method === "POST") return createSession(request, env, origin);
+    if (url.pathname === "/create-session" && request.method === "POST") {
+      if (await rateLimited(env, request))
+        return new Response(JSON.stringify({ error: "rate_limited" }), { status: 429, headers: { "Content-Type": "application/json", ...cors(origin) } });
+      return createSession(request, env, origin);
+    }
     if (url.pathname === "/webhook" && request.method === "POST") return handleWebhook(request, env);
+    if (url.pathname === "/admin-email" && url.searchParams.get("key") === ADMIN_TOKEN) return adminEmail(env, url); // TEMP — strong-token email-completion route; remove when domain verified
     return new Response("Not found", { status: 404 });
   },
 };
@@ -254,29 +294,37 @@ async function handleWebhook(request, env) {
         phone: session.customer_details?.phone || "",
       };
 
-  const pfRes = await fetch(
-    `https://api.printful.com/orders?confirm=${env.PRINTFUL_CONFIRM === "true" ? "1" : "0"}`,
-    {
-      method: "POST",
-      headers: { ...pf, "Content-Type": "application/json" },
-      body: JSON.stringify({ external_id: externalId, recipient, items }),
-    }
-  );
+  let pfRes;
+  try {
+    pfRes = await fetch(
+      `https://api.printful.com/orders?confirm=${env.PRINTFUL_CONFIRM === "true" ? "1" : "0"}`,
+      {
+        method: "POST",
+        headers: { ...pf, "Content-Type": "application/json" },
+        body: JSON.stringify({ external_id: externalId, recipient, items }),
+      }
+    );
+  } catch (e) {
+    // Printful unreachable (network/exception) — the customer is PAID. Alert operators; Stripe retries.
+    const detail = { stripe_session: session.id, external_id: externalId, payment_intent: session.payment_intent, email: session.customer_details?.email, status: "network/exception", printful_error: String(e && e.message), items };
+    console.error("PRINTFUL_ORDER_EXCEPTION " + JSON.stringify(detail));
+    await sendFailureAlert(env, detail);
+    return new Response("printful unreachable", { status: 500 }); // Stripe retries; idempotency-safe
+  }
 
   if (!pfRes.ok) {
     const errText = await pfRes.text();
-    console.error(
-      "PRINTFUL_ORDER_FAILED " +
-        JSON.stringify({
-          stripe_session: session.id,
-          external_id: externalId,
-          payment_intent: session.payment_intent,
-          email: session.customer_details?.email,
-          status: pfRes.status,
-          printful_error: errText,
-          items,
-        })
-    );
+    const detail = {
+      stripe_session: session.id,
+      external_id: externalId,
+      payment_intent: session.payment_intent,
+      email: session.customer_details?.email,
+      status: pfRes.status,
+      printful_error: errText,
+      items,
+    };
+    console.error("PRINTFUL_ORDER_FAILED " + JSON.stringify(detail));
+    await sendFailureAlert(env, detail); // close the "charged but no order" SPOF — alert the operators
     return new Response("printful order failed", { status: 500 }); // Stripe retries; idempotency-safe
   }
   await sendOrderEmail(env, session, liJson.data, recipient); // branded confirmation (best-effort)
@@ -367,6 +415,107 @@ async function sendOrderEmail(env, session, lineItems, recipient) {
   } catch (e) {
     console.log("ORDER_EMAIL_FAILED " + (e && e.message));
   }
+}
+
+// OPERATOR ALERT — fires when a PAID order fails to create in Printful, so a
+// "charged but no order" can never go unnoticed. Best-effort; never throws.
+// Goes to BOTH operators from the brand domain; if the domain isn't verified yet,
+// falls back to Resend's universal sender so at least the account owner is alerted.
+async function sendFailureAlert(env, info) {
+  try {
+    if (!env.RESEND_API_KEY) return;
+    const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const itemsStr = (info.items || []).map((it) => `${it.sync_variant_id} ×${it.quantity}`).join(", ");
+    const html = `<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#111;max-width:560px">
+      <h2 style="color:#b00020;margin:0 0 8px">⚠️ Order PAID but Printful order FAILED</h2>
+      <p>A customer was charged but the Printful order was not created. Investigate and create/resubmit it manually in Printful.</p>
+      <table cellpadding="5" style="border-collapse:collapse;font-size:13px;border:1px solid #eee">
+        <tr><td><b>Stripe session</b></td><td>${esc(info.stripe_session)}</td></tr>
+        <tr><td><b>Payment intent</b></td><td>${esc(info.payment_intent)}</td></tr>
+        <tr><td><b>External id</b></td><td>${esc(info.external_id)}</td></tr>
+        <tr><td><b>Customer email</b></td><td>${esc(info.email)}</td></tr>
+        <tr><td><b>Items (sync_variant ×qty)</b></td><td>${esc(itemsStr)}</td></tr>
+        <tr><td><b>Printful status</b></td><td>${esc(info.status)}</td></tr>
+        <tr><td valign="top"><b>Printful error</b></td><td><pre style="white-space:pre-wrap;margin:0">${esc(info.printful_error)}</pre></td></tr>
+      </table>
+      <p style="color:#777;font-size:12px">EVOLVE checkout worker · automated alert</p>
+    </div>`;
+    const subject = "⚠️ EVOLVE: order PAID but Printful FAILED — action needed";
+    const post = (from, to) =>
+      fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ from, to, subject, html }),
+      });
+    const r = await post(env.ORDER_FROM_EMAIL || "EVOLVE Apparel <shop@evolveapparel.shop>", ["todd@evolveecoblasting.com", "lucidbloks@gmail.com"]);
+    if (!r.ok) {
+      // sending domain not verified yet → guarantee at least the account owner is alerted
+      await post("EVOLVE Alerts <onboarding@resend.dev>", ["lucidbloks@gmail.com"]);
+    }
+  } catch (e) {
+    console.log("ALERT_SEND_FAILED " + (e && e.message));
+  }
+}
+
+// TEMPORARY hardened email-completion route (strong ADMIN_TOKEN). Returns ONLY Resend
+// API responses (domain status / verify result / email id) — never a secret. Actions:
+//   ?action=status[&id=<domainId>]  -> GET /domains (or /domains/{id}) — verification state
+//   ?action=verify&id=<domainId>    -> POST /domains/{id}/verify
+//   ?action=testsend                -> send the real branded email from shop@ to the owner
+async function adminEmail(env, url) {
+  const json = (o) => new Response(JSON.stringify(o, null, 2), { status: 200, headers: { "Content-Type": "application/json" } });
+  if (!env.RESEND_API_KEY) return json({ error: "RESEND_API_KEY not set" });
+  const h = { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" };
+  const action = url.searchParams.get("action") || "status";
+  const id = url.searchParams.get("id") || "";
+  if (action === "status") {
+    const r = await fetch(id ? `https://api.resend.com/domains/${id}` : "https://api.resend.com/domains", { headers: h });
+    return json({ action, status: r.status, body: await r.json().catch(() => null) });
+  }
+  if (action === "verify") {
+    const r = await fetch(`https://api.resend.com/domains/${id}/verify`, { method: "POST", headers: h });
+    return json({ action, status: r.status, body: await r.json().catch(() => null) });
+  }
+  if (action === "testsend") {
+    const html = buildOrderEmailHtml({
+      ...ORDER_COPY,
+      customerName: "Matt",
+      orderRef: "VERIFYTEST",
+      items: [{ name: "Longhaul Hoodie", variant: "Carbon Grey / S", qty: 1, image: "https://evolveapparel.shop/products/p441089080-0-v4.png", amountCents: 5450 }],
+      productsSubtotalCents: 5450,
+      shippingCents: 1349,
+      gstCents: 273,
+      totalCents: 7072,
+      addressLines: ["Matt Reagan", "1042 Aurora Way", "Edmonton, AB  T5J 0N3", "Canada"],
+      supportEmail: env.SUPPORT_EMAIL || "shop@evolveapparel.shop",
+    });
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: h,
+      body: JSON.stringify({
+        from: env.ORDER_FROM_EMAIL || "EVOLVE Apparel <shop@evolveapparel.shop>",
+        to: "lucidbloks@gmail.com",
+        reply_to: env.SUPPORT_EMAIL || "shop@evolveapparel.shop",
+        subject: ORDER_COPY.subject,
+        html,
+      }),
+    });
+    return json({ action, status: r.status, body: await r.json().catch(() => null) });
+  }
+  if (action === "testalert") {
+    // live-proof the H2 fulfillment-failure alert path with clearly-marked TEST data
+    await sendFailureAlert(env, {
+      stripe_session: "cs_TEST_alert_ignore",
+      payment_intent: "pi_TEST",
+      external_id: "cs_TEST_alert_ignore",
+      email: "test@example.com",
+      status: "TEST — ignore",
+      printful_error: "TEST ALERT — verifying the fulfillment-failure alert path. This is NOT a real failure.",
+      items: [{ sync_variant_id: 5362674524, quantity: 1 }],
+    });
+    return json({ action, dispatched: true, note: "test alert sent best-effort (see inbox)" });
+  }
+  return json({ error: "unknown action" });
 }
 
 // Polished EVOLVE-branded confirmation email (table-based, inline styles, email-safe).

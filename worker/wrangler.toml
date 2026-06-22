@@ -10,3 +10,12 @@ PRINTFUL_STORE_ID = "18352510"
 SITE_ORIGIN = "https://evolveapparel.shop"
 PRINTFUL_CONFIRM = "true"
 SHIPPING_FALLBACK_CENTS = "1500"
+
+# Per-IP rate limiter for /create-session (~30 req/min/IP, fail-open).
+[[durable_objects.bindings]]
+name = "RL"
+class_name = "RateLimiter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RateLimiter"]
