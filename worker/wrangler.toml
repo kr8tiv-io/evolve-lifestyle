@@ -1,0 +1,12 @@
+name = "evolve-checkout"
+main = "checkout-worker.js"
+compatibility_date = "2024-09-23"
+
+# Non-secret config only. SECRETS (STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET,
+# PRINTFUL_API_KEY) are NOT here — Todd pastes those in the Cloudflare dashboard
+# (Worker → Settings → Variables and Secrets → + Add → Secret) or via `wrangler secret put`.
+[vars]
+PRINTFUL_STORE_ID = "18352510"
+SITE_ORIGIN = "https://evolveapparel.shop"
+PRINTFUL_CONFIRM = "false"
+SHIPPING_FALLBACK_CENTS = "1500"

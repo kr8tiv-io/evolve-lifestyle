@@ -1,31 +1,37 @@
 /**
  * EVOLVE checkout worker — Cloudflare Worker (free tier).
  *
- *   POST /create-session  → builds a Stripe Checkout Session from the cart (prices
- *                           sourced SERVER-SIDE from the published catalog, never the
- *                           client) and returns { url } to redirect to.
+ *   POST /create-session  → builds a Stripe Checkout Session from the cart. Prices are
+ *                           sourced SERVER-SIDE from the published catalog (never the
+ *                           client). Shipping is the EXACT Printful rate for the
+ *                           customer's destination (address-first; see note below).
  *   POST /webhook         → on a signature-verified `checkout.session.completed`,
- *                           idempotently creates the Printful order from the variant
- *                           ids + shipping address.
+ *                           idempotently creates the Printful order.
  *
- * Secrets/vars (set in Cloudflare → Worker → Settings → Variables and Secrets — NEVER in code):
- *   STRIPE_SECRET_KEY        (secret) sk_live_… / sk_test_…  — prefer a RESTRICTED key:
- *                            Checkout Sessions = Write, Products = Read, Prices = Read.
- *   STRIPE_WEBHOOK_SECRET    (secret) whsec_…  (from the Stripe webhook on /webhook)
+ * SHIPPING — why address-first: hosted (redirect) Stripe Checkout cannot recompute
+ * shipping from the address typed on Stripe's page (that's an embedded-Elements feature).
+ * So the storefront collects the destination first and posts it here; we call Printful
+ * /shipping/rates for the real cost and set it as a fixed shipping_option. If the rate
+ * call fails we fall back to SHIPPING_FALLBACK_CENTS so checkout never breaks.
+ *
+ * Secrets/vars (Cloudflare → Worker → Settings → Variables and Secrets — NEVER in code):
+ *   STRIPE_SECRET_KEY        (secret) restricted key: Checkout Sessions=Write, Products/Prices=Read
+ *   STRIPE_WEBHOOK_SECRET    (secret) whsec_… (from the Stripe webhook on /webhook)
  *   PRINTFUL_API_KEY         (secret) Printful account token
- *   PRINTFUL_STORE_ID        (var) 18352510  — the "EVOLVE" store that holds the products
- *   SITE_ORIGIN              (var) https://evolveapparel.shop  — also serves /checkout-catalog.json
- *   PRINTFUL_CONFIRM         (var) "false" = Printful DRAFTS (recommended at first); "true" = auto-submit
- *
- * Storefront build env:  NEXT_PUBLIC_CHECKOUT_ENDPOINT=https://<worker>.workers.dev/create-session
- * Prices come from <SITE_ORIGIN>/checkout-catalog.json (re-emitted by
- * scripts/emit-checkout-catalog.mjs after each Printful sync, then redeploy).
+ *   PRINTFUL_STORE_ID        (var) 18352510
+ *   SITE_ORIGIN              (var) https://evolveapparel.shop  (serves /checkout-catalog.json)
+ *   PRINTFUL_CONFIRM         (var) "false" = Printful drafts; "true" = auto-submit
+ *   SHIPPING_FALLBACK_CENTS  (var) fallback shipping in cents if Printful rate fails (e.g. "1500")
  */
 
 const cors = (origin) => ({
   "Access-Control-Allow-Origin": origin,
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
+});
+const pfHeaders = (env) => ({
+  Authorization: `Bearer ${env.PRINTFUL_API_KEY}`,
+  "X-PF-Store-Id": env.PRINTFUL_STORE_ID,
 });
 
 export default {
@@ -39,6 +45,37 @@ export default {
   },
 };
 
+// ---- exact Printful shipping for a destination -----------------------------
+async function computeShipping(env, address, items) {
+  try {
+    if (!address || !address.country || !address.line1) return null;
+    const res = await fetch("https://api.printful.com/shipping/rates", {
+      method: "POST",
+      headers: { ...pfHeaders(env), "Content-Type": "application/json" },
+      body: JSON.stringify({
+        recipient: {
+          address1: address.line1,
+          city: address.city,
+          state_code: address.state || "",
+          country_code: address.country,
+          zip: address.zip || "",
+        },
+        // sync_variant_id = the store's synced variant the cart carries
+        items: items.map((it) => ({ sync_variant_id: Number(it.variantId), quantity: it.quantity })),
+        currency: "CAD",
+      }),
+    });
+    const data = await res.json();
+    if (!res.ok || !Array.isArray(data.result) || !data.result.length) return null;
+    const r = data.result[0]; // Printful returns cheapest/standard first
+    const cents = Math.round(parseFloat(r.rate) * 100);
+    if (!Number.isFinite(cents) || cents < 0) return null;
+    return { cents, name: r.name || "Shipping" };
+  } catch {
+    return null;
+  }
+}
+
 // ---- /create-session -------------------------------------------------------
 async function createSession(request, env, origin) {
   const json = (b, s = 200) =>
@@ -47,9 +84,9 @@ async function createSession(request, env, origin) {
     const payload = await request.json();
     const items = Array.isArray(payload.items) ? payload.items : [];
     if (!items.length) return json({ error: "empty_cart" }, 400);
+    const address = payload.address || null;
 
-    // AUTHORITATIVE prices from the published catalog — the client cart's prices are
-    // ignored entirely, so a tampered cart can't change what gets charged.
+    // AUTHORITATIVE prices from the published catalog — client cart prices are ignored.
     const catRes = await fetch(`${env.SITE_ORIGIN}/checkout-catalog.json`, {
       cf: { cacheTtl: 300, cacheEverything: true },
     });
@@ -60,38 +97,60 @@ async function createSession(request, env, origin) {
     form.set("mode", "payment");
     form.set("success_url", `${env.SITE_ORIGIN}/?order=success&session_id={CHECKOUT_SESSION_ID}`);
     form.set("cancel_url", `${env.SITE_ORIGIN}/shop?checkout=cancelled`);
-    form.append("shipping_address_collection[allowed_countries][]", "CA");
-    form.append("shipping_address_collection[allowed_countries][]", "US");
     form.set("phone_number_collection[enabled]", "true");
 
     let subtotal = 0;
     let li = 0;
+    const cleanItems = [];
     for (const it of items) {
       const variantId = String(it.variantId || "");
       const cat = catalog[variantId];
-      if (!cat) return json({ error: "unknown_variant", variantId }, 400); // reject anything not in the catalog
+      if (!cat) return json({ error: "unknown_variant", variantId }, 400);
       const qty = Math.max(1, Math.min(99, parseInt(it.quantity, 10) || 1));
       subtotal += cat.price * qty;
+      cleanItems.push({ variantId, quantity: qty });
       form.set(`line_items[${li}][quantity]`, String(qty));
       form.set(`line_items[${li}][price_data][currency]`, "cad");
-      form.set(`line_items[${li}][price_data][unit_amount]`, String(cat.price)); // server-side cents
+      form.set(`line_items[${li}][price_data][unit_amount]`, String(cat.price));
       form.set(`line_items[${li}][price_data][product_data][name]`, cat.name);
-      form.set(
-        `line_items[${li}][price_data][product_data][description]`,
-        [cat.color, cat.size].filter(Boolean).join(" / ")
-      );
+      form.set(`line_items[${li}][price_data][product_data][description]`, [cat.color, cat.size].filter(Boolean).join(" / "));
       if (cat.image) form.set(`line_items[${li}][price_data][product_data][images][0]`, `${env.SITE_ORIGIN}${cat.image}`);
       form.set(`line_items[${li}][price_data][product_data][metadata][variantId]`, variantId);
       li++;
     }
 
-    // 5% GST computed server-side from the authoritative subtotal, as its own line.
+    // 5% GST on goods, server-side.
     const gst = Math.round(subtotal * 0.05);
     if (gst > 0) {
       form.set(`line_items[${li}][quantity]`, "1");
       form.set(`line_items[${li}][price_data][currency]`, "cad");
       form.set(`line_items[${li}][price_data][unit_amount]`, String(gst));
       form.set(`line_items[${li}][price_data][product_data][name]`, "GST (5%)");
+    }
+
+    if (address) {
+      // exact Printful shipping for this destination, with a safe fallback.
+      const ship = await computeShipping(env, address, cleanItems);
+      const shipCents = ship ? ship.cents : parseInt(env.SHIPPING_FALLBACK_CENTS || "0", 10) || 0;
+      if (shipCents > 0) {
+        form.set("shipping_options[0][shipping_rate_data][type]", "fixed_amount");
+        form.set("shipping_options[0][shipping_rate_data][fixed_amount][amount]", String(shipCents));
+        form.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", "cad");
+        form.set("shipping_options[0][shipping_rate_data][display_name]", ship ? ship.name : "Shipping");
+      }
+      // we already have the destination → carry it for fulfillment (no double address entry)
+      form.set("metadata[ship]", JSON.stringify(address).slice(0, 480));
+    } else {
+      // no address provided → let Stripe collect it (no exact rate; fallback applies)
+      form.append("shipping_address_collection[allowed_countries][]", "CA");
+      form.append("shipping_address_collection[allowed_countries][]", "US");
+      const fb = parseInt(env.SHIPPING_FALLBACK_CENTS || "0", 10) || 0;
+      if (fb > 0) {
+        form.set("shipping_options[0][shipping_rate_data][type]", "fixed_amount");
+        form.set("shipping_options[0][shipping_rate_data][fixed_amount][amount]", String(fb));
+        form.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", "cad");
+        form.set("shipping_options[0][shipping_rate_data][display_name]", "Shipping");
+      }
     }
 
     const res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
@@ -114,7 +173,6 @@ async function handleWebhook(request, env) {
   if (!(await verifyStripeSignature(body, sig, env.STRIPE_WEBHOOK_SECRET))) {
     return new Response("invalid signature", { status: 400 });
   }
-
   let event;
   try {
     event = JSON.parse(body);
@@ -124,16 +182,13 @@ async function handleWebhook(request, env) {
   if (event.type !== "checkout.session.completed") return new Response("ignored", { status: 200 });
 
   const session = event.data.object;
-  const pf = { Authorization: `Bearer ${env.PRINTFUL_API_KEY}`, "X-PF-Store-Id": env.PRINTFUL_STORE_ID };
+  const pf = pfHeaders(env);
 
-  // IDEMPOTENCY: one Printful order per Stripe session. external_id is unique per
-  // store, so a duplicate webhook either finds the existing order (skip) or its
-  // create is rejected by Printful's uniqueness constraint — never double-fulfilled.
-  const externalId = session.id.slice(-32); // <=32 chars, valid id chars, unique per session
+  // IDEMPOTENCY: one Printful order per Stripe session (external_id unique per store).
+  const externalId = session.id.slice(-32);
   const exists = await fetch(`https://api.printful.com/orders/@${externalId}`, { headers: pf });
   if (exists.ok) return new Response("already fulfilled", { status: 200 });
 
-  // line items (with the variantId we stored on the inline product)
   const liRes = await fetch(
     `https://api.stripe.com/v1/checkout/sessions/${session.id}/line_items?limit=100&expand[]=data.price.product`,
     { headers: { Authorization: `Bearer ${env.STRIPE_SECRET_KEY}` } }
@@ -144,33 +199,47 @@ async function handleWebhook(request, env) {
     .filter((it) => it.sync_variant_id);
   if (!items.length) return new Response("no fulfillable items", { status: 200 });
 
-  const ship = session.shipping_details || session.customer_details || {};
-  const addr = ship.address || {};
-  const order = {
-    external_id: externalId,
-    recipient: {
-      name: ship.name || session.customer_details?.name,
-      address1: addr.line1,
-      address2: addr.line2 || "",
-      city: addr.city,
-      state_code: addr.state,
-      country_code: addr.country,
-      zip: addr.postal_code,
-      email: session.customer_details?.email,
-      phone: session.customer_details?.phone || "",
-    },
-    items,
-  };
+  // destination: the address we collected up front (metadata) — or Stripe's, if it collected one.
+  let ship = null;
+  try {
+    ship = JSON.parse(session.metadata?.ship || "null");
+  } catch {}
+  const sd = session.shipping_details || session.customer_details || {};
+  const a = sd.address || {};
+  const recipient = ship
+    ? {
+        name: ship.name || session.customer_details?.name,
+        address1: ship.line1,
+        address2: ship.line2 || "",
+        city: ship.city,
+        state_code: ship.state || "",
+        country_code: ship.country,
+        zip: ship.zip || "",
+        email: session.customer_details?.email,
+        phone: session.customer_details?.phone || ship.phone || "",
+      }
+    : {
+        name: sd.name || session.customer_details?.name,
+        address1: a.line1,
+        address2: a.line2 || "",
+        city: a.city,
+        state_code: a.state || "",
+        country_code: a.country,
+        zip: a.postal_code || "",
+        email: session.customer_details?.email,
+        phone: session.customer_details?.phone || "",
+      };
 
   const pfRes = await fetch(
     `https://api.printful.com/orders?confirm=${env.PRINTFUL_CONFIRM === "true" ? "1" : "0"}`,
-    { method: "POST", headers: { ...pf, "Content-Type": "application/json" }, body: JSON.stringify(order) }
+    {
+      method: "POST",
+      headers: { ...pf, "Content-Type": "application/json" },
+      body: JSON.stringify({ external_id: externalId, recipient, items }),
+    }
   );
 
   if (!pfRes.ok) {
-    // Fail LOUD and retryable so a paid order is never silently lost: 500 → Stripe
-    // retries (idempotency above makes retries safe); the log captures everything
-    // needed to create the order by hand if it never recovers.
     const errText = await pfRes.text();
     console.error(
       "PRINTFUL_ORDER_FAILED " +
@@ -184,7 +253,7 @@ async function handleWebhook(request, env) {
           items,
         })
     );
-    return new Response("printful order failed", { status: 500 });
+    return new Response("printful order failed", { status: 500 }); // Stripe retries; idempotency-safe
   }
   return new Response("ok", { status: 200 });
 }
@@ -197,7 +266,6 @@ async function verifyStripeSignature(payload, header, secret, toleranceSec = 300
     const t = kv.find((p) => p[0] === "t")?.[1];
     const sigs = kv.filter((p) => p[0] === "v1").map((p) => p[1]);
     if (!t || !sigs.length) return false;
-    // replay protection: reject events outside the tolerance window
     if (Math.abs(Math.floor(Date.now() / 1000) - Number(t)) > toleranceSec) return false;
     const enc = new TextEncoder();
     const key = await crypto.subtle.importKey("raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);

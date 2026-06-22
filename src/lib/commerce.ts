@@ -99,15 +99,27 @@ export type CheckoutResult = {
   error?: string;
 };
 
+/** Shipping destination collected before checkout so the Worker can compute the
+ *  EXACT Printful shipping rate (hosted Checkout can't recompute it after the fact). */
+export interface ShippingAddress {
+  name: string;
+  country: "CA" | "US";
+  line1: string;
+  line2?: string;
+  city: string;
+  state: string; // province/state code, e.g. AB / ON / CA / NY
+  zip: string;
+}
+
 /**
  * Start checkout. When CHECKOUT_ENDPOINT is configured, POST the cart to the
  * Stripe-session worker and return its hosted-checkout URL (the caller redirects).
  * Until that's wired, return a `fallback: "email"` so the cart can open a
  * pre-filled order email — customers can still buy via manual invoice.
  */
-export async function startCheckout(lines: CartLine[]): Promise<CheckoutResult> {
+export async function startCheckout(lines: CartLine[], address?: ShippingAddress): Promise<CheckoutResult> {
   if (!lines.length) return { ok: false, error: "empty_cart" };
-  const payload = buildCheckout(lines);
+  const payload = { ...buildCheckout(lines), address };
 
   if (CHECKOUT_ENDPOINT) {
     try {
