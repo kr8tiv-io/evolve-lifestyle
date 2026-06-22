@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s — EVOLVE Apparel",
   },
   description:
-    "EVOLVE — Western-Canadian outdoor lifestyle apparel. Embroidered hoodies, tees, caps and more, made to order and shipped across Canada and North America. Built for the bush, made for the long haul. The apparel arm of Evolve Eco Blasting.",
+    "EVOLVE — Western-Canadian outdoor lifestyle apparel. Embroidered hoodies, tees and caps, made to order and shipped across Canada. The apparel arm of Evolve Eco Blasting.",
   applicationName: "EVOLVE Apparel",
   keywords: [
     "EVOLVE apparel",
