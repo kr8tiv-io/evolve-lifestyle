@@ -82,10 +82,14 @@ async function computeShipping(env, address, items) {
       );
       return null;
     }
-    const r = data.result[0]; // Printful returns cheapest/standard first
+    // charge the CHEAPEST option Printful offers (it may return several, unordered)
+    const r = data.result.reduce((m, x) => (parseFloat(x.rate) < parseFloat(m.rate) ? x : m), data.result[0]);
     const cents = Math.round(parseFloat(r.rate) * 100);
     if (!Number.isFinite(cents) || cents < 0) return null;
-    console.log("SHIPPING_RATE_OK " + JSON.stringify({ name: r.name, rate: r.rate, cents }));
+    console.log(
+      "SHIPPING_RATE_OK " +
+        JSON.stringify({ chosen: { name: r.name, rate: r.rate }, all: data.result.map((x) => ({ name: x.name, rate: x.rate })) })
+    );
     return { cents, name: r.name || "Shipping" };
   } catch {
     return null;
@@ -200,8 +204,11 @@ async function handleWebhook(request, env) {
   const session = event.data.object;
   const pf = pfHeaders(env);
 
-  // IDEMPOTENCY: one Printful order per Stripe session (external_id unique per store).
-  const externalId = session.id.slice(-32);
+  // IDEMPOTENCY: one Printful order per Stripe session. external_id = the Stripe checkout
+  // session id, truncated to Printful's 32-char max (cs_ ids are ~66 chars). Keeps the
+  // recognizable cs_ prefix and is deterministic, so the duplicate guard below — which
+  // derives the key the SAME way — matches on a repeated webhook and skips re-creating.
+  const externalId = session.id.slice(0, 32);
   const exists = await fetch(`https://api.printful.com/orders/@${externalId}`, { headers: pf });
   if (exists.ok) return new Response("already fulfilled", { status: 200 });
 
