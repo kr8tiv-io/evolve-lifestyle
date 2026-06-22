@@ -41,6 +41,7 @@ export default function HomePage() {
         note="From the trades to the trails — the same instinct, pointed outward."
         image="/images/photo-1428908728789-d2de25dbd4e2.jpg"
         tone={["#3a1c14", "#39ff14"]}
+        showcase
       />
     </>
   );

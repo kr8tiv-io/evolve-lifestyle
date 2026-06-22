@@ -8,6 +8,7 @@ import ScrollHUD from "@/components/providers/ScrollHUD";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CartDrawer from "@/components/cart/CartDrawer";
+import CartHydrator from "@/components/cart/CartHydrator";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://evolveapparel.shop"),
@@ -98,6 +99,7 @@ export default function RootLayout({
         <ScrollHUD />
         <SmoothScroll>
           <Header />
+          <CartHydrator />
           <CartDrawer />
           <main id="main">
             <PageTransition>{children}</PageTransition>

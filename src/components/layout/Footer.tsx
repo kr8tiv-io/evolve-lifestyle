@@ -81,8 +81,8 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/10 py-8 md:flex-row md:items-center">
           <p className="font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
-            © {new Date().getFullYear()} EVOLVE — Serving Edmonton & Greater
-            Alberta
+            © <span suppressHydrationWarning>{new Date().getFullYear()}</span> EVOLVE —
+            Serving Edmonton & Greater Alberta
           </p>
           <div className="flex gap-6 font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
             <Link href="/terms" className="link-underline hover:text-neon">Terms &amp; Returns</Link>

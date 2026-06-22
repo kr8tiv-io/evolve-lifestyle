@@ -64,6 +64,16 @@ export const useCart = create<CartState>()(
       count: () => get().lines.reduce((n, l) => n + l.qty, 0),
       subtotal: () => get().lines.reduce((n, l) => n + l.qty * l.price, 0),
     }),
-    { name: "evolve-cart" }
+    {
+      name: "evolve-cart",
+      // only the line items persist — NOT isOpen (so the drawer never reopens itself
+      // on load, and the server/first-client render match the empty default).
+      partialize: (state) => ({ lines: state.lines }),
+      // do not read localStorage during the initial render; rehydrate after mount
+      // (CartHydrator) so server HTML and first client render are identical. This
+      // removes the hydration text-mismatch on the cart-count badge that was
+      // cascading into React #329 in production.
+      skipHydration: true,
+    }
   )
 );

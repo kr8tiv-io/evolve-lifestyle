@@ -164,7 +164,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.45, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative order-1 flex flex-col items-center justify-center gap-2 sm:gap-3 lg:order-2 lg:gap-6"
+            className="relative order-1 flex flex-col items-center justify-center gap-2 sm:gap-3 lg:order-2 lg:gap-3"
           >
             <Link
               href="/"

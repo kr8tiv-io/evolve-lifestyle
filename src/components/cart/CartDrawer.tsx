@@ -1,14 +1,36 @@
 "use client";
 
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useCart } from "@/store/cart";
 import { formatPrice } from "@/lib/utils";
-import { startCheckout } from "@/lib/commerce";
+import { startCheckout, buildOrderMailto } from "@/lib/commerce";
 
 export default function CartDrawer() {
   const { isOpen, close, lines, remove, setQty, subtotal, count } = useCart();
   const total = subtotal();
+  const [checkingOut, setCheckingOut] = useState(false);
+  const [checkoutErr, setCheckoutErr] = useState("");
+
+  const handleCheckout = async () => {
+    if (checkingOut || lines.length === 0) return;
+    setCheckingOut(true);
+    setCheckoutErr("");
+    const res = await startCheckout(lines);
+    if (res.ok && res.url) {
+      window.location.href = res.url; // → Stripe hosted checkout
+      return;
+    }
+    if (res.fallback === "email") {
+      // payments not connected yet → let the customer place an order by email
+      window.location.href = buildOrderMailto(lines);
+      setCheckingOut(false);
+      return;
+    }
+    setCheckoutErr("Checkout is briefly unavailable — please try again or email us to order.");
+    setCheckingOut(false);
+  };
 
   return (
     <AnimatePresence>
@@ -119,11 +141,17 @@ export default function CartDrawer() {
                     Shipping + GST calculated at checkout · 5% GST
                   </p>
                   <button
-                    className="btn-neon mt-5 w-full"
-                    onClick={() => startCheckout(lines)}
+                    className="btn-neon mt-5 w-full disabled:cursor-not-allowed disabled:opacity-60"
+                    onClick={handleCheckout}
+                    disabled={checkingOut}
                   >
-                    Checkout — placeholder
+                    {checkingOut ? "Taking you to checkout…" : "Checkout"}
                   </button>
+                  {checkoutErr && (
+                    <p className="mt-3 text-center font-mono text-[0.58rem] uppercase tracking-wide text-red-400">
+                      {checkoutErr}
+                    </p>
+                  )}
                   <p className="mt-3 text-center font-mono text-[0.58rem] uppercase tracking-wide text-silver-dim/70">
                     Made to order · ships across Canada &amp; North America
                   </p>

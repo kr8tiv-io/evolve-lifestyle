@@ -12,10 +12,20 @@ import type { CartLine } from "@/store/cart";
 export type Provider = "printful" | "printify" | "shopify" | "placeholder";
 
 export const COMMERCE: { provider: Provider; currency: string; gstRate: number } = {
-  provider: "placeholder",
+  provider: "printful",
   currency: "CAD",
   gstRate: 0.05, // 5% GST applied at checkout
 };
+
+// Hosted-checkout endpoint (a Stripe Checkout session creator that holds the secret
+// keys — e.g. a free Cloudflare Worker; see CHECKOUT_SETUP.md). Public URL, safe to
+// ship. When set, the cart redirects to real Stripe checkout; until then it falls
+// back to an email order so customers can still buy. Configure via env at build:
+//   NEXT_PUBLIC_CHECKOUT_ENDPOINT=https://evolve-checkout.<sub>.workers.dev/create-session
+export const CHECKOUT_ENDPOINT = process.env.NEXT_PUBLIC_CHECKOUT_ENDPOINT ?? "";
+
+// Where manual/email orders go until live payments are wired.
+export const ORDER_EMAIL = "todd@evolveecoblasting.com";
 
 /** Catalogue reads — swap these bodies for a provider fetch when live. */
 export async function fetchProducts(): Promise<Product[]> {
@@ -37,15 +47,26 @@ export function resolveVariant(
   return product.variants.find((v) => v.color === color && v.size === size);
 }
 
+export interface CheckoutItem {
+  variantId: string; // Printful sync_variant id — the key fulfillment needs
+  sku?: string;
+  quantity: number;
+  name: string;
+  unitPrice: number; // cents
+  color: string;
+  size: string;
+  image: string;
+}
+
 export interface CheckoutPayload {
   provider: Provider;
   currency: string;
-  items: { variantId: string; sku?: string; quantity: number }[];
+  items: CheckoutItem[];
   subtotal: number; // cents
   gst: number; // cents
 }
 
-/** Build the provider-agnostic payload from the cart. */
+/** Build the provider-agnostic payload from the cart (drives the Stripe session). */
 export function buildCheckout(lines: CartLine[]): CheckoutPayload {
   const subtotal = lines.reduce((n, l) => n + l.price * l.qty, 0);
   return {
@@ -54,21 +75,67 @@ export function buildCheckout(lines: CartLine[]): CheckoutPayload {
     items: lines.map((l) => ({
       variantId: l.variantId,
       quantity: l.qty,
+      name: l.name,
+      unitPrice: l.price,
+      color: l.color,
+      size: l.size,
+      image: l.image,
     })),
     subtotal,
     gst: Math.round(subtotal * COMMERCE.gstRate),
   };
 }
 
+export type CheckoutResult = {
+  ok: boolean;
+  url?: string;
+  fallback?: "email";
+  error?: string;
+};
+
 /**
- * Start checkout. Today: a no-op stub. Live: POST buildCheckout(lines) to a
- * route handler that creates a provider order or hosted-checkout
- * session and returns a redirect URL.
+ * Start checkout. When CHECKOUT_ENDPOINT is configured, POST the cart to the
+ * Stripe-session worker and return its hosted-checkout URL (the caller redirects).
+ * Until that's wired, return a `fallback: "email"` so the cart can open a
+ * pre-filled order email — customers can still buy via manual invoice.
  */
-export async function startCheckout(lines: CartLine[]): Promise<{ url?: string; ok: boolean }> {
-  // TODO(checkout): const res = await fetch('/api/checkout', { method:'POST', body: JSON.stringify(buildCheckout(lines)) })
-  if (typeof window !== "undefined") {
-    console.info("[EVOLVE] checkout payload (placeholder):", buildCheckout(lines));
+export async function startCheckout(lines: CartLine[]): Promise<CheckoutResult> {
+  if (!lines.length) return { ok: false, error: "empty_cart" };
+  const payload = buildCheckout(lines);
+
+  if (CHECKOUT_ENDPOINT) {
+    try {
+      const res = await fetch(CHECKOUT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = (await res.json().catch(() => ({}))) as { url?: string; error?: string };
+      if (res.ok && data.url) return { ok: true, url: data.url };
+      return { ok: false, error: data.error || "checkout_unavailable" };
+    } catch {
+      return { ok: false, error: "network_error" };
+    }
   }
-  return { ok: false };
+
+  return { ok: false, fallback: "email" };
+}
+
+/** Pre-filled order email — the buy-now path until live payments are connected. */
+export function buildOrderMailto(lines: CartLine[]): string {
+  const subtotal = lines.reduce((n, l) => n + l.price * l.qty, 0);
+  const fmt = (c: number) => `$${(c / 100).toFixed(2)} CAD`;
+  const body = [
+    "I'd like to place an order with EVOLVE:",
+    "",
+    ...lines.map((l) => `• ${l.name} — ${l.color} / ${l.size} ×${l.qty} — ${fmt(l.price * l.qty)}`),
+    "",
+    `Subtotal: ${fmt(subtotal)} (shipping + 5% GST added on the invoice)`,
+    "",
+    "Name:",
+    "Shipping address:",
+    "",
+    "Please send payment instructions. Thanks!",
+  ].join("\n");
+  return `mailto:${ORDER_EMAIL}?subject=${encodeURIComponent("EVOLVE order")}&body=${encodeURIComponent(body)}`;
 }
