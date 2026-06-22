@@ -284,6 +284,29 @@ async function handleWebhook(request, env) {
 
 // ---- branded order-confirmation email (optional; via Resend) ----------------
 // No-op unless RESEND_API_KEY is set (Todd provides it + verifies a sending domain).
+
+// Stoked-Albertan outdoor voice (synthesized from a 5-voice copy tournament).
+// {name} in the headline is replaced with the buyer's first name.
+const ORDER_COPY = {
+  subject: "You just kitted up for the treeline",
+  preheader: "Made to order, cut for cold mornings, and already in motion.",
+  kicker: "You're geared up",
+  headline: "Solid haul, {name}.",
+  intro:
+    "Thanks for kitting up with us. Every piece is made to order, so yours is getting built fresh right now — no warehouse shelf, no shortcuts — and backing a small Alberta outdoor crew means more to us than you know.",
+  orderHeading: "The haul",
+  shipLabel: "Headed to",
+  etaLabel: "Timing",
+  etaBody:
+    "Made to order means we build yours fresh rather than pull it off a shelf, so give it a little runway. The moment it ships, tracking lands in your inbox so you can watch it close the distance.",
+  ctaHeading: "Pull up a log",
+  ctaBody:
+    "Get on the list for trail-tested drops, stories from the backcountry, and the odd dispatch from the treeline. Biweekly, big sky, zero spam.",
+  ctaButton: "Save me a spot",
+  footerNote:
+    "You're getting this because you placed an order with EVOLVE, a small Alberta outdoor brand. Questions, or just want to say hey — reply right to this email and a real person answers.",
+};
+
 async function sendOrderEmail(env, session, lineItems, recipient) {
   try {
     const to = session.customer_details?.email;
@@ -317,6 +340,7 @@ async function sendOrderEmail(env, session, lineItems, recipient) {
     ];
 
     const html = buildOrderEmailHtml({
+      ...ORDER_COPY,
       customerName: (session.customer_details?.name || "").split(" ")[0],
       orderRef: (session.id || "").slice(-8).toUpperCase(), // cosmetic customer-facing ref
       items,
@@ -332,10 +356,10 @@ async function sendOrderEmail(env, session, lineItems, recipient) {
       method: "POST",
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: env.ORDER_FROM_EMAIL || "EVOLVE Apparel <orders@evolveapparel.shop>",
+        from: env.ORDER_FROM_EMAIL || "EVOLVE Apparel <shop@evolveapparel.shop>",
         to,
         reply_to: env.SUPPORT_EMAIL || "shop@evolveapparel.shop",
-        subject: "Your EVOLVE order is confirmed",
+        subject: ORDER_COPY.subject,
         html,
       }),
     });
@@ -349,6 +373,8 @@ async function sendOrderEmail(env, session, lineItems, recipient) {
 function buildOrderEmailHtml(d) {
   const fmt = (c) => "$" + ((c || 0) / 100).toFixed(2);
   const LOGO = "https://evolveapparel.shop/brand/evolve-lockup-white.png";
+  const name = d.customerName || "friend";
+  const headline = (d.headline || "Thanks, {name}.").replace("{name}", name);
   const items = (d.items || [])
     .map(
       (it) => `
@@ -376,6 +402,7 @@ function buildOrderEmailHtml(d) {
     </tr>`;
 
   return `
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#050505;font-size:1px;line-height:1px">${d.preheader || ""}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#050505;margin:0;padding:0">
   <tr><td align="center" style="padding:30px 12px">
 
@@ -390,14 +417,14 @@ function buildOrderEmailHtml(d) {
       </td></tr>
 
       <tr><td style="padding:32px 36px 4px 36px">
-        <div style="color:#4ade80;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:3px;text-transform:uppercase">Order Confirmed</div>
-        <h1 style="margin:13px 0 0 0;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:bold;line-height:1.25">Thanks${d.customerName ? ", " + d.customerName : ""}.</h1>
-        <p style="margin:15px 0 0 0;color:#9aa3ab;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7">Your gear is locked in. Every piece is made to order, so we'll get it into production and on its way to you. Thank you for backing a small Canadian outdoor brand &mdash; it genuinely means a lot.</p>
+        <div style="color:#4ade80;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:3px;text-transform:uppercase">${d.kicker || "Order Confirmed"}</div>
+        <h1 style="margin:13px 0 0 0;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:bold;line-height:1.25">${headline}</h1>
+        <p style="margin:15px 0 0 0;color:#9aa3ab;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7">${d.intro || ""}</p>
         <div style="margin:18px 0 0 0;color:#6b7280;font-family:'Courier New',Courier,monospace;font-size:12px;letter-spacing:1.5px">ORDER REF &nbsp;&middot;&nbsp; #${d.orderRef}</div>
       </td></tr>
 
       <tr><td style="padding:26px 36px 0 36px">
-        <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding-bottom:8px;border-bottom:1px solid #1f1f1f">Your order</div>
+        <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding-bottom:8px;border-bottom:1px solid #1f1f1f">${d.orderHeading || "Your order"}</div>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items}
         </table>
       </td></tr>
@@ -415,12 +442,12 @@ function buildOrderEmailHtml(d) {
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td valign="top" width="50%" style="padding-right:12px">
-              <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase">Shipping to</div>
+              <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase">${d.shipLabel || "Shipping to"}</div>
               <div style="color:#c3cad1;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.75;padding-top:9px">${(d.addressLines || []).filter(Boolean).join("<br/>")}</div>
             </td>
             <td valign="top" width="50%" style="padding-left:12px">
-              <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase">Estimated</div>
-              <div style="color:#c3cad1;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.75;padding-top:9px">Made to order &mdash; typically produced and shipped within a few business days. We'll email tracking the moment it's on the move.</div>
+              <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase">${d.etaLabel || "Estimated"}</div>
+              <div style="color:#c3cad1;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.75;padding-top:9px">${d.etaBody || ""}</div>
             </td>
           </tr>
         </table>
@@ -429,9 +456,9 @@ function buildOrderEmailHtml(d) {
       <tr><td style="padding:30px 36px 6px 36px">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e140e;border:1px solid #1f2c1f;border-radius:7px">
           <tr><td align="center" style="padding:28px 28px 30px 28px">
-            <div style="color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold">Join the list</div>
-            <p style="margin:11px auto 20px auto;max-width:400px;color:#9aa3ab;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.65">The latest in Canadian outdoor adventure &mdash; where to go, what to bring, and what we're making next. Biweekly, no spam.</p>
-            <a href="https://evolveapparel.shop/journal" style="display:inline-block;background:#4ade80;color:#06140a;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;padding:14px 32px;border-radius:999px">Join the List &rarr;</a>
+            <div style="color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold">${d.ctaHeading || "Join the list"}</div>
+            <p style="margin:11px auto 20px auto;max-width:400px;color:#9aa3ab;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.65">${d.ctaBody || ""}</p>
+            <a href="https://evolveapparel.shop/journal" style="display:inline-block;background:#4ade80;color:#06140a;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;padding:14px 32px;border-radius:999px">${d.ctaButton || "Join the list"} &rarr;</a>
           </td></tr>
         </table>
       </td></tr>
@@ -442,7 +469,7 @@ function buildOrderEmailHtml(d) {
           <a href="https://evolveapparel.shop" style="color:#9aa3ab;text-decoration:none">evolveapparel.shop</a><br/>
           <a href="mailto:${d.supportEmail}" style="color:#9aa3ab;text-decoration:none">${d.supportEmail}</a> &nbsp;&middot;&nbsp; 780-915-5471
         </p>
-        <p style="margin:17px 0 0 0;color:#52585f;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.65">You're receiving this because you placed an order at EVOLVE Apparel.<br/>Questions about your order? Just reply to this email &mdash; we read every one.</p>
+        <p style="margin:17px 0 0 0;color:#52585f;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.65">${d.footerNote || ""}</p>
       </td></tr>
 
     </table>
