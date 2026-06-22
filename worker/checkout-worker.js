@@ -49,6 +49,10 @@ export default {
 async function computeShipping(env, address, items) {
   try {
     if (!address || !address.country || !address.line1) return null;
+    if (items.some((it) => !it.cv)) {
+      console.log("SHIPPING_NO_CATALOG_ID " + JSON.stringify(items));
+      return null;
+    }
     const res = await fetch("https://api.printful.com/shipping/rates", {
       method: "POST",
       headers: { ...pfHeaders(env), "Content-Type": "application/json" },
@@ -60,16 +64,28 @@ async function computeShipping(env, address, items) {
           country_code: address.country,
           zip: address.zip || "",
         },
-        // sync_variant_id = the store's synced variant the cart carries
-        items: items.map((it) => ({ sync_variant_id: Number(it.variantId), quantity: it.quantity })),
+        // /shipping/rates needs the CATALOG variant_id (cv), not the sync id
+        items: items.map((it) => ({ variant_id: Number(it.cv), quantity: it.quantity })),
         currency: "CAD",
       }),
     });
     const data = await res.json();
-    if (!res.ok || !Array.isArray(data.result) || !data.result.length) return null;
+    if (!res.ok || !Array.isArray(data.result) || !data.result.length) {
+      console.log(
+        "SHIPPING_RATE_MISS " +
+          JSON.stringify({
+            status: res.status,
+            body: data,
+            sent_recipient: { country_code: address.country, state_code: address.state, zip: address.zip },
+            sent_items: items.map((it) => ({ sync_variant_id: Number(it.variantId), quantity: it.quantity })),
+          })
+      );
+      return null;
+    }
     const r = data.result[0]; // Printful returns cheapest/standard first
     const cents = Math.round(parseFloat(r.rate) * 100);
     if (!Number.isFinite(cents) || cents < 0) return null;
+    console.log("SHIPPING_RATE_OK " + JSON.stringify({ name: r.name, rate: r.rate, cents }));
     return { cents, name: r.name || "Shipping" };
   } catch {
     return null;
@@ -88,7 +104,7 @@ async function createSession(request, env, origin) {
 
     // AUTHORITATIVE prices from the published catalog — client cart prices are ignored.
     const catRes = await fetch(`${env.SITE_ORIGIN}/checkout-catalog.json`, {
-      cf: { cacheTtl: 300, cacheEverything: true },
+      cf: { cacheTtl: 30, cacheEverything: true },
     });
     if (!catRes.ok) return json({ error: "catalog_unavailable" }, 503);
     const catalog = await catRes.json();
@@ -108,7 +124,7 @@ async function createSession(request, env, origin) {
       if (!cat) return json({ error: "unknown_variant", variantId }, 400);
       const qty = Math.max(1, Math.min(99, parseInt(it.quantity, 10) || 1));
       subtotal += cat.price * qty;
-      cleanItems.push({ variantId, quantity: qty });
+      cleanItems.push({ variantId, quantity: qty, cv: cat.cv });
       form.set(`line_items[${li}][quantity]`, String(qty));
       form.set(`line_items[${li}][price_data][currency]`, "cad");
       form.set(`line_items[${li}][price_data][unit_amount]`, String(cat.price));
@@ -255,7 +271,46 @@ async function handleWebhook(request, env) {
     );
     return new Response("printful order failed", { status: 500 }); // Stripe retries; idempotency-safe
   }
+  await sendOrderEmail(env, session, liJson.data, recipient); // branded confirmation (best-effort)
   return new Response("ok", { status: 200 });
+}
+
+// ---- branded order-confirmation email (optional; via Resend) ----------------
+// No-op unless RESEND_API_KEY is set (Todd provides it + verifies a sending domain).
+async function sendOrderEmail(env, session, lineItems, recipient) {
+  try {
+    const to = session.customer_details?.email;
+    if (!env.RESEND_API_KEY || !to) return;
+    const fmt = (c) => "$" + ((c || 0) / 100).toFixed(2);
+    const rows = (lineItems || [])
+      .map(
+        (li) =>
+          `<tr><td style="padding:6px 0;color:#cbd5e1;font-size:14px">${li.description || "Item"} &times; ${li.quantity}</td><td style="padding:6px 0;text-align:right;color:#f3f4f6;font-size:14px">${fmt(li.amount_total)}</td></tr>`
+      )
+      .join("");
+    const r = recipient || {};
+    const html = `<div style="background:#0a0a0a;color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;padding:32px;max-width:560px;margin:auto">
+      <div style="color:#4ade80;font-size:13px;letter-spacing:3px;font-weight:bold">EVOLVE — ORDER CONFIRMED</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.5">Thanks${session.customer_details?.name ? ", " + session.customer_details.name : ""} — your order is in. It's made to order; we'll get it produced and on its way.</p>
+      <table style="width:100%;border-collapse:collapse;margin:18px 0">${rows}
+        <tr><td style="padding-top:10px;border-top:1px solid #2a2a2a;color:#94a3b8;font-size:14px">Total paid</td><td style="padding-top:10px;border-top:1px solid #2a2a2a;text-align:right;color:#4ade80;font-weight:bold;font-size:15px">${fmt(session.amount_total)}</td></tr>
+      </table>
+      <p style="color:#94a3b8;font-size:13px;line-height:1.5">Shipping to:<br>${[r.name, r.address1, [r.city, r.state_code, r.zip].filter(Boolean).join(" "), r.country_code].filter(Boolean).join("<br>")}</p>
+      <p style="color:#64748b;font-size:12px;margin-top:24px">EVOLVE Apparel &middot; evolveapparel.shop &middot; Earned outside.</p>
+    </div>`;
+    await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from: env.ORDER_FROM_EMAIL || "EVOLVE Apparel <orders@evolveapparel.shop>",
+        to,
+        subject: "Your EVOLVE order is confirmed",
+        html,
+      }),
+    });
+  } catch (e) {
+    console.log("ORDER_EMAIL_FAILED " + (e && e.message));
+  }
 }
 
 // ---- Stripe signature: HMAC-SHA256 + 5-min replay window + constant-time --------
