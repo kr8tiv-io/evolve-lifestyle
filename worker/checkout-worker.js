@@ -104,6 +104,7 @@ async function createSession(request, env, origin) {
     const payload = await request.json();
     const items = Array.isArray(payload.items) ? payload.items : [];
     if (!items.length) return json({ error: "empty_cart" }, 400);
+    if (items.length > 50) return json({ error: "too_many_items" }, 400);
     const address = payload.address || null;
 
     // AUTHORITATIVE prices from the published catalog — client cart prices are ignored.
@@ -372,8 +373,9 @@ async function sendOrderEmail(env, session, lineItems, recipient) {
 // Keep in sync with C:\tmp\gen-email.mjs (the preview generator).
 function buildOrderEmailHtml(d) {
   const fmt = (c) => "$" + ((c || 0) / 100).toFixed(2);
+  const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const LOGO = "https://evolveapparel.shop/brand/evolve-lockup-white.png";
-  const name = d.customerName || "friend";
+  const name = esc(d.customerName || "friend");
   const headline = (d.headline || "Thanks, {name}.").replace("{name}", name);
   const items = (d.items || [])
     .map(
@@ -387,8 +389,8 @@ function buildOrderEmailHtml(d) {
           </table>
         </td>
         <td valign="top" style="padding:18px 0 0 16px">
-          <div style="color:#ededed;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:1.35">${it.name}</div>
-          <div style="color:#8a929a;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;padding-top:4px">${it.variant} &nbsp;&middot;&nbsp; Qty ${it.qty}</div>
+          <div style="color:#ededed;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:1.35">${esc(it.name)}</div>
+          <div style="color:#8a929a;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;padding-top:4px">${esc(it.variant)} &nbsp;&middot;&nbsp; Qty ${it.qty}</div>
         </td>
         <td valign="top" align="right" style="padding:18px 0 0 0;color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;font-size:14px;white-space:nowrap">${fmt(it.amountCents)}</td>
       </tr>`
@@ -443,7 +445,7 @@ function buildOrderEmailHtml(d) {
           <tr>
             <td valign="top" width="50%" style="padding-right:12px">
               <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase">${d.shipLabel || "Shipping to"}</div>
-              <div style="color:#c3cad1;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.75;padding-top:9px">${(d.addressLines || []).filter(Boolean).join("<br/>")}</div>
+              <div style="color:#c3cad1;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.75;padding-top:9px">${(d.addressLines || []).filter(Boolean).map(esc).join("<br/>")}</div>
             </td>
             <td valign="top" width="50%" style="padding-left:12px">
               <div style="color:#6b7280;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase">${d.etaLabel || "Estimated"}</div>
