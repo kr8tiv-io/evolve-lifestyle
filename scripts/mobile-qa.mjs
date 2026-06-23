@@ -57,9 +57,31 @@ for (const [path, label] of PAGES) {
           vis: cs.visibility, op: cs.opacity, disp: cs.display,
         };
       }
-      return { clientW, scrollW, overflow: scrollW - clientW, offenders: offenders.slice(0, 3), logo: L };
+      // product-card price health: is the price clipped past its card/viewport, or
+      // colliding horizontally with the product name on the same line?
+      const cards = [];
+      document.querySelectorAll(".reveal-card").forEach((card) => {
+        const cr = card.getBoundingClientRect();
+        const price = card.querySelector("p.tnum");
+        const name = card.querySelector("h3");
+        if (!price) return;
+        const pr = price.getBoundingClientRect();
+        const nr = name ? name.getBoundingClientRect() : null;
+        const clipped = pr.width > 0 && pr.right > Math.min(cr.right, clientW) + 1;
+        const collide = nr ? pr.left < nr.right - 1 && Math.abs(pr.top - nr.top) < pr.height : false;
+        cards.push({ clipped, collide, pRight: Math.round(pr.right), cardRight: Math.round(cr.right), pW: Math.round(pr.width) });
+      });
+      const bad = cards.filter((c) => c.clipped || c.collide);
+      return {
+        clientW, scrollW, overflow: scrollW - clientW, offenders: offenders.slice(0, 2), logo: L,
+        prices: { total: cards.length, clipped: cards.filter((c) => c.clipped).length, collide: cards.filter((c) => c.collide).length, bad: bad.slice(0, 2) },
+      };
     });
-    const flag = (data.overflow > 1 ? " ⚠OVERFLOW" : "") + (data.logo && !data.logo.loaded ? " ⚠LOGO-NOTLOADED" : "") + (data.logo && (data.logo.rw === 0 || data.logo.rh === 0) ? " ⚠LOGO-0SIZE" : "");
+    const flag =
+      (data.overflow > 1 ? " ⚠OVERFLOW" : "") +
+      (data.logo && !data.logo.loaded ? " ⚠LOGO-NOTLOADED" : "") +
+      (data.prices && data.prices.clipped ? ` ⚠PRICE-CLIP×${data.prices.clipped}` : "") +
+      (data.prices && data.prices.collide ? ` ⚠PRICE-COLLIDE×${data.prices.collide}` : "");
     console.log(JSON.stringify({ page: label, vp: `${w}x${h}`, ...data }) + flag);
     await page.close();
   }

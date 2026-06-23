@@ -73,16 +73,16 @@ export default function ProductCard({
           </div>
         </div>
 
-        <div className="mt-4 flex items-start justify-between gap-4">
-          <div>
+        <div className="mt-4 flex items-start justify-between gap-2 sm:gap-4">
+          <div className="min-w-0">
             <p className="font-mono text-[0.58rem] uppercase tracking-tracked text-neon-soft">
               {COLLECTION_LABELS[product.collection]}
             </p>
-            <h3 className="mt-1.5 text-base font-medium uppercase leading-tight tracking-tight text-silver-bright transition-colors duration-300 group-hover:text-neon">
+            <h3 className="mt-1.5 break-words text-base font-medium uppercase leading-tight tracking-tight text-silver-bright transition-colors duration-300 group-hover:text-neon">
               {product.name}
             </h3>
           </div>
-          <div className="text-right">
+          <div className="shrink-0 text-right">
             <p className="tnum text-base text-silver-bright">{formatPrice(product.price)}</p>
             {product.compareAt && (
               <p className="tnum font-mono text-[0.6rem] text-silver-dim line-through">

@@ -7,7 +7,7 @@
 import { readdirSync, statSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const ROOT = "out";
+const ROOT = process.argv[2] || "out";
 
 function walk(dir) {
   const out = [];
@@ -56,14 +56,36 @@ function reorderHead(html) {
   return html.replace(headMatch[0], `<head>${priority}${head}</head>`);
 }
 
+// Windows + antivirus can transiently lock a file between read and write
+// (EBADF/EBUSY/EPERM). Retry with a short synchronous backoff so a lock can't
+// abort the whole pass.
+const sleepMs = (ms) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+function robustWrite(f, content) {
+  for (let i = 0; i < 8; i++) {
+    try {
+      writeFileSync(f, content);
+      return true;
+    } catch (e) {
+      if (!["EBADF", "EBUSY", "EPERM", "EACCES"].includes(e.code)) throw e;
+      sleepMs(150);
+    }
+  }
+  return false;
+}
+
 const files = walk(ROOT);
 let changed = 0;
+const failed = [];
 for (const f of files) {
   const html = readFileSync(f, "utf8");
   const out = reorderHead(html);
   if (out !== html) {
-    writeFileSync(f, out);
-    changed++;
+    if (robustWrite(f, out)) changed++;
+    else failed.push(f);
   }
 }
-console.log(`head-reorder: processed ${files.length} html files, rewrote ${changed}`);
+console.log(`head-reorder: processed ${files.length} html files, rewrote ${changed}, failed ${failed.length}`);
+if (failed.length) {
+  console.log("FAILED: " + failed.join(", "));
+  process.exitCode = 2;
+}
