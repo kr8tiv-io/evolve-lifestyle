@@ -47,7 +47,12 @@ function reorderHead(html) {
   const og = grabAll(/<meta[^>]*property=["']og:[^"']*["'][^>]*>/gi);
   const tw = grabAll(/<meta[^>]*name=["']twitter:[^"']*["'][^>]*>/gi);
 
-  const priority = [charset, viewport, title, desc, canonical, og, tw].filter(Boolean).join("");
+  // Preload the header logo so it wins the resource race against the heavy WebGL
+  // hero on narrow/slow devices (fixes the "empty logo box" before-paint bug).
+  const logoPreload =
+    '<link rel="preload" as="image" href="/brand/evolve-wordmark-white.png" fetchpriority="high"/>';
+
+  const priority = [charset, viewport, title, desc, canonical, logoPreload, og, tw].filter(Boolean).join("");
   return html.replace(headMatch[0], `<head>${priority}${head}</head>`);
 }
 

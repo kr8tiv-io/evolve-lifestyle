@@ -24,6 +24,8 @@ export default function EvolveLogo({
       alt="EVOLVE"
       width={3144}
       height={501}
+      loading="eager"
+      decoding="async"
       className={cn("h-5 w-auto select-none object-contain", className)}
       draggable={false}
     />

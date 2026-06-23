@@ -40,7 +40,7 @@ export default function Header() {
         <div className="frame flex h-[84px] items-center justify-between">
           <Magnetic strength={0.25}>
             <Link href="/" className="flex items-center" aria-label="EVOLVE home">
-              <EvolveLogo variant="white" className="h-4 w-auto sm:h-5" />
+              <EvolveLogo variant="white" className="h-4 w-auto sm:h-5 [filter:drop-shadow(0_1px_5px_rgba(0,0,0,0.85))]" />
             </Link>
           </Magnetic>
 
