@@ -1,0 +1,36 @@
+# EVOLVE Apparel
+
+> Western-Canadian outdoor lifestyle apparel — the lifestyle arm of Evolve Eco Blasting. Heavyweight hoodies, tees, flannels, and caps, made to order and shipped across Canada and North America. Born in the Alberta trades, weather-tested, and unapologetically Canadian. Tagline: Prairies to Peaks. Earned outside.
+
+EVOLVE makes rugged, premium-but-accessible apparel for proud, capable Canadians who live their lives outside — trades workers, hunters, anglers, hikers, snowboarders, and weekend escapees. The Evolve Journal is a library of deeply researched, no-fluff guides to getting outside in Canada: hikes, ski resorts, national parks, cabins, mountaineering, gear, survival skills, adventure sports, and breathtaking views.
+
+## Key pages
+- [Home](https://evolveapparel.shop/): brand overview and featured drop.
+- [Shop](https://evolveapparel.shop/shop/): the full range — outerwear, tops, headwear, accessories.
+- [Our Story](https://evolveapparel.shop/about/): the three brand stories and the link back to Evolve Eco Blasting.
+- [The Evolve Journal](https://evolveapparel.shop/journal/): every outdoor guide and field note.
+
+## The Evolve Journal — outdoor guides
+- [No Mountains Required: The Best Hikes Within Two Hours of Edmonton](https://evolveapparel.shop/journal/best-hikes-near-edmonton/)
+- [Vancouver Island, End to End: Ten Places Worth the Ferry](https://evolveapparel.shop/journal/vancouver-island-places/)
+- [Learning to Climb in Canada: Where to Start Mountaineering](https://evolveapparel.shop/journal/learn-to-mountaineer-canada/)
+- [Pack Light, Eat Smart: The Beginner's Hike-Packing Kit](https://evolveapparel.shop/journal/lightweight-hike-packing-kit/)
+- [Descended from Survivors: Ten Backcountry Skills the First Canadians Knew](https://evolveapparel.shop/journal/first-canadians-survival-skills/)
+- [Deep Wild, Good Sheets: Five Canadian Nature Resorts](https://evolveapparel.shop/journal/best-nature-resorts-canada/)
+- [Cold and Free: Five Canadian Adventure Sports](https://evolveapparel.shop/journal/canadian-extreme-sports/)
+- [Build Your Own Off-Grid Escape: Cheap Land, Solar, and a Wood-Fired Soak](https://evolveapparel.shop/journal/off-grid-cabin-canada/)
+- [Stand Here: The Ten Most Breathtaking Views in Canada](https://evolveapparel.shop/journal/best-views-canada/)
+- [The Best Ski Resorts in Alberta](https://evolveapparel.shop/journal/best-ski-resorts-alberta/)
+- [The Best Hikes in Alberta and BC](https://evolveapparel.shop/journal/best-hikes-alberta-bc/)
+- [Ten Boutique Cabins and Lodges in Canada](https://evolveapparel.shop/journal/boutique-cabins-canada/)
+- [The 10 Best National Parks in Canada](https://evolveapparel.shop/journal/best-national-parks-canada/)
+
+## About
+- Brand: EVOLVE Apparel (also EVOLVE / EVOLVE Lifestyle / EVOLVE Outdoors).
+- Parent company: Evolve Eco Blasting — abrasive blasting and surface restoration in Edmonton and across Alberta (https://www.evolveecoblasting.com).
+- Based in Edmonton, Alberta, Canada; serves Canada and North America.
+- Voice: proud, grounded, plain-spoken. "Polite. Until the work gets hard."
+- Social: https://www.facebook.com/EvolveApparel
+
+## Machine-readable
+- Sitemap: https://evolveapparel.shop/sitemap.xml

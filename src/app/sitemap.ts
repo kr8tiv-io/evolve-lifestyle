@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
 import { getProducts } from "@/lib/products";
-import { getArticles } from "@/lib/journal";
+import { getArticles, getArticleDate } from "@/lib/journal";
 
 export const dynamic = "force-static";
 
 const BASE = "https://evolveapparel.shop";
+const SITE_UPDATED = "2026-06-27";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: { path: string; priority: number }[] = [
@@ -18,12 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const products = getProducts().map((p) => ({
     url: `${BASE}/shop/${p.slug}/`,
+    lastModified: SITE_UPDATED,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
   const articles = getArticles().map((a) => ({
     url: `${BASE}/journal/${a.slug}/`,
+    lastModified: getArticleDate(a.slug),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -31,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((r) => ({
       url: BASE + r.path,
+      lastModified: SITE_UPDATED,
       changeFrequency: "weekly" as const,
       priority: r.priority,
     })),

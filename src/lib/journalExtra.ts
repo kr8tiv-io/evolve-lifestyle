@@ -496,3 +496,53 @@ If you come back in the cold months, point the truck at Abraham Lake in Alberta,
 Photographs of these places are everywhere, and not one of them does the job, because a great view is not an image, it is a feeling of scale that only lands when you are physically small in front of it. Book the shuttle, win the draw, take the boat, charter the plane. The country is holding these for you. The only wrong move is to keep scrolling past them from the couch.`,
   },
 ];
+
+// Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
+// and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
+export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "best-hikes-near-edmonton": [
+    { q: "What is the best hike close to Edmonton?", a: "For a quick escape, Mill Creek Ravine and Terwillegar Park in Edmonton's river valley are hard to beat. For a 45-minute drive, Elk Island National Park offers bison, boardwalks, and boreal trails." },
+    { q: "How far is the nearest national park to Edmonton?", a: "Elk Island National Park is about 45 to 50 minutes east on Highway 16 — the closest national park to the city." },
+    { q: "Are there mountain hikes within two hours of Edmonton?", a: "Not the true Rockies — Jasper and Banff are three and a half to four-plus hours away. Within two hours you get parkland, boreal forest, lakes, and the 62-metre Pembina River sandstone gorge near Entwistle." },
+  ],
+  "vancouver-island-places": [
+    { q: "What are the must-see places on Vancouver Island?", a: "Tofino and Long Beach, Cathedral Grove's old-growth, Victoria and Butchart Gardens, Strathcona Park, Telegraph Cove for orcas, and Cape Scott at the wild north tip." },
+    { q: "How do you get to Vancouver Island?", a: "By BC Ferries from Tsawwassen or Horseshoe Bay near Vancouver. Book ahead on summer weekends, as sailings sell out." },
+    { q: "Where can you see orcas on Vancouver Island?", a: "Johnstone Strait near Telegraph Cove holds the world's densest summer gathering of northern resident orcas. A half-day boat tour makes a July or August sighting close to certain." },
+  ],
+  "learn-to-mountaineer-canada": [
+    { q: "Where should a beginner learn to mountaineer in Canada?", a: "The Bow Valley around Canmore is the hub. Schools like Yamnuska Mountain Adventures and the Alpine Club of Canada run intro courses with certified ACMG guides." },
+    { q: "What is a good first mountaineering objective in Canada?", a: "Mount Athabasca, 3,491 metres, on the Columbia Icefield is the classic first glaciated summit — best done with a guide." },
+    { q: "Do I need a course before mountaineering?", a: "Yes. Glacier travel, crevasse rescue, and avalanche skills (AST 1) are taught, not improvised. The first thing to buy is a course, not an ice axe." },
+  ],
+  "lightweight-hike-packing-kit": [
+    { q: "What are the Ten Essentials for hiking?", a: "Navigation, headlamp, sun protection, first aid, knife and repair, fire, emergency shelter, extra food, extra water, and extra clothing — carried as systems, not single items." },
+    { q: "What food should I pack for a day hike?", a: "Calorie-dense, fat-forward food over 100 calories per ounce — nut butter, nuts, hard cheese, salami — plus a 400 to 800-calorie reserve and electrolytes." },
+    { q: "Do I need to treat backcountry water in Canada?", a: "Yes. Even clear, fast-moving sources can carry giardia and cryptosporidium, so a squeeze filter or chemical tablets are mandatory." },
+  ],
+  "first-canadians-survival-skills": [
+    { q: "What is pemmican?", a: "A high-energy survival food of dried meat pounded with rendered fat and sometimes berries — about 3,500 calories per pound. The Metis produced most of the fur trade's supply." },
+    { q: "How did people survive Canadian winters before modern gear?", a: "With snowshoes, snow shelters like the quinzhee and igloo, wool layers, fire from birchbark, and Indigenous knowledge of weather, water, and travel." },
+    { q: "What is the lesson of the Franklin expedition?", a: "Humility. All 129 well-equipped men died where the Inuit had thrived for millennia. Inuit oral history later pinpointed the wreck of the Erebus, found in 2014." },
+  ],
+  "best-nature-resorts-canada": [
+    { q: "What are the best nature resorts in Canada?", a: "Sonora Resort on the BC coast, the Wickaninnish Inn in Tofino, Emerald Lake Lodge in Yoho, Echo Valley Ranch in the Cariboo, and Hotel Sacacomie in Quebec." },
+    { q: "What is the most accessible Canadian wilderness resort?", a: "Hotel Sacacomie, about two and a quarter hours from Montreal, with packages from around 399 dollars for two — the best value next to the BC fly-ins." },
+    { q: "Where can you storm-watch in Canada?", a: "The Wickaninnish Inn in Tofino made storm watching famous. From November to March, Pacific swells hammer the rock while you stay dry behind hurricane-rated glass." },
+  ],
+  "canadian-extreme-sports": [
+    { q: "What outdoor adventure sports is Canada known for?", a: "Heli-skiing, which was invented in the Bugaboos, big-volume whitewater on the Ottawa River, cold-water surfing in Tofino, ice climbing in the Rockies, and lift-served mountain biking at Whistler." },
+    { q: "Where was heli-skiing invented?", a: "In BC's Bugaboos in 1965 by Hans Gmoser. Canadian Mountain Holidays has been the standard ever since." },
+    { q: "Can a beginner try these sports?", a: "Yes. Each has a real beginner door with a guide or school and gear provided, from intro heli-ski days to Whistler bike-park clinics." },
+  ],
+  "off-grid-cabin-canada": [
+    { q: "Can you buy cheap Crown land in Canada to build a cabin?", a: "Generally no — Crown land is leased, not sold. The affordable path is private rural land in value regions like Clearwater County in Alberta, the BC Kootenays, or northern Ontario." },
+    { q: "How much does an off-grid solar setup cost?", a: "A 400-watt solar array with a lithium battery and inverter — enough for lights, laptops, and a small fridge — runs roughly 1,750 to 2,000 dollars as a packaged kit in 2026." },
+    { q: "Do you need permits for an off-grid cabin?", a: "Usually yes. Electrical, structural, and septic work is regulated and zoning still applies. Confirm with the municipality and health unit before you buy or build." },
+  ],
+  "best-views-canada": [
+    { q: "What is the most breathtaking view in Canada?", a: "Moraine Lake and the Valley of the Ten Peaks in Banff is the iconic one, reached by a short scramble up the Rockpile. Access is by shuttle only in 2026." },
+    { q: "How do you see Spirit Island at Maligne Lake?", a: "Only by boat — a roughly 90-minute narrated cruise across Maligne Lake in Jasper, with a short stop at the island." },
+    { q: "Do Canada's top viewpoints need reservations in 2026?", a: "Several do. Moraine Lake (shuttle), Lake O'Hara (bus lottery), and the Skyline Trail (timed parking) all require advance booking." },
+  ],
+};

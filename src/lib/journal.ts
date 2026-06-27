@@ -70,3 +70,25 @@ export function getArticles(): Article[] {
 export function getArticle(slug: string): Article | undefined {
   return getArticles().find((a) => a.slug === slug);
 }
+
+// Publish / last-refresh dates — feed sitemap <lastmod> and Article JSON-LD
+// (datePublished / dateModified). New 2026-06 wave dated to its publish day.
+const PUBLISHED: Record<string, string> = {
+  "best-ski-resorts-alberta": "2026-06-21",
+  "best-hikes-alberta-bc": "2026-06-21",
+  "boutique-cabins-canada": "2026-06-21",
+  "best-national-parks-canada": "2026-06-21",
+  "best-hikes-near-edmonton": "2026-06-27",
+  "vancouver-island-places": "2026-06-27",
+  "learn-to-mountaineer-canada": "2026-06-27",
+  "lightweight-hike-packing-kit": "2026-06-27",
+  "first-canadians-survival-skills": "2026-06-27",
+  "best-nature-resorts-canada": "2026-06-27",
+  "canadian-extreme-sports": "2026-06-27",
+  "off-grid-cabin-canada": "2026-06-27",
+  "best-views-canada": "2026-06-27",
+};
+
+export function getArticleDate(slug: string): string {
+  return PUBLISHED[slug] ?? "2026-06-27";
+}

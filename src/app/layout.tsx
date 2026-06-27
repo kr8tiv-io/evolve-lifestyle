@@ -79,7 +79,10 @@ export default function RootLayout({
       name: "Evolve Eco Blasting",
       url: "https://www.evolveecoblasting.com",
     },
-    sameAs: ["https://www.evolveecoblasting.com"],
+    sameAs: [
+      "https://www.facebook.com/EvolveApparel",
+      "https://www.evolveecoblasting.com",
+    ],
   };
   return (
     <html lang="en-CA">

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getArticle, getArticles } from "@/lib/journal";
+import { getArticle, getArticles, getArticleDate } from "@/lib/journal";
+import { FAQS } from "@/lib/journalExtra";
 import Markdown from "@/components/ui/Markdown";
 import ProductImage from "@/components/ui/ProductImage";
 import EmailSignup from "@/components/ui/EmailSignup";
@@ -35,6 +36,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   if (!article) notFound();
 
   const more = getArticles().filter((a) => a.slug !== article.slug).slice(0, 3);
+  const date = getArticleDate(article.slug);
+  const faqs = FAQS[article.slug] ?? [];
+  const url = `${SITE}/journal/${article.slug}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -43,10 +47,41 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     description: article.dek,
     image: `${SITE}${article.hero}`,
     articleSection: article.category,
-    mainEntityOfPage: `${SITE}/journal/${article.slug}`,
-    author: { "@type": "Organization", name: "EVOLVE" },
-    publisher: { "@type": "Organization", name: "EVOLVE Apparel" },
+    mainEntityOfPage: url,
+    url,
+    inLanguage: "en-CA",
+    datePublished: date,
+    dateModified: date,
+    author: { "@type": "Organization", name: "EVOLVE", url: SITE },
+    publisher: {
+      "@type": "Organization",
+      name: "EVOLVE Apparel",
+      logo: { "@type": "ImageObject", url: `${SITE}/brand/evolve-lockup-white.png` },
+    },
   };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Journal", item: `${SITE}/journal/` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${url}/` },
+    ],
+  };
+
+  const faqLd =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
 
   return (
     <article className="pt-[var(--header-h)]">
@@ -54,6 +89,16 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       {/* hero */}
       <header className="relative h-[56vh] min-h-[380px] w-full overflow-hidden">
@@ -86,6 +131,23 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <div className="max-w-2xl">
           <Markdown body={article.body} images={article.inlineImages} tone={article.tone} />
         </div>
+
+        {/* FAQ — answer-engine friendly, mirrors the FAQPage JSON-LD */}
+        {faqs.length > 0 && (
+          <section className="mt-16 max-w-2xl">
+            <h2 className="text-2xl font-medium uppercase leading-tight tracking-tight text-silver-bright sm:text-[1.7rem]">
+              Frequently asked questions
+            </h2>
+            <dl className="mt-6 space-y-6">
+              {faqs.map((f) => (
+                <div key={f.q} className="border-t border-white/10 pt-5">
+                  <dt className="text-base font-medium text-silver-bright sm:text-[1.05rem]">{f.q}</dt>
+                  <dd className="mt-2 text-base leading-relaxed text-silver-dim sm:text-[1.05rem]">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
 
         {/* soft sell */}
         <div className="mt-16 max-w-2xl overflow-hidden rounded-[3px] border border-white/10 bg-void/40 p-7">
