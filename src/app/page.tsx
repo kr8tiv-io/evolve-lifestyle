@@ -5,6 +5,7 @@ import BrandPillars from "@/components/sections/BrandPillars";
 import SloganMoment from "@/components/sections/SloganMoment";
 import PinnedGallery from "@/components/sections/PinnedGallery";
 import Lookbook from "@/components/sections/Lookbook";
+import JournalTeaser from "@/components/sections/JournalTeaser";
 import Marquee from "@/components/ui/Marquee";
 import { MARQUEE_LINES } from "@/lib/slogans";
 
@@ -34,6 +35,8 @@ export default function HomePage() {
       <PinnedGallery />
 
       <Lookbook />
+
+      <JournalTeaser />
 
       <SloganMoment
         slogan="Strip it back."

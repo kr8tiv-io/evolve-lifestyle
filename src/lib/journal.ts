@@ -2,6 +2,8 @@
 // field notes). Bodies are GitHub-flavoured markdown; rendered by ui/Markdown.tsx.
 // `![alt](#photo: ...)` placeholders pull, in order, from `inlineImages`.
 
+import { EXTRA_ARTICLES } from "./journalExtra";
+
 export interface Article {
   slug: string;
   title: string;
@@ -62,9 +64,9 @@ export const ARTICLES: Article[] = [
 ];
 
 export function getArticles(): Article[] {
-  return ARTICLES;
+  return [...EXTRA_ARTICLES, ...ARTICLES];
 }
 
 export function getArticle(slug: string): Article | undefined {
-  return ARTICLES.find((a) => a.slug === slug);
+  return getArticles().find((a) => a.slug === slug);
 }
