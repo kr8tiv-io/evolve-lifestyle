@@ -138,7 +138,7 @@ If you have a long weekend, run Victoria to Tofino and call it good. If you have
     dek: "Canada has the peaks, the guides, and the structure to take you from a scramble to a glaciated summit, as long as you do it in the right order.",
     category: "Summits",
     readMinutes: 9,
-    hero: "/images/photo-1454496522488-7a8e488e8606.jpg",
+    hero: "/images/photo-1483728642387-6c3bdd6c93e5.jpg",
     tone: ["#14233a", "#4ade80"],
     inlineImages: ["/landscapes/peaks.jpg", "/images/photo-1506905925346-21bda4d32df4.jpg"],
     body: `The mountains do not care how fit you are. They care whether you know what you are doing, and the gap between a confident hiker and a competent mountaineer is wider than most people think. The good news is that Canada is one of the best places on earth to close that gap, because the Bow Valley around Canmore is a hub of certified guides, the peaks come in every grade, and there is a clear ladder from your first scramble to a real glaciated summit. The trick is climbing that ladder in order, and not skipping the rungs that keep you alive.
@@ -352,9 +352,9 @@ If you want the trip you talk about for a decade, fly in to Sonora. If you want 
     dek: "From the slopes that invented heli-skiing to a year-round surf break on the edge of the Pacific, these are the pursuits the rest of the world copies from us.",
     category: "Adrenaline",
     readMinutes: 8,
-    hero: "/images/photo-1551698618-1dfe5d97d256.jpg",
+    hero: "/images/photo-1518837695005-2083093ee35b.jpg",
     tone: ["#0c2233", "#00ff41"],
-    inlineImages: ["/images/photo-1518837695005-2083093ee35b.jpg", "/landscapes/peaks.jpg"],
+    inlineImages: ["/images/photo-1551698618-1dfe5d97d256.jpg", "/landscapes/peaks.jpg"],
     body: `Some countries have to import their adventure. We have it in the backyard, and in more than one case we invented it. Canada is where heli-skiing was born, where a river runs world-class whitewater two hours from the capital, and where you can surf a cold Pacific wave in January if you are tough enough to want to. The point of these five is not the bragging rights, though those come free. It is that every one of them has a real beginner door, a way for a fit, willing person with no experience to try the thing properly and safely. Here is where to go and how to start.
 
 ## 1. Heli-skiing, the thing we invented
