@@ -65,23 +65,41 @@ export default function RootLayout({
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "EVOLVE Apparel",
-    alternateName: "EVOLVE",
-    url: "https://evolveapparel.shop",
-    logo: "https://evolveapparel.shop/brand/evolve-lockup-white.png",
-    description:
-      "Western-Canadian outdoor lifestyle apparel. The apparel arm of Evolve Eco Blasting.",
-    areaServed: "CA",
-    // associate the apparel brand with the parent service company for SEO
-    parentOrganization: {
-      "@type": "Organization",
-      name: "Evolve Eco Blasting",
-      url: "https://www.evolveecoblasting.com",
-    },
-    sameAs: [
-      "https://www.facebook.com/EvolveApparel",
-      "https://www.evolveecoblasting.com",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://evolveapparel.shop/#organization",
+        name: "EVOLVE Apparel",
+        alternateName: "EVOLVE",
+        url: "https://evolveapparel.shop",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://evolveapparel.shop/brand/evolve-lockup-white.png",
+        },
+        description:
+          "Western-Canadian outdoor lifestyle apparel. The apparel arm of Evolve Eco Blasting.",
+        areaServed: "CA",
+        // associate the apparel brand with the parent service company for SEO
+        parentOrganization: {
+          "@type": "Organization",
+          name: "Evolve Eco Blasting",
+          url: "https://www.evolveecoblasting.com",
+        },
+        sameAs: [
+          "https://www.facebook.com/EvolveApparel",
+          "https://www.evolveecoblasting.com",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://evolveapparel.shop/#website",
+        name: "EVOLVE Apparel",
+        url: "https://evolveapparel.shop",
+        inLanguage: "en-CA",
+        description:
+          "Western-Canadian outdoor lifestyle apparel and the Evolve Journal — researched guides to getting outside in Canada.",
+        publisher: { "@id": "https://evolveapparel.shop/#organization" },
+      },
     ],
   };
   return (
