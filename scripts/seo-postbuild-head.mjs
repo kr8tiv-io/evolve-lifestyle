@@ -1,9 +1,10 @@
 // Post-build SEO: reorder each out/**/*.html <head> so the high-value tags
-// (<title>, meta description, canonical, OG/Twitter) appear EARLY — right after
-// charset + viewport, BEFORE the ~10 font/image preload <link> tags Next emits.
-// Some crawlers (e.g. seaocean's fetcher) read only the first ~545 chars of the
-// document and miss a late <title>, producing a false-low score. Run after
-// `next build` (static export):  node scripts/seo-postbuild-head.mjs
+// (<title>, meta description, canonical, OG/Twitter) AND JSON-LD appear FIRST —
+// right after charset + viewport, before the ~10 font/image preload <link> tags
+// Next emits. Some crawlers (e.g. seaocean's fetcher) read only the first chunk
+// of the document and miss late tags, producing a false-low score. JSON-LD is
+// also relocated out of <body> into <head> so those same crawlers detect it.
+// Run after `next build` (static export):  node scripts/seo-postbuild-head.mjs out
 import { readdirSync, statSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -24,6 +25,7 @@ function reorderHead(html) {
   const headMatch = html.match(/<head[^>]*>([\s\S]*?)<\/head>/i);
   if (!headMatch) return html;
   let head = headMatch[1];
+  let tail = html.slice(headMatch.index + headMatch[0].length); // everything after </head>
 
   // pull a single tag out of head (first match) and return it
   const grab = (re) => {
@@ -44,16 +46,27 @@ function reorderHead(html) {
   const title = grab(/<title[^>]*>[\s\S]*?<\/title>/i);
   const desc = grab(/<meta[^>]*name=["']description["'][^>]*>/i);
   const canonical = grab(/<link[^>]*rel=["']canonical["'][^>]*>/i);
+  const robots = grab(/<meta[^>]*name=["']robots["'][^>]*>/i);
   const og = grabAll(/<meta[^>]*property=["']og:[^"']*["'][^>]*>/gi);
   const tw = grabAll(/<meta[^>]*name=["']twitter:[^"']*["'][^>]*>/gi);
+
+  // Relocate JSON-LD structured data EARLY into the head so prefix-limited
+  // crawlers (seaocean) detect it. Pull any already in head, then any in body.
+  const ldRe = /<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi;
+  let jsonld = grabAll(ldRe);
+  tail = tail.replace(ldRe, (m) => ((jsonld += m), ""));
 
   // Preload the header logo so it wins the resource race against the heavy WebGL
   // hero on narrow/slow devices (fixes the "empty logo box" before-paint bug).
   const logoPreload =
     '<link rel="preload" as="image" href="/brand/evolve-wordmark-white.png" fetchpriority="high"/>';
 
-  const priority = [charset, viewport, title, desc, canonical, logoPreload, og, tw].filter(Boolean).join("");
-  return html.replace(headMatch[0], `<head>${priority}${head}</head>`);
+  // Order: tiny critical meta first (title/desc/canonical/robots/og/tw all inside
+  // the crawler's read window), then JSON-LD, then the logo + bulky font preloads.
+  const priority = [charset, viewport, title, desc, canonical, robots, og, tw, jsonld, logoPreload]
+    .filter(Boolean)
+    .join("");
+  return html.slice(0, headMatch.index) + `<head>${priority}${head}</head>` + tail;
 }
 
 // Windows + antivirus can transiently lock a file between read and write

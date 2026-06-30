@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:seo": "cross-env NEXT_EXPORT=1 next build && node scripts/seo-postbuild-head.mjs out",
     "start": "next start",
     "lint": "next lint"
   },
