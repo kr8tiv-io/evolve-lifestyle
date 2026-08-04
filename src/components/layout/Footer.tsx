@@ -102,6 +102,16 @@ export default function Footer() {
           <p className="font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
             © <span suppressHydrationWarning>{new Date().getFullYear()}</span> EVOLVE —
             Serving Edmonton & Greater Alberta
+            <span className="mx-2 text-white/25" aria-hidden>·</span>
+            Made with love by{" "}
+            <a
+              href="https://kr8tiv.io"
+              target="_blank"
+              rel="noopener"
+              className="link-underline hover:text-neon"
+            >
+              kr8tiv
+            </a>
           </p>
           <div className="flex gap-6 font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
             <Link href="/terms" className="link-underline hover:text-neon">Terms &amp; Returns</Link>
