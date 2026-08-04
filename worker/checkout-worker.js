@@ -34,11 +34,6 @@ const pfHeaders = (env) => ({
   "X-PF-Store-Id": env.PRINTFUL_STORE_ID,
 });
 
-// Strong random token gating the TEMPORARY /admin-email completion route (Resend domain
-// status / verify / shop@ test send). Server-side only — the route never returns a secret.
-// Remove this const + the route + adminEmail() once the sending domain is verified.
-const ADMIN_TOKEN = "b6b5461e3629da0c00428e42522b70f2a5d4b0b39bd0185d4c3301682dcd4a50";
-
 // ---- per-IP rate limit (Durable Object; strongly consistent; fail-open) -----
 // All requests for one IP route to the same instance, so the in-memory sliding
 // window is accurate. No storage needed — a reset on eviction just fails open.
@@ -80,7 +75,6 @@ export default {
       return createSession(request, env, origin);
     }
     if (url.pathname === "/webhook" && request.method === "POST") return handleWebhook(request, env);
-    if (url.pathname === "/admin-email" && url.searchParams.get("key") === ADMIN_TOKEN) return adminEmail(env, url); // TEMP — strong-token email-completion route; remove when domain verified
     return new Response("Not found", { status: 404 });
   },
 };

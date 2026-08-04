@@ -23,6 +23,17 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
+.env.*
+
+# keys / credentials — never commit
+*.key
+*.p12
+credentials*.json
+
+# local session tooling & logs
+content-drafts/
+build.log
+*.tmp.mjs
 
 # typescript
 *.tsbuildinfo
