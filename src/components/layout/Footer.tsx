@@ -45,7 +45,7 @@ export default function Footer() {
               </h4>
               <div className="mt-3 flex items-center gap-3">
                 <a
-                  href="https://www.facebook.com/EvolveApparel"
+                  href="https://www.facebook.com/EvolveApparelCo"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="EVOLVE Apparel on Facebook"

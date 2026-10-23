@@ -86,7 +86,7 @@ export default function RootLayout({
           url: "https://www.evolveecoblasting.com",
         },
         sameAs: [
-          "https://www.facebook.com/EvolveApparel",
+          "https://www.facebook.com/EvolveApparelCo",
           "https://www.evolveecoblasting.com",
         ],
       },
