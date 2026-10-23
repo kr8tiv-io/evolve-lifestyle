@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "embroidered hoodies Canada",
     "Alberta apparel brand",
     "hunting fishing apparel",
-    "made in Canada outdoor clothing",
+    "Canadian brand outdoor clothing",
     "Evolve Eco Blasting",
   ],
   alternates: { canonical: "/" },
