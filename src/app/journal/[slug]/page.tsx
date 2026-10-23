@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getArticle, getArticles, getArticleDate } from "@/lib/journal";
+import { getArticle, getArticles, getArticleDate, getArticleModified } from "@/lib/journal";
 import { FAQS } from "@/lib/journalExtra";
 import Markdown from "@/components/ui/Markdown";
 import ProductImage from "@/components/ui/ProductImage";
@@ -51,7 +51,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     url,
     inLanguage: "en-CA",
     datePublished: date,
-    dateModified: date,
+    dateModified: getArticleModified(article.slug),
     author: { "@type": "Organization", name: "EVOLVE", url: SITE },
     publisher: {
       "@type": "Organization",

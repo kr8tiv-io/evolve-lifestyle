@@ -92,3 +92,25 @@ const PUBLISHED: Record<string, string> = {
 export function getArticleDate(slug: string): string {
   return PUBLISHED[slug] ?? "2026-06-27";
 }
+
+// Last meaningful content refresh (internal links, deks). Feeds sitemap
+// <lastmod> and Article JSON-LD dateModified. Falls back to the publish date.
+const MODIFIED: Record<string, string> = {
+  "best-ski-resorts-alberta": "2026-10-22",
+  "best-hikes-alberta-bc": "2026-10-22",
+  "boutique-cabins-canada": "2026-10-22",
+  "best-national-parks-canada": "2026-10-22",
+  "best-hikes-near-edmonton": "2026-10-22",
+  "vancouver-island-places": "2026-10-22",
+  "learn-to-mountaineer-canada": "2026-10-22",
+  "lightweight-hike-packing-kit": "2026-10-22",
+  "first-canadians-survival-skills": "2026-10-22",
+  "best-nature-resorts-canada": "2026-10-22",
+  "canadian-extreme-sports": "2026-10-22",
+  "off-grid-cabin-canada": "2026-10-22",
+  "best-views-canada": "2026-10-22",
+};
+
+export function getArticleModified(slug: string): string {
+  return MODIFIED[slug] ?? getArticleDate(slug);
+}

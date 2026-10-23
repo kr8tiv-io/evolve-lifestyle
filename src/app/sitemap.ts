@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getProducts } from "@/lib/products";
-import { getArticles, getArticleDate } from "@/lib/journal";
+import { getArticles, getArticleModified } from "@/lib/journal";
 
 export const dynamic = "force-static";
 
@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articles = getArticles().map((a) => ({
     url: `${BASE}/journal/${a.slug}/`,
-    lastModified: getArticleDate(a.slug),
+    lastModified: getArticleModified(a.slug),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
