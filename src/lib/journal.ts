@@ -20,7 +20,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "best-ski-resorts-alberta",
     title: "The Best Ski Resorts in Alberta: A Rider's Field Guide to the Big Three",
-    dek: "Skiing and snowboarding in Alberta starts with three mountains, and here's how to ride each one right.",
+    dek: "Skiing and snowboarding in Alberta starts with three mountains: Sunshine, Lake Louise, and Marmot Basin. Here's how to ride each one right.",
     category: "Snow",
     readMinutes: 7,
     hero: "/images/journal/ski.jpg",
@@ -31,7 +31,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "best-hikes-alberta-bc",
     title: "The Best Hikes in Alberta and BC: 8 Day Trips and Two Big Ones Worth the Sweat",
-    dek: "Real distances, real elevation, real permit rules for the standout trails worth your boots this summer.",
+    dek: "Real distances, real elevation, and real permit rules for the standout day hikes and big trips in Alberta and BC worth your boots this summer.",
     category: "Trails",
     readMinutes: 8,
     hero: "/images/journal/hiking.jpg",
@@ -42,7 +42,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "boutique-cabins-canada",
     title: "Ten Boutique Cabins and Lodges in Canada Worth the Drive (or the Floatplane)",
-    dek: "Ten real off-grid stays across Canada, from a hanging sphere on Vancouver Island to an aurora chalet in the Yukon.",
+    dek: "Ten real boutique cabins and lodges across Canada, from a hanging sphere on Vancouver Island to a glass-roofed aurora chalet in the Yukon.",
     category: "Stays",
     readMinutes: 8,
     hero: "/images/journal/cabin.jpg",

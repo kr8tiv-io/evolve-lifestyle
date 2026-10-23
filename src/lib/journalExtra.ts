@@ -239,7 +239,7 @@ A good kit is quiet. You barely notice it until the moment it saves your day, an
   {
     slug: "first-canadians-survival-skills",
     title: "Descended from Survivors: Ten Backcountry Skills the First Canadians Knew and We Forgot",
-    dek: "For thousands of years the people of this land mastered skills precise enough to live at minus forty, and the knowledge that kept settlers alive was almost always borrowed from them.",
+    dek: "For millennia the people of this land mastered skills precise enough to live at minus forty, and the settlers who survived did it by borrowing them.",
     category: "Heritage",
     readMinutes: 9,
     hero: "/images/photo-1473773508845-188df298d2d1.jpg",
@@ -300,7 +300,7 @@ We are the descendants of people who out-lasted a climate that breaks most thing
   {
     slug: "best-nature-resorts-canada",
     title: "Deep Wild, Good Sheets: Five Canadian Nature Resorts Worth the Drive or the Floatplane",
-    dek: "Full-service lodges that put you inside the wilderness without asking you to give up a single comfort, from a fly-in archipelago to a Quebec lake in moose country.",
+    dek: "Lodges that put you inside the wilderness without giving up a single comfort, from a fly-in archipelago to a Quebec lake in moose country.",
     category: "Stays",
     readMinutes: 8,
     hero: "/images/photo-1465056836041-7f43ac27dcb5.jpg",
@@ -349,7 +349,7 @@ If you want the trip you talk about for a decade, fly in to Sonora. If you want 
   {
     slug: "canadian-extreme-sports",
     title: "Cold and Free: Five Canadian Adventure Sports Worth the Adrenaline",
-    dek: "From the slopes that invented heli-skiing to a year-round surf break on the edge of the Pacific, these are the pursuits the rest of the world copies from us.",
+    dek: "From the slopes that invented heli-skiing to a year-round Pacific surf break, these are the pursuits the rest of the world copies from us.",
     category: "Adrenaline",
     readMinutes: 8,
     hero: "/images/photo-1518837695005-2083093ee35b.jpg",
@@ -388,7 +388,7 @@ Notice what all five share: a guide or a school, gear provided, and a real begin
   {
     slug: "off-grid-cabin-canada",
     title: "Build Your Own Off-Grid Escape: Cheap Land, Solar, and a Wood-Fired Soak Near Canada's Best Parks",
-    dek: "An honest guide to finding affordable land near the great parks, the rules nobody warns you about, and the off-grid tech that finally makes a small cabin doable.",
+    dek: "An honest guide to affordable land near the great parks, the rules nobody warns you about, and the off-grid tech that makes a small cabin doable.",
     category: "Off-Grid",
     readMinutes: 10,
     hero: "/images/photo-1470770841072-f978cf4d019e.jpg",
@@ -435,7 +435,7 @@ An off-grid cabin is more work and more rules than the daydream admits, and it i
   {
     slug: "best-views-canada",
     title: "Stand Here: The Ten Most Breathtaking Views in Canada and How to Reach Them",
-    dek: "Ten vantage points that stop you mid-sentence, from a glacial rockpile in Banff to a fly-in waterfall twice the height of Niagara, with the exact way to stand in front of each.",
+    dek: "Ten vantage points that stop you mid-sentence, from a glacial rockpile in Banff to a fly-in waterfall twice Niagara's height, and how to reach each.",
     category: "Vistas",
     readMinutes: 9,
     hero: "/images/photo-1501785888041-af3ef285b470.jpg",
