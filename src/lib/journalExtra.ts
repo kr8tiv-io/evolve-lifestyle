@@ -15,7 +15,7 @@ export const EXTRA_ARTICLES: Article[] = [
     inlineImages: ["/images/photo-1418489098061-ce87b5dc3aee.jpg", "/landscapes/prairies.jpg"],
     body: `Let us be honest about geography. Edmonton is not a mountain town. Jasper is three and a half to four hours west, Banff is further, and on a Friday afternoon in summer the Yellowhead is a parking lot full of people who all had the same idea. The myth in this city is that a real hike means a long drive. It does not. Within two hours of downtown there is parkland that runs gold to the horizon, a river valley bigger than any urban green space on the continent, boreal bog full of moose, and a sandstone gorge nobody talks about. None of it is the Rockies. All of it is worth your boots.
 
-This is the honest, close-to-home list: real distances, real drive times, and the one tip that makes each one better. Bring water, bring bug spray from May to July, and leave the four-hour round trip for the weekends you actually have the legs for.
+This is the honest, close-to-home list: real distances, real drive times, and the one tip that makes each one better. Bring water, bring bug spray from May to July, and leave the four-hour round trip for the weekends you actually have the legs for. New to it? Our [beginner's hike-packing kit](/journal/lightweight-hike-packing-kit/) covers what to carry.
 
 ![A gravel trail winding through aspen parkland under tall trees](#photo: a trail through aspen parkland)
 
@@ -63,7 +63,7 @@ Push a little past two hours and the options open up. [Pigeon Lake](https://www.
 
 ## The point
 
-You do not need to fight the highway to Banff to earn a good day outside. The country east and west of Edmonton is parkland, bog, river, and gorge, and most of it is empty on a Tuesday. The mountains will still be there when you have a full weekend to give them. Until then, the best hike is the one you can reach before the coffee goes cold. Take the close one. Take it often.`,
+You do not need to fight the highway to Banff to earn a good day outside. The country east and west of Edmonton is parkland, bog, river, and gorge, and most of it is empty on a Tuesday. The mountains will still be there when you have a full weekend to give them, and [the best hikes in Alberta and BC](/journal/best-hikes-alberta-bc/) are worth that weekend. Until then, the best hike is the one you can reach before the coffee goes cold. Take the close one. Take it often.`,
   },
   {
     slug: "vancouver-island-places",
@@ -96,7 +96,7 @@ Out past Sooke to Port Renfrew, [Botanical Beach](https://bcparks.ca/juan-de-fuc
 
 ## Tofino and Long Beach
 
-The famous one earns it. A 10 km arc of black-sand surf beach inside [Pacific Rim National Park Reserve](https://parks.canada.ca/pn-np/bc/pacificrim/visit), bookended by old-growth headlands and the open Pacific. Surf in summer, watch grey whales in spring, walk the Rainforest Trail boardwalk into the big cedars year-round.
+The famous one earns it. A 10 km arc of black-sand surf beach inside [Pacific Rim National Park Reserve](https://parks.canada.ca/pn-np/bc/pacificrim/visit), bookended by old-growth headlands and the open Pacific. [Surf in summer](/journal/canadian-extreme-sports/), watch grey whales in spring, walk the Rainforest Trail boardwalk into the big cedars year-round.
 
 **The 2026 note:** the Canada Strong Pass waives park entry June 19 to September 7, and Green Point campground books out the day reservations open, so set an alarm.
 
@@ -130,7 +130,7 @@ About a hundred uninhabited islands in the sheltered maze of Barkley Sound, insi
 
 ## How to play it
 
-If you have a long weekend, run Victoria to Tofino and call it good. If you have a week, point the truck north, because the island gets better the further you get from the crowd. The ferry is the toll. Pay it, and keep driving past where everyone else stops.`,
+If you have a long weekend, run Victoria to Tofino and call it good. Two of our favourite [Canadian nature resorts](/journal/best-nature-resorts-canada/) sit on or just off this coast if you want a real bed at the end of it. If you have a week, point the truck north, because the island gets better the further you get from the crowd. The ferry is the toll. Pay it, and keep driving past where everyone else stops.`,
   },
   {
     slug: "learn-to-mountaineer-canada",
@@ -167,15 +167,15 @@ The progression that works, in sequence: indoor gym, outdoor top-rope, scramblin
 
 **Mountaineering** begins the moment you step onto a glacier or a snow face needing crampons, an axe, and a rope. That is taught, not improvised. A guided intro course covers self-arrest, roped travel, crampon technique, and crevasse rescue, and you do not go onto an icefield without it.
 
-For anything in winter, add an [Avalanche Skills Training](https://avalanche.ca/training) course, AST 1 first, two days for roughly \$300 to \$400, and carry a transceiver, probe, and shovel you actually know how to use.
+For anything in winter, add an [Avalanche Skills Training](https://avalanche.ca/training) course, AST 1 first, two days for roughly \$300 to \$400, and carry a transceiver, probe, and shovel you actually know how to use. If winter is the draw, [ice climbing in the Rockies](/journal/canadian-extreme-sports/) is taught the same way: guide first, ego later.
 
 ## Where to go, by level
 
 **Your first glaciated summit** should be Mount Athabasca, 3,491 m, on the Columbia Icefield right off the Icefields Parkway. The standard AA Col route is a moraine approach, roped glacier travel, a steep snow gully, and a stunning summit ridge, and every major guiding outfit runs trips on it. Hire a guide for the first one. The crevasses are real.
 
-**For a first taste of hut-based alpine,** the [Bow Hut](https://alpineclubofcanada.ca/hut/bow-hut/) on the Wapta Icefield is the perfect base, a four-to-six-hour hike in, with moderate objectives like Bow Peak from the door.
+**For a first taste of hut-based alpine,** the [Bow Hut](https://alpineclubofcanada.ca/hut/bow-hut/) on the Wapta Icefield is the perfect base, a four-to-six-hour hike in, with moderate objectives like Bow Peak from the door. Our [beginner's hike-packing kit](/journal/lightweight-hike-packing-kit/) is the floor for the walk in; the glacier gear goes on top.
 
-**For rock fundamentals,** the [Stawamus Chief](https://squamishrockguides.com/) in Squamish is Canada's Yosemite: world-class granite for crack technique and multi-pitch rope work, with a clean gym-to-crag-to-multipitch pathway and ACMG guides who run it daily.
+**For rock fundamentals,** the [Stawamus Chief](https://squamishrockguides.com/) in Squamish is Canada's Yosemite: world-class granite for crack technique and multi-pitch rope work, with a clean gym-to-crag-to-multipitch pathway and ACMG guides who run it daily. The hiking trail up the back, in our [best hikes in Alberta and BC](/journal/best-hikes-alberta-bc/), is a good first look at it.
 
 ![Snow peaks rising above a sea of cloud at dawn](#photo: snow peaks above the clouds)
 
@@ -200,7 +200,7 @@ This is the beginner's kit done properly, built for Canadian conditions, where t
 
 ## The Ten Essentials, the modern version
 
-The classic [Ten Essentials](https://www.mountaineers.org/blog/what-are-the-ten-essentials) are now ten systems, not ten objects: navigation, headlamp, sun protection, first aid, knife and repair, fire, emergency shelter, extra food, extra water, and extra clothing. The Canadian spin: download offline maps because there is no signal past the trailhead, pack a real insulating layer even on a warm day because hypothermia happens at 10°C in the wet, and carry an emergency bivy, not just a rain jacket, because a shell does nothing for someone lying on cold ground.
+The classic [Ten Essentials](https://www.mountaineers.org/blog/what-are-the-ten-essentials) are now ten systems, not ten objects: navigation, headlamp, sun protection, first aid, knife and repair, fire, emergency shelter, extra food, extra water, and extra clothing. The Canadian spin: download offline maps because there is no signal past the trailhead, pack a real insulating layer even on a warm day because hypothermia happens at 10°C in the wet, and carry an emergency bivy, not just a rain jacket, because a shell does nothing for someone lying on cold ground. None of this is new, and the [backcountry skills of the first Canadians](/journal/first-canadians-survival-skills/) are a good reminder of why.
 
 ![A hiker pausing on a misty ridge under a loaded pack](#photo: a hiker on a misty ridge)
 
@@ -234,7 +234,7 @@ Carry [bear spray](https://parks.canada.ca/pn-np/mtn/ours-bears/securite-safety/
 
 ## The takeaway
 
-A good kit is quiet. You barely notice it until the moment it saves your day, and then it is the only thing you care about. Pack the systems, do the food math, treat the water, and never leave the ten small things at the truck. Light and smart beats heavy and hopeful every single time.`,
+A good kit is quiet. You barely notice it until the moment it saves your day, and then it is the only thing you care about. Pack the systems, do the food math, treat the water, and never leave the ten small things at the truck. Light and smart beats heavy and hopeful every single time. Then go use it on [the best hikes in Alberta and BC](/journal/best-hikes-alberta-bc/), or on a [hike within two hours of Edmonton](/journal/best-hikes-near-edmonton/).`,
   },
   {
     slug: "first-canadians-survival-skills",
@@ -255,7 +255,7 @@ The word comes from the Cree pimikan. Dried meat pounded to powder, mixed with r
 
 ## 2. Fire in the cold and wet
 
-Across the boreal and the Arctic, the bow drill and birchbark were the tools. Birchbark holds enough oil and resin to catch a flame even when damp, which is why it remains the best natural firestarter in the country. Indigenous peoples also used [fire](https://parks.canada.ca/nature/science/conservation/feu-fire/histoire-history) to shape the land itself, managing habitat and travel corridors. The lesson: carry birchbark, taken only from fallen trees, alongside a ferro rod, and practise in the dry before you need it in the wet.
+Across the boreal and the Arctic, the bow drill and birchbark were the tools. Birchbark holds enough oil and resin to catch a flame even when damp, which is why it remains the best natural firestarter in the country. Indigenous peoples also used [fire](https://parks.canada.ca/nature/science/conservation/feu-fire/histoire-history) to shape the land itself, managing habitat and travel corridors. The lesson: carry birchbark, taken only from fallen trees, alongside a ferro rod, and practise in the dry before you need it in the wet. It is still the best way to light the wood stove at an [off-grid cabin](/journal/off-grid-cabin-canada/).
 
 ![Snowshoe tracks winding through deep boreal forest](#photo: snowshoe tracks through boreal forest)
 
@@ -283,7 +283,7 @@ Cold killed throughout Canadian history with a thoroughness the history books sk
 
 ## 8. Navigation without instruments
 
-Indigenous peoples crossed hundreds of kilometres by reading the stars, the wind-carved snow, the angle of the sun, and a landscape memory passed across generations. Trappers and traders followed tree blazes cut at eye height. The lesson: carry a map and compass and know them before you trust a GPS, and remember the simplest fallback, that water runs downhill to bigger water, and bigger water leads to people.
+Indigenous peoples crossed hundreds of kilometres by reading the stars, the wind-carved snow, the angle of the sun, and a landscape memory passed across generations. Trappers and traders followed tree blazes cut at eye height. The lesson: carry a map and compass and know them before you trust a GPS (both are in our [hike-packing kit](/journal/lightweight-hike-packing-kit/) for a reason), and remember the simplest fallback, that water runs downhill to bigger water, and bigger water leads to people.
 
 ## 9. The Franklin lesson: humility
 
@@ -320,13 +320,13 @@ You get here by floatplane, helicopter, or an included water taxi, never by road
 
 On a headland between two surf beaches in the Clayoquot Sound biosphere, [the Wick](https://www.wickinn.com/) made storm watching a national signature experience. From November to March, Pacific systems drive eight-metre swells onto the rock while you stay dry behind hurricane-rated glass with a glass of wine and the Pointe Restaurant's 240-degree view of the ocean. Summer trades the drama for whale-watching, surf lessons, and rainforest walks. It earned two Michelin Keys in the first Canadian guide.
 
-**The tip:** ask for a dormer room in the Pointe building, the best storm theatre in the province, and book the Ancient Cedars Spa the moment you confirm the room.
+**The tip:** ask for a dormer room in the Pointe building, the best storm theatre in the province, and book the Ancient Cedars Spa the moment you confirm the room. Stay an extra day and work through our [Vancouver Island list](/journal/vancouver-island-places/).
 
 ## Emerald Lake Lodge, Yoho National Park, British Columbia
 
 Two and a half hours from Calgary and twenty minutes past Lake Louise, [Emerald Lake Lodge](https://crmr.com/resorts/emerald-lake/) sits on a thirteen-acre point on a glacier-fed lake the colour of nothing else, ringed by the limestone walls of Yoho. No televisions, no cell service, wood-burning fireplaces in every chalet, and a canoe you can paddle straight off the dock into total silence under the peaks. The Burgess Shale fossil beds are five kilometres away.
 
-**The tip:** arrive by four in the afternoon, when the day visitors leave and the lake becomes yours, and grab a canoe before you even unpack.
+**The tip:** arrive by four in the afternoon, when the day visitors leave and the lake becomes yours, and grab a canoe before you even unpack. Yoho sits sixth in our [best national parks in Canada](/journal/best-national-parks-canada/), and this is the most comfortable way to see it.
 
 ## Echo Valley Ranch and Spa, Cariboo, British Columbia
 
@@ -344,7 +344,7 @@ The most reachable of the five, [Sacacomie](https://www.sacacomie.com/) is a gre
 
 ## How to choose
 
-If you want the trip you talk about for a decade, fly in to Sonora. If you want drama behind glass, take the Wick in a storm. If you want the Rockies at their quietest, Emerald Lake. If you want something genuinely strange and warm, Echo Valley. And if you want the wild without the long haul or the big spend, Quebec has been hiding Sacacomie in plain sight. Pick one, leave the phone in the drawer, and let the country do its work.`,
+If you want the trip you talk about for a decade, fly in to Sonora. If you want drama behind glass, take the Wick in a storm. If you want the Rockies at their quietest, Emerald Lake. If you want something genuinely strange and warm, Echo Valley. And if you want the wild without the long haul or the big spend, Quebec has been hiding Sacacomie in plain sight. For smaller, cheaper, and stranger stays, see our [ten boutique cabins and lodges](/journal/boutique-cabins-canada/). Pick one, leave the phone in the drawer, and let the country do its work.`,
   },
   {
     slug: "canadian-extreme-sports",
@@ -359,7 +359,7 @@ If you want the trip you talk about for a decade, fly in to Sonora. If you want 
 
 ## 1. Heli-skiing, the thing we invented
 
-In 1965 Hans Gmoser flew the first paying skiers into the [Bugaboos](https://www.cmhheli.com/), and Canadian Mountain Holidays has been the standard ever since, with lodges across interior BC, alongside Mike Wiegele in Blue River and Selkirk Tangiers out of Revelstoke. **Season:** December to April. **What it costs:** a day runs roughly \$1,600 to \$2,100, multi-day lodge packages from around \$5,000. **The beginner door:** the CMH Powder Intro is built for strong resort skiers and riders with zero backcountry experience, guides cover the hazards, and the avalanche gear is provided. **The tip:** book a year ahead, because the deep-winter weeks sell out a full season early.
+In 1965 Hans Gmoser flew the first paying skiers into the [Bugaboos](https://www.cmhheli.com/), and Canadian Mountain Holidays has been the standard ever since, with lodges across interior BC, alongside Mike Wiegele in Blue River and Selkirk Tangiers out of Revelstoke. **Season:** December to April. **What it costs:** a day runs roughly \$1,600 to \$2,100, multi-day lodge packages from around \$5,000. **The beginner door:** the CMH Powder Intro is built for strong resort skiers and riders with zero backcountry experience, guides cover the hazards, and the avalanche gear is provided. **The tip:** book a year ahead, because the deep-winter weeks sell out a full season early. Not there yet? The [best ski resorts in Alberta](/journal/best-ski-resorts-alberta/) are where you build the legs.
 
 ![A cold-water surfer riding a grey Pacific wave](#photo: a cold-water surfer off the coast)
 
@@ -369,11 +369,11 @@ The [Ottawa River](https://wildernesstours.com/), about two hours from the capit
 
 ## 3. Cold-water surfing in Tofino
 
-[Tofino](https://surfsister.com/) is Canada's surf capital and one of the only year-round breaks in North America, with a stack of surf schools and water that runs 7 to 10 degrees in winter, 13 to 17 in August. **Season:** all year. Gentle beginner waves in summer, the best swell and emptiest line-ups in October and November. **What it costs:** a group lesson with all gear around \$95 to \$99. **The beginner door:** every school provides the full winter wetsuit, hood, boots, gloves, and a soft board, and teaches the safety and technique on the beach before you wade in to waist depth. **The tip:** book a lesson in late autumn, enough push to actually learn a wave, none of the summer crowd, and catching your first green wave in cold Pacific rain is about as Canadian as the sport gets.
+[Tofino](https://surfsister.com/) is Canada's surf capital and one of the only year-round breaks in North America, with a stack of surf schools and water that runs 7 to 10 degrees in winter, 13 to 17 in August. **Season:** all year. Gentle beginner waves in summer, the best swell and emptiest line-ups in October and November. **What it costs:** a group lesson with all gear around \$95 to \$99. **The beginner door:** every school provides the full winter wetsuit, hood, boots, gloves, and a soft board, and teaches the safety and technique on the beach before you wade in to waist depth. **The tip:** book a lesson in late autumn, enough push to actually learn a wave, none of the summer crowd, and catching your first green wave in cold Pacific rain is about as Canadian as the sport gets. Make a week of it with our [Vancouver Island guide](/journal/vancouver-island-places/).
 
 ## 4. Ice climbing in the Canadian Rockies
 
-The Bow Valley and the Icefields Parkway are a global ice-climbing destination, from the friendly flows around Canmore to the [Weeping Wall](https://www.cdnalpine.com/ice/weeping-wall/), 180 m of blue ice that is one of the most photographed climbs on earth. **Season:** late November to late March. **What it costs:** a two-day intro weekend with an ACMG school like Canadian Rockies Alpine Guides or [Yamnuska](https://yamnuska.com/) runs roughly \$375 to \$430 with all the technical gear. **The beginner door:** no experience required, the guide manages every rope, and you simply learn to swing the tools and front-point up the ice. **The safety note:** only ever hire [ACMG](https://acmg.ca/) guides for ice in Canada, and wear the helmet, because the main hazard is ice falling from above.
+The Bow Valley and the Icefields Parkway are a global ice-climbing destination, from the friendly flows around Canmore to the [Weeping Wall](https://www.cdnalpine.com/ice/weeping-wall/), 180 m of blue ice that is one of the most photographed climbs on earth. **Season:** late November to late March. **What it costs:** a two-day intro weekend with an ACMG school like Canadian Rockies Alpine Guides or [Yamnuska](https://yamnuska.com/) runs roughly \$375 to \$430 with all the technical gear. **The beginner door:** no experience required, the guide manages every rope, and you simply learn to swing the tools and front-point up the ice. **The safety note:** only ever hire [ACMG](https://acmg.ca/) guides for ice in Canada, and wear the helmet, because the main hazard is ice falling from above. When you want the summit and not just the wall, start with [learning to mountaineer in Canada](/journal/learn-to-mountaineer-canada/).
 
 ![Ice and rock in the high Canadian Rockies](#photo: ice and rock in the Rockies)
 
@@ -426,11 +426,11 @@ And the payoff, the thing that makes the whole project feel like a resort: a woo
 
 ## The smart sequence
 
-Define the budget and whether you want weekend-only or eventual year-round use, because that decides everything. Shortlist regions by price and proximity to the parks you want. Do real diligence on the parcel: legal road access and winter maintenance, zoning and permitted use, septic feasibility, and financing, since raw off-grid land usually needs cash or a land loan. Phone the municipality and health unit before closing. Then close, sort access and a place to park a trailer, choose your build path, get the foundation to code, weather-tight the shell, and put the wood stove in first for heat. Drop in the solar, water, and toilet, get the electrical inspected, add Starlink, and finish with the hot tub. Spend the first weekend learning what your real power and water use is, and size up from there.
+Define the budget and whether you want weekend-only or eventual year-round use, because that decides everything. Shortlist regions by price and proximity to [the parks you want](/journal/best-national-parks-canada/). Do real diligence on the parcel: legal road access and winter maintenance, zoning and permitted use, septic feasibility, and financing, since raw off-grid land usually needs cash or a land loan. Phone the municipality and health unit before closing. Then close, sort access and a place to park a trailer, choose your build path, get the foundation to code, weather-tight the shell, and put the wood stove in first for heat. Drop in the solar, water, and toilet, get the electrical inspected, add Starlink, and finish with the hot tub. Spend the first weekend learning what your real power and water use is, and size up from there.
 
 ## The honest reward
 
-An off-grid cabin is more work and more rules than the daydream admits, and it is also one of the most satisfying things a person can build. Done right, on a cheap parcel near good country, with solar on the roof and a fire under the tub, it becomes the place you restore what the week wore down. Strip it back, build it stronger, and go earn the quiet.`,
+An off-grid cabin is more work and more rules than the daydream admits, and it is also one of the most satisfying things a person can build. Done right, on a cheap parcel near good country, with solar on the roof and a fire under the tub, it becomes the place you restore what the week wore down. Until yours is built, borrow someone else's: our [boutique cabins in Canada](/journal/boutique-cabins-canada/) list doubles as a research trip. Strip it back, build it stronger, and go earn the quiet.`,
   },
   {
     slug: "best-views-canada",
@@ -445,7 +445,7 @@ An off-grid cabin is more work and more rules than the daydream admits, and it i
 
 ## 1. Moraine Lake and the Valley of the Ten Peaks, Alberta
 
-The view that was once on the twenty-dollar bill, and it earns every cliche. A ten-minute scramble up the Rockpile lays the Wenkchemna Range out over impossibly turquoise water. Private vehicles are banned, so 2026 access is by [Parks Canada shuttle](https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise) only, June 1 to October 12. **The tip:** book the 5 a.m. Alpine Start and you will have the Rockpile to yourself for ninety minutes.
+The view that was once on the twenty-dollar bill, and it earns every cliche. A ten-minute scramble up the Rockpile lays the Wenkchemna Range out over impossibly turquoise water. Private vehicles are banned, so 2026 access is by [Parks Canada shuttle](https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise) only, June 1 to October 12. **The tip:** book the 5 a.m. Alpine Start and you will have the Rockpile to yourself for ninety minutes. Got the legs? [Larch Valley and Sentinel Pass](/journal/best-hikes-alberta-bc/) start from the same shore.
 
 ## 2. Peyto Lake from Bow Summit, Alberta
 
@@ -459,7 +459,7 @@ A lone cluster of spruce on a tiny point, ringed by snow-streaked peaks, reachab
 
 ## 4. Lake O'Hara, Yoho National Park, British Columbia
 
-A stacked amphitheatre of turquoise lakes and quartzite walls, protected by a quota so the place never crowds. Access is by [shuttle bus](https://parks.canada.ca/pn-np/bc/yoho/activ/randonnee-hike/ohara/visit), allocated through a random draw with applications in March 2026. **The tip:** if the draw fails, the wait-list catches cancellations, and you can always walk the 11 km in.
+A stacked amphitheatre of turquoise lakes and quartzite walls, protected by a quota so the place never crowds. Access is by [shuttle bus](https://parks.canada.ca/pn-np/bc/yoho/activ/randonnee-hike/ohara/visit), allocated through a random draw with applications in March 2026. **The tip:** if the draw fails, the wait-list catches cancellations, and you can always walk the 11 km in. This valley is a big reason Yoho ranks so high in our [best national parks in Canada](/journal/best-national-parks-canada/).
 
 ## 5. Western Brook Pond, Gros Morne, Newfoundland
 
@@ -489,7 +489,7 @@ On the tip of the Gaspe, a 475 m limestone monolith pierced by a natural arch si
 
 ## One more, for winter
 
-If you come back in the cold months, point the truck at Abraham Lake in Alberta, where methane bubbles freeze in stacked white discs under clear ice, one of the strangest and most beautiful sights in the country. It only works December to February, in thick clear ice, so treat it as a reason to return.
+If you come back in the cold months, point the truck at Abraham Lake in Alberta, where methane bubbles freeze in stacked white discs under clear ice, one of the strangest and most beautiful sights in the country. It only works December to February, in thick clear ice, so treat it as a reason to return. Nordegg, the nearest town, is also one of the value regions in our [off-grid cabin guide](/journal/off-grid-cabin-canada/).
 
 ## Go stand there
 
