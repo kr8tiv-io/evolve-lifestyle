@@ -129,7 +129,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           {article.dek}
         </p>
         <div className="max-w-2xl">
-          <Markdown body={article.body} images={article.inlineImages} tone={article.tone} />
+          <Markdown body={article.body} images={article.inlineImages} tone={article.tone} hideCaptions={article.hideCaptions} />
         </div>
 
         {/* FAQ — answer-engine friendly, mirrors the FAQPage JSON-LD */}

@@ -12,6 +12,7 @@ export const EXTRA_ARTICLES: Article[] = [
     readMinutes: 8,
     hero: "/images/journal/best-hot-springs-western-canada/hero-clean-1600x840.jpg",
     tone: ["#13233a", "#4ade80"],
+    hideCaptions: true,
     inlineImages: ["/images/journal/best-hot-springs-western-canada/liard-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/miette-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/banff-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/ainsworth-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/radium-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/lussier-1600x900.jpg"],
     body: `There is a specific kind of Canadian joy that only happens when your hair is freezing into little antlers and the rest of you is sitting in 40-degree water. Your brain cannot decide whether you are suffering or on vacation. The answer is both, and that is the point.
 

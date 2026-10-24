@@ -13,6 +13,7 @@ export interface Article {
   hero: string;
   tone: [string, string];
   inlineImages: string[];
+  hideCaptions?: boolean;
   body: string;
 }
 

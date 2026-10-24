@@ -44,10 +44,12 @@ export default function Markdown({
   body,
   images = [],
   tone = ["#0d3b1f", "#4ade80"],
+  hideCaptions = false,
 }: {
   body: string;
   images?: string[];
   tone?: [string, string];
+  hideCaptions?: boolean;
 }) {
   const blocks = body.split(/\n\n+/);
   let photoIdx = 0;
@@ -63,9 +65,11 @@ export default function Markdown({
               <div className="relative aspect-[16/9] overflow-hidden rounded-[2px]">
                 <ProductImage src={src} alt={photo[1]} tone={tone} className="h-full w-full" />
               </div>
-              <figcaption className="mt-3 font-mono text-[0.6rem] uppercase tracking-tracked text-silver-dim">
-                {photo[1]}
-              </figcaption>
+              {!hideCaptions && (
+                <figcaption className="mt-3 font-mono text-[0.6rem] uppercase tracking-tracked text-silver-dim">
+                  {photo[1]}
+                </figcaption>
+              )}
             </figure>
           );
         }
