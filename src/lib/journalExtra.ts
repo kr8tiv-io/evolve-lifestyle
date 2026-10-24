@@ -28,7 +28,8 @@ The public soak is the Alpha pool, with water BC Parks lists at 42°C to 52°C d
 **Season:** open year-round. **Hours:** Alpha pool 7 am to 10:30 pm daily, no admission after 10 pm. **What it costs:** from May 1 to Thanksgiving, a day-use fee of $5 adults, $3 children, $10 families (annual passes $10 adult, $20 family), paid at the gatehouse by cash, credit, or debit. **The rules:** stay on the boardwalk, the swamp habitat is sensitive. Pets on leash and out of park buildings. There are no lifeguards. **The tip:** the campground fills early every summer day, so a winter or shoulder-season soak is the move if you can make the drive.
 
 ![A misty wooden boardwalk crossing a steaming boreal swamp in winter](#photo: a misty wooden boardwalk crossing a steaming boreal swamp in winter)
-*Illustration: a boardwalk through steaming boreal swamp, in the spirit of Liard. Not a photo of the park.*
+
+Illustration: a boardwalk through steaming boreal swamp, in the spirit of Liard. Not a photo of the park.
 
 ## 2. Miette Hot Springs, Jasper National Park, AB
 
@@ -39,7 +40,8 @@ Parks Canada points to the original pools at the source along Sulphur Creek and 
 **Season:** seasonal. The 2026 season ran May 15 to October 12. It is closed now and Parks Canada says it reopens in spring 2027. **What it costs:** single entry $19.75 adult, $17.25 senior or youth (3 to 17), free under 3, $64.25 family. Day pass $28.75 adult. A Jasper National Park pass is required on top of that. **The rules:** first-come, first-served. No reservations or online tickets. **The tip:** this is a summer and fall soak, not a winter one. Go on a weekday.
 
 ![A steaming outdoor hot pool on a wooden deck in a steep, forested mountain valley at dusk](#photo: a steaming outdoor hot pool on a wooden deck in a steep, forested mountain valley at dusk)
-*Illustration: a mountain-valley hot pool at dusk. Not a photo of Miette.*
+
+Illustration: a mountain-valley hot pool at dusk. Not a photo of Miette.
 
 ## 3. Banff Upper Hot Springs, Banff National Park, AB
 
@@ -50,7 +52,8 @@ Skip the parking fight. Parks Canada recommends Roam Transit Route 1 "Sulphur Mo
 **Season:** open daily year-round, including holidays, except a planned fall maintenance closure. In 2026 that runs October 13 to early November. **Hours:** 10 am to 10 pm, last entry 9:30 pm. **What it costs:** $19.75 adult, $17.25 senior or youth, free under 3, $64.25 family, locker token included. Swimsuit rental $5, towel $3. You also need a Banff park pass ($12.25 adult daily). **The rules:** first-come, first-served, admission in person only. When it is full, you wait for someone to leave. **The tip:** go after dark on a snowy weeknight. Same water, fewer elbows, much better steam.
 
 ![A steaming stone-ringed hot pool beside a lamp-lit stone building on a snowy mountain night](#photo: a steaming stone-ringed hot pool beside a lamp-lit stone building on a snowy mountain night)
-*Illustration: a mountain hot pool on a snowy night. Not a photo of Banff Upper Hot Springs.*
+
+Illustration: a mountain hot pool on a snowy night. Not a photo of Banff Upper Hot Springs.
 
 ## 4. Ainsworth Hot Springs, Kootenay Lake, BC
 
@@ -61,7 +64,8 @@ The resort says the mineral water arrives at 47°C, then is cooled to an average
 **Hours:** public pools Wednesday to Sunday 10 am to 7:30 pm (last entry 6 pm), Monday 10 am to 3 pm, closed Tuesday. **What it costs:** $18 adult (18 to 64), $17 senior, $14 youth (13 to 17), $12 child (3 to 12), free 0 to 2, $50 family of two adults plus two kids. Lockers included. No swimsuit rental. **The rules:** first-come, first-served. No noodles or toys. **The tip:** bring your own suit and towel, and never show up on a Tuesday.
 
 ![Steam rising off warm water inside a lamp-lit cave with stalactites](#photo: steam rising off warm water inside a lamp-lit cave with stalactites)
-*Illustration: a steaming mineral cave. Not a photo of Ainsworth.*
+
+Illustration: a steaming mineral cave. Not a photo of Ainsworth.
 
 ## 5. Radium Hot Springs, Kootenay National Park, BC
 
@@ -70,7 +74,8 @@ Radium is the family-friendly workhorse of the Rockies, and there is no shame in
 **Season:** open daily year-round, including holidays. **Hours (fall and winter, from October 13, 2026):** hot pool weekdays 11:30 am to 9 pm, weekends 10:30 am to 9 pm. The cool pool runs Friday evenings and weekends only. Last entry 8:30 pm. **What it costs:** $19.75 adult, $17.25 senior or youth, free under 3, $64.25 family. Day pass $28.75. Park pass required. **The rules:** first-come, first-served, tickets at reception only. Parks Canada recommends a one-to-two-hour visit, a cool-off break every 10 minutes, and water in an unbreakable container. Break site rules and the regulations carry fines up to $25,000. **The tip:** it is the easiest winter soak on this list to reach. Pair it with a ski day at Panorama.
 
 ![A steaming pool beneath red rock cliffs and snowy pines at blue hour](#photo: a steaming pool beneath red rock cliffs and snowy pines at blue hour)
-*Illustration: a hot pool under red rock walls in winter. Not a photo of Radium.*
+
+Illustration: a hot pool under red rock walls in winter. Not a photo of Radium.
 
 ## The one we can't send you to (yet): Lussier Hot Springs
 
@@ -79,7 +84,8 @@ Lussier, in Whiteswan Lake Provincial Park, is the wild riverside soak a lot of 
 When it does reopen, BC Parks warns the trail gets icy in winter, and there is no cell service in the park. Check the BC Parks page before you even think about the drive.
 
 ![A small rock-ringed hot pool steaming beside a rushing river in a snowy forest](#photo: a small rock-ringed hot pool steaming beside a rushing river in a snowy forest)
-*Illustration: a wild riverside hot pool in winter. Not a photo of Lussier.*
+
+Illustration: a wild riverside hot pool in winter. Not a photo of Lussier.
 
 ## The honest part
 
