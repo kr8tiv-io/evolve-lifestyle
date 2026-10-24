@@ -5,6 +5,95 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "best-hot-springs-western-canada",
+    title: "Hot Water, Cold Air: Western Canada's Best Natural Hot Springs, Ranked",
+    dek: "Five real soaks from the Alaska Highway to Kootenay Lake, ranked, with the fees, seasons, and rules you need before you pull on a wet swimsuit at minus fifteen.",
+    category: "Stays",
+    readMinutes: 8,
+    hero: "/images/journal/best-hot-springs-western-canada/hero-clean-1600x840.jpg",
+    tone: ["#13233a", "#4ade80"],
+    inlineImages: ["/images/journal/best-hot-springs-western-canada/liard-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/miette-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/banff-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/ainsworth-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/radium-1600x900.jpg", "/images/journal/best-hot-springs-western-canada/lussier-1600x900.jpg"],
+    body: `There is a specific kind of Canadian joy that only happens when your hair is freezing into little antlers and the rest of you is sitting in 40-degree water. Your brain cannot decide whether you are suffering or on vacation. The answer is both, and that is the point.
+
+Western Canada is stacked with hot springs, and they are not all the same animal. Some are wild boardwalk pools in the boreal, some are heritage bathhouses with a locker token, and one is a cave. Here are the five worth the drive, with what you will pay, when they are open, and the rules that get you asked to leave.
+
+Ranked on setting first, then the soak, then the effort-to-reward ratio. Fees and hours are from Parks Canada, BC Parks and the operators as of October 2026. Check before you go.
+
+## 1. Liard River Hot Springs, Alaska Highway, BC
+
+Liard is the reason this list exists. BC Parks calls it the second largest hot spring in Canada, and it sits at kilometre 765 of the Alaska Highway, roughly 60 km north of Muncho Lake Park. You walk a boardwalk through a warm-water swamp that never freezes, past spruce forest and, if you are lucky, a moose eating salad in the steam. Early visitors called it the Tropical Valley, and BC Parks has recorded 14 species of orchids here.
+
+The public soak is the Alpha pool, with water BC Parks lists at 42°C to 52°C depending on where you sit. Find the cooler end before you commit.
+
+**Season:** open year-round. **Hours:** Alpha pool 7 am to 10:30 pm daily, no admission after 10 pm. **What it costs:** from May 1 to Thanksgiving, a day-use fee of $5 adults, $3 children, $10 families (annual passes $10 adult, $20 family), paid at the gatehouse by cash, credit, or debit. **The rules:** stay on the boardwalk, the swamp habitat is sensitive. Pets on leash and out of park buildings. There are no lifeguards. **The tip:** the campground fills early every summer day, so a winter or shoulder-season soak is the move if you can make the drive.
+
+![A misty wooden boardwalk crossing a steaming boreal swamp in winter](#photo: a misty wooden boardwalk crossing a steaming boreal swamp in winter)
+*Illustration: a boardwalk through steaming boreal swamp, in the spirit of Liard. Not a photo of the park.*
+
+## 2. Miette Hot Springs, Jasper National Park, AB
+
+Miette is the hottest spring in the Canadian Rockies. Parks Canada says the water comes out of the mountain at 54°C and is cooled to about 40°C before it reaches the pool. It sits about an hour east of Jasper off Highway 16, up a narrow, winding road that makes you earn it.
+
+Parks Canada points to the original pools at the source along Sulphur Creek and the Sulphur Skyline trail if you want to sweat before you soak.
+
+**Season:** seasonal. The 2026 season ran May 15 to October 12. It is closed now and Parks Canada says it reopens in spring 2027. **What it costs:** single entry $19.75 adult, $17.25 senior or youth (3 to 17), free under 3, $64.25 family. Day pass $28.75 adult. A Jasper National Park pass is required on top of that. **The rules:** first-come, first-served. No reservations or online tickets. **The tip:** this is a summer and fall soak, not a winter one. Go on a weekday.
+
+![A steaming outdoor hot pool on a wooden deck in a steep, forested mountain valley at dusk](#photo: a steaming outdoor hot pool on a wooden deck in a steep, forested mountain valley at dusk)
+*Illustration: a mountain-valley hot pool at dusk. Not a photo of Miette.*
+
+## 3. Banff Upper Hot Springs, Banff National Park, AB
+
+Yes, it is busy and built. It still belongs here, because Parks Canada bills it as Canada's highest outdoor pool, you are sitting under Rundle and Cascade mountains, and people have been doing exactly this since 1886. The bathhouse is a federal heritage building. Water is kept between 37°C and 40°C, which is the sweet spot for a long, stupid-happy soak after a ski day.
+
+Skip the parking fight. Parks Canada recommends Roam Transit Route 1 "Sulphur Mountain" from downtown Banff, running every 20 minutes during operating hours.
+
+**Season:** open daily year-round, including holidays, except a planned fall maintenance closure. In 2026 that runs October 13 to early November. **Hours:** 10 am to 10 pm, last entry 9:30 pm. **What it costs:** $19.75 adult, $17.25 senior or youth, free under 3, $64.25 family, locker token included. Swimsuit rental $5, towel $3. You also need a Banff park pass ($12.25 adult daily). **The rules:** first-come, first-served, admission in person only. When it is full, you wait for someone to leave. **The tip:** go after dark on a snowy weeknight. Same water, fewer elbows, much better steam.
+
+![A steaming stone-ringed hot pool beside a lamp-lit stone building on a snowy mountain night](#photo: a steaming stone-ringed hot pool beside a lamp-lit stone building on a snowy mountain night)
+*Illustration: a mountain hot pool on a snowy night. Not a photo of Banff Upper Hot Springs.*
+
+## 4. Ainsworth Hot Springs, Kootenay Lake, BC
+
+This is the weird one, and we mean that as the highest compliment. At Ainsworth you wade into a horseshoe-shaped cave, about 150 feet of it by the resort's own count, through steaming water under dripping stalactites lit by soft yellow lamps.
+
+The resort says the mineral water arrives at 47°C, then is cooled to an average of 42°C in the cave and 35°C in the main pool. Honest note: it is chlorinated, as required by Interior Health under BC pool guidelines. The resort is owned by the Yaqan Nukiy (Lower Kootenay Band).
+
+**Hours:** public pools Wednesday to Sunday 10 am to 7:30 pm (last entry 6 pm), Monday 10 am to 3 pm, closed Tuesday. **What it costs:** $18 adult (18 to 64), $17 senior, $14 youth (13 to 17), $12 child (3 to 12), free 0 to 2, $50 family of two adults plus two kids. Lockers included. No swimsuit rental. **The rules:** first-come, first-served. No noodles or toys. **The tip:** bring your own suit and towel, and never show up on a Tuesday.
+
+![Steam rising off warm water inside a lamp-lit cave with stalactites](#photo: steam rising off warm water inside a lamp-lit cave with stalactites)
+*Illustration: a steaming mineral cave. Not a photo of Ainsworth.*
+
+## 5. Radium Hot Springs, Kootenay National Park, BC
+
+Radium is the family-friendly workhorse of the Rockies, and there is no shame in that. Parks Canada notes the water is odourless and clear, a real selling point if you have ever soaked in rotten-egg sulphur. There is a hot soaking pool and a deep, cooler swimming pool, so the kids can do cannonballs while you do nothing at all.
+
+**Season:** open daily year-round, including holidays. **Hours (fall and winter, from October 13, 2026):** hot pool weekdays 11:30 am to 9 pm, weekends 10:30 am to 9 pm. The cool pool runs Friday evenings and weekends only. Last entry 8:30 pm. **What it costs:** $19.75 adult, $17.25 senior or youth, free under 3, $64.25 family. Day pass $28.75. Park pass required. **The rules:** first-come, first-served, tickets at reception only. Parks Canada recommends a one-to-two-hour visit, a cool-off break every 10 minutes, and water in an unbreakable container. Break site rules and the regulations carry fines up to $25,000. **The tip:** it is the easiest winter soak on this list to reach. Pair it with a ski day at Panorama.
+
+![A steaming pool beneath red rock cliffs and snowy pines at blue hour](#photo: a steaming pool beneath red rock cliffs and snowy pines at blue hour)
+*Illustration: a hot pool under red rock walls in winter. Not a photo of Radium.*
+
+## The one we can't send you to (yet): Lussier Hot Springs
+
+Lussier, in Whiteswan Lake Provincial Park, is the wild riverside soak a lot of Kootenay locals would rank first. Rock pools beside the Lussier River, a short walk down from the 17.5 km mark of the Whiteswan Forest Service Road. It is also closed. A BC Parks Regional Director's Order closed the pathway and pools from January 13, 2026, after boulders in the pool area became unstable, and anyone inside the closure is trespassing. As of late October 2026 it is still closed. BC Parks has said a phased reopening would cover the lower pools only, and no date has been set.
+
+When it does reopen, BC Parks warns the trail gets icy in winter, and there is no cell service in the park. Check the BC Parks page before you even think about the drive.
+
+![A small rock-ringed hot pool steaming beside a rushing river in a snowy forest](#photo: a small rock-ringed hot pool steaming beside a rushing river in a snowy forest)
+*Illustration: a wild riverside hot pool in winter. Not a photo of Lussier.*
+
+## The honest part
+
+Hot springs are not a spa day with mountains painted on the wall. They are hot water coming out of rock. Drink water and get out to cool off: Parks Canada says every 10 minutes, and one to two hours total. Test wild pools before you sink in, because 52°C is not a typo.
+
+Built pools are not cheating. They are why you can soak at minus twenty and still feel your toes on the walk to the bus. Wild ones like Liard stay wild when you stay on the boardwalk, pack out your garbage, and leave the moose alone.
+
+## How to play it
+
+Banff Upper and Radium can share a weekend. Miette pairs with a Jasper summer trip, Ainsworth is a Kootenay detour that pays you back in cave, and Liard is a pilgrimage for when you are already driving north. Pair the Rockies soaks with the [best ski resorts in Alberta](/journal/best-ski-resorts-alberta/), sleep at one of our [boutique cabins](/journal/boutique-cabins-canada/) or [nature resorts](/journal/best-nature-resorts-canada/), and find more stops in the [best national parks in Canada](/journal/best-national-parks-canada/).
+
+The walk back to the car with wet hair at minus fifteen is where winter gets you. Our [Whiteout Organic Cap](/shop/whiteout-organic-cap/) is an organic-cotton cap in black with a relaxed, unstructured fit, a curved brim, and the EVOLVE crest embroidered in white. Restore what the week wore down.`,
+  },
+  {
     slug: "best-hikes-near-edmonton",
     title: "No Mountains Required: The Best Hikes Within Two Hours of Edmonton",
     dek: "Edmonton is a long way from the Rockies, and the close-to-home parkland, river valley, and boreal trails are better than the city gives them credit for.",
@@ -500,6 +589,12 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "best-hot-springs-western-canada": [
+    { q: "What is the best natural hot spring in Western Canada?", a: "For a wild setting, Liard River Hot Springs on the Alaska Highway in BC. It is open year-round, has a boardwalk through a warm-water swamp, and BC Parks calls it the second largest hot spring in Canada." },
+    { q: "Which Canadian Rockies hot springs are open in winter?", a: "Banff Upper Hot Springs and Radium Hot Springs are open year-round, apart from planned maintenance closures. Miette is seasonal and closed from mid-October until spring." },
+    { q: "Do you need a park pass for Banff, Radium, and Miette hot springs?", a: "Yes. All three are inside national parks, so you need a national park pass on top of pool admission. Free national park entry periods do not cover pool fees." },
+    { q: "Is Lussier Hot Springs open?", a: "No. BC Parks closed the pools and pathway from January 13, 2026, because of unstable boulders, and no reopening date has been confirmed. Check bcparks.ca before travelling." },
+  ],
   "best-hikes-near-edmonton": [
     { q: "What is the best hike close to Edmonton?", a: "For a quick escape, Mill Creek Ravine and Terwillegar Park in Edmonton's river valley are hard to beat. For a 45-minute drive, Elk Island National Park offers bison, boardwalks, and boreal trails." },
     { q: "How far is the nearest national park to Edmonton?", a: "Elk Island National Park is about 45 to 50 minutes east on Highway 16 — the closest national park to the city." },
