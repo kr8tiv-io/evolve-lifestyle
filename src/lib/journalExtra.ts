@@ -29,8 +29,6 @@ The public soak is the Alpha pool, with water BC Parks lists at 42°C to 52°C d
 
 ![A misty wooden boardwalk crossing a steaming boreal swamp in winter](#photo: a misty wooden boardwalk crossing a steaming boreal swamp in winter)
 
-Illustration: a boardwalk through steaming boreal swamp, in the spirit of Liard. Not a photo of the park.
-
 ## 2. Miette Hot Springs, Jasper National Park, AB
 
 Miette is the hottest spring in the Canadian Rockies. Parks Canada says the water comes out of the mountain at 54°C and is cooled to about 40°C before it reaches the pool. It sits about an hour east of Jasper off Highway 16, up a narrow, winding road that makes you earn it.
@@ -40,8 +38,6 @@ Parks Canada points to the original pools at the source along Sulphur Creek and 
 **Season:** seasonal. The 2026 season ran May 15 to October 12. It is closed now and Parks Canada says it reopens in spring 2027. **What it costs:** single entry $19.75 adult, $17.25 senior or youth (3 to 17), free under 3, $64.25 family. Day pass $28.75 adult. A Jasper National Park pass is required on top of that. **The rules:** first-come, first-served. No reservations or online tickets. **The tip:** this is a summer and fall soak, not a winter one. Go on a weekday.
 
 ![A steaming outdoor hot pool on a wooden deck in a steep, forested mountain valley at dusk](#photo: a steaming outdoor hot pool on a wooden deck in a steep, forested mountain valley at dusk)
-
-Illustration: a mountain-valley hot pool at dusk. Not a photo of Miette.
 
 ## 3. Banff Upper Hot Springs, Banff National Park, AB
 
@@ -53,8 +49,6 @@ Skip the parking fight. Parks Canada recommends Roam Transit Route 1 "Sulphur Mo
 
 ![A steaming stone-ringed hot pool beside a lamp-lit stone building on a snowy mountain night](#photo: a steaming stone-ringed hot pool beside a lamp-lit stone building on a snowy mountain night)
 
-Illustration: a mountain hot pool on a snowy night. Not a photo of Banff Upper Hot Springs.
-
 ## 4. Ainsworth Hot Springs, Kootenay Lake, BC
 
 This is the weird one, and we mean that as the highest compliment. At Ainsworth you wade into a horseshoe-shaped cave, about 150 feet of it by the resort's own count, through steaming water under dripping stalactites lit by soft yellow lamps.
@@ -65,8 +59,6 @@ The resort says the mineral water arrives at 47°C, then is cooled to an average
 
 ![Steam rising off warm water inside a lamp-lit cave with stalactites](#photo: steam rising off warm water inside a lamp-lit cave with stalactites)
 
-Illustration: a steaming mineral cave. Not a photo of Ainsworth.
-
 ## 5. Radium Hot Springs, Kootenay National Park, BC
 
 Radium is the family-friendly workhorse of the Rockies, and there is no shame in that. Parks Canada notes the water is odourless and clear, a real selling point if you have ever soaked in rotten-egg sulphur. There is a hot soaking pool and a deep, cooler swimming pool, so the kids can do cannonballs while you do nothing at all.
@@ -75,8 +67,6 @@ Radium is the family-friendly workhorse of the Rockies, and there is no shame in
 
 ![A steaming pool beneath red rock cliffs and snowy pines at blue hour](#photo: a steaming pool beneath red rock cliffs and snowy pines at blue hour)
 
-Illustration: a hot pool under red rock walls in winter. Not a photo of Radium.
-
 ## The one we can't send you to (yet): Lussier Hot Springs
 
 Lussier, in Whiteswan Lake Provincial Park, is the wild riverside soak a lot of Kootenay locals would rank first. Rock pools beside the Lussier River, a short walk down from the 17.5 km mark of the Whiteswan Forest Service Road. It is also closed. A BC Parks Regional Director's Order closed the pathway and pools from January 13, 2026, after boulders in the pool area became unstable, and anyone inside the closure is trespassing. As of late October 2026 it is still closed. BC Parks has said a phased reopening would cover the lower pools only, and no date has been set.
@@ -84,8 +74,6 @@ Lussier, in Whiteswan Lake Provincial Park, is the wild riverside soak a lot of 
 When it does reopen, BC Parks warns the trail gets icy in winter, and there is no cell service in the park. Check the BC Parks page before you even think about the drive.
 
 ![A small rock-ringed hot pool steaming beside a rushing river in a snowy forest](#photo: a small rock-ringed hot pool steaming beside a rushing river in a snowy forest)
-
-Illustration: a wild riverside hot pool in winter. Not a photo of Lussier.
 
 ## The honest part
 
