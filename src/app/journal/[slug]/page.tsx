@@ -9,6 +9,12 @@ import EmailSignup from "@/components/ui/EmailSignup";
 
 const SITE = "https://evolveapparel.shop";
 
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+function formatDate(iso: string): string {
+  const [y, m, d] = iso.slice(0, 10).split("-").map(Number);
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+}
+
 export function generateStaticParams() {
   return getArticles().map((a) => ({ slug: a.slug }));
 }
@@ -25,6 +31,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       description: a.dek,
       url: `${SITE}/journal/${a.slug}`,
       type: "article",
+      publishedTime: getArticleDate(a.slug),
+      modifiedTime: getArticleModified(a.slug),
       images: [{ url: a.hero, width: 1600, height: 1000, alt: a.title }],
     },
     twitter: { card: "summary_large_image", title: a.title, description: a.dek, images: [a.hero] },
@@ -114,7 +122,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               ← The Journal
             </Link>
             <p className="mt-5 font-mono text-[0.62rem] uppercase tracking-tracked text-neon-soft">
-              {article.category} · {article.readMinutes} min read
+              {article.category} · <time dateTime={date}>{formatDate(date)}</time> · {article.readMinutes} min read
             </p>
             <h1 className="mt-3 max-w-4xl text-3xl font-medium uppercase leading-[1.03] tracking-tightest text-silver-bright sm:text-5xl">
               {article.title}

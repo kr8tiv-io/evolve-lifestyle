@@ -5,6 +5,136 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "northern-lights-alberta-western-canada",
+    title: "Chasing Green: Where to See the Northern Lights in Alberta and Western Canada",
+    dek: "How the aurora works, how to read the KP index, the dark-sky parks worth the drive, and how to last at minus thirty long enough to see the good part.",
+    category: "Vistas",
+    readMinutes: 9,
+    hero: "/images/journal/northern-lights-alberta-western-canada/hero-clean-1600x840.webp",
+    tone: ["#0b1f2a", "#4ade80"],
+    inlineImages: ["/images/journal/northern-lights-alberta-western-canada/jasper-1600x900.webp", "/images/journal/northern-lights-alberta-western-canada/prairie-1600x900.webp", "/images/journal/northern-lights-alberta-western-canada/cold-1600x900.webp"],
+    hideCaptions: true,
+    body: `Every Albertan knows the story. Somebody's cousin posts a sky full of green ribbons at 1 a.m., you were asleep twenty minutes away, and now you get to hear about it at Christmas. This guide is how you stop being that person.
+
+The northern lights in Alberta aren't rare. You just need three things to line up: the sun throws something our way, the clouds clear off, and you're somewhere dark, awake and not frozen solid. We can't help with the sun. The rest is on you. Park details and rules below come from Parks Canada, Alberta Parks and the Royal Astronomical Society of Canada (RASC) as of October 2026, so check before you go.
+
+## How the northern lights work, in plain words
+
+The sun constantly blows charged particles into space, the solar wind. As the Canadian Space Agency puts it, the solar wind stretches that field until it snaps back like an elastic band, firing particles down toward the poles. When they slam into gas in the upper atmosphere, the gas glows.
+
+The action happens in rings around the poles called auroral ovals. Northern Canada sits right under the northern one, which is why the Canadian Space Agency says auroras can be seen almost every night up north from August to May. After a big solar eruption, a coronal mass ejection (CME), the oval swells south over Edmonton, Calgary and the prairies.
+
+Colour depends on which gas gets hit, and how high. Green, the one you'll see most, is oxygen at roughly 100 to 300 km. Red is oxygen higher up, around 300 to 400 km. A pink or dark-red fringe along the bottom edge is nitrogen at around 100 km. Your phone, annoyingly, sees all of it better than you do.
+
+## The KP index and the aurora forecast tools worth having
+
+The KP index is the number everyone in the group chat yells about. NOAA's Space Weather Prediction Center describes it as a 0-to-9 measure of how disturbed Earth's magnetic field is, from magnetometers around the world (including Meanook, north of Edmonton). Kp 5 and up is a geomagnetic storm.
+
+Higher Kp pushes the aurora farther south. NASA says the northern United States can see it at Kp 4, and Alberta is north of all that, so you don't need a monster storm. NASA is also clear that Kp is a rough guide, not a timetable. A clear Kp 3 night can beat a forecast Kp 6 that fizzles.
+
+The tools we actually use:
+
+[AuroraWatch](https://www.aurorawatch.ca/): an Edmonton-area real-time monitor with free email alerts and a plain probability of seeing aurora tonight. Sign up once and forget it until your inbox says go.
+
+[NOAA Space Weather Prediction Center](https://www.swpc.noaa.gov/): the Kp index, the 3-day forecast and the 30-minute aurora map.
+
+[Space Weather Canada](https://www.spaceweather.gc.ca/): Natural Resources Canada's forecasts for the polar, auroral and sub-auroral zones.
+
+**A cloud forecast**: the boring one, and the one that matters most. A G3 storm behind solid overcast is a nice night to stay in.
+
+NASA notes forecasters often see a CME coming a day or two out but only get a firm read about an hour before it arrives. The alert that matters often lands after dinner, so keep your boots by the door.
+
+## Best months and times to see the northern lights in Alberta
+
+**Months:** you need darkness, and up north it vanishes in summer. Parks Canada says Wood Buffalo has limited darkness from May to July, gets good again in August and September, and has its clearest skies on cold autumn and winter nights. Use that as the rule for the region: late August to April, with fall and late winter offering dark nights without the worst cold.
+
+**Time of night:** NASA says big displays can start at sunset and run to sunrise, but they usually peak around midnight. Be in position by about 10 p.m. and stay until 1 or 2 a.m. A quiet sky at 11 is no reason to leave.
+
+**The moon:** a bright full moon washes out faint aurora. A strong display punches through, but if you get to pick, pick a night near the new moon.
+
+**The solar cycle:** the sun runs on a roughly 11-year cycle, and NASA and NOAA announced in October 2024 that Solar Cycle 25 had reached its solar maximum period. We're past the peak, but strong storms still happen on the way down. Don't wait 11 years to go look.
+
+## 1. Jasper Dark Sky Preserve, Jasper National Park, AB
+
+Designated by RASC in 2011, Jasper covers more than 11,000 km². Parks Canada calls it the second-largest dark sky preserve in the world, and Tourism Jasper says it's the largest with a town inside it. Translation: hot dinner in town, properly dark sky ten minutes later.
+
+Parks Canada's easy-access spots are Pyramid Island, Jasper Lake, Old Fort Point and the toe of the Athabasca Glacier; RASC adds Maligne Lake. Lakes give you the show twice. The catch is that peaks block the low northern sky, so pick a spot with a long view north. Jasper also makes our [best national parks in Canada](/journal/best-national-parks-canada/).
+
+**When:** any clear, dark night from late summer to spring. October is Parks Canada's Dark Sky Month, and the [Jasper Dark Sky Festival](https://www.jasperdarksky.travel/about-the-festival) runs every October, starting the weekend after Thanksgiving. Next year's dates aren't announced yet, so check the festival site before you book. **Need to know:** you need a park pass. Most of the park has reopened since the 2024 wildfire, including Old Fort Point, Pyramid Island and Maligne Lake, but Maligne Canyon and Cavell Road stay closed for 2026. Some roads are seasonal for cars. [Parks Canada's road schedule](https://parks.canada.ca/pn-np/ab/jasper/visit/routes-roads) opens the Toe of the Glacier Road to vehicles only from early June to mid-October, and Old Fort Point Road past the trailhead lot only from late June to late October. Off-season, park at the Old Fort Point trailhead lot and walk. Check Parks Canada's What's Open page and 511 Alberta first. **The tip:** Old Fort Point is close to town. Maligne Lake is darker, but it's 48 km out on a road that can close for avalanche control after heavy snow. [Official info](https://parks.canada.ca/pn-np/ab/jasper/gestion-management/designation/cieletoile-darksky).
+
+![Green aurora ribbons over snowy mountain peaks, mirrored in a still lake lined with dark spruce](#photo: green aurora ribbons over snowy mountain peaks, mirrored in a still lake lined with dark spruce)
+
+## 2. Wood Buffalo National Park, AB and NWT
+
+The big one, literally. Straddling the Alberta–NWT border and designated by RASC on June 28, 2013, Wood Buffalo's 44,807 km² make it the largest dark sky preserve in the world. It's also far north of Edmonton, closer to the auroral oval: the best odds in this guide.
+
+Parks Canada points to two spots: the Dark Sky Circle at Pine Lake, with benches designed so you can lie back and look up, and the Salt River Day Use Area, the park's most accessible dark-sky viewing.
+
+**When:** late August to March, with warmer nights in August and September and the clearest skies on cold autumn and winter nights. **Need to know:** this is remote country, with park headquarters in Fort Smith, NWT. Plan fuel and a winter emergency kit, and expect little or no cell service outside town. **The tip:** give it a few nights in Fort Smith rather than one rushed attempt. [Official info](https://parks.canada.ca/pn-np/nt/woodbuffalo/activ/star).
+
+## 3. Elk Island National Park and the Beaver Hills Dark Sky Preserve, AB
+
+The Edmonton special. Declared in 2006, the Beaver Hills Dark Sky Preserve now covers about 304 km², according to RASC, including Elk Island National Park, Miquelon Lake Provincial Park, Cooking Lake-Blackfoot Provincial Recreation Area and the Strathcona Wilderness Centre. Less than an hour east of the city, it's where you bolt when AuroraWatch lights up on a weeknight.
+
+RASC's designated viewing areas are Astotin Lake in Elk Island and the Hesje Observatory at Miquelon Lake. More on the area in [the best hikes near Edmonton](/journal/best-hikes-near-edmonton/).
+
+**Need to know:** Elk Island's day-use areas are open 7 a.m. to 11 p.m., and camping or sleeping in your vehicle isn't allowed in pullouts, trailheads or recreation areas. The campgrounds close after Thanksgiving and reopen on the May long weekend. To stay late in winter, [Parks Canada points to](https://parks.canada.ca/pn-np/ab/elkisland/activ/camping) winter camping at [Miquelon Lake Provincial Park](https://www.albertaparks.ca/parks/central/miquelon-lake-pp/), also inside the preserve. A national park pass is required. **The tip:** Milky Way Day, a star party held every year on the Sunday of Labour Day weekend, usually at Astotin Lake, is a friendly intro night with people who own very large telescopes. [Official info](https://www.rasc.ca/lpa/beaver-hills).
+
+## 4. Lakeland Provincial Park and Recreation Area, AB
+
+The quiet one, out in the boreal east of Lac La Biche. RASC designated it on November 19, 2016. It covers 590 km², with five drive-to observing sites and no public electricity.
+
+Alberta Parks pitches it with lakeside campgrounds and Alberta's only lake canoe circuit. Picture a dark lake, the loons going quiet, and the sky starting to move. The Lakeland Dark Sky Celebration normally runs the third weekend of September.
+
+**Need to know:** front-country camping is in the recreation area's campgrounds. Random backcountry camping isn't allowed. **The tip:** September is the sweet spot: dark nights, no deep cold, and the bugs mostly done. [Official info](https://rasc.ca/lpa/lakeland-provincial-park).
+
+## Nearby prairie skies: Cypress Hills, Grasslands and Spruce Woods
+
+The prairies have a secret weapon: a horizon that goes on forever. RASC lists three more preserves within reach: Cypress Hills, straddling southeastern Alberta and southwestern Saskatchewan (2004), Grasslands National Park in Saskatchewan (2009) and Spruce Woods Provincial Park in Manitoba (2022). They're farther south than Edmonton, so they usually need a stronger night. When a real storm is forecast, though, a dark prairie road with an old grain elevator in the foreground is hard to beat. [RASC: full list of Canadian dark-sky sites](https://rasc.ca/lpa/dark-sky-sites).
+
+![A faint green aurora arc low over snowy prairie fields, an old grain elevator and a fence line, with a camera on a tripod in the snow](#photo: a faint green aurora arc low over snowy prairie fields, an old grain elevator and a fence line, with a camera on a tripod in the snow)
+
+## How to photograph the northern lights with your phone or camera
+
+NASA says camera sensors can record auroras your naked eye can't see, which is why a pale grey-green glow comes out vivid on screen.
+
+**Phone:** Parks Canada says smartphones with night mode will produce breathtaking images. Night mode on, flash off, phone propped on something solid or a small tripod, and hold still for the whole exposure.
+
+**Camera:** start with the Canadian Space Agency's settings. Tripod, remote or self-timer. Aperture as wide as your lens goes (f/2.8, f/3.5 or f/5.6). ISO 400 to 800, or higher if you can live with grain. A 10 to 25 second exposure, shorter if the aurora is moving fast. Focus manually on a star or at infinity, then zoom into a test shot to check.
+
+**Framing and batteries:** a wide lens, a clear northern horizon and something in the foreground (trees, a lake, a grain elevator) turn a smudge into a picture. Cold kills batteries, so take NASA's advice: bring spares and keep them in an inside pocket.
+
+## Staying warm at minus thirty
+
+Aurora chasing is mostly standing still in the dark in January. Environment and Climate Change Canada puts a wind chill of −28 to −39 in the high-risk band, where exposed skin can freeze in 10 to 30 minutes; at −40 to −47 it's 5 to 10 minutes. A −30 night with a 20 km/h breeze works out to about −43.
+
+**Dress for standing, not hiking.** A wicking base layer, a warm mid-layer (a fleece like our [Hearth Fleece Zip](/shop/hearth-fleece-zip/)), a puffy bigger than you think you need, and a wind-resistant shell on top, like our [Stormcheck Packable Anorak](/shop/stormcheck-packable-anorak/). Add insulated pants, warm boots with room to wiggle your toes, a toque (our [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/) lives in the glovebox all winter), a neck gaiter, and mitts over thin liner gloves so you can work a camera without bare fingers.
+
+**Use the car as base camp** with a thermos, hand warmers and a blanket, but don't idle it with the lights on near other people. **Check each other:** ECCC advises checking your face and extremities for numbness or whiteness at these temperatures. White patches on cheeks, nose and ears are frostnip, so get warm before it gets worse. **Tell someone where you're going,** especially at Wood Buffalo or Lakeland, where you may have no signal, and pack a winter road kit.
+
+![A steaming black mug on a snowy log beside a glowing red headlamp, with green aurora over the trees and peaks](#photo: a steaming black mug on a snowy log beside a glowing red headlamp, with green aurora over the trees and peaks)
+
+## Aurora etiquette: how not to be that guy
+
+**Kill the white light.** Use a red headlamp, as Parks Canada and NASA both suggest. **Mind your headlights.** Arrive and leave on low beams, point the car away from the group, and never sit idling with your lights on. One pickup can wreck thirty long exposures.
+
+**Park safely and legally.** NASA's advice is to plan where you'll park ahead of time. No highway shoulders, no blocked field approaches. **Respect the hours**, and **no drones** in Parks Canada places without a permit.
+
+**Keep it quiet,** pack out every hand-warmer wrapper, and give wildlife room. A bison in the dark is a lot closer and a lot bigger than it looks.
+
+## The honest part: aurora chasing is a game of chance
+
+You will get skunked. Everybody does. Clouds roll in, the storm arrives six hours early over Europe, or the big night lands on a Tuesday before a 7 a.m. shift. NASA calls it a game of chance, and that's fair. The trick is making it cheap to try: alerts on, gear packed, a spot picked within an hour of home.
+
+Then one night it goes off overhead, the whole sky pulses pink and green, and you forget your toes for twenty minutes. That one makes up for the other six.
+
+## Your northern lights game plan
+
+Sign up for AuroraWatch. When it fires, check NOAA's 30-minute map and the clouds, then go. On a weeknight near Edmonton, that's Elk Island or Miquelon. With a weekend, Lakeland in September or Jasper in October. For a real trip, Wood Buffalo in late winter. While you're out, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list, sleep somewhere warm at one of our [boutique cabins](/journal/boutique-cabins-canada/), or thaw out at [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/).
+
+And bring something hot. Coffee before the cold, cocoa after, in our [Borealis Camp Mug](/shop/borealis-camp-mug/) if you like. Cold and free beats warm and bored.`,
+  },
+  {
     slug: "best-hot-springs-western-canada",
     title: "Hot Water, Cold Air: Western Canada's Best Natural Hot Springs, Ranked",
     dek: "Five real soaks from the Alaska Highway to Kootenay Lake, ranked, with the fees, seasons, and rules you need before you pull on a wet swimsuit at minus fifteen.",
@@ -584,6 +714,13 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "northern-lights-alberta-western-canada": [
+    { q: "Can you see the northern lights in Alberta?", a: "Yes. Northern Alberta sees them often, and on stronger nights the aurora reaches Edmonton, Calgary and the southern prairies. Dark skies away from city lights and a clear view north make the biggest difference." },
+    { q: "What KP index do you need to see the northern lights in Alberta?", a: "There is no fixed number. Kp is a rough guide to intensity on a 0 to 9 scale, and NASA notes the northern United States can see aurora at Kp 4. Alberta is farther north, so lower values can work, especially in the north. Use AuroraWatch's alerts and NOAA's 30-minute forecast alongside the Kp." },
+    { q: "When is the best time to see the northern lights in Alberta?", a: "From late August to April, on clear, moonless nights. Displays usually peak around midnight, so plan to be out from about 10 p.m. to 2 a.m. The short nights of May to July make viewing difficult in the north." },
+    { q: "Where is the best place to see the northern lights near Edmonton?", a: "The Beaver Hills Dark Sky Preserve, which includes Elk Island National Park and Miquelon Lake Provincial Park, is less than an hour east of the city. Elk Island day-use areas close at 11 p.m. and its campgrounds are closed from Thanksgiving to the May long weekend, so in winter, camp at Miquelon Lake Provincial Park if you want to stay later." },
+    { q: "What camera settings should I use for the northern lights?", a: "Use a tripod, the widest aperture your lens allows (f/2.8 to f/5.6), ISO 400 to 800 or higher, and a 10 to 25 second exposure, shorter if the aurora is moving fast. Focus on a star or at infinity. On a phone, use night mode and keep it still." },
+  ],
   "best-hot-springs-western-canada": [
     { q: "What is the best natural hot spring in Western Canada?", a: "For a wild setting, Liard River Hot Springs on the Alaska Highway in BC. It is open year-round, has a boardwalk through a warm-water swamp, and BC Parks calls it the second largest hot spring in Canada." },
     { q: "Which Canadian Rockies hot springs are open in winter?", a: "Banff Upper Hot Springs and Radium Hot Springs are open year-round, apart from planned maintenance closures. Miette is seasonal and closed from mid-October until spring." },

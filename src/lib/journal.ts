@@ -89,6 +89,7 @@ const PUBLISHED: Record<string, string> = {
   "off-grid-cabin-canada": "2026-06-27",
   "best-views-canada": "2026-06-27",
   "best-hot-springs-western-canada": "2026-10-24T00:00:00-06:00",
+  "northern-lights-alberta-western-canada": "2026-10-26T00:00:00-06:00",
 };
 
 export function getArticleDate(slug: string): string {
