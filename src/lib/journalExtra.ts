@@ -14,6 +14,9 @@ export const EXTRA_ARTICLES: Article[] = [
     tone: ["#0b1f2a", "#4ade80"],
     inlineImages: ["/images/journal/northern-lights-alberta-western-canada/jasper-1600x900.webp", "/images/journal/northern-lights-alberta-western-canada/prairie-1600x900.webp", "/images/journal/northern-lights-alberta-western-canada/cold-1600x900.webp"],
     hideCaptions: true,
+    seoTitle: "Northern Lights in Alberta: Where, When and How",
+    metaDescription: "Where to see the northern lights in Alberta and Western Canada: KP index and aurora forecasts, best months, dark-sky parks, camera settings and cold tips.",
+    ogImage: { url: "/images/journal/northern-lights-alberta-western-canada/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "Green and pink northern lights swirling over a frozen lake ringed by snowy spruce, reflected in open water" },
     body: `Every Albertan knows the story. Somebody's cousin posts a sky full of green ribbons at 1 a.m., you were asleep twenty minutes away, and now you get to hear about it at Christmas. This guide is how you stop being that person.
 
 The northern lights in Alberta aren't rare. You just need three things to line up: the sun throws something our way, the clouds clear off, and you're somewhere dark, awake and not frozen solid. We can't help with the sun. The rest is on you. Park details and rules below come from Parks Canada, Alberta Parks and the Royal Astronomical Society of Canada (RASC) as of October 2026, so check before you go.

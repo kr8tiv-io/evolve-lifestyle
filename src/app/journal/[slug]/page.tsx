@@ -22,20 +22,22 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const a = getArticle(params.slug);
   if (!a) return {};
+  const description = a.metaDescription ?? a.dek;
+  const og = a.ogImage ?? { url: a.hero, width: 1600, height: 1000, alt: a.title };
   return {
-    title: a.title,
-    description: a.dek,
+    title: a.seoTitle ?? a.title,
+    description,
     alternates: { canonical: `/journal/${a.slug}` },
     openGraph: {
       title: a.title,
-      description: a.dek,
+      description,
       url: `${SITE}/journal/${a.slug}`,
       type: "article",
       publishedTime: getArticleDate(a.slug),
       modifiedTime: getArticleModified(a.slug),
-      images: [{ url: a.hero, width: 1600, height: 1000, alt: a.title }],
+      images: [og],
     },
-    twitter: { card: "summary_large_image", title: a.title, description: a.dek, images: [a.hero] },
+    twitter: { card: "summary_large_image", title: a.title, description, images: [og.url] },
   };
 }
 

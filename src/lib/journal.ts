@@ -14,6 +14,10 @@ export interface Article {
   tone: [string, string];
   inlineImages: string[];
   hideCaptions?: boolean;
+  /** Optional SEO overrides: shorter <title>, meta description, and a 1200x630 share image. */
+  seoTitle?: string;
+  metaDescription?: string;
+  ogImage?: { url: string; width: number; height: number; alt: string };
   body: string;
 }
 
