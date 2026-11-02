@@ -1,10 +1,14 @@
+import { pageOpenGraph } from "@/lib/seo";
 import Link from "next/link";
+
+const DESC =
+  "How EVOLVE collects, uses, and protects your information. We only collect what we need to fulfil your order and never sell your data.";
 
 export const metadata = {
   title: "Privacy Policy",
-  description:
-    "How EVOLVE collects, uses, and protects your information. We only collect what we need to fulfil your order and never sell your data.",
+  description: DESC,
   alternates: { canonical: "/privacy" },
+  openGraph: pageOpenGraph("Privacy Policy", DESC, "/privacy/"),
 };
 
 const SECTIONS: { h: string; body: string[] }[] = [

@@ -1,10 +1,14 @@
+import { pageOpenGraph } from "@/lib/seo";
 import Link from "next/link";
+
+const DESC =
+  "EVOLVE terms of sale. All sales are final; we exchange or remake any item with a manufacturing defect. Made to order, shipped across North America.";
 
 export const metadata = {
   title: "Terms & Returns",
-  description:
-    "EVOLVE terms of sale. All sales are final; we exchange or remake any item with a manufacturing defect. Made-to-order apparel, shipped across Canada and North America.",
+  description: DESC,
   alternates: { canonical: "/terms" },
+  openGraph: pageOpenGraph("Terms & Returns", DESC, "/terms/"),
 };
 
 const SECTIONS: { h: string; body: string[] }[] = [

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getArticle, getArticles, getArticleDate, getArticleModified } from "@/lib/journal";
 import { FAQS } from "@/lib/journalExtra";
+import { JOURNAL_SEO } from "@/lib/journalSeo";
 import Markdown from "@/components/ui/Markdown";
 import ProductImage from "@/components/ui/ProductImage";
 import EmailSignup from "@/components/ui/EmailSignup";
@@ -23,7 +24,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const a = getArticle(params.slug);
   if (!a) return {};
   const description = a.metaDescription ?? a.dek;
-  const og = a.ogImage ?? { url: a.hero, width: 1600, height: 1000, alt: a.title };
+  const seo = JOURNAL_SEO[a.slug];
+  const og = a.ogImage ?? { url: a.hero, width: seo?.heroWidth ?? 1600, height: seo?.heroHeight ?? 1000, alt: a.title };
   return {
     title: a.seoTitle ?? a.title,
     description,
@@ -45,38 +47,63 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   const article = getArticle(params.slug);
   if (!article) notFound();
 
-  const more = getArticles().filter((a) => a.slug !== article.slug).slice(0, 3);
+  // same-category reads first, then the newest of the rest
+  const others = getArticles().filter((a) => a.slug !== article.slug);
+  const more = [
+    ...others.filter((a) => a.category === article.category),
+    ...others.filter((a) => a.category !== article.category),
+  ].slice(0, 3);
   const date = getArticleDate(article.slug);
   const faqs = FAQS[article.slug] ?? [];
   const url = `${SITE}/journal/${article.slug}`;
 
+  const seo = JOURNAL_SEO[article.slug];
+  const pageUrl = `${url}/`;
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: article.title,
-    description: article.dek,
-    image: `${SITE}${article.hero}`,
-    articleSection: article.category,
-    mainEntityOfPage: url,
-    url,
-    inLanguage: "en-CA",
-    datePublished: date,
-    dateModified: getArticleModified(article.slug),
-    author: { "@type": "Organization", name: "EVOLVE", url: SITE },
-    publisher: {
-      "@type": "Organization",
-      name: "EVOLVE Apparel",
-      logo: { "@type": "ImageObject", url: `${SITE}/brand/evolve-lockup-white.png` },
-    },
+    "@graph": [
+      {
+        "@type": "ImageObject",
+        "@id": `${pageUrl}#primaryimage`,
+        url: `${SITE}${article.hero}`,
+        contentUrl: `${SITE}${article.hero}`,
+        width: seo?.heroWidth ?? 1600,
+        height: seo?.heroHeight ?? 1000,
+        caption: article.ogImage?.alt ?? article.title,
+      },
+      {
+        "@type": ["BlogPosting", "Article"],
+        "@id": `${pageUrl}#article`,
+        isPartOf: { "@id": `${SITE}/#website` },
+        headline: article.title,
+        description: article.metaDescription ?? article.dek,
+        image: [
+          { "@id": `${pageUrl}#primaryimage` },
+          ...(article.ogImage ? [`${SITE}${article.ogImage.url}`] : []),
+          ...article.inlineImages.map((src) => `${SITE}${src}`),
+        ].slice(0, 8),
+        articleSection: article.category,
+        mainEntityOfPage: pageUrl,
+        url: pageUrl,
+        inLanguage: "en-CA",
+        datePublished: date,
+        dateModified: getArticleModified(article.slug),
+        keywords: article.category,
+        wordCount: seo?.wordCount,
+        author: { "@type": "Organization", "@id": `${SITE}/#organization`, name: "Evolve Apparel" },
+        publisher: { "@id": `${SITE}/#organization` },
+      },
+    ],
   };
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
       { "@type": "ListItem", position: 2, name: "Journal", item: `${SITE}/journal/` },
-      { "@type": "ListItem", position: 3, name: article.title, item: `${url}/` },
+      { "@type": "ListItem", position: 3, name: article.title, item: pageUrl },
     ],
   };
 
@@ -85,6 +112,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       ? {
           "@context": "https://schema.org",
           "@type": "FAQPage",
+          "@id": `${pageUrl}#faq`,
           mainEntity: faqs.map((f) => ({
             "@type": "Question",
             name: f.q,

@@ -3,22 +3,46 @@ import ProductImage from "@/components/ui/ProductImage";
 import { Reveal, RevealWords } from "@/components/ui/Reveal";
 import EmailSignup from "@/components/ui/EmailSignup";
 import { getArticles } from "@/lib/journal";
+import { pageOpenGraph } from "@/lib/seo";
+
+const DESC =
+  "Getting outside in Western Canada and beyond — where to ski and ride, the best hikes in Alberta and BC, boutique cabins to escape to, and Canada's best parks.";
 
 export const metadata = {
   title: "Journal",
-  description:
-    "Getting outside in Western Canada and beyond — where to ski and ride, the best hikes in Alberta and BC, boutique cabins to escape to, and Canada's best parks.",
+  description: DESC,
   alternates: { canonical: "/journal" },
+  openGraph: pageOpenGraph("Journal", DESC, "/journal/"),
 };
 
 export default function JournalPage() {
   const articles = getArticles();
 
+  const collectionLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://evolveapparel.shop/journal/#webpage",
+    url: "https://evolveapparel.shop/journal/",
+    name: "The EVOLVE Journal",
+    isPartOf: { "@id": "https://evolveapparel.shop/#website" },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: articles.map((a, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://evolveapparel.shop/journal/${a.slug}/`,
+        name: a.title,
+      })),
+    },
+  };
+
   return (
     <div className="pt-[var(--header-h)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
       <section className="frame pb-12 pt-20">
         <p className="eyebrow mb-5">The Journal</p>
         <RevealWords
+          as="h1"
           text="Field notes."
           className="block text-display font-medium uppercase tracking-tightest text-silver-bright"
         />

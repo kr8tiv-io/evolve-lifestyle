@@ -5,7 +5,7 @@ import { getArticles } from "@/lib/journal";
 
 // Keep the landing page uncluttered: feature three pieces and send everyone
 // else to the full /journal index via the "Find more great articles" button.
-const FEATURED = ["best-views-canada", "vancouver-island-places", "off-grid-cabin-canada"];
+const FEATURED = ["the-long-haul-canada-road-trips", "northern-lights-alberta-western-canada", "best-hot-springs-western-canada"];
 
 export default function JournalTeaser() {
   const all = getArticles();

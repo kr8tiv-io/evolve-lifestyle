@@ -3,6 +3,7 @@
 // `![alt](#photo: ...)` placeholders pull, in order, from `inlineImages`.
 
 import { EXTRA_ARTICLES } from "./journalExtra";
+import { JOURNAL_SEO } from "./journalSeo";
 
 export interface Article {
   slug: string;
@@ -69,7 +70,10 @@ export const ARTICLES: Article[] = [
 ];
 
 export function getArticles(): Article[] {
-  return [...EXTRA_ARTICLES, ...ARTICLES];
+  return [...EXTRA_ARTICLES, ...ARTICLES].map((a) => {
+    const seo = JOURNAL_SEO[a.slug];
+    return seo ? { ...a, seoTitle: seo.seoTitle, metaDescription: seo.metaDescription } : a;
+  });
 }
 
 export function getArticle(slug: string): Article | undefined {
@@ -94,6 +98,8 @@ const PUBLISHED: Record<string, string> = {
   "best-views-canada": "2026-06-27",
   "best-hot-springs-western-canada": "2026-10-24T00:00:00-06:00",
   "northern-lights-alberta-western-canada": "2026-10-26T00:00:00-06:00",
+  "the-long-haul-canada-road-trips": "2026-10-27T00:00:00-06:00",
+  "best-places-to-stay-western-canada-views": "2026-10-31T12:00:00-06:00",
 };
 
 export function getArticleDate(slug: string): string {
@@ -103,21 +109,24 @@ export function getArticleDate(slug: string): string {
 // Last meaningful content refresh (internal links, deks). Feeds sitemap
 // <lastmod> and Article JSON-LD dateModified. Falls back to the publish date.
 const MODIFIED: Record<string, string> = {
-  "best-ski-resorts-alberta": "2026-10-22",
-  "best-hikes-alberta-bc": "2026-10-22",
-  "boutique-cabins-canada": "2026-10-22",
-  "best-national-parks-canada": "2026-10-22",
-  "best-hikes-near-edmonton": "2026-10-22",
-  "vancouver-island-places": "2026-10-22",
-  "learn-to-mountaineer-canada": "2026-10-22",
-  "lightweight-hike-packing-kit": "2026-10-22",
-  "first-canadians-survival-skills": "2026-10-22",
-  "best-nature-resorts-canada": "2026-10-22",
-  "canadian-extreme-sports": "2026-10-22",
-  "off-grid-cabin-canada": "2026-10-22",
-  "best-views-canada": "2026-10-22",
+  "best-ski-resorts-alberta": "2026-10-31T12:00:00-06:00",
+  "best-hikes-alberta-bc": "2026-10-31T12:00:00-06:00",
+  "boutique-cabins-canada": "2026-10-31T12:00:00-06:00",
+  "best-national-parks-canada": "2026-10-31T12:00:00-06:00",
+  "best-hikes-near-edmonton": "2026-10-31T12:00:00-06:00",
+  "vancouver-island-places": "2026-10-31T12:00:00-06:00",
+  "learn-to-mountaineer-canada": "2026-10-31T12:00:00-06:00",
+  "lightweight-hike-packing-kit": "2026-10-31T12:00:00-06:00",
+  "first-canadians-survival-skills": "2026-10-31T12:00:00-06:00",
+  "best-nature-resorts-canada": "2026-10-31T12:00:00-06:00",
+  "canadian-extreme-sports": "2026-10-31T12:00:00-06:00",
+  "off-grid-cabin-canada": "2026-10-31T12:00:00-06:00",
+  "best-views-canada": "2026-10-31T12:00:00-06:00",
 };
 
+// 2026-10-31 SEO refresh touched every article (titles, descriptions, schema).
+const SEO_REFRESH = "2026-10-31T12:00:00-06:00";
+
 export function getArticleModified(slug: string): string {
-  return MODIFIED[slug] ?? getArticleDate(slug);
+  return MODIFIED[slug] ?? (getArticleDate(slug) > SEO_REFRESH ? getArticleDate(slug) : SEO_REFRESH);
 }

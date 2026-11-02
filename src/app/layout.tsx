@@ -13,11 +13,11 @@ import CartHydrator from "@/components/cart/CartHydrator";
 export const metadata: Metadata = {
   metadataBase: new URL("https://evolveapparel.shop"),
   title: {
-    default: "EVOLVE Apparel — Prairies to Peaks | Western-Canadian Outdoor Lifestyle",
+    default: "EVOLVE Apparel — Western-Canadian Outdoor Lifestyle Apparel",
     template: "%s — EVOLVE Apparel",
   },
   description:
-    "EVOLVE — Western-Canadian outdoor lifestyle apparel. Embroidered hoodies, tees and caps, made to order and shipped across Canada. The apparel arm of Evolve Eco Blasting.",
+    "Western-Canadian outdoor lifestyle apparel. Embroidered hoodies, tees and caps, made to order and shipped across Canada. The apparel arm of Evolve Eco Blasting.",
   applicationName: "EVOLVE Apparel",
   keywords: [
     "EVOLVE apparel",

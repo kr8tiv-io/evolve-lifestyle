@@ -5,6 +5,444 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "best-places-to-stay-western-canada-views",
+    title: "The 10 Best Places to Stay in Western Canada With a Breathtaking View From Your Room",
+    dek: "From a helicopter-only Rockies lodge to glass chalets under the Yukon aurora, here are ten Western Canada stays where the view is the room, with prices and how to get there.",
+    category: "Stays",
+    readMinutes: 14,
+    hero: "/images/journal/best-places-to-stay-western-canada-views/hero-clean-1600x840.webp",
+    tone: ["#0b1d26", "#4ade80"],
+    inlineImages: ["/images/journal/best-places-to-stay-western-canada-views/mount-assiniboine-lodge.webp", "/images/journal/best-places-to-stay-western-canada-views/lake-ohara-lodge.webp", "/images/journal/best-places-to-stay-western-canada-views/moraine-lake-lodge.webp", "/images/journal/best-places-to-stay-western-canada-views/fairmont-chateau-lake-louise-lakeview-room.webp", "/images/journal/best-places-to-stay-western-canada-views/sparkling-hill-resort-room.webp", "/images/journal/best-places-to-stay-western-canada-views/wickaninnish-inn-tofino.webp", "/images/journal/best-places-to-stay-western-canada-views/clayoquot-wilderness-lodge.webp", "/images/journal/best-places-to-stay-western-canada-views/nimmo-bay-resort.webp", "/images/journal/best-places-to-stay-western-canada-views/northern-lights-resort-aurora-glass-chalet.webp", "/images/journal/best-places-to-stay-western-canada-views/blachford-lake-lodge-aurora.webp"],
+    hideCaptions: true,
+    seoTitle: "10 Best Places to Stay in Western Canada With a View",
+    metaDescription: "The 10 best places to stay in Western Canada with a view from your room: Rockies lakes, Pacific storms and aurora, with prices and how to get there.",
+    ogImage: { url: "/images/journal/best-places-to-stay-western-canada-views/og-1200x630.jpg", width: 1200, height: 630, alt: "A lit lodge on a still mountain lake below a snow-capped Rockies peak at dusk, with the EVOLVE Journal title Wake Up to the Wild: The 10 Best Stays With a View in Western Canada" },
+    body: `Some trips are about the hike, the paddle or the drive. Others are about one moment: you pull back the curtain with a coffee in your hand, and a glacier, a turquoise lake, a wild Pacific beach or a sky full of green aurora is sitting right there. Western Canada has more of those moments than almost anywhere on earth.
+
+We went looking for the stays where the view isn't something you drive to. It's the thing you wake up to. Some of these places are famous hotels you can drive right up to. Others need a helicopter, a floatplane or a boat. All of them were checked against their official websites in late October 2026, and every price below comes from a named source with the date we checked it. Prices change often, so confirm with the property before you plan around a number.
+
+Here are the best places to stay in Western Canada with a view, from the Rockies to the Pacific to the North. For each one, we tell you which room type actually has the view, because at most of these places, not every room does.
+
+## Quick Comparison: Western Canada's Best Stays for Views
+
+| # | Stay | Province/Territory | The view (book this room) | Access | Approx. price (CAD, checked Oct 2026) |
+|---|---|---|---|---|---|
+| 1 | Mount Assiniboine Lodge | BC (Rockies) | Mount Assiniboine (mountain-facing rooms) | Helicopter or long hike/ski | $539/person/night, meals included (2027 rate) |
+| 2 | Lake O'Hara Lodge | BC (Yoho) | Lake O'Hara (Lakeshore Cabins) | Lodge bus on a closed road | $1,495/night for two, all-in |
+| 3 | Moraine Lake Lodge | AB (Banff) | Moraine Lake (every room) | Drive (registered guests only) | About $1,300 to $1,900/night (third-party estimate) |
+| 4 | Fairmont Chateau Lake Louise | AB (Banff) | Lake Louise and Victoria Glacier (Lakeview rooms only) | Drive | About $680 to $2,060/night (third-party estimate) |
+| 5 | Sparkling Hill Resort | BC (Okanagan) | Okanagan hills or lake (Mountain View or Lake View rooms) | Drive | Midweek offers about $299–$379/night + tax |
+| 6 | Wickaninnish Inn | BC (Tofino) | Open Pacific (every room faces ocean or beach) | Drive or fly to Tofino | Premier rooms about $940 to $1,580/night |
+| 7 | Clayoquot Wilderness Lodge | BC (Clayoquot Sound) | Rainforest estuary and mountains (safari tents) | Boat or floatplane | Rates on request |
+| 8 | Nimmo Bay Resort | BC (Great Bear Rainforest) | Ocean inlet and waterfall (waterfront cabins, +$575/night) | Floatplane | 3-night packages from $9,225/person (2027) |
+| 9 | Northern Lights Resort & Spa | Yukon | Aurora from bed (Aurora Glass Chalets only) | Transfer from Whitehorse (included) | All-inclusive 4- to 7-night packages, per person (CAD) |
+| 10 | Blachford Lake Lodge | NWT | Aurora over a remote lake (lounge and shore) | Bush plane from Yellowknife | 3-night packages from $4,919/person |
+
+## 1. Mount Assiniboine Lodge, British Columbia
+
+![Mount Assiniboine above Lake Magog and the lodge cabins, Mount Assiniboine Lodge, BC](#photo: Mount Assiniboine Lodge | https://assiniboinelodge.com/)
+
+### Why the view is worth it
+
+Mount Assiniboine rises to 3,618 m (per BC Parks), and its popular nickname is the "Matterhorn of the Rockies." The lodge sits in Mount Assiniboine Provincial Park, near Lake Magog, with that pyramid of a peak right in front of you. Ask for a room or cabin facing the mountain, because not every room does. There are no roads in, so the only noise is wind and the odd marmot.
+
+### Getting there
+
+You either hike or ski in (the classic route from the Mount Shark trailhead is a long day) or fly by helicopter. Flights for 2027 are listed at $265 per person one way from Mount Shark and $299 from Canmore, plus tax. In summer, flights run Wednesday, Friday and Sunday, and your stay has to line up with those days even if you walk.
+
+### Best season
+
+Summer runs late June to early October, and a winter ski season runs March. The lodge lists summer/fall 2027 as June 20 to October 1, 2027.
+
+### Price
+
+For summer 2027, a private lodge room or a cabin for 3 to 5 people is $539 per person per night plus 6.2% tax, with all meals, afternoon tea and guided hikes included. A two-person private cabin is $659 per person. Heads-up: the lodge lists both summer and winter 2027 as sold out, with a summer waitlist opening December 15, 2026.
+
+If you hike in from Mount Shark, our [Alberta and BC hiking guide](/journal/best-hikes-alberta-bc/) and [lightweight packing kit](/journal/lightweight-hike-packing-kit/) will help you carry less.
+
+**Book:** [assiniboinelodge.com](https://assiniboinelodge.com/mount-assiniboine-lodge-rates)
+
+## 2. Lake O'Hara Lodge, British Columbia
+
+![Trail toward the peaks above Lake O'Hara, Yoho National Park](#photo: Lake O'Hara Lodge | https://www.lakeohara.com/)
+
+### Why the view is worth it
+
+Lake O'Hara in Yoho National Park is one of the most protected corners of the Rockies. Road access is limited, so the Lake Louise crowds just aren't there. Book a Lakeshore Cabin: they sit right on the water, and the lake turns from jade to deep blue as the light moves across the peaks.
+
+### Getting there
+
+The lodge bus leaves from the Lake O'Hara parking lot on the Trans-Canada Highway, 12 km west of Lake Louise and 13 km east of Field, and climbs an 11 km road that's closed to private cars and bikes. Lodge guests ride free as part of the rate. Day visitors need a seat on the Parks Canada bus, which is handed out by random draw each spring. In 2026, the bus season ran June 19 to October 4.
+
+### Best season
+
+Summer and early fall, for hiking and the golden larches. The lodge also runs a winter season, when you ski or snowshoe in.
+
+### Price
+
+The lodge lists Lakeshore Cabins at $1,495 per night for two guests. That includes meals, afternoon tea, the round-trip bus, taxes and gratuities, with a three-night minimum.
+
+Can't get a room? Day visitors can still reach the lake by the Parks Canada bus. See how in our list of [Canada's most breathtaking views](/journal/best-views-canada/).
+
+**Book:** [lakeohara.com](https://www.lakeohara.com/lodge-dine)
+
+## 3. Moraine Lake Lodge, Alberta
+
+![Canoe on turquoise Moraine Lake below the Valley of the Ten Peaks, Banff](#photo: Moraine Lake Lodge | https://www.morainelake.com/)
+
+### Why the view is worth it
+
+Moraine Lake might be the most photographed lake in Canada, with its vivid blue water under the Valley of the Ten Peaks. According to the lodge, every room looks out on the lake. Overnight guests get it at sunrise and dusk, after the day crowds have gone.
+
+### Getting there
+
+The lodge is about a 20-minute drive from the village of Lake Louise in Banff National Park. Moraine Lake Road is closed to personal vehicles, but registered lodge guests can drive up and park, and the lodge sends access details 30 days before arrival. Day visitors have to use the Parks Canada shuttle, Roam Transit or a commercial bus.
+
+### Best season
+
+It's open in summer only. The lodge's FAQ lists the season as June 1 to October 1.
+
+### Price
+
+The official rate table only shows prices once you pick dates. Third-party site Scenic and Savvy estimates about $1,300 to $1,900 per night before tax for 2026, with breakfast, canoeing and guided hikes included. Treat that as an estimate.
+
+**Book:** [morainelake.com](https://morainelake.com/faq/)
+
+## 4. Fairmont Chateau Lake Louise, Alberta
+
+![Lake Louise and the Victoria Glacier through the window of a Fairmont Lakeview room](#photo: Fairmont Chateau Lake Louise | https://www.chateau-lake-louise.com/accommodations/fairmont-lakeview-room/)
+
+### Why the view is worth it
+
+This is the easiest world-class view on the list. Book a Lakeview room and you look straight down Lake Louise to the Victoria Glacier. In winter the lake freezes into a skating rink with the glacier behind it.
+
+### Getting there
+
+Drive about 2 hours west of Calgary on the Trans-Canada Highway into Banff National Park. You'll need a Parks Canada pass.
+
+### Best season
+
+It's open year-round. Summer is the classic turquoise lake, and winter brings skating and the ice castle crowds.
+
+### Price
+
+Fairmont's room page lists the Fairmont Lakeview King as 230 sq ft with lake and Victoria Glacier views. Third-party rate tracker Fermata estimates typical Lakeview King rates at around $1,019 per night, from about $682 in January to $2,062 in June. These are estimates, so check live rates on Fairmont's site. Only the Lakeview categories have the view, so don't book a standard room.
+
+**Book:** [fairmont.com/lake-louise](https://www.fairmont.com/en/hotels/lake-louise/fairmont-chateau-lake-louise/rooms/kgd.room.html)
+
+## 5. Sparkling Hill Resort, Vernon, British Columbia
+
+![Glass-walled room with a soaker tub and valley view at Sparkling Hill Resort, Vernon](#photo: Sparkling Hill Resort | https://www.sparklinghill.com/)
+
+### Why the view is worth it
+
+Sparkling Hill sits high on a granite ridge above Okanagan Lake, and the building is mostly glass. Every room has floor-to-ceiling windows. Book a Mountain View room for layered Okanagan hills, or a Lake View room to look down the valley over the water. It's one of the few big views in Western Canada that comes with a European-style wellness spa downstairs.
+
+### Getting there
+
+It's a short drive from Vernon in BC's North Okanagan, and about 40 minutes from Kelowna International Airport. You can drive right to the door.
+
+### Best season
+
+It's open year-round. Late summer and fall bring vineyard and orchard season, and winter brings fog lifting off the lake below.
+
+### Price
+
+The resort doesn't publish a standard nightly rate, but its seasonal midweek offers (Sunday to Thursday) have run from about $299 to $379 per night plus taxes for a Standard Mountain View room through 2026. For example, the Steamy Bliss offer is from $299 a night for midweek stays November 1–30, 2026. Check the [current offers](https://www.sparklinghill.com/offers/) for your dates.
+
+Want to keep soaking after you leave? Our guide to the [best hot springs in Western Canada](/journal/best-hot-springs-western-canada/) has the natural pools along the way.
+
+**Book:** [sparklinghill.com](https://www.sparklinghill.com/stay/)
+
+## 6. Wickaninnish Inn, Tofino, British Columbia
+
+![The Wickaninnish Inn on its rocky point above the Pacific, Tofino](#photo: Wickaninnish Inn | https://www.wickinn.com/)
+
+### Why the view is worth it
+
+This is the Pacific in full force. The Wick sits on a rocky point at the end of Chesterman Beach, and every one of its 75 rooms faces the ocean or the beach. The inn built its reputation on winter storm watching, when huge swells pound the rocks right outside your window and you watch it all from the soaker tub.
+
+### Getting there
+
+It's about a 3-hour drive from Nanaimo across Vancouver Island, or a short flight into Tofino-Long Beach Airport.
+
+### Best season
+
+Come November to February for storms, or summer for beach days and surfing.
+
+### Price
+
+The official Premier Room page lists about $940 to $1,300 per night in October and $1,340 to $1,580 June through September. Beach Deluxe rooms list around $640 to $1,280. Prices are before tax.
+
+Making a trip of the island? Read our [Vancouver Island guide](/journal/vancouver-island-places/) for what to see between the ferry and Tofino.
+
+**Book:** [wickinn.com](https://www.wickinn.com/accommodation/rooms/premier-room/)
+
+## 7. Clayoquot Wilderness Lodge, British Columbia
+
+![Horseback riders on the Bedwell River below the mountains at Clayoquot Wilderness Lodge, BC](#photo: Clayoquot Wilderness Lodge | https://clayoquotwildernesslodge.com/)
+
+### Why the view is worth it
+
+This is a luxury tented camp on Bedwell Sound, deep in the Clayoquot Sound UNESCO Biosphere Region north of Tofino. Your canvas tent opens onto rainforest, river estuary and coastal mountains, with no road and no neighbours. It's about as close to sleeping in the view as you can get with a real bed and a wood stove.
+
+### Getting there
+
+By boat or floatplane from Tofino. There's no road access.
+
+### Best season
+
+It's open in summer only. The 2026 season ran May 21 to September 27.
+
+### Price
+
+Stays are all-inclusive, plus a 10% service charge and 5% GST. Rates are on request, since the lodge doesn't publish a nightly price.
+
+**Book:** [clayoquotwildernesslodge.com](https://clayoquotwildernesslodge.com/packages/)
+
+## 8. Nimmo Bay Resort, British Columbia
+
+![Lit cabin among old-growth trees at Nimmo Bay Resort, Great Bear Rainforest](#photo: Nimmo Bay Resort | https://nimmobay.com/)
+
+### Why the view is worth it
+
+Nimmo Bay is tucked into a quiet inlet on the edge of the Great Bear Rainforest. A waterfall runs right beside the resort, and the waterfront cabins sit over the tide. Book a waterfront cabin specifically if you want the view from your room. You might see bears on the shoreline, whales in the channel, and mist on old-growth forest from the deck.
+
+### Getting there
+
+Fly from Vancouver to Port Hardy, then take a floatplane to the resort. Nimmo Bay's own flight package lists this at $2,299 per person round trip for 2026.
+
+### Best season
+
+Spring through fall. The season runs roughly mid-May to mid-October.
+
+### Price
+
+This one is a true bucket-list splurge. It's sold as all-inclusive packages with Monday and Thursday arrivals. The official 2027 rates for a 3-night stay start at $9,225 per person in spring and run to $11,835 at peak, based on double occupancy. A waterfront cabin guarantee costs $575 per cabin per night extra. Meals, house drinks and guided activities are included.
+
+**Book:** [nimmobay.com](https://nimmobay.com/inclusive-package/)
+
+## 9. Northern Lights Resort & Spa, Yukon
+
+![Northern lights over an Aurora Glass Chalet at Northern Lights Resort & Spa, Yukon](#photo: Northern Lights Resort & Spa | https://northernlightsyukon.com/stay/aurora-glass-chalets/)
+
+### Why the view is worth it
+
+Book an Aurora Glass Chalet specifically: the Aurora Glass Chalets have floor-to-ceiling glass facing the northern sky. The resort says that lets you watch the aurora right from your bed. Out here, away from the Whitehorse city lights, the northern lights are the show.
+
+### Getting there
+
+Fly into Whitehorse (Air North runs from Vancouver, Calgary and Edmonton). The packages include round-trip airport transfers to the resort.
+
+### Best season
+
+The resort's aurora season runs from mid-August to mid-April. Late August and September give you aurora over fall colours and lakes that aren't frozen yet.
+
+### Price
+
+The resort sells multi-night all-inclusive packages, priced per person, with fixed arrival days. Add a 12% sustainability charge and 5% GST. Current CAD prices are in its 2026/27 catalogue, so check the official PDF for your dates. As a reference, last season (2025/26) the 4-night Aurora Glass Chalet package was CA$3,175 per person, double occupancy, before the sustainability charge and GST ([2025/26 rate sheet](https://northernlightsyukon.com/wp-content/uploads/2025/01/aurora-viewing-packages-2025-2026.pdf)). Expect 2026/27 rates to differ. The resort is adults only: guests must be 19 or older.
+
+Planning to chase the lights closer to home first? Our [northern lights guide for Alberta and Western Canada](/journal/northern-lights-alberta-western-canada/) covers forecasts, dark-sky spots and camera settings.
+
+**Book:** [northernlightsyukon.com](https://northernlightsyukon.com/all-information/)
+
+## 10. Blachford Lake Lodge, Northwest Territories
+
+![Green aurora over a cabin at Blachford Lake Lodge, Northwest Territories](#photo: Arctic Kingdom / Blachford Lake Lodge | https://arctickingdom.com/blachford-lodge/)
+
+### Why the view is worth it
+
+Blachford sits on a remote lake a 20- to 25-minute bush-plane flight from Yellowknife, under one of the best aurora belts on the planet. There's no light pollution and no other guests' headlights, only the lake, the boreal forest and the sky. The cabins have lake views and decks, but you'll watch most of the aurora from the lodge's aurora lounge or right outside on the shore, with a nightly wake-up call until 3 a.m. if the sky lights up.
+
+### Getting there
+
+A charter flight from Yellowknife, on floats in summer and skis in winter, is included in the package. Flights run Tuesdays and Saturdays.
+
+### Best season
+
+Come January to April for frozen-lake aurora, or August to October for aurora reflected in open water. The lodge also runs a summer midnight-sun season.
+
+### Price
+
+The official site lists 3-night aurora packages from $4,919.25 per person. That includes the charter, meals, activities and aurora watch, plus 5% GST and a service fee.
+
+**Book:** [arctickingdom.com/blachford-lodge](https://arctickingdom.com/blachford-lodge/packages)
+
+## Choosing the view that's right for you
+
+Every place on this list is a different answer to the same question: what do you want to see when you open your eyes? If it's rock and ice, start with Assiniboine, O'Hara or the Lake Louise lodges. If it's the open Pacific, head for Tofino. If it's the sky itself, go north to the Yukon or Blachford Lake. Pick the view first, then work backwards to the season, the budget and how you'd like to arrive, whether that's a helicopter, a bush plane or simply [the long drive in](/journal/the-long-haul-canada-road-trips/).
+
+Whichever you choose, the weather will have a say. A Rockies lodge can go from T-shirt sun to sleet in an afternoon, and an aurora night near Yellowknife can drop below -30°C. Pack in layers: a base layer, a warm mid layer and a shell, plus a toque and real gloves for sunrise and aurora watching. If you're hiking into Assiniboine or flying into Nimmo Bay or Clayoquot, pack light and check the lodge's luggage limits before you go. For more remote places to stay, see our picks for [Canada's best nature resorts](/journal/best-nature-resorts-canada/).
+
+## Gear for the trip
+
+A few things from our own shop that earn their spot in the bag when the view is the whole point:
+
+- [Hearth Fleece Zip](/shop/hearth-fleece-zip/) ($75.50 CAD): a warm mid layer for cold sunrises on the deck and long nights waiting for the aurora.
+- [Stormcheck Packable Anorak](/shop/stormcheck-packable-anorak/) ($78.00 CAD): a light shell that packs small for Tofino rain and Rockies squalls.
+- [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/) ($24.50 CAD): a toque that stays on all night when you're outside watching the sky.
+- [Borealis Camp Mug](/shop/borealis-camp-mug/) ($16.50 CAD): for that first coffee in front of the window. It's the reason you booked the room.
+
+Prices were checked on evolveapparel.shop on October 31, 2026. Browse the rest of the [Evolve Apparel shop](/shop/) for hoodies, hats and layers made for Western Canadian weather.`,
+  },
+  {
+    slug: "the-long-haul-canada-road-trips",
+    title: "The Long Haul: Canada's Greatest Road Trips, With the Gas Stations Nobody Warns You About",
+    dek: "From the 232 km winter gap on the Icefields Parkway to 369 km of gravel on the Dempster and 402 km on the Trans-Labrador, here is the real fuel math on Canada's longest drives.",
+    category: "Routes",
+    readMinutes: 12,
+    hero: "/images/journal/the-long-haul-canada-road-trips/hero-clean-1600x840.webp",
+    tone: ["#0b1d26", "#4ade80"],
+    inlineImages: ["/images/journal/the-long-haul-canada-road-trips/icefields-parkway-highway-93-winter.webp", "/images/journal/the-long-haul-canada-road-trips/alaska-highway-muncho-lake-bison.webp", "/images/journal/the-long-haul-canada-road-trips/stewart-cassiar-highway-37-mist.webp", "/images/journal/the-long-haul-canada-road-trips/dempster-highway-tombstone-gravel.webp", "/images/journal/the-long-haul-canada-road-trips/cowboy-trail-highway-22-foothills.webp", "/images/journal/the-long-haul-canada-road-trips/trans-labrador-highway-boreal.webp", "/images/journal/the-long-haul-canada-road-trips/longhaul-hoodie-tumbler-tailgate.webp"],
+    hideCaptions: true,
+    seoTitle: "Canada's Greatest Road Trips: The Long Haul Guide",
+    metaDescription: "Six iconic Canadian road trips—Icefields Parkway, Alaska Highway, Stewart-Cassiar, Dempster, Cowboy Trail, and Trans-Labrador—plus every fuel gap.",
+    ogImage: { url: "/images/journal/the-long-haul-canada-road-trips/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A lonely two-lane Canadian mountain highway winding through frosted boreal spruce toward snow-covered Rockies peaks at blue hour, with EVOLVE The Long Haul title" },
+    body: `Every glossy travel feature about driving across Canada uses the same photograph. There is a clean pickup or a rented campervan parked at an empty viewpoint, morning light hitting a glacier, and a caption about freedom. Nobody in those photographs is looking at the dashboard, doing mental division between remaining range and a headwind out of the west, and realizing that the little gas pump icon on their phone map belongs to a lodge that boarded up its windows after Thanksgiving.
+
+In most of North America, an empty highway means you might have to settle for bad coffee at the next exit in twenty minutes. On Canada's serious northern and mountain corridors, an empty highway means the next open fuel pump is 232 to 402 kilometres down the road, cell service died an hour ago behind a limestone ridge, and the only thing standing near the shoulder is a 900-kilogram wood bison licking road salt off the centre line.
+
+That is not a reason to stay home. Those stretches, where the radio gives up, the traffic thins to logging trucks and locals who wave with two fingers off the steering wheel, and the valleys open up to country that has not changed much since the last ice sheet pulled back, are the entire point of owning a vehicle with four wheels and a heater. You just need the real math before you pull out of town with three-eighths of a tank and a warm sense of optimism.
+
+Here is the field guide to six of Canada's greatest long-haul drives, with the verified kilometre gaps between working pumps, the October and winter closures that catch people every single year, the cell dead zones, and what belongs in the back of the truck before the pavement turns to shale.
+
+## Quick-reference: Canada's longest highway fuel gaps
+
+Before you trust a mapping app that thinks a summer fishing camp with a gravity tank is a 24-hour highway cardlock, here is how the six corridors stack up on the numbers that actually matter.
+
+**1. The Icefields Parkway (Alberta Highway 93 North, Lake Louise to Jasper):** 232 km total distance. Longest summer gap is 153 km (Saskatchewan River Crossing to Jasper); longest off-season gap from mid-October to mid-April is the full **232 km** direct from Lake Louise to Jasper because The Crossing Resort closes completely for winter. Zero cell service for roughly 200 km; paved; winter tires or chains mandatory November 1 to March 31.
+
+**2. The Alaska Highway (BC Highway 97 and Yukon Highway 1, Dawson Creek to Whitehorse):** roughly 1,420 km to Whitehorse (2,232 km to Delta Junction, Alaska). Longest summer gap is 176 km (Buckinghorse River to Fort Nelson) and 170 km (Burwash Landing to Beaver Creek); longest off-season gap is **206 to 275 km** between Muncho Lake and Contact Creek or Watson Lake because Coal River Lodge closes September through May, Liard River Lodge has no retail gas, and rural lodges do not run 24-hour pumps.
+
+**3. The Stewart-Cassiar Highway (BC Highway 37, Kitwanga to Junction 37 and Watson Lake):** 724 km to Junction 37 (747 km into Watson Lake). Longest gap year-round is **235 to 247 km** from Dease Lake to Junction 37, or **up to 270 km** from Dease Lake into Watson Lake, because Good Hope Lake and Jade City have no reliable retail fuel. South of Dease Lake, Bell II Lodge to Iskut is a 158 km winter gap, and Bell II closes its pumps at 5:30 p.m. in winter.
+
+**4. The Dempster and Inuvik-Tuktoyaktuk Highways (Yukon Highway 5, NWT Highway 8, and NWT Highway 10, Dawson City to Tuktoyaktuk):** 736 km to Inuvik plus 138 km to the Arctic Ocean at Tuktoyaktuk (874 km total). Longest fuel gap is **369 km** on crushed-shale gravel from Dempster Corner (km 0) to Eagle Plains Hotel, followed by 181 km to Fort McPherson, 186 km to Inuvik, and 138 km each way (276 km round-trip) with zero highway services between Inuvik and Tuktoyaktuk. Completely impassable across the Peel and Mackenzie rivers for 6 to 8 weeks during fall freeze-up and 3 to 5 weeks during spring break-up.
+
+**5. The Cowboy Trail (Alberta Highway 22, Mayerthorpe to Lundbreck):** 584 km on Highway 22 (roughly 700 km full trail). Longest fuel gap is **109.1 km** from the southern edge of Longview to the Highway 3 junction at Lundbreck. Neither Bar U Ranch nor Chain Lakes Provincial Park sells gasoline, and 80 to 100 km/h Chinook headwinds off the Livingstone Range burn fuel fast.
+
+**6. The Trans-Labrador Highway (NL Route 500 and Route 510) and Lake Superior's North Shore (Ontario Highway 17):** 1,149 km across Labrador and 700 km from Sault Ste. Marie to Thunder Bay. Route 510 from Happy Valley-Goose Bay to Port Hope Simpson runs **402 to 406 km** with zero highway gas stations, and Route 500 from Churchill Falls to Goose Bay runs **288 km** without services. On Ontario Highway 17, Batchawana Bay to Wawa is a **145 to 150 km** gap through Lake Superior Provincial Park where the old Agawa Bay stations closed years ago.
+
+## 1. The Icefields Parkway (Alberta Highway 93 North): 232 km and a locked October gate
+
+Every October, someone rents an all-wheel-drive crossover at the Calgary airport, tops up the tank on Macleod Trail, drives past Canmore and Lake Louise without looking at the fuel gauge, and discovers at Bow Summit that the [Icefields Parkway](https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/glaciers-icefields) is not a suburban parkway with service plazas.
+
+Highway 93 North runs 232 kilometres (144 miles) from the Trans-Canada Highway junction near Lake Louise to the Yellowhead Highway junction at Jasper. For roughly 200 of those kilometres, from just north of the Lake Louise tramline all the way to Athabasca Falls, there is zero cellular service. There are no call boxes, no roaming bars on any carrier, and no tow trucks waiting behind a snowbank.
+
+![Highway 93 North, the Icefields Parkway, curving beside a frozen turquoise river and snow-plastered limestone peaks at dawn in the Canadian Rockies.](#photo: 1)
+
+**The Saskatchewan River Crossing trap:** On paper, the Parkway has a gas station at [The Crossing Resort](https://www.thecrossingresort.com/) at Saskatchewan River Crossing, where Highway 93 North meets the David Thompson Highway (Highway 11), roughly 77 kilometres north of Lake Louise and 153 kilometres south of Jasper. What your mapping app rarely mentions in bold letters is that The Crossing Resort is strictly seasonal. Every year, The Crossing closes its doors, its kitchen, and its gas pumps in mid-October and does not reopen until mid-April or early May. There is no 24-hour winter cardlock at the junction. Neither the Columbia Icefield Glacier Discovery Centre at kilometre 127 (which also closes in mid-October) nor Sunwapta Falls Resort carries public fuel. When The Crossing locks up for the season, the Icefields Parkway becomes a continuous 232-kilometre fuel gap through high alpine passes where cold air, winter-grade gasoline, snow-covered pavement, and mountain grades quietly shave 15 to 20 percent off your highway range. Even in July and August, when The Crossing's pumps are running, every drop of fuel is trucked in and priced accordingly, and the pumps are not open overnight.
+
+**Winter tires and plow hours:** [Parks Canada](https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/glaciers-icefields) enforces mandatory winter tires (bearing the Three-Peak Mountain Snowflake 3PMSF or M+S symbol) or snow chains on the Icefields Parkway from November 1 to March 31, and at any other time when snow or ice covers the road surface. If you are connecting from Golden or Radium Hot Springs on the British Columbia side, [BC's winter tire law](https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/seasonal/winter-driving/winter-tire-and-chain-up-routes) (3.5 mm minimum tread depth) kicks in a full month earlier, from October 1 to April 30.
+
+**The tip:** Highway maintenance crews on Highway 93 North only plow and sand between 7:00 a.m. and 3:30 p.m. Outside those hours, the road is not maintained, and avalanche control or whiteouts across Bow Summit (2,088 metres) and Sunwapta Pass (2,035 metres) can close the gates at Lake Louise and Jasper for hours or days at a time. Check [511 Alberta](https://511.alberta.ca/) before leaving Wi-Fi, fill your tank to the brim at the Petro-Canada or Esso in the Village of Lake Louise before heading north (or in Jasper before heading south), and if you want to turn the drive into a two-day soak loop, pair it with our field guide to [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/).
+
+## 2. The Alaska Highway (BC Highway 97 and Yukon Highway 1): 1,420 km of lodges, bison, and winter hours
+
+Built in nine months by the U.S. Army Corps of Engineers in 1942 and opened to the public in 1948, the [Alaska Highway](https://www.themilepost.com/highways/alaska-highway/), still called the Alcan by anyone who has replaced a windshield on it, runs a historical 1,422 miles (2,288 kilometres) from the Mile 0 post in Dawson Creek, British Columbia, to Delta Junction, Alaska. Thanks to decades of curve-straightening and bridge realignments, the actual driving distance today is closer to 1,387 miles (2,232 kilometres), with roughly 1,420 kilometres (882 miles) between Dawson Creek and Whitehorse, Yukon.
+
+Because the highway still uses Historical Mileposts alongside modern Dawson Creek (DC) mileages and metric kilometre posts, reading a road sign north of Fort St. John requires a little bit of frontier arithmetic. The stretch that humbles unprepared drivers is the 531-kilometre (330-mile) northern British Columbia wilderness run from Fort Nelson (DC 283 / Historical Mile 300) to Watson Lake, Yukon (DC 612.9 / Historical Mile 635). Once you leave Fort Nelson, the last full-service town, supermarket, and hospital until Watson Lake, you are climbing into the Northern Rocky Mountains. In July, when every lodge is slinging cinnamon buns and diesel, fuel is spaced at comfortable intervals. Between October and April, half of those stops vanish.
+
+![Two wild wood bison standing on the gravel shoulder of the Alaska Highway beside the jade waters of Muncho Lake in northern British Columbia, with a glowing log lodge in the distance.](#photo: 2)
+
+**Buckinghorse River (DC 173.4) to Fort Nelson (DC 283):** Even before you reach Fort Nelson, the run north from Buckinghorse River Wayside is 176 kilometres (110 miles) with zero open services at Prophet River. If Buckinghorse's pumps are closed or offline, the gap from Pink Mountain (DC 140.4) to Fort Nelson stretches to 229 kilometres (142 miles).
+
+**Tetsa River (DC 357.5), Summit Pass (DC 373.3), and Toad River Lodge (DC 404.6):** Tetsa River Services (120 km north of Fort Nelson) is famous for sourdough cinnamon buns and seasonal fuel, followed by the climb over Summit Pass (1,295 metres / 4,250 feet), the highest point on the entire Alaska Highway, where the old Summit Lake lodges have been shuttered for years. At Toad River (196 km north of Fort Nelson), [Toad River Lodge](https://toadriverlodge.com/) stays open year-round across from the airstrip with more than 7,200 ball caps pinned to the restaurant ceiling and regular and diesel pumps operating during lodge hours only, never 24/7.
+
+**Muncho Lake (DC 442.2) and the Liard and Coal River trap:** Along the jade-green waters of Muncho Lake, [Northern Rockies Lodge](https://www.northernrockieslodge.com/) stays open year-round with gas and diesel during business hours, while Double G Service at DC 436.5 is summer-only. North of Muncho Lake is where drivers get burned: Liard River Hot Springs Lodge (DC 477.8), directly across from the boardwalk to [Liard River Hot Springs Provincial Park](/journal/best-hot-springs-western-canada/), offers rooms and meals, not reliable public fuel. Sixty kilometres farther north, Coal River Lodge (DC 513.9 / Historical Mile 533) is strictly seasonal, closing from September through May, and Fireside (DC 524.2) has zero services.
+
+**Contact Creek Lodge (DC 570.0) and Watson Lake (DC 612.9):** In the off-season, your next fuel after Muncho Lake is Contact Creek Lodge, 206 kilometres (128 miles) north, which runs reduced winter daytime hours. If you pass Muncho Lake late in the afternoon and catch Contact Creek with the lights out, you are driving 275 kilometres (171 miles) straight through to the 24/7 AFD cardlock (DC 610.5) and town pumps in Watson Lake. Keep watching the gauge past Whitehorse, too: between Burwash Landing (DC 1061) and Beaver Creek (DC 1166.5) along Kluane Lake, you will cover 170 kilometres (106 miles) with no open gas station, followed by another 181 kilometres (112 miles) across the U.S. border to Tok, Alaska.
+
+**Wood bison and Stone sheep on the centre line:** Between Muncho Lake, Liard River, and Watson Lake, you are driving through the range of the reintroduced Nordquist wood bison herd, roughly 200 to 300 free-roaming animals, alongside Stone sheep that descend from the limestone bluffs near Summit Pass and Muncho Lake to lick road salt off the pavement. At night, a wood bison's dark chocolate coat absorbs headlights entirely, and their eyes do not reflect light the way a whitetail deer's do. Do not drive the Fort Nelson to Watson Lake corridor after dark if you can avoid it, check [DriveBC](https://www.drivebc.ca/) and [Yukon 511](https://511yukon.ca/) before leaving town, and keep a [Great White North Tumbler](/shop/great-white-north-tumbler/) ($39.00) full of hot coffee in the console so you are never rushing to beat sunset.
+
+## 3. The Stewart-Cassiar Highway (BC Highway 37): 724 km up the quiet back door to the Yukon
+
+If the Alaska Highway is the famous front door to the Yukon, [British Columbia Highway 37, the Stewart-Cassiar Highway](https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar), is the quieter, steeper, wilder back door. Stretching 724 kilometres (450 miles) from the Yellowhead Highway 16 junction at Kitwanga to Junction 37 on the Alaska Highway (and 747 kilometres / 464 miles into Watson Lake), Highway 37 trims roughly 210 kilometres off the drive from southern BC or the Pacific Northwest to the Yukon.
+
+It also cuts through the traditional territories of the Gitxsan, Gitanyow, Tahltan, Skii km Lax Ha, and Kaska Dena Nations, threading between the Coast Mountains and the Skeena and Cassiar ranges. The pavement is narrower than the Alaska Highway, mostly chipseal with no paved shoulders, frost heaves that will launch a loose cooler into the roof liner, and periodic gravel construction breaks, and the wildlife count of grizzlies, black bears, moose, and caribou often outnumbers oncoming cars.
+
+![A solitary timber-roofed gas pump beside the narrow, rain-slicked ribbon of BC Highway 37, the Stewart-Cassiar Highway, winding through autumn larch and mist-draped mountains.](#photo: 3)
+
+**Kitwanga (km 0) to Meziadin Junction (km 157) and the Stewart detour:** Fill up on gas or diesel at Kitwanga Junction (km 0) or Gitanyow (around km 23) before the road climbs north along the Kitwanga River, and do not count on Cranberry Junction (km 85), where the Nass forestry roads branch off with zero services. At Meziadin Junction (km 156 to 157), an automated Petro-Canada cardlock pump sits right at the junction of Highway 37 and Glacier Highway 37A. If that automated pump is ever down after a storm, your backup is the 61-to-64-kilometre detour west on Highway 37A past the hanging ice of Bear Glacier into Stewart, BC and Hyder, Alaska (122 to 128 kilometres round-trip, and worth every kilometre for the fjords and salmon glacier).
+
+**Bell II Lodge (km 254) and the 5:30 p.m. winter pump cutoff:** Sitting at the Bell Irving River bridge in the Skeena Mountains, [Bell II Lodge](https://www.bell2lodge.com/) is a world-class heliski base that sells regular gas, diesel, and propane year-round, but never 24/7. In summer (June 5 to October 1), the pumps run 7:00 a.m. to 9:30 p.m.; in spring and fall they close at 8:00 p.m.; and in winter (December 18 to April 24), pump hours drop to 8:30 a.m. to 5:30 p.m. Roll up at 6:00 p.m. in January and you are sleeping in the truck or renting a chalet until morning.
+
+**Tatogga Lake (km 391), Iskut (km 406), and Dease Lake (km 489):** Tatogga Lake Resort is seasonal, leaving Iskut (Kluachon Center), 158 kilometres north of Bell II, as the next year-round daytime fuel and grocery stop. Eighty-three kilometres farther north, Dease Lake (km 489) is the only true service hub in the northern half of the corridor, with a Petro-Canada, Super A Foods grocery store, tire repair, and cell coverage. Never drive past Dease Lake without topping up.
+
+**The Good Hope Lake and Jade City myth (235 to 270 km without reliable gas):** The BC Ministry of Transportation's official Stewart-Cassiar travel guide and The MILEPOST explicitly warn drivers not to rely on Good Hope Lake (km 596) or Jade City (km 603 to 614) for fuel. Jade City is a great place to buy nephrite jade cut from the Cassiar Mountains and grab a cup of coffee in summer, not to fill a truck tank. From Dease Lake (km 489) to Junction 37 (km 724) is 235 to 247 kilometres of empty boreal forest and Boya Lake eskers, or 258 to 270 kilometres (168 miles) all the way into Watson Lake.
+
+## 4. The Dempster and Inuvik-Tuktoyaktuk Highways (Yukon Hwy 5 / NWT Hwy 8 and 10): 874 km of shale to the Arctic Ocean
+
+Every other road in this guide will forgive you if you show up on factory all-season highway tires with a space-saver donut in the trunk. The [Dempster Highway](https://yukon.ca/en/driving-and-transportation/highways/dempster-highway) will not.
+
+Beginning at Dempster Corner (km 0) on Klondike Highway 2, roughly 40 kilometres east of Dawson City, Yukon, the Dempster runs 736 kilometres (457 miles) across the Ogilvie Mountains, the Arctic Circle, and the Richardson Mountains to Inuvik, Northwest Territories. Since November 15, 2017, [NWT Highway 10 (the Inuvik-Tuktoyaktuk Highway)](https://www.inf.gov.nt.ca/en/services/highways-ferries-and-winter-roads/highway-conditions) has added another 138 kilometres (86 miles) of all-weather gravel across the Mackenzie Delta pingo tundra to the shore of the Arctic Ocean at Tuktoyaktuk, a total one-way run of 874 kilometres (543 miles) on an engineered crushed-rock embankment sitting directly atop continuous permafrost.
+
+![The elevated shale-gravel ribbon of the Dempster Highway stretching across crimson and gold subarctic tundra toward the jagged snow-dusted granite peaks of the Tombstone Mountains in the Yukon.](#photo: 4)
+
+**369 kilometres from Dempster Corner (km 0) to the single pump at Eagle Plains:** There is a gas station at the Klondike River Lodge at Dempster Corner (km 0). Fill every tank and jerry can you own right there, because the next drop of gasoline or diesel is at Eagle Plains Hotel (km 369 / Mile 229). That is 369 continuous kilometres of crushed shale and quartz gravel across North Fork Pass (1,289 metres), past the jagged syenite spires of Tombstone Territorial Park (km 71.5, where the interpretive centre has backcountry permits and pit toilets, not fuel), and across the Peel Plateau without a single service station, cell tower, or power line. When you finally reach Eagle Plains Hotel perched on a wind-scoured ridge above the Eagle River at km 369, it has the only fuel pumps, flat-tire repair bay, restaurant, and hotel rooms in a 550-kilometre radius.
+
+**Eagle Plains (km 369) to Fort McPherson (km 550), Inuvik (km 736), and Tuktoyaktuk:** North of Eagle Plains, you will cover 181 kilometres (112 miles) across the Arctic Circle (km 405.6), over turbulent Wright Pass at the Yukon-NWT border (km 465, notorious for sudden summer blizzards and 90 km/h crosswinds), and down across the Peel River crossing (km 539) into Fort McPherson, where fuel is sold at the Northern Store and Tetlit Service Co-op. From Fort McPherson to Inuvik is another 186 kilometres (116 miles); you will cross the Mackenzie River (km 608) at the Gwichya Gwich'in community of Tsiigehtchic, which has no public retail gas station. From Inuvik (km 0 of Highway 10) to Tuktoyaktuk (km 138) is 138 kilometres each way (276 km round-trip) with zero services along the highway. Fuel in Tuktoyaktuk operates on limited local hours, so top up in Inuvik assuming you will make the round trip to the Arctic Ocean and back on your own tank.
+
+**The ferry freeze-up window and the two-spare rule:** Unlike paved southern highways, the Dempster is severed twice every year by river ice. In summer (early June to mid-to-late October), cable ferries, the MV Abraham Francis on the Peel River and the MV Louis Cardinal on the Mackenzie River, carry vehicles across free of charge from 9:00 a.m. to midnight. In deep winter (mid-to-late December through mid-to-late April), territorial crews thicken and groom winter ice bridges. In between, for six to eight weeks during fall freeze-up (late October through mid-December) and three to five weeks during spring break-up (late April through late May or early June), neither the ferries nor the ice bridges can operate, and the Dempster is completely impassable past the Peel River. Whenever you go, bring two full-size mounted spare tires, a 12-volt air compressor, a heavy-duty plug kit, and a 20-litre CSA-approved jerry can. The road is graded from sharp, angular quarried shale that slices thin passenger radial sidewalls like flint.
+
+## 5. The Cowboy Trail (Alberta Highway 22): 109 km of Chinook crosswinds south of Longview
+
+You do not have to cross the 60th parallel to find a stretch of asphalt that will run a careless tank dry. Right in Alberta's backyard, [Highway 22, the Cowboy Trail](http://www.thecowboytrail.com/), runs 584 kilometres (363 miles) from Highway 18 near Mayerthorpe down the eastern slope of the Rocky Mountain Foothills to the Crowsnest Highway (Highway 3) near Lundbreck Falls, with the broader tourism loop continuing to Cardston and Waterton Lakes (roughly 700 kilometres total).
+
+Most of Highway 22 north of Cochrane and Diamond Valley passes through settled ranchland with regular country stores. Then you pass through Longview, stop for beef jerky, and turn south into the high fescue grass between the Willow Creek hills and the limestone wall of the Livingstone Range.
+
+![Alberta Highway 22, the Cowboy Trail, winding through golden fescue ranch country toward the snow-dusted wall of the Livingstone Range under Chinook arch clouds.](#photo: 5)
+
+**The 109.1-kilometre foothills gap (Longview to Highway 3 at Lundbreck):** Right on the southern edge of Longview (km 109.1 measured from Highway 3), highway signs warn southbound drivers that the last gas pumps are behind them. Depending on whether you measure to the Chain Lakes corridor (64 to 71 kilometres) or all the way to the Crowsnest Pass highway junction at Lundbreck (km 0.0), you are looking at 109.1 kilometres (67.8 miles) of open foothills ranch country with zero retail gas pumps.
+
+**Bar U Ranch (km 96.5) and Chain Lakes Provincial Park (km 71.3):** Thirteen kilometres south of Longview, [Bar U Ranch National Historic Site](https://parks.canada.ca/lhn-nhs/ab/baru) has world-class Parks Canada interpretive ranch buildings and campfire coffee, not gas pumps. Twenty-five kilometres farther south, [Chain Lakes Provincial Park](https://www.albertaparks.ca/parks/kananaskis/chain-lakes-pp/) has a campground, reservoir trout fishing, and a seasonal camp store, with zero retail fuel. From Chain Lakes through Maycroft, the Waldron Grazing Co-op, and the Oldman River crossing, it is working cattle ranches and conservation grasslands all the way to the Highway 3 junction at Lundbreck and the Crowsnest Pass towns of Lundbreck, Cowley, and Blairmore (right down the road from Castle Mountain in our [Alberta ski resorts guide](/journal/best-ski-resorts-alberta/)).
+
+**Why Chinook headwinds empty a quarter-tank in forty minutes:** What makes those 109 kilometres sneak up on people is the wind. The Livingstone Range funnels ferocious westerly Chinook crosswinds and headwinds that routinely gust past 80 to 100 km/h, knocking a pickup truck or camper trailer down two gears and burning through a quarter-tank of fuel in forty minutes, all while cell service drops out through the Highwood and Chain Lakes basin.
+
+## 6. The Eastern Giants: Trans-Labrador Highway (Route 500 and 510) and Lake Superior's North Shore (Ontario Hwy 17)
+
+Western Canada does not hold a monopoly on long fuel gaps. Once you cross into the Canadian Shield of Northern Ontario and the subarctic spruce plateaus of Labrador, the distances between open pumps rival anything in the Yukon.
+
+![The two-lane paved ribbon of the Trans-Labrador Highway cutting straight across dark Canadian Shield rock and boreal spruce forest at twilight.](#photo: 6)
+
+**Trans-Labrador Highway (NL Route 500 and Route 510, 1,149 km):** Completed with its final coat of asphalt in 2022, the [Trans-Labrador Highway](https://destinationlabrador.com/guide/trans_labrador_highway.htm) runs 1,149 kilometres (714 miles) from the Quebec border near Labrador City and Wabush all the way to the Strait of Belle Isle ferry terminal near Blanc-Sablon. The paving crews smoothed out the washboard, not the distance between towns. On Route 500, Labrador City and Wabush to Churchill Falls is 238 to 244 kilometres (148 to 152 miles) with zero roadside services, followed immediately by 288 kilometres (179 miles) of uninterrupted boreal wilderness from Churchill Falls to Happy Valley-Goose Bay with zero gas stations or cell towers.
+
+**Happy Valley-Goose Bay to Port Hope Simpson on Route 510 (402 km with zero highway stations):** Turning south on Route 510 from Happy Valley-Goose Bay to Port Hope Simpson puts you on a **402-to-406-kilometre (250-to-252-mile)** stretch with zero highway gas stations, the longest paved run without a roadside pump in Eastern Canada. The only possible emergency bailout is at Cartwright Junction (km 287), which still requires a side-road detour off Route 510 into the coastal community of Cartwright during daytime business hours. Because cell service does not exist across hundreds of kilometres of Route 500 and Route 510, check [NL 511](https://511nl.ca/) before leaving town and carry a personal satellite communicator (Garmin inReach, ZOLEO, or satellite SOS-capable phone) for the crossing.
+
+**Lake Superior's North Shore on Ontario Highway 17 (Sault Ste. Marie to Thunder Bay, 700 km):** Even on the Trans-Canada Highway itself, the 700-kilometre (435-mile) North Shore of Lake Superior between Sault Ste. Marie and Thunder Bay catches cross-country drivers every week. North of Batchawana Bay and Pancake Bay, Highway 17 climbs into the coastal cliffs and boreal hills of [Lake Superior Provincial Park](https://www.ontarioparks.com/park/lakesuperior) (83 kilometres of park corridor). The old roadside stations at Agawa Bay and Montreal River Harbour closed years ago, leaving a 145-to-150-kilometre (90-to-93-mile) fuel gap all the way to Wawa, followed by another sparse stretch between White River and Marathon where winter lake-effect blizzards regularly drop the highway gates on [Ontario 511](https://511on.ca/) at Wawa and Nipigon overnight.
+
+## What to keep in the truck (and what you actually wear for twelve hours behind the wheel)
+
+Anyone who has driven from Calgary to Whitehorse or Dawson City to Inuvik knows the strange temperature physics of a long-haul cab. At 6:00 a.m. in a frosty hotel parking lot in Fort Nelson, it is minus twelve and your breath hangs in the headlights while you check the oil and scrape rime ice off the mirrors. By 11:00 a.m., the sun is coming through the windshield, the floor heater is cooking your right boot, and a puffy ski jacket feels like wearing a sleeping bag in a sauna, right up until you pull over at Muncho Lake or Bow Summit and step out into a forty-knot mountain wind.
+
+![An open pickup truck tailgate at a frosty mountain highway pullout at dawn, holding a folded Carbon Grey Evolve Longhaul Hoodie, a steaming white 20 oz Great White North Tumbler, a paper highway map, and a red jerry can.](#photo: 7)
+
+That exact cycle, cold fuel island, twelve hours in a bucket seat, frosty pullout, is why we built two pieces in our [Peaks collection](/shop/) specifically around highway miles.
+
+**The [Longhaul Hoodie](/shop/longhaul-hoodie/) ($54.50):** Built on a midweight pullover fleece in Carbon Grey (Cotton Heritage M2580, sizes S to 2XL) with a clean, tonal embroidered EVOLVE chest wordmark. It is heavy enough to cut the chill when you are standing beside a slow diesel pump in Dease Lake or checking tire pressures at Eagle Plains, and breathable enough that you do not have to wrestle it off behind the steering wheel three hours into the drive.
+
+**The [Great White North Tumbler](/shop/great-white-north-tumbler/) ($39.00):** A 20 oz double-wall insulated stainless steel tumbler in clean white with a wrap-around EVOLVE mountain print and a press-in lid that fits a standard truck console cupholder. When there are 232 kilometres between Lake Louise and Jasper, or 369 kilometres between Dawson City and Eagle Plains, having coffee that is still genuinely hot at hour four is a legitimate safety feature. If you keep a camp stove on the tailgate for pullout boil-ups, throw our [Borealis Camp Mug](/shop/borealis-camp-mug/) ($16.50) and a [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/) ($24.50) in the gear bin beside it.
+
+**The five-piece backcountry truck kit:** Alongside warm layers and hot coffee, five things belong behind the back seat whenever you leave the main corridor. **1. A paper highway map or The MILEPOST**, because touchscreens freeze, cables fail, and cached map tiles vanish the moment an app resets without cell service. **2. A 20-litre CSA-approved fuel can mounted outside the cab** in the truck box or on a rear rack, never inside an enclosed passenger cabin. **3. A full-size spare tire, 12V compressor, and heavy-duty tire plug kit** (two full-size spares on the Dempster). **4. A two-way satellite communicator** (Garmin inReach, ZOLEO, or satellite SOS handset) to cover the 200-to-400-kilometre dead zones on Highway 93N, Highway 37, the Alaska Highway, and Labrador Route 500/510. **5. A winter sleeping bag, headlamp, booster pack, and 4,000 calories of non-freezing food**, because idling a truck at an avalanche gate closure burns 1.5 to 2.5 litres of fuel per hour, and a zero-degree bag lets you shut the engine off and save your fuel for when the gate opens.
+
+## The honest part
+
+Driving across the quiet corners of Canada is not dramatic ninety-nine percent of the time. Mostly, it is hours of grey chipseal, old country stations fading into static, a receipt from a lodge in Toad River tucked into the sun visor, and your passenger falling asleep twenty minutes after saying they would help watch for moose.
+
+When people get into real trouble on the Icefields Parkway in November or north of Dease Lake at dusk, it is almost never because the wilderness rose up and ambushed them. It is because modern cars and highways make us lazy about distance. We get used to a world where every exit has four gas stations, three drive-thrus, and five bars of 5G, and we forget that once you point the hood north of Highway 1 or Highway 16, Canada gets very large and very indifferent very fast.
+
+Respect the half-tank rule, assume every lodge pump closes at suppertime, and treat a "Next Gas 240 km" sign like a promise, not a suggestion.
+
+## How to play it
+
+**Never pass an open pump below half a tank:** On the Alaska Highway, Stewart-Cassiar, Dempster, and Trans-Labrador, half a tank is your new empty light. If a pump is open and the lights are on, top up.
+
+**Check the calendar before trusting a dot on the map:** From mid-October to mid-April, Saskatchewan River Crossing on the Icefields Parkway and Coal River Lodge on the Alaska Highway are closed completely, and Bell II Lodge on Highway 37 shuts its pumps at 5:30 p.m. in winter.
+
+**Verify live 511 road reports before you leave Wi-Fi:** Bookmark [511 Alberta](https://511.alberta.ca/), [DriveBC](https://www.drivebc.ca/), [Yukon 511](https://511yukon.ca/), [NWT Highway Conditions](https://www.inf.gov.nt.ca/en/services/highways-ferries-and-winter-roads/highway-conditions), [NL 511](https://511nl.ca/), and [Ontario 511](https://511on.ca/) and screenshot the corridor conditions in your last service town.
+
+**Dress for the pullout, not just the heated seat:** Keep a [Longhaul Hoodie](/shop/longhaul-hoodie/) ($54.50) on and a winter shell, gloves, and boots within arm's reach in the cab, never buried under three totes in the trunk, and keep a [Great White North Tumbler](/shop/great-white-north-tumbler/) ($39.00) topped up whenever you find hot water. If you are chasing clear skies once the sun goes down, pair your route with our guide on [where to see the northern lights in Alberta and Western Canada](/journal/northern-lights-alberta-western-canada/), or scout your next quiet basecamp in our [off-grid cabin guide](/journal/off-grid-cabin-canada/).`,
+  },
+  {
     slug: "northern-lights-alberta-western-canada",
     title: "Chasing Green: Where to See the Northern Lights in Alberta and Western Canada",
     dek: "How the aurora works, how to read the KP index, the dark-sky parks worth the drive, and how to last at minus thirty long enough to see the good part.",
@@ -720,6 +1158,23 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "best-places-to-stay-western-canada-views": [
+    { q: "What is the best place to stay in Western Canada for a view?", a: "The best place to stay in Western Canada for a view depends on the view you want. For mountains, choose Mount Assiniboine Lodge or a Lakeshore Cabin at Lake O'Hara Lodge. For the ocean, choose the Wickaninnish Inn in Tofino. For the northern lights, choose an Aurora Glass Chalet at Northern Lights Resort & Spa in the Yukon or Blachford Lake Lodge in the NWT." },
+    { q: "Which Western Canada stays with a view can you drive to?", a: "You can drive to Fairmont Chateau Lake Louise, Sparkling Hill Resort and the Wickaninnish Inn. Registered Moraine Lake Lodge guests can drive up the otherwise closed Moraine Lake Road. Northern Lights Resort includes transfers from Whitehorse." },
+    { q: "What is the most affordable stay with a view on this list?", a: "Sparkling Hill Resort is the most affordable, with seasonal midweek offers from about $299 a night plus taxes for a Mountain View room. Mount Assiniboine Lodge is also good value at $539 per person per night, because meals and guided hikes are included." },
+    { q: "How far ahead should I book?", a: "Book 6 to 12 months ahead for summer. Mount Assiniboine Lodge has already sold out its 2027 season, and the Rockies lodges fill early. Join waitlists and consider shoulder seasons." },
+    { q: "When is the best time to see the northern lights in Western Canada?", a: "The best time to see the northern lights in Western Canada is from mid-August to mid-April in the Yukon and Northwest Territories, when the nights are dark. Fall gives you aurora reflected on open lakes, and winter gives you long, cold, clear nights." },
+    { q: "Do I need a park pass for these lodges?", a: "Yes, you need a Parks Canada pass for stays inside Banff and Yoho national parks (Lake Louise, Moraine Lake and Lake O'Hara). Parking at the Mount Shark trailhead for Assiniboine needs a Kananaskis Conservation Pass." },
+  ],
+  "the-long-haul-canada-road-trips": [
+    { q: "Is there gas on the Icefields Parkway in winter?", a: "No. The only fuel stop on the 232-kilometre (144-mile) Icefields Parkway (Highway 93 North) between Lake Louise and Jasper is The Crossing Resort at Saskatchewan River Crossing (77 km north of Lake Louise and 153 km south of Jasper), and it is strictly seasonal. The Crossing closes from mid-October until mid-April or early May with no 24-hour winter cardlock. Between mid-October and spring reopening, drivers must fuel up in the Village of Lake Louise or the town of Jasper to cover the full 232 km stretch." },
+    { q: "What is the longest distance between gas stations on the Dempster Highway?", a: "The longest fuel gap on the Dempster Highway (Yukon Highway 5 / NWT Highway 8) is the very first stretch: 369 kilometres (229 miles) of all-weather gravel from the Klondike Highway junction near Dawson City (Dempster Corner, km 0) to Eagle Plains Hotel at km 369. After Eagle Plains, fuel is available at Fort McPherson (km 550, a 181 km gap) and Inuvik (km 736, a 186 km gap), followed by a 138 km stretch with zero services on NWT Highway 10 from Inuvik to Tuktoyaktuk on the Arctic Ocean." },
+    { q: "How far apart are gas stations on the Stewart-Cassiar Highway (BC Highway 37)?", a: "On the 724-kilometre Stewart-Cassiar Highway (BC Highway 37) from Kitwanga to the Alaska Highway junction, the longest stretch without reliable retail fuel is 235 to 247 kilometres between Dease Lake (km 489) and Junction 37 (km 724), or up to 270 kilometres (168 miles) from Dease Lake into Watson Lake, Yukon. Neither Good Hope Lake nor Jade City offers reliable public gas pumps. South of Dease Lake, drivers should also plan around the 158 km gap between Bell II Lodge and Iskut when seasonal lodges are closed, and note that Bell II Lodge pumps close at 5:30 p.m. in winter." },
+    { q: "Are gas stations open in winter on the Alaska Highway between Fort Nelson and Watson Lake?", a: "Only select lodges operate year-round on the 531-kilometre (330-mile) stretch of the Alaska Highway between Fort Nelson, BC and Watson Lake, YT, and none of the rural highway lodges run 24-hour pumps in winter. Toad River Lodge (DC 404.6) and Northern Rockies Lodge at Muncho Lake (DC 442.2) remain open year-round during daytime and evening business hours, while Coal River Lodge (DC 513.9) closes from September through May and Liard River Hot Springs Lodge (DC 477.8) does not sell retail fuel. In winter, the gap from Muncho Lake to Contact Creek is 206 km (or 275 km to Watson Lake if Contact Creek is closed after hours)." },
+    { q: "Where is the last gas station heading south on Alberta's Cowboy Trail (Highway 22)?", a: "Heading south on Alberta Highway 22 (the Cowboy Trail), the village of Longview is the last place to buy fuel before the Crowsnest Highway (Highway 3) junction near Lundbreck, a 109.1-kilometre (67.8-mile) stretch through the Livingstone Range foothills and Chain Lakes Provincial Park with zero gas pumps. Highway signs leaving Longview explicitly warn drivers that there is no fuel ahead. Neither Bar U Ranch National Historic Site nor Chain Lakes Provincial Park has retail gas." },
+    { q: "What is the longest stretch without gas on the Trans-Labrador Highway?", a: "On the 1,149-kilometre Trans-Labrador Highway, the longest fuel gap is on Route 510 between Happy Valley-Goose Bay and Port Hope Simpson: 402 to 406 kilometres (250 miles) with zero roadside gas stations (with Cartwright located on a coastal side-road detour off km 287). On Route 500 in western Labrador, drivers also face a 288-kilometre gap with zero services between Churchill Falls and Happy Valley-Goose Bay, and a 238-to-244-kilometre gap between Labrador City/Wabush and Churchill Falls." },
+    { q: "Are winter tires mandatory on the Icefields Parkway and BC mountain highways?", a: "Yes. Parks Canada requires winter tires (bearing the Three-Peak Mountain Snowflake 3PMSF or M+S symbol) or snow chains on the Icefields Parkway (Highway 93 North) from November 1 to March 31, and whenever snow or ice covers the road surface. On neighbouring British Columbia mountain highways, including Highway 1 through Yoho National Park, Highway 93 South through Kootenay National Park, the Alaska Highway (Hwy 97), and the Stewart-Cassiar Highway (Hwy 37), winter tires with at least 3.5 mm of tread depth are mandatory from October 1 to April 30." },
+  ],
   "northern-lights-alberta-western-canada": [
     { q: "Can you see the northern lights in Alberta?", a: "Yes. Northern Alberta sees them often, and on stronger nights the aurora reaches Edmonton, Calgary and the southern prairies. Dark skies away from city lights and a clear view north make the biggest difference." },
     { q: "What KP index do you need to see the northern lights in Alberta?", a: "There is no fixed number. Kp is a rough guide to intensity on a 0 to 9 scale, and NASA notes the northern United States can see aurora at Kp 4. Alberta is farther north, so lower values can work, especially in the north. Use AuroraWatch's alerts and NOAA's 30-minute forecast alongside the Kp." },

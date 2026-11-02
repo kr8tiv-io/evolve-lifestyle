@@ -1,3 +1,4 @@
+import { pageOpenGraph } from "@/lib/seo";
 import Link from "next/link";
 import BrandPillars from "@/components/sections/BrandPillars";
 import SloganMoment from "@/components/sections/SloganMoment";
@@ -6,10 +7,14 @@ import { Reveal, RevealWords } from "@/components/ui/Reveal";
 import ProductImage from "@/components/ui/ProductImage";
 import { SLOGANS } from "@/lib/slogans";
 
+const DESC =
+  "Descended from survivors. One of the largest lands on Earth. Work hard, play hard. The story behind EVOLVE.";
+
 export const metadata = {
   title: "Our Story",
-  description:
-    "Descended from survivors. One of the largest lands on Earth. Work hard, play hard. The story behind EVOLVE.",
+  description: DESC,
+  alternates: { canonical: "/about" },
+  openGraph: pageOpenGraph("Our Story", DESC, "/about/"),
 };
 
 export default function AboutPage() {
