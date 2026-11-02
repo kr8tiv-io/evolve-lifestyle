@@ -3,6 +3,96 @@ import type { Product } from "./products";
 
 export const CATALOG_PRODUCTS: Product[] = [
   {
+    "slug": "believer-heavyweight-tee",
+    "name": "Believer Heavyweight Tee",
+    "subtitle": "Tops · printed",
+    "category": "tops",
+    "collection": "boreal",
+    "price": 4250,
+    "externalId": "488186244",
+    "tagline": "Where the signal dies, we come alive.",
+    "description": "A heavyweight Stanley/Stella tee in Desert Dust, cut from 100% organic cotton with a dry, textured handfeel. The black 'I Want to Believe' Bigfoot sketch is printed on the front and the EVOLVE mark rides the right sleeve. Part of the Sasquatch Edition — for anyone who's looked twice at the treeline.",
+    "details": [
+      "Printed to order",
+      "Ships across Canada & North America",
+      "1 colourway · sizes XS, S, M, L, XL, 2XL",
+      "EVOLVE artwork — earned outside"
+    ],
+    "tone": [
+      "#0d3b1f",
+      "#00ff41"
+    ],
+    "images": [
+      "/products/p488186244-0-v4.png"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "variants": [
+      {
+        "id": "believer-heavyweight-tee-desert-dust-xs",
+        "variantId": "5612502325",
+        "sku": "6AE811C8B4E47_XS",
+        "size": "XS",
+        "color": "Desert Dust",
+        "swatch": "#cdbb9a",
+        "inStock": true
+      },
+      {
+        "id": "believer-heavyweight-tee-desert-dust-s",
+        "variantId": "5612502326",
+        "sku": "6AE811C8B4E47_S",
+        "size": "S",
+        "color": "Desert Dust",
+        "swatch": "#cdbb9a",
+        "inStock": true
+      },
+      {
+        "id": "believer-heavyweight-tee-desert-dust-m",
+        "variantId": "5612502327",
+        "sku": "6AE811C8B4E47_M",
+        "size": "M",
+        "color": "Desert Dust",
+        "swatch": "#cdbb9a",
+        "inStock": true
+      },
+      {
+        "id": "believer-heavyweight-tee-desert-dust-l",
+        "variantId": "5612502328",
+        "sku": "6AE811C8B4E47_L",
+        "size": "L",
+        "color": "Desert Dust",
+        "swatch": "#cdbb9a",
+        "inStock": true
+      },
+      {
+        "id": "believer-heavyweight-tee-desert-dust-xl",
+        "variantId": "5612502329",
+        "sku": "6AE811C8B4E47_XL",
+        "size": "XL",
+        "color": "Desert Dust",
+        "swatch": "#cdbb9a",
+        "inStock": true
+      },
+      {
+        "id": "believer-heavyweight-tee-desert-dust-2xl",
+        "variantId": "5612502330",
+        "sku": "6AE811C8B4E47_2XL",
+        "size": "2XL",
+        "color": "Desert Dust",
+        "swatch": "#cdbb9a",
+        "inStock": true
+      }
+    ],
+    "brand": "Stanley/Stella SATU018",
+    "badge": "Sasquatch Edition"
+  },
+  {
     "slug": "treeline-camo-trucker",
     "name": "Treeline Camo Trucker",
     "subtitle": "Headwear · embroidered",

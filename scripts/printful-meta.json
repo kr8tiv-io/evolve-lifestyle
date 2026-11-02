@@ -1167,5 +1167,52 @@
       "2XL"
     ],
     "minPrice": 75.5
+  },
+  {
+    "id": "488186244",
+    "printfulName": "Believer Heavyweight Tee",
+    "blankType": "Stanley/Stella SATU018 / STTU788 | Freestyler Dry-Handfeel Heavyweight T-Shirt",
+    "brand": "Stanley/Stella",
+    "model": "SATU018 / STTU788",
+    "techniques": [
+      "EMBROIDERY",
+      "DTG",
+      "DTFILM"
+    ],
+    "fileTypes": [
+      "front",
+      "sleeve_right",
+      "preview",
+      "opt:embroidery_type",
+      "opt:thread_colors",
+      "opt:text_thread_colors",
+      "opt:thread_colors_3d",
+      "opt:thread_colors_chest_left",
+      "opt:text_thread_colors_chest_left",
+      "opt:thread_colors_chest_right",
+      "opt:text_thread_colors_chest_right",
+      "opt:thread_colors_chest_center",
+      "opt:text_thread_colors_chest_center",
+      "opt:thread_colors_large_front",
+      "opt:text_thread_colors_large_front",
+      "opt:thread_colors_sleeve_left_top",
+      "opt:text_thread_colors_sleeve_left_top",
+      "opt:thread_colors_sleeve_right_top",
+      "opt:text_thread_colors_sleeve_right_top",
+      "opt:license_type"
+    ],
+    "technique": "print",
+    "colors": [
+      "Desert Dust"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 42.5
   }
 ]

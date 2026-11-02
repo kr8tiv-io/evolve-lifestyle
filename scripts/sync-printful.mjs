@@ -70,6 +70,7 @@ const SLOGANS = [
 ];
 // Cooler, on-brand names keyed by Printful product id (override the generic ones).
 const COOL_NAMES = {
+  "488186244": "Believer Heavyweight Tee",
   "441089440": "Treeline Camo Trucker",
   "441089080": "Longhaul Hoodie",
   "441087767": "Coldfront Champion Long-Sleeve",
