@@ -23,7 +23,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p488745390-0-v4.png"
+      "/products/p488745390-0-v5.webp"
     ],
     "sizes": [
       "S",
