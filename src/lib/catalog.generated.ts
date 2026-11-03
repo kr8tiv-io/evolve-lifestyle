@@ -3,6 +3,86 @@ import type { Product } from "./products";
 
 export const CATALOG_PRODUCTS: Product[] = [
   {
+    "slug": "banff-encounter-deluxe-tee",
+    "name": "Banff Encounter Deluxe Tee",
+    "subtitle": "Tops · printed",
+    "category": "tops",
+    "collection": "boreal",
+    "price": 3000,
+    "externalId": "488745390",
+    "tagline": "The truth is out there. Somewhere past Banff.",
+    "description": "A soft, everyday Lane Seven CVC tee in Black Heather, with a classic crew neck and a regular fit. The pencil-sketch alien riding a moose past the Banff National Park sign is printed on the front in white, and the EVOLVE mark rides the left sleeve. For anyone who has seen something strange on the road through Banff and kept on driving.",
+    "details": [
+      "Printed to order",
+      "Ships across Canada & North America",
+      "1 colourway · sizes S, M, L, XL, 2XL",
+      "EVOLVE artwork — earned outside"
+    ],
+    "tone": [
+      "#0d3b1f",
+      "#00ff41"
+    ],
+    "images": [
+      "/products/p488745390-0-v4.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "variants": [
+      {
+        "id": "banff-encounter-deluxe-tee-black-heather-s",
+        "variantId": "5616194733",
+        "sku": "6AEA08C49BC38_S",
+        "size": "S",
+        "color": "Black Heather",
+        "swatch": "#3f4347",
+        "inStock": true
+      },
+      {
+        "id": "banff-encounter-deluxe-tee-black-heather-m",
+        "variantId": "5616194734",
+        "sku": "6AEA08C49BC38_M",
+        "size": "M",
+        "color": "Black Heather",
+        "swatch": "#3f4347",
+        "inStock": true
+      },
+      {
+        "id": "banff-encounter-deluxe-tee-black-heather-l",
+        "variantId": "5616194735",
+        "sku": "6AEA08C49BC38_L",
+        "size": "L",
+        "color": "Black Heather",
+        "swatch": "#3f4347",
+        "inStock": true
+      },
+      {
+        "id": "banff-encounter-deluxe-tee-black-heather-xl",
+        "variantId": "5616194736",
+        "sku": "6AEA08C49BC38_XL",
+        "size": "XL",
+        "color": "Black Heather",
+        "swatch": "#3f4347",
+        "inStock": true
+      },
+      {
+        "id": "banff-encounter-deluxe-tee-black-heather-2xl",
+        "variantId": "5616194737",
+        "sku": "6AEA08C49BC38_2XL",
+        "size": "2XL",
+        "color": "Black Heather",
+        "swatch": "#3f4347",
+        "inStock": true
+      }
+    ],
+    "brand": "Lane Seven LS15000CVC",
+    "badge": "Sasquatch Edition"
+  },
+  {
     "slug": "believer-heavyweight-tee",
     "name": "Believer Heavyweight Tee",
     "subtitle": "Tops · printed",
