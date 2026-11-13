@@ -67,7 +67,7 @@ export default function AboutPage() {
 
       <div className="border-y border-white/10 py-5">
         <Marquee
-          items={["DESCENDED FROM SURVIVORS", "EARNED OUTSIDE", "CANADIAN-BUILT. WEATHER-TESTED.", "BUILT FOR THE BUSH"]}
+          items={["DESCENDED FROM SURVIVORS", "EARNED OUTSIDE", "WEATHER-TESTED.", "BUILT FOR THE BUSH"]}
           className="text-base font-medium uppercase tracking-[0.2em] text-silver-bright/70"
         />
       </div>

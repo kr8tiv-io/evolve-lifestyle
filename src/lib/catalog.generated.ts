@@ -377,7 +377,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "collection": "coast",
     "price": 4100,
     "externalId": "441087198",
-    "tagline": "Canadian-built. Weather-tested.",
+    "tagline": "Weather-tested.",
     "description": "A charcoal-black triblend hooded long-sleeve that drapes light and wears warm. The EVOLVE mark is embroidered — equal parts trail layer and town layer.",
     "details": [
       "Embroidered to order",
@@ -1196,7 +1196,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "collection": "coast",
     "price": 3100,
     "externalId": "440708024",
-    "tagline": "Canadian-built. Weather-tested.",
+    "tagline": "Weather-tested.",
     "description": "A pro-style six-panel snapback in white with a structured front and flat brim. EVOLVE embroidered up front — clean lines, cold country.",
     "details": [
       "Embroidered to order",
@@ -2005,7 +2005,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "collection": "coast",
     "price": 2550,
     "externalId": "440606458",
-    "tagline": "Canadian-built. Weather-tested.",
+    "tagline": "Weather-tested.",
     "description": "A low-profile six-panel dad hat in black with an unstructured fit and a curved brim. The EVOLVE crest is embroidered — easy, broken-in, everyday.",
     "details": [
       "Embroidered to order",

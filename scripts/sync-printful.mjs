@@ -62,7 +62,7 @@ const TONES = {
 };
 const SLOGANS = [
   "Descended from survivors.", "Built for the bush. Made for the long haul.",
-  "Earned outside.", "Canadian-built. Weather-tested.", "Strip it back. Build it stronger.",
+  "Earned outside.", "Weather-tested.", "Strip it back. Build it stronger.",
   "Cold and free beats warm and bored.", "Where the signal dies, we come alive.",
   "Work hard. Play harder. Get outside.", "Restore what the week wore down.",
   "Tougher than the winters that made us.", "From the wheat to the water.",

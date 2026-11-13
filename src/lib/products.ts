@@ -233,7 +233,7 @@ export const PRODUCTS: Product[] = [
     category: "headwear",
     collection: "boreal",
     price: 3600,
-    tagline: "Canadian-built. Weather-tested.",
+    tagline: "Weather-tested.",
     description:
       "A tight ribbed cuff beanie in a merino blend that holds heat without the itch. Woven label, real fold, no slouch gimmicks.",
     details: ["Merino-acrylic rib knit", "Woven EVOLVE label", "True double-layer cuff", "One size, holds shape"],
