@@ -5,6 +5,154 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "bear-country-manners-grizzly-black-bear-canada",
+    title: "Bear Country Manners: What to Actually Do When You Meet a Grizzly",
+    dek: "A Parks Canada–sourced field guide to black vs grizzly ID, bear spray that actually works, bluff charges, dogs, bikes, food caches, and what to do if contact happens in Alberta, BC and the North.",
+    category: "Trails",
+    readMinutes: 12,
+    hero: "/images/journal/bear-country-manners-grizzly-black-bear-canada/hero-clean-1600x840.jpg",
+    tone: ["#1a2a1a", "#4ade80"],
+    seoTitle: "Bear Country Manners: Grizzly & Black Bear Safety",
+    metaDescription: "What to do if you meet a grizzly or black bear in Canada: ID tips, bear spray, bluff charges, food caches, dogs and bikes — Parks Canada–sourced for Alberta & BC trails.",
+    ogImage: { url: "/images/journal/bear-country-manners-grizzly-black-bear-canada/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "Bear Country Manners — EVOLVE Journal" },
+    inlineImages: [
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/tracks-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/spray-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/valley-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/camp-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/bike-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/north-1600x900.jpg",
+    ],
+    hideCaptions: true,
+    body: `The first time you see a bear that is not on a roadside Instagram story, your brain does something unhelpful. It freezes the soundtrack, invents a TED Talk about sprinting, and forgets every poster you ever read at a trailhead. This guide is for that second. Not the vibes. The manners.
+
+Western Canada is bear country on purpose. Banff, Jasper, Kananaskis, Yoho, Kootenay, the Chilcotin, the Yukon — black bears and grizzlies share the valleys we hike, bike and camp in. Parks Canada is blunt: you can meet a bear on a busy trail near town or deep in the backcountry. Most encounters end without injury when people stay calm, make space, and treat spray as a last-resort tool, not cologne.
+
+This is the practical version: ID, noise, groups, spray, defensive vs non-defensive behaviour, bluff charges, contact, food storage, dogs, bikes and runners. Sourced from Parks Canada mountain-parks guidance, Alberta Parks / Alberta.ca, WildSafeBC and BC Parks as of November 2026. Check local closures before you go.
+
+## Black bear or grizzly: stop guessing by colour
+
+Colour is a trap. Parks Canada is clear: both species come in blond, brown, cinnamon and near-black. A "black" bear can be cinnamon. A grizzly can look blond or almost black. Size is a trap too — a female grizzly and a male black bear in the Rockies can weigh about the same.
+
+Use shape, face and claws, the way Parks Canada wildlife staff do:
+
+**Grizzly (Ursus arctos):** prominent shoulder hump; rump lower than the shoulders; large round head with a dished / concave face profile; short, round ears set apart; long curved claws (about 5–10 cm) that often leave marks well ahead of the toes in tracks. Average Rockies weights Parks Canada lists: males roughly 150–300 kg, females 80–150 kg.
+
+**Black bear (Ursus americanus):** no big shoulder hump; rump higher than the shoulders; smaller head with a straighter snout-to-forehead line; longer, pointier ears; short claws (about 3–4 cm) that are excellent for climbing. Chest blazes (white patches) are common. Rockies averages: males about 80–150 kg, females 45–100 kg.
+
+You will not always get a perfect side view. Do not edge closer for one. ID from a safe distance, then act on behaviour.
+
+![Fresh bear tracks pressed into mud on a misty spruce trail with distant peaks](#photo: )
+
+## Avoid the meeting: noise, groups, signs and hours
+
+Parks Canada's first rule is the boring one that saves the most people: avoid the encounter.
+
+**Make noise that means something.** Call out, clap, sing or talk — especially near streams, dense brush, berry patches, on windy days, and anywhere you cannot see ahead. Parks Canada and Alberta Parks both say bear bells are not enough. Bears can be so locked on food they miss quiet humans.
+
+**Hike tight, hike daylight.** Parks Canada recommends a tight group of four or more. Never let kids wander. Travel marked trails in daylight; bears are often more active at dawn and dusk.
+
+**Read the ground.** Fresh tracks, diggings, torn logs, flipped rocks, scat, and especially a carcass mean leave — immediately — and report a dead animal to Parks Canada or the local provincial line. Ravens and magpies hanging around can also mean a carcass.
+
+**Headphones off.** Banff, Jasper and Alberta Parks all say it: tune in; do not recreate with earbuds in.
+
+**Stay 100 m from bears** when you can (Parks Canada frames that as about ten bus lengths). Never approach. Never feed. Roadside bears need space to put on fat for winter — consider not stopping at all.
+
+## Bear spray: the last-resort tool that still belongs on your belt
+
+Carry spray. Know it. Do not romanticize it.
+
+Parks Canada describes bear spray as a capsaicin deterrent that throws a cone-shaped cloud roughly 10 m at over 100 km/h. It stings eyes and skin and makes breathing miserable. It is non-lethal. Alberta.ca and WildSafeBC push the same logistics Parks Canada does:
+
+- Buy spray labelled for animals / bear repellent. In Canada the package cannot exceed 500 ml. Parks Canada recommends about **225 ml** with **0.75%–1%** capsaicin.
+- **Check the expiry date.** Propellant weakens. Expired cans are trail jewellery.
+- **Carry it where your dominant hand can grab it in under two seconds** — hip or chest holster. In a pack is a no. On a bike, Parks Canada suggests the water-bottle cage; Alberta.ca prefers a chest holster or jersey pocket so you still have it if you leave the bike.
+- Remove the transport tie-wrap before you hike. Practice the safety clip at home with an inert trainer if you can.
+- En route: safety on, trunk or sealed container, away from heat and punctures. **Not allowed on commercial airlines**, even checked.
+- **Do not pre-spray tents, gear or yourself.** Residual scent can attract bears.
+
+**When and how:** last resort after you try to create space. Parks Canada wants the bear close — less than about a bus length — and Banff officer Dan Rafla, on the Parks Canada spray page, puts effective range around **five metres**. Safety off, build a wall of spray toward the face, short one- to two-second bursts, respect the wind, then leave. WildSafeBC's S.P.R.A.Y. cue helps under stress: Stop, Prepare, Remove safety, build A wall, Yield.
+
+Wind, rain, cold and expiry all cut effectiveness. Avoidance still beats heroics.
+
+![Orange bear spray canister in a hip holster on mossy forest ground](#photo: )
+
+## If you see a bear: aware, unaware, bluff charge
+
+Stop. Stay calm. Get spray ready. **Do not run.** Running can trigger a chase, and you will not win.
+
+**Unaware of you:** leave quietly without getting its attention.
+
+**Aware of you:** speak calmly and firmly so it knows you are human. Back away slowly. Appear big; pick up small kids; stay grouped. Do not drop your pack — it can protect you. If a bear stands and sniffs the air, Parks Canada says it is usually trying to identify you, not starting a fight. Bears may **bluff charge** — come hard, then veer or stop. Hold your nerve. Screaming and sudden moves can make things worse.
+
+If you must continue past, give a wide detour, leave the trail, or wait at a safe distance until it moves on.
+
+## Defensive vs non-defensive: why the script changes
+
+Parks Canada splits approaching bears into two stories. Get the story wrong and the response is wrong.
+
+**Defensive** (most common bad encounter): the bear is surprised, protecting cubs, or guarding food. It looks stressed — woofing, growling, jaw-popping, ears back. Your job is to look non-threatening: calm voice, no hard eye contact staring contest, slowly increase distance when it pauses. If it keeps coming, stand your ground, keep talking, use spray. **If it makes contact in a defensive attack, play dead** (details below).
+
+**Non-defensive** (curious, food-conditioned, dominance-testing, or — rarely — predatory): head and ears up, intent on you. Speak firmly, get out of its path, stand your ground if followed, shout, look big, intimidate, use spray if it closes. This is not the "look small and apologetic" script.
+
+Alberta Parks echoes the same split and notes some sprays list effective distances up to about 9 m depending on brand and wind — always read your can.
+
+![Alpine berry bushes in a mountain valley at dusk under Rockies peaks](#photo: )
+
+## If contact happens
+
+Most encounters never get here. If they do, Parks Canada’s mountain-parks guidance:
+
+**Defensive attack (most common):** use spray. If the bear makes contact, **play dead**. Lie on your stomach, legs apart, hands crossed behind your neck to protect face and neck and make it harder to flip you. Stay still until you are sure it has left. Defensive assaults are often under about two minutes. If the attack continues, it may have shifted — **fight back**.
+
+**Predatory attack (very rare):** stalking on a trail, or an attack at night. Do **not** play dead. Try to reach a building, vehicle or climb a tree if you can. Otherwise spray and **fight** — shout, hit with rocks or sticks, make it clear you are not easy prey.
+
+There is no perfect flowchart when adrenaline is loud. That is why Parks Canada keeps hammering avoidance.
+
+## Food, garbage and the Bare Campsite rules
+
+A fed bear is often a dead bear. Habituation starts with one unattended cooler.
+
+In mountain national parks, Parks Canada’s **Bare Campsite** program means food and scented items go in a hard-sided vehicle, trailer/RV, or campground food locker whenever they are not in use — including empty coolers, dishes, BBQs, pet food, toiletries and garbage. Tents, soft-sided shelters, open truck beds and dining shelters do not count as storage.
+
+Backcountry: cook and store food away from the tent (Parks Canada: at least 50 m downwind for cooking/eating/storage in random-camping guidance; tent at least 50 m from trail/brush/berries and 70 m from water). Use designated lockers, cables or poles where provided. **IGBC-approved bear-resistant food containers are mandatory April 1–November 15 in Banff, Yoho, Kootenay and Jasper.** Hang when you can. Pack garbage out — do not burn or bury it, and do not dump it in outhouses.
+
+Front-country tip that still fails people weekly: when you leave to hike, the cooler goes in the vehicle or locker. "We'll only be gone an hour" is how picnic-table bears get made.
+
+![Backcountry tent in a mountain valley at blue hour with food storage set apart](#photo: )
+
+## Dogs, bikes and trail runners
+
+**Dogs:** Parks Canada wants them leashed and under physical control, and recommends leaving dogs home for backcountry trips. Dogs can provoke wildlife; an off-leash dog can also sprint back to you with a bear behind it. Alberta.ca makes the same point. National parks require leashes — Banff is explicit.
+
+**Mountain bikes and trail running:** Parks Canada calls these higher-risk in bear country because speed and quietness create surprise encounters. Slow through brush and blind corners, make noise, travel in groups, watch ahead, no earbuds. Jasper’s bike page repeats it: yell on approaches, especially in dense vegetation, near streams, on windy days and around corners; bells alone are not enough. Alberta.ca adds: avoid thick-bush trails with tight corners in peak bear seasons (early spring after den emergence, mid-August berry season, late fall hyperphagia), and keep spray where you can reach it even if you ditch the bike.
+
+![Misty forest trail bending into a blind corner through dense spruce](#photo: )
+
+## Alberta, BC and farther north: same manners, local phone trees
+
+The etiquette travels. The dispatch numbers change.
+
+- **Banff / mountain national parks:** carry spray year-round in many areas; report aggressive wildlife. Banff Dispatch listed on Parks Canada spray materials: **403-762-1470**. Jasper Dispatch for wildlife: **780-852-6155**. Keep 100 m from bears; 30 m from elk/deer/moose.
+- **Kananaskis / Alberta Parks:** report sightings in Kananaskis Country to Kananaskis Emergency Services **403-591-7755**; elsewhere in Alberta, **310-LAND (5263)**.
+- **BC:** WildSafeBC is the provincial education hub for spray practice and species pages; check BC Parks advisories for closures before provincial park trips.
+- **Yukon and the far north:** same calm / no-run / spray / food discipline — with longer gaps between help. File a trip plan, carry redundancy (inReach-class communicator), and treat every berry patch and salmon river like a dining room you were not invited into.
+
+![Vast northern river valley and snow peaks under dramatic autumn sky](#photo: )
+
+## The honest part
+
+Bear country manners are not about becoming a wildlife Whisperer. They are about not being the surprise, not being the buffet, and not turning a defensive animal into a management problem. Spray, noise, group size and clean camps are tools. Ego is not.
+
+Your heart will still try to leave your chest the first time a dark shape lifts its head in the willows. Stay, breathe, talk, back away, spray if you must, leave when you can — and report what you saw so the next group is not guessing.
+
+## How to play it
+
+Build the habit before the trailhead: fresh spray on the belt, trip plan left with a human, closures checked, headphones in the glovebox. Pair Rockies days with our [best hikes in Alberta and BC](/journal/best-hikes-alberta-bc/), keep packing honest with the [lightweight hike-packing kit](/journal/lightweight-hike-packing-kit/), and remember food discipline is half of [first Canadians survival skills](/journal/first-canadians-survival-skills/) updated for coolers and IGBC cans.
+
+If you want a simple lid for the long approach walk — the classic Richardson 112 trucker in loden with a structured front, mesh back and EVOLVE embroidered up front — the [Backcountry Trucker](/shop/backcountry-trucker/) is the cap you reach for first. Some things should never change. Get outside.`,
+  },
+  {
     slug: "best-places-to-stay-western-canada-views",
     title: "The 10 Best Places to Stay in Western Canada With a Breathtaking View From Your Room",
     dek: "From a helicopter-only Rockies lodge to glass chalets under the Yukon aurora, here are ten Western Canada stays where the view is the room, with prices and how to get there.",
@@ -1158,6 +1306,13 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "bear-country-manners-grizzly-black-bear-canada": [
+    { q: "Should I run from a bear?", a: "No. Parks Canada says never run — it can trigger a chase, and you will not outrun a bear. Stop, stay calm, get spray ready, and back away slowly when it is safe." },
+    { q: "Does bear spray work, and where should I carry it?", a: "Used properly at close range, Parks Canada and field studies summarized by educators like WildSafeBC treat spray as highly effective. Carry it in a hip or chest holster you can draw in under two seconds — not in your pack. Check the expiry date and watch the wind." },
+    { q: "What is the difference between a defensive and a predatory bear attack?", a: "Defensive attacks are the common type: surprise, cubs or food. Play dead if contact happens after using spray. Predatory attacks are rare (stalking or night attacks): do not play dead — fight back and use spray. Parks Canada’s mountain-parks pages spell out both." },
+    { q: "Can I tell a grizzly from a black bear by colour?", a: "Not reliably. Parks Canada says both species vary from blond to nearly black. Use the shoulder hump, face profile, ear shape and claw length instead — from a safe distance." },
+    { q: "Are bear bells enough in Banff or Jasper?", a: "No. Parks Canada and Alberta Parks say bells are not effective enough. Use your voice, clap or sing, especially in brush, by water, and on windy days." }
+  ],
   "best-places-to-stay-western-canada-views": [
     { q: "What is the best place to stay in Western Canada for a view?", a: "The best place to stay in Western Canada for a view depends on the view you want. For mountains, choose Mount Assiniboine Lodge or a Lakeshore Cabin at Lake O'Hara Lodge. For the ocean, choose the Wickaninnish Inn in Tofino. For the northern lights, choose an Aurora Glass Chalet at Northern Lights Resort & Spa in the Yukon or Blachford Lake Lodge in the NWT." },
     { q: "Which Western Canada stays with a view can you drive to?", a: "You can drive to Fairmont Chateau Lake Louise, Sparkling Hill Resort and the Wickaninnish Inn. Registered Moraine Lake Lodge guests can drive up the otherwise closed Moraine Lake Road. Northern Lights Resort includes transfers from Whitehorse." },

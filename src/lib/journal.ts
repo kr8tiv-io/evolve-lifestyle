@@ -83,6 +83,7 @@ export function getArticle(slug: string): Article | undefined {
 // Publish / last-refresh dates — feed sitemap <lastmod> and Article JSON-LD
 // (datePublished / dateModified). New 2026-06 wave dated to its publish day.
 const PUBLISHED: Record<string, string> = {
+  "bear-country-manners-grizzly-black-bear-canada": "2026-11-05T23:00:00-06:00",
   "best-ski-resorts-alberta": "2026-06-21",
   "best-hikes-alberta-bc": "2026-06-21",
   "boutique-cabins-canada": "2026-06-21",

@@ -10,6 +10,13 @@ export interface ArticleSeo {
 }
 
 export const JOURNAL_SEO: Record<string, ArticleSeo> = {
+  "bear-country-manners-grizzly-black-bear-canada": {
+    "seoTitle": "Bear Country Manners: Grizzly & Black Bear Safety",
+    "metaDescription": "What to do if you meet a grizzly or black bear in Canada: ID tips, bear spray, bluff charges, food caches, dogs and bikes — Parks Canada–sourced for Alberta & BC trails.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 2108
+  },
   "best-hikes-alberta-bc": {
     "seoTitle": "Best Hikes in Alberta and BC: 10 Trails Worth It",
     "metaDescription": "The best hikes in Alberta and BC, with real distances, elevation gain and permit rules for standout day hikes and bigger summer trips.",

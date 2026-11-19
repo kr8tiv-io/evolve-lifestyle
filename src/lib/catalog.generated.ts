@@ -80,7 +80,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       }
     ],
     "brand": "Lane Seven LS15000CVC",
-    "badge": "Sasquatch Edition"
+    "badge": "Banff Edition"
   },
   {
     "slug": "believer-heavyweight-tee",
