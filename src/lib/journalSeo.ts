@@ -10,6 +10,13 @@ export interface ArticleSeo {
 }
 
 export const JOURNAL_SEO: Record<string, ArticleSeo> = {
+  "best-places-western-canada-winter": {
+    "seoTitle": "10 Best Places to Visit in Western Canada in Winter",
+    "metaDescription": "The best places to visit in Western Canada in winter: Lake Louise, Abraham Lake's ice bubbles, frozen canyons, the Icefields Parkway, Tofino storms and more.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 3832
+  },
   "bear-country-manners-grizzly-black-bear-canada": {
     "seoTitle": "Bear Country Manners: Grizzly & Black Bear Safety",
     "metaDescription": "What to do if you meet a grizzly or black bear in Canada: ID tips, bear spray, bluff charges, food caches, dogs and bikes — Parks Canada–sourced for Alberta & BC trails.",

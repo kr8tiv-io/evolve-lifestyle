@@ -5,6 +5,157 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "best-places-western-canada-winter",
+    title: "First Snow, Best Views: 10 Places in Western Canada That Get Better When the Snow Falls",
+    dek: "Frozen bubbles, waterfalls turned to ice, a glacier lake you can skate on and Pacific storms. Ten places in Alberta and BC that save their best for winter.",
+    category: "Vistas",
+    readMinutes: 14,
+    hero: "/images/journal/best-places-western-canada-winter/hero-clean-1600x840.webp",
+    tone: ["#0b1a2a", "#4ade80"],
+    inlineImages: ["/images/journal/best-places-western-canada-winter/louise-1600x900.webp", "/images/journal/best-places-western-canada-winter/johnston-1600x900.webp", "/images/journal/best-places-western-canada-winter/abraham-1600x900.webp", "/images/journal/best-places-western-canada-winter/parkway-1600x900.webp", "/images/journal/best-places-western-canada-winter/emerald-1600x900.webp", "/images/journal/best-places-western-canada-winter/jasper-1600x900.webp", "/images/journal/best-places-western-canada-winter/robson-1600x900.webp", "/images/journal/best-places-western-canada-winter/helmcken-1600x900.webp", "/images/journal/best-places-western-canada-winter/tofino-1600x900.webp", "/images/journal/best-places-western-canada-winter/waterton-1600x900.webp"],
+    hideCaptions: true,
+    seoTitle: "10 Best Places to Visit in Western Canada in Winter",
+    metaDescription: "The best places to visit in Western Canada in winter: Lake Louise, Abraham Lake's ice bubbles, frozen canyons, the Icefields Parkway, Tofino storms and more.",
+    ogImage: { url: "/images/journal/best-places-western-canada-winter/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A lone hiker in a dark hoodie and toque stands on a snowy ridge above a frozen mountain lake as first light turns the Rocky Mountain peaks pink" },
+    body: `Most people treat the first real snowfall like a door closing. Patio's done, hikes are done, see you in May. Those people are missing the best show of the year.
+
+Some places in Western Canada are fine in summer and unreal in winter. Waterfalls stop mid-fall and hang there as blue ice. A lake in the foothills locks thousands of white bubbles inside glass. The crowds at Lake Louise thin out, the lake turns into a skating rink, and the glacier at the far end looks close enough to touch. The best places to visit in Western Canada in winter aren't the ones you'd guess from a postcard.
+
+Here are our ten, with when to go, how to get there and what to wear. We checked closures, road rules and safety notes against Parks Canada, BC Parks, Alberta Health Services and local operators in November 2026. Two famous names are closed or limited this season, and we'll say which. Check again before you go.
+
+## 1. Lake Louise, Banff National Park, AB
+
+In July you're shoulder to shoulder with a tour bus for a photo of a turquoise lake. In January the lake is white, the glacier glows pink at sunrise, and you can skate across the same water. Good trade.
+
+Skating usually starts around mid-December, once the ice is thick enough for the daily snow clearing, and runs into spring. It's free to skate; you just need a national park pass. The Fairmont Chateau Lake Louise typically builds an ice castle beside the rink, and the lake is lit for evening skating. If you don't skate, walk the lakeshore trail. Parks Canada lists it at 2.3 km one way. Turn around at the end of the lake, where you can see frozen Louise Falls: past that point is avalanche terrain, and it's for people with training and gear.
+
+Ice Magic, the ice sculpture event, runs February 3 to 7, 2027. It changed this year. There are no general admission tickets: you get in by staying at a participating Lake Louise hotel (or by being a local resident on two set days), and everyone rides a shuttle, because there's no parking at the site.
+
+**When:** mid-December to March for skating and snow-covered ice. November is scenery only; the lake may still be open water. **Getting there:** less than an hour west of Banff on Highway 1, then up Lake Louise Drive. Paid lakeshore parking only runs during the summer shuttle season (May 15 to October 12 in 2026), so winter parking is free. The lots still fill on weekends, so go early. **What to wear:** skating is cold work for your ears. A snug toque like our [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/), a dark-grey ribbed cuff beanie that holds heat without the itch, plus a warm jacket and mitts you can take off to tie laces. [Official info](https://parks.canada.ca/pn-np/ab/banff/activ/raquette-snowshoeing/lakelouise).
+
+![Frozen, snow-covered Lake Louise with a cleared skating oval and tiny skaters, Victoria Glacier and snowy peaks at the far end of the valley under light snowfall](#photo: Frozen, snow-covered Lake Louise with a cleared skating oval and tiny skaters, Victoria Glacier and snowy peaks at the far end of the valley under light snowfall)
+
+## 2. Johnston Canyon Icewalk, Banff National Park, AB
+
+This is the walk that ruins every other winter walk. Steel catwalks bolted to the canyon walls carry you over Johnston Creek, which is still moving under a skin of ice, while the waterfalls freeze in place. The Upper Falls, about 30 m tall, turns into a wall of blue columns that look poured rather than grown.
+
+Parks Canada lists the Lower Falls at 1.2 km one way with about 50 m of climbing, and the Upper Falls at 2.5 km one way with about 120 m. It's easy walking on paper. On ice, it's a different sport. Parks Canada calls the trail "usually very icy" and strongly recommends ice cleats. You can buy them at the Banff Visitor Centre at 224 Banff Avenue and at most outdoor shops in town. Every winter there's a guy in running shoes sliding down the stairs on both hands. Don't be that guy.
+
+**Heads up for this season:** Parks Canada closed the Johnston Canyon trail, the day-use area, the washrooms and the main P1 parking lot on October 13, 2026 for rock-slope work. The closure order ends December 11, 2026. Check the Banff bulletins before you drive out. During the closure, the Upper Falls and the Ink Pots can still be reached the long way from the Moose Meadows trailhead, which has limited parking.
+
+**When:** from mid-December, once the trail reopens, through March. Weekday mornings are quietest; it's one of the busiest winter walks in the park. **Getting there:** the Bow Valley Parkway (Highway 1A) between Banff and Lake Louise. A national park pass is required. **What to wear:** cleats first, then layers. You'll warm up on the climb and cool off fast at the falls, so a zip layer you can open and close helps. Our [Hearth Fleece Zip](/shop/hearth-fleece-zip/) is a midweight zip hood with a brushed fleece inside, which is exactly the job. [Official info](https://www.parks.canada.ca/home/pn-np/ab/banff/activ/marchehiver-winterwalking).
+
+![The Upper Falls of Johnston Canyon frozen into tall blue and white ice columns against a curved limestone wall, with a snow-covered railed viewing platform](#photo: The Upper Falls of Johnston Canyon frozen into tall blue and white ice columns against a curved limestone wall, with a snow-covered railed viewing platform)
+
+## 3. Abraham Lake Ice Bubbles, David Thompson Country, AB
+
+You've seen the photo even if you didn't know where it was taken: white discs stacked under black-green ice, a mountain glowing behind. That's Abraham Lake, west of Nordegg on Highway 11, and on a good day it really looks like that.
+
+Abraham Lake is Alberta's largest reservoir, made in 1972 when the Bighorn Dam went in on the North Saskatchewan River. Plants and trees on the lake bottom rot and release methane. The gas rises, the lake freezes over it, and the next batch gets trapped under that, layer after layer, until you get stacks. Wind scours the snow off and leaves the ice clear enough to look straight down into.
+
+**Ice safety, for real:** this is wild ice on a reservoir, not a rink. Alberta Health Services says ice should be at least 15 cm thick before you walk on it, and that's for clear, solid ice. Local guides at Nordegg Adventures say to stay off the ice between the dam and Windy Point, where water levels swing, to avoid spots where creeks and the river come in, and to stay off snow-covered patches that can hide weak ice. Grey or slushy ice is a no. Check thickness as you go, not just once at the shore. Wear cleats, bring ice picks, don't go alone, and expect limited cell service. If you can't judge ice, hire a guide or stay on shore. The bubbles look nearly as good from the edge.
+
+**When:** Preacher's Point, at the south end where the river comes in, usually freezes first, often by mid-November, with fine bubbles and shallow ice. For the deep stacks over turquoise water, local guides say January 10 to 25 is usually a safe bet. Fresh snow hides everything, so watch the forecast. **Getting there:** Highway 11 west of Nordegg; it also links to the Icefields Parkway at Saskatchewan River Crossing. Fill up in Nordegg and carry a winter road kit. **What to wear:** Abraham Lake has a reputation for wind, and wind is what keeps the ice clear, so it's coming whether you like it or not. A shell that blocks it is the difference between twenty minutes and two hours. Our [Stormcheck Packable Anorak](/shop/stormcheck-packable-anorak/) folds into its own pocket and opens up into real wind cover over your warm layers. [Official info](https://nordeggadventures.ca/guides/winter/abraham-lake-ice-bubbles/).
+
+![Stacks of white frozen methane bubbles suspended in clear dark turquoise ice on Abraham Lake, with a limestone mountain lit gold at sunrise behind](#photo: Stacks of white frozen methane bubbles suspended in clear dark turquoise ice on Abraham Lake, with a limestone mountain lit gold at sunrise behind)
+
+## 4. The Icefields Parkway, Banff and Jasper National Parks, AB
+
+The Icefields Parkway is 232 km of road between Lake Louise and Jasper, and it's on every list of the best drives on Earth for good reason. In summer you share it with a few thousand rental RVs. In winter you might go twenty minutes without another car, with mountain goats on the cliffs, frozen waterfalls on the rock faces and lakes gone white.
+
+Good stops, south to north: Bow Lake (34 km from Lake Louise), Peyto Lake (40 km), the Weeping Wall, which turns into a giant ice climbing wall in winter (106 km), and Athabasca Falls (32 km from Jasper). Parks Canada also flags a 20 km stretch that runs through winter caribou habitat, home to the Jasper herd of woodland caribou. Drive the speed limit there. Not every pullout is plowed, so if a lot isn't cleared, keep going rather than parking on the shoulder.
+
+**This road is serious in winter.** There are no services between Lake Louise and Jasper: no gas, no food, no hotels, and no cell coverage. Snow tires (snowflake or M+S symbol) or chains are mandatory from November 1 to March 31. The parkway isn't salted, crews plow from 7 a.m. to 3:30 p.m., and it closes for storms and avalanche control. Fill the tank, pack a kit (water, food, blankets, extra layers), tell someone your plan, drive it in daylight and check 511 Alberta before you leave. If you're not comfortable driving in winter, Parks Canada's advice is simple: don't drive it in winter.
+
+**When:** clear days from December to March. Leave early: daylight is short and the plows stop mid-afternoon. **Need to know:** a national park pass is required to drive the parkway. For the full road trip version, with fuel gaps and all, see [The Long Haul: Canada's greatest road trips](/journal/the-long-haul-canada-road-trips/). **What to wear:** dress for the car and the pullout, then bring coffee. Our [Great White North Tumbler](/shop/great-white-north-tumbler/) is a 20oz insulated stainless tumbler that keeps coffee hot to the trailhead. On a road with no cafe for 232 km, that matters. [Official info](https://parks.canada.ca/pn-np/ab/jasper/activ/experience/hiver-winter/pcghiver-ipwinter).
+
+![Frozen, snow-covered Peyto Lake in a long glacial valley between massive snowy peaks, seen from a viewpoint above frosted spruce trees](#photo: Frozen, snow-covered Peyto Lake in a long glacial valley between massive snowy peaks, seen from a viewpoint above frosted spruce trees)
+
+## 5. Emerald Lake, Yoho National Park, BC
+
+Yoho sits on the west side of the Continental Divide and gets a lot of powdery snow. At Emerald Lake it piles up on the cedars, the lake freezes white and the timber lodge on the shore glows at dusk. Snow globe, shaken just right.
+
+The Emerald Lakeshore loop is 5.2 km and takes two to three hours on snowshoes or skis. One rule matters: there's a large avalanche slide path on the left side of the lake. Early in the season, Parks Canada routes the trail along the shore from the public washroom (trail 3A). Once the lake is frozen solid enough to groom, the trail starts on the lake (3B) to stay clear of the slide path.
+
+A note on Takakkaw Falls, which is on a lot of Yoho wish lists: the Yoho Valley Road is closed to cars from mid-October to mid-June because of avalanche risk. There's a groomed winter trail on the lower road to the Upper Spiral Tunnel Viewpoint, but past the groomed section you need avalanche training and gear. For a winter visit, Emerald Lake is the move.
+
+**When:** Parks Canada says Yoho's best skiing and snowshoeing runs from late December to late March. **Getting there:** the Emerald Lake Road leaves Highway 1 just west of Field and is open year-round. The Yoho visitor centre's info desk is closed from mid-October to early May, but you can buy a park pass at the kiosk outside, and the washrooms stay open. **What to wear:** a 5 km loop on snowshoes is honest work, so wear a warm layer that can take a sweat and a wind. Our [Deepwoods Heavyweight Hoodie](/shop/deepwoods-heavyweight-hoodie/) is a 10oz heavyweight pullover, the anchor of our range, and it does well under a shell out here. [Official info](https://www.parks.canada.ca/pn-np/bc/yoho/activ/pistesdhiver-wintertrails).
+
+![A wide frozen lake blanketed in fresh snow below steep snowy peaks, with a snow-roofed timber lodge and footbridge on a forested point](#photo: A wide frozen lake blanketed in fresh snow below steep snowy peaks, with a snow-roofed timber lodge and footbridge on a forested point)
+
+## 6. Pleckaitis Canyon Icewalk, Jasper National Park, AB
+
+If you've been to Jasper in winter, you probably walked Maligne Canyon. Not this year. Parks Canada says Maligne Canyon stays closed for the 2026 season after the 2024 wildfire, and its August 2026 closure order bans winter access to the canyon too. The burned slopes above it carry a higher risk of debris flows and landslides, and the reopening work is still in early planning. There's no Maligne Canyon icewalk in winter 2026 to 2027.
+
+The good news: local guiding companies moved their icewalks to Pleckaitis Canyon in the Maligne Valley, in an area the fires didn't touch. You walk the frozen canyon floor between rock walls hung with ice curtains, and SunDog Tours says the route involves inclines, stairs and the odd slide on your backside. If you can climb a ladder, you're in.
+
+SunDog runs it from December 15, 2026 to March 31, 2027, with pickup in Jasper, and provides boots, ice cleats and helmets. It lists the tour at $79 plus tax for adults and $39 for kids 6 to 12 (the minimum age is 6). Jasper Hikes and Tours also runs a Pleckaitis icewalk.
+
+**When:** morning and afternoon departures through the season. Tours run down to about minus 25. **The tip:** stay for the night sky. Jasper is a huge dark sky preserve, and our guide to [where to see the northern lights in Alberta](/journal/northern-lights-alberta-western-canada/) covers the best spots near town. **What to wear:** SunDog asks for a warm sweater, a warm jacket, a hat, mitts and a neck warmer, and snow pants are mandatory below minus 16. Our [Summit Full-Zip](/shop/summit-full-zip/) is a heavyweight zip hoodie with a structured hood that sits well under a parka. [Official info](https://www.sundogtours.com/package/canyon-icewalk).
+
+![A small guided group in helmets walking on the frozen floor of a narrow limestone canyon lined with blue ice curtains and icicles](#photo: A small guided group in helmets walking on the frozen floor of a narrow limestone canyon lined with blue ice curtains and icicles)
+
+## 7. Mount Robson, Mount Robson Provincial Park, BC
+
+Mount Robson asks for about ten minutes and steals the rest of your drive. It's the highest peak in the Canadian Rockies at 3,954 m, and BC Parks says the park rises more than 3 km from the Fraser River valley to the summit.
+
+The view is from the park's western entrance on Highway 16, the Yellowhead, about 90 km west of Jasper. The summit often hides in cloud, so if it's showing, stop. The Welcome Centre is seasonal and closed in winter, so this is a pull over, look up and get back in the truck kind of stop. It pairs perfectly with a Jasper trip, or with the drive to Wells Gray below.
+
+**When:** any clear winter day. Light is best late morning to early afternoon, when the sun gets onto the face. **Getting there:** Highway 16 west from Jasper over Yellowhead Pass into BC. BC requires winter tires or chains on most highways from October 1 to April 30. Check DriveBC. **What to wear:** you won't be out long, so think quick-on layers: your puffy, a toque, gloves. The real gear here is a full tank and a camera. [Official info](https://bcparks.ca/mount-robson-park/).
+
+![Snow-covered Mount Robson towering over a snowy valley and frosted spruce forest beside the Yellowhead Highway, with a cloud cap over the summit](#photo: Snow-covered Mount Robson towering over a snowy valley and frosted spruce forest beside the Yellowhead Highway, with a cloud cap over the summit)
+
+## 8. Helmcken Falls, Wells Gray Park, BC
+
+This one is the sleeper. Helmcken Falls drops 141 m off a lava rim into a huge round bowl. Wells Gray tourism calls it the fourth-tallest waterfall in Canada. In winter, the spray freezes on everything it touches. An ice cone builds at the base and keeps growing through the season, and icicles the size of hydro poles hang off the canyon walls behind it.
+
+Better still, the road is maintained all winter right to the Helmcken Falls viewing platform, about 46 km up the park road from Clearwater on Highway 5 (Clearwater is about 125 km north of Kamloops). The road past Helmcken toward Clearwater Lake is closed in winter. On the way back, stop at Spahats Falls, only 11 km up the park road, which builds its own ice column. In heavy snow you may need snowshoes for the short walk from the lot.
+
+**When:** January to March for the biggest ice cone. Bonus: the crowds are basically gone. **Need to know:** no Parks Canada pass needed; Wells Gray is a BC provincial park. Services are limited in winter, so be self-sufficient and check DriveBC. **What to wear:** the platform is a cold spot to stand still with spray in the air. Start with a clean first layer like our [Coldfront Long-Sleeve](/shop/coldfront-long-sleeve/), stack warm layers and a shell over it, and keep a dry toque in your pocket. [Official info](https://wellsgray.ca/things-to-do/ski-snow-ice/winter-waterfalls/).
+
+![Helmcken Falls plunging into a round canyon bowl in winter, with a huge white ice cone at the base and giant icicles coating the dark rock walls](#photo: Helmcken Falls plunging into a round canyon bowl in winter, with a huge white ice cone at the base and giant icicles coating the dark rock walls)
+
+## 9. Tofino Storm Watching, Vancouver Island, BC
+
+Okay, it barely snows in Tofino. When the snow starts falling in the Rockies, the west coast of Vancouver Island gets storms instead, and they're worth the ferry. Swells roll in off the open Pacific and explode on the headlands. Then you sit by a fire with a drink and watch the next one come in.
+
+Parks Canada calls November through March the most dramatic storm season at Pacific Rim National Park Reserve. The park's rules are short and they matter: check the forecast, the swell and a tide table, and stay off the beaches and drift logs when the tide or swell is high. Those logs weigh tonnes and a wave can roll one onto you in a second. Watch from the designated safe spots: the Kwisitis Visitor Centre's observation deck at Wickaninnish Beach, the stretch south to the totem pole at Lismer Beach, and the Florencia Bay Lookout.
+
+**When:** November to March. The biggest storms are hard to predict more than a few days out, so a flexible weekend beats a fixed one. **Getting there:** ferry to Nanaimo, then Highway 4 west, about three hours to Tofino. Winter tires or chains are required on most BC highways from October 1. A Parks Canada pass is needed in the park reserve. For the rest of the island, see [Vancouver Island, end to end](/journal/vancouver-island-places/). **What to wear:** a real rain shell and waterproof boots, because it will rain sideways. Under it, our [Driftwood Hooded Long-Sleeve](/shop/driftwood-hooded-long-sleeve/) is a triblend layer that works on the beach and at the bar after. [Official info](https://parks.canada.ca/pn-np/bc/pacificrim/activ/tempetes-storms).
+
+![Huge grey Pacific waves exploding against a rocky headland near Tofino, with a long beach piled with bleached drift logs and dark rainforest under storm clouds](#photo: Huge grey Pacific waves exploding against a rocky headland near Tofino, with a long beach piled with bleached drift logs and dark rainforest under storm clouds)
+
+## 10. Waterton Lakes National Park, AB
+
+Waterton is where the prairie runs straight into the mountains, and in winter it goes quiet in a way Banff never does. Most hotels and shops close, the elk herds move through, bighorn sheep wander the townsite like they pay taxes there, and you can have a whole valley to yourself.
+
+From November to May, the 15 km Red Rock Parkway is closed to cars and open to walkers, skiers and fat bikes, all the way to Red Rock Canyon. The Akamina Parkway is plowed to Little Prairie, and from there Parks Canada sets ski tracks to Cameron Lake, about 5 km return. Cameron Falls is an easy walk right in the townsite.
+
+**Avalanche note:** Parks Canada says most trails in the park cross avalanche terrain, and the Bertha trailhead sits in an avalanche path. For low-risk outings it suggests the Belleview trail, the Wishbone trail to the Vimy junction, the Townsite Loop and the Prince of Wales hill area. Chinook winds often blow the valley clear of snow, so bring both cleats and patience.
+
+**When:** late October or November through April. Calm, sunny days between chinooks are gold. **Need to know:** the gas station and the grocery and convenience stores in Waterton close for winter. Arrive with a full tank and your own food. Heated washrooms are at the marina and the visitor centre during opening hours. A Parks Canada pass is required. **What to wear:** Waterton wind doesn't negotiate. Leave the ball cap in the truck and go with a toque, a wind shell and a heavy layer like our [Trapline Heavyweight Hoodie](/shop/trapline-heavyweight-hoodie/), an oversized heavyweight built for the coldest mornings. [Official info](https://parks.canada.ca/pn-np/ab/waterton/activ/experiences/hiver-winter).
+
+![Mule deer grazing in golden prairie grass and light snow beside wind-rippled Upper Waterton Lake, with snowy mountains and lenticular chinook clouds above](#photo: Mule deer grazing in golden prairie grass and light snow beside wind-rippled Upper Waterton Lake, with snowy mountains and lenticular chinook clouds above)
+
+## The honest part: winter writes the rules
+
+Winter doesn't care about your itinerary. This season alone, two of the most famous winter walks in the Rockies are affected: Maligne Canyon is closed all season and Johnston Canyon is closed until at least December 11. Roads close for avalanche control with no warning. The day you booked off for Abraham Lake will get four inches of fresh snow on the bubbles. Wild ice comes with no guarantee.
+
+So build slack in. Check the Parks Canada bulletins, 511 Alberta and DriveBC the morning you go, not the week before. Have a plan B within an hour of plan A. Pack your car like you might spend a night in it, because Parks Canada's winter packing list (ice cleats, headlamp, extra warm clothes, emergency blanket, even bear spray) exists for a reason. More on that last one in our [bear country guide](/journal/bear-country-manners-grizzly-black-bear-canada/). Then go anyway. A frozen waterfall on a blue-sky morning with nobody else around is the best thing Western Canada does.
+
+## How to play it
+
+**Long weekend from Calgary:** Lake Louise for a sunrise skate, Emerald Lake the same afternoon (about 40 minutes west), and Johnston Canyon on the way home once it reopens. Thaw out after at one of [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/).
+
+**Long weekend from Edmonton:** Jasper for the Pleckaitis icewalk and a night under dark skies, then Mount Robson the next morning. Drive the Icefields Parkway south on a clear day if the forecast is good, or save it.
+
+**The bubble trip:** Abraham Lake in mid-January, with a night in Nordegg. Watch the forecast for cold, clear, windy days after a freeze and no fresh snow.
+
+**The wild card:** Tofino in a storm or Helmcken Falls at peak ice. Neither is close to anything else on this list, and both are worth it. While you're dreaming, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list.
+
+And whatever you do, bring something hot. Our [Borealis Camp Mug](/shop/borealis-camp-mug/) lives at camp: coffee before the cold, cocoa after. Cold and free beats warm and bored.`,
+  },
+  {
     slug: "bear-country-manners-grizzly-black-bear-canada",
     title: "Bear Country Manners: What to Actually Do When You Meet a Grizzly",
     dek: "A Parks Canada–sourced field guide to black vs grizzly ID, bear spray that actually works, bluff charges, dogs, bikes, food caches, and what to do if contact happens in Alberta, BC and the North.",
@@ -719,7 +870,7 @@ Then one night it goes off overhead, the whole sky pulses pink and green, and yo
 
 ## Your northern lights game plan
 
-Sign up for AuroraWatch. When it fires, check NOAA's 30-minute map and the clouds, then go. On a weeknight near Edmonton, that's Elk Island or Miquelon. With a weekend, Lakeland in September or Jasper in October. For a real trip, Wood Buffalo in late winter. While you're out, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list, sleep somewhere warm at one of our [boutique cabins](/journal/boutique-cabins-canada/), or thaw out at [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/).
+Sign up for AuroraWatch. When it fires, check NOAA's 30-minute map and the clouds, then go. On a weeknight near Edmonton, that's Elk Island or Miquelon. With a weekend, Lakeland in September or Jasper in October. For a real trip, Wood Buffalo in late winter. While you're out, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list, sleep somewhere warm at one of our [boutique cabins](/journal/boutique-cabins-canada/), or thaw out at [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/). For daytime plans on the same trip, here are [10 places in Western Canada that get better when the snow falls](/journal/best-places-western-canada-winter/).
 
 And bring something hot. Coffee before the cold, cocoa after, in our [Borealis Camp Mug](/shop/borealis-camp-mug/) if you like. Cold and free beats warm and bored.`,
   },
@@ -1295,7 +1446,7 @@ On the tip of the Gaspe, a 475 m limestone monolith pierced by a natural arch si
 
 ## One more, for winter
 
-If you come back in the cold months, point the truck at Abraham Lake in Alberta, where methane bubbles freeze in stacked white discs under clear ice, one of the strangest and most beautiful sights in the country. It only works December to February, in thick clear ice, so treat it as a reason to return. Nordegg, the nearest town, is also one of the value regions in our [off-grid cabin guide](/journal/off-grid-cabin-canada/).
+If you come back in the cold months, point the truck at Abraham Lake in Alberta, where methane bubbles freeze in stacked white discs under clear ice, one of the strangest and most beautiful sights in the country. It only works December to February, in thick clear ice, so treat it as a reason to return. Nordegg, the nearest town, is also one of the value regions in our [off-grid cabin guide](/journal/off-grid-cabin-canada/). For the ice safety rules, the best dates and nine more winter-only sights, see our guide to [10 places in Western Canada that get better when the snow falls](/journal/best-places-western-canada-winter/).
 
 ## Go stand there
 
@@ -1306,6 +1457,14 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "best-places-western-canada-winter": [
+    { q: "What are the best places to visit in Western Canada in winter?", a: "Our top picks are Lake Louise for skating below a glacier, Johnston Canyon's icewalk, the frozen bubbles at Abraham Lake, the Icefields Parkway, Emerald Lake in Yoho, a guided icewalk in Jasper, Mount Robson, Helmcken Falls in Wells Gray, storm watching in Tofino and quiet winter days in Waterton. Check closures before you go." },
+    { q: "Is Lake Louise worth visiting in winter?", a: "Yes. The lake freezes and the skating area usually opens around mid-December. Skating is free with a national park pass, and lakeshore parking is free in winter. Ice Magic runs February 3 to 7, 2027, with access through participating hotels only." },
+    { q: "When is the best time to see the Abraham Lake ice bubbles?", a: "Preacher's Point often freezes by mid-November. For the deep bubble stacks, local guides say January 10 to 25 is usually a safe bet, on clear ice with no fresh snow. Stay off ice between the dam and Windy Point, and only walk on clear ice at least 15 cm thick." },
+    { q: "Is the Icefields Parkway open in winter?", a: "Yes, it's open year-round but can close for storms and avalanche control. In winter there's no gas, food or cell service for 232 km, and snow tires or chains are mandatory from November 1 to March 31. Check 511 Alberta before you leave." },
+    { q: "Is Maligne Canyon open in winter 2026 to 2027?", a: "No. Parks Canada keeps Maligne Canyon closed for the 2026 season after the 2024 wildfire, including winter access, so there are no Maligne Canyon icewalks this winter. Guided icewalks are running in nearby Pleckaitis Canyon instead." },
+    { q: "Is Johnston Canyon open in winter?", a: "Normally, yes, and its icewalk is one of the best in Banff. This season the trail, day-use area and main parking lot are closed for rock-slope work under an order that ends December 11, 2026. Check Parks Canada's Banff bulletins before you go, and bring ice cleats." },
+  ],
   "bear-country-manners-grizzly-black-bear-canada": [
     { q: "Should I run from a bear?", a: "No. Parks Canada says never run — it can trigger a chase, and you will not outrun a bear. Stop, stay calm, get spray ready, and back away slowly when it is safe." },
     { q: "Does bear spray work, and where should I carry it?", a: "Used properly at close range, Parks Canada and field studies summarized by educators like WildSafeBC treat spray as highly effective. Carry it in a hip or chest holster you can draw in under two seconds — not in your pack. Check the expiry date and watch the wind." },

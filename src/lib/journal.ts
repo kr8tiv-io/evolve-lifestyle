@@ -101,6 +101,7 @@ const PUBLISHED: Record<string, string> = {
   "northern-lights-alberta-western-canada": "2026-10-26T00:00:00-06:00",
   "the-long-haul-canada-road-trips": "2026-10-27T00:00:00-06:00",
   "best-places-to-stay-western-canada-views": "2026-10-31T12:00:00-06:00",
+  "best-places-western-canada-winter": "2026-11-19T23:00:00-06:00",
 };
 
 export function getArticleDate(slug: string): string {
@@ -122,7 +123,8 @@ const MODIFIED: Record<string, string> = {
   "best-nature-resorts-canada": "2026-10-31T12:00:00-06:00",
   "canadian-extreme-sports": "2026-10-31T12:00:00-06:00",
   "off-grid-cabin-canada": "2026-10-31T12:00:00-06:00",
-  "best-views-canada": "2026-10-31T12:00:00-06:00",
+  "best-views-canada": "2026-11-19T23:00:00-06:00",
+  "northern-lights-alberta-western-canada": "2026-11-19T23:00:00-06:00",
 };
 
 // 2026-10-31 SEO refresh touched every article (titles, descriptions, schema).
