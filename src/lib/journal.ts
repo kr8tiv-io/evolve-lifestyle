@@ -102,6 +102,7 @@ const PUBLISHED: Record<string, string> = {
   "the-long-haul-canada-road-trips": "2026-10-27T00:00:00-06:00",
   "best-places-to-stay-western-canada-views": "2026-10-31T12:00:00-06:00",
   "best-places-western-canada-winter": "2026-11-19T23:00:00-06:00",
+  "ice-fishing-alberta": "2026-11-22T18:00:00-06:00",
 };
 
 export function getArticleDate(slug: string): string {

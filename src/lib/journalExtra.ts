@@ -5,6 +5,209 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "ice-fishing-alberta",
+    title: "First Hole: A Beginner's Field Guide to Ice Fishing in Alberta",
+    dek: "Licence, ice, gear, and a short list of stocked trout ponds near Edmonton and Calgary. Everything you need to go from never drilled a hole to a good first day on the ice.",
+    category: "Snow",
+    readMinutes: 16,
+    hero: "/images/journal/ice-fishing-alberta/hero-clean-1600x840.webp",
+    tone: ["#0b1a2a", "#4ade80"],
+    inlineImages: ["/images/journal/ice-fishing-alberta/check-1600x900.webp", "/images/journal/ice-fishing-alberta/kit-1600x900.webp", "/images/journal/ice-fishing-alberta/pond-1600x900.webp", "/images/journal/ice-fishing-alberta/trout-1600x900.webp", "/images/journal/ice-fishing-alberta/cook-1600x900.webp", "/images/journal/ice-fishing-alberta/home-1600x900.webp"],
+    hideCaptions: true,
+    seoTitle: "Ice Fishing in Alberta: A Beginner's Field Guide",
+    metaDescription: "Ice fishing in Alberta for beginners: licence costs, safe ice thickness, the rules, stocked trout ponds near Edmonton and Calgary, gear and what to wear.",
+    ogImage: { url: "/images/journal/ice-fishing-alberta/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A lone angler in a dark hoodie and toque sits on a bucket beside a single drilled hole on a frozen Alberta lake at dawn, an ice auger standing in the snow" },
+    body: `Every winter, somebody you know disappears onto a frozen lake on a Saturday morning and comes back with a story, a sunburn on the one strip of face they forgot, and maybe a limit of trout. They make it sound easy. It mostly is. Ice fishing is one of the cheapest, friendliest ways to spend a winter day outside in Alberta. You sit on a bucket, you jig a little, you drink something hot, and the fish come to you.
+
+It's also the easiest way we know to get into real trouble in a hurry. Thin ice doesn't care that the guy on the next lake was out last weekend. A propane heater in a closed tent can make you sick without you noticing. And a fine for the wrong licence will cost you more than the gear.
+
+So this is the guide we wish someone had handed us before our first hole. It's in the order you need it: the licence, the ice, the kit, what to wear, where to go first, what you caught, and how to cook it. We checked the numbers against the 2026 Alberta Guide to Sportfishing Regulations, My Wild Alberta, the Lifesaving Society, the Canadian Red Cross, Health Canada and the province's 2026 fish stocking report in November 2026. Rules change by lake and by season, so check again the week you go.
+
+## Step one: the licence (it's cheaper than lunch)
+
+Alberta keeps this simple. Before you buy any fishing licence, you need a **Wildlife Identification Number (WiN)**. It's a one-time activation. The 2026 regulations list the fee at $12 plus GST, with $2 off when you do it online, so most people pay $10 plus GST at [AlbertaRELM](https://albertarelm.com). After that, your WiN doesn't expire.
+
+Then the licence itself. Fees below are from [My Wild Alberta](https://mywildalberta.ca/buy-licences/fishing-licenses-fees/default.aspx) and the 2026 regulations, before the 5% GST:
+
+| Who you are | Annual | 7-day | 1-day |
+| --- | --- | --- | --- |
+| Alberta resident, 16 to 64 | $30 | Not offered | Not offered |
+| Alberta resident, under 16 or 65 and older | No licence needed | No licence needed | No licence needed |
+| Canadian from outside Alberta, 16 and older | $62 | $43 | $27 |
+| Visitor from outside Canada, 16 and older | $87 | $57 | $29 |
+
+Canadian Armed Forces veterans who live in Alberta can get a sportfishing licence at no charge. Kids under 16 and Alberta residents 65 and older don't need a licence, but they still have to follow every rule in the regulations. You can buy online at AlbertaRELM or from more than 300 licence issuers around the province, which in practice means most tackle shops and a lot of hardware stores.
+
+**Want to try it first for free?** Alberta runs Family Fishing Weekends twice a year, when anyone can fish waters with an open season without buying a sportfishing licence. The next winter one is **February 13 to 15, 2027**, over the Family Day long weekend. The regulations still apply, a licence is still needed if you're using a walleye Special Harvest Licence, and free fishing doesn't cover the national parks. Details are on [My Wild Alberta's Family Fishing Weekends page](https://mywildalberta.ca/fishing/family-fishing-weekends/default.aspx).
+
+## Step two: the rules that catch beginners
+
+The full regulation guide is long, and most of it is lake-by-lake tables. You don't need to memorize it. You need to know a handful of province-wide rules, and you need to look up the one lake you're going to. Here are the ones that matter most on the ice, straight from the [2026 general regulations](https://www.albertaregulations.ca/fishingregs/general-regs.html):
+
+- **Two lines, maximum,** when you're fishing through ice. One line in open water.
+- **Stay within 30 m of any line you have in the water.** No drilling six holes and wandering off to visit.
+- **No more than three hooks on a line,** and no hook with more than three points.
+- **No live fish as bait,** and no frogs or salamanders. Dead bait and other legal baits are fine where bait is allowed.
+- **No chumming.** Bait has to be on a hook, not scattered down the hole.
+- **Don't dump leftover bait within 50 m of the water** unless it goes in a regularly serviced garbage bin.
+- **Never move a live fish** to a different lake or pond. It's illegal and it's how lakes get wrecked.
+
+Then check your specific lake. The free [Alberta Sportfishing Regulations app](https://geospatial.alberta.ca/app/afr) and the printed guide list each waterbody's season, bait rules and limits. Some lakes are catch-and-release only for certain species. Some close for part of the year. On some walleye lakes, you can only keep a walleye with a Special Harvest Licence tag for that lake. If you only remember one habit, make it this: look up the lake before you load the truck.
+
+**The good news for beginners:** most stocked trout ponds in Alberta are managed as "put-and-take" fisheries. Under the provincial put-and-take regulations they're open all year, bait is allowed, and you can keep **5 trout of any size**, plus 3 northern pike and 15 yellow perch if those are present. That's why every lake in our starter list below is a stocked pond. Fewer special rules, more fish, and usually a parking lot.
+
+## Step three: the ice, or you stay in the truck
+
+Here's the part we're not going to be funny about. There's no such thing as safe ice. There's only ice that has been measured, in more than one place, by someone who knows what the numbers mean.
+
+The [Lifesaving Society's](https://www.lifesaving.org/public-education/water-smart-tips2/ice-safety-tips) recommended minimums for new, clear, hard ice are the ones most Albertans use:
+
+| Clear, hard ice | Good for |
+| --- | --- |
+| 7 cm (3 in.) or less | Stay off |
+| 10 cm (4 in.) | Walking, ice fishing, cross-country skiing |
+| 13 to 18 cm (5 to 7 in.) | One snowmobile or ATV |
+| 20 to 30 cm (8 to 12 in.) | One car, or a group of people |
+| 30 to 38 cm (12 to 15 in.) | One medium truck (pickup or van) |
+
+The province's own line in the 2026 regulations is similar: never walk on ice less than 10 cm thick and don't drive on ice less than 30 cm thick. The Canadian Red Cross is more cautious, with its [15-20-25 rule](https://www.redcross.ca/blog/2011/1/on-thin-ice): 15 cm for one person walking or skating, 20 cm for a group, and 25 cm for snowmobiles and ATVs. For a first season, we'd follow the Red Cross numbers. You lose nothing by waiting another week.
+
+![Two anglers test clear, cracked lake ice ahead of them with a steel ice chisel, one wearing an orange flotation vest and the other carrying a coiled throw rope](#photo: Two anglers test clear, cracked lake ice ahead of them with a steel ice chisel, one wearing an orange flotation vest and the other carrying a coiled throw rope)
+
+**Those numbers only count for clear, hard ice.** The Lifesaving Society says white ice has air or snow inside it and should be treated as suspect. Grey, slushy ice means water. Ice that thawed and refroze is weaker than it looks, and spring ice is rotten ice, even when it measures thick. Snow on top acts like a blanket and slows freezing, so the ice under a fresh dump can be thinner than the ice beside it. Moving water is the big one: inlets, outlets, springs, river mouths and anything near a current.
+
+**Aerated lakes have their own danger.** Many stocked lakes in Alberta run aerators all winter to keep the trout alive. Aerators create open water and thin ice, sometimes far from where they were last year. These lakes are posted with signs that say "DANGER: unpredictable thin ice and open water." Believe the sign. Stay outside fences, give the open water a wide berth, and don't fish near the aerator lines. Two of our starter lakes, Hasse and Winchell, are on the Alberta Conservation Association's [aerated lakes list](https://www.ab-conservation.com/programs/fish/aca-aerated-lakes/).
+
+**How to check it yourself:**
+
+- Go with a buddy. The Lifesaving Society says half of ice-related deaths happened when the person was alone.
+- Tell someone where you're going and when you'll be back.
+- Walk out slowly and strike the ice ahead of you with a spud bar (a long steel ice chisel). If it goes through in one or two hits, turn around on your own tracks.
+- Drill test holes as you go and measure the clear ice with a tape. Do it again every few metres. Ice thickness can change in a few steps.
+- Wear ice picks around your neck, carry a throw rope, and consider a flotation suit, or a lifejacket over your winter layers.
+- Stay off the ice at night and stay sober. The Lifesaving Society links alcohol to about 1 in 3 ice-related deaths.
+
+**If you go through.** The [Lifesaving Society's](https://www.lifesavingsociety.com/water-safety/cold-water-and-ice) advice is short, and worth reading twice. Don't panic. Your clothes trap air and will help keep you up at first. Turn back toward the way you came, because that ice held you. Get your arms onto the solid edge, kick your legs to get horizontal, and push yourself out on your stomach like a seal, using your picks. Once you're out, don't stand up. Roll or crawl away until you're back on solid ice or land. Remember **1-10-1**: about 1 minute to get your breathing under control, about 10 minutes of useful movement to get yourself out, and up to 1 hour before hypothermia makes you lose consciousness. Then get warm and get help.
+
+## Step four: the small kit that actually matters
+
+You can spend a fortune on ice fishing. Please don't, yet. A first day needs much less than the catalogue suggests.
+
+![A beginner ice fishing kit laid out on snow: a short rod and reel, a skimmer, a box of small jigs, bait, pliers, a measuring board, a throw rope, ice picks, a headlamp, a thermos, wool mitts and a dark hoodie](#photo: A beginner ice fishing kit laid out on snow: a short rod and reel, a skimmer, a box of small jigs, bait, pliers, a measuring board, a throw rope, ice picks, a headlamp, a thermos, wool mitts and a dark hoodie)
+
+**The must-haves:**
+
+- **An auger.** A hand auger works fine for a few holes in early-season ice. Gas or electric is faster but costs more, and plenty of shops rent them. A 6 to 8 inch auger is big enough for trout and perch.
+- **A skimmer or scoop** to clear slush and skim the skin of ice that forms on the hole while you fish. Your bare hand is not a skimmer.
+- **A short ice rod** with light line, a few small jigs and spoons, and bait if the lake allows it.
+- **Pliers and a measuring board or tape,** so you can unhook fast and check size limits where they apply.
+- **Something to sit on.** A five-gallon bucket carries the gear in and seats you once you're there.
+- **The safety kit:** ice picks, a spud bar, a throw rope, a headlamp, a charged phone in an inside pocket, and the small personal kit the Lifesaving Society suggests: a lighter, waterproof matches, a pocketknife, a compass and a whistle.
+
+**Nice to have, later:** a pop-up shelter, a sled to haul it all, and a fish finder or underwater camera. A shelter makes a windy day much nicer. Just know the rules: under the [My Wild Alberta ice fishing rules](https://mywildalberta.ca/fishing/ice-fishing.aspx), a shelter left on the ice longer than 24 hours must show your WiN, or your name and phone number, in letters at least 2.5 cm tall, and it must come off the ice by **March 15** in the Parkland-Prairie PP1 area and by **March 31** everywhere else, or sooner if an officer says so.
+
+**Heat and the silent part.** A heater in a shelter is where nice days go wrong. Health Canada says never to use propane, kerosene or oil heaters in enclosed spaces unless they're specifically made for indoor use, and never to run outdoor fuel-burning equipment inside a tent. Carbon monoxide has no smell, taste or colour, and only an alarm can detect it. Use a heater rated for indoor use, keep the vents open and clear of snow, and hang a battery CO alarm in the shelter. If anyone gets a headache, feels dizzy or sick, or gets oddly sleepy, everybody out into fresh air right away. Don't stay in to figure out why.
+
+## What to wear: a layering problem, not a shopping list
+
+Ice fishing is a strange kind of cold. You work hard for twenty minutes drilling holes and hauling the sled, then you sit nearly still for hours on a surface that's frozen and wide open to the wind. Dress for both halves of the day.
+
+Think in three layers, plus your ends:
+
+- **Next to skin:** something that moves sweat away and doesn't stay wet. Skip cotton against your skin on a cold day. Once it's damp, it stays cold.
+- **The warm layer:** this is the one you adjust all day. A heavy hoodie or fleece is perfect because you can push the hood back while drilling and pull it up when the wind comes. Our [Deepwoods Heavyweight Hoodie](/shop/deepwoods-heavyweight-hoodie/) is a 10oz pullover built for exactly that job. If you like a zip so you can dump heat without taking anything off, the [Hearth Fleece Zip](/shop/hearth-fleece-zip/) has a brushed fleece inside.
+- **The outer layer:** windproof and roomy enough to go over everything, with insulated pants or bibs. On a big lake, the wind is the thing that ends your day early.
+- **Head, hands and feet:** a snug toque under a hood, like our [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/), mitts for sitting and thin gloves for tying knots, and insulated, waterproof boots with room for a warm sock. Water splashes up out of every hole you drill, and wet feet will send you home faster than no fish.
+
+Bring a spare pair of gloves and a spare toque in a dry bag. You'll get one set wet. Everyone does. For more on how to think about weight and layers on longer outings, our [pack light, eat smart guide](/journal/lightweight-hike-packing-kit/) covers the general idea.
+
+## Where to drill your first hole
+
+Big-name lakes like Pigeon and Wabamun get a lot of attention, and they're great once you know what you're doing. For a first time, we'd point you at a stocked trout pond instead. They're smaller, close to town, usually have a parking lot, are open all year under the put-and-take rules, and they get fresh fish. Alberta's recreational stocking program puts roughly 2 million hatchery trout into more than 240 lakes each year, according to the province's [2026 fish stocking report](https://open.alberta.ca/publications/fish-stocking-list) (updated October 16, 2026).
+
+Every lake below is on the 2026 regulations' put-and-take list, and the stocking numbers are from that report. None of this means the ice is safe on the day you go. Check the ice, the signs and the current regulation tables yourself.
+
+![A small snow-covered trout pond ringed by aspen and spruce in late afternoon light, with two pop-up ice fishing shelters and a pair of anglers far apart on the ice](#photo: A small snow-covered trout pond ringed by aspen and spruce in late afternoon light, with two pop-up ice fishing shelters and a pair of anglers far apart on the ice)
+
+### Near Edmonton
+
+- **Hermitage Park Pond, Edmonton.** The easy button. It's in Hermitage Park in northeast Edmonton, by the North Saskatchewan River. The [City of Edmonton](https://www.edmonton.ca/activities_parks_recreation/parks_rivervalley/fishing) lists it as free for public use, with an Alberta licence required for adults and a limit of 5 rainbow trout. Children under 16 must be supervised by an adult. In 2026 it got about 4,700 rainbow trout and 300 brown trout between May and June.
+- **Hasse Lake, Parkland County.** A favourite west of Edmonton, inside Hasse Lake Provincial Park. It was stocked with 10,000 rainbows in May and another 5,000 in early October 2026, plus tiger trout both times, including 1,000 tigers averaging about 30 cm in October. It's aerated, so read the signs and stay well clear of the open water.
+- **Star Lake, Parkland County.** Hasse Lake's quieter neighbour. Over 8,000 rainbows, 1,000 brown trout and 1,000 tiger trout went in during May 2026, with more tiger trout added in October.
+- **Cardiff Park Pond, Sturgeon County.** North of the city, near Morinville. One of the more heavily stocked ponds in the Edmonton area this year: 11,500 rainbows in May and 5,000 more on October 2, 2026, plus brown and tiger trout.
+
+### Near Calgary
+
+- **Winchell Lake, northwest of Cochrane.** Stocked with 4,000 rainbows in May and 2,000 more in October 2026. It's aerated and the Alberta Conservation Association lists it as open for winter angling, so the same warning applies: respect the signs and the open water.
+- **Dewitt's Pond, west of Airdrie.** A small pond about 8 km west of Highway 2 on Highway 567, then south on Panorama Road, according to the [Alberta Discover Guide](https://www.albertadiscoverguide.com/site.cfm?grid=E3&number=90), with walk-in, day-use access. It got 1,000 rainbows and about 2,600 brown trout in April 2026. Small ponds can lose fish over a hard winter, so ask at a local tackle shop how it's been fishing.
+- **Crossfield Trout Pond, Crossfield.** North of Calgary, past Airdrie on Highway 2. A small community pond that got 1,400 rainbows in April 2026. Good for a short first outing with kids.
+
+Want a big-lake day after that? Go with someone who knows that lake, or book a guide. Bigger water means pressure ridges, vehicle traffic, cracks and more complicated rules, especially for walleye.
+
+## A simple plan for your first day
+
+**The night before.** Look up your lake in the regulations app. Check the latest stocking report and any lake notices. Buy your WiN and licence online and screenshot the confirmation. Check the forecast, especially the wind and the overnight low. Charge your phone and pack the sled.
+
+**Morning.** Leave someone your plan. Get there in daylight. Read every sign in the parking lot before you step on the ice, especially at an aerated lake. Walk out together, spud bar first, and drill your first test hole close to shore. Measure. If it's not enough clear ice, the day is a walk around the lake. That's still a good day.
+
+**On the ice.** Set up away from other anglers' holes and huts. Start in a few metres of water rather than the deepest part of the pond, and try a few depths, not just the bottom. Jig slowly, pause, then jig again. If nothing happens in half an hour, drill a new hole a little way off. Keep the holes clear with your skimmer. Eat something before you get cold, not after.
+
+**Afternoon.** Winter days are short in Alberta. Pack up while there's still good light, so you're walking off the ice in daylight, on the same route you walked out. Bring every scrap back with you. If the sky clears on the drive home, you might get a show: here's [where to see the northern lights in Alberta](/journal/northern-lights-alberta-western-canada/).
+
+## What did I just catch?
+
+The province's rule of thumb is the right one: **if you don't know, let it go.** Here's how to tell apart the fish you're most likely to see, using the descriptions in Alberta's stocking report and the City of Edmonton's fish guide:
+
+![Gloved hands hold a rainbow trout just above a drilled ice fishing hole, keeping the fish off the snow](#photo: Gloved hands hold a rainbow trout just above a drilled ice fishing hole, keeping the fish off the snow)
+
+- **Rainbow trout:** black spots over the whole body and a pink or red stripe along the side, from the gills to the tail.
+- **Brown trout:** large black spots on the back and body, and red spots on the sides, some with pale halos.
+- **Brook trout:** light spots on a dark body, black markings on the back fin, and lower fins with a black stripe just behind a white leading edge.
+- **Tiger trout:** a brook and brown trout cross with worm-like squiggles (vermiculation) all over the body and back fin.
+- **Walleye:** big glassy eyes, two fins on the back (the front one spiny), and usually a white tip on the lower part of the tail. Sauger look similar but have black spots on the spiny back fin.
+- **Northern pike:** long and torpedo-shaped, with a duck-bill snout and a lot of teeth. Use pliers.
+- **Yellow perch:** small, yellow-green, with dark vertical bars. Often caught in schools.
+- **Burbot:** dark body, white belly and a single whisker (barbel) hanging from the lower jaw.
+
+**Releasing a fish in winter.** My Wild Alberta's ice fishing advice: keep the fish in the water as much as you can, never lay it on the ice or snow, and don't touch the gills or eyes. Freezing air damages them fast. Unhook it in the hole if possible, get your camera ready before you lift it, and slide it back in headfirst.
+
+**Keeping a fish.** Decide right away. Under the regulations, a fish kept on a stringer or in a live well counts toward your limit. Anything you keep has to be killed before it's moved more than 5 m from the water. Count everything toward your daily limit, including fish you give away.
+
+## From the hole to the pan
+
+Freshly caught trout from cold water is one of the best things you'll eat all winter. A few rules first, from the 2026 regulations:
+
+- If a size limit applies, **leave the head, tail and skin on** until you get home, so the fish can be measured.
+- If no size limit applies, you can fillet, but **leave enough skin on each fillet** for someone to tell what species it is.
+- **Never transport fish frozen in a solid block.** Bring a cooler and keep the fish whole and cold.
+- Some Alberta waterbodies have **fish consumption advisories** for mercury, especially for big predatory fish. Check the advisory section of the regulations before you plan a feast.
+
+![Two skin-on trout fillets crisp in a cast-iron pan on a camp stove on a truck tailgate beside a frozen lake at dusk, with a lemon, salt and a camp mug](#photo: Two skin-on trout fillets crisp in a cast-iron pan on a camp stove on a truck tailgate beside a frozen lake at dusk, with a lemon, salt and a camp mug)
+
+Then keep it simple. Pat the fillets dry, salt them, and lay them skin side down in a hot pan with a little oil or butter. Leave them alone until the skin is crisp, then flip them for a minute. Squeeze some lemon on top. Eat it standing at the tailgate with snow coming down. Coffee in a mug that held heat the whole time, like our [Great White North Tumbler](/shop/great-white-north-tumbler/), is a fine side.
+
+## Manners on the ice
+
+Ice fishing is social, in a quiet way. A few things keep it that way:
+
+- **Give people room.** Don't drill next to someone else's holes or set up right beside their hut. If you need to cross near someone, walk around, not through.
+- **Keep it quiet.** A speaker carries a long way across a still, frozen lake.
+- **Mind your holes.** A fresh hole left behind can catch a foot. Some anglers mark theirs with a chunk of ice or a branch when they leave, so the next person sees it.
+- **Ask, don't assume.** Most people on the ice are happy to tell a beginner what's biting. Most people won't tell you their exact spot. Both are fair.
+
+## Leave the lake the way you found it
+
+Everything you take out on the ice ends up in the lake in spring if you leave it there. Pack out every bait container, line clipping, coffee cup and cigarette butt. Fishing line is especially bad for birds and wildlife. Remember the rules: no dumping bait within 50 m of the water, no moving live fish between waters, and every shelter off the ice by the deadline. After the trip, **clean, drain and dry** any gear that's been in the water, to help stop aquatic invasive species and whirling disease from moving between lakes. The [Leave No Trace Canada](https://leavenotrace.ca/principles) principles are a good habit for every trip, not just summer ones.
+
+![An angler pulls a sled with a folded shelter and auger off a frozen lake at dusk, the ice behind him clean, as a faint green aurora appears over the spruce](#photo: An angler pulls a sled with a folded shelter and auger off a frozen lake at dusk, the ice behind him clean, as a faint green aurora appears over the spruce)
+
+## The honest part: the ice decides
+
+Some days you'll drill six holes and catch nothing. Some days the ice won't be ready on the weekend you planned, or the wind will make it miserable by eleven. That's normal. The fish are a bonus. The licence, the ice and the people you went with are the whole thing.
+
+Get the boring parts right: a WiN and a licence, the lake's rules, a spud bar, ice picks, a buddy, and a CO alarm if you're using heat. After that, ice fishing in Alberta gives you something few winter activities can: a quiet, wide-open place to sit still for a few hours with the sky all around you. For more ways to enjoy the cold, see [10 places in Western Canada that get better when the snow falls](/journal/best-places-western-canada-winter/), and if you want to get out of the city without the ice, try [the best hikes within two hours of Edmonton](/journal/best-hikes-near-edmonton/).`,
+  },
+  {
     slug: "best-places-western-canada-winter",
     title: "First Snow, Best Views: 10 Places in Western Canada That Get Better When the Snow Falls",
     dek: "Frozen bubbles, waterfalls turned to ice, a glacier lake you can skate on and Pacific storms. Ten places in Alberta and BC that save their best for winter.",
@@ -1457,6 +1660,15 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "ice-fishing-alberta": [
+    { q: "Do I need a fishing licence to ice fish in Alberta?", a: "Yes, if you're 16 or older, unless you're an Alberta resident 65 or older. Alberta residents aged 16 to 64 pay $30 plus GST for an annual sportfishing licence, after a one-time WiN activation. Kids under 16 don't need a licence. Everyone can fish without a licence on Family Fishing Weekend, February 13 to 15, 2027." },
+    { q: "How thick does ice need to be for ice fishing?", a: "The Lifesaving Society recommends at least 10 cm (4 in.) of new, clear, hard ice for walking and ice fishing, and says to stay off ice 7 cm or thinner. The Canadian Red Cross is more cautious at 15 cm for one person and 20 cm for a group. White, grey or slushy ice is weaker. Measure in several places." },
+    { q: "Can I drive my truck on the ice in Alberta?", a: "Alberta's regulations say not to drive on ice less than 30 cm thick, and the Lifesaving Society suggests 30 to 38 cm of clear, hard ice for a medium pickup. Many anglers walk out instead. Never drive near aerators, pressure ridges, inlets or other vehicles." },
+    { q: "How many lines can I use ice fishing in Alberta?", a: "Up to two lines when fishing through ice, compared to one in open water. You must stay within 30 m of any line in the water, and each line can have no more than three hooks." },
+    { q: "When does ice fishing season start in Alberta?", a: "There's no single start date. The season depends on each lake's regulations and on the ice. Stocked put-and-take ponds are open all year, so you can fish as soon as the ice is thick enough. Check the lake in the regulations and measure the ice yourself." },
+    { q: "Where can a beginner go ice fishing near Edmonton or Calgary?", a: "Stocked trout ponds are the easiest start. Near Edmonton, try Hermitage Park Pond, Hasse Lake, Star Lake or Cardiff Park Pond. Near Calgary, try Winchell Lake, Dewitt's Pond or Crossfield Trout Pond. Hasse and Winchell are aerated, so obey the thin-ice signs." },
+    { q: "Is it safe to use a heater in an ice fishing shelter?", a: "Only a heater made for indoor use, with ventilation and a working carbon monoxide alarm. Health Canada says never to use propane, kerosene or oil heaters in enclosed spaces unless they're designed for it. If anyone gets a headache or feels dizzy or sick, get everyone out into fresh air." },
+  ],
   "best-places-western-canada-winter": [
     { q: "What are the best places to visit in Western Canada in winter?", a: "Our top picks are Lake Louise for skating below a glacier, Johnston Canyon's icewalk, the frozen bubbles at Abraham Lake, the Icefields Parkway, Emerald Lake in Yoho, a guided icewalk in Jasper, Mount Robson, Helmcken Falls in Wells Gray, storm watching in Tofino and quiet winter days in Waterton. Check closures before you go." },
     { q: "Is Lake Louise worth visiting in winter?", a: "Yes. The lake freezes and the skating area usually opens around mid-December. Skating is free with a national park pass, and lakeshore parking is free in winter. Ice Magic runs February 3 to 7, 2027, with access through participating hotels only." },

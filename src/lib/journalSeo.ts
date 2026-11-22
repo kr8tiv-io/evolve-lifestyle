@@ -10,6 +10,13 @@ export interface ArticleSeo {
 }
 
 export const JOURNAL_SEO: Record<string, ArticleSeo> = {
+  "ice-fishing-alberta": {
+    "seoTitle": "Ice Fishing in Alberta: A Beginner's Field Guide",
+    "metaDescription": "Ice fishing in Alberta for beginners: licence costs, safe ice thickness, the rules, stocked trout ponds near Edmonton and Calgary, gear and what to wear.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 4324
+  },
   "best-places-western-canada-winter": {
     "seoTitle": "10 Best Places to Visit in Western Canada in Winter",
     "metaDescription": "The best places to visit in Western Canada in winter: Lake Louise, Abraham Lake's ice bubbles, frozen canyons, the Icefields Parkway, Tofino storms and more.",
