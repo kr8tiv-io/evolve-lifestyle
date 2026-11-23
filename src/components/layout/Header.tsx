@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import EvolveLogo from "@/components/ui/EvolveLogo";
+import { FacebookLink } from "@/components/ui/FacebookLink";
 import Magnetic from "@/components/ui/Magnetic";
 import { useCart } from "@/store/cart";
 import { cn } from "@/lib/utils";
@@ -60,6 +61,13 @@ export default function Header() {
 
           <div className="flex items-center gap-5">
             <Magnetic strength={0.25}>
+              <FacebookLink
+                className="inline-flex h-7 w-7 items-center justify-center text-silver-bright/90 transition-colors hover:text-neon [filter:drop-shadow(0_1px_3px_rgba(0,0,0,0.6))]"
+                iconClassName="h-3.5 w-3.5"
+              />
+            </Magnetic>
+
+            <Magnetic strength={0.25}>
               <button
                 onClick={openCart}
                 className="group relative flex items-center gap-2 font-mono text-[0.72rem] uppercase tracking-tracked text-silver-bright"
@@ -96,13 +104,19 @@ export default function Header() {
           >
             <div className="frame flex h-[84px] items-center justify-between">
               <EvolveLogo variant="white" className="h-5" />
-              <button
-                onClick={() => setMenuOpen(false)}
-                className="font-mono text-[0.72rem] uppercase tracking-tracked text-neon"
-                aria-label="Close menu"
-              >
-                Close
-              </button>
+              <div className="flex items-center gap-5">
+                <FacebookLink
+                  className="inline-flex h-7 w-7 items-center justify-center text-silver-bright/90 transition-colors hover:text-neon"
+                  iconClassName="h-3.5 w-3.5"
+                />
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="font-mono text-[0.72rem] uppercase tracking-tracked text-neon"
+                  aria-label="Close menu"
+                >
+                  Close
+                </button>
+              </div>
             </div>
             <nav className="frame flex flex-1 flex-col justify-center gap-2">
               {NAV.map((item, i) => (
@@ -122,8 +136,14 @@ export default function Header() {
                 </motion.div>
               ))}
             </nav>
-            <div className="frame pb-10 font-mono text-[0.65rem] uppercase tracking-tracked text-silver-dim">
-              Prairies to Peaks — Edmonton, AB
+            <div className="frame flex items-center justify-between gap-4 pb-10">
+              <p className="font-mono text-[0.65rem] uppercase tracking-tracked text-silver-dim">
+                Prairies to Peaks — Edmonton, AB
+              </p>
+              <FacebookLink
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-silver-dim transition-colors hover:border-neon hover:text-neon"
+                iconClassName="h-4 w-4"
+              />
             </div>
           </motion.div>
         )}
