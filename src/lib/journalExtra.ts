@@ -5,6 +5,508 @@ import type { Article } from "./journal";
 
 export const EXTRA_ARTICLES: Article[] = [
   {
+    slug: "ice-fishing-alberta",
+    title: "First Hole: A Beginner's Field Guide to Ice Fishing in Alberta",
+    dek: "Licence, ice, gear, and a short list of stocked trout ponds near Edmonton and Calgary. Everything you need to go from never drilled a hole to a good first day on the ice.",
+    category: "Snow",
+    readMinutes: 16,
+    hero: "/images/journal/ice-fishing-alberta/hero-clean-1600x840.webp",
+    tone: ["#0b1a2a", "#4ade80"],
+    inlineImages: ["/images/journal/ice-fishing-alberta/check-1600x900.webp", "/images/journal/ice-fishing-alberta/kit-1600x900.webp", "/images/journal/ice-fishing-alberta/pond-1600x900.webp", "/images/journal/ice-fishing-alberta/trout-1600x900.webp", "/images/journal/ice-fishing-alberta/cook-1600x900.webp", "/images/journal/ice-fishing-alberta/home-1600x900.webp"],
+    hideCaptions: true,
+    seoTitle: "Ice Fishing in Alberta: A Beginner's Field Guide",
+    metaDescription: "Ice fishing in Alberta for beginners: licence costs, safe ice thickness, the rules, stocked trout ponds near Edmonton and Calgary, gear and what to wear.",
+    ogImage: { url: "/images/journal/ice-fishing-alberta/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A lone angler in a dark hoodie and toque sits on a bucket beside a single drilled hole on a frozen Alberta lake at dawn, an ice auger standing in the snow" },
+    body: `Every winter, somebody you know disappears onto a frozen lake on a Saturday morning and comes back with a story, a sunburn on the one strip of face they forgot, and maybe a limit of trout. They make it sound easy. It mostly is. Ice fishing is one of the cheapest, friendliest ways to spend a winter day outside in Alberta. You sit on a bucket, you jig a little, you drink something hot, and the fish come to you.
+
+It's also the easiest way we know to get into real trouble in a hurry. Thin ice doesn't care that the guy on the next lake was out last weekend. A propane heater in a closed tent can make you sick without you noticing. And a fine for the wrong licence will cost you more than the gear.
+
+So this is the guide we wish someone had handed us before our first hole. It's in the order you need it: the licence, the ice, the kit, what to wear, where to go first, what you caught, and how to cook it. We checked the numbers against the 2026 Alberta Guide to Sportfishing Regulations, My Wild Alberta, the Lifesaving Society, the Canadian Red Cross, Health Canada and the province's 2026 fish stocking report in November 2026. Rules change by lake and by season, so check again the week you go.
+
+## Step one: the licence (it's cheaper than lunch)
+
+Alberta keeps this simple. Before you buy any fishing licence, you need a **Wildlife Identification Number (WiN)**. It's a one-time activation. The 2026 regulations list the fee at $12 plus GST, with $2 off when you do it online, so most people pay $10 plus GST at [AlbertaRELM](https://albertarelm.com). After that, your WiN doesn't expire.
+
+Then the licence itself. Fees below are from [My Wild Alberta](https://mywildalberta.ca/buy-licences/fishing-licenses-fees/default.aspx) and the 2026 regulations, before the 5% GST:
+
+| Who you are | Annual | 7-day | 1-day |
+| --- | --- | --- | --- |
+| Alberta resident, 16 to 64 | $30 | Not offered | Not offered |
+| Alberta resident, under 16 or 65 and older | No licence needed | No licence needed | No licence needed |
+| Canadian from outside Alberta, 16 and older | $62 | $43 | $27 |
+| Visitor from outside Canada, 16 and older | $87 | $57 | $29 |
+
+Canadian Armed Forces veterans who live in Alberta can get a sportfishing licence at no charge. Kids under 16 and Alberta residents 65 and older don't need a licence, but they still have to follow every rule in the regulations. You can buy online at AlbertaRELM or from more than 300 licence issuers around the province, which in practice means most tackle shops and a lot of hardware stores.
+
+**Want to try it first for free?** Alberta runs Family Fishing Weekends twice a year, when anyone can fish waters with an open season without buying a sportfishing licence. The next winter one is **February 13 to 15, 2027**, over the Family Day long weekend. The regulations still apply, a licence is still needed if you're using a walleye Special Harvest Licence, and free fishing doesn't cover the national parks. Details are on [My Wild Alberta's Family Fishing Weekends page](https://mywildalberta.ca/fishing/family-fishing-weekends/default.aspx).
+
+## Step two: the rules that catch beginners
+
+The full regulation guide is long, and most of it is lake-by-lake tables. You don't need to memorize it. You need to know a handful of province-wide rules, and you need to look up the one lake you're going to. Here are the ones that matter most on the ice, straight from the [2026 general regulations](https://www.albertaregulations.ca/fishingregs/general-regs.html):
+
+- **Two lines, maximum,** when you're fishing through ice. One line in open water.
+- **Stay within 30 m of any line you have in the water.** No drilling six holes and wandering off to visit.
+- **No more than three hooks on a line,** and no hook with more than three points.
+- **No live fish as bait,** and no frogs or salamanders. Dead bait and other legal baits are fine where bait is allowed.
+- **No chumming.** Bait has to be on a hook, not scattered down the hole.
+- **Don't dump leftover bait within 50 m of the water** unless it goes in a regularly serviced garbage bin.
+- **Never move a live fish** to a different lake or pond. It's illegal and it's how lakes get wrecked.
+
+Then check your specific lake. The free [Alberta Sportfishing Regulations app](https://geospatial.alberta.ca/app/afr) and the printed guide list each waterbody's season, bait rules and limits. Some lakes are catch-and-release only for certain species. Some close for part of the year. On some walleye lakes, you can only keep a walleye with a Special Harvest Licence tag for that lake. If you only remember one habit, make it this: look up the lake before you load the truck.
+
+**The good news for beginners:** most stocked trout ponds in Alberta are managed as "put-and-take" fisheries. Under the provincial put-and-take regulations they're open all year, bait is allowed, and you can keep **5 trout of any size**, plus 3 northern pike and 15 yellow perch if those are present. That's why every lake in our starter list below is a stocked pond. Fewer special rules, more fish, and usually a parking lot.
+
+## Step three: the ice, or you stay in the truck
+
+Here's the part we're not going to be funny about. There's no such thing as safe ice. There's only ice that has been measured, in more than one place, by someone who knows what the numbers mean.
+
+The [Lifesaving Society's](https://www.lifesaving.org/public-education/water-smart-tips2/ice-safety-tips) recommended minimums for new, clear, hard ice are the ones most Albertans use:
+
+| Clear, hard ice | Good for |
+| --- | --- |
+| 7 cm (3 in.) or less | Stay off |
+| 10 cm (4 in.) | Walking, ice fishing, cross-country skiing |
+| 13 to 18 cm (5 to 7 in.) | One snowmobile or ATV |
+| 20 to 30 cm (8 to 12 in.) | One car, or a group of people |
+| 30 to 38 cm (12 to 15 in.) | One medium truck (pickup or van) |
+
+The province's own line in the 2026 regulations is similar: never walk on ice less than 10 cm thick and don't drive on ice less than 30 cm thick. The Canadian Red Cross is more cautious, with its [15-20-25 rule](https://www.redcross.ca/blog/2011/1/on-thin-ice): 15 cm for one person walking or skating, 20 cm for a group, and 25 cm for snowmobiles and ATVs. For a first season, we'd follow the Red Cross numbers. You lose nothing by waiting another week.
+
+![Two anglers test clear, cracked lake ice ahead of them with a steel ice chisel, one wearing an orange flotation vest and the other carrying a coiled throw rope](#photo: Two anglers test clear, cracked lake ice ahead of them with a steel ice chisel, one wearing an orange flotation vest and the other carrying a coiled throw rope)
+
+**Those numbers only count for clear, hard ice.** The Lifesaving Society says white ice has air or snow inside it and should be treated as suspect. Grey, slushy ice means water. Ice that thawed and refroze is weaker than it looks, and spring ice is rotten ice, even when it measures thick. Snow on top acts like a blanket and slows freezing, so the ice under a fresh dump can be thinner than the ice beside it. Moving water is the big one: inlets, outlets, springs, river mouths and anything near a current.
+
+**Aerated lakes have their own danger.** Many stocked lakes in Alberta run aerators all winter to keep the trout alive. Aerators create open water and thin ice, sometimes far from where they were last year. These lakes are posted with signs that say "DANGER: unpredictable thin ice and open water." Believe the sign. Stay outside fences, give the open water a wide berth, and don't fish near the aerator lines. Two of our starter lakes, Hasse and Winchell, are on the Alberta Conservation Association's [aerated lakes list](https://www.ab-conservation.com/programs/fish/aca-aerated-lakes/).
+
+**How to check it yourself:**
+
+- Go with a buddy. The Lifesaving Society says half of ice-related deaths happened when the person was alone.
+- Tell someone where you're going and when you'll be back.
+- Walk out slowly and strike the ice ahead of you with a spud bar (a long steel ice chisel). If it goes through in one or two hits, turn around on your own tracks.
+- Drill test holes as you go and measure the clear ice with a tape. Do it again every few metres. Ice thickness can change in a few steps.
+- Wear ice picks around your neck, carry a throw rope, and consider a flotation suit, or a lifejacket over your winter layers.
+- Stay off the ice at night and stay sober. The Lifesaving Society links alcohol to about 1 in 3 ice-related deaths.
+
+**If you go through.** The [Lifesaving Society's](https://www.lifesavingsociety.com/water-safety/cold-water-and-ice) advice is short, and worth reading twice. Don't panic. Your clothes trap air and will help keep you up at first. Turn back toward the way you came, because that ice held you. Get your arms onto the solid edge, kick your legs to get horizontal, and push yourself out on your stomach like a seal, using your picks. Once you're out, don't stand up. Roll or crawl away until you're back on solid ice or land. Remember **1-10-1**: about 1 minute to get your breathing under control, about 10 minutes of useful movement to get yourself out, and up to 1 hour before hypothermia makes you lose consciousness. Then get warm and get help.
+
+## Step four: the small kit that actually matters
+
+You can spend a fortune on ice fishing. Please don't, yet. A first day needs much less than the catalogue suggests.
+
+![A beginner ice fishing kit laid out on snow: a short rod and reel, a skimmer, a box of small jigs, bait, pliers, a measuring board, a throw rope, ice picks, a headlamp, a thermos, wool mitts and a dark hoodie](#photo: A beginner ice fishing kit laid out on snow: a short rod and reel, a skimmer, a box of small jigs, bait, pliers, a measuring board, a throw rope, ice picks, a headlamp, a thermos, wool mitts and a dark hoodie)
+
+**The must-haves:**
+
+- **An auger.** A hand auger works fine for a few holes in early-season ice. Gas or electric is faster but costs more, and plenty of shops rent them. A 6 to 8 inch auger is big enough for trout and perch.
+- **A skimmer or scoop** to clear slush and skim the skin of ice that forms on the hole while you fish. Your bare hand is not a skimmer.
+- **A short ice rod** with light line, a few small jigs and spoons, and bait if the lake allows it.
+- **Pliers and a measuring board or tape,** so you can unhook fast and check size limits where they apply.
+- **Something to sit on.** A five-gallon bucket carries the gear in and seats you once you're there.
+- **The safety kit:** ice picks, a spud bar, a throw rope, a headlamp, a charged phone in an inside pocket, and the small personal kit the Lifesaving Society suggests: a lighter, waterproof matches, a pocketknife, a compass and a whistle.
+
+**Nice to have, later:** a pop-up shelter, a sled to haul it all, and a fish finder or underwater camera. A shelter makes a windy day much nicer. Just know the rules: under the [My Wild Alberta ice fishing rules](https://mywildalberta.ca/fishing/ice-fishing.aspx), a shelter left on the ice longer than 24 hours must show your WiN, or your name and phone number, in letters at least 2.5 cm tall, and it must come off the ice by **March 15** in the Parkland-Prairie PP1 area and by **March 31** everywhere else, or sooner if an officer says so.
+
+**Heat and the silent part.** A heater in a shelter is where nice days go wrong. Health Canada says never to use propane, kerosene or oil heaters in enclosed spaces unless they're specifically made for indoor use, and never to run outdoor fuel-burning equipment inside a tent. Carbon monoxide has no smell, taste or colour, and only an alarm can detect it. Use a heater rated for indoor use, keep the vents open and clear of snow, and hang a battery CO alarm in the shelter. If anyone gets a headache, feels dizzy or sick, or gets oddly sleepy, everybody out into fresh air right away. Don't stay in to figure out why.
+
+## What to wear: a layering problem, not a shopping list
+
+Ice fishing is a strange kind of cold. You work hard for twenty minutes drilling holes and hauling the sled, then you sit nearly still for hours on a surface that's frozen and wide open to the wind. Dress for both halves of the day.
+
+Think in three layers, plus your ends:
+
+- **Next to skin:** something that moves sweat away and doesn't stay wet. Skip cotton against your skin on a cold day. Once it's damp, it stays cold.
+- **The warm layer:** this is the one you adjust all day. A heavy hoodie or fleece is perfect because you can push the hood back while drilling and pull it up when the wind comes. Our [Deepwoods Heavyweight Hoodie](/shop/deepwoods-heavyweight-hoodie/) is a 10oz pullover built for exactly that job. If you like a zip so you can dump heat without taking anything off, the [Hearth Fleece Zip](/shop/hearth-fleece-zip/) has a brushed fleece inside.
+- **The outer layer:** windproof and roomy enough to go over everything, with insulated pants or bibs. On a big lake, the wind is the thing that ends your day early.
+- **Head, hands and feet:** a snug toque under a hood, like our [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/), mitts for sitting and thin gloves for tying knots, and insulated, waterproof boots with room for a warm sock. Water splashes up out of every hole you drill, and wet feet will send you home faster than no fish.
+
+Bring a spare pair of gloves and a spare toque in a dry bag. You'll get one set wet. Everyone does. For more on how to think about weight and layers on longer outings, our [pack light, eat smart guide](/journal/lightweight-hike-packing-kit/) covers the general idea.
+
+## Where to drill your first hole
+
+Big-name lakes like Pigeon and Wabamun get a lot of attention, and they're great once you know what you're doing. For a first time, we'd point you at a stocked trout pond instead. They're smaller, close to town, usually have a parking lot, are open all year under the put-and-take rules, and they get fresh fish. Alberta's recreational stocking program puts roughly 2 million hatchery trout into more than 240 lakes each year, according to the province's [2026 fish stocking report](https://open.alberta.ca/publications/fish-stocking-list) (updated October 16, 2026).
+
+Every lake below is on the 2026 regulations' put-and-take list, and the stocking numbers are from that report. None of this means the ice is safe on the day you go. Check the ice, the signs and the current regulation tables yourself.
+
+![A small snow-covered trout pond ringed by aspen and spruce in late afternoon light, with two pop-up ice fishing shelters and a pair of anglers far apart on the ice](#photo: A small snow-covered trout pond ringed by aspen and spruce in late afternoon light, with two pop-up ice fishing shelters and a pair of anglers far apart on the ice)
+
+### Near Edmonton
+
+- **Hermitage Park Pond, Edmonton.** The easy button. It's in Hermitage Park in northeast Edmonton, by the North Saskatchewan River. The [City of Edmonton](https://www.edmonton.ca/activities_parks_recreation/parks_rivervalley/fishing) lists it as free for public use, with an Alberta licence required for adults and a limit of 5 rainbow trout. Children under 16 must be supervised by an adult. In 2026 it got about 4,700 rainbow trout and 300 brown trout between May and June.
+- **Hasse Lake, Parkland County.** A favourite west of Edmonton, inside Hasse Lake Provincial Park. It was stocked with 10,000 rainbows in May and another 5,000 in early October 2026, plus tiger trout both times, including 1,000 tigers averaging about 30 cm in October. It's aerated, so read the signs and stay well clear of the open water.
+- **Star Lake, Parkland County.** Hasse Lake's quieter neighbour. Over 8,000 rainbows, 1,000 brown trout and 1,000 tiger trout went in during May 2026, with more tiger trout added in October.
+- **Cardiff Park Pond, Sturgeon County.** North of the city, near Morinville. One of the more heavily stocked ponds in the Edmonton area this year: 11,500 rainbows in May and 5,000 more on October 2, 2026, plus brown and tiger trout.
+
+### Near Calgary
+
+- **Winchell Lake, northwest of Cochrane.** Stocked with 4,000 rainbows in May and 2,000 more in October 2026. It's aerated and the Alberta Conservation Association lists it as open for winter angling, so the same warning applies: respect the signs and the open water.
+- **Dewitt's Pond, west of Airdrie.** A small pond about 8 km west of Highway 2 on Highway 567, then south on Panorama Road, according to the [Alberta Discover Guide](https://www.albertadiscoverguide.com/site.cfm?grid=E3&number=90), with walk-in, day-use access. It got 1,000 rainbows and about 2,600 brown trout in April 2026. Small ponds can lose fish over a hard winter, so ask at a local tackle shop how it's been fishing.
+- **Crossfield Trout Pond, Crossfield.** North of Calgary, past Airdrie on Highway 2. A small community pond that got 1,400 rainbows in April 2026. Good for a short first outing with kids.
+
+Want a big-lake day after that? Go with someone who knows that lake, or book a guide. Bigger water means pressure ridges, vehicle traffic, cracks and more complicated rules, especially for walleye.
+
+## A simple plan for your first day
+
+**The night before.** Look up your lake in the regulations app. Check the latest stocking report and any lake notices. Buy your WiN and licence online and screenshot the confirmation. Check the forecast, especially the wind and the overnight low. Charge your phone and pack the sled.
+
+**Morning.** Leave someone your plan. Get there in daylight. Read every sign in the parking lot before you step on the ice, especially at an aerated lake. Walk out together, spud bar first, and drill your first test hole close to shore. Measure. If it's not enough clear ice, the day is a walk around the lake. That's still a good day.
+
+**On the ice.** Set up away from other anglers' holes and huts. Start in a few metres of water rather than the deepest part of the pond, and try a few depths, not just the bottom. Jig slowly, pause, then jig again. If nothing happens in half an hour, drill a new hole a little way off. Keep the holes clear with your skimmer. Eat something before you get cold, not after.
+
+**Afternoon.** Winter days are short in Alberta. Pack up while there's still good light, so you're walking off the ice in daylight, on the same route you walked out. Bring every scrap back with you. If the sky clears on the drive home, you might get a show: here's [where to see the northern lights in Alberta](/journal/northern-lights-alberta-western-canada/).
+
+## What did I just catch?
+
+The province's rule of thumb is the right one: **if you don't know, let it go.** Here's how to tell apart the fish you're most likely to see, using the descriptions in Alberta's stocking report and the City of Edmonton's fish guide:
+
+![Gloved hands hold a rainbow trout just above a drilled ice fishing hole, keeping the fish off the snow](#photo: Gloved hands hold a rainbow trout just above a drilled ice fishing hole, keeping the fish off the snow)
+
+- **Rainbow trout:** black spots over the whole body and a pink or red stripe along the side, from the gills to the tail.
+- **Brown trout:** large black spots on the back and body, and red spots on the sides, some with pale halos.
+- **Brook trout:** light spots on a dark body, black markings on the back fin, and lower fins with a black stripe just behind a white leading edge.
+- **Tiger trout:** a brook and brown trout cross with worm-like squiggles (vermiculation) all over the body and back fin.
+- **Walleye:** big glassy eyes, two fins on the back (the front one spiny), and usually a white tip on the lower part of the tail. Sauger look similar but have black spots on the spiny back fin.
+- **Northern pike:** long and torpedo-shaped, with a duck-bill snout and a lot of teeth. Use pliers.
+- **Yellow perch:** small, yellow-green, with dark vertical bars. Often caught in schools.
+- **Burbot:** dark body, white belly and a single whisker (barbel) hanging from the lower jaw.
+
+**Releasing a fish in winter.** My Wild Alberta's ice fishing advice: keep the fish in the water as much as you can, never lay it on the ice or snow, and don't touch the gills or eyes. Freezing air damages them fast. Unhook it in the hole if possible, get your camera ready before you lift it, and slide it back in headfirst.
+
+**Keeping a fish.** Decide right away. Under the regulations, a fish kept on a stringer or in a live well counts toward your limit. Anything you keep has to be killed before it's moved more than 5 m from the water. Count everything toward your daily limit, including fish you give away.
+
+## From the hole to the pan
+
+Freshly caught trout from cold water is one of the best things you'll eat all winter. A few rules first, from the 2026 regulations:
+
+- If a size limit applies, **leave the head, tail and skin on** until you get home, so the fish can be measured.
+- If no size limit applies, you can fillet, but **leave enough skin on each fillet** for someone to tell what species it is.
+- **Never transport fish frozen in a solid block.** Bring a cooler and keep the fish whole and cold.
+- Some Alberta waterbodies have **fish consumption advisories** for mercury, especially for big predatory fish. Check the advisory section of the regulations before you plan a feast.
+
+![Two skin-on trout fillets crisp in a cast-iron pan on a camp stove on a truck tailgate beside a frozen lake at dusk, with a lemon, salt and a camp mug](#photo: Two skin-on trout fillets crisp in a cast-iron pan on a camp stove on a truck tailgate beside a frozen lake at dusk, with a lemon, salt and a camp mug)
+
+Then keep it simple. Pat the fillets dry, salt them, and lay them skin side down in a hot pan with a little oil or butter. Leave them alone until the skin is crisp, then flip them for a minute. Squeeze some lemon on top. Eat it standing at the tailgate with snow coming down. Coffee in a mug that held heat the whole time, like our [Great White North Tumbler](/shop/great-white-north-tumbler/), is a fine side.
+
+## Manners on the ice
+
+Ice fishing is social, in a quiet way. A few things keep it that way:
+
+- **Give people room.** Don't drill next to someone else's holes or set up right beside their hut. If you need to cross near someone, walk around, not through.
+- **Keep it quiet.** A speaker carries a long way across a still, frozen lake.
+- **Mind your holes.** A fresh hole left behind can catch a foot. Some anglers mark theirs with a chunk of ice or a branch when they leave, so the next person sees it.
+- **Ask, don't assume.** Most people on the ice are happy to tell a beginner what's biting. Most people won't tell you their exact spot. Both are fair.
+
+## Leave the lake the way you found it
+
+Everything you take out on the ice ends up in the lake in spring if you leave it there. Pack out every bait container, line clipping, coffee cup and cigarette butt. Fishing line is especially bad for birds and wildlife. Remember the rules: no dumping bait within 50 m of the water, no moving live fish between waters, and every shelter off the ice by the deadline. After the trip, **clean, drain and dry** any gear that's been in the water, to help stop aquatic invasive species and whirling disease from moving between lakes. The [Leave No Trace Canada](https://leavenotrace.ca/principles) principles are a good habit for every trip, not just summer ones.
+
+![An angler pulls a sled with a folded shelter and auger off a frozen lake at dusk, the ice behind him clean, as a faint green aurora appears over the spruce](#photo: An angler pulls a sled with a folded shelter and auger off a frozen lake at dusk, the ice behind him clean, as a faint green aurora appears over the spruce)
+
+## The honest part: the ice decides
+
+Some days you'll drill six holes and catch nothing. Some days the ice won't be ready on the weekend you planned, or the wind will make it miserable by eleven. That's normal. The fish are a bonus. The licence, the ice and the people you went with are the whole thing.
+
+Get the boring parts right: a WiN and a licence, the lake's rules, a spud bar, ice picks, a buddy, and a CO alarm if you're using heat. After that, ice fishing in Alberta gives you something few winter activities can: a quiet, wide-open place to sit still for a few hours with the sky all around you. For more ways to enjoy the cold, see [10 places in Western Canada that get better when the snow falls](/journal/best-places-western-canada-winter/), and if you want to get out of the city without the ice, try [the best hikes within two hours of Edmonton](/journal/best-hikes-near-edmonton/).`,
+  },
+  {
+    slug: "best-places-western-canada-winter",
+    title: "First Snow, Best Views: 10 Places in Western Canada That Get Better When the Snow Falls",
+    dek: "Frozen bubbles, waterfalls turned to ice, a glacier lake you can skate on and Pacific storms. Ten places in Alberta and BC that save their best for winter.",
+    category: "Vistas",
+    readMinutes: 14,
+    hero: "/images/journal/best-places-western-canada-winter/hero-clean-1600x840.webp",
+    tone: ["#0b1a2a", "#4ade80"],
+    inlineImages: ["/images/journal/best-places-western-canada-winter/louise-1600x900.webp", "/images/journal/best-places-western-canada-winter/johnston-1600x900.webp", "/images/journal/best-places-western-canada-winter/abraham-1600x900.webp", "/images/journal/best-places-western-canada-winter/parkway-1600x900.webp", "/images/journal/best-places-western-canada-winter/emerald-1600x900.webp", "/images/journal/best-places-western-canada-winter/jasper-1600x900.webp", "/images/journal/best-places-western-canada-winter/robson-1600x900.webp", "/images/journal/best-places-western-canada-winter/helmcken-1600x900.webp", "/images/journal/best-places-western-canada-winter/tofino-1600x900.webp", "/images/journal/best-places-western-canada-winter/waterton-1600x900.webp"],
+    hideCaptions: true,
+    seoTitle: "10 Best Places to Visit in Western Canada in Winter",
+    metaDescription: "The best places to visit in Western Canada in winter: Lake Louise, Abraham Lake's ice bubbles, frozen canyons, the Icefields Parkway, Tofino storms and more.",
+    ogImage: { url: "/images/journal/best-places-western-canada-winter/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A lone hiker in a dark hoodie and toque stands on a snowy ridge above a frozen mountain lake as first light turns the Rocky Mountain peaks pink" },
+    body: `Most people treat the first real snowfall like a door closing. Patio's done, hikes are done, see you in May. Those people are missing the best show of the year.
+
+Some places in Western Canada are fine in summer and unreal in winter. Waterfalls stop mid-fall and hang there as blue ice. A lake in the foothills locks thousands of white bubbles inside glass. The crowds at Lake Louise thin out, the lake turns into a skating rink, and the glacier at the far end looks close enough to touch. The best places to visit in Western Canada in winter aren't the ones you'd guess from a postcard.
+
+Here are our ten, with when to go, how to get there and what to wear. We checked closures, road rules and safety notes against Parks Canada, BC Parks, Alberta Health Services and local operators in November 2026. Two famous names are closed or limited this season, and we'll say which. Check again before you go.
+
+## 1. Lake Louise, Banff National Park, AB
+
+In July you're shoulder to shoulder with a tour bus for a photo of a turquoise lake. In January the lake is white, the glacier glows pink at sunrise, and you can skate across the same water. Good trade.
+
+Skating usually starts around mid-December, once the ice is thick enough for the daily snow clearing, and runs into spring. It's free to skate; you just need a national park pass. The Fairmont Chateau Lake Louise typically builds an ice castle beside the rink, and the lake is lit for evening skating. If you don't skate, walk the lakeshore trail. Parks Canada lists it at 2.3 km one way. Turn around at the end of the lake, where you can see frozen Louise Falls: past that point is avalanche terrain, and it's for people with training and gear.
+
+Ice Magic, the ice sculpture event, runs February 3 to 7, 2027. It changed this year. There are no general admission tickets: you get in by staying at a participating Lake Louise hotel (or by being a local resident on two set days), and everyone rides a shuttle, because there's no parking at the site.
+
+**When:** mid-December to March for skating and snow-covered ice. November is scenery only; the lake may still be open water. **Getting there:** less than an hour west of Banff on Highway 1, then up Lake Louise Drive. Paid lakeshore parking only runs during the summer shuttle season (May 15 to October 12 in 2026), so winter parking is free. The lots still fill on weekends, so go early. **What to wear:** skating is cold work for your ears. A snug toque like our [Wanderlust Cuff Beanie](/shop/wanderlust-cuff-beanie/), a dark-grey ribbed cuff beanie that holds heat without the itch, plus a warm jacket and mitts you can take off to tie laces. [Official info](https://parks.canada.ca/pn-np/ab/banff/activ/raquette-snowshoeing/lakelouise).
+
+![Frozen, snow-covered Lake Louise with a cleared skating oval and tiny skaters, Victoria Glacier and snowy peaks at the far end of the valley under light snowfall](#photo: Frozen, snow-covered Lake Louise with a cleared skating oval and tiny skaters, Victoria Glacier and snowy peaks at the far end of the valley under light snowfall)
+
+## 2. Johnston Canyon Icewalk, Banff National Park, AB
+
+This is the walk that ruins every other winter walk. Steel catwalks bolted to the canyon walls carry you over Johnston Creek, which is still moving under a skin of ice, while the waterfalls freeze in place. The Upper Falls, about 30 m tall, turns into a wall of blue columns that look poured rather than grown.
+
+Parks Canada lists the Lower Falls at 1.2 km one way with about 50 m of climbing, and the Upper Falls at 2.5 km one way with about 120 m. It's easy walking on paper. On ice, it's a different sport. Parks Canada calls the trail "usually very icy" and strongly recommends ice cleats. You can buy them at the Banff Visitor Centre at 224 Banff Avenue and at most outdoor shops in town. Every winter there's a guy in running shoes sliding down the stairs on both hands. Don't be that guy.
+
+**Heads up for this season:** Parks Canada closed the Johnston Canyon trail, the day-use area, the washrooms and the main P1 parking lot on October 13, 2026 for rock-slope work. The closure order ends December 11, 2026. Check the Banff bulletins before you drive out. During the closure, the Upper Falls and the Ink Pots can still be reached the long way from the Moose Meadows trailhead, which has limited parking.
+
+**When:** from mid-December, once the trail reopens, through March. Weekday mornings are quietest; it's one of the busiest winter walks in the park. **Getting there:** the Bow Valley Parkway (Highway 1A) between Banff and Lake Louise. A national park pass is required. **What to wear:** cleats first, then layers. You'll warm up on the climb and cool off fast at the falls, so a zip layer you can open and close helps. Our [Hearth Fleece Zip](/shop/hearth-fleece-zip/) is a midweight zip hood with a brushed fleece inside, which is exactly the job. [Official info](https://www.parks.canada.ca/home/pn-np/ab/banff/activ/marchehiver-winterwalking).
+
+![The Upper Falls of Johnston Canyon frozen into tall blue and white ice columns against a curved limestone wall, with a snow-covered railed viewing platform](#photo: The Upper Falls of Johnston Canyon frozen into tall blue and white ice columns against a curved limestone wall, with a snow-covered railed viewing platform)
+
+## 3. Abraham Lake Ice Bubbles, David Thompson Country, AB
+
+You've seen the photo even if you didn't know where it was taken: white discs stacked under black-green ice, a mountain glowing behind. That's Abraham Lake, west of Nordegg on Highway 11, and on a good day it really looks like that.
+
+Abraham Lake is Alberta's largest reservoir, made in 1972 when the Bighorn Dam went in on the North Saskatchewan River. Plants and trees on the lake bottom rot and release methane. The gas rises, the lake freezes over it, and the next batch gets trapped under that, layer after layer, until you get stacks. Wind scours the snow off and leaves the ice clear enough to look straight down into.
+
+**Ice safety, for real:** this is wild ice on a reservoir, not a rink. Alberta Health Services says ice should be at least 15 cm thick before you walk on it, and that's for clear, solid ice. Local guides at Nordegg Adventures say to stay off the ice between the dam and Windy Point, where water levels swing, to avoid spots where creeks and the river come in, and to stay off snow-covered patches that can hide weak ice. Grey or slushy ice is a no. Check thickness as you go, not just once at the shore. Wear cleats, bring ice picks, don't go alone, and expect limited cell service. If you can't judge ice, hire a guide or stay on shore. The bubbles look nearly as good from the edge.
+
+**When:** Preacher's Point, at the south end where the river comes in, usually freezes first, often by mid-November, with fine bubbles and shallow ice. For the deep stacks over turquoise water, local guides say January 10 to 25 is usually a safe bet. Fresh snow hides everything, so watch the forecast. **Getting there:** Highway 11 west of Nordegg; it also links to the Icefields Parkway at Saskatchewan River Crossing. Fill up in Nordegg and carry a winter road kit. **What to wear:** Abraham Lake has a reputation for wind, and wind is what keeps the ice clear, so it's coming whether you like it or not. A shell that blocks it is the difference between twenty minutes and two hours. Our [Stormcheck Packable Anorak](/shop/stormcheck-packable-anorak/) folds into its own pocket and opens up into real wind cover over your warm layers. [Official info](https://nordeggadventures.ca/guides/winter/abraham-lake-ice-bubbles/).
+
+![Stacks of white frozen methane bubbles suspended in clear dark turquoise ice on Abraham Lake, with a limestone mountain lit gold at sunrise behind](#photo: Stacks of white frozen methane bubbles suspended in clear dark turquoise ice on Abraham Lake, with a limestone mountain lit gold at sunrise behind)
+
+## 4. The Icefields Parkway, Banff and Jasper National Parks, AB
+
+The Icefields Parkway is 232 km of road between Lake Louise and Jasper, and it's on every list of the best drives on Earth for good reason. In summer you share it with a few thousand rental RVs. In winter you might go twenty minutes without another car, with mountain goats on the cliffs, frozen waterfalls on the rock faces and lakes gone white.
+
+Good stops, south to north: Bow Lake (34 km from Lake Louise), Peyto Lake (40 km), the Weeping Wall, which turns into a giant ice climbing wall in winter (106 km), and Athabasca Falls (32 km from Jasper). Parks Canada also flags a 20 km stretch that runs through winter caribou habitat, home to the Jasper herd of woodland caribou. Drive the speed limit there. Not every pullout is plowed, so if a lot isn't cleared, keep going rather than parking on the shoulder.
+
+**This road is serious in winter.** There are no services between Lake Louise and Jasper: no gas, no food, no hotels, and no cell coverage. Snow tires (snowflake or M+S symbol) or chains are mandatory from November 1 to March 31. The parkway isn't salted, crews plow from 7 a.m. to 3:30 p.m., and it closes for storms and avalanche control. Fill the tank, pack a kit (water, food, blankets, extra layers), tell someone your plan, drive it in daylight and check 511 Alberta before you leave. If you're not comfortable driving in winter, Parks Canada's advice is simple: don't drive it in winter.
+
+**When:** clear days from December to March. Leave early: daylight is short and the plows stop mid-afternoon. **Need to know:** a national park pass is required to drive the parkway. For the full road trip version, with fuel gaps and all, see [The Long Haul: Canada's greatest road trips](/journal/the-long-haul-canada-road-trips/). **What to wear:** dress for the car and the pullout, then bring coffee. Our [Great White North Tumbler](/shop/great-white-north-tumbler/) is a 20oz insulated stainless tumbler that keeps coffee hot to the trailhead. On a road with no cafe for 232 km, that matters. [Official info](https://parks.canada.ca/pn-np/ab/jasper/activ/experience/hiver-winter/pcghiver-ipwinter).
+
+![Frozen, snow-covered Peyto Lake in a long glacial valley between massive snowy peaks, seen from a viewpoint above frosted spruce trees](#photo: Frozen, snow-covered Peyto Lake in a long glacial valley between massive snowy peaks, seen from a viewpoint above frosted spruce trees)
+
+## 5. Emerald Lake, Yoho National Park, BC
+
+Yoho sits on the west side of the Continental Divide and gets a lot of powdery snow. At Emerald Lake it piles up on the cedars, the lake freezes white and the timber lodge on the shore glows at dusk. Snow globe, shaken just right.
+
+The Emerald Lakeshore loop is 5.2 km and takes two to three hours on snowshoes or skis. One rule matters: there's a large avalanche slide path on the left side of the lake. Early in the season, Parks Canada routes the trail along the shore from the public washroom (trail 3A). Once the lake is frozen solid enough to groom, the trail starts on the lake (3B) to stay clear of the slide path.
+
+A note on Takakkaw Falls, which is on a lot of Yoho wish lists: the Yoho Valley Road is closed to cars from mid-October to mid-June because of avalanche risk. There's a groomed winter trail on the lower road to the Upper Spiral Tunnel Viewpoint, but past the groomed section you need avalanche training and gear. For a winter visit, Emerald Lake is the move.
+
+**When:** Parks Canada says Yoho's best skiing and snowshoeing runs from late December to late March. **Getting there:** the Emerald Lake Road leaves Highway 1 just west of Field and is open year-round. The Yoho visitor centre's info desk is closed from mid-October to early May, but you can buy a park pass at the kiosk outside, and the washrooms stay open. **What to wear:** a 5 km loop on snowshoes is honest work, so wear a warm layer that can take a sweat and a wind. Our [Deepwoods Heavyweight Hoodie](/shop/deepwoods-heavyweight-hoodie/) is a 10oz heavyweight pullover, the anchor of our range, and it does well under a shell out here. [Official info](https://www.parks.canada.ca/pn-np/bc/yoho/activ/pistesdhiver-wintertrails).
+
+![A wide frozen lake blanketed in fresh snow below steep snowy peaks, with a snow-roofed timber lodge and footbridge on a forested point](#photo: A wide frozen lake blanketed in fresh snow below steep snowy peaks, with a snow-roofed timber lodge and footbridge on a forested point)
+
+## 6. Pleckaitis Canyon Icewalk, Jasper National Park, AB
+
+If you've been to Jasper in winter, you probably walked Maligne Canyon. Not this year. Parks Canada says Maligne Canyon stays closed for the 2026 season after the 2024 wildfire, and its August 2026 closure order bans winter access to the canyon too. The burned slopes above it carry a higher risk of debris flows and landslides, and the reopening work is still in early planning. There's no Maligne Canyon icewalk in winter 2026 to 2027.
+
+The good news: local guiding companies moved their icewalks to Pleckaitis Canyon in the Maligne Valley, in an area the fires didn't touch. You walk the frozen canyon floor between rock walls hung with ice curtains, and SunDog Tours says the route involves inclines, stairs and the odd slide on your backside. If you can climb a ladder, you're in.
+
+SunDog runs it from December 15, 2026 to March 31, 2027, with pickup in Jasper, and provides boots, ice cleats and helmets. It lists the tour at $79 plus tax for adults and $39 for kids 6 to 12 (the minimum age is 6). Jasper Hikes and Tours also runs a Pleckaitis icewalk.
+
+**When:** morning and afternoon departures through the season. Tours run down to about minus 25. **The tip:** stay for the night sky. Jasper is a huge dark sky preserve, and our guide to [where to see the northern lights in Alberta](/journal/northern-lights-alberta-western-canada/) covers the best spots near town. **What to wear:** SunDog asks for a warm sweater, a warm jacket, a hat, mitts and a neck warmer, and snow pants are mandatory below minus 16. Our [Summit Full-Zip](/shop/summit-full-zip/) is a heavyweight zip hoodie with a structured hood that sits well under a parka. [Official info](https://www.sundogtours.com/package/canyon-icewalk).
+
+![A small guided group in helmets walking on the frozen floor of a narrow limestone canyon lined with blue ice curtains and icicles](#photo: A small guided group in helmets walking on the frozen floor of a narrow limestone canyon lined with blue ice curtains and icicles)
+
+## 7. Mount Robson, Mount Robson Provincial Park, BC
+
+Mount Robson asks for about ten minutes and steals the rest of your drive. It's the highest peak in the Canadian Rockies at 3,954 m, and BC Parks says the park rises more than 3 km from the Fraser River valley to the summit.
+
+The view is from the park's western entrance on Highway 16, the Yellowhead, about 90 km west of Jasper. The summit often hides in cloud, so if it's showing, stop. The Welcome Centre is seasonal and closed in winter, so this is a pull over, look up and get back in the truck kind of stop. It pairs perfectly with a Jasper trip, or with the drive to Wells Gray below.
+
+**When:** any clear winter day. Light is best late morning to early afternoon, when the sun gets onto the face. **Getting there:** Highway 16 west from Jasper over Yellowhead Pass into BC. BC requires winter tires or chains on most highways from October 1 to April 30. Check DriveBC. **What to wear:** you won't be out long, so think quick-on layers: your puffy, a toque, gloves. The real gear here is a full tank and a camera. [Official info](https://bcparks.ca/mount-robson-park/).
+
+![Snow-covered Mount Robson towering over a snowy valley and frosted spruce forest beside the Yellowhead Highway, with a cloud cap over the summit](#photo: Snow-covered Mount Robson towering over a snowy valley and frosted spruce forest beside the Yellowhead Highway, with a cloud cap over the summit)
+
+## 8. Helmcken Falls, Wells Gray Park, BC
+
+This one is the sleeper. Helmcken Falls drops 141 m off a lava rim into a huge round bowl. Wells Gray tourism calls it the fourth-tallest waterfall in Canada. In winter, the spray freezes on everything it touches. An ice cone builds at the base and keeps growing through the season, and icicles the size of hydro poles hang off the canyon walls behind it.
+
+Better still, the road is maintained all winter right to the Helmcken Falls viewing platform, about 46 km up the park road from Clearwater on Highway 5 (Clearwater is about 125 km north of Kamloops). The road past Helmcken toward Clearwater Lake is closed in winter. On the way back, stop at Spahats Falls, only 11 km up the park road, which builds its own ice column. In heavy snow you may need snowshoes for the short walk from the lot.
+
+**When:** January to March for the biggest ice cone. Bonus: the crowds are basically gone. **Need to know:** no Parks Canada pass needed; Wells Gray is a BC provincial park. Services are limited in winter, so be self-sufficient and check DriveBC. **What to wear:** the platform is a cold spot to stand still with spray in the air. Start with a clean first layer like our [Coldfront Long-Sleeve](/shop/coldfront-long-sleeve/), stack warm layers and a shell over it, and keep a dry toque in your pocket. [Official info](https://wellsgray.ca/things-to-do/ski-snow-ice/winter-waterfalls/).
+
+![Helmcken Falls plunging into a round canyon bowl in winter, with a huge white ice cone at the base and giant icicles coating the dark rock walls](#photo: Helmcken Falls plunging into a round canyon bowl in winter, with a huge white ice cone at the base and giant icicles coating the dark rock walls)
+
+## 9. Tofino Storm Watching, Vancouver Island, BC
+
+Okay, it barely snows in Tofino. When the snow starts falling in the Rockies, the west coast of Vancouver Island gets storms instead, and they're worth the ferry. Swells roll in off the open Pacific and explode on the headlands. Then you sit by a fire with a drink and watch the next one come in.
+
+Parks Canada calls November through March the most dramatic storm season at Pacific Rim National Park Reserve. The park's rules are short and they matter: check the forecast, the swell and a tide table, and stay off the beaches and drift logs when the tide or swell is high. Those logs weigh tonnes and a wave can roll one onto you in a second. Watch from the designated safe spots: the Kwisitis Visitor Centre's observation deck at Wickaninnish Beach, the stretch south to the totem pole at Lismer Beach, and the Florencia Bay Lookout.
+
+**When:** November to March. The biggest storms are hard to predict more than a few days out, so a flexible weekend beats a fixed one. **Getting there:** ferry to Nanaimo, then Highway 4 west, about three hours to Tofino. Winter tires or chains are required on most BC highways from October 1. A Parks Canada pass is needed in the park reserve. For the rest of the island, see [Vancouver Island, end to end](/journal/vancouver-island-places/). **What to wear:** a real rain shell and waterproof boots, because it will rain sideways. Under it, our [Driftwood Hooded Long-Sleeve](/shop/driftwood-hooded-long-sleeve/) is a triblend layer that works on the beach and at the bar after. [Official info](https://parks.canada.ca/pn-np/bc/pacificrim/activ/tempetes-storms).
+
+![Huge grey Pacific waves exploding against a rocky headland near Tofino, with a long beach piled with bleached drift logs and dark rainforest under storm clouds](#photo: Huge grey Pacific waves exploding against a rocky headland near Tofino, with a long beach piled with bleached drift logs and dark rainforest under storm clouds)
+
+## 10. Waterton Lakes National Park, AB
+
+Waterton is where the prairie runs straight into the mountains, and in winter it goes quiet in a way Banff never does. Most hotels and shops close, the elk herds move through, bighorn sheep wander the townsite like they pay taxes there, and you can have a whole valley to yourself.
+
+From November to May, the 15 km Red Rock Parkway is closed to cars and open to walkers, skiers and fat bikes, all the way to Red Rock Canyon. The Akamina Parkway is plowed to Little Prairie, and from there Parks Canada sets ski tracks to Cameron Lake, about 5 km return. Cameron Falls is an easy walk right in the townsite.
+
+**Avalanche note:** Parks Canada says most trails in the park cross avalanche terrain, and the Bertha trailhead sits in an avalanche path. For low-risk outings it suggests the Belleview trail, the Wishbone trail to the Vimy junction, the Townsite Loop and the Prince of Wales hill area. Chinook winds often blow the valley clear of snow, so bring both cleats and patience.
+
+**When:** late October or November through April. Calm, sunny days between chinooks are gold. **Need to know:** the gas station and the grocery and convenience stores in Waterton close for winter. Arrive with a full tank and your own food. Heated washrooms are at the marina and the visitor centre during opening hours. A Parks Canada pass is required. **What to wear:** Waterton wind doesn't negotiate. Leave the ball cap in the truck and go with a toque, a wind shell and a heavy layer like our [Trapline Heavyweight Hoodie](/shop/trapline-heavyweight-hoodie/), an oversized heavyweight built for the coldest mornings. [Official info](https://parks.canada.ca/pn-np/ab/waterton/activ/experiences/hiver-winter).
+
+![Mule deer grazing in golden prairie grass and light snow beside wind-rippled Upper Waterton Lake, with snowy mountains and lenticular chinook clouds above](#photo: Mule deer grazing in golden prairie grass and light snow beside wind-rippled Upper Waterton Lake, with snowy mountains and lenticular chinook clouds above)
+
+## The honest part: winter writes the rules
+
+Winter doesn't care about your itinerary. This season alone, two of the most famous winter walks in the Rockies are affected: Maligne Canyon is closed all season and Johnston Canyon is closed until at least December 11. Roads close for avalanche control with no warning. The day you booked off for Abraham Lake will get four inches of fresh snow on the bubbles. Wild ice comes with no guarantee.
+
+So build slack in. Check the Parks Canada bulletins, 511 Alberta and DriveBC the morning you go, not the week before. Have a plan B within an hour of plan A. Pack your car like you might spend a night in it, because Parks Canada's winter packing list (ice cleats, headlamp, extra warm clothes, emergency blanket, even bear spray) exists for a reason. More on that last one in our [bear country guide](/journal/bear-country-manners-grizzly-black-bear-canada/). Then go anyway. A frozen waterfall on a blue-sky morning with nobody else around is the best thing Western Canada does.
+
+## How to play it
+
+**Long weekend from Calgary:** Lake Louise for a sunrise skate, Emerald Lake the same afternoon (about 40 minutes west), and Johnston Canyon on the way home once it reopens. Thaw out after at one of [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/).
+
+**Long weekend from Edmonton:** Jasper for the Pleckaitis icewalk and a night under dark skies, then Mount Robson the next morning. Drive the Icefields Parkway south on a clear day if the forecast is good, or save it.
+
+**The bubble trip:** Abraham Lake in mid-January, with a night in Nordegg. Watch the forecast for cold, clear, windy days after a freeze and no fresh snow.
+
+**The wild card:** Tofino in a storm or Helmcken Falls at peak ice. Neither is close to anything else on this list, and both are worth it. While you're dreaming, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list.
+
+And whatever you do, bring something hot. Our [Borealis Camp Mug](/shop/borealis-camp-mug/) lives at camp: coffee before the cold, cocoa after. Cold and free beats warm and bored.`,
+  },
+  {
+    slug: "bear-country-manners-grizzly-black-bear-canada",
+    title: "Bear Country Manners: What to Actually Do When You Meet a Grizzly",
+    dek: "A Parks Canada–sourced field guide to black vs grizzly ID, bear spray that actually works, bluff charges, dogs, bikes, food caches, and what to do if contact happens in Alberta, BC and the North.",
+    category: "Trails",
+    readMinutes: 12,
+    hero: "/images/journal/bear-country-manners-grizzly-black-bear-canada/hero-clean-1600x840.jpg",
+    tone: ["#1a2a1a", "#4ade80"],
+    seoTitle: "Bear Country Manners: Grizzly & Black Bear Safety",
+    metaDescription: "What to do if you meet a grizzly or black bear in Canada: ID tips, bear spray, bluff charges, food caches, dogs and bikes — Parks Canada–sourced for Alberta & BC trails.",
+    ogImage: { url: "/images/journal/bear-country-manners-grizzly-black-bear-canada/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "Bear Country Manners — EVOLVE Journal" },
+    inlineImages: [
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/tracks-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/spray-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/valley-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/camp-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/bike-1600x900.jpg",
+      "/images/journal/bear-country-manners-grizzly-black-bear-canada/north-1600x900.jpg",
+    ],
+    hideCaptions: true,
+    body: `The first time you see a bear that is not on a roadside Instagram story, your brain does something unhelpful. It freezes the soundtrack, invents a TED Talk about sprinting, and forgets every poster you ever read at a trailhead. This guide is for that second. Not the vibes. The manners.
+
+Western Canada is bear country on purpose. Banff, Jasper, Kananaskis, Yoho, Kootenay, the Chilcotin, the Yukon — black bears and grizzlies share the valleys we hike, bike and camp in. Parks Canada is blunt: you can meet a bear on a busy trail near town or deep in the backcountry. Most encounters end without injury when people stay calm, make space, and treat spray as a last-resort tool, not cologne.
+
+This is the practical version: ID, noise, groups, spray, defensive vs non-defensive behaviour, bluff charges, contact, food storage, dogs, bikes and runners. Sourced from Parks Canada mountain-parks guidance, Alberta Parks / Alberta.ca, WildSafeBC and BC Parks as of November 2026. Check local closures before you go.
+
+## Black bear or grizzly: stop guessing by colour
+
+Colour is a trap. Parks Canada is clear: both species come in blond, brown, cinnamon and near-black. A "black" bear can be cinnamon. A grizzly can look blond or almost black. Size is a trap too — a female grizzly and a male black bear in the Rockies can weigh about the same.
+
+Use shape, face and claws, the way Parks Canada wildlife staff do:
+
+**Grizzly (Ursus arctos):** prominent shoulder hump; rump lower than the shoulders; large round head with a dished / concave face profile; short, round ears set apart; long curved claws (about 5–10 cm) that often leave marks well ahead of the toes in tracks. Average Rockies weights Parks Canada lists: males roughly 150–300 kg, females 80–150 kg.
+
+**Black bear (Ursus americanus):** no big shoulder hump; rump higher than the shoulders; smaller head with a straighter snout-to-forehead line; longer, pointier ears; short claws (about 3–4 cm) that are excellent for climbing. Chest blazes (white patches) are common. Rockies averages: males about 80–150 kg, females 45–100 kg.
+
+You will not always get a perfect side view. Do not edge closer for one. ID from a safe distance, then act on behaviour.
+
+![Fresh bear tracks pressed into mud on a misty spruce trail with distant peaks](#photo: )
+
+## Avoid the meeting: noise, groups, signs and hours
+
+Parks Canada's first rule is the boring one that saves the most people: avoid the encounter.
+
+**Make noise that means something.** Call out, clap, sing or talk — especially near streams, dense brush, berry patches, on windy days, and anywhere you cannot see ahead. Parks Canada and Alberta Parks both say bear bells are not enough. Bears can be so locked on food they miss quiet humans.
+
+**Hike tight, hike daylight.** Parks Canada recommends a tight group of four or more. Never let kids wander. Travel marked trails in daylight; bears are often more active at dawn and dusk.
+
+**Read the ground.** Fresh tracks, diggings, torn logs, flipped rocks, scat, and especially a carcass mean leave — immediately — and report a dead animal to Parks Canada or the local provincial line. Ravens and magpies hanging around can also mean a carcass.
+
+**Headphones off.** Banff, Jasper and Alberta Parks all say it: tune in; do not recreate with earbuds in.
+
+**Stay 100 m from bears** when you can (Parks Canada frames that as about ten bus lengths). Never approach. Never feed. Roadside bears need space to put on fat for winter — consider not stopping at all.
+
+## Bear spray: the last-resort tool that still belongs on your belt
+
+Carry spray. Know it. Do not romanticize it.
+
+Parks Canada describes bear spray as a capsaicin deterrent that throws a cone-shaped cloud roughly 10 m at over 100 km/h. It stings eyes and skin and makes breathing miserable. It is non-lethal. Alberta.ca and WildSafeBC push the same logistics Parks Canada does:
+
+- Buy spray labelled for animals / bear repellent. In Canada the package cannot exceed 500 ml. Parks Canada recommends about **225 ml** with **0.75%–1%** capsaicin.
+- **Check the expiry date.** Propellant weakens. Expired cans are trail jewellery.
+- **Carry it where your dominant hand can grab it in under two seconds** — hip or chest holster. In a pack is a no. On a bike, Parks Canada suggests the water-bottle cage; Alberta.ca prefers a chest holster or jersey pocket so you still have it if you leave the bike.
+- Remove the transport tie-wrap before you hike. Practice the safety clip at home with an inert trainer if you can.
+- En route: safety on, trunk or sealed container, away from heat and punctures. **Not allowed on commercial airlines**, even checked.
+- **Do not pre-spray tents, gear or yourself.** Residual scent can attract bears.
+
+**When and how:** last resort after you try to create space. Parks Canada wants the bear close — less than about a bus length — and Banff officer Dan Rafla, on the Parks Canada spray page, puts effective range around **five metres**. Safety off, build a wall of spray toward the face, short one- to two-second bursts, respect the wind, then leave. WildSafeBC's S.P.R.A.Y. cue helps under stress: Stop, Prepare, Remove safety, build A wall, Yield.
+
+Wind, rain, cold and expiry all cut effectiveness. Avoidance still beats heroics.
+
+![Orange bear spray canister in a hip holster on mossy forest ground](#photo: )
+
+## If you see a bear: aware, unaware, bluff charge
+
+Stop. Stay calm. Get spray ready. **Do not run.** Running can trigger a chase, and you will not win.
+
+**Unaware of you:** leave quietly without getting its attention.
+
+**Aware of you:** speak calmly and firmly so it knows you are human. Back away slowly. Appear big; pick up small kids; stay grouped. Do not drop your pack — it can protect you. If a bear stands and sniffs the air, Parks Canada says it is usually trying to identify you, not starting a fight. Bears may **bluff charge** — come hard, then veer or stop. Hold your nerve. Screaming and sudden moves can make things worse.
+
+If you must continue past, give a wide detour, leave the trail, or wait at a safe distance until it moves on.
+
+## Defensive vs non-defensive: why the script changes
+
+Parks Canada splits approaching bears into two stories. Get the story wrong and the response is wrong.
+
+**Defensive** (most common bad encounter): the bear is surprised, protecting cubs, or guarding food. It looks stressed — woofing, growling, jaw-popping, ears back. Your job is to look non-threatening: calm voice, no hard eye contact staring contest, slowly increase distance when it pauses. If it keeps coming, stand your ground, keep talking, use spray. **If it makes contact in a defensive attack, play dead** (details below).
+
+**Non-defensive** (curious, food-conditioned, dominance-testing, or — rarely — predatory): head and ears up, intent on you. Speak firmly, get out of its path, stand your ground if followed, shout, look big, intimidate, use spray if it closes. This is not the "look small and apologetic" script.
+
+Alberta Parks echoes the same split and notes some sprays list effective distances up to about 9 m depending on brand and wind — always read your can.
+
+![Alpine berry bushes in a mountain valley at dusk under Rockies peaks](#photo: )
+
+## If contact happens
+
+Most encounters never get here. If they do, Parks Canada’s mountain-parks guidance:
+
+**Defensive attack (most common):** use spray. If the bear makes contact, **play dead**. Lie on your stomach, legs apart, hands crossed behind your neck to protect face and neck and make it harder to flip you. Stay still until you are sure it has left. Defensive assaults are often under about two minutes. If the attack continues, it may have shifted — **fight back**.
+
+**Predatory attack (very rare):** stalking on a trail, or an attack at night. Do **not** play dead. Try to reach a building, vehicle or climb a tree if you can. Otherwise spray and **fight** — shout, hit with rocks or sticks, make it clear you are not easy prey.
+
+There is no perfect flowchart when adrenaline is loud. That is why Parks Canada keeps hammering avoidance.
+
+## Food, garbage and the Bare Campsite rules
+
+A fed bear is often a dead bear. Habituation starts with one unattended cooler.
+
+In mountain national parks, Parks Canada’s **Bare Campsite** program means food and scented items go in a hard-sided vehicle, trailer/RV, or campground food locker whenever they are not in use — including empty coolers, dishes, BBQs, pet food, toiletries and garbage. Tents, soft-sided shelters, open truck beds and dining shelters do not count as storage.
+
+Backcountry: cook and store food away from the tent (Parks Canada: at least 50 m downwind for cooking/eating/storage in random-camping guidance; tent at least 50 m from trail/brush/berries and 70 m from water). Use designated lockers, cables or poles where provided. **IGBC-approved bear-resistant food containers are mandatory April 1–November 15 in Banff, Yoho, Kootenay and Jasper.** Hang when you can. Pack garbage out — do not burn or bury it, and do not dump it in outhouses.
+
+Front-country tip that still fails people weekly: when you leave to hike, the cooler goes in the vehicle or locker. "We'll only be gone an hour" is how picnic-table bears get made.
+
+![Backcountry tent in a mountain valley at blue hour with food storage set apart](#photo: )
+
+## Dogs, bikes and trail runners
+
+**Dogs:** Parks Canada wants them leashed and under physical control, and recommends leaving dogs home for backcountry trips. Dogs can provoke wildlife; an off-leash dog can also sprint back to you with a bear behind it. Alberta.ca makes the same point. National parks require leashes — Banff is explicit.
+
+**Mountain bikes and trail running:** Parks Canada calls these higher-risk in bear country because speed and quietness create surprise encounters. Slow through brush and blind corners, make noise, travel in groups, watch ahead, no earbuds. Jasper’s bike page repeats it: yell on approaches, especially in dense vegetation, near streams, on windy days and around corners; bells alone are not enough. Alberta.ca adds: avoid thick-bush trails with tight corners in peak bear seasons (early spring after den emergence, mid-August berry season, late fall hyperphagia), and keep spray where you can reach it even if you ditch the bike.
+
+![Misty forest trail bending into a blind corner through dense spruce](#photo: )
+
+## Alberta, BC and farther north: same manners, local phone trees
+
+The etiquette travels. The dispatch numbers change.
+
+- **Banff / mountain national parks:** carry spray year-round in many areas; report aggressive wildlife. Banff Dispatch listed on Parks Canada spray materials: **403-762-1470**. Jasper Dispatch for wildlife: **780-852-6155**. Keep 100 m from bears; 30 m from elk/deer/moose.
+- **Kananaskis / Alberta Parks:** report sightings in Kananaskis Country to Kananaskis Emergency Services **403-591-7755**; elsewhere in Alberta, **310-LAND (5263)**.
+- **BC:** WildSafeBC is the provincial education hub for spray practice and species pages; check BC Parks advisories for closures before provincial park trips.
+- **Yukon and the far north:** same calm / no-run / spray / food discipline — with longer gaps between help. File a trip plan, carry redundancy (inReach-class communicator), and treat every berry patch and salmon river like a dining room you were not invited into.
+
+![Vast northern river valley and snow peaks under dramatic autumn sky](#photo: )
+
+## The honest part
+
+Bear country manners are not about becoming a wildlife Whisperer. They are about not being the surprise, not being the buffet, and not turning a defensive animal into a management problem. Spray, noise, group size and clean camps are tools. Ego is not.
+
+Your heart will still try to leave your chest the first time a dark shape lifts its head in the willows. Stay, breathe, talk, back away, spray if you must, leave when you can — and report what you saw so the next group is not guessing.
+
+## How to play it
+
+Build the habit before the trailhead: fresh spray on the belt, trip plan left with a human, closures checked, headphones in the glovebox. Pair Rockies days with our [best hikes in Alberta and BC](/journal/best-hikes-alberta-bc/), keep packing honest with the [lightweight hike-packing kit](/journal/lightweight-hike-packing-kit/), and remember food discipline is half of [first Canadians survival skills](/journal/first-canadians-survival-skills/) updated for coolers and IGBC cans.
+
+If you want a simple lid for the long approach walk — the classic Richardson 112 trucker in loden with a structured front, mesh back and EVOLVE embroidered up front — the [Backcountry Trucker](/shop/backcountry-trucker/) is the cap you reach for first. Some things should never change. Get outside.`,
+  },
+  {
     slug: "best-places-to-stay-western-canada-views",
     title: "The 10 Best Places to Stay in Western Canada With a Breathtaking View From Your Room",
     dek: "From a helicopter-only Rockies lodge to glass chalets under the Yukon aurora, here are ten Western Canada stays where the view is the room, with prices and how to get there.",
@@ -571,7 +1073,7 @@ Then one night it goes off overhead, the whole sky pulses pink and green, and yo
 
 ## Your northern lights game plan
 
-Sign up for AuroraWatch. When it fires, check NOAA's 30-minute map and the clouds, then go. On a weeknight near Edmonton, that's Elk Island or Miquelon. With a weekend, Lakeland in September or Jasper in October. For a real trip, Wood Buffalo in late winter. While you're out, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list, sleep somewhere warm at one of our [boutique cabins](/journal/boutique-cabins-canada/), or thaw out at [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/).
+Sign up for AuroraWatch. When it fires, check NOAA's 30-minute map and the clouds, then go. On a weeknight near Edmonton, that's Elk Island or Miquelon. With a weekend, Lakeland in September or Jasper in October. For a real trip, Wood Buffalo in late winter. While you're out, add a few of [the most breathtaking views in Canada](/journal/best-views-canada/) to the list, sleep somewhere warm at one of our [boutique cabins](/journal/boutique-cabins-canada/), or thaw out at [Western Canada's best natural hot springs](/journal/best-hot-springs-western-canada/). For daytime plans on the same trip, here are [10 places in Western Canada that get better when the snow falls](/journal/best-places-western-canada-winter/).
 
 And bring something hot. Coffee before the cold, cocoa after, in our [Borealis Camp Mug](/shop/borealis-camp-mug/) if you like. Cold and free beats warm and bored.`,
   },
@@ -1147,7 +1649,7 @@ On the tip of the Gaspe, a 475 m limestone monolith pierced by a natural arch si
 
 ## One more, for winter
 
-If you come back in the cold months, point the truck at Abraham Lake in Alberta, where methane bubbles freeze in stacked white discs under clear ice, one of the strangest and most beautiful sights in the country. It only works December to February, in thick clear ice, so treat it as a reason to return. Nordegg, the nearest town, is also one of the value regions in our [off-grid cabin guide](/journal/off-grid-cabin-canada/).
+If you come back in the cold months, point the truck at Abraham Lake in Alberta, where methane bubbles freeze in stacked white discs under clear ice, one of the strangest and most beautiful sights in the country. It only works December to February, in thick clear ice, so treat it as a reason to return. Nordegg, the nearest town, is also one of the value regions in our [off-grid cabin guide](/journal/off-grid-cabin-canada/). For the ice safety rules, the best dates and nine more winter-only sights, see our guide to [10 places in Western Canada that get better when the snow falls](/journal/best-places-western-canada-winter/).
 
 ## Go stand there
 
@@ -1158,6 +1660,30 @@ Photographs of these places are everywhere, and not one of them does the job, be
 // Answer-engine FAQ blocks for the 2026-06 wave — rendered on the article pages
 // and emitted as FAQPage JSON-LD. Concise, factual, drawn from each article.
 export const FAQS: Record<string, { q: string; a: string }[]> = {
+  "ice-fishing-alberta": [
+    { q: "Do I need a fishing licence to ice fish in Alberta?", a: "Yes, if you're 16 or older, unless you're an Alberta resident 65 or older. Alberta residents aged 16 to 64 pay $30 plus GST for an annual sportfishing licence, after a one-time WiN activation. Kids under 16 don't need a licence. Everyone can fish without a licence on Family Fishing Weekend, February 13 to 15, 2027." },
+    { q: "How thick does ice need to be for ice fishing?", a: "The Lifesaving Society recommends at least 10 cm (4 in.) of new, clear, hard ice for walking and ice fishing, and says to stay off ice 7 cm or thinner. The Canadian Red Cross is more cautious at 15 cm for one person and 20 cm for a group. White, grey or slushy ice is weaker. Measure in several places." },
+    { q: "Can I drive my truck on the ice in Alberta?", a: "Alberta's regulations say not to drive on ice less than 30 cm thick, and the Lifesaving Society suggests 30 to 38 cm of clear, hard ice for a medium pickup. Many anglers walk out instead. Never drive near aerators, pressure ridges, inlets or other vehicles." },
+    { q: "How many lines can I use ice fishing in Alberta?", a: "Up to two lines when fishing through ice, compared to one in open water. You must stay within 30 m of any line in the water, and each line can have no more than three hooks." },
+    { q: "When does ice fishing season start in Alberta?", a: "There's no single start date. The season depends on each lake's regulations and on the ice. Stocked put-and-take ponds are open all year, so you can fish as soon as the ice is thick enough. Check the lake in the regulations and measure the ice yourself." },
+    { q: "Where can a beginner go ice fishing near Edmonton or Calgary?", a: "Stocked trout ponds are the easiest start. Near Edmonton, try Hermitage Park Pond, Hasse Lake, Star Lake or Cardiff Park Pond. Near Calgary, try Winchell Lake, Dewitt's Pond or Crossfield Trout Pond. Hasse and Winchell are aerated, so obey the thin-ice signs." },
+    { q: "Is it safe to use a heater in an ice fishing shelter?", a: "Only a heater made for indoor use, with ventilation and a working carbon monoxide alarm. Health Canada says never to use propane, kerosene or oil heaters in enclosed spaces unless they're designed for it. If anyone gets a headache or feels dizzy or sick, get everyone out into fresh air." },
+  ],
+  "best-places-western-canada-winter": [
+    { q: "What are the best places to visit in Western Canada in winter?", a: "Our top picks are Lake Louise for skating below a glacier, Johnston Canyon's icewalk, the frozen bubbles at Abraham Lake, the Icefields Parkway, Emerald Lake in Yoho, a guided icewalk in Jasper, Mount Robson, Helmcken Falls in Wells Gray, storm watching in Tofino and quiet winter days in Waterton. Check closures before you go." },
+    { q: "Is Lake Louise worth visiting in winter?", a: "Yes. The lake freezes and the skating area usually opens around mid-December. Skating is free with a national park pass, and lakeshore parking is free in winter. Ice Magic runs February 3 to 7, 2027, with access through participating hotels only." },
+    { q: "When is the best time to see the Abraham Lake ice bubbles?", a: "Preacher's Point often freezes by mid-November. For the deep bubble stacks, local guides say January 10 to 25 is usually a safe bet, on clear ice with no fresh snow. Stay off ice between the dam and Windy Point, and only walk on clear ice at least 15 cm thick." },
+    { q: "Is the Icefields Parkway open in winter?", a: "Yes, it's open year-round but can close for storms and avalanche control. In winter there's no gas, food or cell service for 232 km, and snow tires or chains are mandatory from November 1 to March 31. Check 511 Alberta before you leave." },
+    { q: "Is Maligne Canyon open in winter 2026 to 2027?", a: "No. Parks Canada keeps Maligne Canyon closed for the 2026 season after the 2024 wildfire, including winter access, so there are no Maligne Canyon icewalks this winter. Guided icewalks are running in nearby Pleckaitis Canyon instead." },
+    { q: "Is Johnston Canyon open in winter?", a: "Normally, yes, and its icewalk is one of the best in Banff. This season the trail, day-use area and main parking lot are closed for rock-slope work under an order that ends December 11, 2026. Check Parks Canada's Banff bulletins before you go, and bring ice cleats." },
+  ],
+  "bear-country-manners-grizzly-black-bear-canada": [
+    { q: "Should I run from a bear?", a: "No. Parks Canada says never run — it can trigger a chase, and you will not outrun a bear. Stop, stay calm, get spray ready, and back away slowly when it is safe." },
+    { q: "Does bear spray work, and where should I carry it?", a: "Used properly at close range, Parks Canada and field studies summarized by educators like WildSafeBC treat spray as highly effective. Carry it in a hip or chest holster you can draw in under two seconds — not in your pack. Check the expiry date and watch the wind." },
+    { q: "What is the difference between a defensive and a predatory bear attack?", a: "Defensive attacks are the common type: surprise, cubs or food. Play dead if contact happens after using spray. Predatory attacks are rare (stalking or night attacks): do not play dead — fight back and use spray. Parks Canada’s mountain-parks pages spell out both." },
+    { q: "Can I tell a grizzly from a black bear by colour?", a: "Not reliably. Parks Canada says both species vary from blond to nearly black. Use the shoulder hump, face profile, ear shape and claw length instead — from a safe distance." },
+    { q: "Are bear bells enough in Banff or Jasper?", a: "No. Parks Canada and Alberta Parks say bells are not effective enough. Use your voice, clap or sing, especially in brush, by water, and on windy days." }
+  ],
   "best-places-to-stay-western-canada-views": [
     { q: "What is the best place to stay in Western Canada for a view?", a: "The best place to stay in Western Canada for a view depends on the view you want. For mountains, choose Mount Assiniboine Lodge or a Lakeshore Cabin at Lake O'Hara Lodge. For the ocean, choose the Wickaninnish Inn in Tofino. For the northern lights, choose an Aurora Glass Chalet at Northern Lights Resort & Spa in the Yukon or Blachford Lake Lodge in the NWT." },
     { q: "Which Western Canada stays with a view can you drive to?", a: "You can drive to Fairmont Chateau Lake Louise, Sparkling Hill Resort and the Wickaninnish Inn. Registered Moraine Lake Lodge guests can drive up the otherwise closed Moraine Lake Road. Northern Lights Resort includes transfers from Whitehorse." },

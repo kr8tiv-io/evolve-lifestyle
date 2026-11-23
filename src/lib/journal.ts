@@ -83,6 +83,7 @@ export function getArticle(slug: string): Article | undefined {
 // Publish / last-refresh dates — feed sitemap <lastmod> and Article JSON-LD
 // (datePublished / dateModified). New 2026-06 wave dated to its publish day.
 const PUBLISHED: Record<string, string> = {
+  "bear-country-manners-grizzly-black-bear-canada": "2026-11-05T23:00:00-06:00",
   "best-ski-resorts-alberta": "2026-06-21",
   "best-hikes-alberta-bc": "2026-06-21",
   "boutique-cabins-canada": "2026-06-21",
@@ -100,6 +101,8 @@ const PUBLISHED: Record<string, string> = {
   "northern-lights-alberta-western-canada": "2026-10-26T00:00:00-06:00",
   "the-long-haul-canada-road-trips": "2026-10-27T00:00:00-06:00",
   "best-places-to-stay-western-canada-views": "2026-10-31T12:00:00-06:00",
+  "best-places-western-canada-winter": "2026-11-19T23:00:00-06:00",
+  "ice-fishing-alberta": "2026-11-22T18:00:00-06:00",
 };
 
 export function getArticleDate(slug: string): string {
@@ -121,7 +124,8 @@ const MODIFIED: Record<string, string> = {
   "best-nature-resorts-canada": "2026-10-31T12:00:00-06:00",
   "canadian-extreme-sports": "2026-10-31T12:00:00-06:00",
   "off-grid-cabin-canada": "2026-10-31T12:00:00-06:00",
-  "best-views-canada": "2026-10-31T12:00:00-06:00",
+  "best-views-canada": "2026-11-19T23:00:00-06:00",
+  "northern-lights-alberta-western-canada": "2026-11-19T23:00:00-06:00",
 };
 
 // 2026-10-31 SEO refresh touched every article (titles, descriptions, schema).

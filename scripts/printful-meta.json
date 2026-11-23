@@ -1214,5 +1214,32 @@
       "2XL"
     ],
     "minPrice": 42.5
+  },
+  {
+    "id": "488745390",
+    "printfulName": "Banff Encounter Deluxe Tee",
+    "blankType": "Lane Seven LS15000CVC | Unisex Deluxe CVC Tee",
+    "brand": "Lane Seven",
+    "model": "LS15000CVC",
+    "techniques": [
+      "DTG"
+    ],
+    "fileTypes": [
+      "default",
+      "sleeve_left",
+      "preview"
+    ],
+    "technique": "print",
+    "colors": [
+      "Black Heather"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "minPrice": 30.0
   }
 ]

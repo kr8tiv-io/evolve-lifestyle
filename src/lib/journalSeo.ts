@@ -10,6 +10,27 @@ export interface ArticleSeo {
 }
 
 export const JOURNAL_SEO: Record<string, ArticleSeo> = {
+  "ice-fishing-alberta": {
+    "seoTitle": "Ice Fishing in Alberta: A Beginner's Field Guide",
+    "metaDescription": "Ice fishing in Alberta for beginners: licence costs, safe ice thickness, the rules, stocked trout ponds near Edmonton and Calgary, gear and what to wear.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 4324
+  },
+  "best-places-western-canada-winter": {
+    "seoTitle": "10 Best Places to Visit in Western Canada in Winter",
+    "metaDescription": "The best places to visit in Western Canada in winter: Lake Louise, Abraham Lake's ice bubbles, frozen canyons, the Icefields Parkway, Tofino storms and more.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 3832
+  },
+  "bear-country-manners-grizzly-black-bear-canada": {
+    "seoTitle": "Bear Country Manners: Grizzly & Black Bear Safety",
+    "metaDescription": "What to do if you meet a grizzly or black bear in Canada: ID tips, bear spray, bluff charges, food caches, dogs and bikes — Parks Canada–sourced for Alberta & BC trails.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 2108
+  },
   "best-hikes-alberta-bc": {
     "seoTitle": "Best Hikes in Alberta and BC: 10 Trails Worth It",
     "metaDescription": "The best hikes in Alberta and BC, with real distances, elevation gain and permit rules for standout day hikes and bigger summer trips.",
