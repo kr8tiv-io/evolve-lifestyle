@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/ui/ProductCard";
-import { RevealWords } from "@/components/ui/Reveal";
 import {
   CATEGORY_LABELS,
   COLLECTION_LABELS,
@@ -48,20 +47,7 @@ export default function ShopClient() {
   }, [category, collection, sort]);
 
   return (
-    <div className="pt-[var(--header-h)]">
-      {/* Header band */}
-      <section className="frame pb-12 pt-20">
-        <p className="eyebrow mb-5">The Range</p>
-        <RevealWords
-          text="Shop everything."
-          className="block text-display font-medium uppercase tracking-tightest text-silver-bright"
-        />
-        <p className="mt-6 max-w-md text-base text-silver-dim">
-          Made to order — each piece embroidered or printed once you place it,
-          then shipped across Canada and North America.
-        </p>
-      </section>
-
+    <>
       {/* Filters */}
       <section className="sticky top-[var(--header-h)] z-30 border-y border-white/10 bg-void/80 backdrop-blur-xl">
         <div className="frame flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
@@ -118,7 +104,7 @@ export default function ShopClient() {
           </motion.div>
         )}
       </section>
-    </div>
+    </>
   );
 }
 

@@ -103,7 +103,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p488186244-0-v4.png"
+      "/products/p488186244-0-v4.webp"
     ],
     "sizes": [
       "XS",
@@ -193,7 +193,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441089440-0-v4.png"
+      "/products/p441089440-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -232,7 +232,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p441089080-0-v4.png"
+      "/products/p441089080-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -311,7 +311,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441087767-0-v5.png"
+      "/products/p441087767-0-v5.webp"
     ],
     "sizes": [
       "S",
@@ -390,7 +390,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441087198-0-v4.png"
+      "/products/p441087198-0-v4.webp"
     ],
     "sizes": [
       "XS",
@@ -479,7 +479,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441085408-0-v4.png"
+      "/products/p441085408-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -569,7 +569,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p441085023-0-v4.png"
+      "/products/p441085023-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -658,7 +658,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441084646-0-v4.png"
+      "/products/p441084646-0-v4.webp"
     ],
     "sizes": [
       "XS",
@@ -757,7 +757,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441084360-0-v4.png"
+      "/products/p441084360-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -796,7 +796,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441084054-0-v4.png"
+      "/products/p441084054-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -835,7 +835,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p441083649-0-v4.png"
+      "/products/p441083649-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -874,7 +874,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p441082795-0-v4.png"
+      "/products/p441082795-0-v4.webp"
     ],
     "sizes": [
       "S"
@@ -913,7 +913,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441082547-0-v4.png"
+      "/products/p441082547-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -952,7 +952,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p441082269-0-v4.png"
+      "/products/p441082269-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1041,7 +1041,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440709618-0-v4.png"
+      "/products/p440709618-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1120,7 +1120,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440708831-0-v4.png"
+      "/products/p440708831-0-v4.webp"
     ],
     "sizes": [
       "XS",
@@ -1209,7 +1209,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440708024-0-v5.png"
+      "/products/p440708024-0-v5.webp"
     ],
     "sizes": [
       "One size"
@@ -1248,7 +1248,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440613219-0-v4.png"
+      "/products/p440613219-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -1287,7 +1287,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440612780-0-v4.png"
+      "/products/p440612780-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1366,7 +1366,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440612001-0-v4.png"
+      "/products/p440612001-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1445,7 +1445,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440610853-0-v4.png"
+      "/products/p440610853-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1524,7 +1524,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440610516-0-v4.png"
+      "/products/p440610516-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1604,7 +1604,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440609882-0-v4.png"
+      "/products/p440609882-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1683,7 +1683,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440609698-0-v4.png"
+      "/products/p440609698-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -1762,7 +1762,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440609155-0-v4.png"
+      "/products/p440609155-0-v4.webp"
     ],
     "sizes": [
       "XS",
@@ -1851,7 +1851,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440608834-0-v4.png"
+      "/products/p440608834-0-v4.webp"
     ],
     "sizes": [
       "XS",
@@ -1940,7 +1940,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440607891-0-v5.png"
+      "/products/p440607891-0-v5.webp"
     ],
     "sizes": [
       "20 oz"
@@ -1979,7 +1979,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440607292-0-v4.png"
+      "/products/p440607292-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -2018,7 +2018,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440606458-0-v4.png"
+      "/products/p440606458-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -2057,7 +2057,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440605056-0-v4.png"
+      "/products/p440605056-0-v4.webp"
     ],
     "sizes": [
       "One size"
@@ -2096,7 +2096,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#4ade80"
     ],
     "images": [
-      "/products/p440601843-0-v4.png"
+      "/products/p440601843-0-v4.webp"
     ],
     "sizes": [
       "15 oz"
@@ -2135,7 +2135,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#39ff14"
     ],
     "images": [
-      "/products/p440600277-0-v4.png"
+      "/products/p440600277-0-v4.webp"
     ],
     "sizes": [
       "S",
@@ -2224,7 +2224,7 @@ export const CATALOG_PRODUCTS: Product[] = [
       "#00ff41"
     ],
     "images": [
-      "/products/p440597762-0-v4.png"
+      "/products/p440597762-0-v4.webp"
     ],
     "sizes": [
       "S",

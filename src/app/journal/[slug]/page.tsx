@@ -7,6 +7,8 @@ import { JOURNAL_SEO } from "@/lib/journalSeo";
 import Markdown from "@/components/ui/Markdown";
 import ProductImage from "@/components/ui/ProductImage";
 import EmailSignup from "@/components/ui/EmailSignup";
+import { RELATED_PRODUCTS } from "@/lib/journalRelated";
+import { getProduct } from "@/lib/products";
 
 const SITE = "https://evolveapparel.shop";
 
@@ -187,11 +189,39 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           </section>
         )}
 
+        {/* honest product mentions that fit this guide */}
+        {(() => {
+          const recs = (RELATED_PRODUCTS[article.slug] || [])
+            .map((r) => ({ ...r, product: getProduct(r.slug) }))
+            .filter((r) => r.product);
+          if (!recs.length) return null;
+          return (
+            <section className="mt-16 max-w-2xl border-t border-white/10 pt-10">
+              <p className="font-mono text-[0.6rem] uppercase tracking-tracked text-neon-soft">
+                From the shop, if it fits the day
+              </p>
+              <ul className="mt-6 space-y-6">
+                {recs.map((r) => (
+                  <li key={r.slug}>
+                    <Link
+                      href={`/shop/${r.product!.slug}`}
+                      className="text-base font-medium text-silver-bright link-underline hover:text-neon"
+                    >
+                      {r.product!.name}
+                    </Link>
+                    <p className="mt-1 text-base leading-relaxed text-silver-dim">{r.why}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })()}
+
         {/* soft sell */}
         <div className="mt-16 max-w-2xl overflow-hidden rounded-[3px] border border-white/10 bg-void/40 p-7">
           <p className="font-mono text-[0.6rem] uppercase tracking-tracked text-neon-soft">Before you head out</p>
           <p className="mt-3 text-base leading-relaxed text-silver-dim">
-            Need gear for the trip — something built for the bush and made for the long haul? Have a
+            Need gear for the trip, something built for the bush and made for the long haul? Have a
             look at what we make.
           </p>
           <Link href="/shop" data-cursor="magnetic" className="btn-solid mt-5">

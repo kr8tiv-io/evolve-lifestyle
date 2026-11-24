@@ -131,6 +131,10 @@ const MODIFIED: Record<string, string> = {
 // 2026-10-31 SEO refresh touched every article (titles, descriptions, schema).
 const SEO_REFRESH = "2026-10-31T12:00:00-06:00";
 
+// Visible "From the shop" mentions and contact details added 23 Nov 2026.
+const SHOP_LINKS_REFRESH = "2026-11-23T19:00:00-06:00";
+
 export function getArticleModified(slug: string): string {
-  return MODIFIED[slug] ?? (getArticleDate(slug) > SEO_REFRESH ? getArticleDate(slug) : SEO_REFRESH);
+  const own = MODIFIED[slug] ?? (getArticleDate(slug) > SEO_REFRESH ? getArticleDate(slug) : SEO_REFRESH);
+  return own > SHOP_LINKS_REFRESH ? own : SHOP_LINKS_REFRESH;
 }

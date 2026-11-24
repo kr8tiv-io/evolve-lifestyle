@@ -1,5 +1,6 @@
 import { pageOpenGraph } from "@/lib/seo";
 import Link from "next/link";
+import { CONTACT } from "@/lib/site";
 
 const DESC =
   "How EVOLVE collects, uses, and protects your information. We only collect what we need to fulfil your order and never sell your data.";
@@ -46,7 +47,7 @@ const SECTIONS: { h: string; body: string[] }[] = [
   {
     h: "06 · Contact",
     body: [
-      "Questions about your privacy or your data? Get in touch and a real person from EVOLVE will help.",
+      "Questions about your privacy or your data? Call or email and a real person from EVOLVE will help.",
     ],
   },
 ];
@@ -79,6 +80,21 @@ export default function PrivacyPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 max-w-2xl space-y-2 text-base text-silver">
+          <p>
+            Phone:{" "}
+            <a href={`tel:${CONTACT.phoneTel}`} className="link-underline text-silver-bright hover:text-neon">
+              {CONTACT.phoneDisplay}
+            </a>
+          </p>
+          <p>
+            Email:{" "}
+            <a href={`mailto:${CONTACT.email}`} className="link-underline text-silver-bright hover:text-neon">
+              {CONTACT.email}
+            </a>
+          </p>
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8">

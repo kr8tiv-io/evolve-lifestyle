@@ -1,79 +1,76 @@
 # EVOLVE Apparel
 
-> Western-Canadian outdoor lifestyle apparel — the lifestyle arm of Evolve Eco Blasting. Heavyweight hoodies, tees, flannels, and caps, made to order and shipped across Canada and North America. Born in the Alberta trades, weather-tested, and unapologetically Canadian. Tagline: Prairies to Peaks. Earned outside.
+> Western-Canadian outdoor lifestyle apparel. Heavyweight hoodies, tees, caps, and a few things for the trail, made to order and shipped across Canada and the United States. The Evolve Journal publishes researched guides to getting outside in Canada.
 
-EVOLVE makes rugged, premium-but-accessible apparel for proud, capable Canadians who live their lives outside — trades workers, hunters, anglers, hikers, snowboarders, and weekend escapees. The Evolve Journal is a library of deeply researched, no-fluff guides to getting outside in Canada: hikes, ski resorts, national parks, cabins, mountaineering, gear, survival skills, adventure sports, and breathtaking views.
+EVOLVE Apparel is an online shop at https://evolveapparel.shop. It is the apparel arm of Evolve Eco Blasting and a KR8TIV company. Prices are in CAD. All sales are final, except manufacturing defects reported within 14 days of delivery, which are exchanged or remade. The full policy is at https://evolveapparel.shop/terms/. Contact: 780-915-5471 or kr8tiv@kr8tiv.io.
 
-## Key pages
-- [Home](https://evolveapparel.shop/): brand overview and featured drop.
-- [Shop](https://evolveapparel.shop/shop/): the full range — outerwear, tops, headwear, accessories.
-- [Our Story](https://evolveapparel.shop/about/): the three brand stories and the link back to Evolve Eco Blasting.
-- [The Evolve Journal](https://evolveapparel.shop/journal/): every outdoor guide and field note.
+Markdown copies of these pages live at the same path with a .md extension, for example https://evolveapparel.shop/journal/best-hot-springs-western-canada.md. They are provided for readers and tools that prefer plain text. They are not advertised on the website.
 
-## The Evolve Journal — outdoor guides
-- [First Hole: A Beginner's Field Guide to Ice Fishing in Alberta](https://evolveapparel.shop/journal/ice-fishing-alberta/): Ice fishing in Alberta for beginners: WiN and licence costs, Lifesaving Society ice thickness, ice-fishing rules, stocked trout ponds near Edmonton (Hasse, Star, Hermitage, Cardiff) and Calgary (Winchell, Dewitt's, Crossfield), gear, layering, CO safety, fish ID and cooking, checked November 2026.
-- [First Snow, Best Views: 10 Places in Western Canada That Get Better When the Snow Falls](https://evolveapparel.shop/journal/best-places-western-canada-winter/): Lake Louise skating, Johnston Canyon and Pleckaitis icewalks, Abraham Lake ice bubbles, the Icefields Parkway, Emerald Lake, Mount Robson, Helmcken Falls, Tofino storm watching and Waterton, with closures, road rules and ice safety checked November 2026.
-- [Bear Country Manners: What to Actually Do When You Meet a Grizzly](https://evolveapparel.shop/journal/bear-country-manners-grizzly-black-bear-canada/): Parks Canada–sourced black vs grizzly ID, bear spray, bluff charges, Bare Campsite rules, dogs and bikes for Alberta, BC and the North.
-- [The 10 Best Places to Stay in Western Canada With a Breathtaking View From Your Room](https://evolveapparel.shop/journal/best-places-to-stay-western-canada-views/): ten lodges and resorts in BC, Alberta, the Yukon and the NWT with the view from the room, prices checked October 2026, and how to get there.
-- [The Long Haul: Canada's Greatest Road Trips, With the Gas Stations Nobody Warns You About](https://evolveapparel.shop/journal/the-long-haul-canada-road-trips/)
-- [Chasing Green: How and Where to See the Northern Lights in Alberta and Western Canada](https://evolveapparel.shop/journal/northern-lights-alberta-western-canada/)
-- [Steaming in the Bush: Western Canada's Best Natural Hot Springs (And the Ones Still Worth the Hike)](https://evolveapparel.shop/journal/best-hot-springs-western-canada/)
-- [No Mountains Required: The Best Hikes Within Two Hours of Edmonton](https://evolveapparel.shop/journal/best-hikes-near-edmonton/)
-- [Vancouver Island, End to End: Ten Places Worth the Ferry](https://evolveapparel.shop/journal/vancouver-island-places/)
-- [Learning to Climb in Canada: Where to Start Mountaineering](https://evolveapparel.shop/journal/learn-to-mountaineer-canada/)
-- [Pack Light, Eat Smart: The Beginner's Hike-Packing Kit](https://evolveapparel.shop/journal/lightweight-hike-packing-kit/)
-- [Descended from Survivors: Ten Backcountry Skills the First Canadians Knew](https://evolveapparel.shop/journal/first-canadians-survival-skills/)
-- [Deep Wild, Good Sheets: Five Canadian Nature Resorts](https://evolveapparel.shop/journal/best-nature-resorts-canada/)
-- [Cold and Free: Five Canadian Adventure Sports](https://evolveapparel.shop/journal/canadian-extreme-sports/)
-- [Build Your Own Off-Grid Escape: Cheap Land, Solar, and a Wood-Fired Soak](https://evolveapparel.shop/journal/off-grid-cabin-canada/)
-- [Stand Here: The Ten Most Breathtaking Views in Canada](https://evolveapparel.shop/journal/best-views-canada/)
-- [The Best Ski Resorts in Alberta](https://evolveapparel.shop/journal/best-ski-resorts-alberta/)
-- [The Best Hikes in Alberta and BC](https://evolveapparel.shop/journal/best-hikes-alberta-bc/)
-- [Ten Boutique Cabins and Lodges in Canada](https://evolveapparel.shop/journal/boutique-cabins-canada/)
-- [The 10 Best National Parks in Canada](https://evolveapparel.shop/journal/best-national-parks-canada/)
+## Site
 
-## Products (prices in CAD, made to order)
-- [Banff Encounter Deluxe Tee](https://evolveapparel.shop/shop/banff-encounter-deluxe-tee/): Tops · printed, $30.00 CAD
-- [Believer Heavyweight Tee](https://evolveapparel.shop/shop/believer-heavyweight-tee/): Tops · printed, $42.50 CAD
-- [Treeline Camo Trucker](https://evolveapparel.shop/shop/treeline-camo-trucker/): Headwear · embroidered, $33.00 CAD
-- [Longhaul Hoodie](https://evolveapparel.shop/shop/longhaul-hoodie/): Outerwear · embroidered, $54.50 CAD
-- [Coldfront Long-Sleeve](https://evolveapparel.shop/shop/coldfront-long-sleeve/): Tops · embroidered, $47.50 CAD
-- [Driftwood Hooded Long-Sleeve](https://evolveapparel.shop/shop/driftwood-hooded-long-sleeve/): Tops · embroidered, $41.00 CAD
-- [Summit Full-Zip](https://evolveapparel.shop/shop/summit-full-zip/): Outerwear · embroidered, $52.50 CAD
-- [Heritage Classic Tee](https://evolveapparel.shop/shop/heritage-classic-tee/): Tops · embroidered, $16.00 CAD
-- [Deepwoods Heavyweight Hoodie](https://evolveapparel.shop/shop/deepwoods-heavyweight-hoodie/): Outerwear · embroidered, $58.00 CAD
-- [Nightfall Snapback](https://evolveapparel.shop/shop/nightfall-snapback/): Headwear · embroidered, $31.50 CAD
-- [Whiteout Organic Cap](https://evolveapparel.shop/shop/whiteout-organic-cap/): Headwear · embroidered, $35.50 CAD
-- [Ridgeline Snapback](https://evolveapparel.shop/shop/ridgeline-snapback/): Headwear · embroidered, $31.00 CAD
-- [Stormcheck Packable Anorak](https://evolveapparel.shop/shop/stormcheck-packable-anorak/): Outerwear · embroidered, $78.00 CAD
-- [Backcountry Trucker](https://evolveapparel.shop/shop/backcountry-trucker/): Headwear · embroidered, $32.50 CAD
-- [Outpost Ringer Tee](https://evolveapparel.shop/shop/outpost-ringer-tee/): Tops · embroidered, $26.50 CAD
-- [Wildmark Organic Tee](https://evolveapparel.shop/shop/wildmark-organic-tee/): Tops · embroidered, $30.00 CAD
-- [Trailhead Tank](https://evolveapparel.shop/shop/trailhead-tank/): Tops · printed, $25.50 CAD
-- [Whitewood Snapback](https://evolveapparel.shop/shop/whitewood-snapback/): Headwear · embroidered, $31.00 CAD
-- [Frontier Trucker](https://evolveapparel.shop/shop/frontier-trucker/): Headwear · embroidered, $32.50 CAD
-- [Boreal Pullover Hoodie](https://evolveapparel.shop/shop/boreal-pullover-hoodie/): Outerwear · embroidered, $46.00 CAD
-- [Whiteout V-Neck](https://evolveapparel.shop/shop/whiteout-v-neck/): Tops · embroidered, $31.00 CAD
-- [Woodsmoke Crewneck](https://evolveapparel.shop/shop/woodsmoke-crewneck/): Outerwear · embroidered, $40.50 CAD
-- [Blackout Hoodie](https://evolveapparel.shop/shop/blackout-hoodie/): Outerwear · embroidered, $35.50 CAD
-- [Anvil Heavyweight Tee](https://evolveapparel.shop/shop/anvil-heavyweight-tee/): Tops · embroidered, $25.50 CAD
-- [Trapline Heavyweight Hoodie](https://evolveapparel.shop/shop/trapline-heavyweight-hoodie/): Outerwear · embroidered, $86.50 CAD
-- [Halfday Raglan](https://evolveapparel.shop/shop/halfday-raglan/): Tops · embroidered, $31.00 CAD
-- [Northcut V-Neck](https://evolveapparel.shop/shop/northcut-v-neck/): Tops · embroidered, $31.00 CAD
-- [Great White North Tumbler](https://evolveapparel.shop/shop/great-white-north-tumbler/): Accessories · printed, $39.00 CAD
-- [Stealth Snapback](https://evolveapparel.shop/shop/stealth-snapback/): Headwear · embroidered, $30.00 CAD
-- [Stealth Dad Cap](https://evolveapparel.shop/shop/stealth-dad-cap/): Headwear · embroidered, $25.50 CAD
-- [Wanderlust Cuff Beanie](https://evolveapparel.shop/shop/wanderlust-cuff-beanie/): Headwear · embroidered, $24.50 CAD
-- [Borealis Camp Mug](https://evolveapparel.shop/shop/borealis-camp-mug/): Accessories · printed, $16.50 CAD
-- [Stealth Full-Zip](https://evolveapparel.shop/shop/stealth-full-zip/): Outerwear · embroidered, $59.00 CAD
-- [Hearth Fleece Zip](https://evolveapparel.shop/shop/hearth-fleece-zip/): Outerwear · embroidered, $75.50 CAD
+- [We don't tame the wild. We belong to it.](https://evolveapparel.shop/about/): Descended from survivors. One of the largest lands on Earth. Work hard, play hard. The story behind EVOLVE.
+- [Prairies to peaks, boreal to coast.](https://evolveapparel.shop/): Western-Canadian outdoor lifestyle apparel. Embroidered hoodies, tees and caps, made to order and shipped across Canada. The apparel arm of Evolve Eco Blasting.
+- [Field notes.](https://evolveapparel.shop/journal/): Getting outside in Western Canada and beyond — where to ski and ride, the best hikes in Alberta and BC, boutique cabins to escape to, and Canada's best parks.
+- [Privacy Policy](https://evolveapparel.shop/privacy/): How EVOLVE collects, uses, and protects your information. We only collect what we need to fulfil your order and never sell your data.
+- [Shop everything.](https://evolveapparel.shop/shop/): Heavyweight hoodies, tees, flannels, caps and more. Made to order and shipped across Canada and North America. Built for the bush, made for the long haul.
+- [Terms & Returns](https://evolveapparel.shop/terms/): EVOLVE terms of sale. All sales are final; we exchange or remake any item with a manufacturing defect. Made to order, shipped across North America.
 
-## About
-- Brand: EVOLVE Apparel (also EVOLVE / EVOLVE Lifestyle / EVOLVE Outdoors).
-- Parent company: Evolve Eco Blasting — abrasive blasting and surface restoration in Edmonton and across Alberta (https://www.evolveecoblasting.com).
-- Based in Edmonton, Alberta, Canada; serves Canada and North America.
-- Voice: proud, grounded, plain-spoken. "Polite. Until the work gets hard."
-- Social: https://www.facebook.com/EvolveApparelCo
+## Shop
 
-## Machine-readable
-- Sitemap: https://evolveapparel.shop/sitemap.xml
+- [Anvil Heavyweight Tee](https://evolveapparel.shop/shop/anvil-heavyweight-tee/): A men's heavyweight tee in black with a structured body that holds its shape. EVOLVE embroidered at the chest — the tee you reach for and never question.
+- [Backcountry Trucker](https://evolveapparel.shop/shop/backcountry-trucker/): The classic Richardson 112 trucker in loden with a structured front and breathable mesh back. EVOLVE embroidered up front — the cap you reach for first.
+- [Banff Encounter Deluxe Tee](https://evolveapparel.shop/shop/banff-encounter-deluxe-tee/): A soft, everyday Lane Seven CVC tee in Black Heather, with a classic crew neck and a regular fit. The pencil-sketch alien riding a moose past the Banff National
+- [Believer Heavyweight Tee](https://evolveapparel.shop/shop/believer-heavyweight-tee/): A heavyweight Stanley/Stella tee in Desert Dust, cut from 100% organic cotton with a dry, textured handfeel. The black 'I Want to Believe' Bigfoot sketch is pri
+- [Blackout Hoodie](https://evolveapparel.shop/shop/blackout-hoodie/): A heavy-blend hoodie in black with the EVOLVE crest embroidered dark-on-dark. Understated, durable, and made to disappear into the night.
+- [Boreal Pullover Hoodie](https://evolveapparel.shop/shop/boreal-pullover-hoodie/): The premium pullover in black with a double-lined hood and a heavy, settled drape. EVOLVE embroidered tonal at the chest — the everyday anchor.
+- [Borealis Camp Mug](https://evolveapparel.shop/shop/borealis-camp-mug/): A 15oz glossy black ceramic mug with the EVOLVE borealis design printed wrap-around. Coffee before the cold, cocoa after — the one that lives at camp.
+- [Coldfront Long-Sleeve](https://evolveapparel.shop/shop/coldfront-long-sleeve/): A Champion long-sleeve in clean white with the EVOLVE crest embroidered at the chest. The first layer on a coldfront morning — soft, durable, and quietly proud.
+- [Deepwoods Heavyweight Hoodie](https://evolveapparel.shop/shop/deepwoods-heavyweight-hoodie/): A 10oz heavyweight pullover in army green — the anchor of the range. The EVOLVE crest sits embroidered and tonal, weighted to outlive the winters that made us.
+- [Driftwood Hooded Long-Sleeve](https://evolveapparel.shop/shop/driftwood-hooded-long-sleeve/): A charcoal-black triblend hooded long-sleeve that drapes light and wears warm. The EVOLVE mark is embroidered — equal parts trail layer and town layer.
+- [Frontier Trucker](https://evolveapparel.shop/shop/frontier-trucker/): The Richardson 112 trucker in loden — structured front, mesh back, pre-curved visor. EVOLVE embroidered on the panel, made for the long haul.
+- [Great White North Tumbler](https://evolveapparel.shop/shop/great-white-north-tumbler/): A 20oz insulated stainless tumbler that keeps the coffee hot to the trailhead and the water cold on the way back. The EVOLVE design is printed wrap-around — bui
+- [Halfday Raglan](https://evolveapparel.shop/shop/halfday-raglan/): A fine-jersey raglan in heather denim and navy with classic three-quarter sleeves. The EVOLVE crest is embroidered at the chest — easy days, big country.
+- [Hearth Fleece Zip](https://evolveapparel.shop/shop/hearth-fleece-zip/): A midweight zip hood in charcoal heather with a brushed-soft fleece inside. The EVOLVE crest is embroidered at the chest — the layer you live in by the fire.
+- [Heritage Classic Tee](https://evolveapparel.shop/shop/heritage-classic-tee/): A heavy-cotton classic tee in natural, cut for everyday wear and embroidered with the EVOLVE crest. Plain, honest, and built to outlast the season.
+- [Longhaul Hoodie](https://evolveapparel.shop/shop/longhaul-hoodie/): A premium midweight pullover that settles in like a second skin on a cold morning. The EVOLVE wordmark is embroidered, tonal and clean — built for the bush, mad
+- [Nightfall Snapback](https://evolveapparel.shop/shop/nightfall-snapback/): A structured premium snapback in heather grey with a flat brim and a clean adjustable snap. EVOLVE embroidered up front — for everyone at camp.
+- [Northcut V-Neck](https://evolveapparel.shop/shop/northcut-v-neck/): A soft jersey v-neck in dark grey heather with the EVOLVE crest embroidered clean at the chest. A quiet staple for everywhere the week takes you.
+- [Outpost Ringer Tee](https://evolveapparel.shop/shop/outpost-ringer-tee/): A cotton ringer tee in heather grey with black trim and the EVOLVE crest embroidered at the chest. Retro lines, backcountry heart.
+- [Ridgeline Snapback](https://evolveapparel.shop/shop/ridgeline-snapback/): The structured premium snapback in dark grey, flat-brimmed and clean. EVOLVE embroidered on the front panel — built for the bush and the long road home.
+- [Stealth Dad Cap](https://evolveapparel.shop/shop/stealth-dad-cap/): A low-profile six-panel dad hat in black with an unstructured fit and a curved brim. The EVOLVE crest is embroidered — easy, broken-in, everyday.
+- [Stealth Full-Zip](https://evolveapparel.shop/shop/stealth-full-zip/): The heavyweight full-zip in all black with a structured hood and a real, settled weight. EVOLVE embroidered tonal at the chest — zip up and vanish into the dark
+- [Stealth Snapback](https://evolveapparel.shop/shop/stealth-snapback/): The premium structured snapback in all black with a flat brim and a clean snap. EVOLVE embroidered tonal up front — stealth-fit, weather-tested.
+- [Stormcheck Packable Anorak](https://evolveapparel.shop/shop/stormcheck-packable-anorak/): A Champion packable anorak that folds into its own pocket and opens up into real wind cover. EVOLVE embroidered at the chest — for when the weather doesn't ask
+- [Summit Full-Zip](https://evolveapparel.shop/shop/summit-full-zip/): A heavyweight full-zip in charcoal heather with a structured hood and a weight that holds the cold off. EVOLVE embroidered at the chest — zip up and head higher
+- [Trailhead Tank](https://evolveapparel.shop/shop/trailhead-tank/): A jersey tank in black, cut clean for hot climbs and long days. The EVOLVE artwork is printed at the chest — the lightest layer in the kit.
+- [Trapline Heavyweight Hoodie](https://evolveapparel.shop/shop/trapline-heavyweight-hoodie/): An oversized heavyweight hoodie in black, dropped-shoulder and built like armour. The EVOLVE crest is embroidered — for the coldest mornings and the longest hau
+- [Treeline Camo Trucker](https://evolveapparel.shop/shop/treeline-camo-trucker/): A low-profile six-panel trucker in olive camo with a breathable mesh back and a pre-curved visor. The EVOLVE crest is embroidered on the front — made for the lo
+- [Wanderlust Cuff Beanie](https://evolveapparel.shop/shop/wanderlust-cuff-beanie/): A tight ribbed cuff beanie in dark grey that holds heat without the itch. EVOLVE embroidered on a woven-clean cuff — for the cold end of every season.
+- [Whiteout Organic Cap](https://evolveapparel.shop/shop/whiteout-organic-cap/): An organic-cotton baseball cap in black with a relaxed unstructured fit and a curved brim. The EVOLVE crest is embroidered in white — earned outside, easy on th
+- [Whiteout V-Neck](https://evolveapparel.shop/shop/whiteout-v-neck/): A soft jersey v-neck in black with the EVOLVE crest embroidered in white at the chest. Simple, sharp, and built to be worn down.
+- [Whitewood Snapback](https://evolveapparel.shop/shop/whitewood-snapback/): A pro-style six-panel snapback in white with a structured front and flat brim. EVOLVE embroidered up front — clean lines, cold country.
+- [Wildmark Organic Tee](https://evolveapparel.shop/shop/wildmark-organic-tee/): A Stanley/Stella organic-cotton crafter tee in desert dust, soft and substantial. The EVOLVE crest is embroidered — quiet, earthy, and earned outside.
+- [Woodsmoke Crewneck](https://evolveapparel.shop/shop/woodsmoke-crewneck/): A premium crew-neck sweatshirt in black with a clean set-in sleeve and a brushed-soft inside. EVOLVE embroidered tonal — for the cool end of the day.
+
+## Journal
+
+- [Bear Country Manners: What to Actually Do When You Meet a Grizzly](https://evolveapparel.shop/journal/bear-country-manners-grizzly-black-bear-canada/): What to do if you meet a grizzly or black bear in Canada: ID tips, bear spray, bluff charges, food caches, dogs and bikes — Parks Canada–sourced for Alberta & BC trails.
+- [The Best Hikes in Alberta and BC: 8 Day Trips and Two Big Ones Worth the Sweat](https://evolveapparel.shop/journal/best-hikes-alberta-bc/): The best hikes in Alberta and BC, with real distances, elevation gain and permit rules for standout day hikes and bigger summer trips.
+- [No Mountains Required: The Best Hikes Within Two Hours of Edmonton](https://evolveapparel.shop/journal/best-hikes-near-edmonton/): The best hikes near Edmonton: river valley, parkland and boreal trails close to the city, plus Elk Island and day trips within two hours.
+- [Hot Water, Cold Air: Western Canada's Best Natural Hot Springs, Ranked](https://evolveapparel.shop/journal/best-hot-springs-western-canada/): The best hot springs in Western Canada, ranked from the Alaska Highway to Kootenay Lake, with fees, seasons and rules before you soak.
+- [The 10 Best National Parks in Canada, Ranked by Someone Who Has Opinions](https://evolveapparel.shop/journal/best-national-parks-canada/): The 10 best national parks in Canada, ranked, with the one thing worth going for in each park and a practical tip for your visit.
+- [Deep Wild, Good Sheets: Five Canadian Nature Resorts Worth the Drive or the Floatplane](https://evolveapparel.shop/journal/best-nature-resorts-canada/): The best nature resorts in Canada: wilderness lodges with full comfort, from a fly-in BC archipelago to a Quebec lake in moose country.
+- [The 10 Best Places to Stay in Western Canada With a Breathtaking View From Your Room](https://evolveapparel.shop/journal/best-places-to-stay-western-canada-views/): The 10 best places to stay in Western Canada with a view from your room: Rockies lakes, Pacific storms and aurora, with prices and how to get there.
+- [First Snow, Best Views: 10 Places in Western Canada That Get Better When the Snow Falls](https://evolveapparel.shop/journal/best-places-western-canada-winter/): The best places to visit in Western Canada in winter: Lake Louise, Abraham Lake's ice bubbles, frozen canyons, the Icefields Parkway, Tofino storms and more.
+- [The Best Ski Resorts in Alberta: A Rider's Field Guide to the Big Three](https://evolveapparel.shop/journal/best-ski-resorts-alberta/): The best ski resorts in Alberta: how to ski and ride Sunshine Village, Lake Louise and Marmot Basin, with terrain tips for each mountain.
+- [Stand Here: The Ten Most Breathtaking Views in Canada and How to Reach Them](https://evolveapparel.shop/journal/best-views-canada/): The 10 most breathtaking views in Canada and how to reach them, from Moraine Lake in Banff to Virginia Falls, twice the height of Niagara.
+- [Ten Boutique Cabins and Lodges in Canada Worth the Drive (or the Floatplane)](https://evolveapparel.shop/journal/boutique-cabins-canada/): Ten boutique cabins and lodges in Canada, from a hanging sphere on Vancouver Island to a glass-roofed aurora chalet in the Yukon.
+- [Cold and Free: Five Canadian Adventure Sports Worth the Adrenaline](https://evolveapparel.shop/journal/canadian-extreme-sports/): Canadian adventure sports the world copies, from heli-skiing where it was invented to year-round Pacific surfing, and how beginners can start.
+- [Descended from Survivors: Ten Backcountry Skills the First Canadians Knew and We Forgot](https://evolveapparel.shop/journal/first-canadians-survival-skills/): Survival skills of Canada's first peoples: how Indigenous knowledge made life at minus forty possible, and how settlers survived by learning it.
+- [First Hole: A Beginner's Field Guide to Ice Fishing in Alberta](https://evolveapparel.shop/journal/ice-fishing-alberta/): Ice fishing in Alberta for beginners: licence costs, safe ice thickness, the rules, stocked trout ponds near Edmonton and Calgary, gear and what to wear.
+- [Learning to Climb in Canada: Where to Start Mountaineering Without Getting in Over Your Head](https://evolveapparel.shop/journal/learn-to-mountaineer-canada/): How to learn mountaineering in Canada: courses, guides and the right order to go from your first scramble to a glaciated summit.
+- [Pack Light, Eat Smart: The Beginner's Hike-Packing Kit People Always Get Wrong](https://evolveapparel.shop/journal/lightweight-hike-packing-kit/): A lightweight hiking packing list: the Ten Essentials, trail food math and the small items people forget, for day hikes and multi-day trips.
+- [Chasing Green: Where to See the Northern Lights in Alberta and Western Canada](https://evolveapparel.shop/journal/northern-lights-alberta-western-canada/): Where to see the northern lights in Alberta and Western Canada: KP index and aurora forecasts, best months, dark-sky parks, camera settings and cold tips.
+- [Build Your Own Off-Grid Escape: Cheap Land, Solar, and a Wood-Fired Soak Near Canada's Best Parks](https://evolveapparel.shop/journal/off-grid-cabin-canada/): How to build an off-grid cabin in Canada: affordable land near great parks, the permit rules nobody warns you about, and the off-grid tech.
+- [The Long Haul: Canada's Greatest Road Trips, With the Gas Stations Nobody Warns You About](https://evolveapparel.shop/journal/the-long-haul-canada-road-trips/): Six iconic Canadian road trips—Icefields Parkway, Alaska Highway, Stewart-Cassiar, Dempster, Cowboy Trail, and Trans-Labrador—plus every fuel gap.
+- [Vancouver Island, End to End: Ten Places Worth the Ferry](https://evolveapparel.shop/journal/vancouver-island-places/): The best places on Vancouver Island beyond Tofino, from old-growth giants and Victoria to an orca strait and the wild north tip.

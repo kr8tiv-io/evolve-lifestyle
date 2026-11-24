@@ -9,6 +9,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CartDrawer from "@/components/cart/CartDrawer";
 import CartHydrator from "@/components/cart/CartHydrator";
+import { organizationNode, SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://evolveapparel.shop"),
@@ -29,7 +30,10 @@ export const metadata: Metadata = {
     "Canadian brand outdoor clothing",
     "Evolve Eco Blasting",
   ],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   authors: [{ name: "EVOLVE" }],
   creator: "EVOLVE",
   openGraph: {
@@ -66,39 +70,16 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://evolveapparel.shop/#organization",
-        name: "EVOLVE Apparel",
-        alternateName: "EVOLVE",
-        url: "https://evolveapparel.shop",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://evolveapparel.shop/brand/evolve-lockup-white.png",
-        },
-        description:
-          "Western-Canadian outdoor lifestyle apparel. The apparel arm of Evolve Eco Blasting.",
-        areaServed: "CA",
-        // associate the apparel brand with the parent service company for SEO
-        parentOrganization: {
-          "@type": "Organization",
-          name: "Evolve Eco Blasting",
-          url: "https://www.evolveecoblasting.com",
-        },
-        sameAs: [
-          "https://www.facebook.com/EvolveApparelCo",
-          "https://www.evolveecoblasting.com",
-        ],
-      },
+      organizationNode(),
       {
         "@type": "WebSite",
-        "@id": "https://evolveapparel.shop/#website",
+        "@id": `${SITE}/#website`,
         name: "EVOLVE Apparel",
-        url: "https://evolveapparel.shop",
+        url: SITE,
         inLanguage: "en-CA",
         description:
-          "Western-Canadian outdoor lifestyle apparel and the Evolve Journal — researched guides to getting outside in Canada.",
-        publisher: { "@id": "https://evolveapparel.shop/#organization" },
+          "Western-Canadian outdoor lifestyle apparel and the Evolve Journal, researched guides to getting outside in Canada.",
+        publisher: { "@id": `${SITE}/#organization` },
       },
     ],
   };

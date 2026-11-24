@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import EvolveLogo from "@/components/ui/EvolveLogo";
 import { FacebookLink } from "@/components/ui/FacebookLink";
 import { RevealWords } from "@/components/ui/Reveal";
+import { CONTACT, KR8TIV } from "@/lib/site";
 
 export default function Footer() {
   const ref = useRef<HTMLElement>(null);
@@ -50,6 +51,23 @@ export default function Footer() {
                   iconClassName="h-4 w-4"
                 />
               </div>
+            </div>
+            <div className="mt-6">
+              <h4 className="font-mono text-[0.6rem] uppercase tracking-tracked text-neon-soft">
+                Contact
+              </h4>
+              <ul className="mt-3 space-y-2 text-sm text-silver-dim">
+                <li>
+                  <a href={`tel:${CONTACT.phoneTel}`} className="link-underline hover:text-neon">
+                    {CONTACT.phoneDisplay}
+                  </a>
+                </li>
+                <li>
+                  <a href={`mailto:${CONTACT.email}`} className="link-underline hover:text-neon">
+                    {CONTACT.email}
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -104,6 +122,15 @@ export default function Footer() {
               className="link-underline hover:text-neon"
             >
               kr8tiv
+            </a>
+            <span className="mx-2 text-white/25" aria-hidden>·</span>
+            <a
+              href={KR8TIV.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline hover:text-neon"
+            >
+              A KR8TIV company
             </a>
           </p>
           <div className="flex gap-6 font-mono text-[0.62rem] uppercase tracking-tracked text-silver-dim">
