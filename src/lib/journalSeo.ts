@@ -10,6 +10,13 @@ export interface ArticleSeo {
 }
 
 export const JOURNAL_SEO: Record<string, ArticleSeo> = {
+  "western-canada-winter-adventures": {
+    "seoTitle": "Western Canada Winter Adventures and Festivals, 2026-27",
+    "metaDescription": "Western Canada's best winter adventures for 2026-27: ten festivals, icewalks, and skating trails across BC, the Prairies, and the North, in date order.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 3026
+  },
   "ice-fishing-alberta": {
     "seoTitle": "Ice Fishing in Alberta: A Beginner's Field Guide",
     "metaDescription": "Ice fishing in Alberta for beginners: licence costs, safe ice thickness, the rules, stocked trout ponds near Edmonton and Calgary, gear and what to wear.",

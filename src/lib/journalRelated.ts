@@ -8,6 +8,10 @@ export interface RelatedProduct {
 }
 
 export const RELATED_PRODUCTS: Record<string, RelatedProduct[]> = {
+  "western-canada-winter-adventures": [
+    { slug: "hearth-fleece-zip", why: "A zip layer you can open on the walk in and close to your chin at the bobsled finish line." },
+    { slug: "wanderlust-cuff-beanie", why: "A snug toque for a long night of skating, sculptures, and standing around a fire." },
+  ],
   "ice-fishing-alberta": [
     { slug: "deepwoods-heavyweight-hoodie", why: "A heavy pullover you can push the hood back from while you drill, then pull up when the wind comes." },
     { slug: "hearth-fleece-zip", why: "A zip layer for dumping heat without taking anything off once the hole is in." },
