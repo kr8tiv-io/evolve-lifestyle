@@ -5,7 +5,7 @@ import { getArticles, getArticleModified } from "@/lib/journal";
 export const dynamic = "force-static";
 
 const BASE = "https://evolveapparel.shop";
-const SITE_UPDATED = "2026-06-27";
+const SITE_UPDATED = "2026-11-23";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: { path: string; priority: number }[] = [
@@ -24,12 +24,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const JOURNAL_TOUCHED = "2026-11-23";
+  const later = (a: string, b: string) => (a > b ? a : b);
   const articles = getArticles().map((a) => ({
     url: `${BASE}/journal/${a.slug}/`,
-    lastModified: getArticleModified(a.slug),
+    lastModified: later(getArticleModified(a.slug), JOURNAL_TOUCHED),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
+
+  const feed = {
+    url: `${BASE}/feed.xml`,
+    lastModified: SITE_UPDATED,
+    changeFrequency: "weekly" as const,
+    priority: 0.4,
+  };
 
   return [
     ...staticRoutes.map((r) => ({
@@ -40,5 +49,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...products,
     ...articles,
+    feed,
   ];
 }

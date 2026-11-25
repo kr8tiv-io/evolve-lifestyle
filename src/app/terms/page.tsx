@@ -1,5 +1,6 @@
 import { pageOpenGraph } from "@/lib/seo";
 import Link from "next/link";
+import { CONTACT } from "@/lib/site";
 
 const DESC =
   "EVOLVE terms of sale. All sales are final; we exchange or remake any item with a manufacturing defect. Made to order, shipped across North America.";
@@ -41,7 +42,7 @@ const SECTIONS: { h: string; body: string[] }[] = [
   {
     h: "05 · Contact",
     body: [
-      "Questions about an order or a defect? Get in touch and a real person from EVOLVE will help. We're a small crew and we read everything.",
+      "Questions about an order or a defect? Call or email and a real person from EVOLVE will help. We're a small crew and we read everything.",
     ],
   },
 ];
@@ -74,6 +75,21 @@ export default function TermsPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 max-w-2xl space-y-2 text-base text-silver">
+          <p>
+            Phone:{" "}
+            <a href={`tel:${CONTACT.phoneTel}`} className="link-underline text-silver-bright hover:text-neon">
+              {CONTACT.phoneDisplay}
+            </a>
+          </p>
+          <p>
+            Email:{" "}
+            <a href={`mailto:${CONTACT.email}`} className="link-underline text-silver-bright hover:text-neon">
+              {CONTACT.email}
+            </a>
+          </p>
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8">

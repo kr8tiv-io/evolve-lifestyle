@@ -1,3 +1,14 @@
+
+# Force HTTPS and send www to the apex. Canonicals already point at
+# https://evolveapparel.shop; this keeps the host consistent for crawlers.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://evolveapparel.shop%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.evolveapparel\.shop$ [NC]
+  RewriteRule ^ https://evolveapparel.shop%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 # Correct MIME types for static assets on Hostinger (Apache/LiteSpeed)
 AddType video/webm .webm
 AddType video/mp4 .mp4

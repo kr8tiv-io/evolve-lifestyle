@@ -2,8 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProduct, getProducts } from "@/lib/products";
 import ProductView from "./ProductView";
-
-const SITE = "https://evolveapparel.shop";
+import { SITE, offerShippingDetails, merchantReturnPolicy } from "@/lib/site";
 
 export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
@@ -50,25 +49,57 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const inStock = product.variants?.some((v) => v.inStock) ?? true;
   const priceCad = (product.price / 100).toFixed(2);
 
+  const images = (product.images || []).map((i) => (i.startsWith("http") ? i : SITE + i));
+  const variants = product.variants?.length ? product.variants : [{
+    id: product.slug,
+    sku: product.slug,
+    size: product.sizes?.[0] || "One size",
+    color: "Default",
+    swatch: "#000000",
+    inStock,
+  }];
+  const variesBy = Array.from(new Set([
+    ...(variants.some((v) => v.size) ? ["https://schema.org/size"] : []),
+    ...(variants.some((v) => v.color) ? ["https://schema.org/color"] : []),
+  ]));
+  const offerExtras = {
+    priceCurrency: "CAD",
+    price: priceCad,
+    seller: { "@type": "Organization", name: "EVOLVE Apparel", "@id": `${SITE}/#organization` },
+    shippingDetails: offerShippingDetails(),
+    hasMerchantReturnPolicy: merchantReturnPolicy(),
+    itemCondition: "https://schema.org/NewCondition",
+  };
   const productLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "ProductGroup",
+    "@id": `${url}#product`,
     name: product.name,
     description: product.description || product.tagline,
-    image: (product.images || []).map((i) => (i.startsWith("http") ? i : SITE + i)),
-    sku: product.variants?.[0]?.sku || product.slug,
+    image: images,
     brand: { "@type": "Brand", name: "EVOLVE Apparel" },
     category: product.category,
-    offers: {
-      "@type": "Offer",
-      url,
-      priceCurrency: "CAD",
-      price: priceCad,
-      availability: inStock
-        ? "https://schema.org/InStock"
-        : "https://schema.org/OutOfStock",
-      seller: { "@type": "Organization", name: "EVOLVE Apparel" },
-    },
+    url,
+    productGroupID: product.externalId || product.slug,
+    variesBy,
+    hasVariant: variants.map((v) => ({
+      "@type": "Product",
+      "@id": `${url}#${encodeURIComponent(v.id)}`,
+      name: `${product.name}, ${v.color}, ${v.size}`,
+      sku: v.sku || v.id,
+      size: v.size,
+      color: v.color,
+      image: images,
+      isVariantOf: { "@id": `${url}#product` },
+      offers: {
+        "@type": "Offer",
+        url,
+        availability: v.inStock
+          ? "https://schema.org/InStock"
+          : "https://schema.org/OutOfStock",
+        ...offerExtras,
+      },
+    })),
   };
 
   const breadcrumbLd = {

@@ -31,7 +31,7 @@ export default function Manifesto() {
         <div className="absolute inset-0 scale-125">
           <ProductImage
             src="/images/photo-1483728642387-6c3bdd6c93e5.jpg"
-            alt=""
+            alt="Snow-covered mountain ridge"
             tone={["#13233a", "#4ade80"]}
             className="h-full w-full"
           />

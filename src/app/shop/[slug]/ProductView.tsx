@@ -103,7 +103,7 @@ export default function ProductView({
                 }`}
                 aria-label={`View image ${i + 1}`}
               >
-                <ProductImage src={img} alt="" tone={product.tone} fit="contain" className="h-full w-full" />
+                <ProductImage src={img} alt={`${product.name}, view ${i + 1}`} tone={product.tone} fit="contain" className="h-full w-full" />
               </button>
             ))}
           </div>

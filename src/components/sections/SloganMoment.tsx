@@ -40,7 +40,7 @@ export default function SloganMoment({
       className="relative flex h-[92vh] items-center justify-center overflow-hidden"
     >
       <motion.div style={{ y }} className="absolute inset-0 scale-125">
-        <ProductImage src={image} alt="" tone={tone} className="h-full w-full" priority />
+        <ProductImage src={image} alt="Western Canadian landscape behind the slogan" tone={tone} className="h-full w-full" priority />
       </motion.div>
 
       {showcase ? (
