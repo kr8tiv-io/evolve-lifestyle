@@ -8,6 +8,22 @@ export interface RelatedProduct {
 }
 
 export const RELATED_PRODUCTS: Record<string, RelatedProduct[]> = {
+  "banff-in-december": [
+    { slug: "wanderlust-cuff-beanie", why: "A dark grey ribbed cuff beanie that holds heat without the itch, and stays put for a timed market slot and a night outside." },
+    { slug: "coldfront-long-sleeve", why: "A clean white long sleeve with the crest at the chest, the first layer under a shell on a cold morning at the rink or on the lift." },
+  ],
+  "romantic-winter-getaways-alberta": [
+    { slug: "woodsmoke-crewneck", why: "A black crewneck with a brushed-soft inside, for the hour after the tub when a fleece is too much and the air is not." },
+    { slug: "wanderlust-cuff-beanie", why: "A dark grey ribbed cuff that holds heat without the itch, for the deck, the sleigh, and the walk back in the dark." },
+  ],
+  "backcountry-lodges-huts-winter": [
+    { slug: "deepwoods-heavyweight-hoodie", why: "A 10 oz army green pullover for the hour the stove is catching and the shell is still wet." },
+    { slug: "wanderlust-cuff-beanie", why: "A dark grey ribbed cuff beanie that holds heat without the itch, for the lot and the long skin out." },
+  ],
+  "powder-highway-bc": [
+    { slug: "coldfront-long-sleeve", why: "A Champion long-sleeve in clean white with the crest at the chest, the first layer when the truck is still cold and the hill is not open yet." },
+    { slug: "summit-full-zip", why: "A heavyweight full-zip in charcoal heather with a structured hood, for the walk from the day lodge to the car when the wind is up." },
+  ],
   "western-canada-winter-adventures": [
     { slug: "hearth-fleece-zip", why: "A zip layer you can open on the walk in and close to your chin at the bobsled finish line." },
     { slug: "wanderlust-cuff-beanie", why: "A snug toque for a long night of skating, sculptures, and standing around a fire." },

@@ -10,6 +10,34 @@ export interface ArticleSeo {
 }
 
 export const JOURNAL_SEO: Record<string, ArticleSeo> = {
+  "banff-in-december": {
+    "seoTitle": "Banff in December: The Honest Christmas Guide",
+    "metaDescription": "Banff in December means short cold days, a Christmas market to December 13, 2026, Lake Louise skating, and priced Christmas dinners in town.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 4488
+  },
+  "romantic-winter-getaways-alberta": {
+    "seoTitle": "Romantic Getaways Alberta Winter: Views and Tubs",
+    "metaDescription": "Romantic getaways Alberta winter: glass cabins, domes, lake lodges and private wood-fired tubs you can drive to. Rates checked late November 2026.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 4574
+  },
+  "backcountry-lodges-huts-winter": {
+    "seoTitle": "Backcountry Lodges BC and Huts in Alberta, Winter",
+    "metaDescription": "Backcountry lodges in BC and huts in Alberta you ski or snowshoe into this winter: 2026 to 2027 prices, access, permits, and avalanche rules.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 4463
+  },
+  "powder-highway-bc": {
+    "seoTitle": "Powder Highway BC: The 2026 to 2027 Ski Guide",
+    "metaDescription": "Powder Highway BC for 2026 to 2027: eight Kootenay resorts, posted opening dates, pass rules, Rogers Pass, and the drive from Calgary or Edmonton.",
+    "heroWidth": 1600,
+    "heroHeight": 840,
+    "wordCount": 4490
+  },
   "western-canada-winter-adventures": {
     "seoTitle": "Western Canada Winter Adventures and Festivals, 2026-27",
     "metaDescription": "Western Canada's best winter adventures for 2026-27: ten festivals, icewalks, and skating trails across BC, the Prairies, and the North, in date order.",
