@@ -220,7 +220,10 @@ function main() {
   }
 
   const articles = loadArticles();
-  assertNoNewBlocks(articles);
+  // Posts written after the hash file was saved may use the new blocks; only
+  // the posts that have a saved hash must be free of them.
+  const savedForCheck = fs.existsSync(HASH_FILE) ? JSON.parse(fs.readFileSync(HASH_FILE, "utf8")).hashes ?? {} : {};
+  assertNoNewBlocks(write ? articles : articles.filter((a) => a.slug in savedForCheck));
   const hashes = hashArticles(Markdown, articles);
   const slugs = Object.keys(hashes).sort();
 
