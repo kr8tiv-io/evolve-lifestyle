@@ -35,9 +35,46 @@ function Inline({ text }: { text: string }) {
 }
 
 /**
+ * Collapse blank lines inside a `:::box ... :::` fence so the paragraph
+ * splitter below keeps the card as one block. Bodies with no info box are
+ * returned unchanged, which keeps existing articles byte-for-byte.
+ */
+function mergeInfoBoxes(body: string): string {
+  if (!body.includes(":::box")) return body;
+  const lines = body.split("\n");
+  const out: string[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (!/^:::box(?:[ \t]|$)/.test(lines[i])) {
+      out.push(lines[i]);
+      continue;
+    }
+    let end = -1;
+    for (let j = i + 1; j < lines.length; j++) {
+      if (/^:::[ \t]*$/.test(lines[j])) {
+        end = j;
+        break;
+      }
+    }
+    if (end === -1) {
+      out.push(lines[i]);
+      continue;
+    }
+    const compact = [
+      lines[i],
+      ...lines.slice(i + 1, end).filter((line) => line.trim() !== ""),
+      lines[end],
+    ];
+    out.push(compact.join("\n"));
+    i = end;
+  }
+  return out.join("\n");
+}
+
+/**
  * Minimal markdown renderer for journal articles: ## subheads, paragraphs with
- * inline links + bold, and `![alt](#photo: ...)` figures (pulled in order from
- * `images`). Deliberately small — no code blocks or tables needed.
+ * inline links + bold, pipe tables, "> " pull-outs, :::box info cards, and
+ * `![alt](#photo: ...)` figures (pulled in order from `images`). Deliberately
+ * small, with no extra dependencies.
  */
 export default function Markdown({
   body,
@@ -50,7 +87,7 @@ export default function Markdown({
   tone?: [string, string];
   hideCaptions?: boolean;
 }) {
-  const blocks = body.split(/\n\n+/);
+  const blocks = mergeInfoBoxes(body).split(/\n\n+/);
   let photoIdx = 0;
   return (
     <div className="space-y-6">
@@ -144,6 +181,44 @@ export default function Markdown({
             >
               <Inline text={block.slice(3)} />
             </h2>
+          );
+        }
+        const boxTitle = lines[0].match(/^:::box[ \t]+(.+?)[ \t]*$/);
+        if (boxTitle && lines[lines.length - 1].trim() === ":::") {
+          const items = lines.slice(1, -1).filter((line) => line.startsWith("- "));
+          return (
+            <aside
+              key={i}
+              aria-label={boxTitle[1]}
+              className="rounded-[2px] border border-white/10 bg-white/5 px-5 py-5 sm:px-6 sm:py-6"
+            >
+              <p className="font-mono text-[0.6rem] uppercase tracking-tracked text-neon-soft">
+                {boxTitle[1]}
+              </p>
+              {items.length > 0 && (
+                <ul className="mt-4 list-none space-y-2 text-base leading-relaxed text-silver-dim sm:text-[1.05rem]">
+                  {items.map((line, j) => (
+                    <li key={j}>
+                      <Inline text={line.slice(2)} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </aside>
+          );
+        }
+        if (lines.every((line) => line.startsWith("> "))) {
+          return (
+            <blockquote
+              key={i}
+              className="!my-10 border-l-[3px] border-neon pl-5 text-[1.25rem] leading-snug text-silver-bright sm:!my-12 sm:pl-6 sm:text-[1.5rem]"
+            >
+              {lines.map((line, j) => (
+                <p key={j} className={j > 0 ? "mt-3" : undefined}>
+                  <Inline text={line.slice(2)} />
+                </p>
+              ))}
+            </blockquote>
           );
         }
         return (
