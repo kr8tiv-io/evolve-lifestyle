@@ -29,13 +29,13 @@ export const EXTRA_ARTICLES: Article[] = [
     ogImage: { url: "/images/journal/banff-in-december/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "Two people in wool coats and toques stand on the Bow River bridge in Banff at blue hour, shore ice along the dark water and last light on Mount Rundle." },
     body: `The Fire Lounge at the Banff heritage train station is the warm point of a cold afternoon: live music, the market indoors and out in the weather. By five the peaks have taken the sun. The town is already deep into Christmas.
 
-Banff in December is already full winter, with a real Christmas calendar laid over ordinary mountain life. On the 1991 to 2020 climate normal, a December afternoon reaches about minus 4.6°C and the night falls to about minus 13.4°C, with about 23 cm of snow across the month. Daylight on December 1, 2026 runs from 9:24 am to 5:38 pm, about eight hours and 14 minutes. The winter solstice on December 21 drops that to seven hours and 53 minutes. The Banff Christmas Market runs on set weekends through December 13, 2026. After that, the lights, the rink, and the ski hills carry the town.
+Banff in December is that week. The calendar is real, the days are short, and the mountain is already in full winter. The Banff Christmas Market runs on set weekends through December 13, 2026. After that, the lights, the rink, and the ski hills carry Christmas. Here is what is open, what it costs, and how to spend the light you have.
 
 :::box Plan it
 - **Best for:** A long weekend based in town, with one day for Lake Louise or a ski hill, on a market weekend or over Christmas week.
-- **When:** Market weekends through December 13, 2026. The light walk runs nightly from December 17, 2026 to January 3, 2027.
+- **When:** Market weekends through December 13, 2026. The light walk runs nightly from December 17, 2026 to January 3, 2027. A December afternoon averages about minus 4.6°C, and daylight on December 1 runs 9:24 am to 5:38 pm.
 - **Getting there:** The Trans-Canada from Calgary into the park, then walk or ride Roam in town. Lake Louise is 61 km on Highway 1, or Roam Route 8X. Check 511 Alberta the morning you drive.
-- **Budget:** A park day pass is $12.25 for an adult. A Saturday market ticket starts at $16.50 before tax and fees. A published Christmas dinner starts at $72. Gondola and lift tickets are priced by the date. Rates change.
+- **Budget:** Prices checked 27 November 2026. A park day pass is $12.25 CAD for an adult. A Saturday market ticket starts at $16.50 before tax and fees. A published Christmas dinner starts at $72. Gondola and lift tickets are priced by the date. Rates change.
 - **Book ahead:** Market timeslots, light-walk tickets, Roam 8X seats, and Christmas Day tables. The last two weeks of December fill first.
 - **Bring:** Warm layers, a wind shell, a toque, mitts, and traction for ice. The light walk recommends cleats.
 :::
@@ -54,7 +54,7 @@ Put the gondola, the rink, and the driving in the middle of the day. The light w
 
 ## The Banff Christmas Market in 2026
 
-On a market Saturday the heritage station, five minutes from downtown at 327 Railway Avenue, is the centre of town. Live music runs in the Fire Lounge, and at dusk a tree lighting and a holiday light show put Santa out in the snow.
+On a market Saturday the heritage station, five minutes from downtown, is the centre of town. Live music runs in the Fire Lounge, and at dusk a tree lighting and a holiday light show put Santa out in the snow.
 
 The weekends are November 19 to 22, November 27 to 29 with no Thursday, December 3 to 6, and December 10 to 13. Hours are Thursday 5 pm to 9 pm, Friday 11 am to 9 pm, Saturday 10 am to 9 pm, and Sunday 10 am to 6 pm. Indoor zones close at 8 pm on Friday and Saturday. After December 13 the station goes quiet.
 
@@ -62,9 +62,9 @@ The weekends are November 19 to 22, November 27 to 29 with no Thursday, December
 
 A single-day ticket is a 20-minute arrival window. You may stay until close, and you may not leave and come back. The light walk runs during those same hours, so do the garden first, or buy a weekend pass, which skips the timeslot. You can change time or date once in Showpass, not inside 24 hours.
 
-Adult prices, checked 27 Nov 2026, sit before 5 percent GST, card fees, Showpass fees, and a $1 environmental fee. Friday daytime is $10, Friday evening is $15, and Saturday or Sunday is $16.50. A weekend pass is $39.95, a season pass is $99, and Family Friday, two adults and two youth, is $30. Private Santa on Saturday morning is ten minutes, five groups, up to five people, at $149 plus GST, with admission extra. Children under 2 are free. Other ages are on the [tickets page](https://banffchristmasmarket.com/tickets/).
+Adult prices sit before 5 percent GST, card fees, Showpass fees, and a $1 environmental fee. Friday daytime is $10, Friday evening is $15, and Saturday or Sunday is $16.50. A weekend pass is $39.95, a season pass is $99, and Family Friday, two adults and two youth, is $30. Private Santa on Saturday morning is ten minutes, five groups, up to five people, at $149 plus GST, with admission extra. Children under 2 are free. Other ages are on the [tickets page](https://banffchristmasmarket.com/tickets/).
 
-The tickets page says a season pass covers 15 days and the FAQ says 16, so ask. The ground outside can be icy, stroller parking is unsupervised, leashed dogs are quieter Friday from 11 am to 3 pm, and a drink mug is a $5 deposit. Weather does not refund the ticket. The site is wheelchair accessible.
+A season pass is listed as 15 days in one place and 16 in another, so ask before you buy. The ground outside can be icy, stroller parking is unsupervised, leashed dogs are quieter Friday from 11 am to 3 pm, and a drink mug is a $5 deposit. Weather does not refund the ticket. The site is wheelchair accessible.
 
 December 3 and 10 are donation evenings, a suggested $5, for Rocky Mountain Adaptive and then the Day Care Society of Banff. Indoor shopping is closed, and workshops are extra. Country Christmas, December 11 and 12 from 5 pm to 9 pm, is a separate adult ticket at $10. Do not buy it on top of admission you already hold.
 
@@ -86,11 +86,11 @@ A cabin with a private hot tub, outside town, is a different trip: [romantic win
 
 ![A family in winter coats walks a snowy garden path under illuminated wildlife sculptures at Cascade of Time Garden, blue hour on the peaks behind Banff Avenue](#photo: A family in winter coats walks a snowy garden path under illuminated wildlife sculptures at Cascade of Time Garden, blue hour on the peaks behind Banff Avenue)
 
-**Whyte Christmas is Sunday, December 6,** at 111 Bear Street. Admission is free from 10 am to 5 pm, with stories, crafts, hot chocolate, and a visitor from the North Pole between 1 and 4. The bookstore is 10 percent off, 25 percent for members. Do the museum early, then the station.
+**Whyte Christmas is Sunday, December 6,** at the Whyte Museum. Admission is free from 10 am to 5 pm, with stories, crafts, hot chocolate, and a visitor from the North Pole between 1 and 4. The bookstore is 10 percent off, 25 percent for members. Do the museum early, then the station.
 
 **The holiday train is Monday, December 15,** 7:15 pm to 7:45 pm at the station, free, with Sam Roberts Band and Owen Riegling, for local food banks. Details are on [cpkcr.com](https://www.cpkcr.com/en/community/HolidayTrain).
 
-**No Santa Claus parade sits on the 2026 list** we read on 27 Nov 2026. The calendar never posted a parade hour. Santa is at the market, at the Whyte that Sunday, at the gondola through December 24, and at Sunshine on December 12 to 13 and 19 to 20. The Hot Chocolate Trail runs November 12, 2026 to February 7, 2027. The index is the [tourism calendar](https://www.banfflakelouise.com/events/christmas).
+**No Santa Claus parade sits on the 2026 Christmas calendar.** The list never posted a parade hour. Santa is at the market, at the Whyte that Sunday, at the gondola through December 24, and at Sunshine on December 12 to 13 and 19 to 20. The Hot Chocolate Trail runs November 12, 2026 to February 7, 2027. The index is the [tourism calendar](https://www.banfflakelouise.com/events/christmas).
 
 ## Lake Louise in December
 
@@ -98,7 +98,7 @@ The lake is a long white sheet at the end of the valley, Victoria Glacier pale i
 
 It is 61 km from Banff and 4 km from the village. Rent skates at the Fairmont Chateau Lake Louise. That is a fact about skates, not a room. Ride Roam Route 8X, every day of the year, or drive and avoid the weekend lot between 10 am and 3 pm. The $42 lakeshore fee applies only from May 15 to October 12, 2026. Read the board in December, and do not assume a summer price or a free stall.
 
-The longer shore walk is in our [winter places guide](/journal/best-places-western-canada-winter/). February Ice Magic and the January festivals are on our [winter calendar](/journal/western-canada-winter-adventures/). No 2026 ice castle was on the Christmas list we checked.
+The longer shore walk is in our [winter places guide](/journal/best-places-western-canada-winter/). February Ice Magic and the January festivals are on our [winter calendar](/journal/western-canada-winter-adventures/). No 2026 ice castle is on the Christmas calendar.
 
 > If the rink is not in, the lake is scenery. Stay off unmarked ice.
 
@@ -112,15 +112,15 @@ Lifts run 9:30 am to 4:30 pm. The hill opened November 1, 2026, and the pass win
 
 Norquay is the hill you can see from town. A late-November page had lifts from 9:30 am to 4:30 pm. Night skiing is not a December plan. The header says January 1, 2027, Fridays and Saturdays, 6 pm to 9:30 pm, and the same page also prints January 1, 2026 to March 13, 2027. Read [the night-skiing page](https://banffnorquay.com/night-skiing/) again before you buy a ticket for a night that may not exist.
 
-At Sunshine the December dates are already public. The Coca-Cola Holiday Caravan is December 11, 1 pm to 4 pm. Santa on the Mountain is December 12 to 13 and 19 to 20. Torchlight on Christmas Eve and New Year's Eve runs 7 pm to 8 pm, watched from the village. Santa Skis for Charity is December 25, with the discount still unannounced when we checked. Daily hours are on [skibanff.com](https://www.skibanff.com/) the week you go, and the three hills are compared in our [Big Three guide](/journal/best-ski-resorts-alberta/). One hill is one day.
+At Sunshine the December dates are already public. The Coca-Cola Holiday Caravan is December 11, 1 pm to 4 pm. Santa on the Mountain is December 12 to 13 and 19 to 20. Torchlight on Christmas Eve and New Year's Eve runs 7 pm to 8 pm, watched from the village. Santa Skis for Charity is December 25. The charity discount had not been announced by late November. Daily hours are on [skibanff.com](https://www.skibanff.com/) the week you go, and the three hills are compared in our [Big Three guide](/journal/best-ski-resorts-alberta/). One hill is one day.
 
 ![Torchbearers descend a snowy run at Sunshine Village after dark, a thin line of flame against spruce and the lights of the village below](#photo: Torchbearers descend a snowy run at Sunshine Village after dark, a thin line of flame against spruce and the lights of the village below)
 
 ## The Banff Gondola when the valley goes blue
 
-Eight minutes from 100 Mountain Avenue, the deck is the reason to go. In a December afternoon the Bow Valley sits in blue shadow, a rim of sun still on the peaks, and then the rim is gone. The summit is at 2,281 m. Town sits a 10 to 15 minute drive below, or you ride Roam Route 1. A shell that packs into its own pocket belongs up there and then gets out of the way on the avenue. That is our [Stormcheck Packable Anorak](/shop/stormcheck-packable-anorak/).
+Eight minutes from the base, the deck is the reason to go. In a December afternoon the Bow Valley sits in blue shadow, a rim of sun still on the peaks, and then the rim is gone. The summit is at 2,281 m. Town sits a 10 to 15 minute drive below, or you ride Roam Route 1. A shell that packs into its own pocket belongs up there and then gets out of the way on the avenue. That is our [Stormcheck Packable Anorak](/shop/stormcheck-packable-anorak/).
 
-The boardwalk is not wheelchair accessible. The building is. No single winter adult rate was on the booking panel, so none is printed here. Alberta residents with identification get their own rate. One child rides free with each paying adult in the first two hours. Santa's cookies come with admission. Food does not. Book on the [Pursuit page](https://www.pursuit.com/experiences/banff-gondola/).
+The boardwalk is not wheelchair accessible. The building is. The winter adult fare is on the booking page, and it changes by date. Alberta residents with identification get their own rate. One child rides free with each paying adult in the first two hours. Santa's cookies come with admission. Food does not. Book on the [Pursuit page](https://www.pursuit.com/experiences/banff-gondola/).
 
 **Hours from Pursuit's table:**
 
@@ -133,17 +133,17 @@ A second hours page still showed 10 am to 10 pm flat through late December. Use 
 
 Santa visits Saturdays and Sundays through December 20, then daily December 21 to 24, 10 am to 2 pm, and not after. A summit buffet is listed December 18 to 26, 11 am to 8 pm, with no price attached. The $17.50 parking fee is summer only: May 15 to October 12 at the Parks Canada Sulphur lot, and May 22 to October 11, 2027 on the gondola's own lot. In December, take Route 1 or read the board.
 
-The Upper Hot Springs are a separate $19.75 adult ticket, and free youth park entry does not include the pool. Christmas Day hours were not posted on the page we used. The pools are in our [hot springs guide](/journal/best-hot-springs-western-canada/).
+The Upper Hot Springs are a separate $19.75 adult ticket, and free youth park entry does not include the pool. Christmas Day hours had not been posted by late November. The pools are in our [hot springs guide](/journal/best-hot-springs-western-canada/).
 
 ![Visitors in winter coats stand on the Sulphur Mountain deck in low December sun, the Bow Valley in blue shadow and a rim of light on the peaks](#photo: Visitors in winter coats stand on the Sulphur Mountain deck in low December sun, the Bow Valley in blue shadow and a rim of light on the peaks)
 
 ## The Cave and Basin, then a sleigh
 
-The Cave and Basin, at 311 Cave Avenue, is a pavilion and a basin you do not enter. The endangered Banff Springs snail is why the water stays put: you look, and you take the short tour, and you do not swim.
+The Cave and Basin is a pavilion and a basin you do not enter. The endangered Banff Springs snail is why the water stays put: you look, and you take the short tour, and you do not swim.
 
-The Cave and Basics tour runs about 30 minutes, Thursday to Monday at 1:30 pm all winter, included with a $10 adult admission or a Discovery Pass, no booking, at the South Belvedere. Hours are 11 am to 5 pm those days. December 25 is closed, and December 14 to 17 had no clock on the hours page updated November 12, 2026, so treat them as closed until [the page](https://parks.canada.ca/lhn-nhs/ab/caveandbasin/visit/heures-hours) posts one. Youth 17 and under are free. A Discovery Pass is $83.50 and includes park entry. Senior rates are on the [fees page](https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees). Route 4 ended October 4, so you walk or drive.
+The Cave and Basics tour runs about 30 minutes, Thursday to Monday at 1:30 pm all winter, included with a $10 adult admission or a Discovery Pass, no booking, at the South Belvedere. Hours are 11 am to 5 pm those days. December 14 to 17, 2026, and December 25 are closed. The list is on [the hours page](https://parks.canada.ca/lhn-nhs/ab/caveandbasin/visit/heures-hours). Youth 17 and under are free. A Discovery Pass is $83.50 and includes park entry. Senior rates are on the [fees page](https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees). Route 4 ended October 4, so you walk or drive.
 
-Banff Trail Riders, in the townsite, list shared sleighs from $60.20, about 40 minutes, December to March. Children 3 and under ride free. A private sleigh starts at $335.71 for two and $399.38 for four. Call 1-800-661-8352 or book on [horseback.com](https://horseback.com/horseback-rides/banff-sleigh-rides/). Dog sledding is a different outing, and it is not this one.
+Banff Trail Riders, in the townsite, list shared sleighs from $60.20, about 40 minutes, December to March. Children 3 and under ride free. A private sleigh starts at $335.71 for two and $399.38 for four. Book on [horseback.com](https://horseback.com/horseback-rides/banff-sleigh-rides/). Dog sledding is a different outing, and it is not this one.
 
 ![Two horses pull a wooden sleigh across a snowy meadow outside Banff, riders in dark coats, with a low ridge in cold afternoon light](#photo: Two horses pull a wooden sleigh across a snowy meadow outside Banff, riders in dark coats, with a low ridge in cold afternoon light)
 
@@ -179,19 +179,19 @@ New Year's Eve is Thursday, December 31, and supper is after dark. Crave serves 
 
 ## Where to eat Christmas dinner in Banff in 2026
 
-Four kitchens published a 2026 menu. Anything else is a phone call. Prices were on the page on 27 Nov 2026, in Canadian dollars, before tax and gratuity unless noted. Crave, the lodge overview, and La Terrazza still showed a banner that Christmas had wrapped, while the menus said 2026 and the weekdays matched. The meals had not happened. Trust the confirmation, not the banner.
+Four kitchens published a 2026 menu, in Canadian dollars, before tax and gratuity unless noted. Crave, the lodge overview, and La Terrazza still carry a banner that Christmas has wrapped, while the menus are dated 2026. Trust the confirmation, not the banner.
 
-**The Fat Ox,** 415 Banff Avenue beside The Kenrick, is family-style on December 25 from 4 pm until close: turkey or pumpkin gnocchi, then butter tarts, $72 and $34 for children. The regular menu is off. Tourism starts the same dinner at 5 pm. Use the [operator clock](https://fatoxbanff.ca/event/christmas-dinner-with-us/) and have them repeat it.
+**The Fat Ox,** beside The Kenrick, is family-style on December 25 from 4 pm until close: turkey or pumpkin gnocchi, then butter tarts, $72 and $34 for children. The regular menu is off. Tourism starts the same dinner at 5 pm. Use the [operator clock](https://fatoxbanff.ca/event/christmas-dinner-with-us/) and have them repeat it.
 
 **The Juniper is brunch,** not dinner: December 25, 8 am to noon on the [operator page](https://thejuniper.com/our-events/mountains-mistletoe-a-banff-christmas-brunch/), $72 and $30 for children 6 to 12, with fire pits and s'mores if the weather agrees. Not a gluten-free or dairy-free kitchen. Tourism ends it at 11:30. The confirmation wins.
 
-**Crave,** Banff Park Lodge, 201 Lynx Street, 403-760-3255, has three meals on [its holiday page](https://cravebanff.com/christmas/). Breakfast with Santa is December 13, seatings 9:00, 9:30, 11:00, and 11:30: adults $29, ages 6 to 12 at $15, under 5 free with a paying adult, Banff and Canmore locals 10 percent off. Sit early if you still want the market. Holiday breakfast on December 24, 25, 26, and January 1 runs 7 am to noon. Crave says adults $29. The [lodge overview](https://www.banffparklodge.com/christmas-in-banff/) says $35. Children are $15 either way. The reservation is the price. The Christmas buffet, 5 pm to 9 pm with a harpist, is the dinner both pages set at $99 for adults. Parties of 8 or more add 18 percent.
+**Crave,** at Banff Park Lodge, has three meals on [its holiday page](https://cravebanff.com/christmas/). Breakfast with Santa is December 13, seatings 9:00, 9:30, 11:00, and 11:30: adults $29, ages 6 to 12 at $15, under 5 free with a paying adult, Banff and Canmore locals 10 percent off. Sit early if you still want the market. Holiday breakfast on December 24, 25, 26, and January 1 runs 7 am to noon. Crave says adults $29. The [lodge overview](https://www.banffparklodge.com/christmas-in-banff/) says $35. Children are $15 either way. The reservation is the price. The Christmas buffet, 5 pm to 9 pm with a harpist, is the dinner both pages set at $99 for adults. Parties of 8 or more add 18 percent.
 
-**La Terrazza,** same building, 403-760-3271, is four courses at $99 for every age on Christmas Day and New Year's Eve, with no children's menu and no start time on the [page](https://terrazzabanff.com/christmas-new-years/). The hour is the one on the reservation. Christmas mains are beef tenderloin, turkey roulade, salmon, or mushroom risotto, and New Year's Eve is beef Wellington, turkey roulade, lobster, or butternut cannelloni. No Fairmont holiday menu for this year was on the list we used.
+**La Terrazza,** in the same lodge, is four courses at $99 for every age on Christmas Day and New Year's Eve, with no children's menu and no start time on the [page](https://terrazzabanff.com/christmas-new-years/). The hour is the one on the reservation. Christmas mains are beef tenderloin, turkey roulade, salmon, or mushroom risotto, and New Year's Eve is beef Wellington, turkey roulade, lobster, or butternut cannelloni. No Fairmont holiday menu for this year is on the Christmas list.
 
 ## What a December weekend costs
 
-Figures are Canadian dollars, checked 27 Nov 2026. Rooms, gondola tickets, and lift tickets are not listed below, because no single winter adult rate was published for the rides. Rates change by date. Senior fares live on the operator pages.
+Rooms, gondola tickets, and lift tickets are not in the table, because the winter adult fare changes by date. Senior fares live on the operator pages.
 
 | Item | From (CAD) | Note |
 | --- | --- | --- |
@@ -217,11 +217,11 @@ December turns on the tire, the bus seat, and the stall.
 
 From November 1 to March 31, and on any snowy or icy day, snow tires or chains are required on the Icefields Parkway, Highway 93 South, and the highways in Yoho, Glacier, and Mount Revelstoke. Highway 1 into the townsite is not on that list, the rule stops at the town boundary, and a superintendent can still post it elsewhere, so fit the winter tire. Check [511 Alberta](https://511.alberta.ca/) the morning you leave, because the Parkway closes for storms and avalanche work, and read the fuel gap in our [road-trip guide](/journal/the-long-haul-canada-road-trips/) before you aim north. Since April 1, 2026, ordinary vehicles stay off Moraine Lake Road, aside from lodge guests, shuttles, and licensed operators.
 
-Adult Roam fares are in the table. Riders 12 and under are free, an adult fare begins at age 19, and you pay cash, by app, by machine, or at 224 Banff Avenue. See the [fares page](https://roamtransit.com/fares/). Route 8X needs a reservation, on sale since September 8. A free child still needs a seat, and a one-way system-wide pass is not sold. From October 13 the village-to-shore hop is cash only, $2 for an adult. Routes 4 and 6 ended October 4. Route 9 toward Johnston Canyon was suspended until about November 30, so read the live map. The icewalk is in the winter places guide linked above.
+Adult Roam fares are in the table. Riders 12 and under are free, an adult fare begins at age 19, and you pay cash, by app, by machine, or at the Banff Visitor Centre. See the [fares page](https://roamtransit.com/fares/). Route 8X needs a reservation, on sale since September 8. A free child still needs a seat, and a one-way system-wide pass is not sold. From October 13 the village-to-shore hop is cash only, $2 for an adult. Routes 4 and 6 ended October 4. Route 9 toward Johnston Canyon was suspended until about November 30, so read the live map. The icewalk is in the winter places guide linked above.
 
 Meters run 8 am to 8 pm and are free after 8, at the hourly rate in the table until April 30. Nine free hours sit at the train station, on Bow Avenue, and upstairs in the Bear Street Parkade. On a market day, use the station. Machines want exact coin, or use Blinkay, as [banff.ca/payparking](https://banff.ca/payparking) explains.
 
-**Already closed, or never on the 2026 list:** the market after December 13, the Cave and Basin on December 25 and on December 14 to 17 until a clock is posted, the gondola from January 4 to 15, Santa at the gondola after December 24, Moraine Lake Road to ordinary cars, and Roam routes 4 and 6. No 2026 parade, ice castle, or Fairmont holiday menu was on the pages we used.
+**Already closed, or never on the 2026 list:** the market after December 13, the Cave and Basin on December 14 to 17 and on December 25, the gondola from January 4 to 15, Santa at the gondola after December 24, Moraine Lake Road to ordinary cars, and Roam routes 4 and 6. No 2026 parade, ice castle, or Fairmont holiday menu is on the Christmas calendar.
 
 > December in this town is kinder to the person who booked the table and checked the road before leaving Calgary.
 
@@ -255,21 +255,21 @@ This country keeps that week outside, in the real cold, and the early dark is pa
     ],
     hideCaptions: true,
     seoTitle: "Romantic Getaways Alberta Winter: Views and Tubs",
-    metaDescription: "Romantic getaways Alberta winter: glass cabins, domes, lake lodges and private wood-fired tubs you can drive to. Rates checked late November 2026.",
+    metaDescription: "Romantic getaways Alberta winter: cabins with private hot tubs, glass domes, treehouses, and quiet lodges you can drive to outside Banff this winter.",
     ogImage: { url: "/images/journal/romantic-winter-getaways-alberta/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A couple in knit toques sits in a steaming wooden hot tub on a snowy cabin deck at night, a lantern lit, facing a starry range of peaks." },
     body: `The steam shows up before anyone sits down. It lifts off a private tub, the peaks have already gone black, and one of you is still wearing a toque.
 
 Romantic getaways Alberta winter means a drive-in stay with a real view, and a reason to be outside after dark. That is a glass cabin under mountain light, a dome you can see the stars through, a treehouse with a wood-fired tub, a lake, or a small lodge that will feed you. This guide stays outside Banff town and outside anything you have to ski or snowshoe into.
 
-Prices are in Canadian dollars, from rates published for winter 2026-27 and checked in late November 2026. They move by date.
+Prices below are from rates for winter 2026 to 2027, in Canadian dollars. They move by date.
 
 Ten places made the list. Each one has a mountain, a lake, a valley, an open sky, or a real evening outside. Ski-in lodges, including Skoki, sit in our [boutique cabin guide](/journal/boutique-cabins-canada/). Hike-in rooms with a famous view are in our [places to stay for the view](/journal/best-places-to-stay-western-canada-views/). This piece is the truck, the gravel, and a night you can drive home from.
 
 :::box Plan it
 - **Best for:** Two people who want a mountain, lake, valley, or night-sky view, and time outside after dark.
 - **When:** December through March. Christmas week and the days around New Year cost more. Glamp Good will move your dates with no penalty if the forecast falls below minus 25 C.
-- **Getting there:** Calgary for Kananaskis, the Crowsnest, Waterton, and the ranch. Edmonton for Pigeon Lake and Winfield. Nordegg and Abraham Lake from either city. Highway 40 over Highwood Pass is closed to vehicles from December 1 to June 15. Check [511 Alberta](https://511.alberta.ca/) the morning you leave.
-- **Budget:** Published examples start from $134 a night, before tax, meals, a park pass, and firewood. Skyridge, Aurum, and the ranch give the nightly figure on the booking page or by phone.
+- **Getting there:** Calgary for Kananaskis, the Crowsnest, Waterton, and the ranch. Edmonton for Pigeon Lake and Winfield. Nordegg and Abraham Lake from either city. Highway 40 over Highwood Pass is closed to vehicles from December 1 to June 14. Check [511 Alberta](https://511.alberta.ca/) the morning you leave.
+- **Budget:** Prices checked 27 November 2026. Published examples start from $134 a night, before tax, meals, a park pass, and firewood. Skyridge, Aurum, and the ranch give the nightly figure on the booking page.
 - **Book ahead:** Christmas week and statutory long weekends go first. Several stays ask for at least two nights. Charmed takes full payment when you book.
 - **Bring:** A warm layer for the walk to the tub, a toque, dishes and extra towels if the cottage says so, and a full tank. A few valleys have no cell service, even when the lodge has Wi-Fi.
 :::
@@ -286,7 +286,7 @@ Ten places made the list. Each one has a mountain, a lake, a valley, an open sky
 
 **Pick the city you are leaving.** From Edmonton, the short nights are Pigeon Lake and Winfield. Nordegg and Abraham Lake are a similar drive from either city. The Crowsnest, Waterton, the ranch, and the Spray Valley are Calgary weekends. Times below are from downtown. Check [511 Alberta](https://511.alberta.ca/) before you leave.
 
-**Then the road that is open.** Highway 40 over Highwood Pass is closed to vehicles from December 1 to June 15. [Alberta Parks](https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/annual-road-closures/) lists the gates, from Peter Lougheed Provincial Park to Highwood House Junction, as closed December 1 to June 14 on the chart updated 2 October 2026. Kananaskis Village, Skyridge, and the Boundary Ranch sleigh are reached from the Trans-Canada, Exit 118, then south.
+**Then the road that is open.** [Alberta Parks](https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/annual-road-closures/) closes Highway 40, from Peter Lougheed Provincial Park to Highwood House Junction, from December 1 to June 14. Kananaskis Village, Skyridge, and the Boundary Ranch sleigh are reached from the Trans-Canada, Exit 118, then south, before those gates.
 
 Mount Engadine comes in from the Canmore side on Highway 742, gravel for about 37 kilometres. The lodge says the road is plowed and sanded, and that rental insurance still applies because it is a numbered highway. In Waterton, Parks Canada closes Red Rock Parkway to vehicles from November to May. Use the townsite road.
 
@@ -320,7 +320,7 @@ Rooms, glamping tents, and cabins are open all year. The yurt is on request. Ope
 
 ## The Crowsnest Pass: you light the fire, then you soak
 
-The Crowsnest is a valley with mountains on the shoulders. Charmed keeps heated cottages open 365 days, each with a wood-fired tub and a fire pit for the stars. No guest Wi-Fi. You pay in full. Cancel 30 days ahead for 95 percent back, 14 days for 50 percent, and nothing after that. Cold weather is not a refund. Bringing a dog means reading the FAQ and the cottage page together. The phone is 1-844-543-9273. From downtown Calgary, about 2 hours 45 minutes. From downtown Edmonton, about 6 hours 15 minutes. Fill the tank in Longview.
+The Crowsnest is a valley with mountains on the shoulders. Charmed keeps heated cottages open 365 days, each with a wood-fired tub and a fire pit for the stars. No guest Wi-Fi. You pay in full. Cancel 30 days ahead for 95 percent back, 14 days for 50 percent, and nothing after that. Cold weather is not a refund. Bringing a dog means reading the FAQ and the cottage page together. From downtown Calgary, about 2 hours 45 minutes. From downtown Edmonton, about 6 hours 15 minutes. Fill the tank in Longview.
 
 ### Lost Boys' Treehouse
 
@@ -378,7 +378,7 @@ The quiet season runs from late October or early November through April. Heated 
 
 The wind arrives before the lodge does. [Thanksgiving Ranch](https://www.thanksgivingranch.ca/) sits west of Highway 6, in the MD of Pincher Creek, at 1,600 metres, on 3,600 acres with two miles of the creek. Peaks sit behind the pastures, visible from almost anywhere on the land. You get wood fireplaces, decks on that view, a shared dry sauna, dark skies, and a fire table. No private tub, and no outside pets. The lodge sleeps up to 14. For two, ask for the Juniper suite, the one-bedroom with a stone gas fireplace and a king bed.
 
-Peak winter is 21 December to 2 January. The rest of winter is 1 November to 20 December and 3 January to 31 March. Rates are by phone at 403-627-1961. Two nights is the minimum, three on statutory weekends. Chinooks can reach 15 C, and storms can hit minus 40 C. Cell service is spotty. A landline is in the lodge.
+Peak winter is 21 December to 2 January. The rest of winter is 1 November to 20 December and 3 January to 31 March. Rates are on request through the [ranch site](https://www.thanksgivingranch.ca/). Two nights is the minimum, three on statutory weekends. Chinooks can reach 15 C, and storms can hit minus 40 C. Cell service is spotty. A landline is in the lodge.
 
 From downtown Calgary, about 3 hours 15 minutes. From downtown Edmonton, about 6 hours 45 minutes. Waterton is about 30 minutes away, the outing for day two. Walk the ranch trails on foot. Guest vehicles stay off them. Give the dark sky the evening.
 
@@ -392,7 +392,7 @@ Highway 11 runs the David Thompson country in a long grey ribbon, and then the l
 
 The lodge is open year-round. Check-in is 3:30 pm, out at 10:30 am. The person booking must be at least 21. Two nights is the minimum, with a 25 percent deposit. Rates are on the [booking page](https://hotels.cloudbeds.com/reservation/pI73Zd). Meals are not inside every rate. The restaurant serves breakfast, lunch, and dinner. Forest cabins look onto the trees, with a wood stove in most and no kitchen. If the lake is why you came, book a lodge room and ask which way it faces.
 
-From downtown Calgary or downtown Edmonton, about 4 hours 15 minutes either way. Snowshoe by calling 403-721-2117. The lodge says the ice bubbles generally run from mid-December to the end of February, and it does not recommend the ice unless you can be sure it is safe. Look from shore. The rules are in our [winter places guide](/journal/best-places-western-canada-winter/).
+From downtown Calgary or downtown Edmonton, about 4 hours 15 minutes either way. Snowshoes are arranged with the lodge. The lodge says the ice bubbles generally run from mid-December to the end of February, and it does not recommend the ice unless you can be sure it is safe. Look from shore. The rules are in our [winter places guide](/journal/best-places-western-canada-winter/).
 
 **The catch, kindly.** No private hot tub, and no cell service. Open the booking page before you tell anyone the weekend is set.
 
@@ -406,7 +406,7 @@ If Aurum is the dining room, [Expanse](https://www.expansecottages.com/our-cotta
 
 **Kutenai** is the Fireside for two: a queen, a wood stove, from $229 a night plus tax, and a private fire pit under the stars.
 
-Two nights is the minimum, three on long weekends and holidays. No check-in or check-out on Christmas Day. No pets. From downtown Calgary or downtown Edmonton, about 3 hours 45 minutes. The cottage map marks 290 kilometres to Edmonton International Airport. Cook, then take the deck or the pit. Abraham Lake is west on Highway 11. Look from shore. A fire belongs in the pit, not on the reservoir.
+Two nights is the minimum, three on long weekends and holidays. No check-in or check-out on Christmas Day. No pets. From downtown Calgary or downtown Edmonton, about 3 hours 45 minutes. Edmonton International is about 290 kilometres. Cook, then take the deck or the pit. Abraham Lake is west on Highway 11. Look from shore. A fire belongs in the pit, not on the reservoir.
 
 **The catch, kindly.** There is no hot tub. You are renting the stove, the pit or the deck, and the dark. If a soak is the whole point, take the longer drive to a Charmed cottage.
 
@@ -430,11 +430,11 @@ From downtown Edmonton to Winfield, about 1 hour 45 minutes. From downtown Calga
 
 The stay is half the date. The other half is something you do together while the light is short.
 
-**A sleigh in the Kananaskis Valley.** [Boundary Ranch](https://www.boundaryranch.com/trail-rides-new/adventures/winter-sleigh-rides/) starts its 2026 to 2027 season on 5 December. The ride is about 30 to 45 minutes, with the buffalo paddock and, if the trail allows, the tipi village. Adults are $49, with a hot drink. A wagon may replace the sleigh if the snow is thin. Arrive 30 minutes early. Online booking closes 18 hours ahead, or call 403-591-7171. From the Trans-Canada, Exit 118, then south on Highway 40 for about 26 kilometres. The closed gates are farther south, so this approach does not use the pass. Pair it with Skyridge.
+**A sleigh in the Kananaskis Valley.** [Boundary Ranch](https://www.boundaryranch.com/trail-rides-new/adventures/winter-sleigh-rides/) runs a ride of about 30 to 45 minutes, with the buffalo paddock and, if the trail allows, the tipi village. Adults are $49, with a hot drink. A wagon may replace the sleigh if the snow is thin. Arrive 30 minutes early. Online booking closes 18 hours ahead. From the Trans-Canada, Exit 118, then south on Highway 40. The closed gates are farther south, so this approach does not use the pass. Pair it with Skyridge.
 
 **A frozen falls, close enough to talk.** [Troll Falls](https://www.albertaparks.ca/parks/kananaskis/kananaskis-country/advisories-public-safety/trail-reports/kananaskis-valley/troll-falls/), near Nakiska and the village, is the short one. Alberta Parks lists 1.4 kilometres and warns that the trail ices up even when other trails do not. Bring microspikes and poles, stay on the main trail, and do not pass the barricades. You need a conservation pass to park. Do it in the afternoon, then take the sauna or the lodge dinner.
 
-**Snowshoes from the door.** Mount Engadine starts at the truck. Skyridge sends you to Kananaskis Outfitters for rentals. Aurum asks you to call 403-721-2117.
+**Snowshoes from the door.** Mount Engadine starts at the truck. Skyridge sends you to Kananaskis Outfitters for rentals. Aurum arranges snowshoes with the lodge.
 
 **Waterton on foot.** Travel Alberta's [southern Rockies winter piece](https://www.travelalberta.com/articles/southern-canadian-rockies-in-winter) is the Cameron Falls and lakeshore walk. Red Rock Parkway is closed to vehicles. Bring food.
 
@@ -446,17 +446,17 @@ The stay is half the date. The other half is something you do together while the
 
 ## How the ten compare
 
-Times are from downtown Calgary and downtown Edmonton, rounded to the nearest quarter hour. A storm adds minutes. Prices move by date.
+The Calgary and Edmonton columns are clear-weather planning estimates from downtown, not times the lodges publish, except where a line says otherwise. A storm adds time. Prices move by date.
 
 | Stay | The view | From | Calgary | Edmonton | The catch |
 | --- | --- | --- | --- | --- | --- |
-| Skyridge SkyGlass | Peaks through the glass, and the ridge changes with the cabin | Rates on the [booking page](https://us2.cloudbeds.com/reservation/CVR9l4) | About 1 hour 30 minutes | About 4 hours 45 minutes | Shared sauna, guests 21 and older |
+| Skyridge SkyGlass | Peaks through the glass, and the ridge changes with the cabin | Rates on the [booking page](https://us2.cloudbeds.com/reservation/CVR9l4) | About 1 hour from Calgary | About 5 hours, estimate | Shared sauna, guests 21 and older |
 | Mount Engadine, Chickadee | Spray Valley, one set of warm windows | From $330 a night, 12 to 25 January 2027 | About 2 hours 15 minutes | About 5 hours 30 minutes | No private tub, meals included |
 | Lost Boys' Treehouse | The Pass going dark, a fire pit, and the sky | From $349 a night, Sunday to Thursday | About 2 hours 45 minutes | About 6 hours 15 minutes | Stairs, and the tub takes 2 to 3 hours |
 | Jack's Cottage | Your own tub in the same valley | From $230 a night, Sunday to Thursday | About 2 hours 45 minutes | About 6 hours 15 minutes | Light the tub before you sit down |
 | Winnie's Hollow | Open sky at Mulhurst Bay, five minutes from Pigeon Lake | From $250 a night, Sunday to Thursday | About 3 hours 15 minutes | About 1 hour 15 minutes | Aspens and sky, not a ridge |
 | Kilmorey, mountain view | Upper Waterton Lake, or the peaks from the room | From $134 a night, 14 December 2026 | About 3 hours 30 minutes | About 6 hours 45 minutes | No outdoor tub, and the town is quiet |
-| Thanksgiving Ranch | Peaks behind 3,600 acres of pasture | Rates by phone, [403-627-1961](https://www.thanksgivingranch.ca/) | About 3 hours 15 minutes | About 6 hours 45 minutes | A working ranch, so call ahead |
+| Thanksgiving Ranch | Peaks behind 3,600 acres of pasture | Rates on the [ranch site](https://www.thanksgivingranch.ca/) | About 3 hours, estimate | About 7 hours, estimate | A working ranch, so ask ahead |
 | Aurum Lodge rooms | Abraham Lake and the peaks in one view | Rates on the [booking page](https://hotels.cloudbeds.com/reservation/pI73Zd) | About 4 hours 15 minutes | About 4 hours 15 minutes | No cell service, no private tub |
 | Expanse, Kutenai or Joby Chungo | A private fire under the stars, or a panoramic deck | From $229 a night, plus tax | About 3 hours 45 minutes | About 3 hours 45 minutes | No hot tub |
 | Glamp Good, near Winfield | Boreal sky, and a glass dome if you book the Alder | From $295 a night | About 3 hours to Winfield | About 1 hour 45 minutes to Winfield | Shared sauna, no running water in the dome |
@@ -470,7 +470,7 @@ Pick the view first, then the tub or the meal, then the date you can keep. Pack 
   {
     slug: "backcountry-lodges-huts-winter",
     title: "Where the Signal Dies: Off-Grid Backcountry Lodges and Huts You Can Ski or Snowshoe Into",
-    dek: "Winter roofs in Alberta and British Columbia you reach on skis, snowshoes, a snowcat, or a helicopter, with prices, permits, and avalanche rules checked on 27 November 2026.",
+    dek: "Winter roofs in Alberta and British Columbia you reach on skis, snowshoes, a snowcat, or a helicopter, with prices, permits, and the avalanche rules that decide the day.",
     category: "Stays",
     readMinutes: 19,
     hero: "/images/journal/backcountry-lodges-huts-winter/hero-clean-1600x840.webp",
@@ -492,7 +492,7 @@ Pick the view first, then the tub or the meal, then the date you can keep. Pack 
     ogImage: { url: "/images/journal/backcountry-lodges-huts-winter/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A small wood hut half buried in snow at blue hour, one window warm, skis planted by the door, and a skin track ending with no road in sight." },
     body: `The last light goes blue while you are still on the track, and a single window ahead is the only warm thing in the valley. The phone gave up a kilometre ago. You are late enough that the hut is doing the job it was built for.
 
-The winter list of backcountry lodges BC and backcountry huts Alberta is shorter than a booking site suggests. A roof counts here only when winter access is skis, snowshoes, a snowcat, or a helicopter. Shared Alpine Club bunks start from $25 CAD a person a night. A private cabin at Shadow Lake Lodge runs from $250 to $400 CAD a night. A guided stay starts from $2,598 CAD a person. We checked every figure here on 27 November 2026, and rates change by date.
+The winter list of backcountry lodges BC and backcountry huts Alberta is shorter than a booking site suggests. A roof counts here only when winter access is skis, snowshoes, a snowcat, or a helicopter. Shared Alpine Club bunks start from $25 CAD a person a night. A private cabin at Shadow Lake Lodge is priced on the booking page, plus $6.50 CAD an adult a night. A guided stay starts from $2,598 CAD a person. Rates change by date.
 
 Off grid cabin rentals Alberta usually come with a driveway. These do not, once the snow is down. A roof open in July may close, or sell only by the week. The booking window, and the ground between the truck and the door, matter more than the stove in the photograph.
 
@@ -502,7 +502,7 @@ Off grid cabin rentals Alberta usually come with a driveway. These do not, once 
 - **Best for:** A first hut night on a short forest approach, or a ski week from a lodge you cannot drive to.
 - **When:** December through April for most of these roofs. Cypress Hills huts stay on skis or snowshoes into spring.
 - **Getting there:** Trailheads sit in Kananaskis, Banff, Yoho, Rogers Pass, Elkwater, Golden, Nelson, Revelstoke, Mount Robson, and Clearwater. Buy passes before the phone loses service.
-- **Budget:** From $25 CAD a person to a few thousand for a guided week. Food is extra unless the lodge is catered. Rates change by date.
+- **Budget:** Prices checked 27 November 2026. From $25 CAD a person to a few thousand for a guided week. Food is extra unless the lodge is catered. Rates change by date.
 - **Book ahead:** Alpine Club members, 180 days. Non-members, 90 days, except BC Parks huts, which are 180 days for everyone. Shadow Lake, ski weeks, and helicopter lodges do not follow that split.
 - **Bring:** A sleeping bag, a headlamp, the right pass, and food if nobody is cooking. Add a transceiver, shovel, and probe once you leave simple forest.
 :::
@@ -513,7 +513,7 @@ The reservation is the easy part, and it is also the part people get wrong in a 
 
 BC Parks huts are the exception. Elk Lakes, Kokanee Glacier Cabin, and Robson Pass, among others, use the same rate for everyone and the same 180-day window, membership or not. Add a non-refundable $2 a person a night. Elk Lakes adds $20 on the booking if you live outside British Columbia.
 
-Inside seven days, phone (403) 678-3200 or email info@alpineclubofcanada.ca. The access code arrives seven days out, and the office is closed on weekends and statutory holidays.
+Inside seven days, use the [booking guide](https://help.alpineclubofcanada.ca/en/knowledge-base/how-to-book-an-acc-hut) or email info@alpineclubofcanada.ca. The access code arrives seven days out, and the office is closed on weekends and statutory holidays.
 
 **Cancel a standard hut** more than 15 days ahead and 75 percent comes back. Inside 15 days, nothing does. Weather is not a reason they refund. The card fee and a possible admin fee sit on the [policy page](https://alpineclubofcanada.ca/booking-and-cancellation-policy/). Shadow Lake, the ski weeks, and the private helicopter lodges do not follow that split. Their rules are with each place below.
 
@@ -521,15 +521,15 @@ Skoki Lodge already has a section in [boutique cabins](/journal/boutique-cabins-
 
 ## What a winter night costs
 
-Prices are the lowest CAD figure published on 27 November 2026. Rates change by date.
+Prices are the lowest CAD figure on the operator page. Rates change by date.
 
 | Place | Winter access | What you get | From |
 | --- | --- | --- | --- |
-| Cypress Hills huts | Ski or snowshoe, about 4.5 to 6 km | Self-catered, sleeps 6, wood heat | $100 a night, whole hut |
+| Cypress Hills huts | Ski or snowshoe from Elkwater | Self-catered, sleeps 6, wood heat | $100 a night, whole hut |
 | Elk Lakes Cabin | Ski or snowshoe, 9 km, 200 m | Self-catered, sleeps 14 | $25 a person |
-| Elizabeth Parker Hut | Ski or snowshoe, 12 km, 400 m | Self-catered, winter list says 20 | $50 member, peak $60 |
-| Shadow Lake Lodge | Ski, snowshoe, or fat bike, 14 km | Private cabins, custodian, showers | $250 a cabin |
-| Illecillewaet Hut | Ski, about 1.2 km from the lot | Self-catered, winter list says 24 | $50 member, peak $60 |
+| Elizabeth Parker Hut | Ski or snowshoe, 12 km, 400 m | Self-catered, winter list says 20 | $50 member in winter |
+| Shadow Lake Lodge | Ski, snowshoe, or fat bike, 14 km | Private cabins, custodian, showers | On the booking page |
+| Illecillewaet Hut | Ski, about 1.2 km from the lot | Self-catered, winter list says 24 | $50 member in winter |
 | Stanley Mitchell Hut | Ski, winter list 23 km and 675 m | Self-catered, sleeps 22 | $50 member |
 | Kokanee ski week | Helicopter from Nelson | Whole cabin, sleeps 15, custodian | $26,400 for 7 nights |
 | Fairy Meadow ski week | Helicopter from Golden | Whole hut, sleeps 20, no custodian | $30,100 for 7 nights |
@@ -547,15 +547,15 @@ Alberta's ski-in roofs are fewer than a park map suggests, and the two on this s
 
 In winter the Cypress Hills are lodgepole, a low sun, and prairie snow. [Medicine Lodge](https://www.albertaparks.ca/parks/south/cypress-hills-pp/information-facilities/comfort-camping/medicine-lodge/), [Tom Trott Hut](https://www.albertaparks.ca/parks/south/cypress-hills-pp/information-facilities/comfort-camping/tom-trott-hut/), and [Spruce Coulee](https://www.albertaparks.ca/parks/south/cypress-hills-pp/information-facilities/comfort-camping/spruce-coulee-hut/) are Alberta Parks huts near Elkwater, on the Alberta side of the provincial park. The Saskatchewan half of these hills is a different place.
 
-Medicine Lodge and Tom Trott sit about 6 km south of Elkwater. Winter and spring are skis or snowshoes only, from Spring Creek Shelter, about 5 km on Murray Hill Road, or from the Visitor Centre, about 6 km on the Horseshoe Canyon trail. Spring Creek is 10 km of groomed classic and skate. Spruce Coulee is about 14 km east on the reservoir: about 200 m in summer, about 4.5 km from Reesor Viewpoint in winter, so bring a sled. Each hut sleeps six at $100 CAD a night, with a wood stove and no drinking water. Medicine Lodge is one dark room with cell reception. Tom Trott has two bedrooms, solar light, no outlets, and a signal. Spruce Coulee has two bedrooms, no lights, and no cell reception. Firewood and dishes run November 1 to April 30. Bring a stove and fuel. In at 4 p.m., out at noon, no pets except service dogs. On 27 November 2026 the calendar ran through May 26, 2027. Book 180 days ahead at 1-877-537-2757 or Shop.AlbertaParks.ca, and cancel at least 72 hours out. Visitor Centre: 403-893-3833, extension 5.
+Medicine Lodge and Tom Trott sit about 6 km south of Elkwater. Winter and spring are skis or snowshoes only, from Spring Creek Shelter, about 5 km on Murray Hill Road, or from the Visitor Centre, about 6 km on the Horseshoe Canyon trail. Spring Creek is 10 km of groomed classic and skate. Spruce Coulee is the reservoir hut, with a longer winter walk, so bring a sled. Each hut sleeps six at $100 CAD a night, with a wood stove and no drinking water. Medicine Lodge is one dark room. Tom Trott has two bedrooms, solar light, and no outlets. Spruce Coulee has two bedrooms. Firewood and dishes run November 1 to April 30. Bring a stove and fuel. Book up to 180 days ahead at [Shop.AlbertaParks.ca](https://shop.albertaparks.ca/).
 
 ![Two skiers in wool toques and dark shells follow a narrow track through lodgepole pine toward a small wood stove hut in the Cypress Hills under a low winter sun.](#photo: Two skiers in wool toques and dark shells follow a narrow track through lodgepole pine toward a small wood stove hut in the Cypress Hills under a low winter sun.)
 
 ### Shadow Lake Lodge
 
-[Shadow Lake Lodge](https://shadowlakelodge.com/access) is private cabins, a custodian, and hot showers at the end of a trail that has already crossed avalanche paths. From Redearth Creek, 19.6 km west of Banff on the Trans-Canada, allow 14 km, 440 m, and 4 to 5 hours on skis, snowshoes, or a fat bike. A club page also says the trailhead is about 40 km north of town. Navigate from the access page.
+[Shadow Lake Lodge](https://shadowlakelodge.com/access) is private cabins, a custodian, and hot showers at the end of a trail that has already crossed avalanche paths. From Redearth Creek, 19.6 km west of Banff on the Trans-Canada, allow 14 km, 440 m, and 4 to 5 hours on skis, snowshoes, or a fat bike.
 
-You cook. Propane heat, solar lights and outlets, pots, and treated spring water are provided. Bring food, a sleeping bag, a pillowcase, and a towel. The 1929 CPR cabin has the wood fire, and the custodian sells wine, beer, and snacks. No cell service, and no dogs. Fat bikes may go the full distance from December 15 to March 15 on the access page, or from December 1 on the FAQ, so ask. Do not stop where paths cross at kilometre 3.3 and 4.4, or above the trail from 6.3 to 8. The FAQ calls winter January to April and prints no exact days. Cabins run from $250 to $400 CAD a night, plus $6.50 an adult, with no member rate. Kings sleep two, queens up to four, standards two, family cabins up to five. Exclusive use is quoted as both 38 and 35. Pay in full. More than 15 days out, half comes back, less the card fee. After that, nothing returns, and the dates cannot move. A park pass is required, and the camping permit is included. Adult daily admission was $12.25 CAD and an adult Discovery Pass $83.50 on the [fees page](https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees). Youth 17 and under enter free.
+You cook. Propane heat, solar lights and outlets, pots, and treated spring water are provided. Bring food, a sleeping bag, a pillowcase, and a towel. The 1929 CPR cabin has the wood fire, and the custodian sells wine, beer, and snacks. No cell service, and no dogs. Fat bikes may go the full distance from December 15 to March 15. Do not stop where paths cross at kilometre 3.3 and 4.4, or above the trail from 6.3 to 8. Cabin rates are on the [booking page](https://secure.webrez.com/hotel/3/roomlist), in Canadian dollars, plus $6.50 an adult a night, with no member rate. Kings sleep two, queens up to four, standards two, family cabins up to five. Payment is in full at booking; read the cancellation terms before you commit. A park pass is required, and the camping permit is included. Adult daily admission is $12.25 CAD and an adult Discovery Pass $83.50 on the [fees page](https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees). Youth 17 and under enter free.
 
 ![Private log cabins at Shadow Lake Lodge glow with warm window light at blue hour, ski tracks crossing the meadow and a dark ridge behind the trees.](#photo: Private log cabins at Shadow Lake Lodge glow with warm window light at blue hour, ski tracks crossing the meadow and a dark ridge behind the trees.)
 
@@ -569,7 +569,7 @@ The provincial line is a change of scale. Club bunks continue, and then the back
 
 Plan on 9 km and 200 m, to 14 beds. The hydroline to the pass is 3.9 km, the Elk Pass trail 4.4 km and usually track-set, then 4.3 km down the hydroline road. No winter time is printed, so ignore the summer hours and the Sparwood driving note if you are on skis. Cell service fails on Highway 40 South, Peter Lougheed included. Buy a [Kananaskis Conservation Pass](https://www.alberta.ca/kananaskis-conservation-pass) in town, $15 CAD a day or $90 a year. The personal fine is $150. The hut page notes Highway 40 closed from Peter Lougheed to Highwood House Junction, December 1 to June 14. Check 511 Alberta before the signal goes.
 
-Wood heat, electric light, propane stove and oven, mattresses, a creek, an outhouse. A ranger cabin from 1992, club-run since summer 2004. Skiing runs from easy flats to ski mountaineering, and the club says none of it is in the guidebooks. A solid cross-country skier can reach the door. On touring gear the approach should feel easy, and logged openings outside the park are the easier skiing. **$25 CAD a person**, plus $2. Families, $50 for two adults and two children 17 and under, by phone. Add $20 if you live outside British Columbia.
+Wood heat, electric light, propane stove and oven, mattresses, a creek, an outhouse. A ranger cabin from 1992, club-run since summer 2004. Skiing runs from easy flats to ski mountaineering, and the club says none of it is in the guidebooks. A solid cross-country skier can reach the door. On touring gear the approach should feel easy, and logged openings outside the park are the easier skiing. **$25 CAD a person**, plus $2. Families are $50 for two adults and two children 17 and under. Ask the club. Add $20 if you live outside British Columbia.
 
 ![A wood cabin with a smoking chimney stands in deep snow at Elk Lakes, skis planted by the door and late light on the peaks above the forest.](#photo: A wood cabin with a smoking chimney stands in deep snow at Elk Lakes, skis planted by the door and late light on the peaks above the forest.)
 
@@ -577,7 +577,7 @@ Wood heat, electric light, propane stove and oven, mattresses, a creek, an outho
 
 The closed Lake O'Hara road is a long forest ski: spruce, then a meadow, then a hut that has stood there since 1919. Do not stop in the openings. [Elizabeth Parker Hut](https://alpineclubofcanada.ca/hut/elizabeth-parker-hut/) is in Yoho, 500 metres from the shore, 12 km and 400 m, usually 4 to 5 hours. Parks Canada, via the Alpine Club, calls the road simple Class 1: forest, with openings that cross runouts. Winter capacity is 20. It has been a federal heritage building since 1997.
 
-Winter copy says wood stoves, including in Wiwaxy, from 1912. The amenities list says propane. Bring a headlamp. Mattresses are there. Food and a sleeping bag are not. December 1 to April 30 is $60 CAD for members and $70 for non-members. Other winter nights are $50 and $60. Yoho needs its own park pass. The staffed hotel is a separate stay, in the [view lodges](/journal/best-places-to-stay-western-canada-views/).
+Wood stoves, including in Wiwaxy, date from 1912, and the hut also lists propane. Bring a headlamp. Mattresses are there. Food and a sleeping bag are not. Winter is the standard rate: $50 CAD for members and $60 for non-members. The peak, $60 and $70, runs June 15 to October 13, and it is not a winter rate. Yoho needs its own park pass. The staffed hotel is a separate stay, in the [view lodges](/journal/best-places-to-stay-western-canada-views/).
 
 ![Skiers in soft blue dusk rest on the snow-covered Lake O'Hara road, spruce close on both sides and packs still on, the meadow ahead of them.](#photo: Skiers in soft blue dusk rest on the snow-covered Lake O'Hara road, spruce close on both sides and packs still on, the meadow ahead of them.)
 
@@ -585,9 +585,9 @@ Winter copy says wood stoves, including in Wiwaxy, from 1912. The amenities list
 
 ### Illecillewaet Hut, Rogers Pass
 
-The door is close. The permission to use it is not. The [A.O. Wheeler Hut](https://alpineclubofcanada.ca/hut/a-o-wheeler-hut/) sits a short ski from the Illecillewaet lot, under an average of 14 metres of snow a year. Features say 1.2 km and 10 metres of gain, capacity 24 in winter. The trail note says 50 vertical metres in the trees, then an old road. Believe the steeper number. Wood heat, electric light, propane stove, mattresses, creek, outhouse.
+The door is close. The permission to use it is not. The [A.O. Wheeler Hut](https://alpineclubofcanada.ca/hut/a-o-wheeler-hut/) sits a short ski from the Illecillewaet lot. The hut page lists 1.2 km and 10 metres of gain, capacity 24 in winter. Wood heat, electric light, propane stove, mattresses, creek, outhouse.
 
-The approach is simple Class 1. The Asulkan and the way onto the Illecillewaet Neve are complex on the [terrain table](https://parks.canada.ca/pn-np/bc/glacier/visit/hiver-winter/ski/ates), and highway control does not clear a slope. From November 15 until control ends, an annual [Winter Permit](https://parks.canada.ca/pn-np/bc/glacier/visit/hiver-winter/ski) is mandatory overnight and can take a week. Daily permits do not cover overnight. Since the 2025 to 2026 season, leaving the lot requires that permit, and the fine can reach $25,000. Overnight parking is free at Summit Station or 250-837-7500, with your plate and reservation number. Email can take five days. Status posts around 7:30 a.m. Pacific. A national park pass is separate. December 1 to April 30 is $60 CAD for members and $70 for non-members. Otherwise $50 and $60.
+The approach is simple Class 1. The Asulkan and the way onto the Illecillewaet Neve are complex on the [terrain table](https://parks.canada.ca/pn-np/bc/glacier/visit/hiver-winter/ski/ates), and highway control does not clear a slope. From November 15 until control ends, an annual [Winter Permit](https://parks.canada.ca/pn-np/bc/glacier/visit/hiver-winter/ski) is mandatory overnight and can take a week. Daily permits do not cover overnight. Since the 2025 to 2026 season, leaving the lot requires that permit, and the fine can reach $25,000. Request overnight parking from the [park page](https://parks.canada.ca/pn-np/bc/glacier/visit/hiver-winter/ski) with your plate and reservation number. Email can take five days. Status posts around 7:30 a.m. Pacific. A national park pass is separate. Winter is the standard rate, $50 CAD for members and $60 for non-members. The summer peak is higher, and it does not apply from December through April.
 
 ![The Illecillewaet Hut stands half buried in Rogers Pass snow, a small group of skiers unclipping at the door while heavy cloud sits on the peaks.](#photo: The Illecillewaet Hut stands half buried in Rogers Pass snow, a small group of skiers unclipping at the door while heavy cloud sits on the peaks.)
 
@@ -601,7 +601,7 @@ Wood heat, propane light and stove, mattresses, a creek, an outhouse. Members pa
 
 ### Kokanee and Fairy Meadow
 
-A [ski week](https://alpineclubofcanada.ca/ski-weeks/) is the whole hut, seven nights, helicopter and taxes in, self-guided unless you add a guide. They ask for AST 1 and recommend AST 2. Bags past 100 lb a person can cost more to fly. Half is due within seven days of a yes, the rest 90 days out, and none of it comes back. On 27 November 2026 the page said applications were closed and open. Check the portal.
+A [ski week](https://alpineclubofcanada.ca/ski-weeks/) is the whole hut, seven nights, helicopter and taxes in, self-guided unless you add a guide. They ask for AST 1 and recommend AST 2. Bags past 100 lb a person can cost more to fly. Half is due within seven days of a yes, the rest 90 days out, and none of it comes back. The listing has shown both closed and open, so check the member portal.
 
 **Kokanee Glacier Cabin** is at 2,000 m, sleeps 15, stages from Nelson, and has a custodian. December 12, 2026 to May 1, 2027 is $26,400 CAD plus 2 percent MRDT. Non-members can book. Moderate glaciated terrain, with trees for flat light, and still glacier travel.
 
@@ -615,11 +615,11 @@ A [ski week](https://alpineclubofcanada.ca/ski-weeks/) is the whole hut, seven n
 
 ### Robson Pass Hut
 
-The [Byron Caldwell Hut](https://alpineclubofcanada.ca/hut/robson-pass-hut/) was built in 2026 under Mount Robson. Winter runs December 15 to April 15. Twelve people, self-catered, solar power, $50 CAD for everyone plus PST and $10 a person a night to BC Parks. The 180-day window is open to all. Yellowhead Helicopters flies only on Monday and Friday, and the fare is not listed, so call before you pay the club. The ski, 24 km and about 850 m, is technical avalanche terrain. Travel, navigation, and avalanche skills are essential.
+The [Byron Caldwell Hut](https://alpineclubofcanada.ca/hut/robson-pass-hut/) was built in 2026 under Mount Robson. Winter runs December 15 to April 15. Twelve people, self-catered, solar power, $50 CAD for everyone plus PST and $10 a person a night to BC Parks. The 180-day window is open to all. Yellowhead Helicopters flies only on Monday and Friday. Ask the operator for the fare before you pay the club. The ski, 24 km and about 850 m, is technical avalanche terrain. Travel, navigation, and avalanche skills are essential.
 
 ### Purcell Mountain Lodge
 
-From December to April, [Purcell](https://www.purcellmountainlodge.com/winter-home) flies out of Golden on Monday and Friday, guided and catered, and winter 2026 to 2027 was open to book. Three nights, Friday to Monday, from $2,598 CAD. Four nights, Monday to Friday, from $2,998. Double occupancy, taxes extra, helicopter included. Seven days: phone 1-888-767-8989, no printed rate. Ten rooms, and a chalet for eight.
+From December to April, [Purcell](https://www.purcellmountainlodge.com/winter-home) flies out of Golden on Monday and Friday, guided and catered, and winter 2026 to 2027 was open to book. Three nights, Friday to Monday, from $2,598 CAD. Four nights, Monday to Friday, from $2,998. Double occupancy, taxes extra, helicopter included. For seven days, ask the lodge. Ten rooms, and a chalet for eight.
 
 You practise a rescue in the briefing. Tours often make 1,400 to 2,000 metres of vertical. Guides are called expert on the winter page. ACMG appears in a hike description, not on the rate card, so ask. Self-guided weeks are early-season only, and on those dates the group owns the plan and the risk. The lodge calls the Champagne Shuttle the only direct ride from Calgary International to Golden.
 
@@ -629,13 +629,13 @@ You practise a rescue in the briefing. Tours often make 1,400 to 2,000 metres of
 
 [Sorcerer](https://sorcererlodge.com/bookings/) is helicopter only: 70 km northwest of Golden, 25 km north of Rogers Pass, 2,050 metres, on a cliff above Wizard Lake. Stage at Rogers Pusher Station Road, 53 km west of Golden. The operator puts Calgary about three hours off. Arrive a day early, and do not fly home the day you ski out. The lodge says closures on Rogers Pass and the Kicking Horse are frequent.
 
-Guided, catered, flights and food included, guides named as ACMG on the bookings page. On 27 November 2026 the lowest open non-refundable price was $2,700 CAD plus tax, four nights, January 29 to February 2. Seven-night weeks ran $4,400 to $5,900 plus tax, some already full. Pay in full, or $1,800 down and the balance 90 days out. The page calls that installment relaxed and does not print the terms. Phone 250-272-3394. Wood stove, radiant heat, solar plus a generator early in the winter, a separate sauna, five rooms of two beds upstairs.
+Guided, catered, flights and food included, guides named as ACMG on the bookings page. The lowest open non-refundable price on the bookings page was $2,700 CAD plus tax, four nights, January 29 to February 2. Seven-night weeks ran $4,400 to $5,900 plus tax, some already full. Pay in full, or $1,800 down and the balance 90 days out. Read the payment terms before you send the deposit. Wood stove, radiant heat, solar plus a generator early in the winter, a separate sauna, five rooms of two beds upstairs.
 
 ### Wells Gray: Trophy, Discovery, and Fight
 
 [Wells Gray Adventures](https://www.skihike.com/winter/self-guided-and-self-catered-cabin-rental/) in Clearwater rents three cabins, self-catered and self-guided, to groups who can show backcountry experience. No AST level is printed. That silence is not permission to skip a course.
 
-For Trophy, a snowcat carries 12 people 14 km and 3,200 feet up the Spahats for $400 CAD a trip, not a person. Then you skin about 1,700 feet, two to four hours, to 2,145 metres at treeline. Skiing at the cabin is intermediate, with steeper ground about an hour away, and a snowmobile assist out is $250. Discovery and Fight fly in. A ski-out has to be cleared first: the route is long and the navigation is tricky. Discovery, at 1,970 metres, is simpler than Trophy, with longer runs. Fight Meadow is the gentler valley, listed for snowshoes, cross-country, and family trips.
+Trophy is the snowcat cabin: a ride up the Spahats, then a skin to treeline. The cat fee and the vertical are on the access notes, and they move. Skiing at the cabin is intermediate, with steeper ground farther out. Discovery and Fight fly in. A ski-out has to be cleared first: the route is long and the navigation is tricky. Discovery is the simpler of the two flying cabins, with longer runs. Fight Meadow is the gentler valley, listed for snowshoes, cross-country, and family trips.
 
 Winter 2026 to 2027, plus tax: Trophy and Discovery $1,060 CAD a night for eight or fewer, then $105 each up to 12. Fight $990 for ten or fewer, then $75. Five nights minimum, six at Trophy for Christmas, New Year, Easter, and spring break. Propane heat at Trophy and Discovery is December to April, not a promise for Fight. Solar can fail in a long storm. Sauna, composting toilet, bedding for 12, no running water. Bring a liner and a pillowcase.
 
@@ -643,7 +643,7 @@ Winter 2026 to 2027, plus tax: Trophy and Discovery $1,060 CAD a night for eight
 
 ### Selkirk Lodge
 
-[Selkirk Lodge](https://www.selkirklodge.ca/tripinfo) leaves from Jumping Creek, about 45 km east of Revelstoke: seven nights, guided, catered, 14 guests. Guides are ACMG or IFMGA, the lodge says. The 2026 to 2027 rate is $4,500 CAD a person plus GST. Hold a bed with $1,000, non-refundable, or the whole lodge with $14,000. The balance is due October 31 and does not return. Internet, a shower, solar power, heated outhouses, and duvets come with the stay. If you wanted the signal gone, this is the wrong week.
+[Selkirk Lodge](https://www.selkirklodge.ca/tripinfo) flies from east of Revelstoke: seven nights, guided, catered, 14 guests. Guides are ACMG or IFMGA, the lodge says. The 2026 to 2027 rate is $4,500 CAD a person plus GST. Hold a bed with $1,000, non-refundable, or the whole lodge with $14,000. The balance is due October 31 and does not return. Internet, a shower, solar power, heated outhouses, and duvets come with the stay. If you wanted the signal gone, this is the wrong week.
 
 ## What the avalanche forecast is actually telling you
 
@@ -719,14 +719,14 @@ The truck heater catches. The phone finds a bar. The layers that did the work ar
 
 The Powder Highway BC is a winter loop through the Kootenay Rockies in southeastern British Columbia. [Kootenay Rockies Tourism](https://www.kootenayrockies.com/powder-highway-101/) defines it as eight alpine resorts: Revelstoke Mountain Resort, Kicking Horse Mountain Resort in Golden, Fernie Alpine Resort, Whitewater Ski Resort above Nelson, RED Mountain Resort in Rossland, Panorama Mountain Resort above Invermere, Kimberley Alpine Resort, and the ski hill at Fairmont Hot Springs Resort. The circle crosses the Rockies, the Purcells, the Selkirks, and the Monashees. From Calgary, seven to ten days lets the deep mountains have more than one morning. From Edmonton, the first day is longer, and the loop after Golden is the same one.
 
-Sunshine, Lake Louise, and Marmot have their own [Alberta ski guide](/journal/best-ski-resorts-alberta/). Out here, pack each hill's own snow: 10.5 metres at Revelstoke, 1,200 cm at Whitewater, 9 metres or more at Fernie, up to 750 cm high on Kicking Horse. Prices and dates below are what operators had posted on November 27, 2026. Rates change by date, and snow moves an opening.
+Sunshine, Lake Louise, and Marmot have their own [Alberta ski guide](/journal/best-ski-resorts-alberta/). Out here, pack each hill's own snow: 10.5 metres at Revelstoke, 1,200 cm at Whitewater, 9 metres or more at Fernie, up to 750 cm high on Kicking Horse. Rates change by date, and snow moves an opening.
 
 :::box Plan it
 - **Best for:** Calgary and Edmonton drivers who want deeper snow than the Alberta side and will treat the passes as part of the skiing.
 - **When:** Mid-December through March, once Kicking Horse, Kimberley, and RED have opened. Early December only some hills are spinning. Every date below can move with snow.
 - **Getting there:** Calgary airport to Golden is 278 km and 2 hours 44 minutes. Edmonton to Golden is 544 km and 5 hours 12 minutes. Edmonton to Revelstoke via Calgary is about 7 hours and 701 km.
-- **Budget:** Adult window tickets from $159 CAD at Whitewater before tax, up to $220 CAD at Revelstoke in the peak window, taxes extra. Fernie, Kicking Horse, and Kimberley had not posted one window price. Lodging moves more than the ticket. Rates change by date.
-- **Book ahead:** Epic Passes go off sale after December 6, 2026. Whitewater's lower pass price ends December 3. Revelstoke's regional vertical-card sale was posted through November 30. Confirm the RED Card deadline on the resort site. Do not book a same-day connection across Rogers Pass.
+- **Budget:** Prices checked 27 November 2026. Adult window tickets from $159 CAD at Whitewater before tax, up to $220 CAD at Revelstoke in the peak window, taxes extra. Fernie, Kicking Horse, and Kimberley had not posted one window price. Lodging moves more than the ticket. Rates change by date.
+- **Book ahead:** Epic Passes go off sale after December 6, 2026. Revelstoke's regional vertical-card sale runs through November 30. Confirm the RED Card deadline on the resort site. Do not book a same-day connection across Rogers Pass.
 - **Bring:** Legal winter tires with real tread, a full tank out of Golden and out of Revelstoke, layers for a long sit if the pass closes, and an offline plan. Whitewater has no cell service.
 :::
 
@@ -748,7 +748,7 @@ Adult prices are below. Youth, senior, and child rates are on each resort's tick
 | --- | --- | --- | --- | --- | --- |
 | Revelstoke | Revelstoke | 1,713 m | 10.5 m average | December 5 | Ikon, Mountain Collective, own tickets |
 | Kicking Horse | Golden | 1,315 m | 7.3 m average, up to 750 cm high | December 11 to April 11, conditions dependent | Epic, shared days |
-| Fernie | Fernie | 1,082 m | 9 m or more | December 4 to April 11 | Epic, same shared days |
+| Fernie | Fernie | 1,082 m | 9 m or more | December 4, conditions permitting | Epic, same shared days |
 | Whitewater | Nelson | 614 m | 1,200 cm | Tentative December 4 to April 4 | Own ticket or pass |
 | RED Mountain | Rossland | Nearly 3,000 ft | 300 inches | Tentative December 12 to April 4 | Ikon |
 | Panorama | 18 km west of Invermere | 1,300 m | 520 cm | December 4 to April 11 | Ikon, Mountain Collective |
@@ -775,7 +775,7 @@ East of Golden, the canyon used to own the night. The four-lane highway opened a
 
 Rogers Pass, inside Glacier National Park, deserves the same respect as any steep slope you would ski. [Parks Canada](https://parks.canada.ca/pn-np/bc/glacier/visit/chauffeurs-commercial-drivers) counts 135 avalanche paths along about 43 km of the Trans-Canada, and stopping under them is signed as restricted. Crews close the highway, bring the snow down, and clear it before traffic is in it. The park account has told drivers a closure can run from 2 to 8 hours or longer, with the line waiting in Revelstoke or Golden. A short shoot can take the morning. A storm can take the day.
 
-Keep both tanks full. Control protects the road and the railway, and it does not make the slopes above safe to ski. From November 15 a backcountry day needs a winter permit: yellow zones take the free permit plus a park pass, and red zones are closed for explosives. That trip starts in our [mountaineering primer](/journal/learn-to-mountaineer-canada/). Assume the pass closes on some mornings, and leave one blank. [DriveBC](https://www.drivebc.ca/) is toll-free at 1-800-550-4997. Turn on future events so a planned shoot is not a surprise, and fill up before the gap, as in our [long-haul road trip guide](/journal/the-long-haul-canada-road-trips/).
+Keep both tanks full. Control protects the road and the railway, and it does not make the slopes above safe to ski. From November 15 a backcountry day needs a winter permit: yellow zones take the free permit plus a park pass, and red zones are closed for explosives. That trip starts in our [mountaineering primer](/journal/learn-to-mountaineer-canada/). Assume the pass closes on some mornings, and leave one blank. [DriveBC](https://www.drivebc.ca/) is the morning check. Turn on future events so a planned shoot is not a surprise, and fill up before the gap, as in our [long-haul road trip guide](/journal/the-long-haul-canada-road-trips/).
 
 ### Winter tires, from October on
 
@@ -816,7 +816,7 @@ Go west first, so Rogers Pass is a morning and not the tail of an Edmonton day. 
 
 Revelstoke is why people put up with the pass. The resort calls 1,713 m of vertical, on 3,121 acres, the most in North America, with 10.5 m of snow behind it. The Last Spike, a green, runs 15.2 km from the Stoke Chair to the village, and above it the hill is fall-line bowls and glades. One day shows the scale. The second is the one you remember. Downtown is a ten-minute walk, about 9,464 people between the Selkirks and the Monashees. The hill itself is a drive or a shuttle off the southeast edge. Eat downtown once the boots are off.
 
-Chairs are meant to turn December 5. The peak adult window, ages 19 to 64, is $220 CAD from December 24 to March 14, or $149 in the afternoon, and $199 early and late, taxes extra. A noon arrival after a hold can still be a ski day at that afternoon price. A vertical card for B.C., Alberta, Saskatchewan, Yukon, Washington, Oregon, and Idaho was on sale through November 30, adult three-day $399, and the adult season pass was $2,349. That pass can add Ikon at $1,959 with no blackouts, or Base at $1,379 with blackouts December 26 to 30, 2026, January 16 to 17, 2027, and February 13 to 14, 2027. Trust the add-on if Ikon's page still shows last winter. Mountain Collective is two days, then half off, redeemed at 1-866-373-4754. Details are on the [ticket page](https://www.revelstokemountainresort.com/tickets-passes/winter-tickets/). Revelstoke is not on Epic.
+Chairs are meant to turn December 5. The peak adult window, ages 19 to 64, is $220 CAD from December 24 to March 14, or $149 in the afternoon, and $199 early and late, taxes extra. A noon arrival after a hold can still be a ski day at that afternoon price. A vertical card for B.C., Alberta, Saskatchewan, Yukon, Washington, Oregon, and Idaho is on sale through November 30, adult three-day $399, and the adult season pass is $2,349. That pass can add Ikon at $1,959 with no blackouts, or Base at $1,379 with blackouts December 26 to 30, 2026, January 16 to 17, 2027, and February 13 to 14, 2027. Trust the add-on if Ikon's page still shows last winter. Mountain Collective is two days, then half off. Details are on the [ticket page](https://www.revelstokemountainresort.com/tickets-passes/winter-tickets/). Revelstoke is not on Epic.
 
 ![Skiers below the Revelstoke gondola, deep snow on village roofs, and low cloud hiding the upper Selkirk ridges in flat winter light.](#photo: Skiers below the Revelstoke gondola, deep snow on village roofs, and low cloud hiding the upper Selkirk ridges in flat winter light.)
 
@@ -824,7 +824,7 @@ Chairs are meant to turn December 5. The peak adult window, ages 19 to 64, is $2
 
 Kicking Horse starts in a canyon and finishes in the alpine. The Golden Eagle Express does the climbing until Golden is a small cluster in the haze: 3,486 acres, 85 or more chutes, summit at 2,505 m. Snow splits: 7.3 m on average, up to 750 cm high, much less in the parking lot. Judge the day from the top. Eleven22 serves dinner from 5 pm to 10 pm, Whitetooth from 9 am for breakfast and 5 pm for dinner, and Double Black Cafe on Kicking Horse Trail from 8 am to 5:30 pm. Eagle's Eye, which Epic lists at 2,350 m, is the meal with the trench in the window. Fill the tank in town. On a closure day the gauge is not a suggestion.
 
-The hill aims to open December 11 and, if the snow holds, to run through April 11. A full-day adult window price was not posted. A Jelly Bean learning ticket was $25 CAD, and Catamount-only, the lower mountain, was $80. Buy 14 days out and the resort takes up to 15 percent off, or up to 10 percent inside 2 to 13 days. Phone 1-800-258-7669. The adult season pass is $2,599, and a Super Pass at $3,699 adds Lake Louise, which is an Alberta day. The $139 friends-and-family day and the $149 Rockies Card, noted under Fernie, work here too. Without Epic, buy ahead.
+The hill aims to open December 11 and, if the snow holds, to run through April 11. A full-day adult window price is not posted as one number. A Jelly Bean learning ticket is $25 CAD, and Catamount-only, the lower mountain, is $80. Buying online saves up to 15 percent. The adult season pass and the Super Pass, which adds Lake Louise, are on the pass page. The $139 friends-and-family day, noted under Fernie, works here too. The Rockies Card is on the RCR page. Without Epic, buy ahead.
 
 ![The Golden Eagle Express climbing out of Kicking Horse canyon toward open alpine, with Golden far below in winter haze.](#photo: The Golden Eagle Express climbing out of Kicking Horse canyon toward open alpine, with Golden far below in winter haze.)
 
@@ -838,9 +838,9 @@ No single adult window price was posted. The adult season pass is $2,599, and wi
 
 ## Whitewater and Nelson, deep snow and no signal
 
-Whitewater feels farther away than the drive from Nelson suggests. The facts page lists 1,200 cm of snow, and cell service and Wi-Fi as none. The skiing is trees, widely spaced fir and cold smoke in the branches, with no building in view and no signal for a map or a late table. Download the trail map on Lake Street, pack lunch, and let the phone be a camera.
+Whitewater feels farther away than the drive from Nelson suggests. The facts page lists 1,200 cm of snow, and cell service and Wi-Fi as none. The skiing is trees, widely spaced fir and cold smoke in the branches, with no building in view and no signal for a map or a late table. Download the trail map before you leave Nelson, pack lunch, and let the phone be a camera.
 
-In bounds is 1,442 acres, and the facts page lists 3,247 acres of skiable terrain, 119 runs, longest 4.4 km. Short Side comes in bounds this winter: six runs, about 190 acres, between Giddy Up Gully and Sproulers. If December 4 holds, the first weekend is Raven, Silver King, Summit, and the Hummer. Glory, and lunch at Glory Lodge, wait until the next week, so eat in Nelson until then. The office is 602 Lake Street. An adult day is $159 CAD before tax, a half day from 12:30 is $103, and passes are $1,940 until December 3, then $2,200. The rest of the grid is on the [ticket page](https://whitewatermountainresort.com/tickets/). Not on Epic, Ikon, or Mountain Collective.
+In bounds is 1,442 acres, and the facts page lists 3,247 acres of skiable terrain, 119 runs, longest 4.4 km. Short Side comes in bounds this winter: six runs, about 190 acres, between Giddy Up Gully and Sproulers. If December 4 holds, the first weekend is Raven, Silver King, Summit, and the Hummer. Glory, and lunch at Glory Lodge, wait until the next week, so eat in Nelson until then. An adult day is $159 CAD before tax, and a half day from 12:30 is $103. Season pass rates are on the pass page. The day grid is on the [ticket page](https://whitewatermountainresort.com/tickets-passes/lift-tickets/). Not on Epic, Ikon, or Mountain Collective.
 
 ![Riders in widely spaced fir at Whitewater, cold smoke in the Selkirk trees, and no buildings in sight under a flat grey sky.](#photo: Riders in widely spaced fir at Whitewater, cold smoke in the Selkirk trees, and no buildings in sight under a flat grey sky.)
 
@@ -848,7 +848,7 @@ In bounds is 1,442 acres, and the facts page lists 3,247 acres of skiable terrai
 
 Late light on RED is five peaks above a small high town, fall-line skiing and trees, with pay-per-run cat skiing still inside the boundary. Rossland publishes the resort's 300 inches as 750 cm. Chairs mostly finish at 3:30 pm, with light left for the hill road. The base is about ten minutes from downtown, and the free RED Mountain Express runs seven days, to 7 pm early in the week and to 11 pm Thursday through Saturday. Dinner is in town, on that shuttle. Calgary is 7 to 8 hours away. Rossland Winter Carnival, January 28 to 31, 2027, is on our [western winter calendar](/journal/western-canada-winter-adventures/). Book the bed first if those dates are yours.
 
-Peak adult tickets, ages 22 to 64, are $209 CAD at the window and $189 online from December 24 to March 15. The RED Card is five anytime days at $598, but the resort's own pages disagree on the sale end: November 15, November 30, or December 24. Confirm on [redresort.com](https://www.redresort.com/). Full Ikon is seven days. Base is five, with the same blackouts as the Revelstoke add-on. No reservation. Friends-and-family discounts are at Guest Services, and night skiing on the T-bar and carpet runs Thursday to Saturday until 8:00 pm. RED is not on Epic or Mountain Collective.
+Peak adult tickets, ages 22 to 64, are $209 CAD at the window and $189 online from December 24 to March 15. The homepage lists the RED Card, five anytime days at $598 CAD, with a November 15 end. Other resort pages have listed later sale dates. Confirm on [redresort.com](https://www.redresort.com/) before you count on it. Full Ikon is seven days. Base is five, with the same blackouts as the Revelstoke add-on. No reservation. Friends-and-family discounts are at Guest Services, and night skiing on the T-bar and carpet runs Thursday to Saturday until 8:00 pm. RED is not on Epic or Mountain Collective.
 
 ![Late light on RED Mountain above Rossland, five peaks in a row, and skiers on a fall-line run through widely spaced trees.](#photo: Late light on RED Mountain above Rossland, five peaks in a row, and skiers on a fall-line run through widely spaced trees.)
 
@@ -860,23 +860,23 @@ After Fernie the snow numbers step down on purpose. Panorama posts 520 cm, Kimbe
 
 Panorama sits 18 km west of Invermere, gondola lights on the Purcells and the Rockies across the valley. Taynton Bowl is the line that matters, about 6.5 km and 750 acres, all black. The rest of the 136 trails still has room to breathe: 15 percent beginner, 35 percent intermediate, 20 percent advanced, 30 percent expert. Snowmaking covers 40 percent of the main named runs. Two Monster X cats only shuttle resort terrain, hours are 10 am to 5 pm, and a free shuttle links Invermere when it is busy.
 
-Adult days are $189 CAD, $179 on value dates from December 4 to 24 and March 29 to April 11, and $209 on the holidays, December 25 to January 3 and February 13 to 15. Three days or more include a rest day. Afternoons are on the [ticket page](https://www.panoramaresort.com/ski-ride/lift-tickets/). Ikon is listed at $1,889 CAD for ages 23 and older, seven days, and Base at $1,279 for five. Mountain Collective is two days, then half off, redeemed at Ski Tip Lodge with a printed confirmation and photo identification. Showoff nights, 6 pm to 9 pm, run December 19, 2026 through January 3, 2027, then listed Fridays and Saturdays. Lodging guests use the springs. The Lake Windermere Whiteway is already on that winter calendar.
+Adult day rates are on the [lift ticket page](https://shop.panoramaresort.com/s/tickets-passes/lift-tickets). Mountain Collective is two days, then half off, redeemed at Ski Tip Lodge with a printed confirmation and photo identification. Lodging guests use the springs. The Lake Windermere Whiteway is already on that winter calendar.
 
 ### Kimberley
 
-Kimberley skis smaller, and it lights up after the other hills have gone dark. North Star Express covers 640 m in about seven minutes. Ridgeway, the long run, is 6.4 km. Sixty-eight runs and 12 glades sit on more than 1,800 acres. Night skiing on North Star comes with a day ticket when the lights are on: Thursday, Friday, and Saturday, 5:30 pm to 8:30 pm, through March 7, once the holidays end. Those holiday pages disagree on January 2 versus January 3, and December 31 is a shorter torchlight, so confirm before you plan New Year's around it. A night-only adult ticket is $50 at the hill. A half day from 12:30 is $88.95. No full-day window price was posted, and there is no patrol outside the rope.
+Kimberley skis smaller, and it lights up after the other hills have gone dark. North Star Express covers 640 m in about seven minutes. Ridgeway, the long run, is 6.4 km. Sixty-eight runs and 12 glades sit on more than 1,800 acres. Night skiing on North Star comes with a day ticket when the lights are on: Thursday, Friday, and Saturday, 5:30 pm to 8:30 pm, through March 7, once the holidays end. Those holiday pages disagree on January 2 versus January 3, and December 31 is a shorter torchlight, so confirm before you plan New Year's around it. A night-only adult ticket is $50 at the hill. Half-day tickets are sold at Guest Services. No full-day window price is posted, and there is no patrol outside the rope.
 
 ![Night skiing under the lights on Kimberley's North Star, a groomed run in the dark, and a few skiers paused at the edge of the beam.](#photo: Night skiing under the lights on Kimberley's North Star, a groomed run in the dark, and a few skiers paused at the edge of the beam.)
 
 ### Fairmont Hot Springs Resort
 
-Fairmont is the easy last morning: 14 runs, a kids' terrain park, and a pool held at 39 degrees Celsius, about 30 minutes south of Invermere. No 2026 to 2027 opening day or day-ticket price was posted as of November 27, 2026, so keep the ski optional. Desperados, at the hill, was listed closed in mid-November. Antlers serves breakfast from 7:00 am to 11:00 am. Overnight guests pay $27 per room plus tax for the pools and springs. That fee is not a lift ticket, and no public day-use price was posted.
+Fairmont is the easy last morning: 14 runs, a kids' terrain park, and a pool held at 39 degrees Celsius, about 30 minutes south of Invermere. Fairmont had not announced a 2026 to 2027 opening day or a day-ticket price by late November, so keep the ski optional. Desperados, at the hill, is listed closed for the season. Antlers serves breakfast from 7:00 am to 11:00 am. Overnight guests pay $27 per room plus tax for the pools and springs. That fee is not a lift ticket, and no public day-use price is listed.
 
 ![The Panorama village at dusk, gondola lights against the Purcells, and steam off the slopeside pools with the Rockies across the valley.](#photo: The Panorama village at dusk, gondola lights against the Purcells, and steam off the slopeside pools with the Rockies across the valley.)
 
 ## Cat skiing, and the one helicopter window
 
-The region counts 14 cat operators, 17 heli operators, and 22 backcountry lodges, a different week from this one. On the lift hills, RED sells pay-per-run cat skiing in bounds, and Revelstoke sells an A-Star day from December 20, 2026 to January 9, 2027, from $1,699 CAD, four guaranteed runs and more as conditions allow. Panorama's cats only shuttle resort terrain. A first heli day belongs in our [extreme sports guide](/journal/canadian-extreme-sports/).
+The region counts 14 cat operators, 17 heli operators, and 22 backcountry lodges, a different week from this one. On the lift hills, RED sells pay-per-run cat skiing in bounds, and Revelstoke sells small-group A-Star days, with the rate on its heli page. Panorama's cats only shuttle resort terrain. A first heli day belongs in our [extreme sports guide](/journal/canadian-extreme-sports/).
 
 ## Which ski pass works on the Powder Highway
 
@@ -890,7 +890,7 @@ No single pass skis the circle. The rules that change a week are in the table, p
 | Mountain Collective | Revelstoke and Panorama | Two days at each, no blackouts, then half off. |
 | Resort ticket | Whitewater, Fairmont, and any uncovered day | Whitewater adult window $159 CAD before tax. Fairmont had not posted a price. |
 
-The lift at Resorts of the Canadian Rockies wants the physical card. The phone app is not the ticket, and a reprint from identification is slow. Military passes exclude these hills. Revelstoke, Panorama, RED, Whitewater, and Fairmont are not Epic mountains.
+The lift at Resorts of the Canadian Rockies wants the physical card. The pass app is not the ticket, and a reprint from identification is slow. Military passes exclude these hills. Revelstoke, Panorama, RED, Whitewater, and Fairmont are not Epic mountains.
 
 ## Why the loop is worth the fuel
 
@@ -2571,12 +2571,12 @@ Photographs of these places are everywhere, and not one of them does the job, be
 export const FAQS: Record<string, { q: string; a: string }[]> = {
   "banff-in-december": [
     { q: "What is Banff like in December?", a: "It is already winter. On the 1991 to 2020 climate normal, a December day in Banff averages about minus 4.6°C in the afternoon and about minus 13.4°C overnight, with about 23 cm of snow over the month. Daylight runs roughly eight hours at the start of the month and just under eight hours at the solstice. The Christmas market runs on set weekends through December 13, 2026. After that, the light walk, the ski hills, and Christmas dinners carry the town." },
-    { q: "When is the Banff Christmas Market in 2026, and what do tickets cost?", a: "The market is at the Banff Heritage Train Station, 327 Railway Avenue, on November 19 to 22, November 27 to 29, December 3 to 6, and December 10 to 13, 2026. A Saturday or Sunday adult ticket is $16.50 before GST and fees. A Friday daytime adult ticket is $10, and a Friday evening adult ticket is $15. Children under 2 are free. Single-day tickets use a 20-minute arrival window and do not allow re-entry." },
-    { q: "Is there a Santa Claus parade in Banff in 2026?", a: "Banff and Lake Louise Tourism's 2026 Christmas events list does not include a Santa Claus parade, and no 2026 parade date was published on that calendar when we checked on 27 Nov 2026. Santa is at the market, at the Whyte Museum on December 6, at the Banff Gondola through December 24, and at Sunshine Village on posted December weekends." },
-    { q: "Can you skate on Lake Louise in December?", a: "Banff and Lake Louise Tourism says the rink is weather dependent and typically opens sometime in December, then runs December to March. The same page lists December as an operating month and asks you to skate only on the maintained rink. Skate rentals are at the Fairmont Chateau Lake Louise. The lake is 61 km from Banff and 4 km from the village. Weekend parking is limited. Arrive outside 10 am to 3 pm, or ride Roam Route 8X. No 2026 ice castle date was on the public Christmas calendar when we checked." },
+    { q: "When is the Banff Christmas Market in 2026, and what do tickets cost?", a: "The market is at the Banff Heritage Train Station on November 19 to 22, November 27 to 29, December 3 to 6, and December 10 to 13, 2026. A Saturday or Sunday adult ticket is $16.50 before GST and fees. A Friday daytime adult ticket is $10, and a Friday evening adult ticket is $15. Children under 2 are free. Single-day tickets use a 20-minute arrival window and do not allow re-entry." },
+    { q: "Is there a Santa Claus parade in Banff in 2026?", a: "Banff and Lake Louise Tourism's 2026 Christmas events list does not include a Santa Claus parade, and no 2026 parade date is on that calendar. Santa is at the market, at the Whyte Museum on December 6, at the Banff Gondola through December 24, and at Sunshine Village on posted December weekends." },
+    { q: "Can you skate on Lake Louise in December?", a: "Banff and Lake Louise Tourism says the rink is weather dependent and typically opens sometime in December, then runs December to March. The same page lists December as an operating month and asks you to skate only on the maintained rink. Skate rentals are at the Fairmont Chateau Lake Louise. The lake is 61 km from Banff and 4 km from the village. Weekend parking is limited. Arrive outside 10 am to 3 pm, or ride Roam Route 8X. No 2026 ice castle date is on the public Christmas calendar." },
     { q: "Do you need winter tires to drive to Banff in December?", a: "Highway 1 into the Banff townsite is not on the named snow-tire list. The Icefields Parkway, Highway 93 South, and the highways in Yoho, Glacier, and Mount Revelstoke require adequate snow tires or chains from November 1 to March 31, and any other time those roads are snowy or icy. A superintendent can post the same rule on other park highways. It does not apply inside the Town of Banff. Check 511 Alberta the morning you leave, and fit a real winter tire anyway." },
     { q: "What is open in Banff on Christmas Day?", a: "The Cave and Basin is closed on December 25. The Christmas market has already ended. The Banff Gondola is scheduled 10 am to 10 pm from December 18 to 31, with the last ride up at 8:30 pm, and Santa's last day is December 24. Published Christmas Day meals include brunch at the Juniper, a breakfast buffet and a dinner buffet at Crave, family-style dinner at The Fat Ox, and a four-course dinner at La Terrazza. The light walk runs that night. Confirm each reservation, because lodge pages were showing a finished-season banner before Christmas." },
-    { q: "Where can you eat Christmas dinner in Banff in 2026?", a: "Four places had a published 2026 offer when we checked. The Fat Ox lists family-style dinner on December 25 from 4 pm until close, $72 a person and $34 for children, with no regular menu alongside it. Crave at Banff Park Lodge lists a buffet in the ballroom from 5 pm to 9 pm, $99 for adults. La Terrazza, in the same lodge, lists four courses at $99 for every guest, on Christmas Day and on New Year's Eve, with no children's menu and no clock time on the page. The Juniper lists Christmas brunch, not dinner." },
+    { q: "Where can you eat Christmas dinner in Banff in 2026?", a: "Four places have a published 2026 offer. The Fat Ox lists family-style dinner on December 25 from 4 pm until close, $72 a person and $34 for children, with no regular menu alongside it. Crave at Banff Park Lodge lists a buffet in the ballroom from 5 pm to 9 pm, $99 for adults. La Terrazza, in the same lodge, lists four courses at $99 for every guest, on Christmas Day and on New Year's Eve, with no children's menu and no posted time. The Juniper lists Christmas brunch, not dinner." },
     { q: "Is the Icefields Parkway open in December?", a: "It is a public highway and it can close without much notice for storms and avalanche control. Snow tires or chains are required from November 1 to March 31. Check 511 Alberta before you go. The long winter gap without fuel is covered in our road-trip guide, and this page does not repeat it." },
   ],
   "romantic-winter-getaways-alberta": [
@@ -2586,24 +2586,24 @@ export const FAQS: Record<string, { q: string; a: string }[]> = {
     { q: "Do we need a Kananaskis Conservation Pass?", a: "Yes, if you park on Kananaskis Country or Bow Valley public land. A personal day pass is $15 for one vehicle. A yearly pass is $90 for up to three vehicles. Mount Engadine says every visitor needs one, and it is not in the rate. Skyridge sits inside a provincial park, so budget for the pass. If you only park at Boundary Ranch for the sleigh, ask the ranch. If you stop at a provincial trailhead, buy the pass." },
     { q: "Which stays are adults only?", a: "Skyridge is adults only. Every guest must be 21 or older, and each cabin sleeps two. At Aurum Lodge the person making the reservation must be at least 21. The other stays publish their own guest rules on the booking page." },
     { q: "Are these places open in January and February, or only until Christmas?", a: "Skyridge, Mount Engadine, the Charmed cottages, the Kilmorey, Thanksgiving Ranch, Aurum Lodge, Expanse, and Glamp Good all run through the winter. Glamp Good keeps all seven units open and will reschedule with no penalty if the forecast falls below minus 25 C. Christmas week costs more. Confirm the dates on the booking page." },
-    { q: "What is a realistic from-rate for a winter night?", a: "In the rates published for winter 2026-27, the Kilmorey listed from $134 a night on 14 December 2026, Expanse Firesides from $229 a night plus tax, and Jack's Cottage from $230 a night on winter weeknights. Those are floors for the dates named. Skyridge and Aurum Lodge put the nightly figure on the booking page. Thanksgiving Ranch gives it by phone. Rates move by date." },
+    { q: "What is a realistic from-rate for a winter night?", a: "In the rates published for winter 2026-27, the Kilmorey listed from $134 a night on 14 December 2026, Expanse Firesides from $229 a night plus tax, and Jack's Cottage from $230 a night on winter weeknights. Those are floors for the dates named. Skyridge and Aurum Lodge put the nightly figure on the booking page. Thanksgiving Ranch gives it through the ranch site. Rates move by date." },
     { q: "Can we walk on Abraham Lake for the ice bubbles?", a: "Aurum Lodge says a good window is generally mid-December to the end of February, and it does not recommend going on the ice unless you can be sure it is safe. Treat the bubbles as a view from shore. The rules we use are in our winter places guide." },
   ],
   "backcountry-lodges-huts-winter": [
     { q: "Do I need an Alpine Club of Canada membership to book a hut?", a: "For most Alpine Club huts, members book 180 days ahead and non-members 90 days. An individual adult membership is $38 CAD a year and a family membership is $76, valid for one year from purchase and not refundable. BC Parks huts, including Elk Lakes, Kokanee Glacier Cabin, and Robson Pass, use the same rate and the same 180-day window for members and non-members. Fairy Meadow ski weeks require an active membership. Shadow Lake Lodge does not offer a member rate." },
-    { q: "How much does a winter backcountry hut cost?", a: "Elk Lakes is $25 CAD a person a night, plus a non-refundable $2 transaction fee a person a night. If you live outside British Columbia, Elk Lakes adds $20 on the booking. Elizabeth Parker and the Illecillewaet Hut peak at $60 for members and $70 for non-members from December 1 to April 30. Cypress Hills huts are $100 a night for the whole cabin. Helicopter weeks are priced by the person or by the whole hut and start in the thousands. Rates change by date." },
+    { q: "How much does a winter backcountry hut cost?", a: "Elk Lakes is $25 CAD a person a night, plus a non-refundable $2 transaction fee a person a night. If you live outside British Columbia, Elk Lakes adds $20 on the booking. Elizabeth Parker and the Illecillewaet Hut charge the standard winter rate, $50 for members and $60 for non-members. The higher summer peak does not apply in December. Cypress Hills huts are $100 a night for the whole cabin. Helicopter weeks are priced by the person or by the whole hut and start in the thousands. Rates change by date." },
     { q: "Is the ski in to Elizabeth Parker Hut reasonable for a first hut?", a: "The Alpine Club, citing Parks Canada, rates the closed Lake O'Hara road as simple Class 1 avalanche terrain: mostly forest, with some openings that cross runout paths. It is 12 km and 400 m, typically 4 to 5 hours. Class 1 describes the ground, not the snow. Read the forecast that morning, carry rescue gear, and take an AST 1 before you treat the day as casual." },
-    { q: "Can I bike to Shadow Lake Lodge in winter?", a: "The access page allows fat bikes the full distance from December 15 to March 15. The FAQ says winter biking is allowed from December 1 to March 15. Confirm which date applies when you book. Avalanche paths cross the trail. The usual trip is 14 km and 440 m, 4 to 5 hours, from Redearth Creek, 19.6 km west of Banff on the Trans-Canada." },
-    { q: "What permits do I need for the Illecillewaet Hut at Rogers Pass?", a: "An annual Winter Permit, which is mandatory for an overnight hut stay, a free overnight parking permit, a national park pass, and photo identification. Daily permits cannot be used overnight. The annual permit can take a week or more. Phone 250-837-7500 with your plate and reservation number for the overnight parking permit. Processing can take up to five days. A missing Winter Permit can draw a fine of up to $25,000." },
-    { q: "When can I book an Alpine Club ski week?", a: "Applications open each spring for the following winter, through Fair Access Bookings. On 27 November 2026 the ski week page showed both a notice that applications are closed and a notice that they are open, so check the member portal. You book the whole hut. Kokanee Glacier Cabin is $26,400 CAD for seven nights, including the helicopter and taxes, plus 2 percent MRDT. Fairy Meadow runs from $30,100 to $34,000 by week and requires a membership." },
+    { q: "Can I bike to Shadow Lake Lodge in winter?", a: "The access page allows fat bikes the full distance from December 15 to March 15. Avalanche paths cross the trail. The usual trip is 14 km and 440 m, 4 to 5 hours, from Redearth Creek, 19.6 km west of Banff on the Trans-Canada." },
+    { q: "What permits do I need for the Illecillewaet Hut at Rogers Pass?", a: "An annual Winter Permit, which is mandatory for an overnight hut stay, a free overnight parking permit, a national park pass, and photo identification. Daily permits cannot be used overnight. The annual permit can take a week or more. Request the overnight parking permit from the park page with your plate and reservation number. Processing can take up to five days. A missing Winter Permit can draw a fine of up to $25,000." },
+    { q: "When can I book an Alpine Club ski week?", a: "Applications open each spring for the following winter, through Fair Access Bookings. The ski week page has shown both a closed notice and an open notice. Check the member portal. You book the whole hut. Kokanee Glacier Cabin is $26,400 CAD for seven nights, including the helicopter and taxes, plus 2 percent MRDT. Fairy Meadow runs from $30,100 to $34,000 by week and requires a membership." },
     { q: "What avalanche training do I need before a hut trip?", a: "Start with an AST 1. It is the national recreational standard, it takes a minimum of two days, and you do not need prior experience. Licensed providers teach it. The online Avy Savvy tutorial is an introduction and a refresher, not a substitute. For Kokanee and Fairy Meadow, the Alpine Club says AST 1 at a minimum and recommends AST 2. A certificate does not expire. Avalanche Canada still asks you to refresh the training every year, or at least every two to three years." },
     { q: "Are dogs allowed in these huts and lodges?", a: "No at Shadow Lake Lodge, and the lodge says dogs are not permitted at Alpine Club facilities. Cypress Hills comfort camping huts also bar pets, with an exception for service dogs. Plan to leave the dog at home." },
   ],
   "powder-highway-bc": [
     { q: "What is the Powder Highway in BC?", a: "It is a winter loop through the Kootenay Rockies in southeastern British Columbia. Kootenay Rockies Tourism defines it as eight alpine resorts: Revelstoke, Kicking Horse, Fernie, Whitewater, RED Mountain, Panorama, Kimberley, and Fairmont Hot Springs Resort, across the Rockies, the Purcells, the Selkirks, and the Monashees." },
     { q: "How many days do you need for a Powder Highway road trip?", a: "Plan seven to ten days from Calgary if you want to ski, not just drive. A ten-day loop gives Kicking Horse and Revelstoke real ski days and keeps Rossland to Fernie as a driving day. Seven days means skipping a second day at Revelstoke and treating Whitewater or Kimberley as optional." },
-    { q: "When do the Powder Highway resorts open for 2026 to 2027?", a: "Posted targets, all conditions dependent: Fernie, Panorama, and Whitewater on December 4, 2026, Revelstoke on December 5, Kicking Horse and Kimberley on December 11, and RED on December 12. Fairmont had not posted a 2026 to 2027 opening date as of November 27, 2026. Dates move with snow." },
-    { q: "Which ski pass works on the Powder Highway?", a: "No single pass covers all eight. Epic Pass includes a combined seven days at Fernie, Kicking Horse, and Kimberley, shared with the other Resorts of the Canadian Rockies. Ikon covers RED, Revelstoke, and Panorama on the day counts those pages post. Mountain Collective includes two days at Revelstoke and two at Panorama. Whitewater and Fairmont are ticket or home-pass hills on the pages checked." },
+    { q: "When do the Powder Highway resorts open for 2026 to 2027?", a: "Posted targets, all conditions dependent: Fernie, Panorama, and Whitewater on December 4, 2026, Revelstoke on December 5, Kicking Horse and Kimberley on December 11, and RED on December 12. Fairmont had not announced a 2026 to 2027 opening date by late November. Dates move with snow." },
+    { q: "Which ski pass works on the Powder Highway?", a: "No single pass covers all eight. Epic Pass includes a combined seven days at Fernie, Kicking Horse, and Kimberley, shared with the other Resorts of the Canadian Rockies. Ikon covers RED, Revelstoke, and Panorama on the day counts those pages post. Mountain Collective includes two days at Revelstoke and two at Panorama. Whitewater and Fairmont are ticket or home-pass hills." },
     { q: "Do you need winter tires for the Powder Highway?", a: "Yes on the signed mountain routes. British Columbia requires winter tires or chains on most highways from October 1 to April 30, and to March 31 on some lower routes. A legal winter tire needs at least 3.5 mm of tread and an M+S mark at minimum, on the drive axle. The three-peak mountain snowflake is the better tire for Rogers Pass. The passenger-vehicle fine is $121." },
     { q: "How often does Rogers Pass close in winter?", a: "Avalanche control closes the Trans-Canada between Revelstoke and Golden through the winter. Parks Canada counts 135 avalanche paths along about 43 km of highway. A shoot can be a couple of hours. A storm cycle can hold traffic for much of a day, with vehicles waiting in Revelstoke and Golden. Check DriveBC, including planned events, the morning you go." },
     { q: "Is Kicking Horse Canyon still a construction zone?", a: "The four-lane highway through the canyon opened at 7 am MST on November 30, 2023. The Province's project page, updated March 17, 2026, treats that as substantial completion. Winter still puts compact snow and slippery sections on Highway 1 east of Golden. Check DriveBC. Do not plan on the old overnight construction closures." },
