@@ -18,14 +18,14 @@ export const JOURNAL_SEO: Record<string, ArticleSeo> = {
     "wordCount": 4488
   },
   "romantic-winter-getaways-alberta": {
-    "seoTitle": "Romantic Getaways Alberta Winter: Views and Tubs",
+    "seoTitle": "Romantic Winter Getaways in Alberta: Views and Tubs",
     "metaDescription": "Romantic getaways Alberta winter: glass cabins, domes, lake lodges and private wood-fired tubs you can drive to. Rates checked late November 2026.",
     "heroWidth": 1600,
     "heroHeight": 840,
     "wordCount": 4574
   },
   "backcountry-lodges-huts-winter": {
-    "seoTitle": "Backcountry Lodges BC and Huts in Alberta, Winter",
+    "seoTitle": "Winter Backcountry Lodges in BC and Huts in Alberta",
     "metaDescription": "Backcountry lodges in BC and huts in Alberta you ski or snowshoe into this winter: 2026 to 2027 prices, access, permits, and avalanche rules.",
     "heroWidth": 1600,
     "heroHeight": 840,

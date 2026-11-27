@@ -27,9 +27,9 @@ export const EXTRA_ARTICLES: Article[] = [
     seoTitle: "Banff in December: The Honest Christmas Guide",
     metaDescription: "Banff in December means short cold days, a Christmas market to December 13, 2026, Lake Louise skating, and priced Christmas dinners in town.",
     ogImage: { url: "/images/journal/banff-in-december/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "Two people in wool coats and toques stand on the Bow River bridge in Banff at blue hour, shore ice along the dark water and last light on Mount Rundle." },
-    body: `The Fire Lounge at the Banff heritage train station is the warm point of a cold afternoon: live music, the market indoors and out in the weather. By five the peaks have taken the sun. The town is already deep into Christmas.
+    body: `The Fire Lounge at the heritage train station is the warmest place in Banff on a cold afternoon: live music by the fire, market stalls inside, and more out in the snow. By five the peaks have taken the sun. The town is already deep into Christmas.
 
-Banff in December is that week. The calendar is real, the days are short, and the mountain is already in full winter. The Banff Christmas Market runs on set weekends through December 13, 2026. After that, the lights, the rink, and the ski hills carry Christmas. Here is what is open, what it costs, and how to spend the light you have.
+That is Banff in December. The days are short, the mountains are already in full winter, and the calendar is fuller than most people expect. The Banff Christmas Market runs on set weekends through December 13, 2026. After that, the lights, the rink, and the ski hills carry Christmas. Here is what is open, what it costs, and how to spend the light you have.
 
 :::box Plan it
 - **Best for:** A long weekend based in town, with one day for Lake Louise or a ski hill, on a market weekend or over Christmas week.
@@ -254,14 +254,14 @@ This country keeps that week outside, in the real cold, and the early dark is pa
       "/images/journal/romantic-winter-getaways-alberta/10-kananaskis-sleigh-1600x900.webp"
     ],
     hideCaptions: true,
-    seoTitle: "Romantic Getaways Alberta Winter: Views and Tubs",
+    seoTitle: "Romantic Winter Getaways in Alberta: Views and Tubs",
     metaDescription: "Romantic getaways Alberta winter: cabins with private hot tubs, glass domes, treehouses, and quiet lodges you can drive to outside Banff this winter.",
     ogImage: { url: "/images/journal/romantic-winter-getaways-alberta/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A couple in knit toques sits in a steaming wooden hot tub on a snowy cabin deck at night, a lantern lit, facing a starry range of peaks." },
     body: `The steam shows up before anyone sits down. It lifts off a private tub, the peaks have already gone black, and one of you is still wearing a toque.
 
-Romantic getaways Alberta winter means a drive-in stay with a real view, and a reason to be outside after dark. That is a glass cabin under mountain light, a dome you can see the stars through, a treehouse with a wood-fired tub, a lake, or a small lodge that will feed you. This guide stays outside Banff town and outside anything you have to ski or snowshoe into.
+The best romantic getaways in Alberta in winter come down to two things: a real view, and a reason to be outside after dark. That is a glass cabin under mountain light, a dome you can see the stars through, a treehouse with a wood-fired tub, a lake, or a small lodge that will feed you. This guide stays outside Banff town and outside anything you have to ski or snowshoe into.
 
-Prices below are from rates for winter 2026 to 2027, in Canadian dollars. They move by date.
+Prices below are winter 2026 to 2027 rates in Canadian dollars, and they move by date.
 
 Ten places made the list. Each one has a mountain, a lake, a valley, an open sky, or a real evening outside. Ski-in lodges, including Skoki, sit in our [boutique cabin guide](/journal/boutique-cabins-canada/). Hike-in rooms with a famous view are in our [places to stay for the view](/journal/best-places-to-stay-western-canada-views/). This piece is the truck, the gravel, and a night you can drive home from.
 
@@ -278,7 +278,7 @@ Ten places made the list. Each one has a mountain, a lake, a valley, an open sky
 
 > The soak is the easy part. Somebody still has to light it, and that takes the afternoon.
 
-## Romantic getaways Alberta winter: start with the view
+## How to choose a romantic winter getaway in Alberta
 
 **Start with the view.** A private tub on a town street is a bathroom with weather. What earns the drive is the mountain, the lake, the valley, or a sky with no porch light in it, plus a real evening outside: a tub you fire, a pit, a deck, a sauna trail, or snowshoes.
 
@@ -487,14 +487,14 @@ Pick the view first, then the tub or the meal, then the date you can keep. Pack 
       "/images/journal/backcountry-lodges-huts-winter/09-hut-stove-night-1600x900.webp"
     ],
     hideCaptions: true,
-    seoTitle: "Backcountry Lodges BC and Huts in Alberta, Winter",
+    seoTitle: "Winter Backcountry Lodges in BC and Huts in Alberta",
     metaDescription: "Backcountry lodges in BC and huts in Alberta you ski or snowshoe into this winter: 2026 to 2027 prices, access, permits, and avalanche rules.",
     ogImage: { url: "/images/journal/backcountry-lodges-huts-winter/hero-branded-1200x630.jpg", width: 1200, height: 630, alt: "A small wood hut half buried in snow at blue hour, one window warm, skis planted by the door, and a skin track ending with no road in sight." },
     body: `The last light goes blue while you are still on the track, and a single window ahead is the only warm thing in the valley. The phone gave up a kilometre ago. You are late enough that the hut is doing the job it was built for.
 
-The winter list of backcountry lodges BC and backcountry huts Alberta is shorter than a booking site suggests. A roof counts here only when winter access is skis, snowshoes, a snowcat, or a helicopter. Shared Alpine Club bunks start from $25 CAD a person a night. A private cabin at Shadow Lake Lodge is priced on the booking page, plus $6.50 CAD an adult a night. A guided stay starts from $2,598 CAD a person. Rates change by date.
+In winter, the list of backcountry lodges in BC and backcountry huts in Alberta is shorter than any booking site suggests. A roof counts here only when winter access is skis, snowshoes, a snowcat, or a helicopter. Shared Alpine Club bunks start from $25 CAD a person a night. A private cabin at Shadow Lake Lodge is priced on the booking page, plus $6.50 CAD an adult a night. A guided stay starts from $2,598 CAD a person. Rates change by date.
 
-Off grid cabin rentals Alberta usually come with a driveway. These do not, once the snow is down. A roof open in July may close, or sell only by the week. The booking window, and the ground between the truck and the door, matter more than the stove in the photograph.
+Most off grid cabin rentals in Alberta come with a driveway. These do not, once the snow is down. A roof open in July may close, or sell only by the week. The booking window, and the ground between the truck and the door, matter more than the stove in the photograph.
 
 > The cheapest night in these mountains is often the one with no road to it.
 
@@ -719,13 +719,13 @@ The truck heater catches. The phone finds a bar. The layers that did the work ar
 
 The Powder Highway BC is a winter loop through the Kootenay Rockies in southeastern British Columbia. [Kootenay Rockies Tourism](https://www.kootenayrockies.com/powder-highway-101/) defines it as eight alpine resorts: Revelstoke Mountain Resort, Kicking Horse Mountain Resort in Golden, Fernie Alpine Resort, Whitewater Ski Resort above Nelson, RED Mountain Resort in Rossland, Panorama Mountain Resort above Invermere, Kimberley Alpine Resort, and the ski hill at Fairmont Hot Springs Resort. The circle crosses the Rockies, the Purcells, the Selkirks, and the Monashees. From Calgary, seven to ten days lets the deep mountains have more than one morning. From Edmonton, the first day is longer, and the loop after Golden is the same one.
 
-Sunshine, Lake Louise, and Marmot have their own [Alberta ski guide](/journal/best-ski-resorts-alberta/). Out here, pack each hill's own snow: 10.5 metres at Revelstoke, 1,200 cm at Whitewater, 9 metres or more at Fernie, up to 750 cm high on Kicking Horse. Rates change by date, and snow moves an opening.
+Sunshine, Lake Louise, and Marmot have their own [Alberta ski guide](/journal/best-ski-resorts-alberta/). Across the line, each hill keeps its own snow numbers: 10.5 metres at Revelstoke, 1,200 cm at Whitewater, 9 metres or more at Fernie, up to 750 cm high on Kicking Horse. Rates change by date, and snow moves an opening.
 
 :::box Plan it
 - **Best for:** Calgary and Edmonton drivers who want deeper snow than the Alberta side and will treat the passes as part of the skiing.
 - **When:** Mid-December through March, once Kicking Horse, Kimberley, and RED have opened. Early December only some hills are spinning. Every date below can move with snow.
 - **Getting there:** Calgary airport to Golden is 278 km and 2 hours 44 minutes. Edmonton to Golden is 544 km and 5 hours 12 minutes. Edmonton to Revelstoke via Calgary is about 7 hours and 701 km.
-- **Budget:** Prices checked 27 November 2026. Adult window tickets from $159 CAD at Whitewater before tax, up to $220 CAD at Revelstoke in the peak window, taxes extra. Fernie, Kicking Horse, and Kimberley had not posted one window price. Lodging moves more than the ticket. Rates change by date.
+- **Budget:** Prices checked 27 November 2026. Adult window tickets from $159 CAD at Whitewater before tax, up to $220 CAD at Revelstoke in the peak window, taxes extra. Fernie, Kicking Horse, and Kimberley price by date online. Lodging moves more than the ticket. Rates change by date.
 - **Book ahead:** Epic Passes go off sale after December 6, 2026. Revelstoke's regional vertical-card sale runs through November 30. Confirm the RED Card deadline on the resort site. Do not book a same-day connection across Rogers Pass.
 - **Bring:** Legal winter tires with real tread, a full tank out of Golden and out of Revelstoke, layers for a long sit if the pass closes, and an offline plan. Whitewater has no cell service.
 :::
